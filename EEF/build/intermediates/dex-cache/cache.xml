@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/libs/uiautomator.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6578a8a081343276754d02d8a3b3a67ba5f89f5f">
+        <dex dex="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/pre-dexed/debug/uiautomator_7c29eacf6d7caafaf56a454aacec0add5bc3cdc6.jar" />
+    </item>
+    <item
+        jar="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4a6be13368bb64c5a0b0460632d228a1a915f58f">
+        <dex dex="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/pre-dexed/debug/android-support-v4_c5242d28bc9d6f2a038b4cd0e6ef2e635f854144.jar" />
+    </item>
+
+</items>
