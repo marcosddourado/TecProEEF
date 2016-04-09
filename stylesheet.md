@@ -11,7 +11,7 @@ The source file name consists of the case-sensitive name of the top-level class 
   * Package statement.
   * Import statements.
   * One top-level class/interface.
-  
+
 <!-- Exemplo -->
 
 #### 1.3 Import Statements
@@ -50,49 +50,88 @@ Caught exceptions should never be ignored. The runtime error should be treated i
 Whenever a reference to a static member have to be called, it should be called directly from the class.
 <!-- Exemplo -->
 
-## 4. Naming
+## 3. Naming
 <!-- Exemplos -->
 
-#### 4.1 Classes
+#### 3.1 Classes
 UpperCamelCase
 
-#### 4.2 Methods
+#### 3.2 Methods
 lowerCamelCase()
 
-#### 4.3 Class Members
+#### 3.3 Class Members
 lowerCamelCase
 
-#### 4.4 Constants
+#### 3.4 Constants
 SCREAMING_SNAKE_CASE
 
-#### 4.5 Local Variables
+#### 3.5 Local Variables
 lowerCamelCase
 
-#### 4.6 Parameters
+#### 3.6 Parameters
 lowerCamelCase
 
-## 5. Javadoc
+## 4. Formatting
 
-#### 5.1
+#### 4.1 Braces
 
-#### 5.2
+##### 4.1.1 Braces are always mandatory
+Braces should be used following the K & R Style, even if the block is empty.
 
-#### 5.3
+##### 4.1.2 Brace spacing
+There must be a space between the method name definition (or arguments) and the opening brace.
+<!-- Exemplo -->
 
-#### 5.4
+#### 4.2 Block indentation
+Each time a new block is opened, the line indent increases by four spaces. At the end of the block, the line indent recedes accordingly. This applies to both code and comments throughout the block.
 
-#### 5.5
+#### 4.3 Statements per line
+There should be only one statement per line, followed by a line break.
+<!-- Exemplo -->
 
-#### 5.6
+#### 4.4 Column limit
+Each line has a maximum character count of 100, except on package and import statements, or where absolutely impossible to do so.
+<!-- Exemplo -->
 
-#### 5.7
+#### 4.5 Comma/Operator separation
+A comma or operator must always be followed by a whitespace character.
+<!-- Exemplo -->
 
-## 6. Formatting
+#### 4.6 Specific Constructs
 
-#### 6.1
+##### 4.6.1 Enum Classes
+After each component of an enum declaration, a line break is optional, as long as the declaration does not exceed the column character limit.
 
-#### 6.2
+##### 4.6.2 Variable declaration
 
-#### 6.4
+###### 4.6.2.1 Number of variables declared per line
+Each line that contains variable declarations must contain the declaration of a single variable.
+<!-- Exemplo -->
 
-## 7. Comments
+###### 4.6.2.2 Variable scope and initialization
+Variables must only be declared when absolutely needed, and initialized as soon as possible.
+
+##### 4.6.3 Arrays
+
+###### 4.6.3.1 Initializers
+Arrays may be initialized following a block style. However, a single-line initialization is recommended on the cases where this does not exceed the line character limit.
+
+###### 4.6.3.2 C-Style array declarations
+Arrays are declared with the brackets being a part of the variable, not the type.
+<!-- Exemplo -->
+
+##### 4.6.4 Switch statements
+Switch statements follow the formatting guide as described. The only salve is that the `default:` case is always present, even if it is empty.
+<!-- Exemplo -->
+
+###### 4.6.4.1 Empty default case
+An empty default case must indicate that it actually does nothing.
+<!-- Exemplo -->
+
+##### 4.6.5 Comments
+
+###### 4.6.5.1 Single-line Comments
+Must be  written after a `// ` representation, and must start with an uppercase letter.
+
+###### 4.6.5.2 Multi-line Comments
+For multi-line comments, the following structure is recommended: `/* ... */`. Subsequent lines must start with `*` aligned with the `*` on the previous line.
