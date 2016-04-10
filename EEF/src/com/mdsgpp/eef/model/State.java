@@ -88,7 +88,7 @@ public class State {
 		this.percentageCollaborationWithPIB = percentageCollaborationWithPIB;
 	}
 
-	public int getstatePopulation() {
+	public int getStatePopulation() {
 		return statePopulation;
 	}
 
