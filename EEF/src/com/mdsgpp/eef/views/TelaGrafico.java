@@ -6,7 +6,7 @@ import java.util.HashMap;
 import com.echo.holographlibrary.Bar;
 import com.echo.holographlibrary.BarGraph;
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.EstadoControle;
+import com.mdsgpp.eef.controle.StateConroller;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -81,9 +81,9 @@ public class TelaGrafico extends Activity {
 		HashMap<String, String> informacoesEstado2 = new HashMap<String, String>();
 
 		try {
-			informacoesEstado1 = (HashMap<String, String>) EstadoControle
+			informacoesEstado1 = (HashMap<String, String>) StateConroller
 					.getInstancia(this).lerEstado(estado1).clone();
-			informacoesEstado2 = (HashMap<String, String>) EstadoControle
+			informacoesEstado2 = (HashMap<String, String>) StateConroller
 					.getInstancia(this).lerEstado(estado2).clone();
 			
 			converteDados(informacoesEstado1, informacoesEstado2);

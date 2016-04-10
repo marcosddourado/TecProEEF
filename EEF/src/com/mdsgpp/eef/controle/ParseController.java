@@ -8,17 +8,17 @@ import android.content.Context;
 
 import com.mdsgpp.eef.parse.DadosParse;
 
-public class ParseControle {
+public class ParseController {
 
-	private static ParseControle instancia;
+	private static ParseController instancia;
 	DadosParse parser;
 
-	public ParseControle(Context context) {
+	public ParseController(Context context) {
 		parser = new DadosParse(context);
 	}
 
-	public static ParseControle getInstancia(Context context) {
-		if (instancia == null) instancia = new ParseControle(context);
+	public static ParseController getInstancia(Context context) {
+		if (instancia == null) instancia = new ParseController(context);
 		return instancia;
 	}
 	

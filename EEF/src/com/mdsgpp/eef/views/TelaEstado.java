@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.EstadoControle;
+import com.mdsgpp.eef.controle.StateConroller;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -100,7 +100,7 @@ public class TelaEstado extends Activity {
 	    HashMap<String, String> informacoes = new HashMap <String, String>();
 	    
 	    try {
-			informacoes = EstadoControle.getInstancia(this).lerEstado(posicao);
+			informacoes = StateConroller.getInstancia(this).lerEstado(posicao);
 			preencheCamposTexto(informacoes);
 			setImagem(posicao);
 		} catch (IOException e) {

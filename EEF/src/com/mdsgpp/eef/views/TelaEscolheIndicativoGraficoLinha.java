@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.EstadoControle;
+import com.mdsgpp.eef.controle.StateConroller;
 import com.mdsgpp.eef.modelo.Estado;
 
 import android.app.Activity;
@@ -368,7 +368,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 		int posicao = posicaoHistorico;
 		
 		try {
-			estado1 = (Estado) EstadoControle.getInstancia(this).obterEstado(posicao);
+			estado1 = (Estado) StateConroller.getInstancia(this).obterEstado(posicao);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

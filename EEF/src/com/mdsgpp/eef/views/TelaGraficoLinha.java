@@ -8,7 +8,7 @@ import com.echo.holographlibrary.Line;
 import com.echo.holographlibrary.LineGraph;
 import com.echo.holographlibrary.LinePoint;
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.EstadoControle;
+import com.mdsgpp.eef.controle.StateConroller;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -81,7 +81,7 @@ public class TelaGraficoLinha extends Activity {
 		}
 		
 		try {
-			informacoes = EstadoControle.getInstancia(this).lerEstadoCompleto(posicao);
+			informacoes = StateConroller.getInstancia(this).lerEstadoCompleto(posicao);
 		} catch (IOException e) {
 			Log.i("Erro - TelaGraficoLinha", "Erro ao capturar as informacoes do estado.");
 			e.printStackTrace();

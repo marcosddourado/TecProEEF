@@ -1,7 +1,7 @@
 package com.mdsgpp.eef.visao;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.FeedControle;
+import com.mdsgpp.eef.controle.FeedController;
 import com.mdsgpp.eef.modelo.Feed;
 
 import android.net.Uri;
@@ -26,7 +26,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
 		setContentView(R.layout.activity_tela_feed);
 		
 		// Execute the task to retrieve the feed data
-		new FeedControle(this, this).execute(FEED_ADDRESS);
+		new FeedController(this, this).execute(FEED_ADDRESS);
 	}
 
 	@Override

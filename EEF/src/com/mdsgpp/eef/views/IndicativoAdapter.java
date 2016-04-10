@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.EstadoControle;
+import com.mdsgpp.eef.controle.StateConroller;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -53,7 +53,7 @@ public class IndicativoAdapter extends BaseAdapter{
 	public HashMap<String, String> getItem(int posicao) {
 		HashMap<String, String> estado = null;
 		try {
-			estado = EstadoControle.getInstancia(context).lerEstado(posicao);
+			estado = StateConroller.getInstancia(context).lerEstado(posicao);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

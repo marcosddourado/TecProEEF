@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import com.mdsgpp.eef.modelo.Feed;
+import com.mdsgpp.eef.model.Feed;
 
 import android.content.Context;
 

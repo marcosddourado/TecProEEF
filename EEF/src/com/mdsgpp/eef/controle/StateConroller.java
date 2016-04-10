@@ -9,9 +9,9 @@ import android.content.Context;
 
 import com.mdsgpp.eef.modelo.Estado;
 
-public class EstadoControle {
+public class StateConroller {
 
-	private static EstadoControle instancia;
+	private static StateConroller instancia;
 	private Context context;
 	private HashMap<String, String> informacoesEstado;
 	private HashMap<String, ArrayList<String[]>> informacoesParse;
@@ -19,20 +19,20 @@ public class EstadoControle {
 	private DecimalFormat dfPopulacao = new DecimalFormat("#,###");
 	private DecimalFormat dfPorcentagem = new DecimalFormat("#.##");
 
-	public EstadoControle(Context contextActivity) {
+	public StateConroller(Context contextActivity) {
 		this.context = contextActivity;
 		this.informacoesEstado = new HashMap<String, String>();
 		this.informacoesParse = new HashMap<String, ArrayList<String[]>>();
 	}
 
-	public static EstadoControle getInstancia(Context contextActivity) {
+	public static StateConroller getInstancia(Context contextActivity) {
 		if (instancia == null)
-			instancia = new EstadoControle(contextActivity);
+			instancia = new StateConroller(contextActivity);
 		return instancia;
 	}
 
 	public Estado obterEstado(int posicao) throws IOException {
-		informacoesParse = ParseControle.getInstancia(context).getInformacoes(
+		informacoesParse = ParseController.getInstancia(context).getInformacoes(
 				posicao);
 
 		String nomeSigla[] = informacoesParse.get("nome_e_sigla").get(0);
@@ -45,7 +45,7 @@ public class EstadoControle {
 	}
 	
 	public HashMap<String, String> lerEstado(int posicao) throws IOException {
-		informacoesParse = ParseControle.getInstancia(context).getInformacoes(
+		informacoesParse = ParseController.getInstancia(context).getInformacoes(
 				posicao);
 
 		String nomeSigla[] = informacoesParse.get("nome_e_sigla").get(0);
@@ -59,7 +59,7 @@ public class EstadoControle {
 
 	public HashMap<String, String> lerEstadoCompleto(int posicao)
 			throws IOException {
-		informacoesParse = ParseControle.getInstancia(context).getInformacoes(
+		informacoesParse = ParseController.getInstancia(context).getInformacoes(
 				posicao);
 
 		String nomeSigla[] = informacoesParse.get("nome_e_sigla").get(0);

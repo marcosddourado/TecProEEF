@@ -9,11 +9,11 @@ import java.util.HashMap;
 import android.content.Context;
 import android.test.AndroidTestCase;
 
-import com.mdsgpp.eef.controle.ParseControle;
+import com.mdsgpp.eef.controle.ParseController;
 
 public class ParseControleTeste extends AndroidTestCase{
 	
-	private ParseControle parseControle;
+	private ParseController parseController;
 	private Context context;
 	
 	private HashMap<String, ArrayList<String[]>> informacoes;
@@ -37,7 +37,7 @@ public class ParseControleTeste extends AndroidTestCase{
 
 	public void setUp() throws Exception {
 		context = getContext();
-		parseControle = new ParseControle(context);
+		parseController = new ParseController(context);
 		
 		informacoes = new HashMap<String, ArrayList<String[]>>();
 		container = new ArrayList<String[]>();
@@ -194,12 +194,12 @@ public class ParseControleTeste extends AndroidTestCase{
 
 	
 	public void testInstancia() {
-		assertNotNull(parseControle);
+		assertNotNull(parseController);
 	}
 
 	
 	public void testarSingleton(){
-		assertNotNull(ParseControle.getInstancia(context));
+		assertNotNull(ParseController.getInstancia(context));
 	}
 	
 
@@ -209,7 +209,7 @@ public class ParseControleTeste extends AndroidTestCase{
 		HashMap<String, ArrayList<String[]>> estado;
 		estado = null;
 		try {
-			estado = parseControle.getInformacoes(0);
+			estado = parseController.getInformacoes(0);
 		} catch (IOException e) {
 			fail();
 		}

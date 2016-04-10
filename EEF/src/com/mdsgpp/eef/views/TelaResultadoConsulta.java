@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.EstadoControle;
+import com.mdsgpp.eef.controle.StateConroller;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -193,9 +193,9 @@ public class TelaResultadoConsulta extends Activity {
 		HashMap<String, String> informacoesEstado2 = new HashMap<String, String>();
 
 		try {
-			informacoesEstado1 = (HashMap<String, String>) EstadoControle
+			informacoesEstado1 = (HashMap<String, String>) StateConroller
 					.getInstancia(this).lerEstado(posicao1).clone();
-			informacoesEstado2 = (HashMap<String, String>) EstadoControle
+			informacoesEstado2 = (HashMap<String, String>) StateConroller
 					.getInstancia(this).lerEstado(posicao2).clone();
 
 			preencheCamposTexto(informacoesEstado1, informacoesEstado2);
