@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		default:
@@ -44,22 +44,22 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     }
 
-    public void clickBotaoComparacaoGeral(View view) {
+    public void clickButtonGeneralComparations(View view) {
     	Intent intent = new Intent(this, TelaComparacoesGerais.class);
 
 		startActivity(intent);
     }
     
-    public void clickBotaoConsultaGeral(View view){
+    public void clickButtonGeneralConsultation(View view){
     	Intent intent = new Intent(this, TelaListaEstado.class);
     	startActivity(intent);
     }
     
-    public void clickBotaoFeed(View view){
+    public void clickButtonFeed(View view){
     	Intent intent = new Intent(this, TelaFeed.class);
     	startActivity(intent);
     }
-    public void clickBotaoConsultaPorIndicativo(View view){
+    public void clickButtonConsultationByIndicative(View view){
     	Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
     	startActivity(intent);
     }
