@@ -358,7 +358,7 @@ public final class R {
         public static final int activity_sobre_indicativos=0x7f030001;
         public static final int activity_sobre_tela_comparacao_de_estados=0x7f030002;
         public static final int activity_tela_compara_estados=0x7f030003;
-        public static final int activity_tela_comparacao=0x7f030004;
+        public static final int activity_comparation =0x7f030004;
         public static final int activity_tela_comparacoes_gerais=0x7f030005;
         public static final int activity_tela_consulta_por_indicativo=0x7f030006;
         public static final int activity_tela_escolhe_indicativo_grafico=0x7f030007;

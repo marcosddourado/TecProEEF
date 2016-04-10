@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class EstadoAdapter extends BaseAdapter{
 
-	String estados[] = {"Acre", "Alagoas", "Amape", "Amazonas", "Bahia",
+	String states[] = {"Acre", "Alagoas", "Amape", "Amazonas", "Bahia",
 			"Ceare", "Distrito Federal","Esperito Santo","Goies", "Maranheo",
 			"Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pare", "Paraiba",
 			"Parane", "Pernambuco", "Piaue", "Rio de Janeiro", "Rio Grande do Norte",
@@ -47,12 +47,12 @@ public class EstadoAdapter extends BaseAdapter{
 	
 	@Override
 	public int getCount() {
-		return estados.length;
+		return states.length;
 	}
 
 	@Override
 	public Object getItem(int position) {
-		return estados[position];
+		return states[position];
 	}
 
 	@Override
@@ -67,7 +67,7 @@ public class EstadoAdapter extends BaseAdapter{
 			convertView = mInflater.inflate(R.layout.listview_item , null);
 			holder = new ViewHolder();
 		 
-			holder.tvNome = (TextView) convertView.findViewById(R.id.textview_lista_estados);
+			holder.tvNome = (TextView) convertView.findViewById(R.id.textview_lista_states);
 			holder.tvSigla = (TextView) convertView.findViewById(R.id.textview_lista_siglas);
 			
 			holder.tvBandeiras = (ImageView) convertView.findViewById(R.id.imageView_bandeiras);
@@ -82,7 +82,7 @@ public class EstadoAdapter extends BaseAdapter{
 			holder = (ViewHolder) convertView.getTag();
 		}
 				
-		holder.tvNome.setText(estados[position]);
+		holder.tvNome.setText(states[position]);
 		holder.tvSigla.setText(siglas[position]);
 		int idBandeira = context.getResources().getIdentifier(bandeiras[position], "drawable", context.getPackageName());
 		holder.tvBandeiras.setImageResource(idBandeira);

@@ -7,9 +7,9 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.view.View;
 
-public class TelaComparacao extends Comparacao {
+public class TelaComparation extends Comparation {
 	@Override
-	public void clickBotaoComparacaoEstados(View view) {
+	public void clickButtonStatesComparation(View view) {
 		Intent intent = new Intent(this, TelaIndicativosConsultados.class);
 		getStatesSpinner01().getSelectedItem().toString();
 		getStatesSpinner().getSelectedItem().toString();
@@ -47,7 +47,7 @@ public class TelaComparacao extends Comparacao {
     	startActivity(intent);
     }
 	
-	public void clickBotaoSobreComparacao(View view) {
+	public void clickButtonAboutComparationcao(View view) {
     	Intent intent = new Intent(this, TelaSobreComparacao.class);
     	startActivity(intent);
     }

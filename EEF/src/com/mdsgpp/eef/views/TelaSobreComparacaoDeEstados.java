@@ -11,7 +11,7 @@ public class TelaSobreComparacaoDeEstados extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sobre_tela_comparacao_de_estados);
+		setContentView(R.layout.activity_sobre_tela_comparacao_de_states);
 	}
 
 	@Override

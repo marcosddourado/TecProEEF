@@ -124,7 +124,7 @@ public class TelaResultadoConsulta extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_compara_estados);
+		setContentView(R.layout.activity_tela_compara_states);
 		
 		InicializaCamposTexto();
 		capturaInformacoes();
