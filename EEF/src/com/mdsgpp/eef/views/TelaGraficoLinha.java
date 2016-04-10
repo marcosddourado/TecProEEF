@@ -8,7 +8,7 @@ import com.echo.holographlibrary.Line;
 import com.echo.holographlibrary.LineGraph;
 import com.echo.holographlibrary.LinePoint;
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.StateConroller;
+import com.mdsgpp.eef.controller.StateConroller;
 
 import android.os.Bundle;
 import android.app.Activity;

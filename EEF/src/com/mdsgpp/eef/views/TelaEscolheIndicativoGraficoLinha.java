@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.StateConroller;
+import com.mdsgpp.eef.controller.StateConroller;
 import com.mdsgpp.eef.modelo.Estado;
 
 import android.app.Activity;

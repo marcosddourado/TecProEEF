@@ -6,7 +6,7 @@ import java.util.HashMap;
 import com.echo.holographlibrary.Bar;
 import com.echo.holographlibrary.BarGraph;
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.StateConroller;
+import com.mdsgpp.eef.controller.StateConroller;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;

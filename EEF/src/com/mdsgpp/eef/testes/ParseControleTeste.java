@@ -9,7 +9,7 @@ import java.util.HashMap;
 import android.content.Context;
 import android.test.AndroidTestCase;
 
-import com.mdsgpp.eef.controle.ParseController;
+import com.mdsgpp.eef.controller.ParseController;
 
 public class ParseControleTeste extends AndroidTestCase{
 	

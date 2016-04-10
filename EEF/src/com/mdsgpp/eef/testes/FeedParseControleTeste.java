@@ -3,7 +3,7 @@ package com.mdsgpp.eef.testes;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import com.mdsgpp.eef.controle.FeedController;
+import com.mdsgpp.eef.controller.FeedController;
 import com.mdsgpp.eef.visao.TelaFeed;
 
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.mdsgpp.eef.controle;
+package com.mdsgpp.eef.controller;
 
 import com.mdsgpp.eef.model.Feed;
 import com.mdsgpp.eef.model.News;
@@ -24,15 +24,15 @@ public class FeedParseController {
 		return this.feed;
 	}
 	
-	public void criaNovoFeed() {
+	public void createNewFeed() {
 		this.feed.reset();
 	}
 	
-	public void criaNovoItem() {
+	public void createNewFeedItem() {
 		this.item = new News(this.feed);
 	}
 	
-	public void adicionaItem() {
+	public void addItem() {
 		this.feed.addFeedItem(this.item);
 	}
 	

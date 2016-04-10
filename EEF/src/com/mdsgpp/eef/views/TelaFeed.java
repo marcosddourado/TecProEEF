@@ -1,7 +1,7 @@
 package com.mdsgpp.eef.visao;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.FeedController;
+import com.mdsgpp.eef.controller.FeedController;
 import com.mdsgpp.eef.modelo.Feed;
 
 import android.net.Uri;

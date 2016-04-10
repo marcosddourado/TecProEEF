@@ -7,7 +7,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.mdsgpp.eef.controle.FeedParseController;
+import com.mdsgpp.eef.controller.FeedParseController;
 import com.mdsgpp.eef.model.Feed;
 
 import android.sax.Element;
@@ -38,21 +38,21 @@ public class FeedParser extends DefaultHandler {
 		 */
 		chanElement.setStartElementListener(new StartElementListener() {
 			public void start(Attributes attributes) {
-				FeedParseController.getInstance().criaNovoFeed();
+				FeedParseController.getInstance().createNewFeed();
 			}
 		});
 
 		// when the 'item' element is opened
 		chanItem.setStartElementListener(new StartElementListener() {
 			public void start(Attributes attributes) {
-				FeedParseController.getInstance().criaNovoItem();
+				FeedParseController.getInstance().createNewFeedItem();
 			}
 		});
 
 		// When the 'item' element is closed
 		chanItem.setEndElementListener(new EndElementListener() {
 			public void end() {
-				FeedParseController.getInstance().adicionaItem();
+				FeedParseController.getInstance().addItem();
 			}
 		});
 

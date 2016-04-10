@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.controle.StateConroller;
+import com.mdsgpp.eef.controller.StateConroller;
 
 import android.content.Context;
 import android.view.LayoutInflater;

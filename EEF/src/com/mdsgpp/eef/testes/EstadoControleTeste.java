@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 
-import com.mdsgpp.eef.controle.StateConroller;
+import com.mdsgpp.eef.controller.StateConroller;
 
 import android.test.AndroidTestCase;
 

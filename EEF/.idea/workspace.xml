@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da531b83-db2b-47af-9b72-acc94e4f26b7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/DataReceiver.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ReceptorDados.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/EstadoControle.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/StateConroller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedControle.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedParseControle.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedParseController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/ParseControle.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/ParseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/model/Census.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/model/Census.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedController.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/FeedController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedParseController.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/FeedParseController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/ParseController.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/ParseController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/StateConroller.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/StateConroller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/EstadoControleTeste.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/EstadoControleTeste.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/FeedControleTeste.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/FeedControleTeste.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/FeedParseControleTeste.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/FeedParseControleTeste.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedParser.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedPersistencia.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedPersistencia.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativoAdapter.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativoAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/ParseControleTeste.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/testes/ParseControleTeste.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoLinha.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoLinha.java" />
@@ -29,22 +19,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGraficoLinha.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGraficoLinha.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaHistoricoEstado.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaHistoricoEstado.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsulta.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsulta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout-land.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout-land.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/menu.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/menu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-v11.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-v14.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-v14.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-xhdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EEF.iws" />
@@ -67,23 +41,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="FeedParseController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedParseController.java">
+        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controller/FeedParseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6331169">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.78084415">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/DataReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -92,8 +62,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/model/Feed.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="27" />
-              <folding />
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding>
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -955,6 +928,7 @@
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedController.java" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedParser.java" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedPersistencia.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/FeedParseController.java" />
       </list>
     </option>
   </component>
@@ -1133,7 +1107,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controle" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1398,14 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/DataReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/parse/FeedParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24350649">
@@ -1422,17 +1388,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/model/Feed.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controller/FeedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3149351">
+        <state vertical-scroll-proportion="0.0016233766">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1440,12 +1398,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controle/FeedParseController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/DataReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6331169">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/model/Feed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controller/FeedParseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78084415">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
           </folding>
         </state>
       </provider>
