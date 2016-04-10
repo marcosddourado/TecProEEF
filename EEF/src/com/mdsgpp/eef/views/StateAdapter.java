@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class EstadoAdapter extends BaseAdapter{
+public class StateAdapter extends BaseAdapter{
 
 	String states[] = {"Acre", "Alagoas", "Amape", "Amazonas", "Bahia",
 			"Ceare", "Distrito Federal","Esperito Santo","Goies", "Maranheo",
@@ -20,10 +20,11 @@ public class EstadoAdapter extends BaseAdapter{
 			"Rio Grande do Sul", "Rondenia", "Roreima", "Santa Catarina", "Seo Paulo",
 			"Sergipe", "Tocantins"};
 	
-	String siglas[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", 
+	String abbreviations[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT",
+			"MS", "MG",
 			"PA", "PB", "PR", "PE",	"PI", "RJ", "RN","RS", "RO", "RR", "SC", "SP", "SE", "TO" };
 	
-	String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
+	String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 			"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 			"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
 			"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
@@ -35,12 +36,12 @@ public class EstadoAdapter extends BaseAdapter{
 	private Context context;
 	
 	static class ViewHolder {
-		private TextView tvNome;
-		private TextView tvSigla;
-		private ImageView tvBandeiras;
+		private TextView tvName;
+		private TextView tvAbbreviation;
+		private ImageView tvFlags;
 	}
 	
-	public EstadoAdapter(Context context) {
+	public StateAdapter(Context context) {
 		this.context = context;
 		mInflater = LayoutInflater.from(context);
 	}
@@ -67,14 +68,14 @@ public class EstadoAdapter extends BaseAdapter{
 			convertView = mInflater.inflate(R.layout.listview_item , null);
 			holder = new ViewHolder();
 		 
-			holder.tvNome = (TextView) convertView.findViewById(R.id.textview_lista_states);
-			holder.tvSigla = (TextView) convertView.findViewById(R.id.textview_lista_siglas);
+			holder.tvName = (TextView) convertView.findViewById(R.id.textview_states_list);
+			holder.tvAbbreviation = (TextView) convertView.findViewById(R.id.textview_states_abbreviations);
 			
-			holder.tvBandeiras = (ImageView) convertView.findViewById(R.id.imageView_bandeiras);
-			if(holder.tvBandeiras==null)
+			holder.tvFlags = (ImageView) convertView.findViewById(R.id.imageView_flags);
+			if(holder.tvFlags==null)
 				Log.i(null, "nulo");
 			else{
-				Log.i(null, "neo nulo");
+				Log.i(null, "nao nulo");
 			}
 
 		} else {
@@ -82,10 +83,11 @@ public class EstadoAdapter extends BaseAdapter{
 			holder = (ViewHolder) convertView.getTag();
 		}
 				
-		holder.tvNome.setText(states[position]);
-		holder.tvSigla.setText(siglas[position]);
-		int idBandeira = context.getResources().getIdentifier(bandeiras[position], "drawable", context.getPackageName());
-		holder.tvBandeiras.setImageResource(idBandeira);
+		holder.tvName.setText(states[position]);
+		holder.tvAbbreviation.setText(abbreviations[position]);
+		int idFlag = context.getResources().getIdentifier(flags[position], "drawable", context
+                .getPackageName());
+		holder.tvFlags.setImageResource(idFlag);
 		convertView.setTag(holder);
 		
 		return convertView;

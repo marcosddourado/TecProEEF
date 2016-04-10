@@ -17,7 +17,7 @@
         android:background="@android:color/transparent" >
 		
         <ImageView   
-        	android:id="@+id/imageView_bandeiras"
+        	android:id="@+id/imageView_flags"
 			android:layout_height="0dip"
     		android:layout_weight="30" 
    			android:layout_width="350dp"

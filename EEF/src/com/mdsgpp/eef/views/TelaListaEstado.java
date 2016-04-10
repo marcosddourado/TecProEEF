@@ -58,7 +58,7 @@ public class TelaListaEstado extends Activity {
 	private void inicializaListView() {
 		ListView listView = (ListView) findViewById(R.id.listview_tela_states);
 
-		EstadoAdapter adapter = new EstadoAdapter(this);
+		StateAdapter adapter = new StateAdapter(this);
 
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(new OnItemClickListener() {

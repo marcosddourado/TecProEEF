@@ -191,9 +191,9 @@ public class TelaEstado extends Activity {
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 				"sergipe", "tocantins"};	
 		
-		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_bandeiras);
-		int idBandeira = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
-		imageViewBandeiras.setImageResource(idBandeira);
+		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_flags);
+		int idFlag = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
+		imageViewBandeiras.setImageResource(idFlag);
 	}
 	
 	public void clickBotaoHistoricoEstado(View view) {

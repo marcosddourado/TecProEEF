@@ -34,7 +34,7 @@ public class IndicativoAdapter extends BaseAdapter{
 	static class ViewHolder{
 		private TextView tvNome;
 		private TextView tvValorIndicativo;
-		private ImageView tvBandeiras;
+		private ImageView tvFlags;
 	}
 	
 	public IndicativoAdapter(String titulo,String indicativoEscolhido, Context context){
@@ -74,7 +74,7 @@ public class IndicativoAdapter extends BaseAdapter{
 				
 			holder.tvNome = (TextView) view.findViewById(R.id.textview_lista_indicativos_nome);
 			holder.tvValorIndicativo = (TextView) view.findViewById(R.id.textview_lista_indicativos_conteudo);
-			holder.tvBandeiras = (ImageView) view.findViewById(R.id.imageview_lista_indicativos_bandeiras);
+			holder.tvFlags = (ImageView) view.findViewById(R.id.imageview_lista_indicativos_bandeiras);
 			view.setTag(holder);
 		} else {
 			holder = (ViewHolder) view.getTag();
@@ -84,15 +84,15 @@ public class IndicativoAdapter extends BaseAdapter{
 			holder.tvNome.setText(titulo);
 			holder.tvNome.setGravity(Gravity.CENTER_HORIZONTAL);
 			holder.tvValorIndicativo.setVisibility(View.GONE);
-			holder.tvBandeiras.setImageResource(NO_SELECTION);
+			holder.tvFlags.setImageResource(NO_SELECTION);
 		} else {//Indicativos e seus valores
 			estado = getItem(position-1);
 			holder.tvNome.setText(estado.get("nome"));
 			holder.tvValorIndicativo.setText( pegaValor(estado.get(indicativoEscolhido)) );
 			holder.tvValorIndicativo.setVisibility(View.VISIBLE);
 			
-			int idBandeira = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
-			holder.tvBandeiras.setImageResource(idBandeira);
+			int idFlag = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
+			holder.tvFlags.setImageResource(idFlag);
 		}
 		
 		

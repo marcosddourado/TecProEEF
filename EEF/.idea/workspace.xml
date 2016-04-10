@@ -7,63 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da531b83-db2b-47af-9b72-acc94e4f26b7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/activity_tela_escolhe_indicativo_grafico.xml" afterPath="$PROJECT_DIR$/res/layout/activity_choose_indicative_graph.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/menu/menu_telas.xml" afterPath="$PROJECT_DIR$/res/menu/menu_screens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/EscolheIndicativo.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ChooseIndicative.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoComparacao.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Acre.txt" afterPath="$PROJECT_DIR$/assets/Acre.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Alagoas.txt" afterPath="$PROJECT_DIR$/assets/Alagoas.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Amapa.txt" afterPath="$PROJECT_DIR$/assets/Amapa.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Amazonas.txt" afterPath="$PROJECT_DIR$/assets/Amazonas.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Bahia.txt" afterPath="$PROJECT_DIR$/assets/Bahia.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Ceara.txt" afterPath="$PROJECT_DIR$/assets/Ceara.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/Comparation.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/Comparation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Distrito Federal.txt" afterPath="$PROJECT_DIR$/assets/Distrito Federal.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Espirito Santo.txt" afterPath="$PROJECT_DIR$/assets/Espirito Santo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Goias.txt" afterPath="$PROJECT_DIR$/assets/Goias.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Maranhao.txt" afterPath="$PROJECT_DIR$/assets/Maranhao.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Mato Grosso do Sul.txt" afterPath="$PROJECT_DIR$/assets/Mato Grosso do Sul.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Mato Grosso.txt" afterPath="$PROJECT_DIR$/assets/Mato Grosso.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Minas Gerais.txt" afterPath="$PROJECT_DIR$/assets/Minas Gerais.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Para.txt" afterPath="$PROJECT_DIR$/assets/Para.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Paraiba.txt" afterPath="$PROJECT_DIR$/assets/Paraiba.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Parana.txt" afterPath="$PROJECT_DIR$/assets/Parana.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Pernambuco.txt" afterPath="$PROJECT_DIR$/assets/Pernambuco.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Piaui.txt" afterPath="$PROJECT_DIR$/assets/Piaui.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/EstadoAdapter.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/StateAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativoAdapter.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativoAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/mdsgpp/eef/R.java" afterPath="$PROJECT_DIR$/gen/com/mdsgpp/eef/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Rio Grande do Norte.txt" afterPath="$PROJECT_DIR$/assets/Rio Grande do Norte.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Rio Grande do Sul.txt" afterPath="$PROJECT_DIR$/assets/Rio Grande do Sul.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Rio de Janeiro.txt" afterPath="$PROJECT_DIR$/assets/Rio de Janeiro.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Rondonia.txt" afterPath="$PROJECT_DIR$/assets/Rondonia.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Roraima.txt" afterPath="$PROJECT_DIR$/assets/Roraima.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Santa Catarina.txt" afterPath="$PROJECT_DIR$/assets/Santa Catarina.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Sao Paulo.txt" afterPath="$PROJECT_DIR$/assets/Sao Paulo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Sergipe.txt" afterPath="$PROJECT_DIR$/assets/Sergipe.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/model/State.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/model/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/StateConroller.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/controller/StateConroller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparation.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaConsultaPorIndicativo.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaConsultaPorIndicativo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoLinha.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoLinha.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEstado.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEstado.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaFeed.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaFeed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGrafico.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGrafico.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGraficoLinha.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGraficoLinha.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaHistoricoEstado.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaHistoricoEstado.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaIndicativosConsultados.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaIndicativosConsultados.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaListaEstado.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaListaEstado.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsulta.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsulta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsultaPorIndicativo.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsultaPorIndicativo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/Tocantins.txt" afterPath="$PROJECT_DIR$/assets/Tocantins.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_tela_compara_estados.xml" afterPath="$PROJECT_DIR$/res/layout/activity_tela_compara_estados.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/activity_tela_compara_estados.xml" afterPath="$PROJECT_DIR$/res/layout-land/activity_tela_compara_estados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_tela_consulta_por_indicativo.xml" afterPath="$PROJECT_DIR$/res/layout/activity_tela_consulta_por_indicativo.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_tela_estado.xml" afterPath="$PROJECT_DIR$/res/layout/activity_tela_estado.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_tela_historico_estado.xml" afterPath="$PROJECT_DIR$/res/layout/activity_tela_historico_estado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_tela_indicativos_consultados.xml" afterPath="$PROJECT_DIR$/res/layout/activity_tela_indicativos_consultados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/listview_item.xml" afterPath="$PROJECT_DIR$/res/layout/listview_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EEF.iws" />
@@ -85,47 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DataReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/DataReceiver.java">
+      <file leaf-file-name="StateAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/StateAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChooseIndicative.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/ChooseIndicative.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4642857">
-              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
-              <folding>
-                <element signature="e#5712#5713#0" expanded="true" />
-                <element signature="e#5732#5733#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelaChooseIndicativeGraficoComparacao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="38" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_choose_indicative_graph.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_choose_indicative_graph.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.551724">
-              <caret line="310" column="33" selection-start-line="310" selection-start-column="33" selection-end-line="310" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.025974026">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,47 +55,7 @@
         <entry file="file://$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.6296296">
-              <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/model/State.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.259259">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StateConroller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/controller/StateConroller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.481482">
-              <caret line="188" column="18" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/model/Grade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_screens.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/menu_screens.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -1053,10 +933,12 @@
         <option value="$PROJECT_DIR$/res/layout/activity_tela_consulta_por_indicativo.xml" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoLinha.java" />
         <option value="$PROJECT_DIR$/assets/Acre.txt" />
-        <option value="$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_choose_indicative_graph.xml" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ChooseIndicative.java" />
+        <option value="$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/StateAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativoAdapter.java" />
       </list>
     </option>
   </component>
@@ -1752,14 +1634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6296296">
-          <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_choose_indicative_graph.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1781,12 +1655,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/ChooseIndicative.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4642857">
+        <state vertical-scroll-proportion="0.0">
           <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
           <folding>
             <element signature="e#5712#5713#0" expanded="true" />
             <element signature="e#5732#5733#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativoAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4642857">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generated/source/r/debug/com/mdsgpp/eef/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6296296">
+          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/StateAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025974026">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

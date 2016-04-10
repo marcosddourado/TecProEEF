@@ -60,7 +60,7 @@
             android:paddingBottom="30dp" >
 
             <ImageView
-                android:id="@+id/imageView_bandeiras1"
+                android:id="@+id/imageView_flags1"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -68,7 +68,7 @@
                 android:contentDescription="@string/string_vazia" />
 
             <ImageView
-                android:id="@+id/imageView_bandeiras2"
+                android:id="@+id/imageView_flags2"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

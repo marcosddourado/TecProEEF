@@ -105,9 +105,9 @@ public final class R {
         public static final int graph=0x7f0900d6;
         public static final int idebSobreConteudo=0x7f090007;
         public static final int idebSobreTitle=0x7f090006;
-        public static final int imageView_bandeiras=0x7f0900a2;
-        public static final int imageView_bandeiras1=0x7f09001c;
-        public static final int imageView_bandeiras2=0x7f09001d;
+        public static final int imageView_flags=0x7f0900a2;
+        public static final int imageView_flags1=0x7f09001c;
+        public static final int imageView_flags2=0x7f09001d;
         public static final int imageview_lista_indicativos_bandeiras=0x7f090116;
         public static final int linearLayoutVertical=0x7f090000;
         public static final int linearlayout_estado=0x7f0900a1;
@@ -351,10 +351,10 @@ public final class R {
         public static final int text_view_grafico_historico=0x7f0900d8;
         public static final int text_view_titulo_grafico=0x7f0900d5;
         public static final int text_view_titulo_grafico_historico=0x7f0900d7;
-        public static final int textview_lista_estados=0x7f090115;
+        public static final int textview_states_list=0x7f090115;
         public static final int textview_lista_indicativos_conteudo=0x7f090118;
         public static final int textview_lista_indicativos_nome=0x7f090117;
-        public static final int textview_lista_siglas=0x7f090114;
+        public static final int textview_states_abbreviations=0x7f090114;
         public static final int textview_titulo=0x7f090090;
         public static final int title_activity_tela_sobre_estado=0x7f09010b;
         public static final int title_activity_tela_sobre_lista_estado=0x7f090110;

@@ -537,13 +537,13 @@ public class TelaResultadoConsulta extends Activity {
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 				"sergipe", "tocantins"};	
 		
-		imageViewBandeira01 = (ImageView) findViewById(R.id.imageView_bandeiras1);
-		int idBandeira01 = getResources().getIdentifier(bandeiras[positionEstado1], "drawable", getPackageName());
-		imageViewBandeira01.setImageResource(idBandeira01);
+		imageViewBandeira01 = (ImageView) findViewById(R.id.imageView_flags1);
+		int idFlag01 = getResources().getIdentifier(bandeiras[positionEstado1], "drawable", getPackageName());
+		imageViewBandeira01.setImageResource(idFlag01);
 	
-		imageViewBandeira02 = (ImageView) findViewById(R.id.imageView_bandeiras2);
-		int idBandeira02 = getResources().getIdentifier(bandeiras[positionEstado2], "drawable", getPackageName());
-		imageViewBandeira02.setImageResource(idBandeira02);
+		imageViewBandeira02 = (ImageView) findViewById(R.id.imageView_flags2);
+		int idFlag02 = getResources().getIdentifier(bandeiras[positionEstado2], "drawable", getPackageName());
+		imageViewBandeira02.setImageResource(idFlag02);
 	
 		
 		
