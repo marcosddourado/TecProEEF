@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
     }
 
     public void clickButtonGeneralComparations(View view) {
-    	Intent intent = new Intent(this, TelaComparacoesGerais.class);
+    	Intent intent = new Intent(this, ScreenGeneralComparations.class);
 
 		startActivity(intent);
     }

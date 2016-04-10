@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class TelaComparacoesGerais extends Activity {
+public class ScreenGeneralComparations extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class TelaComparacoesGerais extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -46,12 +46,12 @@ public class TelaComparacoesGerais extends Activity {
     	startActivity(intent);
     }
 	
-	public void clickBotaoComparacao(View view) {
-		Intent intent = new Intent(this, TelaComparation.class);
+	public void clickButtonComparation(View view) {
+		Intent intent = new Intent(this, ScreenComparation.class);
 		startActivity(intent);
 	}
 	
-	public void clickBotaoIndicativos(View view) {
+	public void clickButtonIndicatives(View view) {
 		Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
 		startActivity(intent);
 	}

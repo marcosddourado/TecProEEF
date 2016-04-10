@@ -72,8 +72,8 @@ public class TelaGrafico extends Activity {
 		// Captura o intent que abriu a activity
 		Intent intent = getIntent();
 		// Captura o valor transferido através da intent
-		estado1 = intent.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		estado2 = intent.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		estado1 = intent.getIntExtra("INDEX_CHOOSED_STATE1", 0);
+		estado2 = intent.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 		titulo = intent.getStringExtra("TITULO");
 		indicativo = intent.getStringExtra("INDICATIVO");
 

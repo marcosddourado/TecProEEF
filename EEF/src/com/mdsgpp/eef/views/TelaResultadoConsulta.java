@@ -169,8 +169,8 @@ public class TelaResultadoConsulta extends Activity {
 		Intent intent = getIntent();
 		// Captura o valor transferido atraves da intent
 		
-		int position1 = intent.getIntExtra("INDEX_ESTADO1_ESCOLHIDO",5);
-		int position2 = intent.getIntExtra("INDEX_ESTADO2_ESCOLHIDO",0);
+		int position1 = intent.getIntExtra("INDEX_CHOOSED_STATE1",5);
+		int position2 = intent.getIntExtra("INDEX_CHOOSED_STATE2",0);
 		
 		capturaBandeiras(position1, position2);
 		
@@ -505,8 +505,8 @@ public class TelaResultadoConsulta extends Activity {
 		Intent intent = new Intent(this, TelaChooseIndicativeGraficoComparacao.class);
 		Intent intent1 = getIntent();
 
-		int position1 = intent1.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		int position2 = intent1.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		int position1 = intent1.getIntExtra("INDEX_CHOOSED_STATE1", 0);
+		int position2 = intent1.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 
 		intent.putExtra("CB_IDEB", bIdeb);
 		intent.putExtra("CB_PIB", bPib);
@@ -523,8 +523,8 @@ public class TelaResultadoConsulta extends Activity {
 		intent.putExtra("CB_TAXA_ABANDONO", bTaxaAbandono);
 		intent.putExtra("CB_TAXA_DISTORCAO", bTaxaDistorcao);
 		
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position2);
+		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
+		intent.putExtra("INDEX_CHOOSED_STATE2", position2);
 
 		startActivity(intent);
 	}

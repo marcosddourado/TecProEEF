@@ -7,7 +7,7 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.view.View;
 
-public class TelaComparation extends Comparation {
+public class ScreenComparation extends Comparation {
 	@Override
 	public void clickButtonStatesComparation(View view) {
 		Intent intent = new Intent(this, TelaIndicativosConsultados.class);
@@ -19,8 +19,8 @@ public class TelaComparation extends Comparation {
 		int position2 = getTodosEstados().indexOf(getStatesSpinner().getSelectedItem()
 				.toString());
 
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position2);
+		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
+		intent.putExtra("INDEX_CHOOSED_STATE2", position2);
 
 		startActivity(intent);
 		

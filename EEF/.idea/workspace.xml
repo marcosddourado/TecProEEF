@@ -7,8 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da531b83-db2b-47af-9b72-acc94e4f26b7" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparation.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenComparation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGrafico.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaGrafico.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaIndicativosConsultados.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaIndicativosConsultados.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsulta.java" afterPath="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaResultadoConsulta.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_tela_comparacoes_gerais.xml" afterPath="$PROJECT_DIR$/res/layout/activity_tela_comparacoes_gerais.xml" />
     </list>
     <ignored path="EEF.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,54 +35,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StateAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/StateAdapter.java">
+      <file leaf-file-name="ScreenGeneralComparations.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.0957792">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeedAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/FeedAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.444445">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndicativeAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativeAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7564935">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <file leaf-file-name="activity_tela_comparacoes_gerais.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_tela_comparacoes_gerais.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7586207">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state vertical-scroll-proportion="-14.034483">
+              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -954,7 +930,6 @@
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaEscolheIndicativoGraficoLinha.java" />
         <option value="$PROJECT_DIR$/assets/Acre.txt" />
         <option value="$PROJECT_DIR$/res/layout/activity_choose_indicative_graph.xml" />
-        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ChooseIndicative.java" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/StateAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/FeedAdapter.java" />
@@ -964,6 +939,11 @@
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/IndicativeAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ComparationScreen.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenComparation.java" />
+        <option value="$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_tela_comparacoes_gerais.xml" />
       </list>
     </option>
   </component>
@@ -1526,14 +1506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaComparation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14610389">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/mdsgpp/eef/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33279222">
@@ -1634,14 +1606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.551724">
           <caret line="310" column="33" selection-start-line="310" selection-start-column="33" selection-end-line="310" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="38" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1753,8 +1717,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7564935">
+        <state vertical-scroll-proportion="0.0">
           <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/TelaChooseIndicativeGraficoComparacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenComparation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_tela_comparacoes_gerais.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.034483">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0957792">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="38" />
           <folding />
         </state>
       </provider>

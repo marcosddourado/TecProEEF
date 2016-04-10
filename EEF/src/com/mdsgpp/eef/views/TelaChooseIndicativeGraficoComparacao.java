@@ -38,8 +38,8 @@ public class TelaChooseIndicativeGraficoComparacao extends ChooseIndicative {
 	public void capturaInformacoes() {
 		Intent intentRecebida = getIntent();
 		
-		position1 = intentRecebida.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		position2 = intentRecebida.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		position1 = intentRecebida.getIntExtra("INDEX_CHOOSED_STATE1", 0);
+		position2 = intentRecebida.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 
 		bIdeb = intentRecebida.getBooleanExtra("CB_IDEB", false);
 		bPib = intentRecebida.getBooleanExtra("CB_PIB", false);
@@ -133,8 +133,8 @@ public class TelaChooseIndicativeGraficoComparacao extends ChooseIndicative {
 	public void clickButtonNext(View view) {
 		Intent intent = new Intent(this, TelaGrafico.class);
 		
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position2);
+		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
+		intent.putExtra("INDEX_CHOOSED_STATE2", position2);
 		intent.putExtra("INDICATIVO", getIndicative());
 		intent.putExtra("TITULO", getTittle());
 
