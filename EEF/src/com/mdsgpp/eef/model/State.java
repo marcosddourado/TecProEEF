@@ -13,7 +13,7 @@ public class State {
 	private Census census[];//controle;xml;declarados;inicializado; 			//done
 	private Ideb idebs[]; //Índice de Desenvolvimento de Educação Básica		//done
 	private Grade studentGradesPerClass[];//controle;xml;declarados;inicializado; //done
-	private Grade averageClassHours[];//controle;xml;declarados;inicializado;	//done
+	private Grade gradeClassHours[];//controle;xml;declarados;inicializado;		//done
 	private Project scienceAndThecnologyProjects[];								//done
 	private Project firstProjects[];											//done
 	private Project inctProject[];												//done
@@ -172,16 +172,16 @@ public class State {
 		this.studentGradesPerClass = this.setMedia(information, namesOfIndicative);
 	}
 
-	public Grade[] getAverageClassHours() {
-		if (averageClassHours == null) {
+	public Grade[] getGradeClassHours() {
+		if (gradeClassHours == null) {
 			return returnEmptyGrade();
 		}
 
-		return averageClassHours;
+		return gradeClassHours;
 	}
 
-	public void setAverageClassHours(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.averageClassHours = this.setMedia(information, namesOfIndicative);
+	public void setGradeClassHours(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
+		this.gradeClassHours = this.setMedia(information, namesOfIndicative);
 	}
 
 	public Grade[] getAgeGradeDistortionRate() {
@@ -338,7 +338,7 @@ public class State {
 	}
 
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {
-		String[] averageClassHoursIndicatives = { "horas_aula_ensino_fundamental", "horas_aula_ensino_medio" };
+		String[] gradeClassHoursIndicatives = { "horas_aula_ensino_fundamental", "horas_aula_ensino_medio" };
 		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_fundamental", "alunos_por_turma_ensino_medio" };
 		String[] scienceAndThecnologyProjectsIndicatives = { "numero_projetos", "valor_investido" };
 		String[] firstProjectsIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
@@ -361,7 +361,7 @@ public class State {
 		this.setScienceAndThecnologyProjects(information, scienceAndThecnologyProjectsIndicatives);
 
 		this.setStudentGradesPerClass(information, studentGradesPerClassIndicatives);
-		this.setAverageClassHours(information, averageClassHoursIndicatives);
+		this.setGradeClassHours(information, gradeClassHoursIndicatives);
 		this.setAgeGradeDistortionRate(information, ageGradeDistortionRate);
 		this.setEducationalAchievementRate(information, educationalAchievementRate);
 		this.setSchoolDropoutRate(information, schoolDropoutRate);
