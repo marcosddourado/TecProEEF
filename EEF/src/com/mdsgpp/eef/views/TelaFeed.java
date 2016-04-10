@@ -1,4 +1,4 @@
-package com.mdsgpp.eef.visao;
+package com.mdsgpp.eef.views;
 
 import com.mdsgpp.eef.R;
 import com.mdsgpp.eef.controller.FeedController;
