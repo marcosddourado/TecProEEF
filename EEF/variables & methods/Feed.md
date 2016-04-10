@@ -17,12 +17,12 @@
 
   * `ArrayList<News>` getFeedItens()
 
-  * `News` getFeedItem(int position)
-    >Retrieve the item held in position 'position'
+  * `News` getFeedItem(`int` position)
+    >Retrieve the item held in position 'position' from 'feedItens'
 
-  * `void` setFeedItens(ArrayList<News> feedItens)
+  * `void` setFeedItens(`ArrayList<News>` feedItens)
 
-  * `void` addFeedItem(News newFeedItem)
+  * `void` addFeedItem(`News` newFeedItem)
     >Add 'newFeedItem' to 'feedItens'
 
   * `int` getFeedItensSize()
