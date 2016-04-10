@@ -1,11 +1,11 @@
 package com.mdsgpp.eef.model;
 
-//grade grade for schhols per state/year
+//grade grade for schhols per stateGrade/year
 public class Grade {
 		private double elementarySchoolGrade;
 		private double highSchoolGrade;
 		private int gradeYear;
-		private State state;
+		private State stateGrade;
 
 		public Grade() {
 		}
@@ -32,11 +32,11 @@ public class Grade {
 		}
 
 		public State getState() {
-			return state;
+			return stateGrade;
 		}
 
-		public void setState(State state) {
-			this.state = state;
+		public void setState(State stateGrade) {
+			this.stateGrade = stateGrade;
 		}
 
 		public int getGradeYear() {
