@@ -54,7 +54,7 @@ public class State {
 		census = new Census[highSchoolData.size()];
 		for (int i=0; i<census.length; i++) {
 			census[i] = new Census();
-			census[i].setState(this);
+			census[i].setCensusState(this);
 			census[i].setCensusYear(Integer.parseInt(highSchoolData.get(i)[0]));
 			census[i].setFinalElementarySchoolYears(Double.parseDouble(elementarySchoolFinalData.get(i)[1].replaceAll("\\.", "")));
 			census[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll("\\.", "")));
@@ -125,8 +125,9 @@ public class State {
 			if(i<ideb.length-1){
 				ideb[i].setIdebYear(Integer.parseInt(highSchoolData.get(i)[0]));
 			}
-			ideb[i].setFundamental(Double.parseDouble(elementarySchoolFinalData.get(i)[1].replaceAll(",", ".")));
-			ideb[i].setMedio(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
+			ideb[i].setElementarySchool(Double.parseDouble(elementarySchoolFinalData.get(i)[1].replaceAll(",",
+					".")));
+			ideb[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
 			ideb[i].setInitialGrades(Double.parseDouble(elementarySchoolInitialData.get(i)[1].replaceAll(",", ".")));
 		}
 
@@ -137,7 +138,7 @@ public class State {
 		Grade emptyGrade[] = { new Grade(0,0) };
 		emptyGrade[0].setGradeYear(0);
 
-		return empty;
+		return emptyGrade;
 	}
 
 	public Grade[] setGrade(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -153,8 +154,8 @@ public class State {
 			readGrade[i] = new Grade();
 			readGrade[i].setState(this);
 			readGrade[i].setGradeYear(Integer.parseInt(highSchoolData.get(i)[0]));
-			readGrade[i].setEnsinoFundamental(Double.parseDouble(dataFundamental.get(i)[1].replaceAll(",", ".")));
-			readGrade[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
+			readGrade[i].setElementarySchoolGrade(Double.parseDouble(dataFundamental.get(i)[1].replaceAll(",", ".")));
+			readGrade[i].setHighSchoolGrade(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
 		}
 
 		return readGrade;
@@ -169,7 +170,7 @@ public class State {
 	}
 
 	public void setStudentGradesPerClass(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.studentGradesPerClass = this.setMedia(information, namesOfIndicative);
+		this.studentGradesPerClass = this.setGrade(information, namesOfIndicative);
 	}
 
 	public Grade[] getGradeClassHours() {
@@ -181,7 +182,7 @@ public class State {
 	}
 
 	public void setGradeClassHours(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.gradeClassHours = this.setMedia(information, namesOfIndicative);
+		this.gradeClassHours = this.setGrade(information, namesOfIndicative);
 	}
 
 	public Grade[] getAgeGradeDistortionRate() {
@@ -193,7 +194,7 @@ public class State {
 	}
 
 	public void setAgeGradeDistortionRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.ageGradeDistortionRate = this.setMedia(information, namesOfIndicative);
+		this.ageGradeDistortionRate = this.setGrade(information, namesOfIndicative);
 	}
 
 	public String getStateName() {
@@ -322,7 +323,7 @@ public class State {
 	}
 
 	public void setEducationalAchievementRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.educationalAchievementRate = this.setMedia(information, namesOfIndicative);
+		this.educationalAchievementRate = this.setGrade(information, namesOfIndicative);
 	}
 
 	public Grade[] getSchoolDropoutRate() {
@@ -334,7 +335,7 @@ public class State {
 	}
 
 	public void setSchoolDropoutRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.schoolDropoutRate = this.setMedia(information, namesOfIndicative);
+		this.schoolDropoutRate = this.setGrade(information, namesOfIndicative);
 	}
 
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {

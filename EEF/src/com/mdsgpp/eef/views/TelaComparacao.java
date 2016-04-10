@@ -11,16 +11,16 @@ public class TelaComparacao extends Comparacao {
 	@Override
 	public void clickBotaoComparacaoEstados(View view) {
 		Intent intent = new Intent(this, TelaIndicativosConsultados.class);
-		getEstadosSpinner01().getSelectedItem().toString();
-		getEstadosSpinner().getSelectedItem().toString();
+		getStatesSpinner01().getSelectedItem().toString();
+		getStatesSpinner().getSelectedItem().toString();
 
-		int posicao1 = getTodosEstados().indexOf(getEstadosSpinner01().getSelectedItem()
+		int position1 = getTodosEstados().indexOf(getStatesSpinner01().getSelectedItem()
 				.toString());
-		int posicao2 = getTodosEstados().indexOf(getEstadosSpinner().getSelectedItem()
+		int position2 = getTodosEstados().indexOf(getStatesSpinner().getSelectedItem()
 				.toString());
 
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", posicao1);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", posicao2);
+		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);
+		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position2);
 
 		startActivity(intent);
 		

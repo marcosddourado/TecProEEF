@@ -9,7 +9,7 @@ import com.mdsgpp.eef.R;
 
 public class TelaEscolheIndicativoGraficoComparacao extends EscolheIndicativo {
 	
-	private int posicao1, posicao2;
+	private int position1, position2;
 	
 	private boolean bCenso, bAlunosTurma, bHorasAula, bTaxaDistorcao,
 			bTaxaAbandono, bAprovacao, bIdeb, bPib, bPopulacao,
@@ -38,8 +38,8 @@ public class TelaEscolheIndicativoGraficoComparacao extends EscolheIndicativo {
 	public void capturaInformacoes() {
 		Intent intentRecebida = getIntent();
 		
-		posicao1 = intentRecebida.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		posicao2 = intentRecebida.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		position1 = intentRecebida.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
+		position2 = intentRecebida.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
 
 		bIdeb = intentRecebida.getBooleanExtra("CB_IDEB", false);
 		bPib = intentRecebida.getBooleanExtra("CB_PIB", false);
@@ -133,8 +133,8 @@ public class TelaEscolheIndicativoGraficoComparacao extends EscolheIndicativo {
 	public void clickBotaoAvancar(View view) {
 		Intent intent = new Intent(this, TelaGrafico.class);
 		
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", posicao1);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", posicao2);
+		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);
+		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position2);
 		intent.putExtra("INDICATIVO", getIndicativo());
 		intent.putExtra("TITULO", getTitulo());
 

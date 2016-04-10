@@ -21,7 +21,7 @@ public class TelaIndicativosConsultados extends Activity {
 			bProjetosDifusao, bProjetosIniciacao, bProjetosJovens, bCenso,
 			bAlunosTurma, bHorasAula, bTaxaDistorcao, bTaxaAbandono,
 			bAprovacao;
-	int posicao01, posicao02;
+	int position01, position02;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +31,8 @@ public class TelaIndicativosConsultados extends Activity {
 
 		inicializaCheckBox();
 
-		posicao01 = intentAuxiliar.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		posicao02 = intentAuxiliar.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		position01 = intentAuxiliar.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
+		position02 = intentAuxiliar.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
 	}
 
 	@Override
@@ -142,8 +142,8 @@ public class TelaIndicativosConsultados extends Activity {
 		intent.putExtra("CB_TAXA_ABANDONO", bTaxaAbandono);
 		intent.putExtra("CB_TAXA_DISTORCAO", bTaxaDistorcao);
 
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", posicao01);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", posicao02);
+		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position01);
+		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position02);
 
 		startActivity(intent);
 	}

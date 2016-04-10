@@ -77,17 +77,17 @@ public class TelaGrafico extends Activity {
 		titulo = intent.getStringExtra("TITULO");
 		indicativo = intent.getStringExtra("INDICATIVO");
 
-		HashMap<String, String> informacoesEstado1 = new HashMap<String, String>();
-		HashMap<String, String> informacoesEstado2 = new HashMap<String, String>();
+		HashMap<String, String> stateInformations1 = new HashMap<String, String>();
+		HashMap<String, String> stateInformations2 = new HashMap<String, String>();
 
 		try {
-			informacoesEstado1 = (HashMap<String, String>) StateConroller
-					.getInstancia(this).lerEstado(estado1).clone();
-			informacoesEstado2 = (HashMap<String, String>) StateConroller
-					.getInstancia(this).lerEstado(estado2).clone();
+			stateInformations1 = (HashMap<String, String>) StateConroller
+					.getInstance(this).lerEstado(estado1).clone();
+			stateInformations2 = (HashMap<String, String>) StateConroller
+					.getInstance(this).lerEstado(estado2).clone();
 			
-			converteDados(informacoesEstado1, informacoesEstado2);
-			criaGrafico(informacoesEstado1, informacoesEstado2);
+			converteDados(stateInformations1, stateInformations2);
+			criaGrafico(stateInformations1, stateInformations2);
 			
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
@@ -95,17 +95,17 @@ public class TelaGrafico extends Activity {
 		}
 	}
 	
-	private void criaGrafico(HashMap<String, String> informacoesEstado1,
-			HashMap<String, String> informacoesEstado2) {
+	private void criaGrafico(HashMap<String, String> stateInformations1,
+			HashMap<String, String> stateInformations2) {
 		
         Bar estado1Barra = new Bar();
         estado1Barra.setColor(Color.parseColor("#4682B4"));
-        estado1Barra.setName(informacoesEstado1.get("nome"));
+        estado1Barra.setName(stateInformations1.get("nome"));
 		estado1Barra.setValue(valorIndicativoEstado1);
         
         Bar estado2Barra = new Bar();       
         estado2Barra.setColor(Color.parseColor("#191970"));
-        estado2Barra.setName(informacoesEstado2.get("nome"));
+        estado2Barra.setName(stateInformations2.get("nome"));
         estado2Barra.setValue(valorIndicativoEstado2); 
 
 		ArrayList<Bar> barras = new ArrayList<Bar>();     
@@ -119,11 +119,11 @@ public class TelaGrafico extends Activity {
         grafico.setBars(barras);
 	}
 
-	private void converteDados(HashMap<String, String> informacoesEstado1,
-			HashMap<String, String> informacoesEstado2) {
+	private void converteDados(HashMap<String, String> stateInformations1,
+			HashMap<String, String> stateInformations2) {
 		
-		String estado1IndicativoString = informacoesEstado1.get(indicativo);
-		String estado2IndicativoString = informacoesEstado2.get(indicativo);
+		String estado1IndicativoString = stateInformations1.get(indicativo);
+		String estado2IndicativoString = stateInformations2.get(indicativo);
 	
 				
 		estado1IndicativoString = estado1IndicativoString.replaceAll("[^\\d,]", "");/*como os dados viram como estão escritos na tela

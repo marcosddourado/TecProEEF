@@ -50,10 +50,10 @@ public class IndicativoAdapter extends BaseAdapter{
 	}
 
 	@Override
-	public HashMap<String, String> getItem(int posicao) {
+	public HashMap<String, String> getItem(int position) {
 		HashMap<String, String> estado = null;
 		try {
-			estado = StateConroller.getInstancia(context).lerEstado(posicao);
+			estado = StateConroller.getInstance(context).lerEstado(position);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -61,13 +61,13 @@ public class IndicativoAdapter extends BaseAdapter{
 	}
 
 	@Override
-	public long getItemId(int posicao) {
-		return posicao;
+	public long getItemId(int position) {
+		return position;
 	}
 
 	
 	@Override
-	public View getView(int posicao, View view, ViewGroup viewGroup) {
+	public View getView(int position, View view, ViewGroup viewGroup) {
 		if(view == null) {
 			view = this.inflater.inflate(R.layout.listview_item_indicativos, null);
 			holder = new ViewHolder();
@@ -80,18 +80,18 @@ public class IndicativoAdapter extends BaseAdapter{
 			holder = (ViewHolder) view.getTag();
 		}
 		
-		if(posicao == 0){//Titulo
+		if(position == 0){//Titulo
 			holder.tvNome.setText(titulo);
 			holder.tvNome.setGravity(Gravity.CENTER_HORIZONTAL);
 			holder.tvValorIndicativo.setVisibility(View.GONE);
 			holder.tvBandeiras.setImageResource(NO_SELECTION);
 		} else {//Indicativos e seus valores
-			estado = getItem(posicao-1);
+			estado = getItem(position-1);
 			holder.tvNome.setText(estado.get("nome"));
 			holder.tvValorIndicativo.setText( pegaValor(estado.get(indicativoEscolhido)) );
 			holder.tvValorIndicativo.setVisibility(View.VISIBLE);
 			
-			int idBandeira = context.getResources().getIdentifier(bandeiras[posicao-1], "drawable", context.getPackageName());
+			int idBandeira = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
 			holder.tvBandeiras.setImageResource(idBandeira);
 		}
 		

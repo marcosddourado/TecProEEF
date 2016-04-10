@@ -93,16 +93,16 @@ public class TelaEstado extends Activity {
 	
 	private void capturaInformacoes() {
 		Intent intent = getIntent();
-		int posicao = intent.getIntExtra("INDEX_ESTADO_ESCOLHIDO", 0);	
+		int position = intent.getIntExtra("INDEX_ESTADO_ESCOLHIDO", 0);
 		
 		inicializaCamposTexto();
 		
 	    HashMap<String, String> informacoes = new HashMap <String, String>();
 	    
 	    try {
-			informacoes = StateConroller.getInstancia(this).lerEstado(posicao);
+			informacoes = StateConroller.getInstance(this).lerEstado(position);
 			preencheCamposTexto(informacoes);
-			setImagem(posicao);
+			setImagem(position);
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
 			Log.i("IOException - TelaEstado", e.toString());
@@ -183,7 +183,7 @@ public class TelaEstado extends Activity {
 		
 	}
 	
-	private void setImagem(int posicao) {
+	private void setImagem(int position) {
 		String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
@@ -192,17 +192,17 @@ public class TelaEstado extends Activity {
 				"sergipe", "tocantins"};	
 		
 		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_bandeiras);
-		int idBandeira = getResources().getIdentifier(bandeiras[posicao], "drawable", getPackageName());
+		int idBandeira = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
 		imageViewBandeiras.setImageResource(idBandeira);
 	}
 	
 	public void clickBotaoHistoricoEstado(View view) {
 		Intent intentAux = getIntent();
-		int posicao = intentAux.getIntExtra("INDEX_ESTADO_ESCOLHIDO", 0);
-		Log.i("posicao tela estado", posicao+"");
+		int position = intentAux.getIntExtra("INDEX_ESTADO_ESCOLHIDO", 0);
+		Log.i("position tela estado", position+"");
 		
 		Intent intent = new Intent(this, TelaHistoricoEstado.class);
-		intent.putExtra("ESTADO", posicao);
+		intent.putExtra("ESTADO", position);
 		
 		startActivity(intent);
 	}

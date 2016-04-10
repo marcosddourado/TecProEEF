@@ -169,10 +169,10 @@ public class TelaResultadoConsulta extends Activity {
 		Intent intent = getIntent();
 		// Captura o valor transferido atraves da intent
 		
-		int posicao1 = intent.getIntExtra("INDEX_ESTADO1_ESCOLHIDO",5);
-		int posicao2 = intent.getIntExtra("INDEX_ESTADO2_ESCOLHIDO",0);
+		int position1 = intent.getIntExtra("INDEX_ESTADO1_ESCOLHIDO",5);
+		int position2 = intent.getIntExtra("INDEX_ESTADO2_ESCOLHIDO",0);
 		
-		capturaBandeiras(posicao1, posicao2);
+		capturaBandeiras(position1, position2);
 		
 		bIdeb = intent.getBooleanExtra("CB_IDEB", false);
 		bPib = intent.getBooleanExtra("CB_PIB", false);
@@ -189,16 +189,16 @@ public class TelaResultadoConsulta extends Activity {
 		bTaxaAbandono = intent.getBooleanExtra("CB_TAXA_ABANDONO", false);
 		bAprovacao = intent.getBooleanExtra("CB_APROVACAO", false);
 
-		HashMap<String, String> informacoesEstado1 = new HashMap<String, String>();
-		HashMap<String, String> informacoesEstado2 = new HashMap<String, String>();
+		HashMap<String, String> stateInformations1 = new HashMap<String, String>();
+		HashMap<String, String> stateInformations2 = new HashMap<String, String>();
 
 		try {
-			informacoesEstado1 = (HashMap<String, String>) StateConroller
-					.getInstancia(this).lerEstado(posicao1).clone();
-			informacoesEstado2 = (HashMap<String, String>) StateConroller
-					.getInstancia(this).lerEstado(posicao2).clone();
+			stateInformations1 = (HashMap<String, String>) StateConroller
+					.getInstance(this).lerEstado(position1).clone();
+			stateInformations2 = (HashMap<String, String>) StateConroller
+					.getInstance(this).lerEstado(position2).clone();
 
-			preencheCamposTexto(informacoesEstado1, informacoesEstado2);
+			preencheCamposTexto(stateInformations1, stateInformations2);
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
 			Log.i("IOException - TelaComparaEstados",e.toString());
@@ -505,8 +505,8 @@ public class TelaResultadoConsulta extends Activity {
 		Intent intent = new Intent(this, TelaEscolheIndicativoGraficoComparacao.class);
 		Intent intent1 = getIntent();
 
-		int posicao1 = intent1.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		int posicao2 = intent1.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		int position1 = intent1.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
+		int position2 = intent1.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
 
 		intent.putExtra("CB_IDEB", bIdeb);
 		intent.putExtra("CB_PIB", bPib);
@@ -523,13 +523,13 @@ public class TelaResultadoConsulta extends Activity {
 		intent.putExtra("CB_TAXA_ABANDONO", bTaxaAbandono);
 		intent.putExtra("CB_TAXA_DISTORCAO", bTaxaDistorcao);
 		
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", posicao1);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", posicao2);
+		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);
+		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position2);
 
 		startActivity(intent);
 	}
 	
-	public void capturaBandeiras(int posicaoEstado1, int posicaoEstado2){
+	public void capturaBandeiras(int positionEstado1, int positionEstado2){
 		String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
@@ -538,11 +538,11 @@ public class TelaResultadoConsulta extends Activity {
 				"sergipe", "tocantins"};	
 		
 		imageViewBandeira01 = (ImageView) findViewById(R.id.imageView_bandeiras1);
-		int idBandeira01 = getResources().getIdentifier(bandeiras[posicaoEstado1], "drawable", getPackageName());
+		int idBandeira01 = getResources().getIdentifier(bandeiras[positionEstado1], "drawable", getPackageName());
 		imageViewBandeira01.setImageResource(idBandeira01);
 	
 		imageViewBandeira02 = (ImageView) findViewById(R.id.imageView_bandeiras2);
-		int idBandeira02 = getResources().getIdentifier(bandeiras[posicaoEstado2], "drawable", getPackageName());
+		int idBandeira02 = getResources().getIdentifier(bandeiras[positionEstado2], "drawable", getPackageName());
 		imageViewBandeira02.setImageResource(idBandeira02);
 	
 		

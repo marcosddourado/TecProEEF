@@ -60,7 +60,7 @@ public class FeedParser extends DefaultHandler {
 		// text
 		itemTitle.setEndTextElementListener(new EndTextElementListener() {
 			public void end(String body) {
-				FeedParseController.getInstance().getItem().setTitle(body);
+				FeedParseController.getInstance().getItem().setNewsTitle(body);
 			}
 		});
 
@@ -69,7 +69,7 @@ public class FeedParser extends DefaultHandler {
 		itemDescription.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
-				FeedParseController.getInstance().getItem().setDescription(body);
+				FeedParseController.getInstance().getItem().setNewsDescription(body);
 			}
 		});
 
@@ -78,7 +78,7 @@ public class FeedParser extends DefaultHandler {
 		itemCategory.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
-				FeedParseController.getInstance().getItem().setCategory(body);
+				FeedParseController.getInstance().getItem().setNewsCategory(body);
 			}
 		});
 
@@ -87,7 +87,7 @@ public class FeedParser extends DefaultHandler {
 		itemPubDate.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
-				FeedParseController.getInstance().getItem().setDate(body);
+				FeedParseController.getInstance().getItem().setNewsDate(body);
 			}
 		});
 
@@ -96,7 +96,7 @@ public class FeedParser extends DefaultHandler {
 		itemLink.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
-				FeedParseController.getInstance().getItem().setLink(body);
+				FeedParseController.getInstance().getItem().setNewsLink(body);
 			}
 		});
 

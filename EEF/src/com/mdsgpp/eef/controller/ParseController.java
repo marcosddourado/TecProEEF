@@ -10,20 +10,20 @@ import com.mdsgpp.eef.parse.DadosParse;
 
 public class ParseController {
 
-	private static ParseController instancia;
+	private static ParseController instance;
 	DadosParse parser;
 
 	public ParseController(Context context) {
 		parser = new DadosParse(context);
 	}
 
-	public static ParseController getInstancia(Context context) {
-		if (instancia == null) instancia = new ParseController(context);
-		return instancia;
+	public static ParseController getInstance(Context context) {
+		if (instance == null) instance = new ParseController(context);
+		return instance;
 	}
 	
-	public HashMap<String, ArrayList<String[]>> getInformacoes(int posicao) throws IOException {
-		return parser.getEstado(posicao);
+	public HashMap<String, ArrayList<String[]>> getInformations(int position) throws IOException {
+		return parser.getState(position);
 	}
 	
 }

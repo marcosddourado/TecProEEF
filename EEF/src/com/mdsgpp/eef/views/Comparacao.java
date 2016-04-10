@@ -54,7 +54,7 @@ public abstract class Comparacao extends Activity{
 				.setOnItemSelectedListener(new OnItemSelectedListener() {
 					@Override
 					public void onItemSelected(AdapterView<?> adapter,
-							View view, int posicao, long id) {
+							View view, int position, long id) {
 						atualizaValoresSpinner02(estadosSpinner01
 								.getSelectedItem().toString());
 					}
@@ -69,7 +69,7 @@ public abstract class Comparacao extends Activity{
 		estadosSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> adapter, View view,
-					int posicao, long id) {
+					int position, long id) {
 				atualizaValoresSpinner01(estadosSpinner.getSelectedItem()
 						.toString());
 			}
@@ -157,11 +157,11 @@ public abstract class Comparacao extends Activity{
 		startActivity(intent);
 	}	
 	
-	public Spinner getEstadosSpinner01() {
+	public Spinner getStatesSpinner01() {
 		return estadosSpinner01;
 	}
 
-	public Spinner getEstadosSpinner() {
+	public Spinner getStatesSpinner() {
 		return estadosSpinner;
 	}
 

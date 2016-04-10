@@ -79,15 +79,15 @@ public class TelaHistoricoEstado extends Activity {
 	private void capturaInformacoes() {
 		Intent intent = getIntent();
 		
-		int posicao = intent.getIntExtra("ESTADO", 0);
+		int position = intent.getIntExtra("ESTADO", 0);
 		informacoes = new HashMap <String, String>();
 		
 		inicializaCamposTexto();
 		
 		try {
-			informacoes = StateConroller.getInstancia(this).lerEstadoCompleto(posicao);
+			informacoes = StateConroller.getInstance(this).lerEstadoCompleto(position);
 			preencheCamposTexto(informacoes);
-			setImagem(posicao);
+			setImagem(position);
 			
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
@@ -139,9 +139,9 @@ public class TelaHistoricoEstado extends Activity {
 		
 	}
 	
-	private void setImagem(int posicao) {
+	private void setImagem(int position) {
 		// O nome das bandeiras te sem acento
-		// A slueeo que eu acho mais simples e ter um array com os nomes dos estados sem acento, e pegar o nome certo pela posicao
+		// A slueeo que eu acho mais simples e ter um array com os nomes dos estados sem acento, e pegar o nome certo pela position
 		String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
@@ -150,17 +150,17 @@ public class TelaHistoricoEstado extends Activity {
 				"sergipe", "tocantins"};	
 		
 		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_bandeiras);
-		int idBandeira = getResources().getIdentifier(bandeiras[posicao], "drawable", getPackageName());
+		int idBandeira = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
 		imageViewBandeiras.setImageResource(idBandeira);
 	}
 	
     public void clickBotaoEscolherIndicativoParaGerarGrafico(View view){
 		Intent intent1 = getIntent();
 		
-		int posicao = intent1.getIntExtra("ESTADO", 0);
+		int position = intent1.getIntExtra("ESTADO", 0);
 		
     	Intent intent = new Intent(this, TelaEscolheIndicativoGraficoLinha.class);
-    	intent.putExtra("ESTADO", posicao);
+    	intent.putExtra("ESTADO", position);
     	
 		intent.putExtra("CB_IDEB", true);
 		intent.putExtra("CB_PIB", true);

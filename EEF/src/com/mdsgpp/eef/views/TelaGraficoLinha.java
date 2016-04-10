@@ -65,7 +65,7 @@ public class TelaGraficoLinha extends Activity {
 	}
 	
 	private void capturaInformacoes() {
-		int posicao;
+		int position;
 		Intent intent;
 		
 		informacoes = new HashMap<String, String>();
@@ -74,14 +74,14 @@ public class TelaGraficoLinha extends Activity {
 		temp = intent.getStringArrayListExtra("HISTORICO");
 		titulo = intent.getStringExtra("TITULO");
 		indicativo = intent.getStringExtra("INDICATIVO_GRAFICO");
-		posicao = intent.getIntExtra("POSICAO_ESTADO", 0);
+		position = intent.getIntExtra("POSICAO_ESTADO", 0);
 		
 		for(int i=0; i<temp.size(); i++) {
 			historico.add(Float.parseFloat(temp.get(i)));
 		}
 		
 		try {
-			informacoes = StateConroller.getInstancia(this).lerEstadoCompleto(posicao);
+			informacoes = StateConroller.getInstance(this).lerEstadoCompleto(position);
 		} catch (IOException e) {
 			Log.i("Erro - TelaGraficoLinha", "Erro ao capturar as informacoes do estado.");
 			e.printStackTrace();

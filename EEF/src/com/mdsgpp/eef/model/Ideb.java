@@ -5,7 +5,7 @@ public class Ideb {
 	private double elementarySchool;
 	private double highSchool;
 	private double initialGrades; //this Grade refers to 'graduation period'
-	private IdebState idebState;
+	private State idebState;
 	private int idebYear;
 
 	public Ideb() {
@@ -41,11 +41,11 @@ public class Ideb {
 		this.initialGrades = initialGrades;
 	}
 
-	public IdebState getState() {
+	public State getState() {
 		return idebState;
 	}
 
-	public void setState(IdebState idebState) {
+	public void setState(State idebState) {
 		this.idebState = idebState;
 	}
 	public int getIdebYear(){
