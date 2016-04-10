@@ -100,7 +100,7 @@ public class TelaEstado extends Activity {
 	    HashMap<String, String> informacoes = new HashMap <String, String>();
 	    
 	    try {
-			informacoes = StateConroller.getInstance(this).lerEstado(position);
+			informacoes = StateConroller.getInstance(this).readState(position);
 			preencheCamposTexto(informacoes);
 			setImagem(position);
 		} catch (IOException e) {

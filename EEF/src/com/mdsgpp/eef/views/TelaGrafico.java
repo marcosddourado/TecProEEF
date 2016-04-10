@@ -82,9 +82,9 @@ public class TelaGrafico extends Activity {
 
 		try {
 			stateInformations1 = (HashMap<String, String>) StateConroller
-					.getInstance(this).lerEstado(estado1).clone();
+					.getInstance(this).readState(estado1).clone();
 			stateInformations2 = (HashMap<String, String>) StateConroller
-					.getInstance(this).lerEstado(estado2).clone();
+					.getInstance(this).readState(estado2).clone();
 			
 			converteDados(stateInformations1, stateInformations2);
 			criaGrafico(stateInformations1, stateInformations2);

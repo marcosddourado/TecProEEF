@@ -31,7 +31,7 @@ public class StateConroller {
 		return instance;
 	}
 
-	public State obterState(int position) throws IOException {
+	public State grabState(int position) throws IOException {
 		parseInformations = ParseController.getInstance(context).getInformations(
 				position);
 
@@ -44,7 +44,7 @@ public class StateConroller {
 
 	}
 	
-	public HashMap<String, String> lerState(int position) throws IOException {
+	public HashMap<String, String> readState(int position) throws IOException {
 		parseInformations = ParseController.getInstance(context).getInformations(
 				position);
 
@@ -57,7 +57,7 @@ public class StateConroller {
 
 	}
 
-	public HashMap<String, String> lerStateCompleto(int position)
+	public HashMap<String, String> readCompleteState(int position)
 			throws IOException {
 		parseInformations = ParseController.getInstance(context).getInformations(
 				position);
@@ -73,7 +73,7 @@ public class StateConroller {
 
 	private void escreveState(State state) {
 
-		PreencherNomeSiglaEPopulacao(state);
+		FillNameAbbreviationAndPopulation(state);
 
 		this.stateInformations
 				.put("percentual_participacao_pib",
@@ -259,7 +259,7 @@ public class StateConroller {
 	private void escreveStateComTodasInformacoes(State state) {
 		String temp = "";
 
-		PreencherNomeSiglaEPopulacao(state);
+		FillNameAbbreviationAndPopulation(state);
 
 		for (int i = 0, ano = 1995; i < state.getPercentageCollaborationWithPIB().length; i++, ano++)
 			temp += ano
@@ -464,7 +464,7 @@ public class StateConroller {
 
 	}
 
-	private void PreencherNomeSiglaEPopulacao(State state) {
+	private void FillNameAbbreviationAndPopulation(State state) {
 		this.stateInformations.clear();
 
 		this.stateInformations.put("sigla", state.getStateAbbreviation());

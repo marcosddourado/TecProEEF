@@ -81,7 +81,7 @@ public class TelaGraficoLinha extends Activity {
 		}
 		
 		try {
-			informacoes = StateConroller.getInstance(this).lerEstadoCompleto(position);
+			informacoes = StateConroller.getInstance(this).readStateCompleto(position);
 		} catch (IOException e) {
 			Log.i("Erro - TelaGraficoLinha", "Erro ao capturar as informacoes do estado.");
 			e.printStackTrace();

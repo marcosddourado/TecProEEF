@@ -102,7 +102,7 @@ public final class R {
         public static final int imageView_flags=0x7f0900a2;
         public static final int imageView_flags1=0x7f09001c;
         public static final int imageView_flags2=0x7f09001d;
-        public static final int imageview_lista_indicativos_bandeiras=0x7f090116;
+        public static final int imageview_list_indicatives_flags=0x7f090116;
         public static final int linearLayoutVertical=0x7f090000;
         public static final int linearlayout_estado=0x7f0900a1;
         public static final int linearlayout_estado1=0x7f090016;
@@ -346,8 +346,8 @@ public final class R {
         public static final int text_view_titulo_grafico=0x7f0900d5;
         public static final int text_view_titulo_grafico_historico=0x7f0900d7;
         public static final int textview_states_list=0x7f090115;
-        public static final int textview_lista_indicativos_conteudo=0x7f090118;
-        public static final int textview_lista_indicativos_nome=0x7f090117;
+        public static final int textview_list_indicatives_content=0x7f090118;
+        public static final int textview_list_indicatives_name=0x7f090117;
         public static final int textview_states_abbreviations=0x7f090114;
         public static final int textview_titulo=0x7f090090;
         public static final int title_activity_tela_sobre_estado=0x7f09010b;
@@ -383,7 +383,7 @@ public final class R {
         public static final int activity_tela_sobre_lista_estado=0x7f03001a;
         public static final int activity_tela_sobre_resultado_da_consulta=0x7f03001b;
         public static final int listview_item=0x7f03001c;
-        public static final int listview_item_indicativos=0x7f03001d;
+        public static final int listview_indicatives_item =0x7f03001d;
         public static final int rss_listview_item=0x7f03001e;
         public static final int spinner_item=0x7f03001f;
         public static final int spinner_item2=0x7f030020;

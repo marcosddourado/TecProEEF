@@ -194,9 +194,9 @@ public class TelaResultadoConsulta extends Activity {
 
 		try {
 			stateInformations1 = (HashMap<String, String>) StateConroller
-					.getInstance(this).lerEstado(position1).clone();
+					.getInstance(this).readState(position1).clone();
 			stateInformations2 = (HashMap<String, String>) StateConroller
-					.getInstance(this).lerEstado(position2).clone();
+					.getInstance(this).readState(position2).clone();
 
 			preencheCamposTexto(stateInformations1, stateInformations2);
 		} catch (IOException e) {

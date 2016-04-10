@@ -63,7 +63,7 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
 			String indicativo = intent.getStringExtra("INDICATIVO");
 			String titulo = intent.getStringExtra("TITULO");
 			
-			IndicativoAdapter adapter = new IndicativoAdapter(titulo, indicativo,
+			IndicativeAdapter adapter = new IndicativeAdapter(titulo, indicativo,
 					context);
 			
 			listaDeEstados.setAdapter(adapter);

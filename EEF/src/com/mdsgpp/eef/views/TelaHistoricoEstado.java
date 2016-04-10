@@ -85,7 +85,7 @@ public class TelaHistoricoEstado extends Activity {
 		inicializaCamposTexto();
 		
 		try {
-			informacoes = StateConroller.getInstance(this).lerEstadoCompleto(position);
+			informacoes = StateConroller.getInstance(this).readStateCompleto(position);
 			preencheCamposTexto(informacoes);
 			setImagem(position);
 			
