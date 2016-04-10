@@ -50,7 +50,7 @@ public class TelaHistoricoEstado extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -59,7 +59,7 @@ public class TelaHistoricoEstado extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			openAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -71,7 +71,7 @@ public class TelaHistoricoEstado extends Activity {
     	return true;
 	}
 	
-	public void abreTelaSobre() {
+	public void openAboutScreen() {
 		Intent intent = new Intent(this, TelaSobreHistoricoDeIndicativo.class);
     	startActivity(intent);	
 	}
@@ -108,13 +108,13 @@ public class TelaHistoricoEstado extends Activity {
 		textViewValorJovensPesquisadores= (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
 		textViewValorProjetosIniciacao = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
-		textViewCensoValor = (TextView) findViewById(R.id.textView_censo_medio_valor);
+		textViewCensoValor = (TextView) findViewById(R.id.textView_census_high_school_valor);
 		textViewMediaAlunosPorTurmaValor = (TextView) findViewById(R.id.textView_media_alunos_por_turma_valor);
-		textViewMediaHorasAulaFundamental = (TextView) findViewById(R.id.textView_horas_aula_ensino_fundamental);
-		textViewMediaHorasAulaMedio = (TextView) findViewById(R.id.textView_horas_aula_ensino_medio);
-		textViewTaxaDistorcaoIdadeSerieValor = (TextView) findViewById(R.id.textView_taxa_distorcao_valor);
-		textViewTaxaDeAproveitamentoValor = (TextView) findViewById(R.id.textView_taxa_aprovacao_valor);
-		textViewTaxaDeAbandonoValor = (TextView) findViewById(R.id.textView_taxa_abandono_valor);
+		textViewMediaHorasAulaFundamental = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
+		textViewMediaHorasAulaMedio = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
+		textViewTaxaDistorcaoIdadeSerieValor = (TextView) findViewById(R.id.textView_distortion_rate_valor);
+		textViewTaxaDeAproveitamentoValor = (TextView) findViewById(R.id.textView_approval_rate_valor);
+		textViewTaxaDeAbandonoValor = (TextView) findViewById(R.id.textView_dropout_rate_valor);
 	}
 	
 	private void preencheCamposTexto(HashMap<String, String> informacoes) {
@@ -129,11 +129,11 @@ public class TelaHistoricoEstado extends Activity {
 		textViewValorJovensPesquisadores.setText(informacoes.get("jovens_pesquisadores"));
 		textViewValorProjetosIniciacao.setText(informacoes.get("projetos_inct"));
 		
-		textViewMediaAlunosPorTurmaValor.setText(informacoes.get("alunos_por_turma_ensino_medio"));
+		textViewMediaAlunosPorTurmaValor.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
 		textViewCensoValor.setText(informacoes.get("censo"));
-		textViewMediaHorasAulaFundamental.setText(informacoes.get("horas_aula_ensino_fundamental"));
-		textViewMediaHorasAulaMedio.setText(informacoes.get("horas_aula_ensino_medio"));
-		textViewTaxaDistorcaoIdadeSerieValor.setText(informacoes.get("taxa_distorcao"));
+		textViewMediaHorasAulaFundamental.setText(informacoes.get("horas_aula_ensino_elementary"));
+		textViewMediaHorasAulaMedio.setText(informacoes.get("horas_aula_ensino_high_school"));
+		textViewTaxaDistorcaoIdadeSerieValor.setText(informacoes.get("distortion_rate"));
 		textViewTaxaDeAproveitamentoValor.setText(informacoes.get("taxa_aprovacao"));
 		textViewTaxaDeAbandonoValor.setText(informacoes.get("taxa_abandono"));
 		

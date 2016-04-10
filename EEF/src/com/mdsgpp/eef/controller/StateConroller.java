@@ -95,17 +95,17 @@ public class StateConroller {
 								.getScienceAndThecnologyProjects().length - 1]
 								.getProjectValue()) + " (em mil)");
 		this.stateInformations.put(
-				"ideb_fundamental_final",
+				"ideb_elementary_final",
 				"Ensino Fundamental (series finais): "
 						+ dfPercentage.format(state.getIdebs()[state
 								.getIdebs().length - 1].getElementarySchool()));
 		this.stateInformations.put(
-				"ideb_ensino_medio",
+				"ideb_ensino_high_school",
 				"Ensino Medio: "
 						+ dfPercentage.format(state.getIdebs()[state
 								.getIdebs().length - 1].getHighSchool()) + "");
 		this.stateInformations.put(
-				"ideb_fundamental_inicial",
+				"ideb_elementary_inicial",
 				"Ensino Fundamental (Series iniciais): "
 						+ dfPercentage.format(state.getIdebs()[state
 								.getIdebs().length - 1].getInitialGrades())
@@ -161,95 +161,95 @@ public class StateConroller {
 						+ " (em mil)");
 
 		this.stateInformations.put(
-				"alunos_por_turma_ensino_fundamental",
+				"alunos_por_turma_ensino_elementary",
 				"Quantidade media de alunos por turma (Fundamental): "
 						+ dfValue.format(state.getStudentGradesPerClass()[state
 								.getStudentGradesPerClass().length - 1]
 								.getElementarySchoolGrade()));
 		this.stateInformations.put(
-				"alunos_por_turma_ensino_medio",
+				"alunos_por_turma_ensino_high_school",
 				"Quantidade media de alunos por turma (Medio): "
 						+ dfValue.format(state.getStudentGradesPerClass()[state
 								.getStudentGradesPerClass().length - 1]
 								.getHighSchoolGrade()));
 		this.stateInformations.put(
-				"horas_aula_ensino_fundamental",
+				"horas_aula_ensino_elementary",
 				"Quantidade media de horas de aula(Fundamental): "
 						+ dfValue.format(state.getGradeClassHours()[state
 								.getGradeClassHours().length - 1]
 								.getElementarySchoolGrade()));
 		this.stateInformations.put(
-				"horas_aula_ensino_medio",
+				"horas_aula_ensino_high_school",
 				"Quantidade media de horas de aula (Medio): "
 						+ dfValue.format(state.getGradeClassHours()[state
 								.getGradeClassHours().length - 1]
 								.getHighSchoolGrade()));
 		this.stateInformations.put(
-				"taxa_distorcao_fundamental",
+				"distortion_rate_elementary",
 				"Quantidade de Distoreeo da Idade(Fundamental): "
 						+ dfPercentage.format(state
 								.getAgeGradeDistortionRate()[state
 								.getAgeGradeDistortionRate().length - 1]
 								.getElementarySchoolGrade()));
 		this.stateInformations.put(
-				"taxa_distorcao_medio",
+				"distortion_rate_high_school",
 				"Quantidade de Distoreeo da Idade (Medio): "
 						+ dfPercentage.format(state
 								.getAgeGradeDistortionRate()[state
 								.getAgeGradeDistortionRate().length - 1]
 								.getHighSchoolGrade()));
 		this.stateInformations
-				.put("taxa_aprovacao_fundamental",
+				.put("taxa_aprovacao_elementary",
 						"Taxa de Aprovaeeo (Fundamental): "
 								+ dfPercentage.format(state
 										.getEducationalAchievementRate()[state
 										.getEducationalAchievementRate().length - 1]
 										.getElementarySchoolGrade()));
 		this.stateInformations
-				.put("taxa_aprovacao_medio",
+				.put("taxa_aprovacao_high_school",
 						"Taxa de Aprovaeeo (Medio): "
 								+ dfPercentage.format(state
 										.getEducationalAchievementRate()[state
 										.getEducationalAchievementRate().length - 1]
 										.getHighSchoolGrade()));
 		this.stateInformations
-				.put("taxa_abandono_fundamental",
+				.put("taxa_abandono_elementary",
 						"Taxa de Abandono (Fundamental): "
 								+ dfPercentage.format(state
 										.getSchoolDropoutRate()[state
 										.getSchoolDropoutRate().length - 1]
 										.getElementarySchoolGrade()));
 		this.stateInformations
-				.put("taxa_abandono_medio",
+				.put("taxa_abandono_high_school",
 						"Taxa de Abandono (Medio): "
 								+ dfPercentage.format(state
 										.getSchoolDropoutRate()[state
 										.getSchoolDropoutRate().length - 1]
 										.getHighSchoolGrade()));
 		this.stateInformations.put(
-				"censo_anos_iniciais_fundamental",
+				"censo_anos_iniciais_elementary",
 				"Censo Anos Iniciais (Fundamental): "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1]
 								.getInitialElementarySchoolYears()));
 		this.stateInformations.put(
-				"censo_anos_finais_fundamental",
+				"censo_anos_finais_elementary",
 				"Censo Anos Finais (Fundamental): "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1]
 								.getInitialElementarySchoolYears()));
 		this.stateInformations.put(
-				"censo_ensino_medio",
+				"censo_ensino_high_school",
 				"Censo Ensino Medio: "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1].getHighSchool()));
 		this.stateInformations.put(
-				"censo_eja_fundamental",
+				"censo_eja_elementary",
 				"Censo EJA (Fundamental): "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1].getElementarySchoolEJA()));
 		this.stateInformations.put(
-				"censo_eja_medio",
+				"censo_eja_high_school",
 				"Censo EJA (Medio): "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1].getHighSchoolEJA()));
@@ -368,7 +368,7 @@ public class StateConroller {
 							.getHighSchoolGrade()) + "\n\n";
 
 		}
-		this.stateInformations.put("alunos_por_turma_ensino_medio", temp);
+		this.stateInformations.put("alunos_por_turma_ensino_high_school", temp);
 		temp = "";
 
 		for (int i = 0, ano = 2007; i < state.getStudentGradesPerClass().length; i++, ano++) {
@@ -384,7 +384,7 @@ public class StateConroller {
 							.getGradeClassHours().length - 1].getHighSchoolGrade())
 					+ "\n\n";
 		}
-		this.stateInformations.put("horas_aula_ensino_medio", temp);
+		this.stateInformations.put("horas_aula_ensino_high_school", temp);
 		temp = "";
 
 		for (int i = 0, ano = 2006; i < state.getAgeGradeDistortionRate().length; i++, ano++) {
@@ -400,7 +400,7 @@ public class StateConroller {
 							.format(state.getAgeGradeDistortionRate()[i]
 									.getHighSchoolGrade()) + "\n\n";
 		}
-		this.stateInformations.put("taxa_distorcao", temp);
+		this.stateInformations.put("distortion_rate", temp);
 		temp = "";
 
 		for (int i = 0, ano = 2007; i < state.getEducationalAchievementRate().length; i++, ano++) {

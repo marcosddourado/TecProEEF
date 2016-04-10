@@ -13,19 +13,19 @@ censo_anos_iniciais
 2012: 359.614
 
 
-censo_eja_fundamental
+censo_eja_elementary
 2010: 62.593
 2011: 62.885
 2012: 66.859
 
 
-censo_eja_medio
+censo_eja_high_school
 2010: 14.507
 2011: 16.114
 2012: 16.663
 
 
-censo_ensino_medio
+censo_ensino_high_school
 2010: 142.576
 2011: 147.964
 2012: 160.716
@@ -80,7 +80,7 @@ Total: 875880,899999976
 2009: 3,59999999999854
 
 
-ensino_medio
+ensino_high_school
 2005: 2,29999999999927
 2007: 2,79999999999927
 2009: 3,20000000000073
@@ -99,14 +99,14 @@ alunos_por_turma_educacao_infantil
 2010: 20,6
 
 
-alunos_por_turma_ensino_fundamental
+alunos_por_turma_ensino_elementary
 2007: 27
 2008: 26,7
 2009: 26
 2010: 25,5
 
 
-alunos_por_turma_ensino_medio
+alunos_por_turma_ensino_high_school
 2007: 33,7
 2008: 34,1
 2009: 32,8
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,2
 
 
-horas_aula_ensino_fundamental
+horas_aula_ensino_elementary
 2010: 4,2
 
 
-horas_aula_ensino_medio
+horas_aula_ensino_high_school
 2010: 4,2
 
 
@@ -203,35 +203,35 @@ valores_projetos_inct
 Total: 4961,63999999873
 
 
-taxa_abandono_fundamental
+taxa_abandono_elementary
 2007: 9
 2008: 8,8
 2009: 7,7
 2010: 6,6
 
 
-taxa_abandono_medio
+taxa_abandono_high_school
 2007: 11,2
 2008: 14,1
 2009: 13,4
 2010: 10,2
 
 
-taxa_aprovacao_fundamental
+taxa_aprovacao_elementary
 2007: 76,6
 2008: 77,4
 2009: 78,5
 2010: 81,2
 
 
-taxa_aprovacao_medio
+taxa_aprovacao_high_school
 2007: 77,9
 2008: 74,6
 2009: 77,4
 2010: 81,7
 
 
-taxa_distorcao_ensino_medio
+distortion_rate_ensino_high_school
 2006: 67,2
 2007: 62,7
 2008: 48,9
@@ -239,7 +239,7 @@ taxa_distorcao_ensino_medio
 2010: 51
 
 
-taxa_distorcao_fundamental
+distortion_rate_elementary
 2006: 43,5
 2007: 42,1
 2008: 30,6

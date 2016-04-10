@@ -30,7 +30,7 @@ public class TelaComparation extends Comparation {
     	
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			openAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -42,7 +42,7 @@ public class TelaComparation extends Comparation {
     	return true;
     }
     
-    public void abreTelaSobre() {
+    public void openAboutScreen() {
     	Intent intent = new Intent(this, TelaSobreComparacao.class);
     	startActivity(intent);
     }

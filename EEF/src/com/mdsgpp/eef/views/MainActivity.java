@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_telas, menu);
+        getMenuInflater().inflate(R.menu.menu_screens, menu);
         
         return true;
     }	
@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
     	
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			openAboutScreen();
 			break;
 		default:
 			break;
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
     	return true;
     }
     
-    public void abreTelaSobre() {
+    public void openAboutScreen() {
     	Intent intent = new Intent(this, TelaSobre.class);
     	startActivity(intent);
     }

@@ -38,7 +38,7 @@ public class TelaIndicativosConsultados extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 
@@ -47,7 +47,7 @@ public class TelaIndicativosConsultados extends Activity {
 
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			openAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -59,7 +59,7 @@ public class TelaIndicativosConsultados extends Activity {
 		return true;
 	}
 
-	public void abreTelaSobre() {
+	public void openAboutScreen() {
 		Intent intent = new Intent(this, TelaSobreEscolhaIndicativo.class);
 		startActivity(intent);
 	}
@@ -76,7 +76,7 @@ public class TelaIndicativosConsultados extends Activity {
 		cbCenso = (CheckBox) findViewById(R.id.checkBox_censo);
 		cbAlunosTurma = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
 		cbHorasAula = (CheckBox) findViewById(R.id.checkBox_horas_aula);
-		cbTaxaDistorcao = (CheckBox) findViewById(R.id.checkBox_taxa_distorcao);
+		cbTaxaDistorcao = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
 		cbTaxaAbandono = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
 		cbAprovacao = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
 	}

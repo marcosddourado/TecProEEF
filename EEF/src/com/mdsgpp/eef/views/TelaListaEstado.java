@@ -1,7 +1,6 @@
 package com.mdsgpp.eef.views;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.views.EstadoAdapter;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -30,7 +29,7 @@ public class TelaListaEstado extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -39,7 +38,7 @@ public class TelaListaEstado extends Activity {
 	    	
 			switch (item.getItemId()) {
 			case R.id.sobre:
-				abreTelaSobre();
+				openAboutScreen();
 				break;
 			case android.R.id.home:
 		        NavUtils.navigateUpFromSameTask(this);
@@ -51,7 +50,7 @@ public class TelaListaEstado extends Activity {
 	    	return true;
 	    }
 	    
-	    public void abreTelaSobre() {
+	    public void openAboutScreen() {
 	    	Intent intent = new Intent(this, TelaSobreListaEstado.class);
 	    	startActivity(intent);
 	    }
