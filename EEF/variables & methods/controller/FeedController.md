@@ -6,30 +6,18 @@
 
 #### Private members:
 
-| Type     | Variable                     |
-|----------|------------------------------|
-| `Context` | context |
-| `boolean` | updated   |
-| `DataReceiver` | dataReceiver           |
-| `ProgressDialog` | progressBar          |
+| Type     | Variable                     | Description                     |
+|----------|------------------------------|---------------------------------|
+| `Context` | context                     | Contains the Activity that is calling this class |
+| `boolean` | updated                     | Tells if the feed is updated or not |
+| `DataReceiver` | dataReceiver           | Receives the feed data |
+| `ProgressDialog` | progressBar          | The progress bar that shows how much of the data was downloaded already |
 
-#### Public members:
+#### Protected members:
 
-| Return Type |           Method Name           |                                                                        Arguments                                                                        |                Description                |
-|:-----------:|:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------:|
-|             |              Census             |                                                                            --                                                                           |            Standard constructor           |
-|             |              Census             | `double` initialElementarySchoolYears, `double` finalElementarySchoolYears, `double` highSchool,  `double` elementarySchoolEJA,  `double` highSchoolEJA | Constructor with initialization arguments |
-|   `double`  | getInitialElementarySchoolYears |                                                                            --                                                                           |                                           |
-|    `void`   | setInitialElementarySchoolYears |                                                          `double` initialElementarySchoolYears                                                          |                                           |
-|   `double`  |  getFinalElementarySchoolYears  |                                                                            --                                                                           |                                           |
-|    `void`   |  setFinalElementarySchoolYears  |                                                           `double final` ElementarySchoolYears                                                          |                                           |
-|   `double`  |          getHighSchool          |                                                                            --                                                                           |                                           |
-|    `void`   |          setHighSchool          |                                                                   `double` highSchool                                                                   |                                           |
-|   `double`  |      getElementarySchoolEJA     |                                                                            --                                                                           |                                           |
-|    `void`   |      setElementarySchoolEJA     |                                                               `double` elementarySchoolEJA                                                              |                                           |
-|   `double`  |         getHighSchoolEJA        |                                                                            --                                                                           |                                           |
-|    `void`   |         getHighSchoolEJA        |                                                                  `double` highSchoolEJA                                                                 |                                           |
-|   `State`   |          getCensusState         |                                                                            --                                                                           |                                           |
-|    `void`   |          setCensusState         |                                                                   `State` censusState                                                                   |                                           |
-|    `int`    |          getCensusYear          |                                                                            --                                                                           |                                           |
-|    `void`   |          setCensusYear          |                                                                     `int` censusYear                                                                    |                                           |
+| Return Type | Method Name | Arguments | Description |
+|:-----------:|:------------:|:---------:|:----------:|
+|       | FeedController |`Context` context, `DataReceiver` dataReceiver| Constructor with initialization arguments|
+|`void` | onPreExecute | -- | Creates the progress bar while the feed is being downloaded |
+|`Feed` | doInBackground | `String...` url | Downloads the feed from the URL and writes it in a local file |
+|`void` | onPostExecute | `Feed` feed | Dismiss the progress bar or shows an error message to the user |
