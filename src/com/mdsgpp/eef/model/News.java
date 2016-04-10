@@ -12,7 +12,7 @@ public class News implements Serializable {
 	private String newsDate;
 	private Feed newsFeed;
 
-	public Noticias(Feed newsFeed) {
+	public News(Feed newsFeed) {
 		this.newsFeed = newsFeed;
 	}
 

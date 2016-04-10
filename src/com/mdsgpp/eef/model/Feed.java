@@ -7,25 +7,25 @@ public class Feed implements Serializable {
 	// Default serial id
 	private static final long serialVersionUID = 1L;
 
-	private ArrayList<Noticias> feedItens;
+	private ArrayList<News> feedItens;
 
 	public Feed() {
-		feedItens = new ArrayList<Noticias>();
+		feedItens = new ArrayList<News>();
 	}
 
-	public ArrayList<Noticias> getFeedItens() {
+	public ArrayList<News> getFeedItens() {
 		return feedItens;
 	}
 
-	public Noticias getFeedItem(int position) {
+	public News getFeedItem(int position) {
 		return feedItens.get(position);
 	}
 
-	public void setFeedItens(ArrayList<Noticias> feedItens) {
+	public void setFeedItens(ArrayList<News> feedItens) {
 		this.feedItens = feedItens;
 	}
 
-	public void addFeedItem(Noticias newFeedItem) {
+	public void addFeedItem(News newFeedItem) {
 		this.feedItens.add(newFeedItem);
 	}
 
