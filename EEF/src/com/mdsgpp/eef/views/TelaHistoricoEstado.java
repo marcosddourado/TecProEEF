@@ -44,7 +44,7 @@ public class TelaHistoricoEstado extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_historico_estado);
 		
-		capturaInformacoes();
+		catchInformation();
 	}
 
 	@Override
@@ -59,7 +59,11 @@ public class TelaHistoricoEstado extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
+			loadAboutScreen();
+=======
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -71,12 +75,16 @@ public class TelaHistoricoEstado extends Activity {
     	return true;
 	}
 	
+<<<<<<< HEAD
+	public void loadAboutScreen() {
+=======
 	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreHistoricoDeIndicativo.class);
     	startActivity(intent);	
 	}
 	
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		Intent intent = getIntent();
 		
 		int position = intent.getIntExtra("ESTADO", 0);

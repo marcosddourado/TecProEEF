@@ -18,7 +18,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TelaGrafico extends Activity {
+public class GraphScreen extends Activity {
 
 	private int estado1;
 	private int estado2;
@@ -33,7 +33,7 @@ public class TelaGrafico extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_grafico);
 		
-		capturaInformacoes();
+		catchInformation();
 	}
 
 	@Override
@@ -48,7 +48,11 @@ public class TelaGrafico extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
+			loadAboutScreen();
+=======
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -60,13 +64,17 @@ public class TelaGrafico extends Activity {
     	return true;
 	}
 	
+<<<<<<< HEAD
+	public void loadAboutScreen() {
+=======
 	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreGrafico.class);
     	startActivity(intent);
 	}
 	
 	@SuppressWarnings({"unchecked"})
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		inicializaCamposTexto();
 		
 		// Captura o intent que abriu a activity

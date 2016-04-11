@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class TelaSobreEscolheIndicativoGraficoComparacao extends Activity {
+public class ChooseIndicativeWithCompareGraphAboutScreen extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

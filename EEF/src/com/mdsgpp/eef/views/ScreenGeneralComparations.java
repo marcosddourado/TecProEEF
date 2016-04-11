@@ -28,8 +28,13 @@ public class ScreenGeneralComparations extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java
+		case R.id.sobre:
+			loadAboutScreen();
+=======
 		case R.id.about:
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -41,7 +46,11 @@ public class ScreenGeneralComparations extends Activity {
     	return true;
     }
     
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java
+    public void loadAboutScreen() {
+=======
     public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
     	Intent intent = new Intent(this, TelaSobreComparacoesGerais.class);
     	startActivity(intent);
     }
@@ -51,8 +60,13 @@ public class ScreenGeneralComparations extends Activity {
 		startActivity(intent);
 	}
 	
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java
+	public void clickBotaoIndicativos(View view) {
+		Intent intent = new Intent(this, QueryPerInficativeScreen.class);
+=======
 	public void clickButtonIndicatives(View view) {
 		Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
 		startActivity(intent);
 	}
 	

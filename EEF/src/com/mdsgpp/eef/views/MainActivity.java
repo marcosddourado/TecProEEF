@@ -29,8 +29,13 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
+<<<<<<< HEAD
+		case R.id.sobre:
+			loadAboutScreen();
+=======
 		case R.id.about:
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		default:
 			break;
@@ -39,7 +44,11 @@ public class MainActivity extends Activity {
     	return true;
     }
     
+<<<<<<< HEAD
+    public void loadAboutScreen() {
+=======
     public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
     	Intent intent = new Intent(this, TelaSobre.class);
     	startActivity(intent);
     }
@@ -59,8 +68,13 @@ public class MainActivity extends Activity {
     	Intent intent = new Intent(this, TelaFeed.class);
     	startActivity(intent);
     }
+<<<<<<< HEAD
+    public void clickBotaoConsultaPorIndicativo(View view){
+    	Intent intent = new Intent(this, QueryPerInficativeScreen.class);
+=======
     public void clickButtonConsultationByIndicative(View view){
     	Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
     	startActivity(intent);
     }
 }

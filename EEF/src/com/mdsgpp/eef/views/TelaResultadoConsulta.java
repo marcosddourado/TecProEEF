@@ -114,9 +114,9 @@ public class TelaResultadoConsulta extends Activity {
 	private TextView textViewTaxaDeAbandonoFundamental2;
 	private TextView textViewTaxaDeAbandonoMedio2;
 	
-	private boolean  bCenso, bAlunosTurma, bHorasAula, bTaxaDistorcao, bTaxaAbandono, 
-			bAprovacao, bIdeb, bPib, bPopulacao, bPrimeirosProjetos, bProjetosCnpq,
-			bProjetosDifusao, bProjetosIniciacao, bProjetosJovens;
+	private boolean  censusView, studentsClassView, hoursPerClassView, distortionRateView, schoolDropoutRateView,
+			approvalView, idebView, pibView, populationView, firstProjectsView, cnpqProjectsView,
+			projectDiffusionView, initiationProjectsView, jovensProjectsView;
 	
 	private ImageView imageViewBandeira01; 
 	private ImageView imageViewBandeira02; 
@@ -127,7 +127,7 @@ public class TelaResultadoConsulta extends Activity {
 		setContentView(R.layout.activity_tela_compara_states);
 		
 		InicializaCamposTexto();
-		capturaInformacoes();
+		catchInformation();
 		escondeCamposDeTexto();
 	}
 
@@ -144,7 +144,11 @@ public class TelaResultadoConsulta extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
+			loadAboutScreen();
+=======
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -156,14 +160,18 @@ public class TelaResultadoConsulta extends Activity {
     	return true;
 	}
 	
+<<<<<<< HEAD
+	public void loadAboutScreen() {
+=======
 	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreComparacaoDeEstados.class);
     	startActivity(intent);
 		
 	}
 	
 	@SuppressWarnings("unchecked")
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		
 		// Captura o intent que abriu a activity
 		Intent intent = getIntent();
@@ -174,20 +182,20 @@ public class TelaResultadoConsulta extends Activity {
 		
 		capturaBandeiras(position1, position2);
 		
-		bIdeb = intent.getBooleanExtra("CB_IDEB", false);
-		bPib = intent.getBooleanExtra("CB_PIB", false);
-		bPopulacao = intent.getBooleanExtra("CB_POPULACAO", false);
-		bPrimeirosProjetos = intent.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
-		bProjetosCnpq = intent.getBooleanExtra("CB_PROJETOS_CNPQ", false);
-		bProjetosDifusao = intent.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
-		bProjetosIniciacao = intent.getBooleanExtra("CB_PROJETOS_INICIACAO", false);
-		bProjetosJovens = intent.getBooleanExtra("CB_PROJETOS_JOVENS", false);
-		bCenso = intent.getBooleanExtra("CB_CENSO", false);
-		bAlunosTurma = intent.getBooleanExtra("CB_ALUNOS_TURMA", false);
-		bHorasAula = intent.getBooleanExtra("CB_HORAS_AULA", false);
-		bTaxaDistorcao = intent.getBooleanExtra("CB_TAXA_DISTORCAO", false);
-		bTaxaAbandono = intent.getBooleanExtra("CB_TAXA_ABANDONO", false);
-		bAprovacao = intent.getBooleanExtra("CB_APROVACAO", false);
+		idebView = intent.getBooleanExtra("CB_IDEB", false);
+		pibView = intent.getBooleanExtra("CB_PIB", false);
+		populationView = intent.getBooleanExtra("CB_POPULACAO", false);
+		firstProjectsView = intent.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
+		cnpqProjectsView = intent.getBooleanExtra("CB_PROJETOS_CNPQ", false);
+		projectDiffusionView = intent.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
+		initiationProjectsView = intent.getBooleanExtra("CB_PROJETOS_INICIACAO", false);
+		jovensProjectsView = intent.getBooleanExtra("CB_PROJETOS_JOVENS", false);
+		censusView = intent.getBooleanExtra("CB_CENSO", false);
+		studentsClassView = intent.getBooleanExtra("CB_ALUNOS_TURMA", false);
+		hoursPerClassView = intent.getBooleanExtra("CB_HORAS_AULA", false);
+		distortionRateView = intent.getBooleanExtra("CB_TAXA_DISTORCAO", false);
+		schoolDropoutRateView = intent.getBooleanExtra("CB_TAXA_ABANDONO", false);
+		approvalView = intent.getBooleanExtra("CB_APROVACAO", false);
 
 		HashMap<String, String> stateInformations1 = new HashMap<String, String>();
 		HashMap<String, String> stateInformations2 = new HashMap<String, String>();
@@ -379,122 +387,122 @@ public class TelaResultadoConsulta extends Activity {
 		textViewTaxaDeAbandonoMedio2 = (TextView) findViewById(R.id.textView_dropout_rate_high_school2);
 	}
 	
-	public void setVisibility(TextView txtView, boolean visibilidade) {
-		int valorVisibilidade = (visibilidade) ? View.VISIBLE : View.GONE;
-		txtView.setVisibility(valorVisibilidade);
+	public void setVisibility(TextView txtView, boolean visibility) {
+		int visibilityValue = (visibility) ? View.VISIBLE : View.GONE;
+		txtView.setVisibility(visibilityValue);
 	}
 	
 	public void escondeCamposDeTexto() {
-		setVisibility(textViewPopulacao1, bPopulacao);
-		setVisibility(textViewPopulacaoValor1, bPopulacao);
-		setVisibility(textViewPopulacaoValor2, bPopulacao);
+		setVisibility(textViewPopulacao1, populationView);
+		setVisibility(textViewPopulacaoValor1, populationView);
+		setVisibility(textViewPopulacaoValor2, populationView);
 		
-		setVisibility(textViewIdeb1, bIdeb);
-		setVisibility(textViewFundamentalIdeb1, bIdeb);
-		setVisibility(textViewEnsinoMedioIdeb1, bIdeb);
-		setVisibility(textViewIniciaisIdeb1, bIdeb);
-		setVisibility(textViewFundamentalIdeb2, bIdeb);
-		setVisibility(textViewEnsinoMedioIdeb2, bIdeb);
-		setVisibility(textViewIniciaisIdeb2, bIdeb);
+		setVisibility(textViewIdeb1, idebView);
+		setVisibility(textViewFundamentalIdeb1, idebView);
+		setVisibility(textViewEnsinoMedioIdeb1, idebView);
+		setVisibility(textViewIniciaisIdeb1, idebView);
+		setVisibility(textViewFundamentalIdeb2, idebView);
+		setVisibility(textViewEnsinoMedioIdeb2, idebView);
+		setVisibility(textViewIniciaisIdeb2, idebView);
 
-		setVisibility(textViewParticipacaoEstadualPib1, bPib);
-		setVisibility(textViewParticipacaoPib1, bPib);
-		setVisibility(textViewParticipacaoPib2, bPib);
+		setVisibility(textViewParticipacaoEstadualPib1, pibView);
+		setVisibility(textViewParticipacaoPib1, pibView);
+		setVisibility(textViewParticipacaoPib2, pibView);
 		
-		setVisibility(textViewProgramaPrimeirosProjetos1, bPrimeirosProjetos);
-		setVisibility(textViewQuantidadePrimeirosProjetos1, bPrimeirosProjetos);
-		setVisibility(textViewValorPrimeirosProjetos1, bPrimeirosProjetos);
-		setVisibility(textViewQuantidadePrimeirosProjetos2, bPrimeirosProjetos);
-		setVisibility(textViewValorPrimeirosProjetos2, bPrimeirosProjetos);
+		setVisibility(textViewProgramaPrimeirosProjetos1, firstProjectsView);
+		setVisibility(textViewQuantidadePrimeirosProjetos1, firstProjectsView);
+		setVisibility(textViewValorPrimeirosProjetos1, firstProjectsView);
+		setVisibility(textViewQuantidadePrimeirosProjetos2, firstProjectsView);
+		setVisibility(textViewValorPrimeirosProjetos2, firstProjectsView);
 		
-		setVisibility(textViewProjetosPesquisa1, bProjetosCnpq);
-		setVisibility(textViewQuantidadePesquisa1, bProjetosCnpq);
-		setVisibility(textViewValoresPesquisa1, bProjetosCnpq);
-		setVisibility(textViewQuantidadePesquisa2, bProjetosCnpq);
-		setVisibility(textViewValoresPesquisa2, bProjetosCnpq);
+		setVisibility(textViewProjetosPesquisa1, cnpqProjectsView);
+		setVisibility(textViewQuantidadePesquisa1, cnpqProjectsView);
+		setVisibility(textViewValoresPesquisa1, cnpqProjectsView);
+		setVisibility(textViewQuantidadePesquisa2, cnpqProjectsView);
+		setVisibility(textViewValoresPesquisa2, cnpqProjectsView);
 
-		setVisibility(textViewJovensPesquisadores1, bProjetosJovens);
-		setVisibility(textViewQuantidadeJovensPesquisadores1, bProjetosJovens);
-		setVisibility(textViewValorJovensPesquisadores1, bProjetosJovens);
-		setVisibility(textViewQuantidadeJovensPesquisadores2, bProjetosJovens);
-		setVisibility(textViewValorJovensPesquisadores2, bProjetosJovens);
+		setVisibility(textViewJovensPesquisadores1, jovensProjectsView);
+		setVisibility(textViewQuantidadeJovensPesquisadores1, jovensProjectsView);
+		setVisibility(textViewValorJovensPesquisadores1, jovensProjectsView);
+		setVisibility(textViewQuantidadeJovensPesquisadores2, jovensProjectsView);
+		setVisibility(textViewValorJovensPesquisadores2, jovensProjectsView);
 
-		setVisibility(textViewProjetosIniciacao1, bProjetosIniciacao);
-		setVisibility(textViewQuantidadeProjetosIniciacao1, bProjetosIniciacao);
-		setVisibility(textViewValorProjetosIniciacao1, bProjetosIniciacao);
-		setVisibility(textViewQuantidadeProjetosIniciacao2, bProjetosIniciacao);
-		setVisibility(textViewValorProjetosIniciacao2, bProjetosIniciacao);
+		setVisibility(textViewProjetosIniciacao1, initiationProjectsView);
+		setVisibility(textViewQuantidadeProjetosIniciacao1, initiationProjectsView);
+		setVisibility(textViewValorProjetosIniciacao1, initiationProjectsView);
+		setVisibility(textViewQuantidadeProjetosIniciacao2, initiationProjectsView);
+		setVisibility(textViewValorProjetosIniciacao2, initiationProjectsView);
 
-		setVisibility(textViewNumeroProjetos1, bProjetosDifusao);
-		setVisibility(textViewQuantidadeProjetosCienciaTecnologia1, bProjetosDifusao);
-		setVisibility(textViewValorProjetosCienciaTecnologia1, bProjetosDifusao);
-		setVisibility(textViewQuantidadeProjetosCienciaTecnologia2, bProjetosDifusao);
-		setVisibility(textViewValorProjetosCienciaTecnologia2, bProjetosDifusao);
+		setVisibility(textViewNumeroProjetos1, projectDiffusionView);
+		setVisibility(textViewQuantidadeProjetosCienciaTecnologia1, projectDiffusionView);
+		setVisibility(textViewValorProjetosCienciaTecnologia1, projectDiffusionView);
+		setVisibility(textViewQuantidadeProjetosCienciaTecnologia2, projectDiffusionView);
+		setVisibility(textViewValorProjetosCienciaTecnologia2, projectDiffusionView);
 		
-		setVisibility(textViewCenso1, bCenso);
-		setVisibility(textViewCensoEjaFundamental1, bCenso);
-		setVisibility(textViewCensoEjaMedio1, bCenso);
-		setVisibility(textViewCensoFinaisFundamental1, bCenso);
-		setVisibility(textViewCensoIniciaisFundamental1, bCenso);
-		setVisibility(textViewCensoMedio1, bCenso);
-		setVisibility(textViewCensoEjaFundamental2, bCenso);
-		setVisibility(textViewCensoEjaMedio2, bCenso);
-		setVisibility(textViewCensoFinaisFundamental2, bCenso);
-		setVisibility(textViewCensoIniciaisFundamental2, bCenso);
-		setVisibility(textViewCensoMedio2, bCenso);
+		setVisibility(textViewCenso1, censusView);
+		setVisibility(textViewCensoEjaFundamental1, censusView);
+		setVisibility(textViewCensoEjaMedio1, censusView);
+		setVisibility(textViewCensoFinaisFundamental1, censusView);
+		setVisibility(textViewCensoIniciaisFundamental1, censusView);
+		setVisibility(textViewCensoMedio1, censusView);
+		setVisibility(textViewCensoEjaFundamental2, censusView);
+		setVisibility(textViewCensoEjaMedio2, censusView);
+		setVisibility(textViewCensoFinaisFundamental2, censusView);
+		setVisibility(textViewCensoIniciaisFundamental2, censusView);
+		setVisibility(textViewCensoMedio2, censusView);
 		
-		setVisibility(textViewMediaAlunosPorTurma1, bAlunosTurma);
-		setVisibility(textViewMediaAlunosPorTurmaFundamental1, bAlunosTurma);
-		setVisibility(textViewMediaAlunosPorTurmaMedio1, bAlunosTurma);
-		setVisibility(textViewMediaAlunosPorTurmaFundamental2, bAlunosTurma);
-		setVisibility(textViewMediaAlunosPorTurmaMedio2, bAlunosTurma);
+		setVisibility(textViewMediaAlunosPorTurma1, studentsClassView);
+		setVisibility(textViewMediaAlunosPorTurmaFundamental1, studentsClassView);
+		setVisibility(textViewMediaAlunosPorTurmaMedio1, studentsClassView);
+		setVisibility(textViewMediaAlunosPorTurmaFundamental2, studentsClassView);
+		setVisibility(textViewMediaAlunosPorTurmaMedio2, studentsClassView);
 		
-		setVisibility(textViewMediaHorasAula1, bHorasAula);
-		setVisibility(textViewMediaHorasAulaFundamental1, bHorasAula);
-		setVisibility(textViewMediaHorasAulaMedio1, bHorasAula);
-		setVisibility(textViewMediaHorasAulaFundamental2, bHorasAula);
-		setVisibility(textViewMediaHorasAulaMedio2, bHorasAula);
+		setVisibility(textViewMediaHorasAula1, hoursPerClassView);
+		setVisibility(textViewMediaHorasAulaFundamental1, hoursPerClassView);
+		setVisibility(textViewMediaHorasAulaMedio1, hoursPerClassView);
+		setVisibility(textViewMediaHorasAulaFundamental2, hoursPerClassView);
+		setVisibility(textViewMediaHorasAulaMedio2, hoursPerClassView);
 		
-		setVisibility(textViewTaxaDistorcao1, bTaxaDistorcao);
-		setVisibility(textViewTaxaDistorcaoIdadeSerieFundamental1, bTaxaDistorcao);
-		setVisibility(textViewTaxaDistorcaoIdadeSerieMedio1, bTaxaDistorcao);
-		setVisibility(textViewTaxaDistorcaoIdadeSerieFundamental2, bTaxaDistorcao);
-		setVisibility(textViewTaxaDistorcaoIdadeSerieMedio2, bTaxaDistorcao);
+		setVisibility(textViewTaxaDistorcao1, distortionRateView);
+		setVisibility(textViewTaxaDistorcaoIdadeSerieFundamental1, distortionRateView);
+		setVisibility(textViewTaxaDistorcaoIdadeSerieMedio1, distortionRateView);
+		setVisibility(textViewTaxaDistorcaoIdadeSerieFundamental2, distortionRateView);
+		setVisibility(textViewTaxaDistorcaoIdadeSerieMedio2, distortionRateView);
 		
-		setVisibility(textViewTaxaDeAbandono1, bTaxaAbandono);
-		setVisibility(textViewTaxaDeAbandonoFundamental1, bTaxaAbandono);
-		setVisibility(textViewTaxaDeAbandonoMedio1, bTaxaAbandono);
-		setVisibility(textViewTaxaDeAbandonoFundamental2, bTaxaAbandono);
-		setVisibility(textViewTaxaDeAbandonoMedio2, bTaxaAbandono);
+		setVisibility(textViewTaxaDeAbandono1, schoolDropoutRateView);
+		setVisibility(textViewTaxaDeAbandonoFundamental1, schoolDropoutRateView);
+		setVisibility(textViewTaxaDeAbandonoMedio1, schoolDropoutRateView);
+		setVisibility(textViewTaxaDeAbandonoFundamental2, schoolDropoutRateView);
+		setVisibility(textViewTaxaDeAbandonoMedio2, schoolDropoutRateView);
 		
-		setVisibility(textViewTaxaDeAproveitamento1, bAprovacao);
-		setVisibility(textViewTaxaDeAproveitamentoFundamental1, bAprovacao);
-		setVisibility(textViewTaxaDeAproveitamentoMedio1, bAprovacao);
-		setVisibility(textViewTaxaDeAproveitamentoFundamental2, bAprovacao);
-		setVisibility(textViewTaxaDeAproveitamentoMedio2, bAprovacao);
+		setVisibility(textViewTaxaDeAproveitamento1, approvalView);
+		setVisibility(textViewTaxaDeAproveitamentoFundamental1, approvalView);
+		setVisibility(textViewTaxaDeAproveitamentoMedio1, approvalView);
+		setVisibility(textViewTaxaDeAproveitamentoFundamental2, approvalView);
+		setVisibility(textViewTaxaDeAproveitamentoMedio2, approvalView);
 		
 		try {
 			Log.i("teste visibility", "populacao");
-			setVisibility(textViewPopulacao2, bPopulacao);
+			setVisibility(textViewPopulacao2, populationView);
 			Log.i("teste visibility", "ideb");
-			setVisibility(textViewIdeb2, bIdeb);
+			setVisibility(textViewIdeb2, idebView);
 			Log.i("teste visibility", "participacao");
-			setVisibility(textViewParticipacaoEstadualPib2, bPib);
+			setVisibility(textViewParticipacaoEstadualPib2, pibView);
 			Log.i("teste visibility", "primeiros projetos");
-			setVisibility(textViewProgramaPrimeirosProjetos2, bPrimeirosProjetos);
+			setVisibility(textViewProgramaPrimeirosProjetos2, firstProjectsView);
 			Log.i("teste visibility", "cnpq");
-			setVisibility(textViewProjetosPesquisa2, bProjetosCnpq);
+			setVisibility(textViewProjetosPesquisa2, cnpqProjectsView);
 			Log.i("teste visibility", "jovens");
-			setVisibility(textViewJovensPesquisadores2, bProjetosJovens);
+			setVisibility(textViewJovensPesquisadores2, jovensProjectsView);
 			Log.i("teste visibility", "inct");
-			setVisibility(textViewProjetosIniciacao2, bProjetosIniciacao);
-			setVisibility(textViewNumeroProjetos2, bProjetosDifusao);
-			setVisibility(textViewCenso2, bCenso);
-			setVisibility(textViewMediaAlunosPorTurma2, bAlunosTurma);
-			setVisibility(textViewMediaHorasAula2, bHorasAula);
-			setVisibility(textViewTaxaDistorcao2, bTaxaDistorcao);
-			setVisibility(textViewTaxaDeAbandono2, bTaxaAbandono);
-			setVisibility(textViewTaxaDeAproveitamento2, bAprovacao);
+			setVisibility(textViewProjetosIniciacao2, initiationProjectsView);
+			setVisibility(textViewNumeroProjetos2, projectDiffusionView);
+			setVisibility(textViewCenso2, censusView);
+			setVisibility(textViewMediaAlunosPorTurma2, studentsClassView);
+			setVisibility(textViewMediaHorasAula2, hoursPerClassView);
+			setVisibility(textViewTaxaDistorcao2, distortionRateView);
+			setVisibility(textViewTaxaDeAbandono2, schoolDropoutRateView);
+			setVisibility(textViewTaxaDeAproveitamento2, approvalView);
 		} catch(NullPointerException npe) {
 			Log.i("NullPointerException - layout portrait não possui estes id's",npe.toString());
 		}
@@ -502,26 +510,30 @@ public class TelaResultadoConsulta extends Activity {
 	}
 	
 	public void clickBotaoGeraGrafico(View view) {
+<<<<<<< HEAD
+		Intent intent = new Intent(this, ChooseIndicativeWithCompareGraphScreen.class);
+=======
 		Intent intent = new Intent(this, TelaChooseIndicativeGraficoComparacao.class);
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent1 = getIntent();
 
 		int position1 = intent1.getIntExtra("INDEX_CHOOSED_STATE1", 0);
 		int position2 = intent1.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 
-		intent.putExtra("CB_IDEB", bIdeb);
-		intent.putExtra("CB_PIB", bPib);
-		intent.putExtra("CB_POPULACAO", bPopulacao);
-		intent.putExtra("CB_PRIMEIROS_PROJETOS", bPrimeirosProjetos);
-		intent.putExtra("CB_PROJETOS_CNPQ", bProjetosCnpq);
-		intent.putExtra("CB_PROJETOS_DIFUSAO", bProjetosDifusao);
-		intent.putExtra("CB_PROJETOS_INICIACAO", bProjetosIniciacao);
-		intent.putExtra("CB_PROJETOS_JOVENS", bProjetosJovens);
-		intent.putExtra("CB_ALUNOS_TURMA", bAlunosTurma);
-		intent.putExtra("CB_APROVACAO", bAprovacao);
-		intent.putExtra("CB_CENSO", bCenso);
-		intent.putExtra("CB_HORAS_AULA", bHorasAula);
-		intent.putExtra("CB_TAXA_ABANDONO", bTaxaAbandono);
-		intent.putExtra("CB_TAXA_DISTORCAO", bTaxaDistorcao);
+		intent.putExtra("CB_IDEB", idebView);
+		intent.putExtra("CB_PIB", pibView);
+		intent.putExtra("CB_POPULACAO", populationView);
+		intent.putExtra("CB_PRIMEIROS_PROJETOS", firstProjectsView);
+		intent.putExtra("CB_PROJETOS_CNPQ", cnpqProjectsView);
+		intent.putExtra("CB_PROJETOS_DIFUSAO", projectDiffusionView);
+		intent.putExtra("CB_PROJETOS_INICIACAO", initiationProjectsView);
+		intent.putExtra("CB_PROJETOS_JOVENS", jovensProjectsView);
+		intent.putExtra("CB_ALUNOS_TURMA", studentsClassView);
+		intent.putExtra("CB_APROVACAO", approvalView);
+		intent.putExtra("CB_CENSO", censusView);
+		intent.putExtra("CB_HORAS_AULA", hoursPerClassView);
+		intent.putExtra("CB_TAXA_ABANDONO", schoolDropoutRateView);
+		intent.putExtra("CB_TAXA_DISTORCAO", distortionRateView);
 		
 		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
 		intent.putExtra("INDEX_CHOOSED_STATE2", position2);

@@ -17,10 +17,10 @@ public class TelaIndicativosConsultados extends Activity {
 			cbProjetosDifusao, cbProjetosIniciacao, cbProjetosJovens, cbCenso,
 			cbAlunosTurma, cbHorasAula, cbTaxaDistorcao, cbTaxaAbandono,
 			cbAprovacao;
-	boolean bIdeb, bPib, bPopulacao, bPrimeirosProjetos, bProjetosCnpq,
-			bProjetosDifusao, bProjetosIniciacao, bProjetosJovens, bCenso,
-			bAlunosTurma, bHorasAula, bTaxaDistorcao, bTaxaAbandono,
-			bAprovacao;
+	boolean idebView, pibView, populationView, firstProjectsView, cnpqProjectsView,
+			projectDiffusionView, initiationProjectsView, jovensProjectsView, censusView,
+			studentsClassView, hoursPerClassView, distortionRateView, schoolDropoutRateView,
+			approvalView;
 	int position01, position02;
 
 	@Override
@@ -47,7 +47,11 @@ public class TelaIndicativosConsultados extends Activity {
 
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
+			loadAboutScreen();
+=======
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -59,7 +63,11 @@ public class TelaIndicativosConsultados extends Activity {
 		return true;
 	}
 
+<<<<<<< HEAD
+	public void loadAboutScreen() {
+=======
 	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreEscolhaIndicativo.class);
 		startActivity(intent);
 	}
@@ -82,20 +90,20 @@ public class TelaIndicativosConsultados extends Activity {
 	}
 
 	private void capturaValores() {
-		bIdeb = cbIdeb.isChecked();
-		bPib = cbPib.isChecked();
-		bPopulacao = cbPopulacao.isChecked();
-		bPrimeirosProjetos = cbPrimeirosProjetos.isChecked();
-		bProjetosCnpq = cbProjetosCnpq.isChecked();
-		bProjetosDifusao = cbProjetosDifusao.isChecked();
-		bProjetosIniciacao = cbProjetosIniciacao.isChecked();
-		bProjetosJovens = cbProjetosJovens.isChecked();
-		bCenso = cbCenso.isChecked();
-		bAlunosTurma = cbAlunosTurma.isChecked();
-		bHorasAula = cbHorasAula.isChecked();
-		bTaxaDistorcao = cbTaxaDistorcao.isChecked();
-		bTaxaAbandono = cbTaxaAbandono.isChecked();
-		bAprovacao = cbAprovacao.isChecked();
+		idebView = cbIdeb.isChecked();
+		pibView = cbPib.isChecked();
+		populationView = cbPopulacao.isChecked();
+		firstProjectsView = cbPrimeirosProjetos.isChecked();
+		cnpqProjectsView = cbProjetosCnpq.isChecked();
+		projectDiffusionView = cbProjetosDifusao.isChecked();
+		initiationProjectsView = cbProjetosIniciacao.isChecked();
+		jovensProjectsView = cbProjetosJovens.isChecked();
+		censusView = cbCenso.isChecked();
+		studentsClassView = cbAlunosTurma.isChecked();
+		hoursPerClassView = cbHorasAula.isChecked();
+		distortionRateView = cbTaxaDistorcao.isChecked();
+		schoolDropoutRateView = cbTaxaAbandono.isChecked();
+		approvalView = cbAprovacao.isChecked();
 	}
 
 	public void marcaOuDesmarcaCheckBox(boolean opcaoEscolhida) {
@@ -127,20 +135,20 @@ public class TelaIndicativosConsultados extends Activity {
 		capturaValores();
 
 		Intent intent = new Intent(this, TelaResultadoConsulta.class);
-		intent.putExtra("CB_IDEB", bIdeb);
-		intent.putExtra("CB_PIB", bPib);
-		intent.putExtra("CB_POPULACAO", bPopulacao);
-		intent.putExtra("CB_PRIMEIROS_PROJETOS", bPrimeirosProjetos);
-		intent.putExtra("CB_PROJETOS_CNPQ", bProjetosCnpq);
-		intent.putExtra("CB_PROJETOS_DIFUSAO", bProjetosDifusao);
-		intent.putExtra("CB_PROJETOS_INICIACAO", bProjetosIniciacao);
-		intent.putExtra("CB_PROJETOS_JOVENS", bProjetosJovens);
-		intent.putExtra("CB_ALUNOS_TURMA", bAlunosTurma);
-		intent.putExtra("CB_APROVACAO", bAprovacao);
-		intent.putExtra("CB_CENSO", bCenso);
-		intent.putExtra("CB_HORAS_AULA", bHorasAula);
-		intent.putExtra("CB_TAXA_ABANDONO", bTaxaAbandono);
-		intent.putExtra("CB_TAXA_DISTORCAO", bTaxaDistorcao);
+		intent.putExtra("CB_IDEB", idebView);
+		intent.putExtra("CB_PIB", pibView);
+		intent.putExtra("CB_POPULACAO", populationView);
+		intent.putExtra("CB_PRIMEIROS_PROJETOS", firstProjectsView);
+		intent.putExtra("CB_PROJETOS_CNPQ", cnpqProjectsView);
+		intent.putExtra("CB_PROJETOS_DIFUSAO", projectDiffusionView);
+		intent.putExtra("CB_PROJETOS_INICIACAO", initiationProjectsView);
+		intent.putExtra("CB_PROJETOS_JOVENS", jovensProjectsView);
+		intent.putExtra("CB_ALUNOS_TURMA", studentsClassView);
+		intent.putExtra("CB_APROVACAO", approvalView);
+		intent.putExtra("CB_CENSO", censusView);
+		intent.putExtra("CB_HORAS_AULA", hoursPerClassView);
+		intent.putExtra("CB_TAXA_ABANDONO", schoolDropoutRateView);
+		intent.putExtra("CB_TAXA_DISTORCAO", distortionRateView);
 
 		intent.putExtra("INDEX_CHOOSED_STATE1", position01);
 		intent.putExtra("INDEX_CHOOSED_STATE2", position02);
