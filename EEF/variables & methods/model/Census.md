@@ -6,16 +6,15 @@
 
 #### Private members:
 
-| private variables|
-| Type     | Variable                     |
-|----------|------------------------------|
-| `double` | initialElementarySchoolYears |
-| `double` | finalElementarySchoolYears   |
-| `double` | highSchool                   |
-| `double` | elementarySchoolEJA          |
-| `double` | highSchoolEJA                |
-| `int`    | censusYear                   |
-| `State`  | censusState                  |
+| Type     | Variable                     | Description|
+|----------|------------------------------|------------|
+| `double` | initialElementarySchoolYears |            |
+| `double` | finalElementarySchoolYears   |            |
+| `double` | highSchool                   |            |
+| `double` | elementarySchoolEJA          |            |
+| `double` | highSchoolEJA                |            |
+| `int`    | censusYear                   |            |
+| `State`  | censusState                  |            |
 
 #### Public members:
 
