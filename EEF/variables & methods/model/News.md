@@ -6,15 +6,15 @@
 
 #### Private members:
 
-| Type                | Variable         |
-|---------------------|------------------|
+| Type                | Variable         | Description|
+|---------------------|------------------|------------|
 | `static final long` | serialVersionUID |
-| `String`            | newsTitle        |
-| `String`            | newsCategory     |
-| `String`            | newsDescription  |
-| `String`            | newsLink         |
-| `String`            | newsDate         |
-| `Feed`              | newsFeed         |
+| `String`            | newsTitle        |title of news|
+| `String`            | newsCategory     |category of news|
+| `String`            | newsDescription  |description of news|
+| `String`            | newsLink         |url to news|
+| `String`            | newsDate         |date when news originated |
+| `Feed`              | newsFeed         |feed related to news|
 
 #### Public Members:
 
