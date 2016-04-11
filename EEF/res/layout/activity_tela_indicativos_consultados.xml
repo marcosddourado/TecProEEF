@@ -117,11 +117,11 @@
             android:text="@string/media_alunos_por_turma" />
 
         <CheckBox
-            android:id="@+id/checkBox_taxa_distorcao"
+            android:id="@+id/checkBox_distortion_rate"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/taxa_distorcao" />
+            android:text="@string/distortion_rate" />
 
         <CheckBox
             android:id="@+id/checkBox_taxa_abandono"
