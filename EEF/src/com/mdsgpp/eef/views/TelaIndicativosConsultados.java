@@ -31,14 +31,14 @@ public class TelaIndicativosConsultados extends Activity {
 
 		inicializaCheckBox();
 
-		position01 = intentAuxiliar.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		position02 = intentAuxiliar.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		position01 = intentAuxiliar.getIntExtra("INDEX_CHOOSED_STATE1", 0);
+		position02 = intentAuxiliar.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 
@@ -47,7 +47,11 @@ public class TelaIndicativosConsultados extends Activity {
 
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
 			loadAboutScreen();
+=======
+			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -59,7 +63,11 @@ public class TelaIndicativosConsultados extends Activity {
 		return true;
 	}
 
+<<<<<<< HEAD
 	public void loadAboutScreen() {
+=======
+	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreEscolhaIndicativo.class);
 		startActivity(intent);
 	}
@@ -76,7 +84,7 @@ public class TelaIndicativosConsultados extends Activity {
 		cbCenso = (CheckBox) findViewById(R.id.checkBox_censo);
 		cbAlunosTurma = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
 		cbHorasAula = (CheckBox) findViewById(R.id.checkBox_horas_aula);
-		cbTaxaDistorcao = (CheckBox) findViewById(R.id.checkBox_taxa_distorcao);
+		cbTaxaDistorcao = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
 		cbTaxaAbandono = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
 		cbAprovacao = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
 	}
@@ -142,8 +150,8 @@ public class TelaIndicativosConsultados extends Activity {
 		intent.putExtra("CB_TAXA_ABANDONO", schoolDropoutRateView);
 		intent.putExtra("CB_TAXA_DISTORCAO", distortionRateView);
 
-		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position01);
-		intent.putExtra("INDEX_ESTADO2_ESCOLHIDO", position02);
+		intent.putExtra("INDEX_CHOOSED_STATE1", position01);
+		intent.putExtra("INDEX_CHOOSED_STATE2", position02);
 
 		startActivity(intent);
 	}

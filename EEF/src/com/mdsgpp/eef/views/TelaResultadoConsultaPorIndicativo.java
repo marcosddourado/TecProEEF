@@ -30,7 +30,7 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(
-				R.menu.menu_telas, menu);
+				R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -39,7 +39,11 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
 			loadAboutScreen();
+=======
+			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -51,7 +55,11 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
     	return true;
 	}
 	
+<<<<<<< HEAD
 	public void loadAboutScreen() {
+=======
+	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreResultadoDaConsulta.class);
     	startActivity(intent);
 		
@@ -63,7 +71,7 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
 			String indicativo = intent.getStringExtra("INDICATIVO");
 			String titulo = intent.getStringExtra("TITULO");
 			
-			IndicativoAdapter adapter = new IndicativoAdapter(titulo, indicativo,
+			IndicativeAdapter adapter = new IndicativeAdapter(titulo, indicativo,
 					context);
 			
 			listaDeEstados.setAdapter(adapter);

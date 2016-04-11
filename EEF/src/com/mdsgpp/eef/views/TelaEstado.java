@@ -65,7 +65,7 @@ public class TelaEstado extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -74,7 +74,11 @@ public class TelaEstado extends Activity {
 	    	
 			switch (item.getItemId()) {
 			case R.id.sobre:
+<<<<<<< HEAD
 				loadAboutScreen();
+=======
+				openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 				break;
 			case android.R.id.home:
 		        NavUtils.navigateUpFromSameTask(this);
@@ -86,7 +90,11 @@ public class TelaEstado extends Activity {
 	    	return true;
 	    }
 	    
+<<<<<<< HEAD
 	    public void loadAboutScreen() {
+=======
+	    public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 	    	Intent intent = new Intent(this, TelaSobreEstado.class);
 	    	startActivity(intent);
 	    }
@@ -100,7 +108,7 @@ public class TelaEstado extends Activity {
 	    HashMap<String, String> informacoes = new HashMap <String, String>();
 	    
 	    try {
-			informacoes = StateConroller.getInstance(this).lerEstado(position);
+			informacoes = StateConroller.getInstance(this).readState(position);
 			preencheCamposTexto(informacoes);
 			setImagem(position);
 		} catch (IOException e) {
@@ -117,7 +125,7 @@ public class TelaEstado extends Activity {
 		textViewParticipacaoPib = (TextView) findViewById(R.id.textView_participacao_pib_valor);
 		textViewQuantidadeProjetosCienciaTecnologia = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
 		textViewValorProjetosCienciaTecnologia = (TextView) findViewById(R.id.textView_valor_investido_projetos);
-		textViewFundamentalIdeb = (TextView) findViewById(R.id.textView_ideb_fundamental);
+		textViewFundamentalIdeb = (TextView) findViewById(R.id.textView_ideb_elementary);
 		textViewEnsinoMedioIdeb = (TextView) findViewById(R.id.textView_ideb_ensinomedio);
 		textViewIniciaisIdeb = (TextView) findViewById(R.id.textView_ideb_iniciais);
 		textViewQuantidadePrimeirosProjetos = (TextView) findViewById(R.id.textView_primeiros_projetos_quantidade);
@@ -129,21 +137,21 @@ public class TelaEstado extends Activity {
 		textViewQuantidadeProjetosIniciacao = (TextView) findViewById(R.id.textView_projetos_iniciacao_quantidade);
 		textViewValorProjetosIniciacao = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
-		textViewCensoIniciaisFundamental = (TextView) findViewById(R.id.textView_censo_iniciais_fundamental);
-		textViewCensoFinaisFundamental = (TextView) findViewById(R.id.textView_censo_finais_fundamental);
-		textViewCensoMedio = (TextView) findViewById(R.id.textView_censo_medio);
-		textViewCensoEjaFundamental = (TextView) findViewById(R.id.textView_censo_fundamental_eja);
-		textViewCensoEjaMedio = (TextView) findViewById(R.id.textView_censo_medio_eja);
-		textViewMediaAlunosPorTurmaFundamental = (TextView) findViewById(R.id.textView_media_alunos_por_turma_fundamental);
-		textViewMediaAlunosPorTurmaMedio = (TextView) findViewById(R.id.textView_media_alunos_por_turma_medio);
-		textViewMediaHorasAulaFundamental = (TextView) findViewById(R.id.textView_horas_aula_ensino_fundamental);
-		textViewMediaHorasAulaMedio = (TextView) findViewById(R.id.textView_horas_aula_ensino_medio);
-		textViewTaxaDistorcaoIdadeSerieFundamental = (TextView) findViewById(R.id.textView_taxa_distorcao_fundamental);
-		textViewTaxaDistorcaoIdadeSerieMedio = (TextView) findViewById(R.id.textView_taxa_distorcao_medio);
-		textViewTaxaDeAproveitamentoFundamental = (TextView) findViewById(R.id.textView_taxa_aprovacao_fundamental);
-		textViewTaxaDeAproveitamentoMedio = (TextView) findViewById(R.id.textView_taxa_aprovacao_medio);
-		textViewTaxaDeAbandonoFundamental = (TextView) findViewById(R.id.textView_taxa_abandono_fundamental);
-		textViewTaxaDeAbandonoMedio = (TextView) findViewById(R.id.textView_taxa_abandono_medio);
+		textViewCensoIniciaisFundamental = (TextView) findViewById(R.id.textView_initial_census_elementary);
+		textViewCensoFinaisFundamental = (TextView) findViewById(R.id.textView_final_census_elementary);
+		textViewCensoMedio = (TextView) findViewById(R.id.textView_census_high_school);
+		textViewCensoEjaFundamental = (TextView) findViewById(R.id.textView_census_elementary_eja);
+		textViewCensoEjaMedio = (TextView) findViewById(R.id.textView_census_high_school_eja);
+		textViewMediaAlunosPorTurmaFundamental = (TextView) findViewById(R.id.textView_media_alunos_por_turma_elementary);
+		textViewMediaAlunosPorTurmaMedio = (TextView) findViewById(R.id.textView_media_alunos_por_turma_high_school);
+		textViewMediaHorasAulaFundamental = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
+		textViewMediaHorasAulaMedio = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
+		textViewTaxaDistorcaoIdadeSerieFundamental = (TextView) findViewById(R.id.textView_distortion_rate_elementary);
+		textViewTaxaDistorcaoIdadeSerieMedio = (TextView) findViewById(R.id.textView_distortion_rate_high_school);
+		textViewTaxaDeAproveitamentoFundamental = (TextView) findViewById(R.id.textView_approval_rate_elementary);
+		textViewTaxaDeAproveitamentoMedio = (TextView) findViewById(R.id.textView_approval_rate_high_school);
+		textViewTaxaDeAbandonoFundamental = (TextView) findViewById(R.id.textView_dropout_rate_elementary);
+		textViewTaxaDeAbandonoMedio = (TextView) findViewById(R.id.textView_dropout_rate_high_school);
 	}
 	
 	private void preencheCamposTexto(HashMap<String, String> informacoes) {
@@ -153,9 +161,9 @@ public class TelaEstado extends Activity {
 		textViewParticipacaoPib.setText(informacoes.get("percentual_participacao_pib"));
 		textViewQuantidadeProjetosCienciaTecnologia.setText(informacoes.get("projetos_ciencia_tecnologia"));
 		textViewValorProjetosCienciaTecnologia.setText(informacoes.get("valor_ciencia_tecnologia"));
-		textViewFundamentalIdeb.setText(informacoes.get("ideb_fundamental_final"));
-		textViewEnsinoMedioIdeb.setText(informacoes.get("ideb_ensino_medio"));
-		textViewIniciaisIdeb.setText(informacoes.get("ideb_fundamental_inicial"));
+		textViewFundamentalIdeb.setText(informacoes.get("ideb_elementary_final"));
+		textViewEnsinoMedioIdeb.setText(informacoes.get("ideb_ensino_high_school"));
+		textViewIniciaisIdeb.setText(informacoes.get("ideb_elementary_inicial"));
 		textViewQuantidadePrimeirosProjetos.setText(informacoes.get("quantidade_primeiros_projetos"));
 		textViewValorPrimeirosProjetos.setText(informacoes.get("valor_primeiros_projetos"));
 	    textViewQuantidadePesquisa.setText(informacoes.get("quantidade_projeto_cnpq"));
@@ -165,21 +173,21 @@ public class TelaEstado extends Activity {
 		textViewQuantidadeProjetosIniciacao.setText(informacoes.get("quantidade_projetos_inct"));
 		textViewValorProjetosIniciacao.setText(informacoes.get("valor_projetos_inct"));
 		
-		textViewCensoIniciaisFundamental.setText(informacoes.get("censo_anos_iniciais_fundamental"));
-		textViewCensoFinaisFundamental.setText(informacoes.get("censo_anos_finais_fundamental"));
-		textViewCensoMedio.setText(informacoes.get("censo_ensino_medio"));
-		textViewCensoEjaFundamental.setText(informacoes.get("censo_eja_fundamental"));
-		textViewCensoEjaMedio.setText(informacoes.get("censo_eja_medio"));
-		textViewMediaAlunosPorTurmaFundamental.setText(informacoes.get("alunos_por_turma_ensino_fundamental"));
-		textViewMediaAlunosPorTurmaMedio.setText(informacoes.get("alunos_por_turma_ensino_medio"));
-		textViewMediaHorasAulaFundamental.setText(informacoes.get("horas_aula_ensino_fundamental"));
-		textViewMediaHorasAulaMedio.setText(informacoes.get("horas_aula_ensino_medio"));
-		textViewTaxaDistorcaoIdadeSerieFundamental.setText(informacoes.get("taxa_distorcao_fundamental"));
-		textViewTaxaDistorcaoIdadeSerieMedio.setText(informacoes.get("taxa_distorcao_medio"));
-		textViewTaxaDeAproveitamentoFundamental.setText(informacoes.get("taxa_aprovacao_fundamental"));
-		textViewTaxaDeAproveitamentoMedio.setText(informacoes.get("taxa_aprovacao_medio"));
-		textViewTaxaDeAbandonoFundamental.setText(informacoes.get("taxa_aprovacao_fundamental"));
-		textViewTaxaDeAbandonoMedio.setText(informacoes.get("taxa_aprovacao_medio"));
+		textViewCensoIniciaisFundamental.setText(informacoes.get("censo_anos_iniciais_elementary"));
+		textViewCensoFinaisFundamental.setText(informacoes.get("censo_anos_finais_elementary"));
+		textViewCensoMedio.setText(informacoes.get("censo_ensino_high_school"));
+		textViewCensoEjaFundamental.setText(informacoes.get("censo_eja_elementary"));
+		textViewCensoEjaMedio.setText(informacoes.get("censo_eja_high_school"));
+		textViewMediaAlunosPorTurmaFundamental.setText(informacoes.get("alunos_por_turma_ensino_elementary"));
+		textViewMediaAlunosPorTurmaMedio.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
+		textViewMediaHorasAulaFundamental.setText(informacoes.get("horas_aula_ensino_elementary"));
+		textViewMediaHorasAulaMedio.setText(informacoes.get("horas_aula_ensino_high_school"));
+		textViewTaxaDistorcaoIdadeSerieFundamental.setText(informacoes.get("distortion_rate_elementary"));
+		textViewTaxaDistorcaoIdadeSerieMedio.setText(informacoes.get("distortion_rate_high_school"));
+		textViewTaxaDeAproveitamentoFundamental.setText(informacoes.get("taxa_aprovacao_elementary"));
+		textViewTaxaDeAproveitamentoMedio.setText(informacoes.get("taxa_aprovacao_high_school"));
+		textViewTaxaDeAbandonoFundamental.setText(informacoes.get("taxa_aprovacao_elementary"));
+		textViewTaxaDeAbandonoMedio.setText(informacoes.get("taxa_aprovacao_high_school"));
 		
 	}
 	
@@ -191,9 +199,9 @@ public class TelaEstado extends Activity {
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 				"sergipe", "tocantins"};	
 		
-		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_bandeiras);
-		int idBandeira = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
-		imageViewBandeiras.setImageResource(idBandeira);
+		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_flags);
+		int idFlag = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
+		imageViewBandeiras.setImageResource(idFlag);
 	}
 	
 	public void clickBotaoHistoricoEstado(View view) {

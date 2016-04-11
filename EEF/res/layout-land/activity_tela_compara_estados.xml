@@ -45,7 +45,7 @@
                 android:text="@string/string_vazia" />
 
             <ImageView
-                android:id="@+id/imageView_bandeiras1"
+                android:id="@+id/imageView_flags1"
                 android:layout_width="350dp"
                 android:layout_height="0dp"
                 android:layout_gravity="left"
@@ -117,7 +117,7 @@
                 android:text="@string/participacao_IDEB" />
 
             <TextView
-                android:id="@+id/textView_ideb_fundamental1"
+                android:id="@+id/textView_ideb_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -246,7 +246,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView_media_alunos_por_turma_fundamental1"
+                android:id="@+id/textView_media_alunos_por_turma_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -254,7 +254,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_media_alunos_por_turma_medio1"
+                android:id="@+id/textView_media_alunos_por_turma_high_school1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -271,7 +271,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView_horas_aula_ensino_fundamental1"
+                android:id="@+id/textView_horas_aula_ensino_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -279,7 +279,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_horas_aula_ensino_medio1"
+                android:id="@+id/textView_horas_aula_ensino_high_school1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -287,16 +287,16 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_distorcao1"
+                android:id="@+id/textView_distortion_rate1"
                 style="@style/comparacao_subTitulo_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/taxa_distorcao"
+                android:text="@string/distortion_rate"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView_taxa_distorcao_fundamental1"
+                android:id="@+id/textView_distortion_rate_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -304,7 +304,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_distorcao_medio1"
+                android:id="@+id/textView_distortion_rate_high_school1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -321,7 +321,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView_taxa_aprovacao_fundamental1"
+                android:id="@+id/textView_approval_rate_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -329,7 +329,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_aprovacao_medio1"
+                android:id="@+id/textView_approval_rate_high_school1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -346,7 +346,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView_taxa_abandono_fundamental1"
+                android:id="@+id/textView_dropout_rate_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -354,7 +354,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_abandono_medio1"
+                android:id="@+id/textView_dropout_rate_high_school1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -371,7 +371,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView_censo_iniciais_fundamental1"
+                android:id="@+id/textView_initial_census_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -379,7 +379,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_finais_fundamental1"
+                android:id="@+id/textView_final_census_elementary1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -387,7 +387,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_medio1"
+                android:id="@+id/textView_census_high_school1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -395,7 +395,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_fundamental_eja1"
+                android:id="@+id/textView_census_elementary_eja1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -403,7 +403,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_medio_eja1"
+                android:id="@+id/textView_census_high_school_eja1"
                 style="@style/comparacao_valor_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -440,7 +440,7 @@
                 android:text="@string/string_vazia" />
 
             <ImageView
-                android:id="@+id/imageView_bandeiras2"
+                android:id="@+id/imageView_flags2"
                 android:layout_width="350dp"
                 android:layout_height="0dp"
                 android:layout_gravity="left"
@@ -512,7 +512,7 @@
                 android:text="@string/participacao_IDEB" />
 
             <TextView
-                android:id="@+id/textView_ideb_fundamental2"
+                android:id="@+id/textView_ideb_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -640,7 +640,7 @@
                 android:text="@string/media_alunos_por_turma" />
 
             <TextView
-                android:id="@+id/textView_media_alunos_por_turma_fundamental2"
+                android:id="@+id/textView_media_alunos_por_turma_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -648,7 +648,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_media_alunos_por_turma_medio2"
+                android:id="@+id/textView_media_alunos_por_turma_high_school2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -664,7 +664,7 @@
                 android:text="@string/horas_aula_ensino" />
 
             <TextView
-                android:id="@+id/textView_horas_aula_ensino_fundamental2"
+                android:id="@+id/textView_horas_aula_ensino_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -672,7 +672,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_horas_aula_ensino_medio2"
+                android:id="@+id/textView_horas_aula_ensino_high_school2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -680,15 +680,15 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_distorcao2"
+                android:id="@+id/textView_distortion_rate2"
                 style="@style/comparacao_subTitulo_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/taxa_distorcao" />
+                android:text="@string/distortion_rate" />
 
             <TextView
-                android:id="@+id/textView_taxa_distorcao_fundamental2"
+                android:id="@+id/textView_distortion_rate_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -696,7 +696,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_distorcao_medio2"
+                android:id="@+id/textView_distortion_rate_high_school2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -712,7 +712,7 @@
                 android:text="@string/taxa_aprovacao" />
 
             <TextView
-                android:id="@+id/textView_taxa_aprovacao_fundamental2"
+                android:id="@+id/textView_approval_rate_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -720,7 +720,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_aprovacao_medio2"
+                android:id="@+id/textView_approval_rate_high_school2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -736,7 +736,7 @@
                 android:text="@string/taxa_abandono" />
 
             <TextView
-                android:id="@+id/textView_taxa_abandono_fundamental2"
+                android:id="@+id/textView_dropout_rate_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -744,7 +744,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_taxa_abandono_medio2"
+                android:id="@+id/textView_dropout_rate_high_school2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -760,7 +760,7 @@
                 android:text="@string/censo" />
 
             <TextView
-                android:id="@+id/textView_censo_iniciais_fundamental2"
+                android:id="@+id/textView_initial_census_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -768,7 +768,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_finais_fundamental2"
+                android:id="@+id/textView_final_census_elementary2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -776,7 +776,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_medio2"
+                android:id="@+id/textView_census_high_school2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -784,7 +784,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_fundamental_eja2"
+                android:id="@+id/textView_census_elementary_eja2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -792,7 +792,7 @@
                 android:text="@string/string_vazia" />
 
             <TextView
-                android:id="@+id/textView_censo_medio_eja2"
+                android:id="@+id/textView_census_high_school_eja2"
                 style="@style/comparacao_valor_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

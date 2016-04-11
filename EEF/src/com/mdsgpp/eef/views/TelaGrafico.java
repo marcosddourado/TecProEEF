@@ -39,7 +39,7 @@ public class GraphScreen extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -48,7 +48,11 @@ public class GraphScreen extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
 			loadAboutScreen();
+=======
+			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -60,7 +64,11 @@ public class GraphScreen extends Activity {
     	return true;
 	}
 	
+<<<<<<< HEAD
 	public void loadAboutScreen() {
+=======
+	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreGrafico.class);
     	startActivity(intent);
 	}
@@ -72,8 +80,8 @@ public class GraphScreen extends Activity {
 		// Captura o intent que abriu a activity
 		Intent intent = getIntent();
 		// Captura o valor transferido através da intent
-		estado1 = intent.getIntExtra("INDEX_ESTADO1_ESCOLHIDO", 0);
-		estado2 = intent.getIntExtra("INDEX_ESTADO2_ESCOLHIDO", 0);
+		estado1 = intent.getIntExtra("INDEX_CHOOSED_STATE1", 0);
+		estado2 = intent.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 		titulo = intent.getStringExtra("TITULO");
 		indicativo = intent.getStringExtra("INDICATIVO");
 
@@ -82,9 +90,9 @@ public class GraphScreen extends Activity {
 
 		try {
 			stateInformations1 = (HashMap<String, String>) StateConroller
-					.getInstance(this).lerEstado(estado1).clone();
+					.getInstance(this).readState(estado1).clone();
 			stateInformations2 = (HashMap<String, String>) StateConroller
-					.getInstance(this).lerEstado(estado2).clone();
+					.getInstance(this).readState(estado2).clone();
 			
 			converteDados(stateInformations1, stateInformations2);
 			criaGrafico(stateInformations1, stateInformations2);

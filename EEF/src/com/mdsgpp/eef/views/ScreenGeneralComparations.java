@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class TelaComparacoesGerais extends Activity {
+public class ScreenGeneralComparations extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +21,20 @@ public class TelaComparacoesGerais extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java
 		case R.id.sobre:
 			loadAboutScreen();
+=======
+		case R.id.about:
+			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -41,18 +46,27 @@ public class TelaComparacoesGerais extends Activity {
     	return true;
     }
     
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java
     public void loadAboutScreen() {
+=======
+    public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
     	Intent intent = new Intent(this, TelaSobreComparacoesGerais.class);
     	startActivity(intent);
     }
 	
-	public void clickBotaoComparacao(View view) {
-		Intent intent = new Intent(this, TelaComparacao.class);
+	public void clickButtonComparation(View view) {
+		Intent intent = new Intent(this, ScreenComparation.class);
 		startActivity(intent);
 	}
 	
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacoesGerais.java
 	public void clickBotaoIndicativos(View view) {
 		Intent intent = new Intent(this, QueryPerInficativeScreen.class);
+=======
+	public void clickButtonIndicatives(View view) {
+		Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
 		startActivity(intent);
 	}
 	

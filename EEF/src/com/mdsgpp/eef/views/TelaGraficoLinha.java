@@ -43,7 +43,7 @@ public class TelaGraficoLinha extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -52,7 +52,11 @@ public class TelaGraficoLinha extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD
 			loadAboutScreen();
+=======
+			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -81,14 +85,18 @@ public class TelaGraficoLinha extends Activity {
 		}
 		
 		try {
-			informacoes = StateConroller.getInstance(this).lerEstadoCompleto(position);
+			informacoes = StateConroller.getInstance(this).readStateCompleto(position);
 		} catch (IOException e) {
 			Log.i("Erro - TelaGraficoLinha", "Erro ao capturar as informacoes do estado.");
 			e.printStackTrace();
 		}	
 	}
 	
+<<<<<<< HEAD
 	public void loadAboutScreen() {
+=======
+	public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaSobreGrafico.class);
     	startActivity(intent);
 	}

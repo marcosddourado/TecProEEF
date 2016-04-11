@@ -7,8 +7,8 @@ import java.net.URL;
 
 import com.mdsgpp.eef.R;
 import com.mdsgpp.eef.model.Feed;
-import com.mdsgpp.eef.parse.FeedParser;
-import com.mdsgpp.eef.parse.FeedPersistencia;
+import com.mdsgpp.eef.parse.ParserFeed;
+import com.mdsgpp.eef.parse.PersistenceFeed;
 import com.mdsgpp.eef.views.DataReceiver;
 
 import android.app.ProgressDialog;
@@ -32,7 +32,7 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 	protected void onPreExecute() {
 		progressBar = new ProgressDialog(context, R.style.CustomProgressBar);
 		progressBar.setIndeterminate(true);
-		progressBar.setMessage("Carregando Notecias!");
+		progressBar.setMessage("Carregando Noticias!");
 		progressBar.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 		progressBar.show();
 		super.onPreExecute();
@@ -44,11 +44,11 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 
 		try {
 			URL url = new URL(urls[0]);
-			FeedParser handler = new FeedParser();
+			ParserFeed handler = new ParserFeed();
 			InputStream is = url.openStream();
 			feed = handler.parse(is);
 
-			FeedPersistencia.getInstance(this.context).writeFeedFile(feed);
+			PersistenceFeed.getInstance(this.context).writeFeedFile(feed);
 			this.updated = true;
 
 			return feed;
@@ -60,7 +60,7 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 		}
 
 		try {
-			feed = FeedPersistencia.getInstance(this.context).readFeedFile();
+			feed = PersistenceFeed.getInstance(this.context).readFeedFile();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
@@ -79,7 +79,7 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 		}
 		
 		if (!this.updated) {
-			Toast.makeText(this.context, "Neo foi possevel atualizar as notecias! :(",
+			Toast.makeText(this.context, "Neo foi possivel atualizar as noticias! :(",
 					Toast.LENGTH_LONG).show();
 		}
 

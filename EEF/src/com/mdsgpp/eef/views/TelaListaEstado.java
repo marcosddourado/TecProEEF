@@ -1,7 +1,6 @@
 package com.mdsgpp.eef.views;
 
 import com.mdsgpp.eef.R;
-import com.mdsgpp.eef.views.EstadoAdapter;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -30,7 +29,7 @@ public class TelaListaEstado extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_telas, menu);
+		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
 	
@@ -39,7 +38,11 @@ public class TelaListaEstado extends Activity {
 	    	
 			switch (item.getItemId()) {
 			case R.id.sobre:
+<<<<<<< HEAD
 				loadAboutScreen();
+=======
+				openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 				break;
 			case android.R.id.home:
 		        NavUtils.navigateUpFromSameTask(this);
@@ -51,15 +54,19 @@ public class TelaListaEstado extends Activity {
 	    	return true;
 	    }
 	    
+<<<<<<< HEAD
 	    public void loadAboutScreen() {
+=======
+	    public void openAboutScreen() {
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 	    	Intent intent = new Intent(this, TelaSobreListaEstado.class);
 	    	startActivity(intent);
 	    }
 	
 	private void inicializaListView() {
-		ListView listView = (ListView) findViewById(R.id.listview_tela_estados);
+		ListView listView = (ListView) findViewById(R.id.listview_tela_states);
 
-		EstadoAdapter adapter = new EstadoAdapter(this);
+		StateAdapter adapter = new StateAdapter(this);
 
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(new OnItemClickListener() {

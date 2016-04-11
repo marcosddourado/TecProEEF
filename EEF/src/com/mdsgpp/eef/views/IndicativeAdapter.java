@@ -15,11 +15,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.Gravity;
 
-public class IndicativoAdapter extends BaseAdapter{
+public class IndicativeAdapter extends BaseAdapter{
 	
-	private HashMap<String, String> estado;
-	private String indicativoEscolhido;
-	private String titulo;
+	private HashMap<String, String> state;
+	private String choosedIndicative;
+	private String tittle;
 	private Context context;
 	private ViewHolder holder;
 	private LayoutInflater inflater;
@@ -32,14 +32,14 @@ public class IndicativoAdapter extends BaseAdapter{
 			"sergipe", "tocantins"};
 	
 	static class ViewHolder{
-		private TextView tvNome;
-		private TextView tvValorIndicativo;
-		private ImageView tvBandeiras;
+		private TextView tvName;
+		private TextView tvIndicativeValue;
+		private ImageView tvFlags;
 	}
 	
-	public IndicativoAdapter(String titulo,String indicativoEscolhido, Context context){
-		this.indicativoEscolhido = indicativoEscolhido;
-		this.titulo = titulo;
+	public IndicativeAdapter(String tittle, String choosedIndicative, Context context){
+		this.choosedIndicative = choosedIndicative;
+		this.tittle = tittle;
 		this.context = context;
 		this.inflater = LayoutInflater.from(context);
 	}
@@ -51,13 +51,13 @@ public class IndicativoAdapter extends BaseAdapter{
 
 	@Override
 	public HashMap<String, String> getItem(int position) {
-		HashMap<String, String> estado = null;
+		HashMap<String, String> state = null;
 		try {
-			estado = StateConroller.getInstance(context).lerEstado(position);
+			state = StateConroller.getInstance(context).readState(position);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return estado;
+		return state;
 	}
 
 	@Override
@@ -69,37 +69,37 @@ public class IndicativoAdapter extends BaseAdapter{
 	@Override
 	public View getView(int position, View view, ViewGroup viewGroup) {
 		if(view == null) {
-			view = this.inflater.inflate(R.layout.listview_item_indicativos, null);
+			view = this.inflater.inflate(R.layout.listview_indicatives_item, null);
 			holder = new ViewHolder();
 				
-			holder.tvNome = (TextView) view.findViewById(R.id.textview_lista_indicativos_nome);
-			holder.tvValorIndicativo = (TextView) view.findViewById(R.id.textview_lista_indicativos_conteudo);
-			holder.tvBandeiras = (ImageView) view.findViewById(R.id.imageview_lista_indicativos_bandeiras);
+			holder.tvName = (TextView) view.findViewById(R.id.textview_list_indicatives_name);
+			holder.tvIndicativeValue = (TextView) view.findViewById(R.id.textview_list_indicatives_content);
+			holder.tvFlags = (ImageView) view.findViewById(R.id.imageview_list_indicatives_flags);
 			view.setTag(holder);
 		} else {
 			holder = (ViewHolder) view.getTag();
 		}
 		
 		if(position == 0){//Titulo
-			holder.tvNome.setText(titulo);
-			holder.tvNome.setGravity(Gravity.CENTER_HORIZONTAL);
-			holder.tvValorIndicativo.setVisibility(View.GONE);
-			holder.tvBandeiras.setImageResource(NO_SELECTION);
+			holder.tvName.setText(tittle);
+			holder.tvName.setGravity(Gravity.CENTER_HORIZONTAL);
+			holder.tvIndicativeValue.setVisibility(View.GONE);
+			holder.tvFlags.setImageResource(NO_SELECTION);
 		} else {//Indicativos e seus valores
-			estado = getItem(position-1);
-			holder.tvNome.setText(estado.get("nome"));
-			holder.tvValorIndicativo.setText( pegaValor(estado.get(indicativoEscolhido)) );
-			holder.tvValorIndicativo.setVisibility(View.VISIBLE);
+			state = getItem(position-1);
+			holder.tvName.setText(state.get("nome"));
+			holder.tvIndicativeValue.setText( getValue(state.get(choosedIndicative)) );
+			holder.tvIndicativeValue.setVisibility(View.VISIBLE);
 			
-			int idBandeira = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
-			holder.tvBandeiras.setImageResource(idBandeira);
+			int idFlag = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
+			holder.tvFlags.setImageResource(idFlag);
 		}
 		
 		
 		return view;
 	}
 	
-	private String pegaValor(String linha) {
+	private String getValue(String linha) {
 		if (linha.contains(":")) {
 			String partes[] = linha.split(": ");
 			return partes[1];

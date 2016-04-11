@@ -32,12 +32,12 @@ public class FeedAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		return feed.getItemsSize();
+		return feed.getFeedItensSize();
 	}
 
 	@Override
 	public Object getItem(int position) {
-		return feed.getItems().get(position);
+		return feed.getFeedItens().get(position);
 	}
 
 	@Override
@@ -64,9 +64,10 @@ public class FeedAdapter extends BaseAdapter {
 		}
 		
 		// Set the text to our TextViews
-		this.holder.tvTitle.setText(this.feed.getItem(position).getTitle());
-		this.holder.tvCategory.setText(this.feed.getItem(position).getCategory());
-		this.holder.tvDescription.setText(Html.fromHtml( this.feed.getItem(position).getDescription() ));
+		this.holder.tvTitle.setText(this.feed.getFeedItem(position).getNewsTitle());
+		this.holder.tvCategory.setText(this.feed.getFeedItem(position).getNewsCategory());
+		this.holder.tvDescription.setText(Html.fromHtml( this.feed.getFeedItem(position)
+				.getNewsDescription()));
 		
 		// at this point, the convertView is full, so we can just return it
 		return convertView;

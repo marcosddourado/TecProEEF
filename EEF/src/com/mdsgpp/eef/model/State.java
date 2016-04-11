@@ -47,9 +47,9 @@ public class State {
 
 		elementarySchoolFinalData = information.get("censo_anos_finais");
 		elementarySchoolInitialData = information.get("censo_anos_iniciais");
-		highSchoolData = information.get("censo_ensino_medio");
-		ejaHighSchoolData = information.get("censo_eja_medio");
-		ejaElementarySchoolData = information.get("censo_eja_fundamental");
+		highSchoolData = information.get("censo_ensino_high_school");
+		ejaHighSchoolData = information.get("censo_eja_high_school");
+		ejaElementarySchoolData = information.get("censo_eja_elementary");
 
 		census = new Census[highSchoolData.size()];
 		for (int i=0; i<census.length; i++) {
@@ -116,7 +116,7 @@ public class State {
 
 		elementarySchoolFinalData = information.get("5a_8a");
 		elementarySchoolInitialData = information.get("series_iniciais");
-		highSchoolData = information.get("ensino_medio");
+		highSchoolData = information.get("ensino_high_school");
 
 		ideb = new Ideb[highSchoolData.size()];
 		for (int i=0; i<ideb.length; i++) {
@@ -339,16 +339,16 @@ public class State {
 	}
 
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {
-		String[] gradeClassHoursIndicatives = { "horas_aula_ensino_fundamental", "horas_aula_ensino_medio" };
-		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_fundamental", "alunos_por_turma_ensino_medio" };
+		String[] gradeClassHoursIndicatives = { "horas_aula_ensino_elementary", "horas_aula_ensino_high_school" };
+		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school" };
 		String[] scienceAndThecnologyProjectsIndicatives = { "numero_projetos", "valor_investido" };
 		String[] firstProjectsIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
 		String[] apoioCnpqProjectIndicatives = { "projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq" };
 		String[] jovensPesquisadoresProjectIndicatives = { "jovens_pesquisadores", "valores_jovens_pesquisadores" };
 		String[] inctProjectsIndicatives = { "projetos_inct", "valores_projetos_inct" };
-		String[] ageGradeDistortionRate = { "taxa_distorcao_fundamental", "taxa_distorcao_ensino_medio" };
-		String[] educationalAchievementRate = { "taxa_aprovacao_fundamental", "taxa_aprovacao_medio" };
-		String[] schoolDropoutRate = { "taxa_abandono_fundamental", "taxa_abandono_medio" };
+		String[] ageGradeDistortionRate = { "distortion_rate_elementary", "distortion_rate_ensino_high_school" };
+		String[] educationalAchievementRate = { "taxa_aprovacao_elementary", "taxa_aprovacao_high_school" };
+		String[] schoolDropoutRate = { "taxa_abandono_elementary", "taxa_abandono_high_school" };
 
 		this.setStatePopulation(information);
 		this.setCensus(information);
