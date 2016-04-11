@@ -13,8 +13,8 @@
 | `double` | highSchool                   |            |
 | `double` | elementarySchoolEJA          |            |
 | `double` | highSchoolEJA                |            |
-| `int`    | censusYear                   |            |
-| `State`  | censusState                  |            |
+| `int`    | censusYear                   |Contain the year when census were originated            |
+| `State`  | censusState                  |Contain the state where census is from|
 
 #### Public members:
 
