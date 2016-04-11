@@ -6,12 +6,12 @@
 
 #### Private members:
 
-| Type     | Variable      |
-|----------|---------------|
-| `int`    | projectAmount |
-| `double` | projectValue  |
-| `State`  | projectState  |
-| `int`    | projectYear   |
+| Type     | Variable      | Description|
+|----------|---------------|------------|
+| `int`    | projectAmount |Quantity of project|
+| `double` | projectValue  |Value of project|
+| `State`  | projectState  |State where project is from|
+| `int`    | projectYear   |Year when project is originated|
 
 #### Public members:
 
