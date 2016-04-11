@@ -8,7 +8,20 @@
 ___
 
 ##   [2. Programming Practices](#2-programming-practices-1)
+#### [2.1 `@Override`](#21-override-1)
+#### [2.2 Caught Exceptions](#22-caught-exceptions-1)
+#### [2.3 Static Members](#23-static-members-1)
+___
+
 ##   [3. Naming](#3-naming-1)
+#### [3.1 Classes](#31-classes-1)
+#### [3.2 Methods](#32-methods-1)
+#### [3.3 Class Members](#33-class-members-1)
+#### [3.4 Constants](#34-constants-1)
+#### [3.5 Local Variables](#35-local-variables-1)
+#### [3.6 Parameters](#36-parameters-1)
+___
+
 ##   [4. Formatting](#4-formatting)
 
 
