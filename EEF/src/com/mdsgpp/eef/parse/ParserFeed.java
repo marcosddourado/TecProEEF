@@ -17,7 +17,7 @@ import android.sax.RootElement;
 import android.sax.StartElementListener;
 import android.util.Xml;
 
-public class FeedParser extends DefaultHandler {
+public class ParserFeed extends DefaultHandler {
 
 	public Feed parse(InputStream is) {
 

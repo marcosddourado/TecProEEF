@@ -7,7 +7,7 @@ import java.net.URL;
 
 import com.mdsgpp.eef.R;
 import com.mdsgpp.eef.model.Feed;
-import com.mdsgpp.eef.parse.FeedParser;
+import com.mdsgpp.eef.parse.ParserFeed;
 import com.mdsgpp.eef.parse.PersistenceFeed;
 import com.mdsgpp.eef.views.DataReceiver;
 
@@ -44,7 +44,7 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 
 		try {
 			URL url = new URL(urls[0]);
-			FeedParser handler = new FeedParser();
+			ParserFeed handler = new ParserFeed();
 			InputStream is = url.openStream();
 			feed = handler.parse(is);
 
