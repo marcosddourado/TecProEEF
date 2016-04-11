@@ -29,7 +29,7 @@ public class TelaComparacoesGerais extends Activity {
     	
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -41,7 +41,7 @@ public class TelaComparacoesGerais extends Activity {
     	return true;
     }
     
-    public void abreTelaSobre() {
+    public void loadAboutScreen() {
     	Intent intent = new Intent(this, TelaSobreComparacoesGerais.class);
     	startActivity(intent);
     }
@@ -52,7 +52,7 @@ public class TelaComparacoesGerais extends Activity {
 	}
 	
 	public void clickBotaoIndicativos(View view) {
-		Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+		Intent intent = new Intent(this, QueryPerInficativeScreen.class);
 		startActivity(intent);
 	}
 	

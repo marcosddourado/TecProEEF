@@ -40,7 +40,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
     public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -72,7 +72,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
 		});
 	}
 	
-	public void abreTelaSobre()
+	public void loadAboutScreen()
 	{
 		Intent intent = new Intent(this, TelaFeedSobre.class);
 		startActivity(intent);

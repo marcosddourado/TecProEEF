@@ -34,7 +34,7 @@ public class TelaGraficoLinha extends Activity {
 		setContentView(R.layout.activity_tela_grafico_historico);
 		
 		inicializaCamposTexto();
-		capturaInformacoes();
+		catchInformation();
 		preencheCamposDeTexto();
 			
 		plotarGrafico();
@@ -52,7 +52,7 @@ public class TelaGraficoLinha extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -64,7 +64,7 @@ public class TelaGraficoLinha extends Activity {
     	return true;
 	}
 	
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		int position;
 		Intent intent;
 		
@@ -88,7 +88,7 @@ public class TelaGraficoLinha extends Activity {
 		}	
 	}
 	
-	public void abreTelaSobre() {
+	public void loadAboutScreen() {
 		Intent intent = new Intent(this, TelaSobreGrafico.class);
     	startActivity(intent);
 	}

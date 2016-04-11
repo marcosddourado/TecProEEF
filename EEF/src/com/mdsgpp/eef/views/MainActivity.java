@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
     	
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			loadAboutScreen();
 			break;
 		default:
 			break;
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
     	return true;
     }
     
-    public void abreTelaSobre() {
+    public void loadAboutScreen() {
     	Intent intent = new Intent(this, TelaSobre.class);
     	startActivity(intent);
     }
@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     }
     public void clickBotaoConsultaPorIndicativo(View view){
-    	Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+    	Intent intent = new Intent(this, QueryPerInficativeScreen.class);
     	startActivity(intent);
     }
 }

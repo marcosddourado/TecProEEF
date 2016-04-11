@@ -39,7 +39,7 @@ public class TelaListaEstado extends Activity {
 	    	
 			switch (item.getItemId()) {
 			case R.id.sobre:
-				abreTelaSobre();
+				loadAboutScreen();
 				break;
 			case android.R.id.home:
 		        NavUtils.navigateUpFromSameTask(this);
@@ -51,7 +51,7 @@ public class TelaListaEstado extends Activity {
 	    	return true;
 	    }
 	    
-	    public void abreTelaSobre() {
+	    public void loadAboutScreen() {
 	    	Intent intent = new Intent(this, TelaSobreListaEstado.class);
 	    	startActivity(intent);
 	    }

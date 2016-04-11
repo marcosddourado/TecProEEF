@@ -59,7 +59,7 @@ public class TelaEstado extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_estado);
 		
-		capturaInformacoes();
+		catchInformation();
 	}
 
 	@Override
@@ -74,7 +74,7 @@ public class TelaEstado extends Activity {
 	    	
 			switch (item.getItemId()) {
 			case R.id.sobre:
-				abreTelaSobre();
+				loadAboutScreen();
 				break;
 			case android.R.id.home:
 		        NavUtils.navigateUpFromSameTask(this);
@@ -86,12 +86,12 @@ public class TelaEstado extends Activity {
 	    	return true;
 	    }
 	    
-	    public void abreTelaSobre() {
+	    public void loadAboutScreen() {
 	    	Intent intent = new Intent(this, TelaSobreEstado.class);
 	    	startActivity(intent);
 	    }
 	
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		Intent intent = getIntent();
 		int position = intent.getIntExtra("INDEX_ESTADO_ESCOLHIDO", 0);
 		

@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public abstract class EscolheIndicativo extends Activity {
-	
+
 	private String indicativo = "populacao";
 	private String titulo = "Populaeeo";
 
@@ -32,7 +32,7 @@ public abstract class EscolheIndicativo extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -44,112 +44,112 @@ public abstract class EscolheIndicativo extends Activity {
     	return true;
 	}
 	
-	public abstract void abreTelaSobre();
+	public abstract void loadAboutScreen();
 	
 	public void onRadioButtonClicked(View view) {
 
 		switch (view.getId()) {
 		case R.id.radio_apoio_cnpq_investimento:
-			setValores("valor_projetos_cnpq", "Projetos de Pesquisa Apoio CNPq (R$)");
+			setValues("valor_projetos_cnpq", "Projetos de Pesquisa Apoio CNPq (R$)");
 			break;
 		case R.id.radio_apoio_cnpq_qtd:
-			setValores("quantidade_projeto_cnpq", "rojetos de Pesquisa Apoio CNPq (Qtd.)");
+			setValues("quantidade_projeto_cnpq", "rojetos de Pesquisa Apoio CNPq (Qtd.)");
 			break;
 		case R.id.radio_difusao_tecnologica_investimento:
-			setValores("valor_ciencia_tecnologia", "Projeto de Difuseo Tecnolegica (R$)");
+			setValues("valor_ciencia_tecnologia", "Projeto de Difuseo Tecnolegica (R$)");
 			break;
 		case R.id.radio_difusao_tecnologica_qtd:
-			setValores("projetos_ciencia_tecnologia", "Projeto de Difuseoo Tecnolegica (Qtd.)");
+			setValues("projetos_ciencia_tecnologia", "Projeto de Difuseoo Tecnolegica (Qtd.)");
 			break;
 		case R.id.radio_ideb_fundamental_finais:
-			setValores("ideb_fundamental_final", "IDEB do Ensino Fundamental (Series Finais)");
+			setValues("ideb_fundamental_final", "IDEB do Ensino Fundamental (Series Finais)");
 			break;
 		case R.id.radio_ideb_fundamental_iniciai:
-			setValores("ideb_fundamental_inicial", "IDEB do Ensino Fundamental (Series Iniciais)");
+			setValues("ideb_fundamental_inicial", "IDEB do Ensino Fundamental (Series Iniciais)");
 			break;
 		case R.id.radio_ideb_medio:
-			setValores("ideb_ensino_medio", "IDEB do Ensino Medio");
+			setValues("ideb_ensino_medio", "IDEB do Ensino Medio");
 			break;
 		case R.id.radio_jovens_pesquisadores_investimento:
-			setValores("valor_projetos_jovens_pesquisadores", "Jovens pesquisadores (R$)");
+			setValues("valor_projetos_jovens_pesquisadores", "Jovens pesquisadores (R$)");
 			break;
 		case R.id.radio_jovens_pesquisadores_qtd:
-			setValores("quantidade_projeto_jovens_pesquisadores", "Jovens pesquisadores (Qtd.)");
+			setValues("quantidade_projeto_jovens_pesquisadores", "Jovens pesquisadores (Qtd.)");
 			break;
 		case R.id.radio_pib:
-			setValores("percentual_participacao_pib", "Participaeeo Estadual no PIB (%)");
+			setValues("percentual_participacao_pib", "Participaeeo Estadual no PIB (%)");
 			break;
 		case R.id.radio_populacao:
-			setValores("populacao", "Populaeeo");
+			setValues("populacao", "Populaeeo");
 			break;
 		case R.id.radio_primeiros_projetos_investimento:
-			setValores("valor_primeiros_projetos", "Programa Primeiros Projetos (R$)");
+			setValues("valor_primeiros_projetos", "Programa Primeiros Projetos (R$)");
 			break;
 		case R.id.radio_primeiros_projetos_qtd:
-			setValores("quantidade_primeiros_projetos", "Programa Primeiros Projetos (Qtd.)");
+			setValues("quantidade_primeiros_projetos", "Programa Primeiros Projetos (Qtd.)");
 			break;
 		case R.id.radio_projetos_inct_investimento:
-			setValores("valor_projetos_inct", "Projetos INCT (R$)");
+			setValues("valor_projetos_inct", "Projetos INCT (R$)");
 			break;
 		case R.id.radio_projetos_inct_qtd:
-			setValores("quantidade_projetos_inct", "Projetos INCT (Qtd.)");
+			setValues("quantidade_projetos_inct", "Projetos INCT (Qtd.)");
 			break;
 		case R.id.radio_alunos_por_turma_fundamental:
-			setValores("alunos_por_turma_ensino_fundamental", "Media de Alunos por Turma do Ensino Fundamental (Qtd.)");
+			setValues("alunos_por_turma_ensino_fundamental", "Media de Alunos por Turma do Ensino Fundamental (Qtd.)");
 			break;
 		case R.id.radio_alunos_por_turma_medio:
-			setValores("alunos_por_turma_ensino_medio", "Media de Alunos por Turma do Ensino Medio (Qtd.)");
+			setValues("alunos_por_turma_ensino_medio", "Media de Alunos por Turma do Ensino Medio (Qtd.)");
 			break;
 		case R.id.radio_horas_aula_fundamental:
-			setValores("horas_aula_ensino_fundamental", "Media de horas aula dierias do Ensino Fundamental");
+			setValues("horas_aula_ensino_fundamental", "Media de horas aula dierias do Ensino Fundamental");
 			break;
 		case R.id.radio_horas_aula_medio:
-			setValores("horas_aula_ensino_medio", "Media de horas aula dierias do Ensino Medio");
+			setValues("horas_aula_ensino_medio", "Media de horas aula dierias do Ensino Medio");
 			break;
 		case R.id.radio_taxa_distorcao_fundamental:
-			setValores("taxa_distorcao_fundamental", "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)");
+			setValues("taxa_distorcao_fundamental", "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)");
 			break;
 		case R.id.radio_taxa_distorcao_medio:
-			setValores("taxa_distorcao_medio", "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)");
+			setValues("taxa_distorcao_medio", "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)");
 			break;
 		case R.id.radio_taxa_aprovacao_fundamental:
-			setValores("taxa_aprovacao_fundamental", "Taxa de Aproveitamento do Ensino Fundamental (%)");
+			setValues("taxa_aprovacao_fundamental", "Taxa de Aproveitamento do Ensino Fundamental (%)");
 			break;
 		case R.id.radio_taxa_aprovacao_medio:
-			setValores("taxa_aprovacao_medio", "Taxa de Aproveitamento do Ensino Medio (%)");
+			setValues("taxa_aprovacao_medio", "Taxa de Aproveitamento do Ensino Medio (%)");
 			break;
 		case R.id.radio_taxa_abandono_fundamental:
-			setValores("taxa_abandono_fundamental", "Taxa de Abandono do Ensino Fundamental (%)");
+			setValues("taxa_abandono_fundamental", "Taxa de Abandono do Ensino Fundamental (%)");
 			break;
 		case R.id.radio_taxa_abandono_medio:
-			setValores("taxa_abandono_medio", "Taxa de Abandono do Ensino Medio (%)");
+			setValues("taxa_abandono_medio", "Taxa de Abandono do Ensino Medio (%)");
 			break;
 		case R.id.radio_censo_iniciais_fundamental:
-			setValores("censo_anos_iniciais_fundamental", "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)");
+			setValues("censo_anos_iniciais_fundamental", "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)");
 			break;
 		case R.id.radio_censo_finais_fundamental:
-			setValores("censo_anos_finais_fundamental", "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)");
+			setValues("censo_anos_finais_fundamental", "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)");
 			break;
 		case R.id.radio_censo_ensino_medio:
-			setValores("censo_ensino_medio", "Censo Escolar do Ensino Medio (Matriculados)");
+			setValues("censo_ensino_medio", "Censo Escolar do Ensino Medio (Matriculados)");
 			break;
 		case R.id.radio_censo_eja_fundamental:
-			setValores("censo_eja_fundamental", "Censo Escolar do EJA - Fundamental (Matriculados)");
+			setValues("censo_eja_fundamental", "Censo Escolar do EJA - Fundamental (Matriculados)");
 			break;
 		case R.id.radio_censo_eja_medio:
-			setValores("censo_eja_medio", "Censo Escolar do EJA - Medio (Matriculados)");
+			setValues("censo_eja_medio", "Censo Escolar do EJA - Medio (Matriculados)");
 			break;
 		}
 	}
 
-	public void setValores(String indivativo, String titulo) {
+	public void setValues(String indivativo, String titulo) {
 		setIndicativo(indivativo);
 		setTitulo(titulo);
 	}
 
-	public abstract void clickBotaoAvancar(View view);
+	public abstract void clickAdvanceButton(View view);
 
-	public String getIndicativo() {
+	public String getIndicative() {
 		return indicativo;
 	}
 
@@ -157,7 +157,7 @@ public abstract class EscolheIndicativo extends Activity {
 		this.indicativo = indicativo;
 	}
 
-	public String getTitulo() {
+	public String getTitle() {
 		return titulo;
 	}
 

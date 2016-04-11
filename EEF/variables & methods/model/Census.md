@@ -6,6 +6,7 @@
 
 #### Private members:
 
+| private variables|
 | Type     | Variable                     |
 |----------|------------------------------|
 | `double` | initialElementarySchoolYears |

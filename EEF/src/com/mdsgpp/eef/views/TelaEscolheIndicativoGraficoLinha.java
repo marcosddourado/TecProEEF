@@ -23,15 +23,15 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 
 	private String titulo, indicativo;
 	private int positionHistorico;
-	private Intent intentRecebida;
+	private Intent receivedIntent;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_escolhe_indicativo_grafico);
 		
-		intentRecebida = getIntent();
-		positionHistorico = intentRecebida.getIntExtra("ESTADO", 0);
+		receivedIntent = getIntent();
+		positionHistorico = receivedIntent.getIntExtra("ESTADO", 0);
 
 		estado = capturaInformacoesEstado();
 		Log.i("position tela escolhe indicativo grafico", positionHistorico+"");
@@ -55,7 +55,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			abreTelaSobre();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -67,8 +67,8 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
     	return true;
 	}
 	
-	public void abreTelaSobre() {
-		Intent intent = new Intent(this, TelaSobreEscolheIndicativoGraficoComparacao.class);
+	public void loadAboutScreen() {
+		Intent intent = new Intent(this, ChooseIndicativeWithCompareGraphAboutScreen.class);
     	startActivity(intent);
 	}	
 
@@ -377,7 +377,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 	}
 
 
-	public void clickBotaoAvancar(View view) {
+	public void clickAdvanceButton(View view) {
 		Intent intent = new Intent(this, TelaGraficoLinha.class);
 		ArrayList<String> temp = new ArrayList<String>();
 		
