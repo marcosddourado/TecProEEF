@@ -10,19 +10,19 @@ import com.mdsgpp.eef.model.Feed;
 
 import android.content.Context;
 
-public class FeedPersistencia {
+public class PersistenceFeed {
 
 	private static final String FILENAME = "feed.txt";
-	private static FeedPersistencia instance;
+	private static PersistenceFeed instance;
 	private Context context;
 	
-	public FeedPersistencia(Context context) {
+	public PersistenceFeed(Context context) {
 		this.context = context;
 	}
 
-	public static FeedPersistencia getInstance(Context context) {
+	public static PersistenceFeed getInstance(Context context) {
 		if (instance == null) {
-			instance = new FeedPersistencia(context);
+			instance = new PersistenceFeed(context);
 		}
 		return instance;
 	}
