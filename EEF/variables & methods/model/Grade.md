@@ -6,12 +6,12 @@
 
 #### Private members:
 
-| Type     |        Variable       |
-|----------|:---------------------:|
-| `double` | elementarySchoolGrade |
-| `double` |    highSchoolGrade    |
-| `int`    |       gradeYear       |
-| `State`  |         stateGrade         |
+| Type     |        Variable       | Description|
+|----------|:---------------------:|------------|
+| `double` | elementarySchoolGrade |grades related to elementary school|
+| `double` |    highSchoolGrade    |grades related to highschool|
+| `int`    |       gradeYear       |year of the grade|
+| `State`  |         stateGrade    |state where grade came from|
 
 #### Public members:
 
