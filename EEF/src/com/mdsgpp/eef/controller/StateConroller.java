@@ -38,7 +38,7 @@ public class StateConroller {
 		String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
 		State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
 
-		escreveStateComTodasInformacoes(state);
+		writeStateWithAllTheInformations(state);
 
 		return state;
 
@@ -51,7 +51,7 @@ public class StateConroller {
 		String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
 		State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
 
-		escreveState(state);
+		writeState(state);
 
 		return this.stateInformations;
 
@@ -65,13 +65,13 @@ public class StateConroller {
 		String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
 		State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
 
-		escreveStateComTodasInformacoes(state);
+		writeStateWithAllTheInformations(state);
 
 		return this.stateInformations;
 
 	}
 
-	private void escreveState(State state) {
+	private void writeState(State state) {
 
 		FillNameAbbreviationAndPopulation(state);
 
@@ -256,7 +256,7 @@ public class StateConroller {
 
 	}
 
-	private void escreveStateComTodasInformacoes(State state) {
+	private void writeStateWithAllTheInformations(State state) {
 		String temp = "";
 
 		FillNameAbbreviationAndPopulation(state);
