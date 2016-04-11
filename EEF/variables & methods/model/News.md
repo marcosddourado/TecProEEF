@@ -9,12 +9,12 @@
 | Type                | Variable         | Description|
 |---------------------|------------------|------------|
 | `static final long` | serialVersionUID |
-| `String`            | newsTitle        |title of news|
-| `String`            | newsCategory     |category of news|
-| `String`            | newsDescription  |description of news|
-| `String`            | newsLink         |url to news|
-| `String`            | newsDate         |date when news originated |
-| `Feed`              | newsFeed         |feed related to news|
+| `String`            | newsTitle        |Contain the title of news|
+| `String`            | newsCategory     |Contain the category of news|
+| `String`            | newsDescription  |Contain the description of news|
+| `String`            | newsLink         |Contain the url to news|
+| `String`            | newsDate         |Contain the date when news originated |
+| `Feed`              | newsFeed         |Contain the feed related to news|
 
 #### Public Members:
 
