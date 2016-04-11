@@ -14,9 +14,9 @@ public class ScreenComparation extends Comparation {
 		getStatesSpinner01().getSelectedItem().toString();
 		getStatesSpinner().getSelectedItem().toString();
 
-		int position1 = getTodosEstados().indexOf(getStatesSpinner01().getSelectedItem()
+		int position1 = getAllStates().indexOf(getStatesSpinner01().getSelectedItem()
 				.toString());
-		int position2 = getTodosEstados().indexOf(getStatesSpinner().getSelectedItem()
+		int position2 = getAllStates().indexOf(getStatesSpinner().getSelectedItem()
 				.toString());
 
 		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
