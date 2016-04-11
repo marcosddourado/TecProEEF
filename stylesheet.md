@@ -1,5 +1,11 @@
 # Stylesheet
 
+## [1. Source Files](#1-source-files-1)
+## [2. Programming Practices](#2-programming-practices-1)
+## [3. Naming](#3-naming-1)
+## [4. Formatting](#4-formatting)
+
+
 ## 1. Source Files
 
 #### 1.1 File Name
@@ -15,7 +21,7 @@ The source file name consists of the case-sensitive name of the top-level class 
 ``` Java
 /*
 *file: State.java
-*purpose: determine the State model 
+*purpose: determine the State model
 */
 
 package com.mdsgpp.eef.model;
@@ -56,7 +62,7 @@ public class News implements Serializable {
 	private String newsTitle;
 	...
 	// protected members
-	
+
 	public News(Feed newsFeed) {
 		this.newsFeed = newsFeed;
 	}
@@ -72,7 +78,7 @@ public class News implements Serializable {
 	protected void onPreExecute() {
 	...
 	}
-``` 
+```
 
 #### 2.2 Caught Exceptions
 Caught exceptions should never be ignored. The runtime error should be treated into the appropriate scope.
@@ -218,7 +224,7 @@ Each line that contains variable declarations must contain the declaration of a 
 	//good declaration
 	private String stateName;
 	private String stateAbbreviation;
-	
+
 	//bad declaration
 	private string stateName, stateAbbreviation;
 ```
