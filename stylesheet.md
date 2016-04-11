@@ -1,5 +1,37 @@
 # Stylesheet
 
+##   [1. Source Files](#1-source-files-1)
+#### [1.1 File Name](#11-file-name-1)
+#### [1.2 Structure](#12-structure-1)
+#### [1.3 Import Statements](#13-import-statements-1)
+#### [1.4 Class Declaration](#14-class-declaration-1)
+___
+
+##   [2. Programming Practices](#2-programming-practices-1)
+#### [2.1 `@Override`](#21-override-1)
+#### [2.2 Caught Exceptions](#22-caught-exceptions-1)
+#### [2.3 Static Members](#23-static-members-1)
+___
+
+##   [3. Naming](#3-naming-1)
+#### [3.1 Classes](#31-classes-1)
+#### [3.2 Methods](#32-methods-1)
+#### [3.3 Class Members](#33-class-members-1)
+#### [3.4 Constants](#34-constants-1)
+#### [3.5 Local Variables](#35-local-variables-1)
+#### [3.6 Parameters](#36-parameters-1)
+___
+
+##   [4. Formatting](#4-formatting)
+#### [4.1 Braces](#41-braces-1)
+#### [4.2 Block Indentation](#42-block-indentation-1)
+#### [4.3 Statements Per Line](#43-statements-per-line-1)
+#### [4.4 Column Limit](#44-column-limit-1)
+#### [4.5 Comma/Operator separation](#45-commaoperator-separation-1)
+#### [4.6 Specific Constructs](#46-specific-constructs-1)
+___
+
+
 ## 1. Source Files
 
 #### 1.1 File Name
@@ -15,7 +47,7 @@ The source file name consists of the case-sensitive name of the top-level class 
 ``` Java
 /*
 *file: State.java
-*purpose: determine the State model 
+*purpose: determine the State model
 */
 
 package com.mdsgpp.eef.model;
@@ -56,7 +88,7 @@ public class News implements Serializable {
 	private String newsTitle;
 	...
 	// protected members
-	
+
 	public News(Feed newsFeed) {
 		this.newsFeed = newsFeed;
 	}
@@ -72,7 +104,7 @@ public class News implements Serializable {
 	protected void onPreExecute() {
 	...
 	}
-``` 
+```
 
 #### 2.2 Caught Exceptions
 Caught exceptions should never be ignored. The runtime error should be treated into the appropriate scope.
@@ -218,7 +250,7 @@ Each line that contains variable declarations must contain the declaration of a 
 	//good declaration
 	private String stateName;
 	private String stateAbbreviation;
-	
+
 	//bad declaration
 	private string stateName, stateAbbreviation;
 ```
