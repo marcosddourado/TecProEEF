@@ -6,14 +6,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import com.mdsgpp.eef.modelo.Feed;
+import com.mdsgpp.eef.model.Feed;
 
 import android.content.Context;
 
 public class FeedPersistencia {
 
 	private static final String FILENAME = "feed.txt";
-	private static FeedPersistencia instancia;
+	private static FeedPersistencia instance;
 	private Context context;
 	
 	public FeedPersistencia(Context context) {
@@ -21,10 +21,10 @@ public class FeedPersistencia {
 	}
 
 	public static FeedPersistencia getInstance(Context context) {
-		if (instancia == null) {
-			instancia = new FeedPersistencia(context);
+		if (instance == null) {
+			instance = new FeedPersistencia(context);
 		}
-		return instancia;
+		return instance;
 	}
 	
 	public void writeFeedFile(Feed feed) throws IOException {

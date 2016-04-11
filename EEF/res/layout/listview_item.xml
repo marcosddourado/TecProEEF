@@ -3,14 +3,14 @@
     android:layout_height="fill_parent">
     
     <ImageView   
-       	android:id="@+id/imageView_bandeiras"
+       	android:id="@+id/imageView_flags"
 		android:layout_height="wrap_content"
 		android:layout_alignParentLeft="true"
   		android:layout_width="50dp" 
    		android:layout_marginLeft="5dp"
 		android:contentDescription="@string/string_vazia"/>
   
-    <TextView android:id="@+id/textview_lista_siglas"
+    <TextView android:id="@+id/textview_states_abbreviations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
     	android:layout_alignParentLeft="true"
@@ -21,7 +21,7 @@
         android:textSize="30sp"
         style="@style/titulo" />
     
-    <TextView android:id="@+id/textview_lista_estados"
+    <TextView android:id="@+id/textview_states_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

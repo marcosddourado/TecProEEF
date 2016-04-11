@@ -42,15 +42,15 @@ public class DadosParse {
 		this.informacoes = new HashMap<String, ArrayList<String[]>>();
 	}
 
-	public HashMap<String, ArrayList<String[]>> getEstado(int posicao) throws IOException {
+	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
 		String nome, sigla;
 
 		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(this.estados[posicao][1] + this.extensao);
+		InputStream is = am.open(this.estados[position][1] + this.extensao);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
 		nome = br.readLine();
-		nome = this.estados[posicao][0];
+		nome = this.estados[position][0];
 		sigla = br.readLine();
 		
 		limpaInformacoes();
