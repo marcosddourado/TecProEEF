@@ -8,10 +8,10 @@
 
 | Type     |        Variable       | Description|
 |----------|:---------------------:|------------|
-| `double` | elementarySchoolGrade |grades related to elementary school|
-| `double` |    highSchoolGrade    |grades related to highschool|
-| `int`    |       gradeYear       |year of the grade|
-| `State`  |         stateGrade    |state where grade came from|
+| `double` | elementarySchoolGrade |Contain the grades related to elementary school|
+| `double` |    highSchoolGrade    |Contain the grades related to highschool|
+| `int`    |       gradeYear       |Contain the year of the grade|
+| `State`  |         stateGrade    |Contain the state where grade came from|
 
 #### Public members:
 
