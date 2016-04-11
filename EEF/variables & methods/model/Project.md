@@ -8,10 +8,10 @@
 
 | Type     | Variable      | Description|
 |----------|---------------|------------|
-| `int`    | projectAmount |Quantity of project|
-| `double` | projectValue  |Value of project|
-| `State`  | projectState  |State where project is from|
-| `int`    | projectYear   |Year when project is originated|
+| `int`    | projectAmount |Contain the quantity of project|
+| `double` | projectValue  |Contain the value of project|
+| `State`  | projectState  |Contain the state where project is from|
+| `int`    | projectYear   |Contain the year when project is originated|
 
 #### Public members:
 
