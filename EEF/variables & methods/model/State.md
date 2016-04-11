@@ -6,24 +6,24 @@
 
 #### Private members:
 
-| Type      | Variable                       |
-|-----------|--------------------------------|
-| `String`  | stateName                      |
-| `String`  | stateAbbreviation              |
-| `double`  | percentageCollaborationWithPIB |
-| `int`     | statePopulation                |
-| `Census`  | census                         |
-| `Ideb`    | idebs                          |
-| `Grade`   | studentGradesPerClass          |
-| `Grade`   | gradeClassHours                |
-| `Project` | scienceAndThecnologyProjects   |
-| `Project` | firstProjects                  |
-| `Project` | inctProject                    |
-| `Project` | apoioCnpqProject               |
-| `Project` | jovensPesquisadoresProject     |
-| `Grade`   | ageGradeDistortionRate         |
-| `Grade`   | educationalAchievementRate     |
-| `Grade`   | schoolDropoutRate              |
+| Type      | Variable                       | Description |
+|-----------|--------------------------------|-------------|
+| `String`  | stateName                      |             |
+| `String`  | stateAbbreviation              |             |
+| `double`  | percentageCollaborationWithPIB |             |
+| `int`     | statePopulation                |             |
+| `Census`  | census                         |             |
+| `Ideb`    | idebs                          |             |
+| `Grade`   | studentGradesPerClass          |             |
+| `Grade`   | gradeClassHours                |             |
+| `Project` | scienceAndThecnologyProjects   |             |
+| `Project` | firstProjects                  |             |
+| `Project` | inctProject                    |             |
+| `Project` | apoioCnpqProject               |             |
+| `Project` | jovensPesquisadoresProject     |             |
+| `Grade`   | ageGradeDistortionRate         |             |
+| `Grade`   | educationalAchievementRate     |             |
+| `Grade`   | schoolDropoutRate              |             |
 
 #### Public members:
 
