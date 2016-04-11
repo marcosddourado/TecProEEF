@@ -1,9 +1,15 @@
 # Stylesheet
 
-## [1. Source Files](#1-source-files-1)
-## [2. Programming Practices](#2-programming-practices-1)
-## [3. Naming](#3-naming-1)
-## [4. Formatting](#4-formatting)
+##   [1. Source Files](#1-source-files-1)
+#### [1.1 File Name](#11-file-name-1)
+#### [1.2 Structure](#12-structure-1)
+#### [1.3 Import Statements](#13-import-statements-1)
+#### [1.4 Class Declaration](#14-class-declaration-1)
+___
+
+##   [2. Programming Practices](#2-programming-practices-1)
+##   [3. Naming](#3-naming-1)
+##   [4. Formatting](#4-formatting)
 
 
 ## 1. Source Files
