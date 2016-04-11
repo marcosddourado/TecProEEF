@@ -23,6 +23,13 @@ ___
 ___
 
 ##   [4. Formatting](#4-formatting)
+#### [4.1 Braces](#41-braces-1)
+#### [4.2 Block Indentation](#42-block-indentation-1)
+#### [4.3 Statements Per Line](#43-statements-per-line-1)
+#### [4.4 Column Limit](#44-column-limit-1)
+#### [4.5 Comma/Operator separation](#45-commaoperator-separation-1)
+#### [4.6 Specific Constructs](#46-specific-constructs-1)
+___
 
 
 ## 1. Source Files
