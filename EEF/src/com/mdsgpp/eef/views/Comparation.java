@@ -165,7 +165,7 @@ public abstract class Comparation extends Activity{
 		return statesSpinner;
 	}
 
-	public ArrayList<String> getTodosEstados() {
+	public ArrayList<String> getAllStates() {
 		return allStates;
 	}
 }
