@@ -11,7 +11,7 @@
 | `int`    | projectAmount |Contain the quantity of project|
 | `double` | projectValue  |Contain the value of project|
 | `State`  | projectState  |Contain the state where project is from|
-| `int`    | projectYear   |Contain the year when project is originated|
+| `int`    | projectYear   |Contain the year when project were originated|
 
 #### Public members:
 
