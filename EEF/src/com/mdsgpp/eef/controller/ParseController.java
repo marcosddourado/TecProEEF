@@ -6,15 +6,15 @@ import java.util.HashMap;
 
 import android.content.Context;
 
-import com.mdsgpp.eef.parse.DadosParse;
+import com.mdsgpp.eef.parse.ParseData;
 
 public class ParseController {
 
 	private static ParseController instance;
-	DadosParse parser;
+	ParseData parser;
 
 	public ParseController(Context context) {
-		parser = new DadosParse(context);
+		parser = new ParseData(context);
 	}
 
 	public static ParseController getInstance(Context context) {

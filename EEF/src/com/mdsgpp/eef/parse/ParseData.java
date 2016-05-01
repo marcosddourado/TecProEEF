@@ -10,16 +10,16 @@ import java.util.HashMap;
 import android.content.Context;
 import android.content.res.AssetManager;
 
-public class DadosParse {
+public class ParseData {
 
-	private HashMap<String, ArrayList<String[]>> informacoes;
-	private ArrayList<String[]> dados;
+	private HashMap<String, ArrayList<String[]>> informations;
+	private ArrayList<String[]> data;
 	private Context context;
-	private String extensao = ".txt";
-	private String nomeIndicador;
-	private int linhas = 2;
+	private String extension = ".txt";
+	private String indicatorName;
+	private int lines = 2;
 
-	String estados[][] = { { "Acre", "Acre" }, { "Alagoas", "Alagoas" },
+	String states[][] = { { "Acre", "Acre" }, { "Alagoas", "Alagoas" },
 			{ "Amape", "Amapa" }, { "Amazonas", "Amazonas" },
 			{ "Bahia", "Bahia" }, { "Ceare", "Ceara" },
 			{ "Distrito Federal", "Distrito Federal" },
@@ -37,75 +37,75 @@ public class DadosParse {
 			{ "Seo Paulo", "Sao Paulo" }, { "Sergipe", "Sergipe" },
 			{ "Tocantins", "Tocantins" } };
 
-	public DadosParse(Context context) {
+	public ParseData(Context context) {
 		this.context = context;
-		this.informacoes = new HashMap<String, ArrayList<String[]>>();
+		this.informations = new HashMap<String, ArrayList<String[]>>();
 	}
 
 	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
-		String nome, sigla;
+		String name, acronym;
 
 		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(this.estados[position][1] + this.extensao);
+		InputStream is = am.open(this.states[position][1] + this.extension);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
-		nome = br.readLine();
-		nome = this.estados[position][0];
-		sigla = br.readLine();
+		name = br.readLine();
+		name = this.states[position][0];
+		acronym = br.readLine();
 		
-		limpaInformacoes();
-		limpaDados();
+		eraseInformations();
+		eraseData();
 		
-		insereNomeSigla(nome, sigla);
-		lerIndicativos(br);
+		insertAcronymName(name, acronym);
+		readIndicatives(br);
 		
-		return informacoes;
+		return informations;
 	}
 
-	public void limpaInformacoes() {
-		this.informacoes.clear();
+	public void eraseInformations() {
+		this.informations.clear();
 	}
 	
-	public void limpaDados() {
-		this.dados = new ArrayList<String[]>(); 
+	public void eraseData() {
+		this.data = new ArrayList<String[]>();
 	}
 
 	// Metodo resposavel por mandar o nome e a sigla atraves do mesmo hashmap ds indicativos
-	public void insereNomeSigla(String nome, String sigla) {
+	public void insertAcronymName(String name, String acronym) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
-		String nomeEsigla[] = new String[2];
-		nomeEsigla[0] = nome;
-		nomeEsigla[1] = sigla;
+		String nameAndAcronym[] = new String[2];
+		nameAndAcronym[0] = name;
+		nameAndAcronym[1] = acronym;
 		
-		container.add(nomeEsigla);
-		this.informacoes.put("nome_e_sigla", container);
+		container.add(nameAndAcronym);
+		this.informations.put("nome_e_sigla", container);
 	}
 	
 	// Metodo responsavel pela leitura dos dados disponiveis
-	public void lerIndicativos(BufferedReader br) throws IOException {
+	public void readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
-		String linha;
+		String line;
 
-		linha = br.readLine();
-		nomeIndicador = br.readLine();
-		linha = br.readLine();
+		line = br.readLine();
+		indicatorName = br.readLine();
+		line = br.readLine();
 		
-		while (linha != null) {
+		while (line != null) {
 			
-			if (linha.isEmpty()) {
+			if (line.isEmpty()) {
 				aux++;
 			} else {
-				dados.add(linha.split(": "));
+				data.add(line.split(": "));
 			}
 
-			if (aux == linhas) {
+			if (aux == lines) {
 				aux = 0;
-				this.informacoes.put(nomeIndicador, dados);
-				nomeIndicador = br.readLine();
-				limpaDados();
+				this.informations.put(indicatorName, data);
+				indicatorName = br.readLine();
+				eraseData();
 			}
 			
-			linha = br.readLine();
+			line = br.readLine();
 		}
 
 		br.close();
