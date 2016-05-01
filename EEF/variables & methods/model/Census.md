@@ -6,15 +6,15 @@
 
 #### Private members:
 
-| Type     | Variable                     |
-|----------|------------------------------|
-| `double` | initialElementarySchoolYears |
-| `double` | finalElementarySchoolYears   |
-| `double` | highSchool                   |
-| `double` | elementarySchoolEJA          |
-| `double` | highSchoolEJA                |
-| `int`    | censusYear                   |
-| `State`  | censusState                  |
+| Type     | Variable                     | Description|
+|----------|------------------------------|------------|
+| `double` | initialElementarySchoolYears |            |
+| `double` | finalElementarySchoolYears   |            |
+| `double` | highSchool                   |            |
+| `double` | elementarySchoolEJA          |            |
+| `double` | highSchoolEJA                |            |
+| `int`    | censusYear                   |Contain the year when census were originated            |
+| `State`  | censusState                  |Contain the state where census is from|
 
 #### Public members:
 

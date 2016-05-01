@@ -6,10 +6,10 @@
 
 #### Private members:
 
-| Type                |     Variable     |
-|---------------------|:----------------:|
-| `static final long` | serialVersionUID |
-| `ArrayList<News>`   | feedItens        |
+| Type                |     Variable     | Description|
+|---------------------|:----------------:|------------|
+| `static final long` | serialVersionUID |            |
+| `ArrayList<News>`   | feedItens        |List the feed held by the object|
 
 #### Public members:
 | Return Type |    Method Name   |       Arguments       |                     Description                    |
