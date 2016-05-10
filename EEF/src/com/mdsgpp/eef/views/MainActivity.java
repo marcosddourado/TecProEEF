@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
     }
     
     public void clickButtonGeneralConsultation(View view){
-    	Intent intent = new Intent(this, TelaListaEstado.class);
+    	Intent intent = new Intent(this, ScreenStateList.class);
     	startActivity(intent);
     }
     

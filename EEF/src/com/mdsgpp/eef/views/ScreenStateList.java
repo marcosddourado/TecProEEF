@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-public class TelaListaEstado extends Activity {
+public class ScreenStateList extends Activity {
 
 	final Context context = this;
 
@@ -23,7 +23,7 @@ public class TelaListaEstado extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_lista_estado);
 
-		inicializaListView();
+		initializeListView();
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class TelaListaEstado extends Activity {
 	    public boolean onOptionsItemSelected(MenuItem item) {
 	    	
 			switch (item.getItemId()) {
-			case R.id.sobre:
+			case R.id.about:
 				openAboutScreen();
 				break;
 			case android.R.id.home:
@@ -55,8 +55,8 @@ public class TelaListaEstado extends Activity {
 	    	startActivity(intent);
 	    }
 	
-	private void inicializaListView() {
-		ListView listView = (ListView) findViewById(R.id.listview_tela_states);
+	private void initializeListView() {
+		ListView listView = (ListView) findViewById(R.id.listview_tela_estados);
 
 		StateAdapter adapter = new StateAdapter(this);
 
