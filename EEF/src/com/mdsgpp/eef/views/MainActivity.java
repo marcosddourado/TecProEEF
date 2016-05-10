@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
     }
     
     public void openAboutScreen() {
-    	Intent intent = new Intent(this, TelaSobre.class);
+    	Intent intent = new Intent(this, ScreenOver.class);
     	startActivity(intent);
     }
 
