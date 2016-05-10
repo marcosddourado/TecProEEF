@@ -16,7 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class TelaEscolheIndicativoGraficoLinha extends Activity{
+public class ScreenLineGraphIndicative extends Activity{
 	
 	private State estado;
 	private ArrayList<Float> historico = new ArrayList<Float>();
@@ -378,7 +378,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 
 
 	public void clickButtonNext(View view) {
-		Intent intent = new Intent(this, TelaGraficoLinha.class);
+		Intent intent = new Intent(this, ScreenLineGraph.class);
 		ArrayList<String> temp = new ArrayList<String>();
 		
 		for(int i=0; i<historico.size(); i++)

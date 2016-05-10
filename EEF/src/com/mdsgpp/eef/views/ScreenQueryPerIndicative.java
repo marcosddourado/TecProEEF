@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
-public class TelaConsultaPorIndicativo extends ChooseIndicative {
+public class ScreenQueryPerIndicative extends ChooseIndicative {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

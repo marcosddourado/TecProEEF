@@ -20,7 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class TelaGraficoLinha extends Activity {
+public class ScreenLineGraph extends Activity {
 
 	private TextView txtviewTituloGrafico, txtviewHistorico;
 	private ArrayList<Float> historico = new ArrayList<Float>();
@@ -51,7 +51,7 @@ public class TelaGraficoLinha extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -81,9 +81,9 @@ public class TelaGraficoLinha extends Activity {
 		}
 		
 		try {
-			informacoes = StateConroller.getInstance(this).readStateCompleto(position);
+			informacoes = StateConroller.getInstance(this).readCompleteState(position);
 		} catch (IOException e) {
-			Log.i("Erro - TelaGraficoLinha", "Erro ao capturar as informacoes do estado.");
+			Log.i("Error - ScreenLineGraph", "Erro ao capturar as informacoes do estado.");
 			e.printStackTrace();
 		}	
 	}

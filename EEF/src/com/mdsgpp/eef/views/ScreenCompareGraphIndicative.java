@@ -7,7 +7,7 @@ import android.widget.RadioButton;
 
 import com.mdsgpp.eef.R;
 
-public class TelaChooseIndicativeGraficoComparacao extends ChooseIndicative {
+public class ScreenCompareGraphIndicative extends ChooseIndicative {
 	
 	private int position1, position2;
 	
@@ -131,7 +131,7 @@ public class TelaChooseIndicativeGraficoComparacao extends ChooseIndicative {
 	}
 	
 	public void clickButtonNext(View view) {
-		Intent intent = new Intent(this, TelaGrafico.class);
+		Intent intent = new Intent(this, ScreenGraph.class);
 		
 		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
 		intent.putExtra("INDEX_CHOOSED_STATE2", position2);

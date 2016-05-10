@@ -18,7 +18,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TelaGrafico extends Activity {
+public class ScreenGraph extends Activity {
 
 	private int estado1;
 	private int estado2;

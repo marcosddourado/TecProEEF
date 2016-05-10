@@ -16,7 +16,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-public class TelaFeed extends Activity implements ReceptorDados {
+public class ScreenFeed extends Activity implements ReceptorDados {
 
 	private final static String FEED_ADDRESS = "http://noticias.gov.br/noticias/rss?id=AFSZW";
 	
@@ -74,7 +74,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
 	
 	public void openAboutScreen()
 	{
-		Intent intent = new Intent(this, TelaFeedSobre.class);
+		Intent intent = new Intent(this, ScreenFeedAbout.class);
 		startActivity(intent);
 	}	
 	

@@ -56,11 +56,11 @@ public class MainActivity extends Activity {
     }
     
     public void clickButtonFeed(View view){
-    	Intent intent = new Intent(this, TelaFeed.class);
+    	Intent intent = new Intent(this, ScreenFeed.class);
     	startActivity(intent);
     }
     public void clickButtonConsultationByIndicative(View view){
-    	Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+    	Intent intent = new Intent(this, ScreenQueryPerIndicative.class);
     	startActivity(intent);
     }
 }

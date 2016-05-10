@@ -9,8 +9,8 @@
     <string name="acre">Acre</string>
     <string name="action_settings">Settings</string>
     <string name="alagoas">Alagoas</string>
-    <string name="alunos_por_turma_fundamental">Média de Alunos por Turma do Ensino Fundamental(Qtd.)</string>
-    <string name="alunos_por_turma_medio">Média de Alunos por Turma do Ensino Médio(Qtd.)</string>
+    <string name="alunos_por_turma_elementary">Média de Alunos por Turma do Ensino Fundamental(Qtd.)</string>
+    <string name="alunos_por_turma_high_school">Média de Alunos por Turma do Ensino Médio(Qtd.)</string>
     <string name="amapa">Amapa</string>
     <string name="amazonas">Amazonas</string>
     <string name="app_name">Educação em Foco</string>
@@ -30,11 +30,11 @@
     <string name="bt_verifica_estados_por_indicativo">Verificar estados</string>
     <string name="ceara">Ceará</string>
     <string name="censo">Censo Escolar (matriculados)</string>
-    <string name="censo_anos_finais_fundamental">Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)</string>
-    <string name="censo_anos_iniciais_fundamental">Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)</string>
-    <string name="censo_eja_fundamental">Censo Escolar do EJA - Médio (Matriculados)</string>
-    <string name="censo_eja_medio">Censo Escolar do EJA - Fundamental (Matriculados)</string>
-    <string name="censo_ensino_medio">Censo Escolar do Ensino Médio (Matriculados)</string>
+    <string name="censo_anos_finais_elementary">Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)</string>
+    <string name="censo_anos_iniciais_elementary">Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)</string>
+    <string name="censo_eja_elementary">Censo Escolar do EJA - Médio (Matriculados)</string>
+    <string name="censo_eja_high_school">Censo Escolar do EJA - Fundamental (Matriculados)</string>
+    <string name="censo_ensino_high_school">Censo Escolar do Ensino Médio (Matriculados)</string>
     <string name="compara_estados">Comparar</string>
     <string name="comparacoes_gerais_conteudo_estados">O usuário escolherá dois estados para comparar os indicativos dos mesmos.</string>
     <string name="comparacoes_gerais_conteudo_indicativos">O usuário escolherá os indicativos que deseja comparar em relação a todos os estados.</string>
@@ -49,15 +49,18 @@
 			Entretanto, as notícias retiradas são apenas relacionadas a educação brasileira.\n
 			Caso o aplicativo seja atualizado para abranger mais fontes de informação, esta tela será atualizada para refletir tais mudanças.</string>
     <string name="df">Distrito Federal</string>
+    <string name="distortion_rate">Taxa de Distorção de Idade (%)</string>
+    <string name="distortion_rate_elementary">Taxa de Distorção Idade/Série do Ensino Fundamental (%)</string>
+    <string name="distortion_rate_high_school">Taxa de Distorção Idade/Série do Ensino Médio (%)</string>
     <string name="escolhe_indicativo_grafico_comparacao_conteudo">O usuário escolhe um indicativo para gerar o gráfico com os dados do mesmo.</string>
     <string name="espiritoSanto">Esprito Santo</string>
     <string name="estado_conteudo">É apresentado os dados dos indicativos do estado selecionado, com a opção de verificar o histórico. Os resultados apresentados são referentes ao último ano disponível. Os anos são disponíbilizados para consulta na opção "Histórico" na tela de consulta de estados.</string>
     <string name="estados_opcao">Escolha dois estados: </string>
     <string name="goias">Goias</string>
     <string name="grafico_conteudo">Apresenta o gráfico com os dados do indicativo selecionado.</string>
+    <string name="horas_aula_elementary">Média de horas aula diárias do Ensino Fundamental</string>
     <string name="horas_aula_ensino">Média de horas aula diárias</string>
-    <string name="horas_aula_fundamental">Média de horas aula diárias do Ensino Fundamental</string>
-    <string name="horas_aula_medio">Média de horas aula diárias do Ensino Médio</string>
+    <string name="horas_aula_high_school">Média de horas aula diárias do Ensino Médio</string>
     <string name="ideb"> IDEB - Indice de Desenvolvimento da Educação Básica: </string>
     <string name="ideb_conteudo"> O IDEB é um indicador criado pelo governo federal para medir a qualidade do ensino nas escolas públicas. 
     		A escala de notas vai de 0 a 10.</string>
@@ -69,7 +72,7 @@
     <string name="informacao_consultar_estado2">Será apresentado um combo box com 26* unidades federativas brasileiras,
     		para a escolha daquela que o usuário deseje definir como o segundo estado na comparação.</string>
     <string name="jovens_pesquisadores">Jovens pesquisadores</string>
-    <string name="jovens_pesquisadores_investimento">Jovens pesquisadores (R$)</string>
+    <string name="jovens_pesquisadores_investmento">Jovens pesquisadores (R$)</string>
     <string name="jovens_pesquisadores_qtd">Jovens pesquisadores (Qtd.)</string>
     <string name="lista_estado_conteudo">O usuário escolhe o estado afim de consultar os dados do mesmo.</string>
     <string name="maranhao">Maranhão</string>
@@ -88,9 +91,9 @@
     <string name="paraiba">Paraíba</string>
     <string name="parana">Paraná</string>
     <string name="participacao_IDEB">IDEB</string>
-    <string name="participacao_IDEB_fundamental_finais">IDEB do Ensino Fundamental (Séries Finais)</string>
-    <string name="participacao_IDEB_fundamental_iniciais">IDEB do Ensino Fundamental (Séries Iniciais)</string>
-    <string name="participacao_IDEB_medio">IDEB do Ensino Médio</string>
+    <string name="participacao_IDEB_elementary_finais">IDEB do Ensino Fundamental (Séries Finais)</string>
+    <string name="participacao_IDEB_elementary_iniciais">IDEB do Ensino Fundamental (Séries Iniciais)</string>
+    <string name="participacao_IDEB_high_school">IDEB do Ensino Médio</string>
     <string name="participacao_PIB">Participacao Estadual no PIB</string>
     <string name="participacao_PIB_percentual">Participação Estadual no PIB (%)</string>
     <string name="participacao_percentual_PIB"> Participação Estadual no PIB: </string>
@@ -100,24 +103,24 @@
     <string name="populacao">População</string>
     <string name="primeiros_projetos"> Programa Primeiros Projetos:  </string>
     <string name="primeiros_projetos_conteudo"> Programa de apoio à infraestrutura de ciência e técnologia para jovens pesquisadores. </string>
-    <string name="programa_primeiros_projetos_investimento">Programa Primeiros Projetos (R$)</string>
+    <string name="programa_primeiros_projetos_investmento">Programa Primeiros Projetos (R$)</string>
     <string name="programa_primeiros_projetos_qtd">Programa Primeiros Projetos (Qtd.)</string>
     <string name="projeto_iniciacao">Projetos INCT</string>
-    <string name="projeto_iniciacao_investimento">Projetos INCT (R$)</string>
+    <string name="projeto_iniciacao_investmento">Projetos INCT (R$)</string>
     <string name="projeto_iniciacao_qtd">Projetos INCT (Qtd.)</string>
     <string name="projetos_apoio_cnpq"> Projetos de pesquisa e apoio CNPq:  </string>
     <string name="projetos_apoio_cnpq_conteudo"> Número de projetos contratados pelos Principais Programas de Apoio à Pesquisa do CNPq.  </string>
     <string name="projetos_difusao">Projetos de Difusão Tecnologica:</string>
     <string name="projetos_difusao_conteudo">  Número de projetos de difusão e popularização de ciência e tecnologia apoiados.
     		Inclui apoio a diversos projetos de difusão e popularização da ciência e tecnologia;</string>
-    <string name="projetos_difusao_tecnologica_investimento">Projeto de Difusão Tecnológica (R$)</string>
+    <string name="projetos_difusao_tecnologica_investmento">Projeto de Difusão Tecnológica (R$)</string>
     <string name="projetos_difusao_tecnologica_qtd">Projeto de Difusão Tecnológica (Qtd.)</string>
     <string name="projetos_inct"> Projetos Instituto Nacional de Ciência e Tecnologia - INCT: </string>
     <string name="projetos_inct_conteudo"> Número de projetos contratados dos Institutos Nacionais de Ciência e Tecnologia. </string>
     <string name="projetos_jovens_pesquisadores"> Projetos Jovens Pesquisadores:  </string>
     <string name="projetos_jovens_pesquisadores_conteudo"> Número de projetos contratados pelo Programa Jovens Pesquisadores.
     		A UF considerada é a UF da instituição de destino.  </string>
-    <string name="projetos_pesquisa_CNPq_investimento">Projetos de Pesquisa Apoio CNPq (R$)</string>
+    <string name="projetos_pesquisa_CNPq_investmento">Projetos de Pesquisa Apoio CNPq (R$)</string>
     <string name="projetos_pesquisa_CNPq_qtd">Projetos de Pesquisa Apoio CNPq (Qtd.)</string>
     <string name="rioDeJaneiro">RioDeJaneiro</string>
     <string name="rioGrandeDoNorte">Rio Grande do Norte</string>
@@ -130,14 +133,11 @@
     <string name="string_vazia"/>
     <string name="string_x"> x </string>
     <string name="taxa_abandono">Taxa de Abandono Escolar (%)</string>
-    <string name="taxa_abandono_fundamental">Taxa de Abandono do Ensino Fundamental (%)</string>
-    <string name="taxa_abandono_medio">Taxa de Abandono do Ensino Médio (%)</string>
+    <string name="taxa_abandono_elementary">Taxa de Abandono do Ensino Fundamental (%)</string>
+    <string name="taxa_abandono_high_school">Taxa de Abandono do Ensino Médio (%)</string>
     <string name="taxa_aprovacao">Taxa de Aproveitamento (%)</string>
-    <string name="taxa_aprovacao_fundamental">Taxa de Aprovação do Ensino Fundamental (%)</string>
-    <string name="taxa_aprovacao_medio">Taxa de Aprovação do Ensino Médio (%)</string>
-    <string name="taxa_distorcao">Taxa de Distorção de Idade (%)</string>
-    <string name="taxa_distorcao_fundamental">Taxa de Distorção Idade/Série do Ensino Fundamental (%)</string>
-    <string name="taxa_distorcao_medio">Taxa de Distorção Idade/Série do Ensino Médio (%)</string>
+    <string name="taxa_aprovacao_elementary">Taxa de Aprovação do Ensino Fundamental (%)</string>
+    <string name="taxa_aprovacao_high_school">Taxa de Aprovação do Ensino Médio (%)</string>
     <string name="tela_sobre">Dados usados no EEF</string>
     <string name="tela_sobre_feed">Fonte de Informações do EEF</string>
     <string name="title_activity_grafico">Gráfico</string>

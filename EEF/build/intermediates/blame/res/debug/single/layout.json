@@ -4,6 +4,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/spinner_item2.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_choose_indicative_graph.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_choose_indicative_graph.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_estado.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_estado.xml"
     },
@@ -20,8 +24,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_comparacao.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/listview_item.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/listview_item.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_grafico.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_grafico.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_sobre_tela_comparacao_de_estados.xml",
@@ -40,16 +52,24 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_sobre_comparacao.xml"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_lista_estado.xml",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_lista_estado.xml"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_main.xml"
     },
     {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_lista_estado.xml",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_lista_estado.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_lista_estado.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_lista_estado.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_consulta.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_consulta.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_estado.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_estado.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/listview_item.xml",
@@ -72,8 +92,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_sobre_tela_comparacao_de_estados.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/spinner_item.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/spinner_item.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_resultado_da_consulta.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_sobre_resultado_da_consulta.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_resultado_consulta_por_indicativo.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_resultado_consulta_por_indicativo.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_escolhe_indicativo_grafico.xml",
@@ -82,6 +110,10 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_historico_estado.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_historico_estado.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_lista_estado.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_lista_estado.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_sobre_indicativos.xml",
@@ -116,6 +148,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_resultado_da_consulta.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_comparation.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_comparation.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_feed_sobre.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_feed_sobre.xml"
     },
@@ -148,12 +184,20 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_grafico.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_estado.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_estado.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_comparacao.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_sobre_comparacao.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_escolhe_indicativo_grafico_comparacao.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_sobre_escolhe_indicativo_grafico_comparacao.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_resultado_da_consulta.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_resultado_da_consulta.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_consulta_por_indicativo.xml",
@@ -166,6 +210,10 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_historico_estado.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_historico_estado.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_consulta_por_indicativo.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_consulta_por_indicativo.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_grafico.xml",
@@ -192,8 +240,20 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_sobre_lista_estado.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_escolhe_indicativo_grafico_comparacao.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_escolhe_indicativo_grafico_comparacao.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_grafico_historico.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_grafico_historico.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_comparacoes_gerais.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_comparacoes_gerais.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_lista_estado.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_lista_estado.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_lista_estado.xml",
@@ -224,6 +284,14 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_sobre_historico_de_indicativo.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_indicativos_consultados.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_indicativos_consultados.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_escolhe_indicativo_grafico.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_escolhe_indicativo_grafico.xml"
     },
@@ -240,6 +308,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_estado.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/spinner_item2.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/spinner_item2.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_historico_de_indicativo.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_sobre_historico_de_indicativo.xml"
     },
@@ -250,6 +322,10 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_grafico.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_grafico.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_escolha_indicativo.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_escolha_indicativo.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/listview_item_indicativos.xml",
@@ -264,6 +340,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_sobre_tela_comparacao_de_estados.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_comparacao.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_comparacao.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_consulta_por_indicativo.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_consulta_por_indicativo.xml"
     },
@@ -276,6 +356,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_comparacoes_gerais.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_compara_estados.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_compara_estados.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_comparacoes_gerais.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_comparacoes_gerais.xml"
     },
@@ -284,12 +368,20 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_historico_estado.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_sobre_indicativos.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_sobre_indicativos.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_resultado_consulta_por_indicativo.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_resultado_consulta_por_indicativo.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/rss_listview_item.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/rss_listview_item.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_feed.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_feed.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_estado.xml",
@@ -308,6 +400,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_comparacoes_gerais.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/listview_indicatives_item.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/listview_indicatives_item.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_historico_de_indicativo.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_historico_de_indicativo.xml"
     },
@@ -324,8 +420,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_sobre_escolhe_indicativo_grafico_comparacao.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_feed_sobre.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_feed_sobre.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_lista_estado.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_sobre_lista_estado.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/rss_listview_item.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/rss_listview_item.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_grafico_historico.xml",
@@ -340,8 +444,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_escolha_indicativo.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_grafico_historico.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_grafico_historico.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_feed_sobre.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_feed_sobre.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_comparacoes_gerais.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_comparacoes_gerais.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_lista_estado.xml",
@@ -350,6 +462,10 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_sobre_indicativos.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_sobre_indicativos.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_sobre_tela_comparacao_de_estados.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_sobre_tela_comparacao_de_estados.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_escolhe_indicativo_grafico_comparacao.xml",
@@ -362,6 +478,10 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_consulta_por_indicativo.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_consulta_por_indicativo.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_grafico.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_grafico.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_escolha_indicativo.xml",
@@ -384,12 +504,24 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_sobre.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_main.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_indicativos_consultados.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout/activity_tela_indicativos_consultados.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_sobre.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_historico_de_indicativo.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_sobre_historico_de_indicativo.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_historico_estado.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout/activity_tela_historico_estado.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/spinner_item.xml",

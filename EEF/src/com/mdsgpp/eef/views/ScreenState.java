@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TelaEstado extends Activity {
+public class ScreenState extends Activity {
 
 	private TextView textViewSigla;	
 	private TextView textViewNome;
@@ -73,7 +73,7 @@ public class TelaEstado extends Activity {
 	    public boolean onOptionsItemSelected(MenuItem item) {
 	    	
 			switch (item.getItemId()) {
-			case R.id.sobre:
+			case R.id.about:
 				openAboutScreen();
 				break;
 			case android.R.id.home:
@@ -105,7 +105,7 @@ public class TelaEstado extends Activity {
 			setImagem(position);
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
-			Log.i("IOException - TelaEstado", e.toString());
+			Log.i("IOException-ScreenState", e.toString());
 		}
 	}
 	
@@ -201,7 +201,7 @@ public class TelaEstado extends Activity {
 		int position = intentAux.getIntExtra("INDEX_ESTADO_ESCOLHIDO", 0);
 		Log.i("position tela estado", position+"");
 		
-		Intent intent = new Intent(this, TelaHistoricoEstado.class);
+		Intent intent = new Intent(this, ScreenStateHistory.class);
 		intent.putExtra("ESTADO", position);
 		
 		startActivity(intent);

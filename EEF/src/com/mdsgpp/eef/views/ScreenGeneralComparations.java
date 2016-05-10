@@ -52,7 +52,7 @@ public class ScreenGeneralComparations extends Activity {
 	}
 	
 	public void clickButtonIndicatives(View view) {
-		Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
+		Intent intent = new Intent(this, ScreenQueryPerIndicative.class);
 		startActivity(intent);
 	}
 	

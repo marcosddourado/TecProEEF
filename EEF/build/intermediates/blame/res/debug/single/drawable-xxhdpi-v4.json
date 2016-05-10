@@ -8,12 +8,20 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/indicativos.png"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/saopaulo.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/saopaulo.gif"
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/background.jpg",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/background.jpg"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sobre.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/sobre.png"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/saopaulo.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/saopaulo.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/home.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/pernambuco.gif",
@@ -24,12 +32,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/riograndedosul.gif"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/rondonia.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/rondonia.gif"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/rondonia.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/rondonia.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/goias.gif",
@@ -48,12 +56,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/amapa.gif"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ceara.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/ceara.gif"
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/matogrosso.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/matogrosso.gif"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ceara.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/ceara.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/espiritosanto.gif",
@@ -62,6 +74,14 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/acre.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/acre.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sobre.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/sobre.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/minasgerais.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/minasgerais.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/alagoas.gif",
@@ -84,16 +104,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/riodejaneiro.gif"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icone_noticias.png",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/icone_noticias.png"
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/botao_grafico.png",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/botao_grafico.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/home.png"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/botao_grafico.png",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/botao_grafico.png"
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icone_noticias.png",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/icone_noticias.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/rondonia.gif",
@@ -112,12 +132,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/riograndedonorte.gif"
     },
     {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/background_sombra.xml",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/background_sombra.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/piaui.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/piaui.gif"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/background_sombra.xml",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/background_sombra.xml"
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/feed.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/feed.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/saopaulo.gif",
@@ -144,16 +168,32 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/background_sombra.xml"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/para.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/para.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/background.jpg",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/background.jpg"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/estado.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/estado.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icone_comparacao.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/icone_comparacao.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/espiritosanto.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/espiritosanto.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sobre1.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/sobre1.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/amazonas.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/amazonas.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/parana.gif",
@@ -172,6 +212,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/maranhao.gif"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/alagoas.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/alagoas.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sobre1.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/sobre1.png"
     },
@@ -180,8 +224,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/distritofederal.gif"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/background_sombra.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/background_sombra.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/para.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/para.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/pernambuco.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/pernambuco.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/background.jpg",
@@ -212,6 +264,14 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/icone_comparacao.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/parana.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/parana.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/matogrosso.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/matogrosso.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/roraima.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/roraima.gif"
     },
@@ -224,12 +284,44 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/tocantins.gif"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/indicativos.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/indicativos.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/rondonia.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/rondonia.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ceara.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/ceara.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/historico.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/historico.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/amapa.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/amapa.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/distritofederal.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/distritofederal.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/riodejaneiro.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/riodejaneiro.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/paraiba.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/paraiba.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/riodejaneiro.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/riodejaneiro.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/riograndedonorte.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/riograndedonorte.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/bahia.gif",
@@ -238,6 +330,10 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/home.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sergipe.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/sergipe.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/distritofederal.gif",
@@ -260,12 +356,24 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/avancar.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/roraima.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/roraima.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/matogrossodosul.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/matogrossodosul.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home1.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/home1.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/compara.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/compara.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/tocantins.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/tocantins.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/para.gif",
@@ -288,12 +396,32 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/sobre.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home1.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/home1.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/acre.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/acre.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/home.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/goias.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/goias.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/saopaulo.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/saopaulo.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/goias.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/goias.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/grafico.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/grafico.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/botao_grafico.png",
@@ -338,6 +466,14 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/home1.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/home1.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/santacatarina.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/santacatarina.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/maranhao.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/maranhao.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/espiritosanto.gif",
@@ -424,6 +560,10 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/saopaulo.gif"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/botao_grafico.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/botao_grafico.png"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/matogrosso.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/matogrosso.gif"
     },
@@ -460,6 +600,18 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/minasgerais.gif"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icone_listar.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/icone_listar.png"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/riograndedosul.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/riograndedosul.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/matogrossodosul.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/matogrossodosul.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/distritofederal.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/drawable-xxhdpi/distritofederal.gif"
     },
@@ -480,12 +632,24 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/drawable-xxhdpi/icone_noticias.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sobre1.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/sobre1.png"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/compara.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/compara.png"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/historico.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/historico.png"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/matogrossodosul.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/matogrossodosul.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icone_comparacao.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/icone_comparacao.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/feed.png",
@@ -512,12 +676,24 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/amazonas.gif"
     },
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/bahia.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/bahia.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/avancar.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/avancar.png"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/pernambuco.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/pernambuco.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/sergipe.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/sergipe.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/piaui.gif",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/piaui.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/maranhao.gif",
@@ -538,5 +714,9 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/roraima.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-xxhdpi/roraima.gif"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icone_noticias.png",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/drawable-xxhdpi/icone_noticias.png"
     }
 ]

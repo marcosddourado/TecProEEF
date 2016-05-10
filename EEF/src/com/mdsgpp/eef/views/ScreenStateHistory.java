@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TelaHistoricoEstado extends Activity {
+public class ScreenStateHistory extends Activity {
 	HashMap<String, String> informacoes;
 	private TextView textViewSigla;	
 	private TextView textViewNome;
@@ -58,7 +58,7 @@ public class TelaHistoricoEstado extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -85,13 +85,13 @@ public class TelaHistoricoEstado extends Activity {
 		inicializaCamposTexto();
 		
 		try {
-			informacoes = StateConroller.getInstance(this).readStateCompleto(position);
+			informacoes = StateConroller.getInstance(this).readCompleteState(position);
 			preencheCamposTexto(informacoes);
 			setImagem(position);
 			
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
-			Log.i("IOException - TelaHistoricoEstado", e.toString());
+			Log.i("IOExceptionStateHistory", e.toString());
 		}
 	}
 
@@ -159,7 +159,7 @@ public class TelaHistoricoEstado extends Activity {
 		
 		int position = intent1.getIntExtra("ESTADO", 0);
 		
-    	Intent intent = new Intent(this, TelaEscolheIndicativoGraficoLinha.class);
+    	Intent intent = new Intent(this, ScreenLineGraphIndicative.class);
     	intent.putExtra("ESTADO", position);
     	
 		intent.putExtra("CB_IDEB", true);

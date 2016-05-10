@@ -65,7 +65,7 @@ public class TelaListaEstado extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1,
 					int position, long id) {
-				Intent intent = new Intent(context, TelaEstado.class);
+				Intent intent = new Intent(context, ScreenState.class);
 				intent.putExtra("INDEX_ESTADO_ESCOLHIDO", position);
 				startActivity(intent);
 			}
