@@ -18,29 +18,29 @@ import android.view.View;
 
 public class ScreenLineGraphIndicative extends Activity{
 	
-	private State estado;
-	private ArrayList<Float> historico = new ArrayList<Float>();
+	private State state;
+	private ArrayList<Float> history = new ArrayList<Float>();
 
-	private String titulo, indicativo;
-	private int positionHistorico;
-	private Intent intentRecebida;
+	private String title, indicative;
+	private int historyPosition;
+	private Intent receivedIntent;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_choose_indicative_graph);
 		
-		intentRecebida = getIntent();
-		positionHistorico = intentRecebida.getIntExtra("ESTADO", 0);
+		receivedIntent = getIntent();
+		historyPosition = receivedIntent.getIntExtra("ESTADO", 0);
 
-		estado = capturaInformacoesEstado();
-		Log.i("position tela escolhe indicativo grafico", positionHistorico+"");
+		state = catchStateInformation();
+		Log.i("positionIndicativeGraph", historyPosition+"");
 		
 		// Populacao comeea selecionada
-		titulo = "Populaeeo";
-		indicativo = "populacao";
-		historico.clear();
-		historico.add((float) estado.getPopulacao());
+		title = "Populaeeo";
+		indicative = "populacao";
+		history.clear();
+		history.add((float) state.getStatePopulation());
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class ScreenLineGraphIndicative extends Activity{
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -74,306 +74,306 @@ public class ScreenLineGraphIndicative extends Activity{
 
 	public void onRadioButtonClicked(View view) {
 
-		int max, tamanho;
+		int max, size;
 		
 		switch (view.getId()) {
 		case R.id.radio_apoio_cnpq_investment:
-			titulo = "Projetos de Pesquisa Apoio CNPq (R$)";
-			indicativo = "cnpq";
-			historico.clear();
-			tamanho = estado.getApoioCnpqProject().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Projetos de Pesquisa Apoio CNPq (R$)";
+			indicative = "cnpq";
+			history.clear();
+			size = state.getApoioCnpqProject().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getApoioCnpqProject()[i].getProjectValue());
+				history.add((float) state.getApoioCnpqProject()[i].getProjectValue());
 			break;
 			
 		case R.id.radio_apoio_cnpq_amount:
-			titulo = "Projetos de Pesquisa Apoio CNPq (Qtd.)";
-			indicativo = "cnpq";
-			historico.clear();
-			tamanho = estado.getApoioCnpqProject().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Projetos de Pesquisa Apoio CNPq (Qtd.)";
+			indicative = "cnpq";
+			history.clear();
+			size = state.getApoioCnpqProject().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getApoioCnpqProject()[i]
-						.getQuantidade());
+				history.add((float) state.getApoioCnpqProject()[i]
+						.getProjectAmount());
 			break;
 			
 		case R.id.radio_technological_diffusion_investment:
-			titulo = "Projeto de Difuseo Tecnolegica (R$)";
-			indicativo = "projetos_ciencia_tecnologia";
-			historico.clear();
-			tamanho = estado.getScienceAndThecnologyProjects().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Projeto de Difuseo Tecnolegica (R$)";
+			indicative = "projetos_ciencia_tecnologia";
+			history.clear();
+			size = state.getScienceAndThecnologyProjects().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getScienceAndThecnologyProjects()[i]
+				history.add((float) state.getScienceAndThecnologyProjects()[i]
 						.getProjectValue());
 			break;
 			
 		case R.id.radio_technological_diffusion_amount:
-			titulo = "Projeto de Difuseo Tecnolegica (Qtd.)";
-			indicativo = "projetos_ciencia_tecnologia";
-			historico.clear();
-			tamanho = estado.getScienceAndThecnologyProjects().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Projeto de Difuseo Tecnolegica (Qtd.)";
+			indicative = "projetos_ciencia_tecnologia";
+			history.clear();
+			size = state.getScienceAndThecnologyProjects().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getScienceAndThecnologyProjects()[i]
-						.getQuantidade());
+				history.add((float) state.getScienceAndThecnologyProjects()[i]
+						.getProjectAmount());
 			break;
 			
 		case R.id.radio_ideb_elementary_finals:
-			titulo = "IDEB do Ensino Fundamental (Series Finais)";
-			indicativo = "ideb";
-			historico.clear();
-			for (int i = 0; i < estado.getIdebs().length; i++)
-				historico.add((float) estado.getIdebs()[i].getFundamental());
+			title = "IDEB do Ensino Fundamental (Series Finais)";
+			indicative = "ideb";
+			history.clear();
+			for (int i = 0; i < state.getIdebs().length; i++)
+				history.add((float) state.getIdebs()[i].getElementarySchool());
 			break;
 			
 		case R.id.radio_ideb_elementary_inicials:
-			titulo = "IDEB do Ensino Fundamental (Series Iniciais)";
-			indicativo = "ideb";
-			historico.clear();
-			for (int i = 0; i < estado.getIdebs().length; i++)
-				historico.add((float) estado.getIdebs()[i].getSeriesIniciais());
+			title = "IDEB do Ensino Fundamental (Series Iniciais)";
+			indicative = "ideb";
+			history.clear();
+			for (int i = 0; i < state.getIdebs().length; i++)
+				history.add((float) state.getIdebs()[i].getInitialGrades());
 			break;
 			
 		case R.id.radio_ideb_high_school:
-			titulo = "IDEB do Ensino Medio";
-			indicativo = "ideb";
-			historico.clear();
-			for (int i = 0; i < estado.getIdebs().length; i++)
-				historico.add((float) estado.getIdebs()[i].getMedio());
+			title = "IDEB do Ensino Medio";
+			indicative = "ideb";
+			history.clear();
+			for (int i = 0; i < state.getIdebs().length; i++)
+				history.add((float) state.getIdebs()[i].getHighSchool());
 			break;
 			
 		case R.id.radio_jovens_pesquisadores_investment:
-			titulo = "Jovens pesquisadores (R$)";
-			indicativo = "jovens_pesquisadores";
-			historico.clear();
-			tamanho = estado.getJovensPesquisadoresProject().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Jovens pesquisadores (R$)";
+			indicative = "jovens_pesquisadores";
+			history.clear();
+			size = state.getJovensPesquisadoresProject().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getJovensPesquisadoresProject()[i]
+				history.add((float) state.getJovensPesquisadoresProject()[i]
 						.getProjectValue());
 			break;
 
 		case R.id.radio_jovens_pesquisadores_amount:
-			titulo = "Jovens pesquisadores (Qtd.)";
-			indicativo = "jovens_pesquisadores";
-			historico.clear();
-			tamanho = estado.getJovensPesquisadoresProject().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Jovens pesquisadores (Qtd.)";
+			indicative = "jovens_pesquisadores";
+			history.clear();
+			size = state.getJovensPesquisadoresProject().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getJovensPesquisadoresProject()[i]
-						.getQuantidade());
+				history.add((float) state.getJovensPesquisadoresProject()[i]
+						.getProjectAmount());
 			break;
 
 		case R.id.radio_pib:
-			titulo = "Participaeeo Estadual no PIB (%)";
-			indicativo = "percentual_participacao_pib";
-			historico.clear();
-			for (int i = 0; i < estado.getPercentageCollaborationWithPIB().length; i++)
-				historico.add((float) estado.getPercentageCollaborationWithPIB()[i]);
+			title = "Participaeeo Estadual no PIB (%)";
+			indicative = "percentual_participacao_pib";
+			history.clear();
+			for (int i = 0; i < state.getPercentageCollaborationWithPIB().length; i++)
+				history.add((float) state.getPercentageCollaborationWithPIB()[i]);
 			break;
 
 		case R.id.radio_population:
-			titulo = "Populaeeo";
-			indicativo = "populacao";
-			historico.clear();
-			historico.add((float) estado.getPopulacao());
-			Log.i("tamanho hsitorico", ""+historico.size());
+			title = "Populaeeo";
+			indicative = "populacao";
+			history.clear();
+			history.add((float) state.getStatePopulation());
+			Log.i("size hsitorico", ""+history.size());
 			break;
 
 		case R.id.radio_primeiros_projetos_investment:
-			titulo = "Programa Primeiros Projetos (R$)";
-			indicativo = "primeiros_projetos";
-			historico.clear();
-			tamanho = estado.getFirstProjects().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Programa Primeiros Projetos (R$)";
+			indicative = "primeiros_projetos";
+			history.clear();
+			size = state.getFirstProjects().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getFirstProjects()[i]
+				history.add((float) state.getFirstProjects()[i]
 						.getProjectValue());
 			break;
 
 		case R.id.radio_primeiros_projetos_amount:
-			titulo = "Programa Primeiros Projetos (Qtd.)";
-			indicativo = "primeiros_projetos";
-			historico.clear();
-			tamanho = estado.getFirstProjects().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Programa Primeiros Projetos (Qtd.)";
+			indicative = "primeiros_projetos";
+			history.clear();
+			size = state.getFirstProjects().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getFirstProjects()[i]
-						.getQuantidade());
+				history.add((float) state.getFirstProjects()[i]
+						.getProjectAmount());
 			break;
 
 		case R.id.radio_inct_projects_investment:
-			titulo = "Projetos INCT (R$)";
-			indicativo = "projetos_inct";
-			historico.clear();
-			tamanho = estado.getProjectsInct().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Projetos INCT (R$)";
+			indicative = "projetos_inct";
+			history.clear();
+			size = state.getProjectsInct().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getProjectsInct()[i].getProjectValue());
+				history.add((float) state.getProjectsInct()[i].getProjectValue());
 			break;
 
 		case R.id.radio_inct_projects_amount:
-			titulo = "Projetos INCT (Qtd.)";
-			indicativo = "projetos_inct";
-			historico.clear();
-			tamanho = estado.getProjectsInct().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
+			title = "Projetos INCT (Qtd.)";
+			indicative = "projetos_inct";
+			history.clear();
+			size = state.getProjectsInct().length;
+			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				historico.add((float) estado.getProjectsInct()[i]
-						.getQuantidade());
+				history.add((float) state.getProjectsInct()[i]
+						.getProjectAmount());
 			break;
 
 		case R.id.radio_students_per_class_elementary:
-			titulo = "Media de Alunos por Turma do Ensino Fundamental (Qtd.)";
-			indicativo = "alunos_por_turma_ensino_high_school";
-			historico.clear();
-			for (int i = 0; i < estado.getStudentGradesPerClass().length; i++)
-				historico.add((float) estado.getStudentGradesPerClass()[i]
+			title = "Media de Alunos por Turma do Ensino Fundamental (Qtd.)";
+			indicative = "alunos_por_turma_ensino_high_school";
+			history.clear();
+			for (int i = 0; i < state.getStudentGradesPerClass().length; i++)
+				history.add((float) state.getStudentGradesPerClass()[i]
 						.getElementarySchoolGrade());
 			break;
 
 		case R.id.radio_students_per_class_high_school:
-			titulo = "Media de Alunos por Turma do Ensino Medio (Qtd.)";
-			indicativo = "alunos_por_turma_ensino_high_school";
-			historico.clear();
-			for (int i = 0; i < estado.getStudentGradesPerClass().length; i++)
-				historico.add((float) estado.getStudentGradesPerClass()[i]
+			title = "Media de Alunos por Turma do Ensino Medio (Qtd.)";
+			indicative = "alunos_por_turma_ensino_high_school";
+			history.clear();
+			for (int i = 0; i < state.getStudentGradesPerClass().length; i++)
+				history.add((float) state.getStudentGradesPerClass()[i]
 						.getHighSchoolGrade());
 			break;
 
 		case R.id.radio_class_hours_elementary:
-			titulo = "Media de horas aula dierias do Ensino Fundamental";
-			indicativo = "horas_aula_ensino_high_school";
-			historico.clear();
-			for (int i = 0; i < estado.getGradeClassHours().length; i++)
-				historico.add((float) estado.getGradeClassHours()[i]
+			title = "Media de horas aula dierias do Ensino Fundamental";
+			indicative = "horas_aula_ensino_high_school";
+			history.clear();
+			for (int i = 0; i < state.getGradeClassHours().length; i++)
+				history.add((float) state.getGradeClassHours()[i]
 						.getElementarySchoolGrade());
 			break;
 
 		case R.id.radio_class_hours_high_school:
-			titulo = "Media de horas aula dierias do Ensino Medio";
-			indicativo = "horas_aula_ensino_high_school";
-			historico.clear();
-			for (int i = 0; i < estado.getGradeClassHours().length; i++)
-				historico.add((float) estado.getGradeClassHours()[i]
+			title = "Media de horas aula dierias do Ensino Medio";
+			indicative = "horas_aula_ensino_high_school";
+			history.clear();
+			for (int i = 0; i < state.getGradeClassHours().length; i++)
+				history.add((float) state.getGradeClassHours()[i]
 						.getHighSchoolGrade());
 			break;
 
 		case R.id.radio_distortion_rate_elementary:
-			titulo = "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)";
-			indicativo = "distortion_rate";
-			historico.clear();
-			for (int i = 0; i < estado.getAgeGradeDistortionRate().length; i++)
-				historico.add((float) estado.getAgeGradeDistortionRate()[i]
+			title = "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)";
+			indicative = "distortion_rate";
+			history.clear();
+			for (int i = 0; i < state.getAgeGradeDistortionRate().length; i++)
+				history.add((float) state.getAgeGradeDistortionRate()[i]
 						.getElementarySchoolGrade());
 			break;
 
 		case R.id.radio_distortion_rate_high_school:
-			titulo = "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)";
-			indicativo = "distortion_rate";
-			historico.clear();
-			for (int i = 0; i < estado.getAgeGradeDistortionRate().length; i++)
-				historico.add((float) estado.getAgeGradeDistortionRate()[i]
+			title = "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)";
+			indicative = "distortion_rate";
+			history.clear();
+			for (int i = 0; i < state.getAgeGradeDistortionRate().length; i++)
+				history.add((float) state.getAgeGradeDistortionRate()[i]
 						.getHighSchoolGrade());
 			break;
 
 		case R.id.radio_approval_rate_elementary:
-			titulo = "Taxa de Aproveitamento do Ensino Fundamental (%)";
-			indicativo = "taxa_aprovacao";
-			historico.clear();
-			for (int i = 0; i < estado.getEducationalAchievementRate().length; i++)
-				historico.add((float) estado.getEducationalAchievementRate()[i]
+			title = "Taxa de Aproveitamento do Ensino Fundamental (%)";
+			indicative = "taxa_aprovacao";
+			history.clear();
+			for (int i = 0; i < state.getEducationalAchievementRate().length; i++)
+				history.add((float) state.getEducationalAchievementRate()[i]
 						.getElementarySchoolGrade());
 			break;
 
 		case R.id.radio_approval_rate_high_school:
-			titulo = "Taxa de Aproveitamento do Ensino Medio (%)";
-			indicativo = "taxa_aprovacao";
-			historico.clear();
-			for (int i = 0; i < estado.getEducationalAchievementRate().length; i++)
-				historico.add((float) estado.getEducationalAchievementRate()[i]
+			title = "Taxa de Aproveitamento do Ensino Medio (%)";
+			indicative = "taxa_aprovacao";
+			history.clear();
+			for (int i = 0; i < state.getEducationalAchievementRate().length; i++)
+				history.add((float) state.getEducationalAchievementRate()[i]
 						.getHighSchoolGrade());
 			break;
 
 		case R.id.radio_dropout_rate_elementary:
-			titulo = "Taxa de Abandono do Ensino Fundamental (%)";
-			indicativo = "taxa_abandono";
-			historico.clear();
-			for (int i = 0; i < estado.getSchoolDropoutRate().length; i++)
-				historico.add((float) estado.getSchoolDropoutRate()[i]
+			title = "Taxa de Abandono do Ensino Fundamental (%)";
+			indicative = "taxa_abandono";
+			history.clear();
+			for (int i = 0; i < state.getSchoolDropoutRate().length; i++)
+				history.add((float) state.getSchoolDropoutRate()[i]
 						.getElementarySchoolGrade());
 			break;
 
 		case R.id.radio_dropout_rate_high_school:
-			titulo = "Taxa de Abandono do Ensino Medio (%)";
-			indicativo = "taxa_abandono";
-			historico.clear();
-			for (int i = 0; i < estado.getSchoolDropoutRate().length; i++)
-				historico.add((float) estado.getSchoolDropoutRate()[i]
+			title = "Taxa de Abandono do Ensino Medio (%)";
+			indicative = "taxa_abandono";
+			history.clear();
+			for (int i = 0; i < state.getSchoolDropoutRate().length; i++)
+				history.add((float) state.getSchoolDropoutRate()[i]
 						.getHighSchoolGrade());
 			break;
 
 		case R.id.radio_initial_census_elementary:
-			titulo = "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
-			indicativo = "censo";
-			historico.clear();
-			for (int i = 0; i < estado.getCensus().length; i++)
-				historico.add((float) estado.getCensus()[i]
-						.getAnosIniciaisFundamental());
+			title = "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
+			indicative = "censo";
+			history.clear();
+			for (int i = 0; i < state.getCensus().length; i++)
+				history.add((float) state.getCensus()[i]
+						.getInitialElementarySchoolYears());
 			break;
 
 		case R.id.radio_final_census_elementary:
-			titulo = "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
-			indicativo = "censo";
-			historico.clear();
-			for (int i = 0; i < estado.getCensus().length; i++)
-				historico.add((float) estado.getCensus()[i]
+			title = "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
+			indicative = "censo";
+			history.clear();
+			for (int i = 0; i < state.getCensus().length; i++)
+				history.add((float) state.getCensus()[i]
 						.getInitialElementarySchoolYears());
 			break;
 
 		case R.id.radio_census_high_school:
-			titulo = "Censo Escolar do Ensino Medio (Matriculados)";
-			indicativo = "censo";
-			historico.clear();
-			for (int i = 0; i < estado.getCensus().length; i++)
-				historico.add((float) estado.getCensus()[i].getHighSchoolGrade());
+			title = "Censo Escolar do Ensino Medio (Matriculados)";
+			indicative = "censo";
+			history.clear();
+			for (int i = 0; i < state.getCensus().length; i++)
+				history.add((float) state.getCensus()[i].getHighSchool());
 			break;
 
 		case R.id.radio_census_eja_elementary:
-			titulo = "Censo Escolar do EJA - Fundamental (Matriculados)";
-			indicativo = "censo";
-			historico.clear();
-			for (int i = 0; i < estado.getCensus().length; i++)
-				historico
-						.add((float) estado.getCensus()[i].getFundamentalEJA());
+			title = "Censo Escolar do EJA - Fundamental (Matriculados)";
+			indicative = "censo";
+			history.clear();
+			for (int i = 0; i < state.getCensus().length; i++)
+				history
+						.add((float) state.getCensus()[i].getElementarySchoolEJA());
 			break;
 
 		case R.id.radio_census_eja_high_school:
-			titulo = "Censo Escolar do EJA - Medio (Matriculados)";
-			indicativo = "censo";
-			historico.clear();
-			for (int i = 0; i < estado.getCensus().length; i++)
-				historico.add((float) estado.getCensus()[i].getMedioEJA());
+			title = "Censo Escolar do EJA - Medio (Matriculados)";
+			indicative = "censo";
+			history.clear();
+			for (int i = 0; i < state.getCensus().length; i++)
+				history.add((float) state.getCensus()[i].getHighSchoolEJA());
 			break;
 
 		}
 	}
 
 
-	private Estado capturaInformacoesEstado() {
-		Estado estado1 = null;
+	private State catchStateInformation() {
+		State state = null;
 		
-		int position = positionHistorico;
+		int position = historyPosition;
 		
 		try {
-			estado1 = (Estado) StateConroller.getInstance(this).obterEstado(position);
+			state = (State) StateConroller.getInstance(this).grabState(position);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-		return estado1;
+		return state;
 	}
 
 
@@ -381,13 +381,13 @@ public class ScreenLineGraphIndicative extends Activity{
 		Intent intent = new Intent(this, ScreenLineGraph.class);
 		ArrayList<String> temp = new ArrayList<String>();
 		
-		for(int i=0; i<historico.size(); i++)
-			temp.add(historico.get(i)+"");
+		for(int i=0; i<history.size(); i++)
+			temp.add(history.get(i)+"");
 		
 		intent.putStringArrayListExtra("HISTORICO", temp);
-		intent.putExtra("TITULO", titulo);
-		intent.putExtra("POSICAO_ESTADO", positionHistorico);
-		intent.putExtra("INDICATIVO_GRAFICO", indicativo);
+		intent.putExtra("TITULO", title);
+		intent.putExtra("POSICAO_ESTADO", historyPosition);
+		intent.putExtra("INDICATIVO_GRAFICO", indicative);
 		startActivity(intent);
 	}
 		
