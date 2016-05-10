@@ -13,15 +13,38 @@ import android.widget.CheckBox;
 
 public class TelaIndicativosConsultados extends Activity {
 
-	CheckBox cbIdeb, cbPib, cbPopulacao, cbPrimeirosProjetos, cbProjetosCnpq,
-			cbProjetosDifusao, cbProjetosIniciacao, cbProjetosJovens, cbCenso,
-			cbAlunosTurma, cbHorasAula, cbTaxaDistorcao, cbTaxaAbandono,
-			cbAprovacao;
-	boolean bIdeb, bPib, bPopulacao, bPrimeirosProjetos, bProjetosCnpq,
-			bProjetosDifusao, bProjetosIniciacao, bProjetosJovens, bCenso,
-			bAlunosTurma, bHorasAula, bTaxaDistorcao, bTaxaAbandono,
-			bAprovacao;
-	int position01, position02;
+	CheckBox cbIdeb;
+	CheckBox cbPib;
+	CheckBox cbPopulacao;
+	CheckBox cbPrimeirosProjetos;
+	CheckBox cbProjetosCnpq;
+	CheckBox cbProjetosDifusao;
+	CheckBox cbProjetosIniciacao;
+	CheckBox cbProjetosJovens;
+	CheckBox cbCenso;
+	CheckBox cbAlunosTurma;
+	CheckBox cbHorasAula;
+	CheckBox cbTaxaDistorcao;
+	CheckBox cbTaxaAbandono;
+	CheckBox cbAprovacao;
+
+	boolean bIdeb;
+	boolean bPib;
+	boolean bPopulacao;
+	boolean bPrimeirosProjetos;
+	boolean bProjetosCnpq;
+	boolean bProjetosDifusao;
+	boolean bProjetosIniciacao;
+	boolean bProjetosJovens;
+	boolean bCenso;
+	boolean bAlunosTurma;
+	boolean bHorasAula;
+	boolean bTaxaDistorcao;
+	boolean bTaxaAbandono;
+	boolean bAprovacao;
+
+	int position01;
+	int position02;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
