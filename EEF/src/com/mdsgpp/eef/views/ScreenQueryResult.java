@@ -137,9 +137,9 @@ public class ScreenQueryResult extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_compara_states);
 		
-		InicializaCamposTexto();
-		capturaInformacoes();
-		escondeCamposDeTexto();
+		initializeTextFields();
+		captureInformation();
+		hideTextFields();
 	}
 
 	@Override
@@ -174,7 +174,7 @@ public class ScreenQueryResult extends Activity {
 	}
 	
 	@SuppressWarnings("unchecked")
-	private void capturaInformacoes() {
+	private void captureInformation() {
 		
 		// Captura o intent que abriu a activity
 		Intent intent = getIntent();
@@ -183,7 +183,7 @@ public class ScreenQueryResult extends Activity {
 		int position1 = intent.getIntExtra("INDEX_CHOOSED_STATE1",5);
 		int position2 = intent.getIntExtra("INDEX_CHOOSED_STATE2",0);
 		
-		capturaBandeiras(position1, position2);
+		captureFlags(position1, position2);
 		
 		bIdeb = intent.getBooleanExtra("CB_IDEB", false);
 		bPib = intent.getBooleanExtra("CB_PIB", false);
@@ -209,15 +209,15 @@ public class ScreenQueryResult extends Activity {
 			stateInformations2 = (HashMap<String, String>) StateConroller
 					.getInstance(this).readState(position2).clone();
 
-			preencheCamposTexto(stateInformations1, stateInformations2);
+			fiilTextFields(stateInformations1, stateInformations2);
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
 			Log.i("IOException - TelaComparaEstados",e.toString());
 		}
 	}
 
-	private void preencheCamposTexto(HashMap<String, String> informacoes1,
-			HashMap<String, String> informacoes2) {
+	private void fiilTextFields(HashMap<String, String> informacoes1,
+								HashMap<String, String> informacoes2) {
 
 		textViewInitials1.setText(informacoes1.get("sigla"));
 		if (textViewName1 != null)
@@ -291,7 +291,7 @@ public class ScreenQueryResult extends Activity {
 
 	}
 
-	private void InicializaCamposTexto() {
+	private void initializeTextFields() {
 
 		textViewInitials1 = (TextView) findViewById(R.id.textView_sigla1);
 		textViewName1 = (TextView) findViewById(R.id.textView_nome_estado1);
@@ -390,12 +390,12 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateHighSchool2 = (TextView) findViewById(R.id.textView_dropout_rate_high_school2);
 	}
 	
-	public void setVisibility(TextView txtView, boolean visibilidade) {
-		int valorVisibilidade = (visibilidade) ? View.VISIBLE : View.GONE;
-		txtView.setVisibility(valorVisibilidade);
+	public void setVisibility(TextView textView, boolean visibility) {
+		int valorVisibilidade = (visibility) ? View.VISIBLE : View.GONE;
+		textView.setVisibility(valorVisibilidade);
 	}
 	
-	public void escondeCamposDeTexto() {
+	public void hideTextFields() {
 		setVisibility(textViewPopulation1, bPopulation);
 		setVisibility(textViewPopulationValue1, bPopulation);
 		setVisibility(textViewPopulationValue2, bPopulation);
@@ -512,7 +512,7 @@ public class ScreenQueryResult extends Activity {
 						
 	}
 	
-	public void clickBotaoGeraGrafico(View view) {
+	public void generateGraphicButtonTouch(View view) {
 		Intent intent = new Intent(this, ScreenCompareGraphIndicative.class);
 		Intent intent1 = getIntent();
 
@@ -540,8 +540,8 @@ public class ScreenQueryResult extends Activity {
 		startActivity(intent);
 	}
 	
-	public void capturaBandeiras(int positionEstado1, int positionEstado2){
-		String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
+	public void captureFlags(int positionEstado1, int positionEstado2){
+		String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
 				"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
@@ -549,11 +549,11 @@ public class ScreenQueryResult extends Activity {
 				"sergipe", "tocantins"};	
 		
 		imageViewFlag01 = (ImageView) findViewById(R.id.imageView_flags1);
-		int idFlag01 = getResources().getIdentifier(bandeiras[positionEstado1], "drawable", getPackageName());
+		int idFlag01 = getResources().getIdentifier(flags[positionEstado1], "drawable", getPackageName());
 		imageViewFlag01.setImageResource(idFlag01);
 	
 		imageViewFlag02 = (ImageView) findViewById(R.id.imageView_flags2);
-		int idFlag02 = getResources().getIdentifier(bandeiras[positionEstado2], "drawable", getPackageName());
+		int idFlag02 = getResources().getIdentifier(flags[positionEstado2], "drawable", getPackageName());
 		imageViewFlag02.setImageResource(idFlag02);
 	
 		
