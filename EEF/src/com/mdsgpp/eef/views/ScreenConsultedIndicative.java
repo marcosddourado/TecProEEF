@@ -19,7 +19,7 @@ public class ScreenConsultedIndicative extends Activity {
 	CheckBox cbFirstProjects;
 	CheckBox cbProjectsCnpq;
 	CheckBox cbProjectsDiffusion;
-	CheckBox cbProjectsIniciation;
+	CheckBox cbProjectsInitiation;
 	CheckBox cbProjectsYoung;
 	CheckBox cbCensus;
 	CheckBox cbClassStudents;
@@ -34,7 +34,7 @@ public class ScreenConsultedIndicative extends Activity {
 	boolean bFirstProjects;
 	boolean bProjectsCnpq;
 	boolean bProjectsDiffusion;
-	boolean bProjectsIniciation;
+	boolean bProjectsInitiation;
 	boolean bProjectsYoung;
 	boolean bCensus;
 	boolean bClassStudents;
@@ -94,7 +94,7 @@ public class ScreenConsultedIndicative extends Activity {
 		cbFirstProjects = (CheckBox) findViewById(R.id.checkBox_primeiros_projeto);
 		cbProjectsCnpq = (CheckBox) findViewById(R.id.checkBox_projetos_cnpq);
 		cbProjectsDiffusion = (CheckBox) findViewById(R.id.checkBox_projetos_difusao);
-		cbProjectsIniciation = (CheckBox) findViewById(R.id.checkBox_projetos_iniciacao);
+		cbProjectsInitiation = (CheckBox) findViewById(R.id.checkBox_projetos_iniciacao);
 		cbProjectsYoung = (CheckBox) findViewById(R.id.checkBox_projetos_jovens);
 		cbCensus = (CheckBox) findViewById(R.id.checkBox_censo);
 		cbClassStudents = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
@@ -111,7 +111,7 @@ public class ScreenConsultedIndicative extends Activity {
 		bFirstProjects = cbFirstProjects.isChecked();
 		bProjectsCnpq = cbProjectsCnpq.isChecked();
 		bProjectsDiffusion = cbProjectsDiffusion.isChecked();
-		bProjectsIniciation = cbProjectsIniciation.isChecked();
+		bProjectsInitiation = cbProjectsInitiation.isChecked();
 		bProjectsYoung = cbProjectsYoung.isChecked();
 		bCensus = cbCensus.isChecked();
 		bClassStudents = cbClassStudents.isChecked();
@@ -128,7 +128,7 @@ public class ScreenConsultedIndicative extends Activity {
 		cbFirstProjects.setChecked(opcaoEscolhida);
 		cbProjectsCnpq.setChecked(opcaoEscolhida);
 		cbProjectsDiffusion.setChecked(opcaoEscolhida);
-		cbProjectsIniciation.setChecked(opcaoEscolhida);
+		cbProjectsInitiation.setChecked(opcaoEscolhida);
 		cbProjectsYoung.setChecked(opcaoEscolhida);
 		cbCensus.setChecked(opcaoEscolhida);
 		cbClassStudents.setChecked(opcaoEscolhida);
@@ -149,14 +149,14 @@ public class ScreenConsultedIndicative extends Activity {
 	public void allIndicativesButtonTouch(View view) {
 		captureValues();
 
-		Intent intent = new Intent(this, TelaResultadoConsulta.class);
+		Intent intent = new Intent(this, ScreenQueryResult.class);
 		intent.putExtra("CB_IDEB", bIdeb);
 		intent.putExtra("CB_PIB", bPib);
 		intent.putExtra("CB_POPULATION", bPopulation);
 		intent.putExtra("CB_FIRST_PROJECTS", bFirstProjects);
 		intent.putExtra("CB_PROJECTS_CNPQ", bProjectsCnpq);
 		intent.putExtra("CB_PROJECTS_DIFFUSION", bProjectsDiffusion);
-		intent.putExtra("CB_PROJECTS_INICIATION", bProjectsIniciation);
+		intent.putExtra("CB_PROJECTS_INITIATION", bProjectsInitiation);
 		intent.putExtra("CB_PROJECTS_YOUNG", bProjectsYoung);
 		intent.putExtra("CB_CLASS_STUDENTS", bClassStudents);
 		intent.putExtra("CB_APPROVAL", bApproval);
