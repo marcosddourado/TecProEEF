@@ -14,8 +14,8 @@ public class ScreenQueryPerIndicative extends ChooseIndicative {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_choose_indicative_graph);
 		
-		TextView txtViewTitulo = (TextView) findViewById(R.id.textview_titulo);
-		txtViewTitulo.setText("Escolha um indicativo para gerar a lista: ");
+		TextView txtViewTitle = (TextView) findViewById(R.id.textview_titulo);
+		txtViewTitle.setText("Escolha um indicativo para gerar a lista: ");
 	}
 
 	public void openAboutScreen() {
