@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 
-public class TelaIndicativosConsultados extends Activity {
+public class ScreenConsultedIndicative extends Activity {
 
 	CheckBox cbIdeb;
 	CheckBox cbPib;
@@ -52,7 +52,7 @@ public class TelaIndicativosConsultados extends Activity {
 		setContentView(R.layout.activity_tela_indicativos_consultados);
 		Intent intentAuxiliar = getIntent();
 
-		inicializaCheckBox();
+		initializeCheckBox();
 
 		position01 = intentAuxiliar.getIntExtra("INDEX_CHOOSED_STATE1", 0);
 		position02 = intentAuxiliar.getIntExtra("INDEX_CHOOSED_STATE2", 0);
@@ -87,7 +87,7 @@ public class TelaIndicativosConsultados extends Activity {
 		startActivity(intent);
 	}
 
-	private void inicializaCheckBox() {
+	private void initializeCheckBox() {
 		cbIdeb = (CheckBox) findViewById(R.id.checkBox_ideb);
 		cbPib = (CheckBox) findViewById(R.id.checkBox_participacao_pib);
 		cbPopulation = (CheckBox) findViewById(R.id.checkBox_populacao);
@@ -104,7 +104,7 @@ public class TelaIndicativosConsultados extends Activity {
 		cbApproval = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
 	}
 
-	private void capturaValores() {
+	private void captureValues() {
 		bIdeb = cbIdeb.isChecked();
 		bPib = cbPib.isChecked();
 		bPopulation = cbPopulation.isChecked();
@@ -121,7 +121,7 @@ public class TelaIndicativosConsultados extends Activity {
 		bApproval = cbApproval.isChecked();
 	}
 
-	public void marcaOuDesmarcaCheckBox(boolean opcaoEscolhida) {
+	public void checkBoxValueChanged(boolean opcaoEscolhida) {
 		cbIdeb.setChecked(opcaoEscolhida);
 		cbPib.setChecked(opcaoEscolhida);
 		cbPopulation.setChecked(opcaoEscolhida);
@@ -139,15 +139,15 @@ public class TelaIndicativosConsultados extends Activity {
 	}
 
 	public void onRadioButtonMarcarTodosClicked(View view) {
-		marcaOuDesmarcaCheckBox(true);
+		checkBoxValueChanged(true);
 	}
 
 	public void onRadioButtonDesmarcarTodosClicked(View view) {
-		marcaOuDesmarcaCheckBox(false);
+		checkBoxValueChanged(false);
 	}
 
-	public void clickBotaoTodosIndicativos(View view) {
-		capturaValores();
+	public void allIndicativesButtonTouch(View view) {
+		captureValues();
 
 		Intent intent = new Intent(this, TelaResultadoConsulta.class);
 		intent.putExtra("CB_IDEB", bIdeb);
