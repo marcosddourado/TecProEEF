@@ -83,7 +83,7 @@ public class ScreenConsultedIndicative extends Activity {
 	}
 
 	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreEscolhaIndicativo.class);
+		Intent intent = new Intent(this, ScreenOverIndicativeChoice.class);
 		startActivity(intent);
 	}
 
