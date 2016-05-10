@@ -168,7 +168,7 @@ public class ScreenQueryResult extends Activity {
 	}
 	
 	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreComparacaoDeEstados.class);
+		Intent intent = new Intent(this, ScreenOverStateComparison.class);
     	startActivity(intent);
 		
 	}
