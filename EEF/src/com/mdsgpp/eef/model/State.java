@@ -15,7 +15,7 @@ public class State {
 	private Grade studentGradesPerClass[];//controle;xml;declarados;inicializado; //done
 	private Grade gradeClassHours[];//controle;xml;declarados;inicializado;		//done
 	private Project scienceAndThecnologyProjects[];								//done
-	private Project firstProjects[];											//done
+	private Project primeirosProjetos[];											//done
 	private Project inctProject[];												//done
 	private Project apoioCnpqProject[];											//done
 	private Project jovensPesquisadoresProject[];								//done
@@ -88,7 +88,7 @@ public class State {
 		this.percentageCollaborationWithPIB = percentageCollaborationWithPIB;
 	}
 
-	public int getstatePopulation() {
+	public int getStatePopulation() {
 		return statePopulation;
 	}
 
@@ -267,15 +267,15 @@ public class State {
 	}
 
 	public Project[] getFirstProjects() {
-		if (firstProjects == null) {
+		if (primeirosProjetos == null) {
 			return returnEmptyProject();
 		}
 
-		return firstProjects;
+		return primeirosProjetos;
 	}
 
 	public void setFirstProjects(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		this.firstProjects = this.setProjects(information, namesOfIndicative);
+		this.primeirosProjetos = this.setProjects(information, namesOfIndicative);
 	}
 
 	public Project[] getProjectsInct() {

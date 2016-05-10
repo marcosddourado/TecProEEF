@@ -471,7 +471,7 @@ public class StateConroller {
 		this.stateInformations.put("nome", state.getStateName());
 		;
 		this.stateInformations.put("populacao",
-				dfPopulation.format(state.getstatePopulation()) + " habitantes");
+				dfPopulation.format(state.getStatePopulation()) + " habitantes");
 	}
 
 }

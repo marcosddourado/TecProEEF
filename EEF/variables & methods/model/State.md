@@ -17,7 +17,7 @@
 | `Grade`   | studentGradesPerClass          |             |
 | `Grade`   | gradeClassHours                |             |
 | `Project` | scienceAndThecnologyProjects   |             |
-| `Project` | firstProjects                  |             |
+| `Project` | primeirosProjetos                  |             |
 | `Project` | inctProject                    |             |
 | `Project` | apoioCnpqProject               |             |
 | `Project` | jovensPesquisadoresProject     |             |
