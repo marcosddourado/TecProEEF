@@ -8,7 +8,7 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class TelaSobreConsulta extends Activity {
+public class ScreenOverQuery extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
