@@ -24,7 +24,7 @@ public class ScreenQueryPerIndicative extends ChooseIndicative {
 	}
 	
 	public void clickButtonNext(View view) {
-		Intent intent = new Intent(this, TelaResultadoConsultaPorIndicativo.class);
+		Intent intent = new Intent(this, ScreenQueryResultPerIndicative.class);
 
 		intent.putExtra("INDICATIVO", getIndicative());
 		intent.putExtra("TITULO", getTittle());
