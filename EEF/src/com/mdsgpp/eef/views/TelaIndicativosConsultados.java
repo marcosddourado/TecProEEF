@@ -15,33 +15,33 @@ public class TelaIndicativosConsultados extends Activity {
 
 	CheckBox cbIdeb;
 	CheckBox cbPib;
-	CheckBox cbPopulacao;
-	CheckBox cbPrimeirosProjetos;
-	CheckBox cbProjetosCnpq;
-	CheckBox cbProjetosDifusao;
-	CheckBox cbProjetosIniciacao;
-	CheckBox cbProjetosJovens;
-	CheckBox cbCenso;
-	CheckBox cbAlunosTurma;
-	CheckBox cbHorasAula;
-	CheckBox cbTaxaDistorcao;
-	CheckBox cbTaxaAbandono;
-	CheckBox cbAprovacao;
+	CheckBox cbPopulation;
+	CheckBox cbFirstProjects;
+	CheckBox cbProjectsCnpq;
+	CheckBox cbProjectsDiffusion;
+	CheckBox cbProjectsIniciation;
+	CheckBox cbProjectsYoung;
+	CheckBox cbCensus;
+	CheckBox cbClassStudents;
+	CheckBox cbClassTime;
+	CheckBox cbDistortionTax;
+	CheckBox cbAbandonTax;
+	CheckBox cbApproval;
 
 	boolean bIdeb;
 	boolean bPib;
-	boolean bPopulacao;
-	boolean bPrimeirosProjetos;
-	boolean bProjetosCnpq;
-	boolean bProjetosDifusao;
-	boolean bProjetosIniciacao;
-	boolean bProjetosJovens;
-	boolean bCenso;
-	boolean bAlunosTurma;
-	boolean bHorasAula;
-	boolean bTaxaDistorcao;
-	boolean bTaxaAbandono;
-	boolean bAprovacao;
+	boolean bPopulation;
+	boolean bFirstProjects;
+	boolean bProjectsCnpq;
+	boolean bProjectsDiffusion;
+	boolean bProjectsIniciation;
+	boolean bProjectsYoung;
+	boolean bCensus;
+	boolean bClassStudents;
+	boolean bClassTime;
+	boolean bDistortionTax;
+	boolean bAbandonTax;
+	boolean bApproval;
 
 	int position01;
 	int position02;
@@ -69,7 +69,7 @@ public class TelaIndicativosConsultados extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -90,52 +90,52 @@ public class TelaIndicativosConsultados extends Activity {
 	private void inicializaCheckBox() {
 		cbIdeb = (CheckBox) findViewById(R.id.checkBox_ideb);
 		cbPib = (CheckBox) findViewById(R.id.checkBox_participacao_pib);
-		cbPopulacao = (CheckBox) findViewById(R.id.checkBox_populacao);
-		cbPrimeirosProjetos = (CheckBox) findViewById(R.id.checkBox_primeiros_projeto);
-		cbProjetosCnpq = (CheckBox) findViewById(R.id.checkBox_projetos_cnpq);
-		cbProjetosDifusao = (CheckBox) findViewById(R.id.checkBox_projetos_difusao);
-		cbProjetosIniciacao = (CheckBox) findViewById(R.id.checkBox_projetos_iniciacao);
-		cbProjetosJovens = (CheckBox) findViewById(R.id.checkBox_projetos_jovens);
-		cbCenso = (CheckBox) findViewById(R.id.checkBox_censo);
-		cbAlunosTurma = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
-		cbHorasAula = (CheckBox) findViewById(R.id.checkBox_horas_aula);
-		cbTaxaDistorcao = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
-		cbTaxaAbandono = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
-		cbAprovacao = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
+		cbPopulation = (CheckBox) findViewById(R.id.checkBox_populacao);
+		cbFirstProjects = (CheckBox) findViewById(R.id.checkBox_primeiros_projeto);
+		cbProjectsCnpq = (CheckBox) findViewById(R.id.checkBox_projetos_cnpq);
+		cbProjectsDiffusion = (CheckBox) findViewById(R.id.checkBox_projetos_difusao);
+		cbProjectsIniciation = (CheckBox) findViewById(R.id.checkBox_projetos_iniciacao);
+		cbProjectsYoung = (CheckBox) findViewById(R.id.checkBox_projetos_jovens);
+		cbCensus = (CheckBox) findViewById(R.id.checkBox_censo);
+		cbClassStudents = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
+		cbClassTime = (CheckBox) findViewById(R.id.checkBox_horas_aula);
+		cbDistortionTax = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
+		cbAbandonTax = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
+		cbApproval = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
 	}
 
 	private void capturaValores() {
 		bIdeb = cbIdeb.isChecked();
 		bPib = cbPib.isChecked();
-		bPopulacao = cbPopulacao.isChecked();
-		bPrimeirosProjetos = cbPrimeirosProjetos.isChecked();
-		bProjetosCnpq = cbProjetosCnpq.isChecked();
-		bProjetosDifusao = cbProjetosDifusao.isChecked();
-		bProjetosIniciacao = cbProjetosIniciacao.isChecked();
-		bProjetosJovens = cbProjetosJovens.isChecked();
-		bCenso = cbCenso.isChecked();
-		bAlunosTurma = cbAlunosTurma.isChecked();
-		bHorasAula = cbHorasAula.isChecked();
-		bTaxaDistorcao = cbTaxaDistorcao.isChecked();
-		bTaxaAbandono = cbTaxaAbandono.isChecked();
-		bAprovacao = cbAprovacao.isChecked();
+		bPopulation = cbPopulation.isChecked();
+		bFirstProjects = cbFirstProjects.isChecked();
+		bProjectsCnpq = cbProjectsCnpq.isChecked();
+		bProjectsDiffusion = cbProjectsDiffusion.isChecked();
+		bProjectsIniciation = cbProjectsIniciation.isChecked();
+		bProjectsYoung = cbProjectsYoung.isChecked();
+		bCensus = cbCensus.isChecked();
+		bClassStudents = cbClassStudents.isChecked();
+		bClassTime = cbClassTime.isChecked();
+		bDistortionTax = cbDistortionTax.isChecked();
+		bAbandonTax = cbAbandonTax.isChecked();
+		bApproval = cbApproval.isChecked();
 	}
 
 	public void marcaOuDesmarcaCheckBox(boolean opcaoEscolhida) {
 		cbIdeb.setChecked(opcaoEscolhida);
 		cbPib.setChecked(opcaoEscolhida);
-		cbPopulacao.setChecked(opcaoEscolhida);
-		cbPrimeirosProjetos.setChecked(opcaoEscolhida);
-		cbProjetosCnpq.setChecked(opcaoEscolhida);
-		cbProjetosDifusao.setChecked(opcaoEscolhida);
-		cbProjetosIniciacao.setChecked(opcaoEscolhida);
-		cbProjetosJovens.setChecked(opcaoEscolhida);
-		cbCenso.setChecked(opcaoEscolhida);
-		cbAlunosTurma.setChecked(opcaoEscolhida);
-		cbHorasAula.setChecked(opcaoEscolhida);
-		cbTaxaDistorcao.setChecked(opcaoEscolhida);
-		cbTaxaAbandono.setChecked(opcaoEscolhida);
-		cbAprovacao.setChecked(opcaoEscolhida);
+		cbPopulation.setChecked(opcaoEscolhida);
+		cbFirstProjects.setChecked(opcaoEscolhida);
+		cbProjectsCnpq.setChecked(opcaoEscolhida);
+		cbProjectsDiffusion.setChecked(opcaoEscolhida);
+		cbProjectsIniciation.setChecked(opcaoEscolhida);
+		cbProjectsYoung.setChecked(opcaoEscolhida);
+		cbCensus.setChecked(opcaoEscolhida);
+		cbClassStudents.setChecked(opcaoEscolhida);
+		cbClassTime.setChecked(opcaoEscolhida);
+		cbDistortionTax.setChecked(opcaoEscolhida);
+		cbAbandonTax.setChecked(opcaoEscolhida);
+		cbApproval.setChecked(opcaoEscolhida);
 	}
 
 	public void onRadioButtonMarcarTodosClicked(View view) {
@@ -152,18 +152,18 @@ public class TelaIndicativosConsultados extends Activity {
 		Intent intent = new Intent(this, TelaResultadoConsulta.class);
 		intent.putExtra("CB_IDEB", bIdeb);
 		intent.putExtra("CB_PIB", bPib);
-		intent.putExtra("CB_POPULACAO", bPopulacao);
-		intent.putExtra("CB_PRIMEIROS_PROJETOS", bPrimeirosProjetos);
-		intent.putExtra("CB_PROJETOS_CNPQ", bProjetosCnpq);
-		intent.putExtra("CB_PROJETOS_DIFUSAO", bProjetosDifusao);
-		intent.putExtra("CB_PROJETOS_INICIACAO", bProjetosIniciacao);
-		intent.putExtra("CB_PROJETOS_JOVENS", bProjetosJovens);
-		intent.putExtra("CB_ALUNOS_TURMA", bAlunosTurma);
-		intent.putExtra("CB_APROVACAO", bAprovacao);
-		intent.putExtra("CB_CENSO", bCenso);
-		intent.putExtra("CB_HORAS_AULA", bHorasAula);
-		intent.putExtra("CB_TAXA_ABANDONO", bTaxaAbandono);
-		intent.putExtra("CB_TAXA_DISTORCAO", bTaxaDistorcao);
+		intent.putExtra("CB_POPULATION", bPopulation);
+		intent.putExtra("CB_FIRST_PROJECTS", bFirstProjects);
+		intent.putExtra("CB_PROJECTS_CNPQ", bProjectsCnpq);
+		intent.putExtra("CB_PROJECTS_DIFFUSION", bProjectsDiffusion);
+		intent.putExtra("CB_PROJECTS_INICIATION", bProjectsIniciation);
+		intent.putExtra("CB_PROJECTS_YOUNG", bProjectsYoung);
+		intent.putExtra("CB_CLASS_STUDENTS", bClassStudents);
+		intent.putExtra("CB_APPROVAL", bApproval);
+		intent.putExtra("CB_CENSUS", bCensus);
+		intent.putExtra("CB_CLASS_TIME", bClassTime);
+		intent.putExtra("CB_ABANDON_TAX", bAbandonTax);
+		intent.putExtra("CB_DISTORTION_TAX", bDistortionTax);
 
 		intent.putExtra("INDEX_CHOOSED_STATE1", position01);
 		intent.putExtra("INDEX_CHOOSED_STATE2", position02);
