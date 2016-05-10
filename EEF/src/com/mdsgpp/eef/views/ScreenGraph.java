@@ -61,7 +61,7 @@ public class ScreenGraph extends Activity {
 	}
 	
 	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreGrafico.class);
+		Intent intent = new Intent(this, ScreenOverGraphic.class);
     	startActivity(intent);
 	}
 	

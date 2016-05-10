@@ -2,19 +2,18 @@ package com.mdsgpp.eef.views;
 
 import com.mdsgpp.eef.R;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.app.Activity;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class TelaSobreIndicativos extends Activity{
-	
+public class ScreenOverStateList extends Activity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_sobre_indicativos);
-		
+		setContentView(R.layout.activity_tela_sobre_lista_estado);
 	}
 
 	@Override

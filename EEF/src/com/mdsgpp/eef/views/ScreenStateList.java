@@ -51,7 +51,7 @@ public class ScreenStateList extends Activity {
 	    }
 	    
 	    public void openAboutScreen() {
-	    	Intent intent = new Intent(this, TelaSobreListaEstado.class);
+	    	Intent intent = new Intent(this, ScreenOverStateList.class);
 	    	startActivity(intent);
 	    }
 	
