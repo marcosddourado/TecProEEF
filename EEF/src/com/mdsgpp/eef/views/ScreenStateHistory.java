@@ -19,25 +19,25 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ScreenStateHistory extends Activity {
-	HashMap<String, String> informacoes;
-	private TextView textViewSigla;	
-	private TextView textViewNome;
-	private TextView textViewPopulacao;
-	private TextView textViewParticipacaoPib;
-	private TextView textViewQuantidadeProjetosCienciaTecnologia;
-	private TextView textViewIdebs;
-	private	TextView textViewPrimeirosProjetos;
-	private TextView textViewValoresPesquisa;
-	private TextView textViewValorJovensPesquisadores;
-	private TextView textViewValorProjetosIniciacao;
-	private ImageView imageViewBandeiras;	
-	private TextView textViewCensoValor;
-	private TextView textViewMediaAlunosPorTurmaValor;
-	private TextView textViewMediaHorasAulaFundamental;
-	private TextView textViewMediaHorasAulaMedio;
-	private TextView textViewTaxaDistorcaoIdadeSerieValor;
-	private TextView textViewTaxaDeAproveitamentoValor;
-	private TextView textViewTaxaDeAbandonoValor;
+	HashMap<String, String> information;
+	private TextView abbreviation;
+	private TextView name;
+	private TextView population;
+	private TextView pibParticipation;
+	private TextView scienceTechnologyProjectsQuantity;
+	private TextView idebs;
+	private	TextView primeirosProjetos;
+	private TextView researchValues;
+	private TextView jovensPesquisadoresValue;
+	private TextView initiationProjectsValue;
+	private ImageView flags;
+	private TextView censusValue;
+	private TextView averageStudentsClassValue;
+	private TextView averageHoursClassElementary;
+	private TextView averageHoursClassHIghSchool;
+	private TextView distortionRateAgeGradeValue;
+	private TextView achievementRateValue;
+	private TextView dropoutRateValue;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,13 +80,13 @@ public class ScreenStateHistory extends Activity {
 		Intent intent = getIntent();
 		
 		int position = intent.getIntExtra("ESTADO", 0);
-		informacoes = new HashMap <String, String>();
+		information = new HashMap <String, String>();
 		
 		inicializaCamposTexto();
 		
 		try {
-			informacoes = StateConroller.getInstance(this).readCompleteState(position);
-			preencheCamposTexto(informacoes);
+			information = StateConroller.getInstance(this).readCompleteState(position);
+			preencheCamposTexto(information);
 			setImagem(position);
 			
 		} catch (IOException e) {
@@ -97,45 +97,45 @@ public class ScreenStateHistory extends Activity {
 
 	private void inicializaCamposTexto() {
 		
-		textViewSigla = (TextView) findViewById(R.id.textView_sigla);
-		textViewNome = (TextView) findViewById(R.id.textView_nome_estado);
-		textViewPopulacao = (TextView) findViewById(R.id.textView_populacao_valor);
-		textViewParticipacaoPib = (TextView) findViewById(R.id.textView_participacao_pib_valor);
-		textViewQuantidadeProjetosCienciaTecnologia = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
-		textViewIdebs = (TextView) findViewById(R.id.textView_idebs);
-		textViewPrimeirosProjetos = (TextView) findViewById(R.id.textView_primeiros_projetos);
-		textViewValoresPesquisa = (TextView) findViewById(R.id.textView_valores_projeto_pesquisa);
-		textViewValorJovensPesquisadores= (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
-		textViewValorProjetosIniciacao = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
+		abbreviation = (TextView) findViewById(R.id.textView_sigla);
+		name = (TextView) findViewById(R.id.textView_nome_estado);
+		population = (TextView) findViewById(R.id.textView_populacao_valor);
+		pibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
+		scienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
+		idebs = (TextView) findViewById(R.id.textView_idebs);
+		primeirosProjetos = (TextView) findViewById(R.id.textView_primeiros_projetos);
+		researchValues = (TextView) findViewById(R.id.textView_valores_projeto_pesquisa);
+		jovensPesquisadoresValue = (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
+		initiationProjectsValue = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
-		textViewCensoValor = (TextView) findViewById(R.id.textView_census_high_school_valor);
-		textViewMediaAlunosPorTurmaValor = (TextView) findViewById(R.id.textView_media_alunos_por_turma_valor);
-		textViewMediaHorasAulaFundamental = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
-		textViewMediaHorasAulaMedio = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
-		textViewTaxaDistorcaoIdadeSerieValor = (TextView) findViewById(R.id.textView_distortion_rate_valor);
-		textViewTaxaDeAproveitamentoValor = (TextView) findViewById(R.id.textView_approval_rate_valor);
-		textViewTaxaDeAbandonoValor = (TextView) findViewById(R.id.textView_dropout_rate_valor);
+		censusValue = (TextView) findViewById(R.id.textView_census_high_school_valor);
+		averageStudentsClassValue = (TextView) findViewById(R.id.textView_media_alunos_por_turma_valor);
+		averageHoursClassElementary = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
+		averageHoursClassHIghSchool = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
+		distortionRateAgeGradeValue = (TextView) findViewById(R.id.textView_distortion_rate_valor);
+		achievementRateValue = (TextView) findViewById(R.id.textView_approval_rate_valor);
+		dropoutRateValue = (TextView) findViewById(R.id.textView_dropout_rate_valor);
 	}
 	
 	private void preencheCamposTexto(HashMap<String, String> informacoes) {
-		textViewSigla.setText(informacoes.get("sigla"));
-		textViewNome.setText(informacoes.get("nome"));
-		textViewPopulacao.setText(informacoes.get("populacao"));
-		textViewParticipacaoPib.setText(informacoes.get("percentual_participacao_pib"));
-		textViewQuantidadeProjetosCienciaTecnologia.setText(informacoes.get("projetos_ciencia_tecnologia"));
-		textViewIdebs.setText(informacoes.get("ideb"));
-		textViewPrimeirosProjetos.setText(informacoes.get("primeiros_projetos"));
-		textViewValoresPesquisa.setText(informacoes.get("cnpq"));
-		textViewValorJovensPesquisadores.setText(informacoes.get("jovens_pesquisadores"));
-		textViewValorProjetosIniciacao.setText(informacoes.get("projetos_inct"));
+		abbreviation.setText(informacoes.get("sigla"));
+		name.setText(informacoes.get("nome"));
+		population.setText(informacoes.get("populacao"));
+		pibParticipation.setText(informacoes.get("percentual_participacao_pib"));
+		scienceTechnologyProjectsQuantity.setText(informacoes.get("projetos_ciencia_tecnologia"));
+		idebs.setText(informacoes.get("ideb"));
+		primeirosProjetos.setText(informacoes.get("primeiros_projetos"));
+		researchValues.setText(informacoes.get("cnpq"));
+		jovensPesquisadoresValue.setText(informacoes.get("jovens_pesquisadores"));
+		initiationProjectsValue.setText(informacoes.get("projetos_inct"));
 		
-		textViewMediaAlunosPorTurmaValor.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
-		textViewCensoValor.setText(informacoes.get("censo"));
-		textViewMediaHorasAulaFundamental.setText(informacoes.get("horas_aula_ensino_elementary"));
-		textViewMediaHorasAulaMedio.setText(informacoes.get("horas_aula_ensino_high_school"));
-		textViewTaxaDistorcaoIdadeSerieValor.setText(informacoes.get("distortion_rate"));
-		textViewTaxaDeAproveitamentoValor.setText(informacoes.get("taxa_aprovacao"));
-		textViewTaxaDeAbandonoValor.setText(informacoes.get("taxa_abandono"));
+		averageStudentsClassValue.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
+		censusValue.setText(informacoes.get("censo"));
+		averageHoursClassElementary.setText(informacoes.get("horas_aula_ensino_elementary"));
+		averageHoursClassHIghSchool.setText(informacoes.get("horas_aula_ensino_high_school"));
+		distortionRateAgeGradeValue.setText(informacoes.get("distortion_rate"));
+		achievementRateValue.setText(informacoes.get("taxa_aprovacao"));
+		dropoutRateValue.setText(informacoes.get("taxa_abandono"));
 		
 	}
 	
@@ -149,9 +149,9 @@ public class ScreenStateHistory extends Activity {
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 				"sergipe", "tocantins"};	
 		
-		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_flags);
+		flags = (ImageView) findViewById(R.id.imageView_flags);
 		int idFlag = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
-		imageViewBandeiras.setImageResource(idFlag);
+		flags.setImageResource(idFlag);
 	}
 	
     public void clickBotaoEscolherIndicativoParaGerarGrafico(View view){
