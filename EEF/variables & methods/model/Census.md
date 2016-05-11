@@ -36,3 +36,14 @@
 |    `void`   |          setCensusState         |                                                                   `State` censusState                                                                   |                                           |
 |    `int`    |          getCensusYear          |                                                                            --                                                                           |                                           |
 |    `void`   |          setCensusYear          |                                                                     `int` censusYear                                                                    |                                           |
+
+#### Local Variables per Function:
+
+|          |          Constructor          |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `Double` |    `initialElementaryYears`   | Set private member `initialElementaryYears` value |
+| `Double` | `double finalElementaryYears` |  Set private member `finalElementaryYears` value  |
+| `Double` |          `highSchool`         |       Set private member `highSchool` value       |
+| `Double` |        `elementaryEJA`        |      Set private member `elementaryEJA` value     |
+| `Double` |        `highSchoolEJA`        |      Set private member `highSchoolEJA` value     |
