@@ -26,3 +26,26 @@
 |    `void`   |  setProjectState |  `State` projectState |                      |
 |    `int`    |  getProjectYear  |           --          |                      |
 |    `void`   |  setProjectYear  |   `int` projectYear   |                      |
+
+
+#### Local Variables per Function:
+
+|       | setProjectAmount |                                                              |
+|:-----:|:----------------:|:------------------------------------------------------------:|
+|  Type |     Variable     |                          Description                         |
+| `int` |  `projectAmount` | Provides a value to be set on private member `projectAmount` |
+
+|          | setProjectValue |                                                             |
+|:--------:|:---------------:|:-----------------------------------------------------------:|
+|   Type   |     Variable    |                         Description                         |
+| `double` |  `projectValue` | Provides a value to be set on private member `projectValue` |
+
+|         |    setState    |                                                             |
+|:-------:|:--------------:|:-----------------------------------------------------------:|
+|   Type  |    Variable    |                         Description                         |
+| `State` | `projectState` | Provides a value to be set on private member `projectState` |
+
+|       | setProjectYear |                                                            |
+|:-----:|:--------------:|:----------------------------------------------------------:|
+|  Type |    Variable    |                         Description                        |
+| `int` |  `projectYear` | Provides a value to be set on private member `projectYear` |
