@@ -125,7 +125,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			indicative = "ideb";
 			history.clear();
 			for (int i = 0; i < state.getIdebs().length; i++)
-				history.add((float) state.getIdebs()[i].getElementarySchool());
+				history.add((float) state.getIdebs()[i].getElementary());
 			break;
 			
 		case R.id.radio_ideb_elementary_inicials:
@@ -231,7 +231,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getStudentGradesPerClass().length; i++)
 				history.add((float) state.getStudentGradesPerClass()[i]
-						.getElementarySchoolGrade());
+						.getElementaryGrade());
 			break;
 
 		case R.id.radio_students_per_class_high_school:
@@ -249,7 +249,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getGradeClassHours().length; i++)
 				history.add((float) state.getGradeClassHours()[i]
-						.getElementarySchoolGrade());
+						.getElementaryGrade());
 			break;
 
 		case R.id.radio_class_hours_high_school:
@@ -267,7 +267,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getAgeGradeDistortionRate().length; i++)
 				history.add((float) state.getAgeGradeDistortionRate()[i]
-						.getElementarySchoolGrade());
+						.getElementaryGrade());
 			break;
 
 		case R.id.radio_distortion_rate_high_school:
@@ -285,7 +285,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getEducationalAchievementRate().length; i++)
 				history.add((float) state.getEducationalAchievementRate()[i]
-						.getElementarySchoolGrade());
+						.getElementaryGrade());
 			break;
 
 		case R.id.radio_approval_rate_high_school:
@@ -303,7 +303,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getSchoolDropoutRate().length; i++)
 				history.add((float) state.getSchoolDropoutRate()[i]
-						.getElementarySchoolGrade());
+						.getElementaryGrade());
 			break;
 
 		case R.id.radio_dropout_rate_high_school:
@@ -321,7 +321,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history.add((float) state.getCensus()[i]
-						.getInitialElementarySchoolYears());
+						.getInitialElementaryYears());
 			break;
 
 		case R.id.radio_final_census_elementary:
@@ -330,7 +330,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history.add((float) state.getCensus()[i]
-						.getInitialElementarySchoolYears());
+						.getInitialElementaryYears());
 			break;
 
 		case R.id.radio_census_high_school:
@@ -347,7 +347,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history
-						.add((float) state.getCensus()[i].getElementarySchoolEJA());
+						.add((float) state.getCensus()[i].getElementaryEJA());
 			break;
 
 		case R.id.radio_census_eja_high_school:

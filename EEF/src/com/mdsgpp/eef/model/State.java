@@ -38,29 +38,29 @@ public class State {
 	}
 
 	public void setCensus(HashMap<String, ArrayList<String[]>> information) {
-		ArrayList<String[]> elementarySchoolFinalData;
-		ArrayList<String[]> elementarySchoolInitialData;
+		ArrayList<String[]> elementaryFinalData;
+		ArrayList<String[]> elementaryInitialData;
 		ArrayList<String[]> highSchoolData;
 		ArrayList<String[]> ejaHighSchoolData;
-		ArrayList<String[]> ejaElementarySchoolData;
+		ArrayList<String[]> ejaElementaryData;
 		Census census[] = null;
 
-		elementarySchoolFinalData = information.get("censo_anos_finais");
-		elementarySchoolInitialData = information.get("censo_anos_iniciais");
+		elementaryFinalData = information.get("censo_anos_finais");
+		elementaryInitialData = information.get("censo_anos_iniciais");
 		highSchoolData = information.get("censo_ensino_high_school");
 		ejaHighSchoolData = information.get("censo_eja_high_school");
-		ejaElementarySchoolData = information.get("censo_eja_elementary");
+		ejaElementaryData = information.get("censo_eja_elementary");
 
 		census = new Census[highSchoolData.size()];
 		for (int i=0; i<census.length; i++) {
 			census[i] = new Census();
 			census[i].setCensusState(this);
 			census[i].setCensusYear(Integer.parseInt(highSchoolData.get(i)[0]));
-			census[i].setFinalElementarySchoolYears(Double.parseDouble(elementarySchoolFinalData.get(i)[1].replaceAll("\\.", "")));
+			census[i].setFinalElementaryYears(Double.parseDouble(elementaryFinalData.get(i)[1].replaceAll("\\.", "")));
 			census[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setInitialElementarySchoolYears(Double.parseDouble(elementarySchoolInitialData.get(i)[1].replaceAll("\\.", "")));
+			census[i].setInitialElementaryYears(Double.parseDouble(elementaryInitialData.get(i)[1].replaceAll("\\.", "")));
 			census[i].setHighSchoolEJA(Double.parseDouble(ejaHighSchoolData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setElementarySchoolEJA(Double.parseDouble(ejaElementarySchoolData.get(i)[1].replaceAll("\\.", "")));
+			census[i].setElementaryEJA(Double.parseDouble(ejaElementaryData.get(i)[1].replaceAll("\\.", "")));
 		}
 
 		this.census = census;
@@ -109,13 +109,13 @@ public class State {
 	}
 
 	public void setIdebs(HashMap<String, ArrayList<String[]>> information) {
-		ArrayList<String[]> elementarySchoolFinalData;
-		ArrayList<String[]> elementarySchoolInitialData;
+		ArrayList<String[]> elementaryFinalData;
+		ArrayList<String[]> elementaryInitialData;
 		ArrayList<String[]> highSchoolData;
 		Ideb ideb[] = null;
 
-		elementarySchoolFinalData = information.get("5a_8a");
-		elementarySchoolInitialData = information.get("series_iniciais");
+		elementaryFinalData = information.get("5a_8a");
+		elementaryInitialData = information.get("series_iniciais");
 		highSchoolData = information.get("ensino_high_school");
 
 		ideb = new Ideb[highSchoolData.size()];
@@ -125,10 +125,10 @@ public class State {
 			if(i<ideb.length-1){
 				ideb[i].setIdebYear(Integer.parseInt(highSchoolData.get(i)[0]));
 			}
-			ideb[i].setElementarySchool(Double.parseDouble(elementarySchoolFinalData.get(i)[1].replaceAll(",",
+			ideb[i].setElementary(Double.parseDouble(elementaryFinalData.get(i)[1].replaceAll(",",
 					".")));
 			ideb[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
-			ideb[i].setInitialGrades(Double.parseDouble(elementarySchoolInitialData.get(i)[1].replaceAll(",", ".")));
+			ideb[i].setInitialGrades(Double.parseDouble(elementaryInitialData.get(i)[1].replaceAll(",", ".")));
 		}
 
 		this.idebs = ideb;
@@ -154,7 +154,7 @@ public class State {
 			readGrade[i] = new Grade();
 			readGrade[i].setState(this);
 			readGrade[i].setGradeYear(Integer.parseInt(highSchoolData.get(i)[0]));
-			readGrade[i].setElementarySchoolGrade(Double.parseDouble(dataFundamental.get(i)[1].replaceAll(",", ".")));
+			readGrade[i].setElementaryGrade(Double.parseDouble(dataFundamental.get(i)[1].replaceAll(",", ".")));
 			readGrade[i].setHighSchoolGrade(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
 		}
 

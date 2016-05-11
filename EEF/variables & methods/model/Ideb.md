@@ -8,7 +8,7 @@
 
 | Type     | Variable         |               Description                |
 |----------|------------------|------------------------------------------|
-| `double` | elementarySchool |Contais the Ideb's average of the state's elementary schools |
+| `double` | elementary |Contais the Ideb's average of the state's elementary schools |
 | `double` | highSchool       |Contais the Ideb's average of the state's high schools |
 | `double` | initialGrades    |Contais the Ideb's average of the state's initial schools |
 | `State`  | idebState        |Contais the Ideb's average of the state's schools |
@@ -20,8 +20,8 @@
 |:-----------:|:-------------------:|:-------------------------:|:-----------------------------------------:|
 |             |         Ideb        |             --            |            Standard constructor           |
 |             |         Ideb        |             --            | Constructor with initialization arguments |
-|   `double`  | getElementarySchool |             --            |          |
-|    `void`   | setElementarySchool | `double` elementarySchool |                                           |
+|   `double`  | getElementary |             --            |          |
+|    `void`   | setElementary | `double` elementary |                                           |
 |   `double`  |    getHighSchool    |             --            |                                           |
 |    `void`   |    setHighSchool    |    `double` highSchool    |                                           |
 |   `double`  |   getInitialGrades  |             --            |                                           |

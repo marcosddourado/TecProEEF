@@ -2,7 +2,7 @@
 
 public class Ideb {
 
-	private double elementarySchool;
+	private double elementary;
 	private double highSchool;
 	private double initialGrades; //this Grade refers to 'graduation period'
 	private State idebState;
@@ -11,18 +11,18 @@ public class Ideb {
 	public Ideb() {
 	}
 
-	public Ideb(double elementarySchool, double highSchool, double iniciais){
-		this.elementarySchool = elementarySchool;
+	public Ideb(double elementary, double highSchool, double iniciais){
+		this.elementary = elementary;
 		this.highSchool = highSchool;
 		this.initialGrades = iniciais;
 	}
 
-	public double getElementarySchool() {
-		return elementarySchool;
+	public double getElementary() {
+		return elementary;
 	}
 
-	public void setElementarySchool(double elementarySchool) {
-		this.elementarySchool = elementarySchool;
+	public void setElementary(double elementary) {
+		this.elementary = elementary;
 	}
 
 	public double getHighSchool() {

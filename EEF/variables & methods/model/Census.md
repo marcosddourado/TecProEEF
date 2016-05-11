@@ -8,10 +8,10 @@
 
 | Type     | Variable                     | Description|
 |----------|------------------------------|------------|
-| `double` | initialElementarySchoolYears |            |
-| `double` | finalElementarySchoolYears   |            |
+| `double` | initialElementaryYears |            |
+| `double` | finalElementaryYears   |            |
 | `double` | highSchool                   |            |
-| `double` | elementarySchoolEJA          |            |
+| `double` | elementaryEJA          |            |
 | `double` | highSchoolEJA                |            |
 | `int`    | censusYear                   |Contain the year when census were originated            |
 | `State`  | censusState                  |Contain the state where census is from|
@@ -21,15 +21,15 @@
 | Return Type |           Method Name           |                                                                        Arguments                                                                        |                Description                |
 |:-----------:|:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------:|
 |             |              Census             |                                                                            --                                                                           |            Standard constructor           |
-|             |              Census             | `double` initialElementarySchoolYears, `double` finalElementarySchoolYears, `double` highSchool,  `double` elementarySchoolEJA,  `double` highSchoolEJA | Constructor with initialization arguments |
-|   `double`  | getInitialElementarySchoolYears |                                                                            --                                                                           |                                           |
-|    `void`   | setInitialElementarySchoolYears |                                                          `double` initialElementarySchoolYears                                                          |                                           |
-|   `double`  |  getFinalElementarySchoolYears  |                                                                            --                                                                           |                                           |
-|    `void`   |  setFinalElementarySchoolYears  |                                                           `double final` ElementarySchoolYears                                                          |                                           |
+|             |              Census             | `double` initialElementaryYears, `double` finalElementaryYears, `double` highSchool,  `double` elementaryEJA,  `double` highSchoolEJA | Constructor with initialization arguments |
+|   `double`  | getInitialElementaryYears |                                                                            --                                                                           |                                           |
+|    `void`   | setInitialElementaryYears |                                                          `double` initialElementaryYears                                                          |                                           |
+|   `double`  |  getFinalElementaryYears  |                                                                            --                                                                           |                                           |
+|    `void`   |  setFinalElementaryYears  |                                                           `double final` ElementaryYears                                                          |                                           |
 |   `double`  |          getHighSchool          |                                                                            --                                                                           |                                           |
 |    `void`   |          setHighSchool          |                                                                   `double` highSchool                                                                   |                                           |
-|   `double`  |      getElementarySchoolEJA     |                                                                            --                                                                           |                                           |
-|    `void`   |      setElementarySchoolEJA     |                                                               `double` elementarySchoolEJA                                                              |                                           |
+|   `double`  |      getElementaryEJA     |                                                                            --                                                                           |                                           |
+|    `void`   |      setElementaryEJA     |                                                               `double` elementaryEJA                                                              |                                           |
 |   `double`  |         getHighSchoolEJA        |                                                                            --                                                                           |                                           |
 |    `void`   |         getHighSchoolEJA        |                                                                  `double` highSchoolEJA                                                                 |                                           |
 |   `State`   |          getCensusState         |                                                                            --                                                                           |                                           |

@@ -98,7 +98,7 @@ public class StateConroller {
 				"ideb_elementary_final",
 				"Ensino Fundamental (series finais): "
 						+ dfPercentage.format(state.getIdebs()[state
-								.getIdebs().length - 1].getElementarySchool()));
+								.getIdebs().length - 1].getElementary()));
 		this.stateInformations.put(
 				"ideb_ensino_high_school",
 				"Ensino Medio: "
@@ -165,7 +165,7 @@ public class StateConroller {
 				"Quantidade media de alunos por turma (Fundamental): "
 						+ dfValue.format(state.getStudentGradesPerClass()[state
 								.getStudentGradesPerClass().length - 1]
-								.getElementarySchoolGrade()));
+								.getElementaryGrade()));
 		this.stateInformations.put(
 				"alunos_por_turma_ensino_high_school",
 				"Quantidade media de alunos por turma (Medio): "
@@ -177,7 +177,7 @@ public class StateConroller {
 				"Quantidade media de horas de aula(Fundamental): "
 						+ dfValue.format(state.getGradeClassHours()[state
 								.getGradeClassHours().length - 1]
-								.getElementarySchoolGrade()));
+								.getElementaryGrade()));
 		this.stateInformations.put(
 				"horas_aula_ensino_high_school",
 				"Quantidade media de horas de aula (Medio): "
@@ -190,7 +190,7 @@ public class StateConroller {
 						+ dfPercentage.format(state
 								.getAgeGradeDistortionRate()[state
 								.getAgeGradeDistortionRate().length - 1]
-								.getElementarySchoolGrade()));
+								.getElementaryGrade()));
 		this.stateInformations.put(
 				"distortion_rate_high_school",
 				"Quantidade de Distoreeo da Idade (Medio): "
@@ -204,7 +204,7 @@ public class StateConroller {
 								+ dfPercentage.format(state
 										.getEducationalAchievementRate()[state
 										.getEducationalAchievementRate().length - 1]
-										.getElementarySchoolGrade()));
+										.getElementaryGrade()));
 		this.stateInformations
 				.put("taxa_aprovacao_high_school",
 						"Taxa de Aprovaeeo (Medio): "
@@ -218,7 +218,7 @@ public class StateConroller {
 								+ dfPercentage.format(state
 										.getSchoolDropoutRate()[state
 										.getSchoolDropoutRate().length - 1]
-										.getElementarySchoolGrade()));
+										.getElementaryGrade()));
 		this.stateInformations
 				.put("taxa_abandono_high_school",
 						"Taxa de Abandono (Medio): "
@@ -231,13 +231,13 @@ public class StateConroller {
 				"Censo Anos Iniciais (Fundamental): "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1]
-								.getInitialElementarySchoolYears()));
+								.getInitialElementaryYears()));
 		this.stateInformations.put(
 				"censo_anos_finais_elementary",
 				"Censo Anos Finais (Fundamental): "
 						+ dfPercentage.format(state.getCensus()[state
 								.getCensus().length - 1]
-								.getInitialElementarySchoolYears()));
+								.getInitialElementaryYears()));
 		this.stateInformations.put(
 				"censo_ensino_high_school",
 				"Censo Ensino Medio: "
@@ -247,7 +247,7 @@ public class StateConroller {
 				"censo_eja_elementary",
 				"Censo EJA (Fundamental): "
 						+ dfPercentage.format(state.getCensus()[state
-								.getCensus().length - 1].getElementarySchoolEJA()));
+								.getCensus().length - 1].getElementaryEJA()));
 		this.stateInformations.put(
 				"censo_eja_high_school",
 				"Censo EJA (Medio): "
@@ -288,7 +288,7 @@ public class StateConroller {
 					+ ": "
 					+ "Ensino Fundamental (series finais): "
 					+ dfPercentage.format(state.getIdebs()[i]
-							.getElementarySchool())
+							.getElementary())
 					+ "\n"
 					+ "\t\t  "
 					+ "Ensino Medio: "
@@ -361,7 +361,7 @@ public class StateConroller {
 					+ ": "
 					+ "Quantidade media de alunos por turma (Fundamental): "
 					+ dfValue.format(state.getStudentGradesPerClass()[i]
-							.getElementarySchoolGrade())
+							.getElementaryGrade())
 					+ "\n"
 					+ "Quantidade media de alunos por turma (Medio): "
 					+ dfValue.format(state.getStudentGradesPerClass()[i]
@@ -377,7 +377,7 @@ public class StateConroller {
 					+ "Quantidade media de horas de aula(Fundamental): "
 					+ dfValue.format(state.getGradeClassHours()[state
 							.getGradeClassHours().length - 1]
-							.getElementarySchoolGrade())
+							.getElementaryGrade())
 					+ "\n"
 					+ "Quantidade media de horas de aula (Medio): "
 					+ dfValue.format(state.getGradeClassHours()[state
@@ -393,7 +393,7 @@ public class StateConroller {
 					+ "Quantidade de Distoreeo da Idade(Fundamental): "
 					+ dfPercentage
 							.format(state.getAgeGradeDistortionRate()[i]
-									.getElementarySchoolGrade())
+									.getElementaryGrade())
 					+ "\n"
 					+ "Quantidade de Distoreeo da Idade (Medio): "
 					+ dfPercentage
@@ -408,7 +408,7 @@ public class StateConroller {
 					+ ": "
 					+ "Taxa de Aprovaeeo (Fundamental): "
 					+ dfPercentage.format(state.getEducationalAchievementRate()[i]
-							.getElementarySchoolGrade())
+							.getElementaryGrade())
 					+ "\n"
 					+ "\t\t  "
 					+ "Taxa de Aprovaeeo (Medio): "
@@ -423,7 +423,7 @@ public class StateConroller {
 					+ ": "
 					+ "Taxa de Abandono (Fundamental): "
 					+ dfPercentage.format(state.getSchoolDropoutRate()[i]
-							.getElementarySchoolGrade())
+							.getElementaryGrade())
 					+ "\n"
 					+ "\t\t  "
 					+ "Taxa de Abandono (Medio): "
@@ -438,12 +438,12 @@ public class StateConroller {
 					+ ": "
 					+ "Censo Anos Iniciais (Fundamental): "
 					+ dfPercentage.format(state.getCensus()[i]
-							.getInitialElementarySchoolYears())
+							.getInitialElementaryYears())
 					+ "\n"
 					+ "\t\t  "
 					+ "Censo Anos Finais (Fundamental): "
 					+ dfPercentage.format(state.getCensus()[i]
-							.getInitialElementarySchoolYears())
+							.getInitialElementaryYears())
 					+ "\n"
 					+ "\t\t  "
 					+ "Censo Ensino Medio: "
@@ -453,7 +453,7 @@ public class StateConroller {
 					+ "\t\t  "
 					+ "Censo EJA (Fundamental): "
 					+ dfPercentage.format(state.getCensus()[i]
-							.getElementarySchoolEJA())
+							.getElementaryEJA())
 					+ "\n"
 					+ "\t\t  "
 					+ "Censo EJA (Medio): "
