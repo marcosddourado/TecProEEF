@@ -4,17 +4,17 @@ public class Ideb {
 
 	private double elementary;
 	private double highSchool;
-	private double initialGrades; //this Grade refers to 'graduation period'
+	private double initialGrades;
 	private State idebState;
 	private int idebYear;
 
 	public Ideb() {
 	}
 
-	public Ideb(double elementary, double highSchool, double iniciais){
+	public Ideb(double elementary, double highSchool, double initialGrades){
 		this.elementary = elementary;
 		this.highSchool = highSchool;
-		this.initialGrades = iniciais;
+		this.initialGrades = initialGrades;
 	}
 
 	public double getElementary() {

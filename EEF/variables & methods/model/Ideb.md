@@ -30,3 +30,37 @@
 |    `void`   |       setState      |     `State` idebState     |                                           |
 |    `int`    |     getIdebYear     |             --            |                                           |
 |    `void`   |     setIdebYear     |       `int` idebYear      |                                           |
+
+#### Local Variables per Function:
+
+|          |   Constructor   |                                                              |
+|:--------:|:---------------:|:------------------------------------------------------------:|
+|   Type   |     Variable    |                          Description                         |
+| `double` |   `elementary`  |   Provides a value to be set on private member `elementary`  |
+| `double` | `highSchool`    | Provides a value to be set on private member `highSchool`    |
+| `double` | `initialGrades` | Provides a value to be set on private member `initialGrades` |
+
+|          | setElementary |                                                           |
+|:--------:|:-------------:|:---------------------------------------------------------:|
+|   Type   |    Variable   |                        Description                        |
+| `double` |  `elementary` | Provides a value to be set on private member `elementary` |
+
+|          | setHighSchool |                                                           |
+|:--------:|:-------------:|:---------------------------------------------------------:|
+|   Type   |    Variable   |                        Description                        |
+| `double` |  `highSchool` | Provides a value to be set on private member `highSchool` |
+
+|          | setInitialGrades |                                                              |
+|:--------:|:----------------:|:------------------------------------------------------------:|
+|   Type   |     Variable     |                          Description                         |
+| `double` |  `initialGrades` | Provides a value to be set on private member `initialGrades` |
+
+|         |   setState  |                                                          |
+|:-------:|:-----------:|:--------------------------------------------------------:|
+|   Type  |   Variable  |                        Description                       |
+| `State` | `idebState` | Provides a value to be set on private member `idebState` |
+
+|       | setIdebYear |                                                         |
+|:-----:|:-----------:|:-------------------------------------------------------:|
+|  Type |   Variable  |                       Description                       |
+| `int` |  `idebYear` | Provides a value to be set on private member `idebYear` |
