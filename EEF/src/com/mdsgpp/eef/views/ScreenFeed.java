@@ -16,7 +16,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-public class ScreenFeed extends Activity implements ReceptorDados {
+public class ScreenFeed extends Activity implements DataReceiver {
 
 	private final static String FEED_ADDRESS = "http://noticias.gov.br/noticias/rss?id=AFSZW";
 	
@@ -39,7 +39,7 @@ public class ScreenFeed extends Activity implements ReceptorDados {
 	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -64,7 +64,7 @@ public class ScreenFeed extends Activity implements ReceptorDados {
 		listview.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
-				String link = feed.getItem(position).getLink();
+				String link = feed.getFeedItem(position).getNewsLink();
 				
 				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
 				startActivity(browserIntent);
