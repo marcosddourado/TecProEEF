@@ -20,39 +20,39 @@ import android.widget.Toast;
 
 public class ScreenState extends Activity {
 
-	private TextView textViewSigla;	
-	private TextView textViewNome;
-	private TextView textViewPopulacao;
-	private TextView textViewParticipacaoPib;
-	private TextView textViewQuantidadeProjetosCienciaTecnologia;
-	private TextView textViewValorProjetosCienciaTecnologia;
-	private TextView textViewFundamentalIdeb;
-	private TextView textViewEnsinoMedioIdeb;
-	private TextView textViewIniciaisIdeb;
-	private	TextView textViewQuantidadePrimeirosProjetos;
-	private TextView textViewValorPrimeirosProjetos;
-	private TextView textViewQuantidadePesquisa;
-	private TextView textViewQuantidadeJovensPesquisadores;
-	private TextView textViewValoresPesquisa;
-	private TextView textViewValorJovensPesquisadores;
-	private TextView textViewQuantidadeProjetosIniciacao;
-	private TextView textViewValorProjetosIniciacao;
-	private ImageView imageViewBandeiras;	
-	private TextView textViewCensoIniciaisFundamental;
-	private TextView textViewCensoFinaisFundamental;
-	private TextView textViewCensoMedio;
-	private TextView textViewCensoEjaFundamental;
-	private TextView textViewCensoEjaMedio;
-	private TextView textViewMediaAlunosPorTurmaFundamental;
-	private TextView textViewMediaAlunosPorTurmaMedio;
-	private TextView textViewMediaHorasAulaFundamental;
-	private TextView textViewMediaHorasAulaMedio;
-	private TextView textViewTaxaDistorcaoIdadeSerieFundamental;
-	private TextView textViewTaxaDistorcaoIdadeSerieMedio;
-	private TextView textViewTaxaDeAproveitamentoFundamental;
-	private TextView textViewTaxaDeAproveitamentoMedio;
-	private TextView textViewTaxaDeAbandonoFundamental;
-	private TextView textViewTaxaDeAbandonoMedio;
+	private TextView textViewAbbrev;
+	private TextView textViewName;
+	private TextView textViewPopulation;
+	private TextView textViewPibParticipation;
+	private TextView textViewScienceTechnologyProjectsQuantity;
+	private TextView textViewScienceTechnologyProjectsValue;
+	private TextView textViewIdebElementary;
+	private TextView textViewIdebHighSchool;
+	private TextView textViewIdebInitials;
+	private	TextView textViewPrimeirosProjetosQuantity;
+	private TextView textViewPrimeirosProjetosValue;
+	private TextView textViewResearchQuantity;
+	private TextView textViewResearchValues;
+	private TextView textViewJovensPesquisadoresQuantity;
+	private TextView textViewJovensPesquisadoresValue;
+	private TextView textViewInitiationProjectsQuantity;
+	private TextView textViewInitiationProjectsValue;
+	private ImageView imageViewFlags;
+	private TextView textViewCensusInitialsElementary;
+	private TextView textViewCensusFinalsElementary;
+	private TextView textViewCensusHighSchool;
+	private TextView textViewCensusEjaElementary;
+	private TextView textViewCensoEjaHighSchool;
+	private TextView textViewAverageStudentsPerClassElementary;
+	private TextView textViewAverageStudentsPerClassHighSchool;
+	private TextView textViewAverageHoursClassElementary;
+	private TextView textViewAverageHoursClassHighSchool;
+	private TextView textViewDistortionRateGradeElementary;
+	private TextView textViewDistortionRateGradeHighSchool;
+	private TextView textViewAchievementRateElementary;
+	private TextView textViewAchievementRateHighSchool;
+	private TextView textViewDropoutRateElementary;
+	private TextView 		textViewDropoutRateHighSchool;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -111,75 +111,75 @@ public class ScreenState extends Activity {
 	
 	private void inicializaCamposTexto() {
 		
-		textViewSigla = (TextView) findViewById(R.id.textView_sigla);
-		textViewNome = (TextView) findViewById(R.id.textView_nome_estado);
-		textViewPopulacao = (TextView) findViewById(R.id.textView_populacao_valor);
-		textViewParticipacaoPib = (TextView) findViewById(R.id.textView_participacao_pib_valor);
-		textViewQuantidadeProjetosCienciaTecnologia = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
-		textViewValorProjetosCienciaTecnologia = (TextView) findViewById(R.id.textView_valor_investido_projetos);
-		textViewFundamentalIdeb = (TextView) findViewById(R.id.textView_ideb_elementary);
-		textViewEnsinoMedioIdeb = (TextView) findViewById(R.id.textView_ideb_ensinomedio);
-		textViewIniciaisIdeb = (TextView) findViewById(R.id.textView_ideb_iniciais);
-		textViewQuantidadePrimeirosProjetos = (TextView) findViewById(R.id.textView_primeiros_projetos_quantidade);
-		textViewValorPrimeirosProjetos = (TextView) findViewById(R.id.textView_programa_primeiros_projetos_valor);
-		textViewQuantidadePesquisa = (TextView) findViewById(R.id.textView_projetos_pesquisa_quantidade);
-		textViewValoresPesquisa = (TextView) findViewById(R.id.textView_valores_projeto_pesquisa);
-		textViewQuantidadeJovensPesquisadores = (TextView) findViewById(R.id.textView_jovens_pesquisadores_quantidade);
-		textViewValorJovensPesquisadores= (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
-		textViewQuantidadeProjetosIniciacao = (TextView) findViewById(R.id.textView_projetos_iniciacao_quantidade);
-		textViewValorProjetosIniciacao = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
+		textViewAbbrev = (TextView) findViewById(R.id.textView_sigla);
+		textViewName = (TextView) findViewById(R.id.textView_nome_estado);
+		textViewPopulation = (TextView) findViewById(R.id.textView_populacao_valor);
+		textViewPibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
+		textViewScienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
+		textViewScienceTechnologyProjectsValue = (TextView) findViewById(R.id.textView_valor_investido_projetos);
+		textViewIdebElementary = (TextView) findViewById(R.id.textView_ideb_elementary);
+		textViewIdebHighSchool = (TextView) findViewById(R.id.textView_ideb_ensinomedio);
+		textViewIdebInitials = (TextView) findViewById(R.id.textView_ideb_iniciais);
+		textViewPrimeirosProjetosQuantity = (TextView) findViewById(R.id.textView_primeiros_projetos_quantidade);
+		textViewPrimeirosProjetosValue = (TextView) findViewById(R.id.textView_programa_primeiros_projetos_valor);
+		textViewResearchQuantity = (TextView) findViewById(R.id.textView_projetos_pesquisa_quantidade);
+		textViewResearchValues = (TextView) findViewById(R.id.textView_valores_projeto_pesquisa);
+		textViewJovensPesquisadoresQuantity = (TextView) findViewById(R.id.textView_jovens_pesquisadores_quantidade);
+		textViewJovensPesquisadoresValue = (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
+		textViewInitiationProjectsQuantity = (TextView) findViewById(R.id.textView_projetos_iniciacao_quantidade);
+		textViewInitiationProjectsValue = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
-		textViewCensoIniciaisFundamental = (TextView) findViewById(R.id.textView_initial_census_elementary);
-		textViewCensoFinaisFundamental = (TextView) findViewById(R.id.textView_final_census_elementary);
-		textViewCensoMedio = (TextView) findViewById(R.id.textView_census_high_school);
-		textViewCensoEjaFundamental = (TextView) findViewById(R.id.textView_census_elementary_eja);
-		textViewCensoEjaMedio = (TextView) findViewById(R.id.textView_census_high_school_eja);
-		textViewMediaAlunosPorTurmaFundamental = (TextView) findViewById(R.id.textView_media_alunos_por_turma_elementary);
-		textViewMediaAlunosPorTurmaMedio = (TextView) findViewById(R.id.textView_media_alunos_por_turma_high_school);
-		textViewMediaHorasAulaFundamental = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
-		textViewMediaHorasAulaMedio = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
-		textViewTaxaDistorcaoIdadeSerieFundamental = (TextView) findViewById(R.id.textView_distortion_rate_elementary);
-		textViewTaxaDistorcaoIdadeSerieMedio = (TextView) findViewById(R.id.textView_distortion_rate_high_school);
-		textViewTaxaDeAproveitamentoFundamental = (TextView) findViewById(R.id.textView_approval_rate_elementary);
-		textViewTaxaDeAproveitamentoMedio = (TextView) findViewById(R.id.textView_approval_rate_high_school);
-		textViewTaxaDeAbandonoFundamental = (TextView) findViewById(R.id.textView_dropout_rate_elementary);
-		textViewTaxaDeAbandonoMedio = (TextView) findViewById(R.id.textView_dropout_rate_high_school);
+		textViewCensusInitialsElementary = (TextView) findViewById(R.id.textView_initial_census_elementary);
+		textViewCensusFinalsElementary = (TextView) findViewById(R.id.textView_final_census_elementary);
+		textViewCensusHighSchool = (TextView) findViewById(R.id.textView_census_high_school);
+		textViewCensusEjaElementary = (TextView) findViewById(R.id.textView_census_elementary_eja);
+		textViewCensoEjaHighSchool = (TextView) findViewById(R.id.textView_census_high_school_eja);
+		textViewAverageStudentsPerClassElementary = (TextView) findViewById(R.id.textView_media_alunos_por_turma_elementary);
+		textViewAverageStudentsPerClassHighSchool = (TextView) findViewById(R.id.textView_media_alunos_por_turma_high_school);
+		textViewAverageHoursClassElementary = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
+		textViewAverageHoursClassHighSchool = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
+		textViewDistortionRateGradeElementary = (TextView) findViewById(R.id.textView_distortion_rate_elementary);
+		textViewDistortionRateGradeHighSchool = (TextView) findViewById(R.id.textView_distortion_rate_high_school);
+		textViewAchievementRateElementary = (TextView) findViewById(R.id.textView_approval_rate_elementary);
+		textViewAchievementRateHighSchool = (TextView) findViewById(R.id.textView_approval_rate_high_school);
+		textViewDropoutRateElementary = (TextView) findViewById(R.id.textView_dropout_rate_elementary);
+		textViewDropoutRateHighSchool = (TextView) findViewById(R.id.textView_dropout_rate_high_school);
 	}
 	
 	private void preencheCamposTexto(HashMap<String, String> informacoes) {
-		textViewSigla.setText(informacoes.get("sigla"));
-		textViewNome.setText(informacoes.get("nome"));
-		textViewPopulacao.setText(informacoes.get("populacao"));
-		textViewParticipacaoPib.setText(informacoes.get("percentual_participacao_pib"));
-		textViewQuantidadeProjetosCienciaTecnologia.setText(informacoes.get("projetos_ciencia_tecnologia"));
-		textViewValorProjetosCienciaTecnologia.setText(informacoes.get("valor_ciencia_tecnologia"));
-		textViewFundamentalIdeb.setText(informacoes.get("ideb_elementary_final"));
-		textViewEnsinoMedioIdeb.setText(informacoes.get("ideb_ensino_high_school"));
-		textViewIniciaisIdeb.setText(informacoes.get("ideb_elementary_inicial"));
-		textViewQuantidadePrimeirosProjetos.setText(informacoes.get("quantidade_primeiros_projetos"));
-		textViewValorPrimeirosProjetos.setText(informacoes.get("valor_primeiros_projetos"));
-	    textViewQuantidadePesquisa.setText(informacoes.get("quantidade_projeto_cnpq"));
-		textViewValoresPesquisa.setText(informacoes.get("valor_projetos_cnpq"));
-		textViewQuantidadeJovensPesquisadores.setText(informacoes.get("quantidade_projeto_jovens_pesquisadores"));
-		textViewValorJovensPesquisadores.setText(informacoes.get("valor_projetos_jovens_pesquisadores"));
-		textViewQuantidadeProjetosIniciacao.setText(informacoes.get("quantidade_projetos_inct"));
-		textViewValorProjetosIniciacao.setText(informacoes.get("valor_projetos_inct"));
+		textViewAbbrev.setText(informacoes.get("sigla"));
+		textViewName.setText(informacoes.get("nome"));
+		textViewPopulation.setText(informacoes.get("populacao"));
+		textViewPibParticipation.setText(informacoes.get("percentual_participacao_pib"));
+		textViewScienceTechnologyProjectsQuantity.setText(informacoes.get("projetos_ciencia_tecnologia"));
+		textViewScienceTechnologyProjectsValue.setText(informacoes.get("valor_ciencia_tecnologia"));
+		textViewIdebElementary.setText(informacoes.get("ideb_elementary_final"));
+		textViewIdebHighSchool.setText(informacoes.get("ideb_ensino_high_school"));
+		textViewIdebInitials.setText(informacoes.get("ideb_elementary_inicial"));
+		textViewPrimeirosProjetosQuantity.setText(informacoes.get("quantidade_primeiros_projetos"));
+		textViewPrimeirosProjetosValue.setText(informacoes.get("valor_primeiros_projetos"));
+	    textViewResearchQuantity.setText(informacoes.get("quantidade_projeto_cnpq"));
+		textViewResearchValues.setText(informacoes.get("valor_projetos_cnpq"));
+		textViewJovensPesquisadoresQuantity.setText(informacoes.get("quantidade_projeto_jovens_pesquisadores"));
+		textViewJovensPesquisadoresValue.setText(informacoes.get("valor_projetos_jovens_pesquisadores"));
+		textViewInitiationProjectsQuantity.setText(informacoes.get("quantidade_projetos_inct"));
+		textViewInitiationProjectsValue.setText(informacoes.get("valor_projetos_inct"));
 		
-		textViewCensoIniciaisFundamental.setText(informacoes.get("censo_anos_iniciais_elementary"));
-		textViewCensoFinaisFundamental.setText(informacoes.get("censo_anos_finais_elementary"));
-		textViewCensoMedio.setText(informacoes.get("censo_ensino_high_school"));
-		textViewCensoEjaFundamental.setText(informacoes.get("censo_eja_elementary"));
-		textViewCensoEjaMedio.setText(informacoes.get("censo_eja_high_school"));
-		textViewMediaAlunosPorTurmaFundamental.setText(informacoes.get("alunos_por_turma_ensino_elementary"));
-		textViewMediaAlunosPorTurmaMedio.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
-		textViewMediaHorasAulaFundamental.setText(informacoes.get("horas_aula_ensino_elementary"));
-		textViewMediaHorasAulaMedio.setText(informacoes.get("horas_aula_ensino_high_school"));
-		textViewTaxaDistorcaoIdadeSerieFundamental.setText(informacoes.get("distortion_rate_elementary"));
-		textViewTaxaDistorcaoIdadeSerieMedio.setText(informacoes.get("distortion_rate_high_school"));
-		textViewTaxaDeAproveitamentoFundamental.setText(informacoes.get("taxa_aprovacao_elementary"));
-		textViewTaxaDeAproveitamentoMedio.setText(informacoes.get("taxa_aprovacao_high_school"));
-		textViewTaxaDeAbandonoFundamental.setText(informacoes.get("taxa_aprovacao_elementary"));
-		textViewTaxaDeAbandonoMedio.setText(informacoes.get("taxa_aprovacao_high_school"));
+		textViewCensusInitialsElementary.setText(informacoes.get("censo_anos_iniciais_elementary"));
+		textViewCensusFinalsElementary.setText(informacoes.get("censo_anos_finais_elementary"));
+		textViewCensusHighSchool.setText(informacoes.get("censo_ensino_high_school"));
+		textViewCensusEjaElementary.setText(informacoes.get("censo_eja_elementary"));
+		textViewCensoEjaHighSchool.setText(informacoes.get("censo_eja_high_school"));
+		textViewAverageStudentsPerClassElementary.setText(informacoes.get("alunos_por_turma_ensino_elementary"));
+		textViewAverageStudentsPerClassHighSchool.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
+		textViewAverageHoursClassElementary.setText(informacoes.get("horas_aula_ensino_elementary"));
+		textViewAverageHoursClassHighSchool.setText(informacoes.get("horas_aula_ensino_high_school"));
+		textViewDistortionRateGradeElementary.setText(informacoes.get("distortion_rate_elementary"));
+		textViewDistortionRateGradeHighSchool.setText(informacoes.get("distortion_rate_high_school"));
+		textViewAchievementRateElementary.setText(informacoes.get("taxa_aprovacao_elementary"));
+		textViewAchievementRateHighSchool.setText(informacoes.get("taxa_aprovacao_high_school"));
+		textViewDropoutRateElementary.setText(informacoes.get("taxa_aprovacao_elementary"));
+		textViewDropoutRateHighSchool.setText(informacoes.get("taxa_aprovacao_high_school"));
 		
 	}
 	
@@ -191,9 +191,9 @@ public class ScreenState extends Activity {
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 				"sergipe", "tocantins"};	
 		
-		imageViewBandeiras = (ImageView) findViewById(R.id.imageView_flags);
+		imageViewFlags = (ImageView) findViewById(R.id.imageView_flags);
 		int idFlag = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
-		imageViewBandeiras.setImageResource(idFlag);
+		imageViewFlags.setImageResource(idFlag);
 	}
 	
 	public void clickBotaoHistoricoEstado(View view) {
