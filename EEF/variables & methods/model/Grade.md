@@ -27,3 +27,32 @@
 |    `void`   |       setStateGrade      |                    `State` stateGrade                    |                                           |
 |    `int`    |       getGradeYear       |                            --                            |                                           |
 |    `void`   |       setGradeYear       |                      `int` gradeYear                     |                                           |
+
+
+#### Local Variables per Function:
+
+|          |    Constructor    |                                                                |
+|:--------:|:-----------------:|:--------------------------------------------------------------:|
+|   Type   |      Variable     |                           Description                          |
+| `double` | `elementaryGrade` | Provides a value to be set on private member `elementaryGrade` |
+| `double` | `highSchoolGrade` | Provides a value to be set on private member `highSchoolGrade` |
+
+|          | setElementaryGrade |                                                                |
+|:--------:|:------------------:|:--------------------------------------------------------------:|
+|   Type   |      Variable      |                           Description                          |
+| `double` |  `elementaryGrade` | Provides a value to be set on private member `elementaryGrade` |
+
+|          | setHighSchoolGrade |                                                                |
+|:--------:|:------------------:|:--------------------------------------------------------------:|
+|   Type   |      Variable      |                           Description                          |
+| `double` |  `highSchoolGrade` | Provides a value to be set on private member `highSchoolGrade` |
+
+|          | setState |                                                      |
+|:--------:|:--------:|:----------------------------------------------------:|
+|   Type   | Variable |                      Description                     |
+| `State` |  `state` | Provides a value to be set on private member `state` |
+
+|       | setGradeYear |                                                          |
+|:-----:|:------------:|:--------------------------------------------------------:|
+|  Type |   Variable   |                        Description                       |
+| `int` |  `gradeYear` | Provides a value to be set on private member `gradeYear` |
