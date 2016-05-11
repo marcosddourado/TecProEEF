@@ -42,8 +42,43 @@
 |          |          Constructor          |                                                   |
 |:--------:|:-----------------------------:|:-------------------------------------------------:|
 |   Type   |            Variable           |                    Description                    |
-| `Double` |    `initialElementaryYears`   | Set private member `initialElementaryYears` value |
-| `Double` | `double finalElementaryYears` |  Set private member `finalElementaryYears` value  |
-| `Double` |          `highSchool`         |       Set private member `highSchool` value       |
-| `Double` |        `elementaryEJA`        |      Set private member `elementaryEJA` value     |
-| `Double` |        `highSchoolEJA`        |      Set private member `highSchoolEJA` value     |
+| `Double` |    `initialElementaryYears`   | Provides a value to be set on private member `initialElementaryYears`|
+| `Double` | `double finalElementaryYears` |  Provides a value to be set on private member `finalElementaryYears` |
+| `Double` |          `highSchool`         |       Provides a value to be set on private member `highSchool`|
+| `Double` |        `elementaryEJA`        |      Provides a value to be set on private member `elementaryEJA`|
+| `Double` |        `highSchoolEJA`        |      Provides a value to be set on private member `highSchoolEJA`|
+
+|          | setInitialElementaryYears |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Double` |  `initialElementaryYears` | Provides a value to be set on private member `initialElementaryYears`|
+
+|          | setFinalElementaryYears |                                                 |
+|:--------:|:-----------------------:|:-----------------------------------------------:|
+|   Type   |         Variable        |                   Description                   |
+| `Double` |    `elementaryYears`    | Provides a value to be set on private member `finalElementaryYears` |
+
+|          | setHighSchool |                                       |
+|:--------:|:-------------:|:-------------------------------------:|
+|   Type   |    Variable   |              Description              |
+| `Double` |  `highSchool` | Provides a value to be set on private member `highSchool` |
+
+|          | setElementaryEJA |                                          |
+|:--------:|:----------------:|:----------------------------------------:|
+|   Type   |     Variable     |                Description               |
+| `Double` |  `elementaryEJA` | Provides a value to be set on private member `elementaryEJA`|
+
+|          | setHighSchoolEJA |                                                              |
+|:--------:|:----------------:|:------------------------------------------------------------:|
+|   Type   |     Variable     |                          Description                         |
+| `Double` |  `highSchoolEJA` | Provides a value to be set on private member `highSchoolEJA` |
+
+|          | setCensusState |                                                            |
+|:--------:|:--------------:|:----------------------------------------------------------:|
+|   Type   |    Variable    |                         Description                        |
+| `Double` |  `censusState` | Provides a value to be set on private member `censusState` |
+
+|          | setCensusYear |                                                           |
+|:--------:|:-------------:|:---------------------------------------------------------:|
+|   Type   |    Variable   |                        Description                        |
+| `Double` |  `censusYear` | Provides a value to be set on private member `censusYear` |
