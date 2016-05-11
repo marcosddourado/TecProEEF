@@ -56,7 +56,7 @@ public class News implements Serializable {
 		this.newsDate = newsDate;
 	}
 
-		public Feed getNewsFeed() {
+	public Feed getNewsFeed() {
 		return this.newsFeed;
 	}
 
