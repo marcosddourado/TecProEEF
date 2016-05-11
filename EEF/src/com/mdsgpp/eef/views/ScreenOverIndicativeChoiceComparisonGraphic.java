@@ -1,19 +1,16 @@
 package com.mdsgpp.eef.views;
 
 import com.mdsgpp.eef.R;
-
 import android.os.Bundle;
 import android.app.Activity;
-import android.support.v4.app.NavUtils;
 import android.view.Menu;
-import android.view.MenuItem;
 
-public class TelaSobreConsulta extends Activity {
+public class ScreenOverIndicativeChoiceComparisonGraphic extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre_consulta);
+		setContentView(R.layout.activity_tela_sobre_escolhe_indicativo_grafico_comparacao);
 	}
 
 	@Override
@@ -21,20 +18,6 @@ public class TelaSobreConsulta extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_telas_sem_sobre, menu);
 		return true;
-	}
-	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		
-		switch (item.getItemId()) {
-		case android.R.id.home:
-	        NavUtils.navigateUpFromSameTask(this);
-	        break;
-		default:
-			break;
-		}
-		
-    	return true;
 	}
 
 }

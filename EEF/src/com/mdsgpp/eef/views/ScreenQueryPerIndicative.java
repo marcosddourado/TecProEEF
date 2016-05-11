@@ -19,12 +19,12 @@ public class ScreenQueryPerIndicative extends ChooseIndicative {
 	}
 
 	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreIndicativos.class);
+		Intent intent = new Intent(this, ScreenOverIndicatives.class);
 		startActivity(intent);
 	}
 	
 	public void clickButtonNext(View view) {
-		Intent intent = new Intent(this, TelaResultadoConsultaPorIndicativo.class);
+		Intent intent = new Intent(this, ScreenQueryResultPerIndicative.class);
 
 		intent.putExtra("INDICATIVO", getIndicative());
 		intent.putExtra("TITULO", getTittle());

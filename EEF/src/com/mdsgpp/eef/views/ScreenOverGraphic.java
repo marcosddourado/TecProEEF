@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class TelaSobreHistoricoDeIndicativo extends Activity {
+public class ScreenOverGraphic extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre_historico_de_indicativo);
+		setContentView(R.layout.activity_tela_sobre_grafico);
 	}
 
 	@Override

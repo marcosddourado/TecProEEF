@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
     }
     
     public void openAboutScreen() {
-    	Intent intent = new Intent(this, TelaSobre.class);
+    	Intent intent = new Intent(this, ScreenOver.class);
     	startActivity(intent);
     }
 
@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
     }
     
     public void clickButtonGeneralConsultation(View view){
-    	Intent intent = new Intent(this, TelaListaEstado.class);
+    	Intent intent = new Intent(this, ScreenStateList.class);
     	startActivity(intent);
     }
     

@@ -8,12 +8,12 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class TelaSobreComparacao extends Activity {
+public class ScreenOverQuery extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre_comparacao);
+		setContentView(R.layout.activity_tela_sobre_consulta);
 	}
 
 	@Override

@@ -12,17 +12,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-public class TelaResultadoConsultaPorIndicativo extends Activity {
+public class ScreenQueryResultPerIndicative extends Activity {
 	private final Context context = this;
-	private ListView listaDeEstados = null;
+	private ListView stateList = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_resultado_consulta_por_indicativo);
-		inicializaViews();
+		initializeViews();
 		
-		carregaIndicativosDosEstados();
+		loadStateIndicatives();
 		
 	}
 
@@ -38,7 +38,7 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			openAboutScreen();
 			break;
 		case android.R.id.home:
@@ -52,25 +52,25 @@ public class TelaResultadoConsultaPorIndicativo extends Activity {
 	}
 	
 	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreResultadoDaConsulta.class);
+		Intent intent = new Intent(this, ScreenOverQueryResult.class);
     	startActivity(intent);
 		
 	}
 	
-	private void carregaIndicativosDosEstados() {
+	private void loadStateIndicatives() {
 			Intent intent = getIntent();
 			
-			String indicativo = intent.getStringExtra("INDICATIVO");
-			String titulo = intent.getStringExtra("TITULO");
+			String indicative = intent.getStringExtra("INDICATIVO");
+			String title = intent.getStringExtra("TITULO");
 			
-			IndicativeAdapter adapter = new IndicativeAdapter(titulo, indicativo,
+			IndicativeAdapter adapter = new IndicativeAdapter(title, indicative,
 					context);
 			
-			listaDeEstados.setAdapter(adapter);
+			stateList.setAdapter(adapter);
 	}
 	
-	public void inicializaViews(){
-		listaDeEstados = (ListView) findViewById(R.id.listview_tela_resultado_consulta_por_indicativo);
+	public void initializeViews(){
+		stateList = (ListView) findViewById(R.id.listview_tela_resultado_consulta_por_indicativo);
 	}
 	
 	

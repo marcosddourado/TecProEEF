@@ -72,7 +72,7 @@ public class ScreenStateHistory extends Activity {
 	}
 	
 	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreHistoricoDeIndicativo.class);
+		Intent intent = new Intent(this, ScreenOverIndicativeHistory.class);
     	startActivity(intent);	
 	}
 	

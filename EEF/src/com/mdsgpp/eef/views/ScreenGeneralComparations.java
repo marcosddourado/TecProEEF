@@ -42,7 +42,7 @@ public class ScreenGeneralComparations extends Activity {
     }
     
     public void openAboutScreen() {
-    	Intent intent = new Intent(this, TelaSobreComparacoesGerais.class);
+    	Intent intent = new Intent(this, ScreenOverGeneralComparisons.class);
     	startActivity(intent);
     }
 	

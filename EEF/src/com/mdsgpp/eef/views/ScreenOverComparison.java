@@ -8,13 +8,12 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class TelaSobre extends Activity {
+public class ScreenOverComparison extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre);
-		
+		setContentView(R.layout.activity_tela_sobre_comparacao);
 	}
 
 	@Override
@@ -23,7 +22,6 @@ public class TelaSobre extends Activity {
 		getMenuInflater().inflate(R.menu.menu_telas_sem_sobre, menu);
 		return true;
 	}
-	
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -38,6 +36,5 @@ public class TelaSobre extends Activity {
 		
     	return true;
 	}
-	
 
 }

@@ -153,7 +153,7 @@ public abstract class Comparation extends Activity{
 	public abstract void clickButtonStatesComparation(View view);
 	
 	public void clickButtonAboutComparation(View view) {
-		Intent intent = new Intent(this, TelaSobreConsulta.class);
+		Intent intent = new Intent(this, ScreenOverQuery.class);
 		startActivity(intent);
 	}	
 	
