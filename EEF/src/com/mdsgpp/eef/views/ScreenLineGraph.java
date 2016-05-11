@@ -22,22 +22,22 @@ import android.widget.TextView;
 
 public class ScreenLineGraph extends Activity {
 
-	private TextView txtviewTituloGrafico, txtviewHistorico;
-	private ArrayList<Float> historico = new ArrayList<Float>();
+	private TextView graphTitle, history;
+	private ArrayList<Float> historyList = new ArrayList<Float>();
 	private ArrayList<String> temp;
-	private HashMap<String, String> informacoes;
-	private String titulo, indicativo;
+	private HashMap<String, String> information;
+	private String title, indicative;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_grafico_historico);
 		
-		inicializaCamposTexto();
-		capturaInformacoes();
-		preencheCamposDeTexto();
+		initializeTextFields();
+		catchInformation();
+		fillTextFields();
 			
-		plotarGrafico();
+		plotGraph();
 	}
 	
 	@Override
@@ -64,24 +64,24 @@ public class ScreenLineGraph extends Activity {
     	return true;
 	}
 	
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		int position;
 		Intent intent;
 		
-		informacoes = new HashMap<String, String>();
+		information = new HashMap<String, String>();
 		
 		intent = getIntent();
 		temp = intent.getStringArrayListExtra("HISTORICO");
-		titulo = intent.getStringExtra("TITULO");
-		indicativo = intent.getStringExtra("INDICATIVO_GRAFICO");
+		title = intent.getStringExtra("TITULO");
+		indicative = intent.getStringExtra("INDICATIVO_GRAFICO");
 		position = intent.getIntExtra("POSICAO_ESTADO", 0);
 		
 		for(int i=0; i<temp.size(); i++) {
-			historico.add(Float.parseFloat(temp.get(i)));
+			historyList.add(Float.parseFloat(temp.get(i)));
 		}
 		
 		try {
-			informacoes = StateConroller.getInstance(this).readCompleteState(position);
+			information = StateConroller.getInstance(this).readCompleteState(position);
 		} catch (IOException e) {
 			Log.i("Error - ScreenLineGraph", "Erro ao capturar as informacoes do estado.");
 			e.printStackTrace();
@@ -94,42 +94,42 @@ public class ScreenLineGraph extends Activity {
 	}
 	
 
-	private void inicializaCamposTexto() {
-		txtviewTituloGrafico = (TextView) findViewById(R.id.text_view_titulo_grafico_historico);
-		txtviewHistorico = (TextView) findViewById(R.id.text_view_grafico_historico);
+	private void initializeTextFields() {
+		graphTitle = (TextView) findViewById(R.id.text_view_titulo_grafico_historico);
+		history = (TextView) findViewById(R.id.text_view_grafico_historico);
 	}
 	
-	private void preencheCamposDeTexto() {
-		txtviewTituloGrafico.setText(titulo);
-		Log.i("teste_indicativo", indicativo);
-		Log.i("teste_indicativo", ""+informacoes.containsKey(indicativo));
-		txtviewHistorico.setText(informacoes.get(indicativo));
+	private void fillTextFields() {
+		graphTitle.setText(title);
+		Log.i("teste_indicativo", indicative);
+		Log.i("teste_indicativo", ""+ information.containsKey(indicative));
+		history.setText(information.get(indicative));
 	}
 	
-	private void plotarGrafico() {
-		Line curva = new Line();
+	private void plotGraph() {
+		Line curve = new Line();
 		
-		for(int i=0, passo=10; i<historico.size(); i++,passo+=10){
-			LinePoint ponto = new LinePoint();
-			ponto.setX(passo);
-			ponto.setY(historico.get(i));
-			curva.addPoint(ponto);
+		for(int i = 0, passo = 10; i< historyList.size(); i++,passo+=10){
+			LinePoint point = new LinePoint();
+			point.setX(passo);
+			point.setY(historyList.get(i));
+			curve.addPoint(point);
 		}
-		curva.setColor(Color.parseColor("#4682B4"));
+		curve.setColor(Color.parseColor("#4682B4"));
 		LineGraph li = (LineGraph)findViewById(R.id.graph);
-		li.addLine(curva);
+		li.addLine(curve);
 		
-		float yMaximo = 0;
-		yMaximo = calculaValorMaximoHistorico(yMaximo);
+		float maxY = 0;
+		maxY = evaluateMaxHistoryValue(maxY);
 		
-		li.setRangeY(0, yMaximo);
+		li.setRangeY(0, maxY);
 		li.setLineToFill(0);
 	}
 
-	private float calculaValorMaximoHistorico(float maximo) {
-		for(int i=0; i<historico.size(); i++){
-			if(historico.get(i) >= maximo)
-				maximo = (float) historico.get(i);  
+	private float evaluateMaxHistoryValue(float maximo) {
+		for(int i = 0; i< historyList.size(); i++){
+			if(historyList.get(i) >= maximo)
+				maximo = (float) historyList.get(i);
 		}
 		return (float)(1.1*maximo);
 	}
