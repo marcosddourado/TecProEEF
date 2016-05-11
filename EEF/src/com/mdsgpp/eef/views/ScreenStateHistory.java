@@ -44,7 +44,7 @@ public class ScreenStateHistory extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_historico_estado);
 		
-		capturaInformacoes();
+		catchInformation();
 	}
 
 	@Override
@@ -76,18 +76,18 @@ public class ScreenStateHistory extends Activity {
     	startActivity(intent);	
 	}
 	
-	private void capturaInformacoes() {
+	private void catchInformation() {
 		Intent intent = getIntent();
 		
 		int position = intent.getIntExtra("ESTADO", 0);
 		information = new HashMap <String, String>();
 		
-		inicializaCamposTexto();
+		initializeTextFields();
 		
 		try {
 			information = StateConroller.getInstance(this).readCompleteState(position);
-			preencheCamposTexto(information);
-			setImagem(position);
+			filltextFields(information);
+			setImage(position);
 			
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
@@ -95,7 +95,7 @@ public class ScreenStateHistory extends Activity {
 		}
 	}
 
-	private void inicializaCamposTexto() {
+	private void initializeTextFields() {
 		
 		abbreviation = (TextView) findViewById(R.id.textView_sigla);
 		name = (TextView) findViewById(R.id.textView_nome_estado);
@@ -117,7 +117,7 @@ public class ScreenStateHistory extends Activity {
 		dropoutRateValue = (TextView) findViewById(R.id.textView_dropout_rate_valor);
 	}
 	
-	private void preencheCamposTexto(HashMap<String, String> informacoes) {
+	private void filltextFields(HashMap<String, String> informacoes) {
 		abbreviation.setText(informacoes.get("sigla"));
 		name.setText(informacoes.get("nome"));
 		population.setText(informacoes.get("populacao"));
@@ -139,22 +139,22 @@ public class ScreenStateHistory extends Activity {
 		
 	}
 	
-	private void setImagem(int position) {
+	private void setImage(int position) {
 		// O nome das bandeiras te sem acento
 		// A slueeo que eu acho mais simples e ter um array com os nomes dos estados sem acento, e pegar o nome certo pela position
-		String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
+		String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
 				"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 				"sergipe", "tocantins"};	
 		
-		flags = (ImageView) findViewById(R.id.imageView_flags);
-		int idFlag = getResources().getIdentifier(bandeiras[position], "drawable", getPackageName());
-		flags.setImageResource(idFlag);
+		this.flags = (ImageView) findViewById(R.id.imageView_flags);
+		int idFlag = getResources().getIdentifier(flags[position], "drawable", getPackageName());
+		this.flags.setImageResource(idFlag);
 	}
 	
-    public void clickBotaoEscolherIndicativoParaGerarGrafico(View view){
+    public void clickGenerateGraphPerIndicativeButton(View view){
 		Intent intent1 = getIntent();
 		
 		int position = intent1.getIntExtra("ESTADO", 0);
