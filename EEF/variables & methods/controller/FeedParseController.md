@@ -22,20 +22,3 @@
 |`void` | createNewFeed | -- | Resets the current feed |
 |`void` | createNewFeedItem | -- | Creates new informations on the feed |
 |`News` | getItem | -- | Gets the news that are on the feed |
-
-#### Local Variables per Function:
-
-|          |          Constructor          |                                                   |
-|:--------:|:-----------------------------:|:-------------------------------------------------:|
-|   Type   |            Variable           |                    Description                    |
-| `Context` | context                     | Contains the Activity that is calling this class |
-
-|          |          getInstance          |                                                   |
-|:--------:|:-----------------------------:|:-------------------------------------------------:|
-|   Type   |            Variable           |                    Description                    |
-| `Context` | context                     | Contains the Activity that is calling this class |
-
-|          |          getInformations          |                                                   |
-|:--------:|:-----------------------------:|:-------------------------------------------------:|
-|   Type   |            Variable           |                    Description                    |
-| `int` | position | Represents the index of a state in a Array |
