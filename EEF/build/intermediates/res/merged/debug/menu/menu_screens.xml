@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/sobre"
+        android:id="@+id/about"
         android:icon="@drawable/sobre"
         android:orderInCategory="100"
         android:showAsAction="always"

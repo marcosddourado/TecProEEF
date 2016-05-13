@@ -24,7 +24,7 @@
             android:orientation="vertical" >
 
             <RadioButton
-                android:id="@+id/radio_populacao"
+                android:id="@+id/radio_population"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -41,7 +41,7 @@
                 android:text="@string/participacao_PIB" />
 
             <RadioButton
-                android:id="@+id/radio_difusao_tecnologica_qtd"
+                android:id="@+id/radio_technological_diffusion_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -49,39 +49,39 @@
                 android:text="@string/projetos_difusao_tecnologica_qtd" />
 
             <RadioButton
-                android:id="@+id/radio_difusao_tecnologica_investimento"
+                android:id="@+id/radio_technological_diffusion_investment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/projetos_difusao_tecnologica_investimento" />
+                android:text="@string/projetos_difusao_tecnologica_investmento" />
 
             <RadioButton
-                android:id="@+id/radio_ideb_fundamental_iniciai"
+                android:id="@+id/radio_ideb_elementary_inicials"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/participacao_IDEB_fundamental_iniciais" />
+                android:text="@string/participacao_IDEB_elementary_iniciais" />
 
             <RadioButton
-                android:id="@+id/radio_ideb_fundamental_finais"
+                android:id="@+id/radio_ideb_elementary_finals"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/participacao_IDEB_fundamental_finais" />
+                android:text="@string/participacao_IDEB_elementary_finais" />
 
             <RadioButton
-                android:id="@+id/radio_ideb_medio"
+                android:id="@+id/radio_ideb_high_school"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/participacao_IDEB_medio" />
+                android:text="@string/participacao_IDEB_high_school" />
 
             <RadioButton
-                android:id="@+id/radio_primeiros_projetos_qtd"
+                android:id="@+id/radio_primeiros_projetos_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -89,15 +89,15 @@
                 android:text="@string/programa_primeiros_projetos_qtd" />
 
             <RadioButton
-                android:id="@+id/radio_primeiros_projetos_investimento"
+                android:id="@+id/radio_primeiros_projetos_investment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/programa_primeiros_projetos_investimento" />
+                android:text="@string/programa_primeiros_projetos_investmento" />
 
             <RadioButton
-                android:id="@+id/radio_apoio_cnpq_qtd"
+                android:id="@+id/radio_apoio_cnpq_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -105,15 +105,15 @@
                 android:text="@string/projetos_pesquisa_CNPq_qtd" />
 
             <RadioButton
-                android:id="@+id/radio_apoio_cnpq_investimento"
+                android:id="@+id/radio_apoio_cnpq_investment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/projetos_pesquisa_CNPq_investimento" />
+                android:text="@string/projetos_pesquisa_CNPq_investmento" />
 
             <RadioButton
-                android:id="@+id/radio_jovens_pesquisadores_qtd"
+                android:id="@+id/radio_jovens_pesquisadores_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -121,15 +121,15 @@
                 android:text="@string/jovens_pesquisadores_qtd" />
 
             <RadioButton
-                android:id="@+id/radio_jovens_pesquisadores_investimento"
+                android:id="@+id/radio_jovens_pesquisadores_investment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/jovens_pesquisadores_investimento" />
+                android:text="@string/jovens_pesquisadores_investmento" />
 
             <RadioButton
-                android:id="@+id/radio_projetos_inct_qtd"
+                android:id="@+id/radio_inct_projects_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -137,12 +137,12 @@
                 android:text="@string/projeto_iniciacao_qtd" />
 
             <RadioButton
-                android:id="@+id/radio_projetos_inct_investimento"
+                android:id="@+id/radio_inct_projects_investment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/projeto_iniciacao_investimento" />
+                android:text="@string/projeto_iniciacao_investmento" />
         </RadioGroup>
 
         <LinearLayout
