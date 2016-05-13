@@ -308,11 +308,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/avancar"
-<<<<<<< HEAD:EEF/res/layout/activity_tela_escolhe_indicativo_grafico.xml
-                android:onClick="clickAdvanceButton" >
-=======
                 android:onClick="clickButtonNext" >
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/res/layout/activity_choose_indicative_graph.xml
             </Button>
         </LinearLayout>
     </LinearLayout>
