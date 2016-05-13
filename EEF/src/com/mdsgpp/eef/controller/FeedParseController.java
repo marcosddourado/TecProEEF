@@ -5,9 +5,9 @@ import com.mdsgpp.eef.model.News;
 
 public class FeedParseController {
 
-	private Feed feed;
-	private News item;
-	private static FeedParseController instance;
+	private Feed feed = null;
+	private News item = null;
+	private static FeedParseController instance = null;
 	
 	public FeedParseController() {
 		this.feed = new Feed();
