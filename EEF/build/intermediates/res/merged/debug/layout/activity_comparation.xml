@@ -34,7 +34,7 @@
         android:layout_below="@+id/spinner2"
         android:layout_centerHorizontal="true"
         android:drawableBottom="@drawable/compara"
-        android:onClick="clickBotaoComparacaoEstados"
+        android:onClick="clickButtonStatesComparation"
         android:padding="20dp" />
 
 </RelativeLayout>
