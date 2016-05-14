@@ -18,14 +18,18 @@ public class Feed implements Serializable {
 	}
 
 	public News getFeedItem(int position) {
+		assert (position >= 0) : "position >= 0 assertion failed. position was " + position;
+		assert (feedItens.get(position) != null) : "non-null News object assertion failed";
 		return feedItens.get(position);
 	}
 
 	public void setFeedItens(ArrayList<News> feedItens) {
+		assert(feedItens != null) : "non-null feedItens assertion failed";
 		this.feedItens = feedItens;
 	}
 
 	public void addFeedItem(News newFeedItem) {
+		assert (newFeedItem != null) : "non-null newFeedItem assertion failed";
 		this.feedItens.add(newFeedItem);
 	}
 
