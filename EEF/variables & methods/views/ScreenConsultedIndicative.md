@@ -66,4 +66,17 @@
 
 #### Local Variables per Function:
 
-> There are no local variables inside any function.
+|          |          onCreate         |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Intent` |  `intentAuxiliar` | The current activitiy's intent. Used for getting information.  |
+
+|          |      openAboutScreen      |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Intent` |  `intent` | The about screen's intent. Used for presenting the about screen.  |
+
+|          | allIndicativesButtonTouch |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Intent` |  `intent` | New intent used for presenting ScreenQueryResult screen.  |
