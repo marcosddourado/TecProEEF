@@ -36,3 +36,16 @@
 | `boolean` | bProjectsDistortionRate | Represents the checkbox value of the distortion rate data |
 | `boolean` | bProjectsAbandonRate | Represents the checkbox value of the abandon rate data |
 | `boolean` | bProjectsApproval | Represents the checkbox value of the approval data |
+| `int` | position01 |  |
+| `int` | position02 |  |
+
+| Return Type | Method Name |   Arguments   |   Description     |
+|-------------|-------------|---------------|-------------------|
+|   `void`    | initializeCheckBox |        | Initializes the checkbox attributes |
+|   `void`    |    captureValues   |        | Marks the boolean attribute flags as true or false, according to the checkboxes values |
+
+#### Protected members:
+
+| Return Type | Method Name | Arguments | Description |
+|:-----------:|:-----------:|:---------:|:-----------:|
+|   `void`    |  onCreate   | `Bundle` savedInstanceState | Initializes the current activity. |

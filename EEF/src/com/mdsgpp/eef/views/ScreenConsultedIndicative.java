@@ -24,8 +24,8 @@ public class ScreenConsultedIndicative extends Activity {
 	CheckBox cbCensus;
 	CheckBox cbClassStudents;
 	CheckBox cbClassTime;
-	CheckBox cbDistortionTax;
-	CheckBox cbAbandonTax;
+	CheckBox cbDistortionRate;
+	CheckBox cbAbandonRate;
 	CheckBox cbApproval;
 
 	boolean bIdeb;
@@ -39,8 +39,8 @@ public class ScreenConsultedIndicative extends Activity {
 	boolean bCensus;
 	boolean bClassStudents;
 	boolean bClassTime;
-	boolean bDistortionTax;
-	boolean bAbandonTax;
+	boolean bDistortionRate;
+	boolean bAbandonRate;
 	boolean bApproval;
 
 	int position01;
@@ -99,8 +99,8 @@ public class ScreenConsultedIndicative extends Activity {
 		cbCensus = (CheckBox) findViewById(R.id.checkBox_censo);
 		cbClassStudents = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
 		cbClassTime = (CheckBox) findViewById(R.id.checkBox_horas_aula);
-		cbDistortionTax = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
-		cbAbandonTax = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
+		cbDistortionRate = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
+		cbAbandonRate = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
 		cbApproval = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
 	}
 
@@ -116,8 +116,8 @@ public class ScreenConsultedIndicative extends Activity {
 		bCensus = cbCensus.isChecked();
 		bClassStudents = cbClassStudents.isChecked();
 		bClassTime = cbClassTime.isChecked();
-		bDistortionTax = cbDistortionTax.isChecked();
-		bAbandonTax = cbAbandonTax.isChecked();
+		bDistortionRate = cbDistortionRate.isChecked();
+		bAbandonRate = cbAbandonRate.isChecked();
 		bApproval = cbApproval.isChecked();
 	}
 
@@ -133,8 +133,8 @@ public class ScreenConsultedIndicative extends Activity {
 		cbCensus.setChecked(opcaoEscolhida);
 		cbClassStudents.setChecked(opcaoEscolhida);
 		cbClassTime.setChecked(opcaoEscolhida);
-		cbDistortionTax.setChecked(opcaoEscolhida);
-		cbAbandonTax.setChecked(opcaoEscolhida);
+		cbDistortionRate.setChecked(opcaoEscolhida);
+		cbAbandonRate.setChecked(opcaoEscolhida);
 		cbApproval.setChecked(opcaoEscolhida);
 	}
 
@@ -162,8 +162,8 @@ public class ScreenConsultedIndicative extends Activity {
 		intent.putExtra("CB_APPROVAL", bApproval);
 		intent.putExtra("CB_CENSUS", bCensus);
 		intent.putExtra("CB_CLASS_TIME", bClassTime);
-		intent.putExtra("CB_ABANDON_TAX", bAbandonTax);
-		intent.putExtra("CB_DISTORTION_TAX", bDistortionTax);
+		intent.putExtra("CB_ABANDON_TAX", bAbandonRate);
+		intent.putExtra("CB_DISTORTION_TAX", bDistortionRate);
 
 		intent.putExtra("INDEX_CHOOSED_STATE1", position01);
 		intent.putExtra("INDEX_CHOOSED_STATE2", position02);
