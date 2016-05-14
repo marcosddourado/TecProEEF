@@ -54,8 +54,6 @@
 | `TextView` | textViewAbandonRate1 | Shows the first chosen state's abandon rate |
 | `TextView` | textViewAbandonRateElementary1 | Shows the first chosen state's elementary school abandon rate |
 | `TextView` | textViewAbandonRateHighSchool1 | Shows the first chosen state's high school abandon rate |
-
-
 | `TextView` | textViewInitials2 | Shows the second chosen state's initials. |
 | `TextView` | textViewName2 | Shows the second chosen state's name. |
 | `TextView` | textViewPopulation2 | Shows the second chosen state's population data. |
@@ -102,24 +100,22 @@
 | `TextView` | textViewAbandonRate2 | Shows the second chosen state's abandon rate |
 | `TextView` | textViewAbandonRateElementary2 | Shows the second chosen state's elementary school abandon rate |
 | `TextView` | textViewAbandonRateHighSchool2 | Shows the second chosen state's high school abandon rate |
-
-
-| `boolean` | bCensus |  |
-| `boolean` | bClassStudents |  |
-| `boolean` | bClassTime |  |
-| `boolean` | bDistortionRate |  |
-| `boolean` | bAbandonRate |  |
-| `boolean` | bApproval |  |
-| `boolean` | bIdeb |  |
-| `boolean` | bPib |  |
-| `boolean` | bPopulation |  |
-| `boolean` | bFirstProjects |  |
-| `boolean` | bCnpqProjects |  |
-| `boolean` | bDiffusionProjects |  |
-| `boolean` | bInitiation |  |
-| `boolean` | bYoungProjects |  |
-| `ImageView` | imageViewFlag01 |  |
-| `ImageView` | imageViewFlag02 |  |
+| `boolean` | bCensus | Tells whether the census informations are shown. |
+| `boolean` | bClassStudents | Tells whether the class students informations are shown. |
+| `boolean` | bClassTime | Tells whether the class time informations are shown. |
+| `boolean` | bDistortionRate | Tells whether the distortion rate informations are shown. |
+| `boolean` | bAbandonRate | Tells whether the abandon rate informations are shown. |
+| `boolean` | bApproval | Tells whether the approval informations are shown. |
+| `boolean` | bIdeb | Tells whether the IDEB informations are shown. |
+| `boolean` | bPib | Tells whether the PIB informations are shown. |
+| `boolean` | bPopulation | Tells whether the population informations are shown. |
+| `boolean` | bFirstProjects | Tells whether the first projects informations are shown. |
+| `boolean` | bCnpqProjects | Tells whether the CNPQ projects informations are shown. |
+| `boolean` | bDiffusionProjects | Tells whether the diffusion projects informations are shown. |
+| `boolean` | bInitiation | Tells whether the initiation informations are shown. |
+| `boolean` | bYoungProjects | Tells whether the young projects informations are shown. |
+| `ImageView` | imageViewFlag01 | Shows the first chosen state's flag |
+| `ImageView` | imageViewFlag02 | Shows the second chosen state's flag |
 
 | Return Type | Method Name |   Arguments   |   Description     |
 |-------------|-------------|---------------|-------------------|
