@@ -540,7 +540,7 @@ public class ScreenQueryResult extends Activity {
 		startActivity(intent);
 	}
 	
-	public void captureFlags(int positionEstado1, int positionEstado2){
+	public void captureFlags(int statePosition1, int statePosition2){
 		String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
@@ -549,11 +549,11 @@ public class ScreenQueryResult extends Activity {
 				"sergipe", "tocantins"};	
 		
 		imageViewFlag01 = (ImageView) findViewById(R.id.imageView_flags1);
-		int idFlag01 = getResources().getIdentifier(flags[positionEstado1], "drawable", getPackageName());
+		int idFlag01 = getResources().getIdentifier(flags[statePosition1], "drawable", getPackageName());
 		imageViewFlag01.setImageResource(idFlag01);
 	
 		imageViewFlag02 = (ImageView) findViewById(R.id.imageView_flags2);
-		int idFlag02 = getResources().getIdentifier(flags[positionEstado2], "drawable", getPackageName());
+		int idFlag02 = getResources().getIdentifier(flags[statePosition2], "drawable", getPackageName());
 		imageViewFlag02.setImageResource(idFlag02);
 	
 		
