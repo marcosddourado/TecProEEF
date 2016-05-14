@@ -137,7 +137,7 @@ public class ScreenQueryResult extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_compara_states);
 		
-		initializeTextFields();
+		initializeTextViews();
 		captureInformation();
 		hideTextFields();
 	}
@@ -209,89 +209,89 @@ public class ScreenQueryResult extends Activity {
 			stateInformations2 = (HashMap<String, String>) StateConroller
 					.getInstance(this).readState(position2).clone();
 
-			fiilTextFields(stateInformations1, stateInformations2);
+			fiilTextViews(stateInformations1, stateInformations2);
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
 			Log.i("IOException - TelaComparaEstados",e.toString());
 		}
 	}
 
-	private void fiilTextFields(HashMap<String, String> informacoes1,
-								HashMap<String, String> informacoes2) {
+	private void fiilTextViews(HashMap<String, String> informations1,
+							   HashMap<String, String> informations2) {
 
-		textViewInitials1.setText(informacoes1.get("sigla"));
+		textViewInitials1.setText(informations1.get("sigla"));
 		if (textViewName1 != null)
-			textViewName1.setText(informacoes1.get("nome"));
+			textViewName1.setText(informations1.get("nome"));
 
-		textViewPopulationValue1.setText(informacoes1.get("populacao"));
-		textViewPibParticipation1.setText(informacoes1.get("percentual_participacao_pib"));
-		textViewScienceTechnologyProjectCount1.setText(informacoes1.get("projetos_ciencia_tecnologia"));
-		textViewValorScienceTechnologyProjects1.setText(informacoes1.get("valor_ciencia_tecnologia"));
-		textViewElementaryIdeb1.setText(informacoes1.get("ideb_elementary_final"));
-		textViewHighSchoolIdeb1.setText(informacoes1.get("ideb_ensino_high_school"));
-		textViewInitialSeriesIdeb1.setText(informacoes1.get("ideb_elementary_inicial"));
-		textViewFirstProjectsCount1.setText(informacoes1.get("quantidade_primeiros_projetos"));
-		textViewFirstProjectsValue1.setText(informacoes1.get("valor_primeiros_projetos"));
-		textViewResearchCount1.setText(informacoes1.get("quantidade_projeto_cnpq"));
-		textViewResearchValue1.setText(informacoes1.get("valor_projetos_cnpq"));
-		textViewYoungResearchersCount1.setText(informacoes1.get("quantidade_projeto_jovens_pesquisadores"));
-		textViewYoungResearchersValue1.setText(informacoes1.get("valor_projetos_jovens_pesquisadores"));
-		textViewInitiationProjectCount1.setText(informacoes1.get("quantidade_projetos_inct"));
-		textViewInitiationProjectValue1.setText(informacoes1.get("valor_projetos_inct"));
-		textViewInitialSeriesCensus1.setText(informacoes1.get("censo_anos_iniciais_elementary"));
-		textViewElementaryCensus1.setText(informacoes1.get("censo_anos_finais_elementary"));
-		textViewHighSchoolCensus1.setText(informacoes1.get("censo_ensino_high_school"));
-		textViewElementaryEjaCensus1.setText(informacoes1.get("censo_eja_elementary"));
-		textViewHighSchoolEjaCensus1.setText(informacoes1.get("censo_eja_high_school"));
-		textViewStudentsPerClassElementary1.setText(informacoes1.get("alunos_por_turma_ensino_elementary"));
-		textViewStudentsPerClassHighSchool1.setText(informacoes1.get("alunos_por_turma_ensino_high_school"));
-		textViewClassTimeElementary1.setText(informacoes1.get("horas_aula_ensino_elementary"));
-		textViewClassTimeHighSchool1.setText(informacoes1.get("horas_aula_ensino_high_school"));
-		textViewDistortionRateElementary1.setText(informacoes1.get("distortion_rate_elementary"));
-		textViewDistortionRateHighSchool1.setText(informacoes1.get("distortion_rate_high_school"));
-		textViewUtilizationRateElementary1.setText(informacoes1.get("taxa_aprovacao_elementary"));
-		textViewUtilizationRateHighSchool1.setText(informacoes1.get("taxa_aprovacao_high_school"));
-		textViewAbandonRateElementary1.setText(informacoes1.get("taxa_aprovacao_elementary"));
-		textViewAbandonRateHighSchool1.setText(informacoes1.get("taxa_aprovacao_high_school"));
+		textViewPopulationValue1.setText(informations1.get("populacao"));
+		textViewPibParticipation1.setText(informations1.get("percentual_participacao_pib"));
+		textViewScienceTechnologyProjectCount1.setText(informations1.get("projetos_ciencia_tecnologia"));
+		textViewValorScienceTechnologyProjects1.setText(informations1.get("valor_ciencia_tecnologia"));
+		textViewElementaryIdeb1.setText(informations1.get("ideb_elementary_final"));
+		textViewHighSchoolIdeb1.setText(informations1.get("ideb_ensino_high_school"));
+		textViewInitialSeriesIdeb1.setText(informations1.get("ideb_elementary_inicial"));
+		textViewFirstProjectsCount1.setText(informations1.get("quantidade_primeiros_projetos"));
+		textViewFirstProjectsValue1.setText(informations1.get("valor_primeiros_projetos"));
+		textViewResearchCount1.setText(informations1.get("quantidade_projeto_cnpq"));
+		textViewResearchValue1.setText(informations1.get("valor_projetos_cnpq"));
+		textViewYoungResearchersCount1.setText(informations1.get("quantidade_projeto_jovens_pesquisadores"));
+		textViewYoungResearchersValue1.setText(informations1.get("valor_projetos_jovens_pesquisadores"));
+		textViewInitiationProjectCount1.setText(informations1.get("quantidade_projetos_inct"));
+		textViewInitiationProjectValue1.setText(informations1.get("valor_projetos_inct"));
+		textViewInitialSeriesCensus1.setText(informations1.get("censo_anos_iniciais_elementary"));
+		textViewElementaryCensus1.setText(informations1.get("censo_anos_finais_elementary"));
+		textViewHighSchoolCensus1.setText(informations1.get("censo_ensino_high_school"));
+		textViewElementaryEjaCensus1.setText(informations1.get("censo_eja_elementary"));
+		textViewHighSchoolEjaCensus1.setText(informations1.get("censo_eja_high_school"));
+		textViewStudentsPerClassElementary1.setText(informations1.get("alunos_por_turma_ensino_elementary"));
+		textViewStudentsPerClassHighSchool1.setText(informations1.get("alunos_por_turma_ensino_high_school"));
+		textViewClassTimeElementary1.setText(informations1.get("horas_aula_ensino_elementary"));
+		textViewClassTimeHighSchool1.setText(informations1.get("horas_aula_ensino_high_school"));
+		textViewDistortionRateElementary1.setText(informations1.get("distortion_rate_elementary"));
+		textViewDistortionRateHighSchool1.setText(informations1.get("distortion_rate_high_school"));
+		textViewUtilizationRateElementary1.setText(informations1.get("taxa_aprovacao_elementary"));
+		textViewUtilizationRateHighSchool1.setText(informations1.get("taxa_aprovacao_high_school"));
+		textViewAbandonRateElementary1.setText(informations1.get("taxa_aprovacao_elementary"));
+		textViewAbandonRateHighSchool1.setText(informations1.get("taxa_aprovacao_high_school"));
 
-		textViewInitials2.setText(informacoes2.get("sigla"));
+		textViewInitials2.setText(informations2.get("sigla"));
 		if (textViewName2 != null)
-			textViewName2.setText(informacoes2.get("nome"));
+			textViewName2.setText(informations2.get("nome"));
 
-		textViewPopulationValue2.setText(informacoes2.get("populacao"));
-		textViewPibParticipation2.setText(informacoes2.get("percentual_participacao_pib"));
-		textViewScienceTechnologyProjectCount2.setText(informacoes2.get("projetos_ciencia_tecnologia").split(":")[1]);
-		textViewValorScienceTechnologyProjects2.setText(informacoes2.get("valor_ciencia_tecnologia").split(":")[1]);
-		textViewElementaryIdeb2.setText(informacoes2.get("ideb_elementary_final").split(":")[1]);
-		textViewHighSchoolIdeb2.setText(informacoes2.get("ideb_ensino_high_school").split(":")[1]);
-		textViewInitialSeriesIdeb2.setText(informacoes2.get("ideb_elementary_inicial").split(":")[1]);
-		textViewFirstProjectsCount2.setText(informacoes2.get("quantidade_primeiros_projetos").split(":")[1]);
-		textViewFirstProjectsValue2.setText(informacoes2.get("valor_primeiros_projetos").split(":")[1]);
-		textViewResearchCount2.setText(informacoes2.get("quantidade_projeto_cnpq").split(":")[1]);
-		textViewResearchValue2.setText(informacoes2.get("valor_projetos_cnpq").split(":")[1]);
-		textViewYoungResearchersCount2.setText(informacoes2.get("quantidade_projeto_jovens_pesquisadores").split(":")[1]);
-		textViewYoungResearchersValue2.setText(informacoes2.get("valor_projetos_jovens_pesquisadores").split(":")[1]);
-		textViewInitiationProjectCount2.setText(informacoes2.get("quantidade_projetos_inct").split(":")[1]);
-		textViewInitiationProjectValue2.setText(informacoes2.get("valor_projetos_inct").split(":")[1]);
-		textViewInitialSeriesCensus2.setText(informacoes2.get("censo_anos_iniciais_elementary").split(":")[1]);
-		textViewElementaryCensus2.setText(informacoes2.get("censo_anos_finais_elementary").split(":")[1]);
-		textViewHighSchoolCensus2.setText(informacoes2.get("censo_ensino_high_school").split(":")[1]);
-		textViewElementaryEjaCensus2.setText(informacoes2.get("censo_eja_elementary").split(":")[1]);
-		textViewHighSchoolEjaCensus2.setText(informacoes2.get("censo_eja_high_school").split(":")[1]);
-		textViewStudentsPerClassElementary2.setText(informacoes2.get("alunos_por_turma_ensino_elementary").split(":")[1]);
-		textViewStudentsPerClassHighSchool2.setText(informacoes2.get("alunos_por_turma_ensino_high_school").split(":")[1]);
-		textViewClassTimeElementary2.setText(informacoes2.get("horas_aula_ensino_elementary").split(":")[1]);
-		textViewClassTimeHighSchool2.setText(informacoes2.get("horas_aula_ensino_high_school").split(":")[1]);
-		textViewDistortionRateElementary2.setText(informacoes2.get("distortion_rate_elementary").split(":")[1]);
-		textViewDistortionRateHighSchool2.setText(informacoes2.get("distortion_rate_high_school").split(":")[1]);
-		textViewUtilizationRateElementary2.setText(informacoes2.get("taxa_aprovacao_elementary").split(":")[1]);
-		textViewUtilizationRateHighSchool2.setText(informacoes2.get("taxa_aprovacao_high_school").split(":")[1]);
-		textViewAbandonRateElementary2.setText(informacoes2.get("taxa_aprovacao_elementary").split(":")[1]);
-		textViewAbandonRateHighSchool2.setText(informacoes2.get("taxa_aprovacao_high_school").split(":")[1]);
+		textViewPopulationValue2.setText(informations2.get("populacao"));
+		textViewPibParticipation2.setText(informations2.get("percentual_participacao_pib"));
+		textViewScienceTechnologyProjectCount2.setText(informations2.get("projetos_ciencia_tecnologia").split(":")[1]);
+		textViewValorScienceTechnologyProjects2.setText(informations2.get("valor_ciencia_tecnologia").split(":")[1]);
+		textViewElementaryIdeb2.setText(informations2.get("ideb_elementary_final").split(":")[1]);
+		textViewHighSchoolIdeb2.setText(informations2.get("ideb_ensino_high_school").split(":")[1]);
+		textViewInitialSeriesIdeb2.setText(informations2.get("ideb_elementary_inicial").split(":")[1]);
+		textViewFirstProjectsCount2.setText(informations2.get("quantidade_primeiros_projetos").split(":")[1]);
+		textViewFirstProjectsValue2.setText(informations2.get("valor_primeiros_projetos").split(":")[1]);
+		textViewResearchCount2.setText(informations2.get("quantidade_projeto_cnpq").split(":")[1]);
+		textViewResearchValue2.setText(informations2.get("valor_projetos_cnpq").split(":")[1]);
+		textViewYoungResearchersCount2.setText(informations2.get("quantidade_projeto_jovens_pesquisadores").split(":")[1]);
+		textViewYoungResearchersValue2.setText(informations2.get("valor_projetos_jovens_pesquisadores").split(":")[1]);
+		textViewInitiationProjectCount2.setText(informations2.get("quantidade_projetos_inct").split(":")[1]);
+		textViewInitiationProjectValue2.setText(informations2.get("valor_projetos_inct").split(":")[1]);
+		textViewInitialSeriesCensus2.setText(informations2.get("censo_anos_iniciais_elementary").split(":")[1]);
+		textViewElementaryCensus2.setText(informations2.get("censo_anos_finais_elementary").split(":")[1]);
+		textViewHighSchoolCensus2.setText(informations2.get("censo_ensino_high_school").split(":")[1]);
+		textViewElementaryEjaCensus2.setText(informations2.get("censo_eja_elementary").split(":")[1]);
+		textViewHighSchoolEjaCensus2.setText(informations2.get("censo_eja_high_school").split(":")[1]);
+		textViewStudentsPerClassElementary2.setText(informations2.get("alunos_por_turma_ensino_elementary").split(":")[1]);
+		textViewStudentsPerClassHighSchool2.setText(informations2.get("alunos_por_turma_ensino_high_school").split(":")[1]);
+		textViewClassTimeElementary2.setText(informations2.get("horas_aula_ensino_elementary").split(":")[1]);
+		textViewClassTimeHighSchool2.setText(informations2.get("horas_aula_ensino_high_school").split(":")[1]);
+		textViewDistortionRateElementary2.setText(informations2.get("distortion_rate_elementary").split(":")[1]);
+		textViewDistortionRateHighSchool2.setText(informations2.get("distortion_rate_high_school").split(":")[1]);
+		textViewUtilizationRateElementary2.setText(informations2.get("taxa_aprovacao_elementary").split(":")[1]);
+		textViewUtilizationRateHighSchool2.setText(informations2.get("taxa_aprovacao_high_school").split(":")[1]);
+		textViewAbandonRateElementary2.setText(informations2.get("taxa_aprovacao_elementary").split(":")[1]);
+		textViewAbandonRateHighSchool2.setText(informations2.get("taxa_aprovacao_high_school").split(":")[1]);
 
 	}
 
-	private void initializeTextFields() {
+	private void initializeTextViews() {
 
 		textViewInitials1 = (TextView) findViewById(R.id.textView_sigla1);
 		textViewName1 = (TextView) findViewById(R.id.textView_nome_estado1);
