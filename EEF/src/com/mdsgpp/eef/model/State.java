@@ -70,9 +70,9 @@ public class State {
 		if (percentageCollaborationWithPIB == null) {
 			double[] empty = {0};
 			return empty;
+		} else {
+			return percentageCollaborationWithPIB;
 		}
-
-		return percentageCollaborationWithPIB;
 	}
 
 	public void setPercentageCollaborationWithPIB(HashMap<String, ArrayList<String[]>> information) {
@@ -101,11 +101,11 @@ public class State {
 
 	public Ideb[] getIdebs() {
 		if (idebs == null) {
-			Ideb empty[] = { new Ideb(0,0,0) }; //move initialization to constructor
+			Ideb empty[] = { new Ideb(0,0,0) };
 			return empty;
+		} else {
+			return idebs;
 		}
-
-		return idebs;
 	}
 
 	public void setIdebs(HashMap<String, ArrayList<String[]>> information) {
@@ -122,8 +122,10 @@ public class State {
 		for (int i=0; i<ideb.length; i++) {
 			ideb[i] = new Ideb();
 			ideb[i].setState(this);
-			if(i<ideb.length-1){
+			if(i<ideb.length-1) {
 				ideb[i].setIdebYear(Integer.parseInt(highSchoolData.get(i)[0]));
+			} else {
+				//do nothing
 			}
 			ideb[i].setElementary(Double.parseDouble(elementaryFinalData.get(i)[1].replaceAll(",",
 					".")));
@@ -164,9 +166,9 @@ public class State {
 	public Grade[] getStudentGradesPerClass() {
 		if (studentGradesPerClass == null) {
 			return returnEmptyGrade();
+		} else {
+			return studentGradesPerClass;
 		}
-
-		return studentGradesPerClass;
 	}
 
 	public void setStudentGradesPerClass(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -176,9 +178,10 @@ public class State {
 	public Grade[] getGradeClassHours() {
 		if (gradeClassHours == null) {
 			return returnEmptyGrade();
+		} else {
+			return gradeClassHours;
 		}
 
-		return gradeClassHours;
 	}
 
 	public void setGradeClassHours(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -188,9 +191,10 @@ public class State {
 	public Grade[] getAgeGradeDistortionRate() {
 		if (ageGradeDistortionRate == null) {
 			return returnEmptyGrade();
+		} else {
+			return ageGradeDistortionRate;
 		}
 
-		return ageGradeDistortionRate;
 	}
 
 	public void setAgeGradeDistortionRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -200,9 +204,10 @@ public class State {
 	public String getStateName() {
 		if (stateName == null) {
 			return "Sem nome";
+		} else {
+			return stateName;
 		}
 
-		return stateName;
 	}
 
 	public void setStateName(String stateName) {
@@ -212,9 +217,10 @@ public class State {
 	public String getStateAbbreviation() {
 		if (stateAbbreviation == null) {
 			return "Sem sigla";
+		} else {
+			return stateAbbreviation;
 		}
 
-		return stateAbbreviation;
 	}
 
 	public void setStateAbbreviation(String stateAbbreviation) {
@@ -235,17 +241,21 @@ public class State {
 		ArrayList<String[]> projectsAmountData = null;
 		Project readProjects[] = null;
 
-		if(information.containsKey(namesOfIndicative[0])){
+		if(information.containsKey(namesOfIndicative[0])) {
 			projectsAmountData = information.get(namesOfIndicative[0]);
 			readProjects = new Project[projectsAmountData.size()];
 			investedValuesData = information.get(namesOfIndicative[1]);
+		} else {
+			//do nothing
 		}
 
 		for (int i=0; readProjects!=null && i<readProjects.length; i++) {
 			readProjects[i] = new Project();
 			readProjects[i].setState(this);
-			if(i<readProjects.length-1){
+			if(i<readProjects.length-1) {
 				readProjects[i].setProjectYear(Integer.parseInt(projectsAmountData.get(i)[0]));
+			} else {
+				//do nothing
 			}
 			readProjects[i].setProjectAmount(Integer.parseInt(projectsAmountData.get(i)[1].replaceAll(",", ".")));
 			readProjects[i].setProjectValue(Double.parseDouble(investedValuesData.get(i)[1].replaceAll(",", ".")));
@@ -255,11 +265,12 @@ public class State {
 	}
 
 	public Project[] getScienceAndThecnologyProjects() {
-		if(scienceAndThecnologyProjects == null){
+		if(scienceAndThecnologyProjects == null) {
 			return returnEmptyProject();
+		} else {
+			return scienceAndThecnologyProjects;
 		}
 
-		return scienceAndThecnologyProjects;
 	}
 
 	public void setScienceAndThecnologyProjects(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -269,9 +280,10 @@ public class State {
 	public Project[] getPrimeirosProjetos() {
 		if (primeirosProjetos == null) {
 			return returnEmptyProject();
+		} else {
+			return primeirosProjetos;
 		}
 
-		return primeirosProjetos;
 	}
 
 	public void setPrimeirosProjetos(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -281,9 +293,9 @@ public class State {
 	public Project[] getProjectsInct() {
 		if (inctProject == null) {
 			return returnEmptyProject();
+		} else {
+			return inctProject;
 		}
-
-		return inctProject;
 	}
 
 	public void setProjectsInct(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -293,9 +305,9 @@ public class State {
 	public Project[] getApoioCnpqProject() {
 		if (apoioCnpqProject == null) {
 			return returnEmptyProject();
+		} else {
+			return apoioCnpqProject;
 		}
-
-		return apoioCnpqProject;
 	}
 
 	public void setApoioCnpqProject(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -305,9 +317,9 @@ public class State {
 	public Project[] getJovensPesquisadoresProject() {
 		if (jovensPesquisadoresProject == null) {
 			return returnEmptyProject();
+		} else {
+			return jovensPesquisadoresProject;
 		}
-
-		return jovensPesquisadoresProject;
 	}
 
 	public void setJovensPesquisadoresProject(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -317,9 +329,9 @@ public class State {
 	public Grade[] getEducationalAchievementRate() {
 		if (educationalAchievementRate == null) {
 			return returnEmptyGrade();
+		} else {
+			return educationalAchievementRate;
 		}
-
-		return educationalAchievementRate;
 	}
 
 	public void setEducationalAchievementRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -329,9 +341,9 @@ public class State {
 	public Grade[] getSchoolDropoutRate() {
 		if (schoolDropoutRate == null) {
 			return returnEmptyGrade();
+		} else {
+			return schoolDropoutRate;
 		}
-
-		return schoolDropoutRate;
 	}
 
 	public void setSchoolDropoutRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
