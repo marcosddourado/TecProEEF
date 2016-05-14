@@ -19,7 +19,7 @@ public class ScreenOver extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		
+
 		getMenuInflater().inflate(R.menu.menu_telas_sem_sobre, menu);
 		return true;
 	}
