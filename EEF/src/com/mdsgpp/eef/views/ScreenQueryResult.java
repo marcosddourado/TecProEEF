@@ -220,8 +220,12 @@ public class ScreenQueryResult extends Activity {
 							   HashMap<String, String> informations2) {
 
 		textViewInitials1.setText(informations1.get("sigla"));
-		if (textViewName1 != null)
+
+		if (textViewName1 != null) {
 			textViewName1.setText(informations1.get("nome"));
+		} else {
+
+		}
 
 		textViewPopulationValue1.setText(informations1.get("populacao"));
 		textViewPibParticipation1.setText(informations1.get("percentual_participacao_pib"));
@@ -255,8 +259,12 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateHighSchool1.setText(informations1.get("taxa_aprovacao_high_school"));
 
 		textViewInitials2.setText(informations2.get("sigla"));
-		if (textViewName2 != null)
+
+		if (textViewName2 != null) {
 			textViewName2.setText(informations2.get("nome"));
+		} else {
+			
+		}
 
 		textViewPopulationValue2.setText(informations2.get("populacao"));
 		textViewPibParticipation2.setText(informations2.get("percentual_participacao_pib"));
