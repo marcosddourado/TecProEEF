@@ -49,3 +49,21 @@
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:-----------:|:---------:|:-----------:|
 |   `void`    |  onCreate   | `Bundle` savedInstanceState | Initializes the current activity. |
+
+#### Public members:
+
+| Return Type | Method Name | Arguments | Description |
+|:-----------:|:-----------:|:---------:|:-----------:|
+|  `boolean`  |  onCreateOptionsMenu   | `Menu` menu | Inflate the menu and adds items to the action bar if it is present. |
+|  `boolean`  |  onOptionsItemSelected   | `MenuItem` item | Treats the selection interaction of the current activity. |
+| `void` | openAboutScreen | | Opens the description screen. |
+| `void` | checkBoxValueChanged | `boolean` value | Sets `value` to the selected attribute of all the checkboxes. |
+| `void` | onRadioButtonMarcarTodosClicked | `View` view | Checks all the checkboxes |
+| `void` | onRadioButtonDesmarcarTodosClicked | `View` view | Unchecks all the checkboxes |
+| `void` | allIndicativesButtonTouch | `View` view | Callback to the all indicatives button touch. Shows `ScreenQueryResult` screen. |
+
+
+
+#### Local Variables per Function:
+
+> There are no local variables inside any function.
