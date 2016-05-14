@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class State {
 
-	private String stateName; 													
+	private String stateName;
 	private String stateAbbreviation;
 	private double percentageCollaborationWithPIB[];
 	private int statePopulation;
@@ -266,7 +266,7 @@ public class State {
 		this.scienceAndThecnologyProjects = this.setProjects(information, namesOfIndicative);
 	}
 
-	public Project[] getFirstProjects() {
+	public Project[] getPrimeirosProjetos() {
 		if (primeirosProjetos == null) {
 			return returnEmptyProject();
 		}
@@ -274,7 +274,7 @@ public class State {
 		return primeirosProjetos;
 	}
 
-	public void setFirstProjects(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
+	public void setPrimeirosProjetos(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
 		this.primeirosProjetos = this.setProjects(information, namesOfIndicative);
 	}
 
@@ -358,7 +358,7 @@ public class State {
 		this.setProjectsInct(information, inctProjectsIndicatives);
 		this.setJovensPesquisadoresProject(information, jovensPesquisadoresProjectIndicatives);
 		this.setApoioCnpqProject(information, apoioCnpqProjectIndicatives);
-		this.setFirstProjects(information, primeirosProjetosIndicatives);
+		this.setPrimeirosProjetos(information, primeirosProjetosIndicatives);
 		this.setScienceAndThecnologyProjects(information, scienceAndThecnologyProjectsIndicatives);
 
 		this.setStudentGradesPerClass(information, studentGradesPerClassIndicatives);

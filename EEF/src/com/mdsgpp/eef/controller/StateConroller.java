@@ -113,14 +113,14 @@ public class StateConroller {
 		this.stateInformations.put(
 				"quantidade_primeiros_projetos",
 				"Quantidade: "
-						+ state.getFirstProjects()[state
-								.getFirstProjects().length - 1]
+						+ state.getPrimeirosProjetos()[state
+								.getPrimeirosProjetos().length - 1]
 								.getProjectAmount() + " projetos");
 		this.stateInformations.put(
 				"valor_primeiros_projetos",
 				"Valor investido: R$ "
-						+ dfValue.format(state.getFirstProjects()[state
-								.getFirstProjects().length - 1].getProjectValue())
+						+ dfValue.format(state.getPrimeirosProjetos()[state
+								.getPrimeirosProjetos().length - 1].getProjectValue())
 						+ " (em mil)");
 		this.stateInformations.put(
 				"quantidade_projeto_cnpq",
@@ -303,16 +303,16 @@ public class StateConroller {
 		this.stateInformations.put("ideb", temp);
 		temp = "";
 
-		for (int i = 0, ano = 2007; i < state.getFirstProjects().length-1; i++, ano++) {
+		for (int i = 0, ano = 2007; i < state.getPrimeirosProjetos().length-1; i++, ano++) {
 			temp += ano
 					+ ": "
 					+ "Quantidade: "
-					+ state.getFirstProjects()[i].getProjectAmount()
+					+ state.getPrimeirosProjetos()[i].getProjectAmount()
 					+ " projetos\n"
 					+ "\t\t  "
 					+ "Valor investido: R$ "
-					+ dfValue.format(state.getFirstProjects()[state
-							.getFirstProjects().length - 1].getProjectValue())
+					+ dfValue.format(state.getPrimeirosProjetos()[state
+							.getPrimeirosProjetos().length - 1].getProjectValue())
 					+ " (em mil)\n\n";
 		}
 		this.stateInformations.put("primeiros_projetos", temp);

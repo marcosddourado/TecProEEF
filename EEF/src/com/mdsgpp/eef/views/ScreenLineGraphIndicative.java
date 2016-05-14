@@ -186,10 +186,10 @@ public class ScreenLineGraphIndicative extends Activity{
 			title = "Programa Primeiros Projetos (R$)";
 			indicative = "primeiros_projetos";
 			history.clear();
-			size = state.getFirstProjects().length;
+			size = state.getPrimeirosProjetos().length;
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				history.add((float) state.getFirstProjects()[i]
+				history.add((float) state.getPrimeirosProjetos()[i]
 						.getProjectValue());
 			break;
 
@@ -197,10 +197,10 @@ public class ScreenLineGraphIndicative extends Activity{
 			title = "Programa Primeiros Projetos (Qtd.)";
 			indicative = "primeiros_projetos";
 			history.clear();
-			size = state.getFirstProjects().length;
+			size = state.getPrimeirosProjetos().length;
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				history.add((float) state.getFirstProjects()[i]
+				history.add((float) state.getPrimeirosProjetos()[i]
 						.getProjectAmount());
 			break;
 
