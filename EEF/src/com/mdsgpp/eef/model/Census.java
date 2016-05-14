@@ -36,7 +36,7 @@ public class Census {
 	}
 
 	public void setFinalElementaryYears(double elementaryYears) {
-		this.finalElementaryYears = ElementaryYears;
+		this.finalElementaryYears = elementaryYears;
 	}
 
 	public double getHighSchool() {

@@ -6,22 +6,22 @@ import java.util.HashMap;
 
 public class State {
 
-	private String stateName; 													//done
-	private String stateAbbreviation; 											//done
-	private double percentageCollaborationWithPIB[]; 							//done
-	private int statePopulation; 												//done
-	private Census census[];//controle;xml;declarados;inicializado; 			//done
-	private Ideb idebs[]; //Índice de Desenvolvimento de Educação Básica		//done
-	private Grade studentGradesPerClass[];//controle;xml;declarados;inicializado; //done
-	private Grade gradeClassHours[];//controle;xml;declarados;inicializado;		//done
-	private Project scienceAndThecnologyProjects[];								//done
-	private Project primeirosProjetos[];											//done
-	private Project inctProject[];												//done
-	private Project apoioCnpqProject[];											//done
-	private Project jovensPesquisadoresProject[];								//done
-	private Grade ageGradeDistortionRate[]; //controle;xml;declarados;inicializado; //done
-	private Grade educationalAchievementRate[]; //controle;duvida: aprovaeao ou aproveitamento?;xml;declarados;inicializado; //done
-	private Grade schoolDropoutRate[];//controle;xml;declaradoa;inicializado;	//done
+	private String stateName; 													
+	private String stateAbbreviation;
+	private double percentageCollaborationWithPIB[];
+	private int statePopulation;
+	private Census census[];//controle;xml;declarados;inicializado;
+	private Ideb idebs[]; //Índice de Desenvolvimento de Educação Básica
+	private Grade studentGradesPerClass[];//controle;xml;declarados;inicializado;
+	private Grade gradeClassHours[];//controle;xml;declarados;inicializado;
+	private Project scienceAndThecnologyProjects[];
+	private Project primeirosProjetos[];
+	private Project inctProject[];
+	private Project apoioCnpqProject[];
+	private Project jovensPesquisadoresProject[];
+	private Grade ageGradeDistortionRate[]; //controle;xml;declarados;inicializado;
+	private Grade educationalAchievementRate[]; //controle;duvida: aprovaeao ou aproveitamento?;xml;declarados;inicializado;
+	private Grade schoolDropoutRate[];//controle;xml;declaradoa;inicializado;
 
 	public State(){
 	}
@@ -142,11 +142,11 @@ public class State {
 	}
 
 	public Grade[] setGrade(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
-		ArrayList<String[]> dataFundamental;
+		ArrayList<String[]> elementarydata;
 		ArrayList<String[]> highSchoolData;
 		Grade readGrade[] = null;
 
-		dataFundamental = information.get(namesOfIndicative[0]);
+		elementarydata = information.get(namesOfIndicative[0]);
 		highSchoolData = information.get(namesOfIndicative[1]);
 
 		readGrade = new Grade[highSchoolData.size()];
@@ -154,7 +154,7 @@ public class State {
 			readGrade[i] = new Grade();
 			readGrade[i].setState(this);
 			readGrade[i].setGradeYear(Integer.parseInt(highSchoolData.get(i)[0]));
-			readGrade[i].setElementaryGrade(Double.parseDouble(dataFundamental.get(i)[1].replaceAll(",", ".")));
+			readGrade[i].setElementaryGrade(Double.parseDouble(elementarydata.get(i)[1].replaceAll(",", ".")));
 			readGrade[i].setHighSchoolGrade(Double.parseDouble(highSchoolData.get(i)[1].replaceAll(",", ".")));
 		}
 
@@ -342,7 +342,7 @@ public class State {
 		String[] gradeClassHoursIndicatives = { "horas_aula_ensino_elementary", "horas_aula_ensino_high_school" };
 		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school" };
 		String[] scienceAndThecnologyProjectsIndicatives = { "numero_projetos", "valor_investido" };
-		String[] firstProjectsIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
+		String[] primeirosProjetosIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
 		String[] apoioCnpqProjectIndicatives = { "projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq" };
 		String[] jovensPesquisadoresProjectIndicatives = { "jovens_pesquisadores", "valores_jovens_pesquisadores" };
 		String[] inctProjectsIndicatives = { "projetos_inct", "valores_projetos_inct" };
@@ -358,7 +358,7 @@ public class State {
 		this.setProjectsInct(information, inctProjectsIndicatives);
 		this.setJovensPesquisadoresProject(information, jovensPesquisadoresProjectIndicatives);
 		this.setApoioCnpqProject(information, apoioCnpqProjectIndicatives);
-		this.setFirstProjects(information, firstProjectsIndicatives);
+		this.setFirstProjects(information, primeirosProjetosIndicatives);
 		this.setScienceAndThecnologyProjects(information, scienceAndThecnologyProjectsIndicatives);
 
 		this.setStudentGradesPerClass(information, studentGradesPerClassIndicatives);
