@@ -119,7 +119,7 @@
 
 | Return Type | Method Name |   Arguments   |   Description     |
 |-------------|-------------|---------------|-------------------|
-|   `void`    | captureInformation |        |  |
+|   `void`    | captureInformation |        | Gets information about the states and fill it into the text views. |
 |   `void`    | fiilTextViews | `HashMap<String, String>` informations1, `HashMap<String, String>` informations2 | Fills the textViews with the given informations.  |
 |   `void`    | initializeTextViews | | Initializes the text views. |
 
