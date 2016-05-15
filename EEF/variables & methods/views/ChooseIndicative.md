@@ -33,3 +33,46 @@
 |`void` | setIndicative | -- | Sets the name of the indicative |
 |`String` | getTittle | -- | Returns the tittle |
 |`void` | setTittle | `String` tittle | Sets the tittle |
+
+#### Local Variables per Function:
+
+|          |          onCreate          |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `Bundle` | savedInstanceState           | Activities have the ability, under special circumstances, to restore themselves to a previous state using the data stored in this bundle. If there is no available instance data, the savedInstanceState will be null. For example, the savedInstanceState will always be null the first time an Activity is started, but may be non-null if an Activity is destroyed during rotation. |
+
+|          |          onCreateOptionsMenu  |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `Menu` | menu | Object that represents the menu on the current screen that is open on the app |
+
+|          | onOptionsItemSelected |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `MenuItem` | item | Contains attributes of the item that was clicked on the menu |
+
+|          | onRadioButtonClicked |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `View` | view | Contains attributes that can manipulates the current view on the current screen |
+
+|          | setValues |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `String` | indicative | contains the name of the indicative that will be shown on the screen|
+| `String` | tittle | contains the name of the tittle that will be shown on the screen|
+
+|          | clickButtonNext |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `View` | view | Contains attributes that can manipulates the current view on the current screen |
+
+|          | setIndicative |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `String` | indicative | contains the name of the indicative that will be shown on the screen|
+
+|          | setTittle |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `String` | tittle | contains the name of the tittle that will be shown on the screen|
