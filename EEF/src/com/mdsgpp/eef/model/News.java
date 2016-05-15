@@ -13,6 +13,7 @@ public class News implements Serializable {
 	private Feed newsFeed;
 
 	public News(Feed newsFeed) {
+		assert (newsFeed != null) : "null newsFeed";
 		this.newsFeed = newsFeed;
 	}
 
@@ -21,6 +22,8 @@ public class News implements Serializable {
 	}
 
 	public void setNewsTitle(String newsTitle) {
+		assert (newsTitle != null) : "null newsTitle";
+		assert (newsTitle != "") : "empty newsTitle";
 		this.newsTitle = newsTitle;
 	}
 
@@ -29,6 +32,8 @@ public class News implements Serializable {
 	}
 
 	public void setNewsCategory(String newsCategory) {
+		assert (newsCategory != null) : "null newsCategory";
+		assert (newsCategory != "") : "empty newsCategory";
 		this.newsCategory = newsCategory;
 	}
 
@@ -37,6 +42,8 @@ public class News implements Serializable {
 	}
 
 	public void setNewsDescription(String newsDescription) {
+		assert (newsDescription != null) : "null newsDescription";
+		assert (newsDescription != "") : "empty newsDescription";
 		this.newsDescription = newsDescription;
 	}
 
@@ -45,6 +52,8 @@ public class News implements Serializable {
 	}
 
 	public void setNewsLink(String newsLink) {
+		assert (newsLink != null) : "null newsLink";
+		assert (newsLink != "") : "empty newsLink";
 		this.newsLink = newsLink;
 	}
 
@@ -53,6 +62,8 @@ public class News implements Serializable {
 	}
 
 	public void setNewsDate(String newsDate) {
+		assert (newsDate != null) : "null newsDate";
+		assert (newsDate != "") : "empty newsDate";
 		this.newsDate = newsDate;
 	}
 

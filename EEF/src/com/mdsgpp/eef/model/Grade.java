@@ -1,16 +1,19 @@
 package com.mdsgpp.eef.model;
 
-//grade grade for schhols per state/year
+//grade grade for schhols per stateGrade/year
 public class Grade {
 		private double elementaryGrade;
 		private double highSchoolGrade;
 		private int gradeYear;
 		private State state;
+		private final int acceptableYear = 1900;
 
 		public Grade() {
 		}
 
 		public Grade(double elementaryGrade, double highSchoolGrade){
+			assert (elementaryGrade >= 0) : "elementaryGrade < 0. elementaryGrade was " + elementaryGrade;
+			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
 			this.elementaryGrade = elementaryGrade;
 			this.highSchoolGrade = highSchoolGrade;
 		}
@@ -20,6 +23,7 @@ public class Grade {
 		}
 
 		public void setElementaryGrade(double elementaryGrade) {
+			assert (elementaryGrade >= 0) : "elementaryGrade < 0 . elementaryGrade was " + elementaryGrade;
 			this.elementaryGrade = elementaryGrade;
 		}
 
@@ -28,14 +32,16 @@ public class Grade {
 		}
 
 		public void setHighSchoolGrade(double highSchoolGrade) {
+			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
 			this.highSchoolGrade = highSchoolGrade;
 		}
 
 		public State getState() {
-			return state;
+			return stateGrade;
 		}
 
 		public void setState(State state) {
+			assert (state != null) : "null state ";
 			this.state = state;
 		}
 
@@ -44,6 +50,7 @@ public class Grade {
 		}
 
 		public void setGradeYear(int gradeYear) {
+			assert(gradeYear >= acceptableYear) : "gradeYear non-acceptable . gradeYear was = " + gradeYear;
 			this.gradeYear = gradeYear;
 		}
 }

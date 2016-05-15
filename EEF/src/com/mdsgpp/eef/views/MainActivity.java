@@ -29,8 +29,9 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
+
 		case R.id.about:
-			openAboutScreen();
+			loadAboutScreen();
 			break;
 		default:
 			break;

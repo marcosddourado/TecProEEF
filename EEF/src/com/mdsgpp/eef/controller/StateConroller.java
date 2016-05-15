@@ -86,7 +86,7 @@ public class StateConroller {
 				"Quantidade: "
 						+ state.getScienceAndThecnologyProjects()[state
 						.getScienceAndThecnologyProjects().length - 1]
-						.getProjectAmount() + " projetos");
+						.getProjectQuantity() + " projetos");
 		this.stateInformations
 				.put("valor_ciencia_tecnologia",
 						"Valor investido: R$ "
@@ -113,21 +113,21 @@ public class StateConroller {
 		this.stateInformations.put(
 				"quantidade_primeiros_projetos",
 				"Quantidade: "
-						+ state.getFirstProjects()[state
-								.getFirstProjects().length - 1]
-								.getProjectAmount() + " projetos");
+						+ state.getPrimeirosProjetos()[state
+								.getPrimeirosProjetos().length - 1]
+								.getProjectQuantity() + " projetos");
 		this.stateInformations.put(
 				"valor_primeiros_projetos",
 				"Valor investido: R$ "
-						+ dfValue.format(state.getFirstProjects()[state
-								.getFirstProjects().length - 1].getProjectValue())
+						+ dfValue.format(state.getPrimeirosProjetos()[state
+								.getPrimeirosProjetos().length - 1].getProjectValue())
 						+ " (em mil)");
 		this.stateInformations.put(
 				"quantidade_projeto_cnpq",
 				"Quantidade: "
 						+ state.getApoioCnpqProject()[state
 								.getApoioCnpqProject().length - 1]
-								.getProjectAmount() + " projetos");
+								.getProjectQuantity() + " projetos");
 		this.stateInformations.put(
 				"valor_projetos_cnpq",
 				"Valor investido: R$ "
@@ -139,7 +139,7 @@ public class StateConroller {
 				"Quantidade: "
 						+ state.getJovensPesquisadoresProject()[state
 								.getJovensPesquisadoresProject().length - 1]
-								.getProjectAmount() + " projetos");
+								.getProjectQuantity() + " projetos");
 		this.stateInformations
 				.put("valor_projetos_jovens_pesquisadores",
 						"Valor investido: R$ "
@@ -152,7 +152,7 @@ public class StateConroller {
 						"Quantidade: "
 								+ state.getProjectsInct()[state
 										.getProjectsInct().length - 1]
-										.getProjectAmount() + " projetos");
+										.getProjectQuantity() + " projetos");
 		this.stateInformations.put(
 				"valor_projetos_inct",
 				"Valor investido: R$ "
@@ -273,7 +273,7 @@ public class StateConroller {
 			temp += ano
 					+ ": "
 					+ "Quantidade: "
-					+ state.getScienceAndThecnologyProjects()[i].getProjectAmount()
+					+ state.getScienceAndThecnologyProjects()[i].getProjectQuantity()
 					+ " projetos\n"
 					+ "\t\t "
 					+ "  Valor investido: R$ "
@@ -303,16 +303,16 @@ public class StateConroller {
 		this.stateInformations.put("ideb", temp);
 		temp = "";
 
-		for (int i = 0, ano = 2007; i < state.getFirstProjects().length-1; i++, ano++) {
+		for (int i = 0, ano = 2007; i < state.getPrimeirosProjetos().length-1; i++, ano++) {
 			temp += ano
 					+ ": "
 					+ "Quantidade: "
-					+ state.getFirstProjects()[i].getProjectAmount()
+					+ state.getPrimeirosProjetos()[i].getProjectQuantity()
 					+ " projetos\n"
 					+ "\t\t  "
 					+ "Valor investido: R$ "
-					+ dfValue.format(state.getFirstProjects()[state
-							.getFirstProjects().length - 1].getProjectValue())
+					+ dfValue.format(state.getPrimeirosProjetos()[state
+							.getPrimeirosProjetos().length - 1].getProjectValue())
 					+ " (em mil)\n\n";
 		}
 		this.stateInformations.put("primeiros_projetos", temp);
@@ -322,7 +322,7 @@ public class StateConroller {
 			temp += ano
 					+ ": "
 					+ "Quantidade: "
-					+ state.getApoioCnpqProject()[i].getProjectAmount()
+					+ state.getApoioCnpqProject()[i].getProjectQuantity()
 					+ " projetos\n"
 					+ "\t\t  "
 					+ "Valor investido: R$ "
@@ -336,7 +336,7 @@ public class StateConroller {
 			temp += ano
 					+ ": "
 					+ "Quantidade: "
-					+ state.getJovensPesquisadoresProject()[i].getProjectAmount()
+					+ state.getJovensPesquisadoresProject()[i].getProjectQuantity()
 					+ " projetos\n"
 					+ "\t\t  "
 					+ "Valor investido: R$ "
@@ -348,7 +348,7 @@ public class StateConroller {
 
 		for (int i = 0, ano = 2008; i < state.getProjectsInct().length-1; i++, ano++) {
 			temp += ano + ": " + "Quantidade: "
-					+ state.getProjectsInct()[i].getProjectAmount()
+					+ state.getProjectsInct()[i].getProjectQuantity()
 					+ " projetos\n" + "\t\t  " + "Valor investido: R$ "
 					+ dfValue.format(state.getProjectsInct()[i].getProjectValue())
 					+ " (em mil)\n\n";

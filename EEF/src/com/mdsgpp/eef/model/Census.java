@@ -9,13 +9,14 @@ public class Census {
 	private double highSchoolEJA;
 	private int censusYear;
 	private State censusState;
+	private final int acceptableYear = 1900;
 
 	public Census() {
 	}
 
 	public Census(double initialElementaryYears, double finalElementaryYears,
 			     double highSchool, double elementaryEJA, double highSchoolEJA){
-
+			 
 		this.initialElementaryYears = initialElementaryYears;
 		this.finalElementaryYears = finalElementaryYears;
 		this.highSchool = highSchool;
@@ -36,7 +37,8 @@ public class Census {
 	}
 
 	public void setFinalElementaryYears(double elementaryYears) {
-		this.finalElementaryYears = ElementaryYears;
+		assert(elementaryYears >= 0) : "elementaryYears < 0. elementaryYears was " + elementaryYears;
+		this.finalElementaryYears = elementaryYears;
 	}
 
 	public double getHighSchool() {
@@ -76,6 +78,7 @@ public class Census {
 	}
 
 	public void setCensusYear(int censusYear) {
+		assert (censusYear >= acceptableYear): "censusYear non-acceptable. censusYear was = " + censusYear;
 		this.censusYear = censusYear;
 	}
 

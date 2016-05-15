@@ -95,7 +95,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
 				history.add((float) state.getApoioCnpqProject()[i]
-						.getProjectAmount());
+						.getProjectQuantity());
 			break;
 			
 		case R.id.radio_technological_diffusion_investment:
@@ -117,7 +117,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
 				history.add((float) state.getScienceAndThecnologyProjects()[i]
-						.getProjectAmount());
+						.getProjectQuantity());
 			break;
 			
 		case R.id.radio_ideb_elementary_finals:
@@ -163,7 +163,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
 				history.add((float) state.getJovensPesquisadoresProject()[i]
-						.getProjectAmount());
+						.getProjectQuantity());
 			break;
 
 		case R.id.radio_pib:
@@ -186,10 +186,10 @@ public class ScreenLineGraphIndicative extends Activity{
 			title = "Programa Primeiros Projetos (R$)";
 			indicative = "primeiros_projetos";
 			history.clear();
-			size = state.getFirstProjects().length;
+			size = state.getPrimeirosProjetos().length;
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				history.add((float) state.getFirstProjects()[i]
+				history.add((float) state.getPrimeirosProjetos()[i]
 						.getProjectValue());
 			break;
 
@@ -197,11 +197,11 @@ public class ScreenLineGraphIndicative extends Activity{
 			title = "Programa Primeiros Projetos (Qtd.)";
 			indicative = "primeiros_projetos";
 			history.clear();
-			size = state.getFirstProjects().length;
+			size = state.getPrimeirosProjetos().length;
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
-				history.add((float) state.getFirstProjects()[i]
-						.getProjectAmount());
+				history.add((float) state.getPrimeirosProjetos()[i]
+						.getProjectQuantity());
 			break;
 
 		case R.id.radio_inct_projects_investment:
@@ -222,7 +222,7 @@ public class ScreenLineGraphIndicative extends Activity{
 			max = size == 1 ? size : (size - 1); 
 			for (int i = 0; i < max; i++)
 				history.add((float) state.getProjectsInct()[i]
-						.getProjectAmount());
+						.getProjectQuantity());
 			break;
 
 		case R.id.radio_students_per_class_elementary:

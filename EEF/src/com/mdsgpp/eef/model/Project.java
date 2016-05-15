@@ -1,20 +1,22 @@
 package com.mdsgpp.eef.model;
 
 public class Project {
-	private int projectAmount;
+	private int projectQuantity;
 	private double projectValue;
 	private State projectState;
 	private int projectYear;
+	private final int accetableYear = 1900;
 
 	public Project() {
 	}
 
-	public int getProjectAmount() {
-		return projectAmount;
+	public int getProjectQuantity() {
+		return projectQuantity;
 	}
 
-	public void setProjectAmount(int projectAmount) {
-		this.projectAmount = projectAmount;
+	public void setProjectQuantity(int projectQuantity) {
+		assert (projectQuantity >= 0) : "projectQuantity < 0. projectQuantity was " + projectQuantity;
+		this.projectQuantity = projectQuantity;
 	}
 
 	public double getProjectValue() {
@@ -22,6 +24,7 @@ public class Project {
 	}
 
 	public void setProjectValue(double projectValue) {
+		assert (projectValue>= 0.0) : "projectValue < 0. projectValue was " + projectValue;
 		this.projectValue = projectValue;
 	}
 
@@ -30,12 +33,14 @@ public class Project {
 	}
 
 	public void setState(State projectState) {
+		assert (projectState != null) : "null projectState";
 		this.projectState = projectState;
 	}
 	public int getProjectYear(){
 		return projectYear;
 	}
 	public void setProjectYear(int projectYear){
+		assert (projectYear >= accetableYear) : "projectYear non-acceptable. projectYear was" + projectYear;
 		this.projectYear = projectYear;
 	}
 

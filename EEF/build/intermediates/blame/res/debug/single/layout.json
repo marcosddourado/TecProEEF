@@ -264,10 +264,6 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_compara_estados.xml"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/listview_item_indicativos.xml",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/listview_item_indicativos.xml"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_estado.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_sobre_estado.xml"
     },
@@ -406,10 +402,6 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout/activity_tela_sobre_historico_de_indicativo.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/layout/activity_tela_sobre_historico_de_indicativo.xml"
-    },
-    {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_tela_comparacao.xml",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/layout/activity_tela_comparacao.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/layout/activity_main.xml",

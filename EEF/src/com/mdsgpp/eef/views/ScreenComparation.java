@@ -30,7 +30,11 @@ public class ScreenComparation extends Comparation {
     	
 		switch (item.getItemId()) {
 		case R.id.sobre:
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacao.java
+			loadAboutScreen();
+=======
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenComparation.java
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -42,6 +46,9 @@ public class ScreenComparation extends Comparation {
     	return true;
     }
     
+<<<<<<< HEAD:EEF/src/com/mdsgpp/eef/views/TelaComparacao.java
+    public void loadAboutScreen() {
+=======
     public void openAboutScreen() {
     	Intent intent = new Intent(this, ScreenOverComparison.class);
     	startActivity(intent);
