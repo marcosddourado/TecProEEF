@@ -142,8 +142,8 @@ public abstract class ChooseIndicative extends Activity {
 		}
 	}
 
-	public void setValues(String indivative, String tittle) {
-		setIndicative(indivative);
+	public void setValues(String indicative, String tittle) {
+		setIndicative(indicative);
 		setTittle(tittle);
 	}
 
