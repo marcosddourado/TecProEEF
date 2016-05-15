@@ -58,15 +58,18 @@ public class ScreenQueryResultPerIndicative extends Activity {
 	}
 	
 	private void loadStateIndicatives() {
-			Intent intent = getIntent();
+
+		assert(this.stateList != null):"stateList variable is null";
+
+		Intent intent = getIntent();
 			
-			String indicative = intent.getStringExtra("INDICATIVO");
-			String title = intent.getStringExtra("TITULO");
+		String indicative = intent.getStringExtra("INDICATIVO");
+		String title = intent.getStringExtra("TITULO");
 			
-			IndicativeAdapter adapter = new IndicativeAdapter(title, indicative,
+		IndicativeAdapter adapter = new IndicativeAdapter(title, indicative,
 					context);
 			
-			stateList.setAdapter(adapter);
+		stateList.setAdapter(adapter);
 	}
 	
 	public void initializeViews(){
