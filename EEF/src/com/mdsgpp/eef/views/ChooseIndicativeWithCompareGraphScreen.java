@@ -7,7 +7,7 @@ import android.widget.RadioButton;
 
 import com.mdsgpp.eef.R;
 
-public class ChooseIndicativeWithCompareGraphScreen extends EscolheIndicativo {
+public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 	
 	private int position1, position2;
 	
@@ -28,7 +28,7 @@ public class ChooseIndicativeWithCompareGraphScreen extends EscolheIndicativo {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_escolhe_indicativo_grafico);
+		setContentView(R.layout.activity_choose_indicative_graph);
 		
 		InitializeRadioButtons();
 		catchInformation();
@@ -59,36 +59,36 @@ public class ChooseIndicativeWithCompareGraphScreen extends EscolheIndicativo {
 	}
 	
 	public void InitializeRadioButtons() {
-		rbInitialIdebView = (RadioButton) findViewById(R.id.radio_ideb_fundamental_iniciai);
-		rbFinalIdebView = (RadioButton) findViewById(R.id.radio_ideb_fundamental_finais);
-		rbMediumIdebView = (RadioButton) findViewById(R.id.radio_ideb_medio);
+		rbInitialIdebView = (RadioButton) findViewById(R.id.radio_ideb_elementary_inicials);
+		rbFinalIdebView = (RadioButton) findViewById(R.id.radio_ideb_elementary_finals);
+		rbMediumIdebView = (RadioButton) findViewById(R.id.radio_ideb_high_school);
 		rbPib = (RadioButton) findViewById(R.id.radio_pib);
-		rbPopulation = (RadioButton) findViewById(R.id.radio_populacao);
-		rbFirstProjectsAmount = (RadioButton) findViewById(R.id.radio_primeiros_projetos_qtd);
-		rbFirstProjectsValues = (RadioButton) findViewById(R.id.radio_primeiros_projetos_investimento);
-		rbCnpqProjectsAmount = (RadioButton) findViewById(R.id.radio_apoio_cnpq_qtd);
-		rbCnpqProjectsValues = (RadioButton) findViewById(R.id.radio_apoio_cnpq_investimento);
-		rbDiffusionProjectsAmount = (RadioButton) findViewById(R.id.radio_difusao_tecnologica_qtd);
-		rbDiffusionProjectsValue = (RadioButton) findViewById(R.id.radio_difusao_tecnologica_investimento);
-		rbInitiationProjectsAmount = (RadioButton) findViewById(R.id.radio_projetos_inct_qtd);
-		rbInitiationProjectsValues = (RadioButton) findViewById(R.id.radio_projetos_inct_investimento);
-		rbJovensProjectsAmount = (RadioButton) findViewById(R.id.radio_jovens_pesquisadores_qtd);
-		rbJovensProjectsValues = (RadioButton) findViewById(R.id.radio_jovens_pesquisadores_investimento);
-		rbElementarySchoolClassStudents = (RadioButton) findViewById(R.id.radio_alunos_por_turma_fundamental);
-		rbHighSchoolClassStudents = (RadioButton) findViewById(R.id.radio_alunos_por_turma_medio);
-		rbElementarySchoolHoursPerClass = (RadioButton) findViewById(R.id.radio_horas_aula_fundamental);
-		rbHighSchoolHoursPerClass = (RadioButton) findViewById(R.id.radio_horas_aula_medio);
-		rbElementaryDistortionRate = (RadioButton) findViewById(R.id.radio_taxa_distorcao_fundamental);
-		rbHighSchoolDistortionRate = (RadioButton) findViewById(R.id.radio_taxa_distorcao_medio);
-		rbElementaryApprovalRate = (RadioButton) findViewById(R.id.radio_taxa_aprovacao_fundamental);
-		rbHighSchoolApprovalRate = (RadioButton) findViewById(R.id.radio_taxa_aprovacao_medio);
-		rbElementaryDropoutRate = (RadioButton) findViewById(R.id.radio_taxa_abandono_fundamental);
-		rbHighSchoolDropoutRate = (RadioButton) findViewById(R.id.radio_taxa_abandono_medio);
-		rbInitialYearsElementaryCensus = (RadioButton) findViewById(R.id.radio_censo_iniciais_fundamental);
-		rbFinalYearsElementaryCensus = (RadioButton) findViewById(R.id.radio_censo_finais_fundamental);
-		rbHighSchoolCensus = (RadioButton) findViewById(R.id.radio_censo_ensino_medio);
-		rbEJAFElementaryCensus = (RadioButton) findViewById(R.id.radio_censo_eja_fundamental);
-		rbEJAMHighSchoolCensus = (RadioButton) findViewById(R.id.radio_censo_eja_medio);
+		rbPopulation = (RadioButton) findViewById(R.id.radio_population);
+		rbFirstProjectsAmount = (RadioButton) findViewById(R.id.radio_primeiros_projetos_amount);
+		rbFirstProjectsValues = (RadioButton) findViewById(R.id.radio_primeiros_projetos_investment);
+		rbCnpqProjectsAmount = (RadioButton) findViewById(R.id.radio_apoio_cnpq_amount);
+		rbCnpqProjectsValues = (RadioButton) findViewById(R.id.radio_apoio_cnpq_investment);
+		rbDiffusionProjectsAmount = (RadioButton) findViewById(R.id.radio_technological_diffusion_amount);
+		rbDiffusionProjectsValue = (RadioButton) findViewById(R.id.radio_technological_diffusion_investment);
+		rbInitiationProjectsAmount = (RadioButton) findViewById(R.id.radio_inct_projects_amount);
+		rbInitiationProjectsValues = (RadioButton) findViewById(R.id.radio_inct_projects_investment);
+		rbJovensProjectsAmount = (RadioButton) findViewById(R.id.radio_jovens_pesquisadores_amount);
+		rbJovensProjectsValues = (RadioButton) findViewById(R.id.radio_jovens_pesquisadores_investment);
+		rbElementarySchoolClassStudents = (RadioButton) findViewById(R.id.radio_students_per_class_elementary);
+		rbHighSchoolClassStudents = (RadioButton) findViewById(R.id.radio_students_per_class_high_school);
+		rbElementarySchoolHoursPerClass = (RadioButton) findViewById(R.id.radio_class_hours_elementary);
+		rbHighSchoolHoursPerClass = (RadioButton) findViewById(R.id.radio_class_hours_high_school);
+		rbElementaryDistortionRate = (RadioButton) findViewById(R.id.radio_distortion_rate_elementary);
+		rbHighSchoolDistortionRate = (RadioButton) findViewById(R.id.radio_distortion_rate_high_school);
+		rbElementaryApprovalRate = (RadioButton) findViewById(R.id.radio_approval_rate_elementary);
+		rbHighSchoolApprovalRate = (RadioButton) findViewById(R.id.radio_approval_rate_high_school);
+		rbElementaryDropoutRate = (RadioButton) findViewById(R.id.radio_dropout_rate_elementary);
+		rbHighSchoolDropoutRate = (RadioButton) findViewById(R.id.radio_dropout_rate_high_school);
+		rbInitialYearsElementaryCensus = (RadioButton) findViewById(R.id.radio_final_census_elementary);
+		rbFinalYearsElementaryCensus = (RadioButton) findViewById(R.id.radio_initial_census_elementary);
+		rbHighSchoolCensus = (RadioButton) findViewById(R.id.radio_census_high_school);
+		rbEJAFElementaryCensus = (RadioButton) findViewById(R.id.radio_census_eja_elementary);
+		rbEJAMHighSchoolCensus = (RadioButton) findViewById(R.id.radio_census_eja_high_school);
 		
 	}
 	
@@ -130,7 +130,7 @@ public class ChooseIndicativeWithCompareGraphScreen extends EscolheIndicativo {
 		setVisibility(rbEJAMHighSchoolCensus, censusView);
 	}
 	
-	public void clickAdvanceButton(View view) {
+	public void clickButtonNext(View view) {
 		Intent intent = new Intent(this, GraphScreen.class);
 
 		intent.putExtra("INDEX_ESTADO1_ESCOLHIDO", position1);

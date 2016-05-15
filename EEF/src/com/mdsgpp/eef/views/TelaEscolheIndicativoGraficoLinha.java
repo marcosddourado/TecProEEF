@@ -34,13 +34,11 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 		positionHistorico = receivedIntent.getIntExtra("ESTADO", 0);
 
 		estado = capturaInformacoesEstado();
-		Log.i("position tela escolhe indicativo grafico", positionHistorico+"");
-		
-		// Populacao comeea selecionada
+
 		titulo = "Populaeeo";
 		indicativo = "populacao";
 		historico.clear();
-		historico.add((float) estado.getPopulacao());
+		historico.add((float) estado.getStatePopulation());
 	}
 
 	@Override
@@ -54,12 +52,8 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.sobre:
-<<<<<<< HEAD
+		case R.id.about:
 			loadAboutScreen();
-=======
-			openAboutScreen();
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -71,13 +65,8 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
     	return true;
 	}
 	
-<<<<<<< HEAD
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ChooseIndicativeWithCompareGraphAboutScreen.class);
-=======
-	public void openAboutScreen() {
-		Intent intent = new Intent(this, TelaSobreEscolheIndicativoGraficoComparacao.class);
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
     	startActivity(intent);
 	}	
 
@@ -104,7 +93,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			max = tamanho == 1 ? tamanho : (tamanho - 1); 
 			for (int i = 0; i < max; i++)
 				historico.add((float) estado.getApoioCnpqProject()[i]
-						.getQuantidade());
+						.getProjectAmount());
 			break;
 			
 		case R.id.radio_technological_diffusion_investment:
@@ -126,7 +115,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			max = tamanho == 1 ? tamanho : (tamanho - 1); 
 			for (int i = 0; i < max; i++)
 				historico.add((float) estado.getScienceAndThecnologyProjects()[i]
-						.getQuantidade());
+						.getProjectAmount());
 			break;
 			
 		case R.id.radio_ideb_elementary_finals:
@@ -134,7 +123,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			indicativo = "ideb";
 			historico.clear();
 			for (int i = 0; i < estado.getIdebs().length; i++)
-				historico.add((float) estado.getIdebs()[i].getFundamental());
+				historico.add((float) estado.getIdebs()[i].getElementarySchool());
 			break;
 			
 		case R.id.radio_ideb_elementary_inicials:
@@ -142,7 +131,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			indicativo = "ideb";
 			historico.clear();
 			for (int i = 0; i < estado.getIdebs().length; i++)
-				historico.add((float) estado.getIdebs()[i].getSeriesIniciais());
+				historico.add((float) estado.getIdebs()[i].getElementarySchool());
 			break;
 			
 		case R.id.radio_ideb_high_school:
@@ -150,7 +139,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			indicativo = "ideb";
 			historico.clear();
 			for (int i = 0; i < estado.getIdebs().length; i++)
-				historico.add((float) estado.getIdebs()[i].getMedio());
+				historico.add((float) estado.getIdebs()[i].getHighSchool());
 			break;
 			
 		case R.id.radio_jovens_pesquisadores_investment:
@@ -172,7 +161,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			max = tamanho == 1 ? tamanho : (tamanho - 1); 
 			for (int i = 0; i < max; i++)
 				historico.add((float) estado.getJovensPesquisadoresProject()[i]
-						.getQuantidade());
+						.getProjectAmount());
 			break;
 
 		case R.id.radio_pib:
@@ -187,7 +176,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			titulo = "Populaeeo";
 			indicativo = "populacao";
 			historico.clear();
-			historico.add((float) estado.getPopulacao());
+			historico.add((float) estado.getStatePopulation());
 			Log.i("tamanho hsitorico", ""+historico.size());
 			break;
 
@@ -210,7 +199,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			max = tamanho == 1 ? tamanho : (tamanho - 1); 
 			for (int i = 0; i < max; i++)
 				historico.add((float) estado.getFirstProjects()[i]
-						.getQuantidade());
+						.getProjectAmount());
 			break;
 
 		case R.id.radio_inct_projects_investment:
@@ -231,7 +220,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			max = tamanho == 1 ? tamanho : (tamanho - 1); 
 			for (int i = 0; i < max; i++)
 				historico.add((float) estado.getProjectsInct()[i]
-						.getQuantidade());
+						.getProjectAmount());
 			break;
 
 		case R.id.radio_students_per_class_elementary:
@@ -330,7 +319,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			historico.clear();
 			for (int i = 0; i < estado.getCensus().length; i++)
 				historico.add((float) estado.getCensus()[i]
-						.getAnosIniciaisFundamental());
+						.getInitialElementarySchoolYears());
 			break;
 
 		case R.id.radio_final_census_elementary:
@@ -347,7 +336,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			indicativo = "censo";
 			historico.clear();
 			for (int i = 0; i < estado.getCensus().length; i++)
-				historico.add((float) estado.getCensus()[i].getHighSchoolGrade());
+				historico.add((float) estado.getCensus()[i].getHighSchool());
 			break;
 
 		case R.id.radio_census_eja_elementary:
@@ -356,7 +345,7 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			historico.clear();
 			for (int i = 0; i < estado.getCensus().length; i++)
 				historico
-						.add((float) estado.getCensus()[i].getFundamentalEJA());
+						.add((float) estado.getCensus()[i].getElementarySchoolEJA());
 			break;
 
 		case R.id.radio_census_eja_high_school:
@@ -364,20 +353,20 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 			indicativo = "censo";
 			historico.clear();
 			for (int i = 0; i < estado.getCensus().length; i++)
-				historico.add((float) estado.getCensus()[i].getMedioEJA());
+				historico.add((float) estado.getCensus()[i].getHighSchoolEJA());
 			break;
 
 		}
 	}
 
 
-	private Estado capturaInformacoesEstado() {
-		Estado estado1 = null;
+	private State capturaInformacoesEstado() {
+		State estado1 = null;
 		
 		int position = positionHistorico;
 		
 		try {
-			estado1 = (Estado) StateConroller.getInstance(this).obterEstado(position);
+			estado1 = (State) StateConroller.getInstance(this).grabState(position);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -386,11 +375,8 @@ public class TelaEscolheIndicativoGraficoLinha extends Activity{
 	}
 
 
-<<<<<<< HEAD
-	public void clickAdvanceButton(View view) {
-=======
+
 	public void clickButtonNext(View view) {
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 		Intent intent = new Intent(this, TelaGraficoLinha.class);
 		ArrayList<String> temp = new ArrayList<String>();
 		
