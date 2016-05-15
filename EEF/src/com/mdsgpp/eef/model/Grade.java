@@ -12,8 +12,8 @@ public class Grade {
 		}
 
 		public Grade(double elementaryGrade, double highSchoolGrade){
-			assert (elementaryGrade >= 0) : "elementaryGrade >= 0 assertion failed. elementaryGrade was " + elementaryGrade;
-			assert (highSchoolGrade >= 0) : "highSchoolGrade >= 0 assertion failed. elementaryGrade was " + highSchoolGrade;
+			assert (elementaryGrade >= 0) : "elementaryGrade < 0. elementaryGrade was " + elementaryGrade;
+			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
 			this.elementaryGrade = elementaryGrade;
 			this.highSchoolGrade = highSchoolGrade;
 		}
@@ -23,7 +23,7 @@ public class Grade {
 		}
 
 		public void setElementaryGrade(double elementaryGrade) {
-			assert (elementaryGrade >= 0) : "elementaryGrade >= 0 assertion failed. elementaryGrade was " + elementaryGrade;
+			assert (elementaryGrade >= 0) : "elementaryGrade < 0 . elementaryGrade was " + elementaryGrade;
 			this.elementaryGrade = elementaryGrade;
 		}
 
@@ -32,7 +32,7 @@ public class Grade {
 		}
 
 		public void setHighSchoolGrade(double highSchoolGrade) {
-			assert (highSchoolGrade >= 0) : "highSchoolGrade >= 0 assertion failed. elementaryGrade was " + highSchoolGrade;
+			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
 			this.highSchoolGrade = highSchoolGrade;
 		}
 
@@ -41,7 +41,7 @@ public class Grade {
 		}
 
 		public void setState(State state) {
-			assert (state != null) : "non-null state assertion failed";
+			assert (state != null) : "null state ";
 			this.state = state;
 		}
 
@@ -50,7 +50,7 @@ public class Grade {
 		}
 
 		public void setGradeYear(int gradeYear) {
-			assert(gradeYear >= acceptableYear) : "gradeYear >= 1900 assertion failed. gradeYear was = " + gradeYear;
+			assert(gradeYear >= acceptableYear) : "gradeYear < 1900 . gradeYear was = " + gradeYear;
 			this.gradeYear = gradeYear;
 		}
 }

@@ -37,7 +37,7 @@ public class Census {
 	}
 
 	public void setFinalElementaryYears(double elementaryYears) {
-		assert(elementaryYears >= 0) : "elementaryYears > 0 assertion failed. elementaryYears was " + elementaryYears;
+		assert(elementaryYears >= 0) : "elementaryYears < 0. elementaryYears was " + elementaryYears;
 		this.finalElementaryYears = elementaryYears;
 	}
 
@@ -78,7 +78,7 @@ public class Census {
 	}
 
 	public void setCensusYear(int censusYear) {
-		assert (censusYear >= acceptableYear): "censusYear >= 1900 assertion failed. censusYear was = " + censusYear;
+		assert (censusYear >= acceptableYear): "censusYear < 1900. censusYear was = " + censusYear;
 		this.censusYear = censusYear;
 	}
 
