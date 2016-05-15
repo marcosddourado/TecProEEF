@@ -4,8 +4,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/menu/menu_telas.xml"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/menu/menu_screens.xml",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/menu/menu_screens.xml"
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/menu/menu_screens.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/menu/menu_screens.xml"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/menu/menu_telas.xml",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/menu/menu_telas.xml"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/menu/menu_telas.xml",
@@ -22,5 +26,9 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/build/intermediates/res/merged/debug/menu/menu_telas_sem_sobre.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/eefTecProg/educacaoemfoco/EEF/res/menu/menu_telas_sem_sobre.xml"
+    },
+    {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/menu/menu_telas_sem_sobre.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/menu/menu_telas_sem_sobre.xml"
     }
 ]

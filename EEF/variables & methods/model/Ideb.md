@@ -8,7 +8,7 @@
 
 | Type     | Variable         |               Description                |
 |----------|------------------|------------------------------------------|
-| `double` | elementarySchool |Contais the Ideb's average of the state's elementary schools |
+| `double` | elementary |Contais the Ideb's average of the state's elementary schools |
 | `double` | highSchool       |Contais the Ideb's average of the state's high schools |
 | `double` | initialGrades    |Contais the Ideb's average of the state's initial schools |
 | `State`  | idebState        |Contais the Ideb's average of the state's schools |
@@ -20,8 +20,8 @@
 |:-----------:|:-------------------:|:-------------------------:|:-----------------------------------------:|
 |             |         Ideb        |             --            |            Standard constructor           |
 |             |         Ideb        |             --            | Constructor with initialization arguments |
-|   `double`  | getElementarySchool |             --            |          |
-|    `void`   | setElementarySchool | `double` elementarySchool |                                           |
+|   `double`  | getElementary |             --            |          |
+|    `void`   | setElementary | `double` elementary |                                           |
 |   `double`  |    getHighSchool    |             --            |                                           |
 |    `void`   |    setHighSchool    |    `double` highSchool    |                                           |
 |   `double`  |   getInitialGrades  |             --            |                                           |
@@ -30,3 +30,37 @@
 |    `void`   |       setState      |     `State` idebState     |                                           |
 |    `int`    |     getIdebYear     |             --            |                                           |
 |    `void`   |     setIdebYear     |       `int` idebYear      |                                           |
+
+#### Local Variables per Function:
+
+|          |   Constructor   |                                                              |
+|:--------:|:---------------:|:------------------------------------------------------------:|
+|   Type   |     Variable    |                          Description                         |
+| `double` |   `elementary`  |   Provides a value to be set on private member `elementary`  |
+| `double` | `highSchool`    | Provides a value to be set on private member `highSchool`    |
+| `double` | `initialGrades` | Provides a value to be set on private member `initialGrades` |
+
+|          | setElementary |                                                           |
+|:--------:|:-------------:|:---------------------------------------------------------:|
+|   Type   |    Variable   |                        Description                        |
+| `double` |  `elementary` | Provides a value to be set on private member `elementary` |
+
+|          | setHighSchool |                                                           |
+|:--------:|:-------------:|:---------------------------------------------------------:|
+|   Type   |    Variable   |                        Description                        |
+| `double` |  `highSchool` | Provides a value to be set on private member `highSchool` |
+
+|          | setInitialGrades |                                                              |
+|:--------:|:----------------:|:------------------------------------------------------------:|
+|   Type   |     Variable     |                          Description                         |
+| `double` |  `initialGrades` | Provides a value to be set on private member `initialGrades` |
+
+|         |   setState  |                                                          |
+|:-------:|:-----------:|:--------------------------------------------------------:|
+|   Type  |   Variable  |                        Description                       |
+| `State` | `idebState` | Provides a value to be set on private member `idebState` |
+
+|       | setIdebYear |                                                         |
+|:-----:|:-----------:|:-------------------------------------------------------:|
+|  Type |   Variable  |                       Description                       |
+| `int` |  `idebYear` | Provides a value to be set on private member `idebYear` |

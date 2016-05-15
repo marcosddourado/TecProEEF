@@ -40,8 +40,8 @@ public class MainActivity extends Activity {
     	return true;
     }
     
-    public void loadAboutScreen() {
-    	Intent intent = new Intent(this, TelaSobre.class);
+    public void openAboutScreen() {
+    	Intent intent = new Intent(this, ScreenOver.class);
     	startActivity(intent);
     }
 
@@ -51,18 +51,17 @@ public class MainActivity extends Activity {
 		startActivity(intent);
     }
     
-    public void clickButtonGeneralConsult(View view){
-    	Intent intent = new Intent(this, TelaListaEstado.class);
+    public void clickButtonGeneralConsultation(View view){
+    	Intent intent = new Intent(this, ScreenStateList.class);
     	startActivity(intent);
     }
     
     public void clickButtonFeed(View view){
-    	Intent intent = new Intent(this, TelaFeed.class);
+    	Intent intent = new Intent(this, ScreenFeed.class);
     	startActivity(intent);
     }
-
-    public void clickButtonConsultatByIndicative(View view){
-    	Intent intent = new Intent(this, QueryPerIndicativeScreen.class);
+    public void clickButtonConsultationByIndicative(View view){
+    	Intent intent = new Intent(this, ScreenQueryPerIndicative.class);
     	startActivity(intent);
     }
 }

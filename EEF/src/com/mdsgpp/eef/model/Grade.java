@@ -2,25 +2,29 @@ package com.mdsgpp.eef.model;
 
 //grade grade for schhols per stateGrade/year
 public class Grade {
-		private double elementarySchoolGrade;
+		private double elementaryGrade;
 		private double highSchoolGrade;
 		private int gradeYear;
-		private State stateGrade;
+		private State state;
+		private final int acceptableYear = 1900;
 
 		public Grade() {
 		}
 
-		public Grade(double elementarySchoolGrade, double highSchoolGrade){
-			this.elementarySchoolGrade = elementarySchoolGrade;
+		public Grade(double elementaryGrade, double highSchoolGrade){
+			assert (elementaryGrade >= 0) : "elementaryGrade < 0. elementaryGrade was " + elementaryGrade;
+			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
+			this.elementaryGrade = elementaryGrade;
 			this.highSchoolGrade = highSchoolGrade;
 		}
 
-		public double getElementarySchoolGrade() {
-			return elementarySchoolGrade;
+		public double getElementaryGrade() {
+			return elementaryGrade;
 		}
 
-		public void setElementarySchoolGrade(double elementarySchoolGrade) {
-			this.elementarySchoolGrade = elementarySchoolGrade;
+		public void setElementaryGrade(double elementaryGrade) {
+			assert (elementaryGrade >= 0) : "elementaryGrade < 0 . elementaryGrade was " + elementaryGrade;
+			this.elementaryGrade = elementaryGrade;
 		}
 
 		public double getHighSchoolGrade() {
@@ -28,6 +32,7 @@ public class Grade {
 		}
 
 		public void setHighSchoolGrade(double highSchoolGrade) {
+			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
 			this.highSchoolGrade = highSchoolGrade;
 		}
 
@@ -35,8 +40,9 @@ public class Grade {
 			return stateGrade;
 		}
 
-		public void setState(State stateGrade) {
-			this.stateGrade = stateGrade;
+		public void setState(State state) {
+			assert (state != null) : "null state ";
+			this.state = state;
 		}
 
 		public int getGradeYear() {
@@ -44,6 +50,7 @@ public class Grade {
 		}
 
 		public void setGradeYear(int gradeYear) {
+			assert(gradeYear >= acceptableYear) : "gradeYear non-acceptable . gradeYear was = " + gradeYear;
 			this.gradeYear = gradeYear;
 		}
 }

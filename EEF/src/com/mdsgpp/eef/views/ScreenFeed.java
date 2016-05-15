@@ -16,7 +16,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-public class TelaFeed extends Activity implements ReceptorDados {
+public class ScreenFeed extends Activity implements DataReceiver {
 
 	private final static String FEED_ADDRESS = "http://noticias.gov.br/noticias/rss?id=AFSZW";
 	
@@ -39,10 +39,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
 	@Override
     public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case R.id.sobre:
-<<<<<<< HEAD
-			loadAboutScreen();
-=======
+		case R.id.about:
 			openAboutScreen();
 >>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
@@ -68,7 +65,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
 		listview.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
-				String link = feed.getItem(position).getLink();
+				String link = feed.getFeedItem(position).getNewsLink();
 				
 				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
 				startActivity(browserIntent);
@@ -82,7 +79,7 @@ public class TelaFeed extends Activity implements ReceptorDados {
 	public void openAboutScreen()
 >>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 	{
-		Intent intent = new Intent(this, TelaFeedSobre.class);
+		Intent intent = new Intent(this, ScreenFeedAbout.class);
 		startActivity(intent);
 	}	
 	

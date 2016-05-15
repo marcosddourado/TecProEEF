@@ -2,27 +2,29 @@
 
 public class Ideb {
 
-	private double elementarySchool;
+	private double elementary;
 	private double highSchool;
-	private double initialGrades; //this Grade refers to 'graduation period'
+	private double initialGrades;
 	private State idebState;
 	private int idebYear;
+	private final int acceptableYear = 1900;
 
 	public Ideb() {
 	}
 
-	public Ideb(double elementarySchool, double highSchool, double iniciais){
-		this.elementarySchool = elementarySchool;
+	public Ideb(double elementary, double highSchool, double initialGrades){
+		assert (initialGrades >= 0) : "initialGrades < 0. initialGrades was " + initialGrades;
+		this.elementary = elementary;
 		this.highSchool = highSchool;
-		this.initialGrades = iniciais;
+		this.initialGrades = initialGrades;
 	}
 
-	public double getElementarySchool() {
-		return elementarySchool;
+	public double getElementary() {
+		return elementary;
 	}
 
-	public void setElementarySchool(double elementarySchool) {
-		this.elementarySchool = elementarySchool;
+	public void setElementary(double elementary) {
+		this.elementary = elementary;
 	}
 
 	public double getHighSchool() {
@@ -38,6 +40,7 @@ public class Ideb {
 	}
 
 	public void setInitialGrades(double initialGrades) {
+		assert (initialGrades >= 0) : "initialGrades < 0. initialGrades was " + initialGrades;
 		this.initialGrades = initialGrades;
 	}
 
@@ -46,12 +49,14 @@ public class Ideb {
 	}
 
 	public void setState(State idebState) {
+		assert (idebState != null) : "null idebState";
 		this.idebState = idebState;
 	}
 	public int getIdebYear(){
 		return idebYear;
 	}
 	public void setIdebYear(int idebYear){
+		assert (idebYear >= acceptableYear) : "idebYear non-acceptable. idebYear was " + idebYear;
 		this.idebYear = idebYear;
 	}
 }

@@ -2,41 +2,43 @@ package com.mdsgpp.eef.model;
 
 public class Census {
 
-	private double initialElementarySchoolYears;
-	private double finalElementarySchoolYears;
+	private double initialElementaryYears;
+	private double finalElementaryYears;
 	private double highSchool;
-	private double elementarySchoolEJA;
+	private double elementaryEJA;
 	private double highSchoolEJA;
 	private int censusYear;
 	private State censusState;
+	private final int acceptableYear = 1900;
 
 	public Census() {
 	}
 
-	public Census(double initialElementarySchoolYears, double finalElementarySchoolYears,
-			     double highSchool, double elementarySchoolEJA, double highSchoolEJA){
-
-		this.initialElementarySchoolYears = initialElementarySchoolYears;
-		this.finalElementarySchoolYears = finalElementarySchoolYears;
+	public Census(double initialElementaryYears, double finalElementaryYears,
+			     double highSchool, double elementaryEJA, double highSchoolEJA){
+			 
+		this.initialElementaryYears = initialElementaryYears;
+		this.finalElementaryYears = finalElementaryYears;
 		this.highSchool = highSchool;
-		this.elementarySchoolEJA = elementarySchoolEJA;
+		this.elementaryEJA = elementaryEJA;
 		this.highSchoolEJA = highSchoolEJA;
 	}
 
-	public double getInitialElementarySchoolYears() {
-		return initialElementarySchoolYears;
+	public double getInitialElementaryYears() {
+		return initialElementaryYears;
 	}
 
-	public void setInitialElementarySchoolYears(double initialElementarySchoolYears) {
-		this.initialElementarySchoolYears = initialElementarySchoolYears;
+	public void setInitialElementaryYears(double initialElementaryYears) {
+		this.initialElementaryYears = initialElementaryYears;
 	}
 
-	public double getFinalElementarySchoolYears() {
-		return finalElementarySchoolYears;
+	public double getFinalElementaryYears() {
+		return finalElementaryYears;
 	}
 
-	public void setFinalElementarySchoolYears(double ElementarySchoolYears) {
-		this.finalElementarySchoolYears = finalElementarySchoolYears;
+	public void setFinalElementaryYears(double elementaryYears) {
+		assert(elementaryYears >= 0) : "elementaryYears < 0. elementaryYears was " + elementaryYears;
+		this.finalElementaryYears = elementaryYears;
 	}
 
 	public double getHighSchool() {
@@ -47,12 +49,12 @@ public class Census {
 		this.highSchool = highSchool;
 	}
 
-	public double getElementarySchoolEJA() {
-		return elementarySchoolEJA;
+	public double getElementaryEJA() {
+		return elementaryEJA;
 	}
 
-	public void setElementarySchoolEJA(double elementarySchoolEJA) {
-		this.elementarySchoolEJA = elementarySchoolEJA;
+	public void setElementaryEJA(double elementaryEJA) {
+		this.elementaryEJA = elementaryEJA;
 	}
 
 	public double getHighSchoolEJA() {
@@ -76,6 +78,7 @@ public class Census {
 	}
 
 	public void setCensusYear(int censusYear) {
+		assert (censusYear >= acceptableYear): "censusYear non-acceptable. censusYear was = " + censusYear;
 		this.censusYear = censusYear;
 	}
 

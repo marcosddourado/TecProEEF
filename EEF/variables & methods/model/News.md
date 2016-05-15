@@ -32,3 +32,35 @@
 |   `String`  |     getNewsDate    |            --            |                      |
 |    `void`   |     setNewsDate    |     `String` newsDate    |                      |
 |    `Feed`   |     getNewsFeed    |            --            |                      |
+
+#### Local Variables per Function:
+
+|        | Constructor |                                                         |
+|:------:|:-----------:|:-------------------------------------------------------:|
+|  Type  |   Variable  |                       Description                       |
+| `Feed` |  `newsFeed` | Provides a value to be set on private member `newsFeed` |
+
+|          | setNewsTitle |                                                          |
+|:--------:|:------------:|:--------------------------------------------------------:|
+|   Type   |   Variable   |                        Description                       |
+| `String` |  `newsTitle` | Provides a value to be set on private member `newsTitle` |
+
+|          | setNewsCategory |                                                             |
+|:--------:|:---------------:|:-----------------------------------------------------------:|
+|   Type   |     Variable    |                         Description                         |
+| `String` |  `newsCategory` | Provides a value to be set on private member `newsCategory` |
+
+|          | setNewsDescription |                                                                |
+|:--------:|:------------------:|:--------------------------------------------------------------:|
+|   Type   |      Variable      |                           Description                          |
+| `String` |  `newsDescription` | Provides a value to be set on private member `newsDescription` |
+
+|          | setNewsLink |                                                         |
+|:--------:|:-----------:|:-------------------------------------------------------:|
+|   Type   |   Variable  |                       Description                       |
+| `String` |  `newsLink` | Provides a value to be set on private member `newsLink` |
+
+|          | setNewsDate |                                                         |
+|:--------:|:-----------:|:-------------------------------------------------------:|
+|   Type   |   Variable  |                       Description                       |
+| `String` |  `newsDate` | Provides a value to be set on private member `newsDate` |

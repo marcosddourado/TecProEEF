@@ -50,8 +50,7 @@ public class ScreenGeneralComparations extends Activity {
     public void loadAboutScreen() {
 =======
     public void openAboutScreen() {
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
-    	Intent intent = new Intent(this, TelaSobreComparacoesGerais.class);
+    	Intent intent = new Intent(this, ScreenOverGeneralComparisons.class);
     	startActivity(intent);
     }
 	
@@ -65,8 +64,7 @@ public class ScreenGeneralComparations extends Activity {
 		Intent intent = new Intent(this, QueryPerInficativeScreen.class);
 =======
 	public void clickButtonIndicatives(View view) {
-		Intent intent = new Intent(this, TelaConsultaPorIndicativo.class);
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0:EEF/src/com/mdsgpp/eef/views/ScreenGeneralComparations.java
+		Intent intent = new Intent(this, ScreenQueryPerIndicative.class);
 		startActivity(intent);
 	}
 	

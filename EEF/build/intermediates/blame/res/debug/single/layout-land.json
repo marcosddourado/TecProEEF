@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/miknery/code/TecProEEF/EEF/build/intermediates/res/merged/debug/layout-land/activity_tela_compara_estados.xml",
+        "source": "/home/miknery/code/TecProEEF/EEF/res/layout-land/activity_tela_compara_estados.xml"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/res/merged/debug/layout-land/activity_tela_compara_estados.xml",
         "source": "/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/res/layout-land/activity_tela_compara_estados.xml"
     },
