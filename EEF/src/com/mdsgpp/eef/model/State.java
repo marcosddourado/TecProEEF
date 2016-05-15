@@ -229,7 +229,7 @@ public class State {
 
 	public Project[] returnEmptyProject() {
 		Project empty[] = { new Project() };
-		empty[0].setProjectAmount(0);
+		empty[0].setProjectQuantity(0);
 		empty[0].setProjectValue(0);
 		empty[0].setProjectYear(0);
 
@@ -257,7 +257,7 @@ public class State {
 			} else {
 				//do nothing
 			}
-			readProjects[i].setProjectAmount(Integer.parseInt(projectsAmountData.get(i)[1].replaceAll(",", ".")));
+			readProjects[i].setProjectQuantity(Integer.parseInt(projectsAmountData.get(i)[1].replaceAll(",", ".")));
 			readProjects[i].setProjectValue(Double.parseDouble(investedValuesData.get(i)[1].replaceAll(",", ".")));
 		}
 

@@ -56,7 +56,7 @@ public class Ideb {
 		return idebYear;
 	}
 	public void setIdebYear(int idebYear){
-		assert (idebYear >= acceptableYear) : "idebYear < 1900. idebYear was " + idebYear;
+		assert (idebYear >= acceptableYear) : "idebYear non-acceptable. idebYear was " + idebYear;
 		this.idebYear = idebYear;
 	}
 }

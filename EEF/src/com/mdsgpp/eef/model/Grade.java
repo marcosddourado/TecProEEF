@@ -50,7 +50,7 @@ public class Grade {
 		}
 
 		public void setGradeYear(int gradeYear) {
-			assert(gradeYear >= acceptableYear) : "gradeYear < 1900 . gradeYear was = " + gradeYear;
+			assert(gradeYear >= acceptableYear) : "gradeYear non-acceptable . gradeYear was = " + gradeYear;
 			this.gradeYear = gradeYear;
 		}
 }
