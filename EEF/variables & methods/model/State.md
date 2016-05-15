@@ -172,9 +172,9 @@
 |:--------------------------------------:|:--------------------:|:-------------------------------------------------------------------------------------------------------------:|
 |                  Type                  |       Variable       |                                                  Description                                                  |
 | `HashMap<String, ArrayList<String[]>>` |     `information`    |                               Contains associated data that include Project data                              |
-|               `String[]`               |  `namesOfIndicative` | Reference the correct data to be retrieved from `information`to `investedValuesData` and `projectsAmountData` |
+|               `String[]`               |  `namesOfIndicative` | Reference the correct data to be retrieved from `information`to `investedValuesData` and `projectsQuantityData` |
 |          `ArrayList<String[]>`         | `investedValuesData` |                  Contain associated data retrieved from `information` to fill `readProjects`                  |
-|          `ArrayList<String[]>`         | `projectsAmountData` |                  Contain associated data retrieved from `information` to fill `readProjects`                  |
+|          `ArrayList<String[]>`         | `projectsQuantityData` |                  Contain associated data retrieved from `information` to fill `readProjects`                  |
 |               `Project[]`              |    `readProjects`    |                                     Contain associated data about projects                                    |
 
 

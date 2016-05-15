@@ -8,7 +8,7 @@
 
 | Type     | Variable      | Description|
 |----------|---------------|------------|
-| `int`    | projectAmount |Contain the quantity of project|
+| `int`    | projectQuantity |Contain the quantity of project|
 | `double` | projectValue  |Contain the value of project|
 | `State`  | projectState  |Contain the state where project is from|
 | `int`    | projectYear   |Contain the year when project were originated|
@@ -18,8 +18,8 @@
 | Return Type |    Method Name   |       Arguments       |      Description     |
 |:-----------:|:----------------:|:---------------------:|:--------------------:|
 |             |      Project     |           --          | Standard constructor |
-|    `int`    | getProjectAmount |           --          |                      |
-|    `void`   | setProjectAmount |  `int` projectAmount  |                      |
+|    `int`    | getProjectQuantity |           --          |                      |
+|    `void`   | setProjectQuantity |  `int` projectQuantity  |                      |
 |   `double`  |  getProjectValue |           --          |                      |
 |    `void`   |  setProjectValue | `double` projectValue |                      |
 |   `State`   |  getProjectState |           --          |                      |
@@ -30,10 +30,10 @@
 
 #### Local Variables per Function:
 
-|       | setProjectAmount |                                                              |
+|       | setProjectQuantity |                                                              |
 |:-----:|:----------------:|:------------------------------------------------------------:|
 |  Type |     Variable     |                          Description                         |
-| `int` |  `projectAmount` | Provides a value to be set on private member `projectAmount` |
+| `int` |  `projectQuantity` | Provides a value to be set on private member `projectQuantity` |
 
 |          | setProjectValue |                                                             |
 |:--------:|:---------------:|:-----------------------------------------------------------:|
