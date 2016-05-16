@@ -59,7 +59,7 @@ public class ScreenStateHistory extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.about:
-			openAboutScreen();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -71,7 +71,7 @@ public class ScreenStateHistory extends Activity {
     	return true;
 	}
 	
-	public void openAboutScreen() {
+	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenOverIndicativeHistory.class);
     	startActivity(intent);	
 	}

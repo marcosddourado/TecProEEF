@@ -18,7 +18,7 @@ public class ScreenQueryPerIndicative extends ChooseIndicative {
 		txtViewTitle.setText("Escolha um indicativo para gerar a lista: ");
 	}
 
-	public void openAboutScreen() {
+	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenOverIndicatives.class);
 		startActivity(intent);
 	}

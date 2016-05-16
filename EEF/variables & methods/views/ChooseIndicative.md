@@ -25,7 +25,7 @@
 
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:------------:|:---------:|:----------:|
-| abstract void | openAboutScreen | -- | Opens a screen with the information about that Activity |
+| abstract void | loadAboutScreen | -- | Opens a screen with the information about that Activity |
 |`void` | onRadioButtonClicked | `View` view | Gets the information that the user wants to see depending on the radio button that the user selected|
 |`void` | setValues | `String` indicative, `String` tittle | Sets the tittle and the indicative that the users wants to see, then they can be gotten in a Activity |
 |` abstract void` | clickButtonNext | `View` view | Sets the action of the next button |

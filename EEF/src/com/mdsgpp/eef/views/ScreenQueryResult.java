@@ -155,7 +155,7 @@ public class ScreenQueryResult extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.sobre:
-			openAboutScreen();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -167,7 +167,7 @@ public class ScreenQueryResult extends Activity {
     	return true;
 	}
 	
-	public void openAboutScreen() {
+	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenOverStateComparison.class);
     	startActivity(intent);
 		

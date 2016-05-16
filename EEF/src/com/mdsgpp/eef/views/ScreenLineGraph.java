@@ -52,7 +52,7 @@ public class ScreenLineGraph extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.about:
-			openAboutScreen();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -88,7 +88,7 @@ public class ScreenLineGraph extends Activity {
 		}	
 	}
 	
-	public void openAboutScreen() {
+	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenOverGraphic.class);
     	startActivity(intent);
 	}

@@ -56,7 +56,7 @@
 |:-----------:|:-----------:|:---------:|:-----------:|
 |  `boolean`  |  onCreateOptionsMenu   | `Menu` menu | Inflate the menu and adds items to the action bar if it is present. |
 |  `boolean`  |  onOptionsItemSelected   | `MenuItem` item | Treats the selection interaction of the current activity. |
-| `void` | openAboutScreen | | Opens the description screen. |
+| `void` | loadAboutScreen | | Opens the description screen. |
 | `void` | checkBoxValueChanged | `boolean` value | Sets `value` to the selected attribute of all the checkboxes. |
 | `void` | onRadioButtonMarcarTodosClicked | `View` view | Checks all the checkboxes |
 | `void` | onRadioButtonDesmarcarTodosClicked | `View` view | Unchecks all the checkboxes |
@@ -71,7 +71,7 @@
 |   Type   |          Variable         |                    Description                    |
 | `Intent` |  `intentAuxiliar` | The current activitiy's intent. Used for getting information.  |
 
-|          |      openAboutScreen      |                                                   |
+|          |      loadAboutScreen      |                                                   |
 |:--------:|:-------------------------:|:-------------------------------------------------:|
 |   Type   |          Variable         |                    Description                    |
 | `Intent` |  `intent` | The about screen's intent. Used for presenting the about screen.  |

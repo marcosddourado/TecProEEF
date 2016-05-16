@@ -135,9 +135,9 @@
 |:-----------:|:-----------:|:---------:|:-----------:|
 |  `boolean`  |  onCreateOptionsMenu   | `Menu` menu | Inflate the menu and adds items to the action bar if it is present. |
 |  `boolean`  |  onOptionsItemSelected   | `MenuItem` item | Treats the selection interaction of the current activity. |
-|  `void`  |  openAboutScreen   | | Opens the description screen. |
+|  `void`  |  loadAboutScreen   | | Opens the description screen. |
 |  `void`  |  setVisibility   | `TextView` textView, `boolean` visibility | Sets `visibility` to the `textView`. |
 |  `void`  |  hideTextFields   | | Sets the visibility to all text views according to the boolean attributes. |
-|  `void`  |  openAboutScreen   | `MenuItem` item | Opens the description screen. |
+|  `void`  |  loadAboutScreen   | `MenuItem` item | Opens the description screen. |
 |  `void`  |  generateGraphicButtonTouch   | `View` view | Callback to the button touch, generates the graphic from the data. |
 |  `void`  |  captureFlags   | `int` statePosition1, `int` statePosition2 | Gets the flags' images and shows in the image views. |
