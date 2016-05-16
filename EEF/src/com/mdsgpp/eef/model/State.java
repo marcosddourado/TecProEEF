@@ -38,7 +38,11 @@ public class State {
 	}
 
 	public Census[] getCensus() {
-		return census;
+		if(this.census != null) {
+			return this.census;
+		} else {
+			return emptyCensus();
+		}
 	}
 
 	public void setCensus(HashMap<String, ArrayList<String[]>> information) {
@@ -79,11 +83,10 @@ public class State {
 	}
 
 	public double[] getPercentageCollaborationWithPIB() {
-		if (percentageCollaborationWithPIB == null) {
-			double[] empty = {0};
-			return empty;
+		if (this.percentageCollaborationWithPIB != null) {
+			return this.percentageCollaborationWithPIB;
 		} else {
-			return percentageCollaborationWithPIB;
+			return emptyDouble();
 		}
 	}
 
@@ -119,11 +122,11 @@ public class State {
 	}
 
 	public Ideb[] getIdebs() {
-		if (idebs == null) {
-			Ideb empty[] = { new Ideb(0,0,0) };
-			return empty;
+		if (this.idebs != null) {
+			return this.idebs;
+
 		} else {
-			return idebs;
+			return emptyIdeb();
 		}
 	}
 
@@ -161,13 +164,6 @@ public class State {
 		this.idebs = ideb;
 	}
 
-	public Grade[] returnEmptyGrade() {
-		Grade emptyGrade[] = { new Grade(0,0) };
-		emptyGrade[0].setGradeYear(0);
-
-		return emptyGrade;
-	}
-
 	public Grade[] setGrade(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
 		assert (information != null) : "null information";
 		assert (namesOfIndicative != null) : "null namesOfIndicative";
@@ -195,10 +191,10 @@ public class State {
 	}
 
 	public Grade[] getStudentGradesPerClass() {
-		if (studentGradesPerClass == null) {
-			return returnEmptyGrade();
+		if (this.studentGradesPerClass != null) {
+			return this.studentGradesPerClass;
 		} else {
-			return studentGradesPerClass;
+			return emptyGrade();
 		}
 	}
 
@@ -210,10 +206,10 @@ public class State {
 	}
 
 	public Grade[] getGradeClassHours() {
-		if (gradeClassHours == null) {
-			return returnEmptyGrade();
+		if (this.gradeClassHours != null) {
+			return this.gradeClassHours;
 		} else {
-			return gradeClassHours;
+			return emptyGrade();
 		}
 
 	}
@@ -226,10 +222,10 @@ public class State {
 	}
 
 	public Grade[] getAgeGradeDistortionRate() {
-		if (ageGradeDistortionRate == null) {
-			return returnEmptyGrade();
+		if (this.ageGradeDistortionRate != null) {
+			return this.ageGradeDistortionRate;
 		} else {
-			return ageGradeDistortionRate;
+			return emptyGrade();
 		}
 
 	}
@@ -242,10 +238,10 @@ public class State {
 	}
 
 	public String getStateName() {
-		if (stateName == null) {
-			return "Sem nome";
+		if (this.stateName != null) {
+			return this.stateName;
 		} else {
-			return stateName;
+			return "Sem nome";
 		}
 
 	}
@@ -255,25 +251,15 @@ public class State {
 	}
 
 	public String getStateAbbreviation() {
-		if (stateAbbreviation == null) {
-			return "Sem sigla";
+		if (this.stateAbbreviation != null) {
+			return this.stateAbbreviation;
 		} else {
-			return stateAbbreviation;
+			return "Sem sigla";
 		}
-
 	}
 
 	public void setStateAbbreviation(String stateAbbreviation) {
 		this.stateAbbreviation = stateAbbreviation;
-	}
-
-	public Project[] returnEmptyProject() {
-		Project empty[] = { new Project() };
-		empty[0].setProjectQuantity(0);
-		empty[0].setProjectValue(0);
-		empty[0].setProjectYear(0);
-
-		return empty;
 	}
 
 	public Project[] setProjects(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -308,12 +294,11 @@ public class State {
 	}
 
 	public Project[] getScienceAndThecnologyProjects() {
-		if(scienceAndThecnologyProjects == null) {
-			return returnEmptyProject();
+		if(this.scienceAndThecnologyProjects != null) {
+			return this.scienceAndThecnologyProjects;
 		} else {
-			return scienceAndThecnologyProjects;
+			return emptyProject();
 		}
-
 	}
 
 	public void setScienceAndThecnologyProjects(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -324,10 +309,10 @@ public class State {
 	}
 
 	public Project[] getPrimeirosProjetos() {
-		if (primeirosProjetos == null) {
-			return returnEmptyProject();
+		if (this.primeirosProjetos != null) {
+			return this.primeirosProjetos;
 		} else {
-			return primeirosProjetos;
+			return emptyProject();
 		}
 
 	}
@@ -340,10 +325,10 @@ public class State {
 	}
 
 	public Project[] getProjectsInct() {
-		if (inctProject == null) {
-			return returnEmptyProject();
+		if (this.inctProject != null) {
+			return this.inctProject;
 		} else {
-			return inctProject;
+			return emptyProject();
 		}
 	}
 
@@ -355,10 +340,10 @@ public class State {
 	}
 
 	public Project[] getApoioCnpqProject() {
-		if (apoioCnpqProject == null) {
-			return returnEmptyProject();
+		if (this.apoioCnpqProject != null) {
+			return this.apoioCnpqProject;
 		} else {
-			return apoioCnpqProject;
+			return emptyProject();
 		}
 	}
 
@@ -370,10 +355,10 @@ public class State {
 	}
 
 	public Project[] getJovensPesquisadoresProject() {
-		if (jovensPesquisadoresProject == null) {
-			return returnEmptyProject();
+		if (this.jovensPesquisadoresProject != null) {
+			return this.jovensPesquisadoresProject;
 		} else {
-			return jovensPesquisadoresProject;
+			return emptyProject();
 		}
 	}
 
@@ -385,10 +370,10 @@ public class State {
 	}
 
 	public Grade[] getEducationalAchievementRate() {
-		if (educationalAchievementRate == null) {
-			return returnEmptyGrade();
+		if (this.educationalAchievementRate != null) {
+			return this.educationalAchievementRate;
 		} else {
-			return educationalAchievementRate;
+			return emptyGrade();
 		}
 	}
 
@@ -400,10 +385,10 @@ public class State {
 	}
 
 	public Grade[] getSchoolDropoutRate() {
-		if (schoolDropoutRate == null) {
-			return returnEmptyGrade();
+		if (this.schoolDropoutRate != null) {
+			return this.schoolDropoutRate;
 		} else {
-			return schoolDropoutRate;
+			return emptyGrade();
 		}
 	}
 
@@ -459,4 +444,34 @@ public class State {
 
 	}
 
+	public Grade[] emptyGrade() {
+		Grade emptyGrade[] = { new Grade(0,0) };
+		emptyGrade[0].setGradeYear(0);
+
+		return emptyGrade;
+	}
+
+	public Project[] emptyProject() {
+		Project empty[] = { new Project() };
+		empty[0].setProjectQuantity(0);
+		empty[0].setProjectValue(0);
+		empty[0].setProjectYear(0);
+
+		return empty;
+	}
+
+	public Census[] emptyCensus() {
+		Census empty[] = {new Census(0.0, 0.0, 0.0, 0.0, 0.0) };
+		return empty;
+	}
+
+	public Ideb[] emptyIdeb() {
+		Ideb empty[] = {new Ideb(0.0, 0.0, 0.0)};
+		return empty;
+	}
+
+	public double[] emptyDouble() {
+		double empty[] = {0};
+		return empty;
+	}
 }
