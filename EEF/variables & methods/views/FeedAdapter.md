@@ -29,6 +29,25 @@
 
 #### Local Variables per Function:
 
-|          |          onCreate          |                                                   |
+|          |          Constructor          |                                                   |
 |:--------:|:-----------------------------:|:-------------------------------------------------:|
 |   Type   |            Variable           |                    Description                    |
+| `Context` | context                     | Contains the Activity that is calling this class |
+| `Feed` | feed                     | Object that contains informations of the feed |
+
+|          |          getItem          |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `int` | position                     | It is the position of an specific item on the list |
+
+|          |          getItemId          |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `int` | position                     | It is the position of an specific item on the list |
+
+|          |          getView          |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `int` | position                     | It is the position of an specific item on the list |
+| `View` | convertView                     | Object that contains the attributes of the current Activity |
+| `ViewGroup` | parent                     | Object that contains the attributes of the listview |
