@@ -15,9 +15,9 @@ import android.widget.TextView;
 
 public class FeedAdapter extends BaseAdapter {
 
-	private LayoutInflater mInflater;
-	private Feed feed;
-	private ViewHolder holder;
+	private LayoutInflater mInflater = null;
+	private Feed feed = null;
+	private ViewHolder holder = null;
 	
 	static class ViewHolder {
 		TextView tvTitle;
