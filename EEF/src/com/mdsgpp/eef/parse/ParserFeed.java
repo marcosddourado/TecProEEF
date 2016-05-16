@@ -23,6 +23,9 @@ public class ParserFeed extends DefaultHandler {
 
 		// Declaration of each element tag that we want to treat
 		RootElement root = new RootElement("rss");
+
+		assert (root != null): "Root element must have a valid instance! Referenced object is null.";
+
 		Element chanElement = root.getChild("channel");
 
 		Element chanItem = chanElement.getChild("item");
