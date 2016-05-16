@@ -8,22 +8,30 @@
 
 | Type     | Variable                     | Description                     |
 |----------|------------------------------|---------------------------------|
+| `static final int` | AMOUNT_OF_STATES | Contains the amount of states on Brazil |
+| `static final int` | INDICATIVE | Represents the number of the array's index that contains the indicative of an state |
+| `static final int` | STATE_VALUES | Represents the number of the array's index that contains the values related to an state |
 | `HashMap<String, String>` | state | HashMap with the informations of a specif state |
 | `String` | choosedIndicative | Contains the indicative of a state that will be shown  |
 | `String` | tittle | Contains the value that will be set on the tittle |
-| `Context` | context | Manipulates the TextView that shows the tittle |
+| `Context` | context | Contains the Activity that is calling this class |
 | `ViewHolder` | holder | Manipulates the TextView that shows the category |
 | `LayoutInflater` | inflater | Manipulates the TextView that shows the description of the feed |
+| `String` | flags | Array with the name of all the Brazilian states |
+| `TextView` | tvName | Manipulates the TextView that shows the state's name |
+| `TextView` | tvIndicativeValue | Manipulates the TextView that shows the indicative of a state |
+| `ImageView` | tvFlags | Manipulates the ImageView that contains a flag of an specific state |
 
 #### Public members:
 
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:------------:|:---------:|:----------:|
-|  | FeedAdapter | `Context` context, `Feed` feed | Standard constructor |
+|  | IndicativeAdapter | `String` tittle, `String` selectedIndicative, `Context` context | Constructor with initialization arguments |
 | `int` | getCount | -- | Returns the amount of items on the feed |
-| `Object` | getItem | `int` position | Returns an item on the feed list |
+| `HashMap<String, String>` | getItem | `int` position | Returns an item on the state list |
 | `long` | getItemId | `int` position | Returns a default value for the item id |
 | `View` | getView | `int` position, `View` convertView, `ViewGroup` parent | Sets values on the list |
+| `String` | getValue | `String` line | returns a value of a specific state that is stored in a file |
 
 
 #### Local Variables per Function:
