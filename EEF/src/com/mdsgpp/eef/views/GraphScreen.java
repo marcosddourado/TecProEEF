@@ -63,7 +63,7 @@ public class GraphScreen extends Activity {
     }
 
     public void loadAboutScreen() {
-        Intent intent = new Intent(this, TelaSobreGrafico.class);
+        Intent intent = new Intent(this, ScreenOverGraphic.class);
         startActivity(intent);
     }
 
