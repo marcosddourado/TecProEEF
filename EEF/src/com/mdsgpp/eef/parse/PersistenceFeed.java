@@ -31,6 +31,8 @@ public class PersistenceFeed {
 		FileOutputStream fileout = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
 		ObjectOutputStream out = new ObjectOutputStream(fileout);
 
+		assert(out != null) : "Output cannot be null!";
+
 		out.writeObject(feed);
 		out.close();
 	}
@@ -41,10 +43,16 @@ public class PersistenceFeed {
 
 
 		FileInputStream filein = context.openFileInput(FILENAME);
+
+		assert(filein != null) : "Fle handler cannot be null!";
 		ObjectInputStream in = new ObjectInputStream(filein);
+
+		assert(in != null) : "Object handler cannot be null!";
 
 		feed = (Feed) in.readObject();
 		in.close();
+
+		assert (feed != null) : "Feed instance cannot be null!";
 
 		return feed;
 	}
