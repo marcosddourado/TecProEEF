@@ -17,14 +17,13 @@ import android.view.Gravity;
 
 public class IndicativeAdapter extends BaseAdapter{
 	
-	private HashMap<String, String> state;
-	private String choosedIndicative;
-	private String tittle;
-	private Context context;
-	private ViewHolder holder;
-	private LayoutInflater inflater;
-	
-	String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
+	private HashMap<String, String> state = null;
+	private String choosedIndicative = "";
+	private String tittle = "";
+	private Context context = null;
+	private ViewHolder holder = null;
+	private LayoutInflater inflater = null;
+	private String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 			"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 			"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
 			"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
