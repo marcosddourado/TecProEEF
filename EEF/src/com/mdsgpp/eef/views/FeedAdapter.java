@@ -20,9 +20,9 @@ public class FeedAdapter extends BaseAdapter {
 	private ViewHolder holder = null;
 	
 	static class ViewHolder {
-		TextView tvTitle;
-		TextView tvCategory;
-		TextView tvDescription;
+		private TextView tvTitle;
+		private TextView tvCategory;
+		private TextView tvDescription;
 	}
 	
 	public FeedAdapter(Context context, Feed feed) {
