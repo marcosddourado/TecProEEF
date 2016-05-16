@@ -141,7 +141,7 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		startActivity(intent);		
 	}
     
-    public void openAboutScreen() {
+    public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenOverIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
     }
