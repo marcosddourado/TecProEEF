@@ -14,11 +14,17 @@
 | `TextView` | tvTitle | Manipulates the TextView that shows the tittle |
 | `TextView` | tvCategory | Manipulates the TextView that shows the category |
 | `TextView` | tvDescription | Manipulates the TextView that shows the description of the feed |
+| `static int` | DEFAULT_VALUE | Returns a default value of the items id |
 
 #### Public members:
 
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:------------:|:---------:|:----------:|
+|  | FeedAdapter | `Context` context, `Feed` feed | Standard constructor |
+| `int` | getCount | -- | Returns the amount of items on the feed |
+| `Object` | getItem | `int` position | Returns an item on the feed list |
+| `long` | getItemId | `int` position | Returns a default value for the item id |
+| `View` | getView | `int` position, `View` convertView, `ViewGroup` parent | Sets values on the list |
 
 
 #### Local Variables per Function:

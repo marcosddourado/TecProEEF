@@ -18,6 +18,7 @@ public class FeedAdapter extends BaseAdapter {
 	private LayoutInflater mInflater = null;
 	private Feed feed = null;
 	private ViewHolder holder = null;
+	private static int DEFAULT_VALUE = 0;
 	
 	static class ViewHolder {
 		private TextView tvTitle;
@@ -42,7 +43,7 @@ public class FeedAdapter extends BaseAdapter {
 
 	@Override
 	public long getItemId(int position) {
-		return 0;
+		return DEFAULT_VALUE;
 	}
 
 	@Override
