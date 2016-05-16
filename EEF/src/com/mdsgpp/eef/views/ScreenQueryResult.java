@@ -135,7 +135,7 @@ public class ScreenQueryResult extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_compara_states);
+		setContentView(R.layout.activity_screen_compare_states);
 		
 		initializeTextViews();
 		captureInformation();
@@ -154,7 +154,7 @@ public class ScreenQueryResult extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			loadAboutScreen();
 			break;
 		case android.R.id.home:
