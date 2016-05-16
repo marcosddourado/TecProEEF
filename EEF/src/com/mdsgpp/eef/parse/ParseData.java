@@ -12,7 +12,7 @@ import android.content.res.AssetManager;
 
 public class ParseData {
 
-	private HashMap<String, ArrayList<String[]>> informations;
+	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
 	private ArrayList<String[]> data;
 	private Context context;
 	private String extension = ".txt";
@@ -49,6 +49,8 @@ public class ParseData {
 		InputStream is = am.open(this.states[position][1] + this.extension);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
+		assert (br != null) : "uffer cannot reference NULL";
+
 		name = br.readLine();
 		name = this.states[position][0];
 		acronym = br.readLine();
@@ -70,18 +72,21 @@ public class ParseData {
 		this.data = new ArrayList<String[]>();
 	}
 
-	// Metodo resposavel por mandar o nome e a sigla atraves do mesmo hashmap ds indicativos
+	// Method responsible for sending state name and acronym through indicatives hashmap.
 	public void insertAcronymName(String name, String acronym) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
 		String nameAndAcronym[] = new String[2];
 		nameAndAcronym[0] = name;
 		nameAndAcronym[1] = acronym;
-		
+
 		container.add(nameAndAcronym);
+
+		assert (container != null): "Dictionary inout cannot be of NULL value!";
+
 		this.informations.put("nome_e_sigla", container);
 	}
 	
-	// Metodo responsavel pela leitura dos dados disponiveis
+	// Method responsble for reading available data.
 	public void readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
 		String line;
