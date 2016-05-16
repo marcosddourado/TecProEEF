@@ -6,22 +6,22 @@ import java.util.HashMap;
 
 public class State {
 
-	private String stateName;
-	private String stateAbbreviation;
-	private double percentageCollaborationWithPIB[];
-	private int statePopulation;
-	private Census census[];//controle;xml;declarados;inicializado;
-	private Ideb idebs[]; //Índice de Desenvolvimento de Educação Básica
-	private Grade studentGradesPerClass[];//controle;xml;declarados;inicializado;
-	private Grade gradeClassHours[];//controle;xml;declarados;inicializado;
-	private Project scienceAndThecnologyProjects[];
-	private Project primeirosProjetos[];
-	private Project inctProject[];
-	private Project apoioCnpqProject[];
-	private Project jovensPesquisadoresProject[];
-	private Grade ageGradeDistortionRate[]; //controle;xml;declarados;inicializado;
-	private Grade educationalAchievementRate[]; //controle;duvida: aprovaeao ou aproveitamento?;xml;declarados;inicializado;
-	private Grade schoolDropoutRate[];//controle;xml;declaradoa;inicializado;
+	private String stateName = "";
+	private String stateAbbreviation = "";
+	private double percentageCollaborationWithPIB[] = {};
+	private int statePopulation = 0;
+	private Census census[] = {};
+	private Ideb idebs[] = {};
+	private Grade studentGradesPerClass[] = {};
+	private Grade gradeClassHours[] = {};
+	private Project scienceAndThecnologyProjects[] = {};
+	private Project primeirosProjetos[] = {};
+	private Project inctProject[] = {};
+	private Project apoioCnpqProject[] = {};
+	private Project jovensPesquisadoresProject[] = {};
+	private Grade ageGradeDistortionRate[] = {};
+	private Grade educationalAchievementRate[] = {};
+	private Grade schoolDropoutRate[] = {};
 
 	public State(){
 	}

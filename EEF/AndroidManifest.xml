@@ -224,6 +224,13 @@
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.mdsgpp.eef.views.ScreenLineGraphIndicative"
+            android:icon="@drawable/home"
+            android:label="@string/title_activity_tela_grafico"
+            android:parentActivityName="views.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

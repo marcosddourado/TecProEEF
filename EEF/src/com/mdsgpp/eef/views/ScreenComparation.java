@@ -29,7 +29,7 @@ public class ScreenComparation extends Comparation {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
-		case R.id.sobre:
+		case R.id.about:
 			loadAboutScreen();
 			break;
 		case android.R.id.home:
