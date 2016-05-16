@@ -71,3 +71,25 @@
 | `void` | initializeRadioButtons |  | Initializes all radio buttons. |
 | `void` | clickButtonNext | `View` view | Starts a new activity. |
 | `void` | openAboutScreen |  | Opens the `about` section. |
+
+#### Local Variables per Function
+
+|          |          getInformation         |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Intent` |  `intent` | The current activitiy's intent. Used for getting information.  |
+
+|          |      openAboutScreen      |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Intent` |  `intent` | The about screen's intent. Used for presenting the about screen.  |
+
+|          | setVisibility |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `int` |  `visibilityValue` | The components visibility percentage.  |
+
+|          | clickButtonNext |                                                   |
+|:--------:|:-------------------------:|:-------------------------------------------------:|
+|   Type   |          Variable         |                    Description                    |
+| `Intent` |  `intent` | New intent used to open the desired screen.  |
