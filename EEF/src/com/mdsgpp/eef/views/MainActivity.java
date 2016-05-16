@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
     	return true;
     }
     
-    public void openAboutScreen() {
+    public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenOver.class);
     	startActivity(intent);
     }
@@ -60,8 +60,5 @@ public class MainActivity extends Activity {
     	Intent intent = new Intent(this, ScreenFeed.class);
     	startActivity(intent);
     }
-    public void clickButtonConsultationByIndicative(View view){
-    	Intent intent = new Intent(this, ScreenQueryPerIndicative.class);
-    	startActivity(intent);
-    }
+
 }

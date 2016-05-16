@@ -20,7 +20,7 @@
 
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:------------:|:---------:|:----------:|
-|       | StateConroller | `Context` context | Constructor with initialization argument |
+|       | StateConroller | `Context` context | Constructor with initialization arguments |
 |`static StateConroller` | getInstance | -- | Returns the object of the class |
 |`State` | grabState | `int` position | Returns a object of a specific State |
 |`HashMap<String, String>` | readState | `int` position | Returns a HashMap with some informations of a specific state |
