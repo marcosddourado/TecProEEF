@@ -28,6 +28,9 @@ public class PersistenceFeed {
 	}
 	
 	public void writeFeedFile(Feed feed) throws IOException {
+
+		//Rewrites a data file.
+
 		FileOutputStream fileout = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
 		ObjectOutputStream out = new ObjectOutputStream(fileout);
 
@@ -38,6 +41,8 @@ public class PersistenceFeed {
 	}
 
 	public Feed readFeedFile() throws IOException, ClassNotFoundException {
+
+		//Reads JSON data file and returns a serialized version of the data.
 
 		Feed feed;
 
