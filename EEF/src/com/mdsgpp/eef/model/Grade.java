@@ -37,7 +37,7 @@ public class Grade {
 		}
 
 		public State getState() {
-			return stateGrade;
+			return state;
 		}
 
 		public void setState(State state) {
