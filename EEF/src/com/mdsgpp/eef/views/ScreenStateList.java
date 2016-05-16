@@ -39,7 +39,6 @@ public class ScreenStateList extends Activity {
 			switch (item.getItemId()) {
 			case R.id.about:
 				openAboutScreen();
->>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 				break;
 			case android.R.id.home:
 		        NavUtils.navigateUpFromSameTask(this);
@@ -51,9 +50,6 @@ public class ScreenStateList extends Activity {
 	    	return true;
 	    }
 	    
-<<<<<<< HEAD
-	    public void loadAboutScreen() {
-=======
 	    public void openAboutScreen() {
 	    	Intent intent = new Intent(this, ScreenOverStateList.class);
 	    	startActivity(intent);

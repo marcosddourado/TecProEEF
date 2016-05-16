@@ -71,6 +71,7 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 
 	}
 
+	// After the execution of the task
 	protected void onPostExecute(Feed feed) {
 		
 		if (progressBar != null) {

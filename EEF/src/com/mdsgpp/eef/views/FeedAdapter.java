@@ -15,15 +15,14 @@ import android.widget.TextView;
 
 public class FeedAdapter extends BaseAdapter {
 
-	private LayoutInflater mInflater = null;
-	private Feed feed = null;
-	private ViewHolder holder = null;
-	private static int DEFAULT_VALUE = 0;
+	private LayoutInflater mInflater;
+	private Feed feed;
+	private ViewHolder holder;
 	
 	static class ViewHolder {
-		private TextView tvTitle;
-		private TextView tvCategory;
-		private TextView tvDescription;
+		TextView tvTitle;
+		TextView tvCategory;
+		TextView tvDescription;
 	}
 	
 	public FeedAdapter(Context context, Feed feed) {
@@ -43,7 +42,7 @@ public class FeedAdapter extends BaseAdapter {
 
 	@Override
 	public long getItemId(int position) {
-		return DEFAULT_VALUE;
+		return 0;
 	}
 
 	@Override

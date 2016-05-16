@@ -16,17 +16,15 @@ import android.widget.TextView;
 import android.view.Gravity;
 
 public class IndicativeAdapter extends BaseAdapter{
-
-    public static final int AMOUNT_OF_STATES = 28;
-    public static final int INDICATIVE = 0;
-    public static final int STATE_VALUES = 1;
-    private HashMap<String, String> state = null;
-	private String selectedIndicative = "";
-	private String tittle = "";
-	private Context context = null;
-	private ViewHolder holder = null;
-	private LayoutInflater inflater = null;
-	private String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
+	
+	private HashMap<String, String> state;
+	private String choosedIndicative;
+	private String tittle;
+	private Context context;
+	private ViewHolder holder;
+	private LayoutInflater inflater;
+	
+	String bandeiras[] = {"acre", "alagoas", "amapa", "amazonas", "bahia", 
 			"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 			"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
 			"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
@@ -39,8 +37,8 @@ public class IndicativeAdapter extends BaseAdapter{
 		private ImageView tvFlags;
 	}
 	
-	public IndicativeAdapter(String tittle, String selectedIndicative, Context context){
-		this.selectedIndicative = selectedIndicative;
+	public IndicativeAdapter(String tittle, String choosedIndicative, Context context){
+		this.choosedIndicative = choosedIndicative;
 		this.tittle = tittle;
 		this.context = context;
 		this.inflater = LayoutInflater.from(context);
@@ -48,7 +46,7 @@ public class IndicativeAdapter extends BaseAdapter{
 	
 	@Override
 	public int getCount() {
-		return AMOUNT_OF_STATES;
+		return 28;
 	}
 
 	@Override
@@ -82,19 +80,18 @@ public class IndicativeAdapter extends BaseAdapter{
 			holder = (ViewHolder) view.getTag();
 		}
 		
-		if(position == INDICATIVE){
+		if(position == 0){//Titulo
 			holder.tvName.setText(tittle);
 			holder.tvName.setGravity(Gravity.CENTER_HORIZONTAL);
 			holder.tvIndicativeValue.setVisibility(View.GONE);
 			holder.tvFlags.setImageResource(NO_SELECTION);
-		} else {
+		} else {//Indicativos e seus valores
 			state = getItem(position-1);
 			holder.tvName.setText(state.get("nome"));
-			holder.tvIndicativeValue.setText( getValue(state.get(selectedIndicative)) );
+			holder.tvIndicativeValue.setText( getValue(state.get(choosedIndicative)) );
 			holder.tvIndicativeValue.setVisibility(View.VISIBLE);
 			
-			int idFlag = context.getResources().getIdentifier(flags[position-1], "drawable", context
-					.getPackageName());
+			int idFlag = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
 			holder.tvFlags.setImageResource(idFlag);
 		}
 		
@@ -102,15 +99,12 @@ public class IndicativeAdapter extends BaseAdapter{
 		return view;
 	}
 	
-        private String getValue(String line) {
-        String value = "";
-		if (line.contains(":")) {
-			String values[] = line.split(": ");
-			value = values[STATE_VALUES];
-		} else {
-            value = line;
-        }
+	private String getValue(String linha) {
+		if (linha.contains(":")) {
+			String partes[] = linha.split(": ");
+			return partes[1];
+		}
 		
-		return value;
+		return linha;
 	}
 }
