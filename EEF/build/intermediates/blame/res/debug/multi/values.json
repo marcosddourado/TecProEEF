@@ -11,14 +11,7 @@
                     "endOffset": 89
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/colors.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 38,
-                        "endOffset": 89
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/colors.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 129
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/color.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 5,
-                        "startOffset": 56,
-                        "endColumn": 40,
-                        "endOffset": 91
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/color.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 187
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 89,
-                        "endColumn": 57,
-                        "endOffset": 142
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/dimens.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 243
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/dimens.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 147,
-                        "endColumn": 55,
-                        "endOffset": 198
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/dimens.xml"
                 }
             },
             {
@@ -87,14 +59,7 @@
                     "endOffset": 327
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 99,
-                        "startColumn": 4,
-                        "startOffset": 7217,
-                        "endColumn": 83,
-                        "endOffset": 7296
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
@@ -106,14 +71,7 @@
                     "endOffset": 410
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 100,
-                        "startColumn": 4,
-                        "startOffset": 7301,
-                        "endColumn": 82,
-                        "endOffset": 7379
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
@@ -125,14 +83,7 @@
                     "endOffset": 448
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 145,
-                        "startColumn": 4,
-                        "startOffset": 10941,
-                        "endColumn": 37,
-                        "endOffset": 10974
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
@@ -144,14 +95,7 @@
                     "endOffset": 501
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 2625,
-                        "endColumn": 52,
-                        "endOffset": 2673
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
@@ -163,14 +107,7 @@
                     "endOffset": 545
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 146,
-                        "startColumn": 4,
-                        "startOffset": 10979,
-                        "endColumn": 43,
-                        "endOffset": 11018
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
@@ -178,8 +115,8 @@
                     "startLine": 11,
                     "startColumn": 4,
                     "startOffset": 550,
-                    "endColumn": 110,
-                    "endOffset": 656
+                    "endColumn": 109,
+                    "endOffset": 655
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
@@ -187,8 +124,8 @@
                         "startLine": 74,
                         "startColumn": 4,
                         "startOffset": 5267,
-                        "endColumn": 110,
-                        "endOffset": 5373
+                        "endColumn": 109,
+                        "endOffset": 5372
                     }
                 }
             },
@@ -196,18 +133,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 661,
-                    "endColumn": 98,
-                    "endOffset": 755
+                    "startOffset": 660,
+                    "endColumn": 104,
+                    "endOffset": 760
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
                         "startLine": 75,
                         "startColumn": 4,
-                        "startOffset": 5378,
-                        "endColumn": 98,
-                        "endOffset": 5472
+                        "startOffset": 5377,
+                        "endColumn": 104,
+                        "endOffset": 5477
                     }
                 }
             },
@@ -215,379 +152,246 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 760,
+                    "startOffset": 765,
                     "endColumn": 39,
-                    "endOffset": 795
+                    "endOffset": 800
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 147,
-                        "startColumn": 4,
-                        "startOffset": 11023,
-                        "endColumn": 39,
-                        "endOffset": 11058
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 800,
+                    "startOffset": 805,
                     "endColumn": 45,
-                    "endOffset": 841
+                    "endOffset": 846
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 148,
-                        "startColumn": 4,
-                        "startOffset": 11063,
-                        "endColumn": 45,
-                        "endOffset": 11104
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 846,
+                    "startOffset": 851,
                     "endColumn": 53,
-                    "endOffset": 895
+                    "endOffset": 900
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 2571,
-                        "endColumn": 53,
-                        "endOffset": 2620
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 900,
+                    "startOffset": 905,
                     "endColumn": 39,
-                    "endOffset": 935
+                    "endOffset": 940
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 149,
-                        "startColumn": 4,
-                        "startOffset": 11109,
-                        "endColumn": 39,
-                        "endOffset": 11144
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 940,
+                    "startOffset": 945,
                     "endColumn": 48,
-                    "endOffset": 984
+                    "endOffset": 989
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 111,
-                        "startColumn": 4,
-                        "startOffset": 7895,
-                        "endColumn": 48,
-                        "endOffset": 7939
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 989,
+                    "startOffset": 994,
                     "endColumn": 60,
-                    "endOffset": 1045
+                    "endOffset": 1050
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 2807,
-                        "endColumn": 60,
-                        "endOffset": 2863
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1050,
+                    "startOffset": 1055,
                     "endColumn": 54,
-                    "endOffset": 1100
+                    "endOffset": 1105
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 110,
-                        "startColumn": 4,
-                        "startOffset": 7840,
-                        "endColumn": 54,
-                        "endOffset": 7890
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1105,
+                    "startOffset": 1110,
                     "endColumn": 62,
-                    "endOffset": 1163
+                    "endOffset": 1168
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 107,
-                        "startColumn": 4,
-                        "startOffset": 7730,
-                        "endColumn": 62,
-                        "endOffset": 7788
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1168,
+                    "startOffset": 1173,
                     "endColumn": 59,
-                    "endOffset": 1223
+                    "endOffset": 1228
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 3374,
-                        "endColumn": 59,
-                        "endOffset": 3429
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1228,
+                    "startOffset": 1233,
                     "endColumn": 45,
-                    "endOffset": 1269
+                    "endOffset": 1274
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 132,
-                        "startColumn": 4,
-                        "startOffset": 9852,
-                        "endColumn": 45,
-                        "endOffset": 9893
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1274,
+                    "startOffset": 1279,
                     "endColumn": 194,
-                    "endOffset": 1464
+                    "endOffset": 1469
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 133,
-                        "startColumn": 4,
-                        "startOffset": 9898,
-                        "endColumn": 194,
-                        "endOffset": 10088
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1469,
+                    "startOffset": 1474,
                     "endColumn": 355,
-                    "endOffset": 1820
+                    "endOffset": 1825
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 142,
-                        "startColumn": 4,
-                        "startOffset": 10518,
-                        "endColumn": 355,
-                        "endOffset": 10869
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1825,
+                    "startOffset": 1830,
                     "endColumn": 53,
-                    "endOffset": 1874
+                    "endOffset": 1879
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 47,
-                        "startColumn": 4,
-                        "startOffset": 3266,
-                        "endColumn": 53,
-                        "endOffset": 3315
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1879,
+                    "startOffset": 1884,
                     "endColumn": 46,
-                    "endOffset": 1921
+                    "endOffset": 1926
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 93,
-                        "startColumn": 4,
-                        "startOffset": 6932,
-                        "endColumn": 46,
-                        "endOffset": 6974
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1926,
+                    "startOffset": 1931,
                     "endColumn": 46,
-                    "endOffset": 1968
+                    "endOffset": 1973
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 89,
-                        "startColumn": 4,
-                        "startOffset": 6779,
-                        "endColumn": 46,
-                        "endOffset": 6821
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1973,
+                    "startOffset": 1978,
                     "endColumn": 50,
-                    "endOffset": 2019
+                    "endOffset": 2024
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 92,
-                        "startColumn": 4,
-                        "startOffset": 6881,
-                        "endColumn": 50,
-                        "endOffset": 6927
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2024,
+                    "startOffset": 2029,
                     "endColumn": 80,
-                    "endOffset": 2100
+                    "endOffset": 2105
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 137,
-                        "startColumn": 4,
-                        "startOffset": 10233,
-                        "endColumn": 80,
-                        "endOffset": 10309
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2105,
+                    "startOffset": 2110,
                     "endColumn": 39,
-                    "endOffset": 2140
+                    "endOffset": 2145
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 150,
-                        "startColumn": 4,
-                        "startOffset": 11149,
-                        "endColumn": 39,
-                        "endOffset": 11184
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 2145,
+                    "startOffset": 2150,
                     "endColumn": 62,
-                    "endOffset": 2203
+                    "endOffset": 2208
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 73,
-                        "startColumn": 4,
-                        "startOffset": 5204,
-                        "endColumn": 62,
-                        "endOffset": 5262
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2208,
-                    "endColumn": 124,
-                    "endOffset": 2328
+                    "startOffset": 2213,
+                    "endColumn": 123,
+                    "endOffset": 2332
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
                         "startLine": 85,
                         "startColumn": 4,
-                        "startOffset": 6374,
-                        "endColumn": 124,
-                        "endOffset": 6494
+                        "startOffset": 6400,
+                        "endColumn": 123,
+                        "endOffset": 6519
                     }
                 }
             },
@@ -595,18 +399,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2333,
-                    "endColumn": 128,
-                    "endOffset": 2457
+                    "startOffset": 2337,
+                    "endColumn": 127,
+                    "endOffset": 2460
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
                         "startLine": 84,
                         "startColumn": 4,
-                        "startOffset": 6245,
-                        "endColumn": 128,
-                        "endOffset": 6369
+                        "startOffset": 6272,
+                        "endColumn": 127,
+                        "endOffset": 6395
                     }
                 }
             },
@@ -614,18 +418,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2462,
-                    "endColumn": 93,
-                    "endOffset": 2551
+                    "startOffset": 2465,
+                    "endColumn": 92,
+                    "endOffset": 2553
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
                         "startLine": 88,
                         "startColumn": 4,
-                        "startOffset": 6685,
-                        "endColumn": 93,
-                        "endOffset": 6774
+                        "startOffset": 6722,
+                        "endColumn": 92,
+                        "endOffset": 6810
                     }
                 }
             },
@@ -633,18 +437,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2556,
-                    "endColumn": 93,
-                    "endOffset": 2645
+                    "startOffset": 2558,
+                    "endColumn": 99,
+                    "endOffset": 2653
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
-                        "startOffset": 6591,
-                        "endColumn": 93,
-                        "endOffset": 6680
+                        "startOffset": 6622,
+                        "endColumn": 99,
+                        "endOffset": 6717
                     }
                 }
             },
@@ -652,18 +456,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 2650,
-                    "endColumn": 91,
-                    "endOffset": 2737
+                    "startOffset": 2658,
+                    "endColumn": 97,
+                    "endOffset": 2751
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
                         "startLine": 86,
                         "startColumn": 4,
-                        "startOffset": 6499,
-                        "endColumn": 91,
-                        "endOffset": 6586
+                        "startOffset": 6524,
+                        "endColumn": 97,
+                        "endOffset": 6617
                     }
                 }
             },
@@ -671,229 +475,151 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2742,
+                    "startOffset": 2756,
                     "endColumn": 52,
-                    "endOffset": 2790
+                    "endOffset": 2804
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 104,
-                        "startColumn": 4,
-                        "startOffset": 7579,
-                        "endColumn": 52,
-                        "endOffset": 7627
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2795,
+                    "startOffset": 2809,
                     "endColumn": 137,
-                    "endOffset": 2928
+                    "endOffset": 2942
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 223,
-                        "startColumn": 4,
-                        "startOffset": 17322,
-                        "endColumn": 137,
-                        "endOffset": 17455
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2933,
+                    "startOffset": 2947,
                     "endColumn": 153,
-                    "endOffset": 3082
+                    "endOffset": 3096
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 224,
-                        "startColumn": 4,
-                        "startOffset": 17460,
-                        "endColumn": 153,
-                        "endOffset": 17609
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3087,
+                    "startOffset": 3101,
                     "endColumn": 213,
-                    "endOffset": 3296
+                    "endOffset": 3310
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 210,
-                        "startColumn": 4,
-                        "startOffset": 16168,
-                        "endColumn": 213,
-                        "endOffset": 16377
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 3301,
+                    "startOffset": 3315,
                     "endColumn": 230,
-                    "endOffset": 3527
+                    "endOffset": 3541
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 209,
-                        "startColumn": 4,
-                        "startOffset": 15937,
-                        "endColumn": 230,
-                        "endOffset": 16163
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3532,
+                    "startOffset": 3546,
                     "endColumn": 213,
-                    "endOffset": 3741
+                    "endOffset": 3755
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 201,
-                        "startColumn": 4,
-                        "startOffset": 14869,
-                        "endColumn": 213,
-                        "endOffset": 15078
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3746,
+                    "startOffset": 3760,
                     "endColumn": 431,
-                    "endOffset": 4173
+                    "endOffset": 4187
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 206,
-                        "startColumn": 4,
-                        "startOffset": 15452,
-                        "endColumn": 431,
-                        "endOffset": 15879
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 4178,
+                    "startOffset": 4192,
                     "endColumn": 228,
-                    "endOffset": 4402
+                    "endOffset": 4416
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 179,
-                        "startColumn": 4,
-                        "startOffset": 12867,
-                        "endColumn": 228,
-                        "endOffset": 13091
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 4407,
+                    "startOffset": 4421,
                     "endColumn": 338,
-                    "endOffset": 4741
+                    "endOffset": 4755
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 175,
-                        "startColumn": 4,
-                        "startOffset": 12374,
-                        "endColumn": 338,
-                        "endOffset": 12708
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 4746,
+                    "startOffset": 4760,
                     "endLine": 49,
                     "endColumn": 141,
-                    "endOffset": 5145
+                    "endOffset": 5159
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 183,
-                        "startColumn": 4,
-                        "startOffset": 13209,
-                        "endLine": 186,
-                        "endColumn": 141,
-                        "endOffset": 13608
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 5150,
+                    "startOffset": 5164,
                     "endColumn": 47,
-                    "endOffset": 5193
+                    "endOffset": 5207
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 151,
-                        "startColumn": 4,
-                        "startOffset": 11189,
-                        "endColumn": 47,
-                        "endOffset": 11232
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 5198,
-                    "endColumn": 150,
-                    "endOffset": 5344
+                    "startOffset": 5212,
+                    "endColumn": 74,
+                    "endOffset": 5282
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 239,
+                        "startLine": 70,
                         "startColumn": 4,
-                        "startOffset": 18618,
-                        "endColumn": 150,
-                        "endOffset": 18764
+                        "startOffset": 4988,
+                        "endColumn": 74,
+                        "endOffset": 5058
                     }
                 }
             },
@@ -901,18 +627,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 5349,
-                    "endColumn": 55,
-                    "endOffset": 5400
+                    "startOffset": 5287,
+                    "endColumn": 110,
+                    "endOffset": 5393
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 152,
+                        "startLine": 78,
                         "startColumn": 4,
-                        "startOffset": 11237,
-                        "endColumn": 55,
-                        "endOffset": 11288
+                        "startOffset": 5677,
+                        "endColumn": 110,
+                        "endOffset": 5783
                     }
                 }
             },
@@ -920,18 +646,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 5405,
-                    "endColumn": 307,
-                    "endOffset": 5708
+                    "startOffset": 5398,
+                    "endColumn": 105,
+                    "endOffset": 5499
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 230,
+                        "startLine": 79,
                         "startColumn": 4,
-                        "startOffset": 17826,
-                        "endColumn": 307,
-                        "endOffset": 18129
+                        "startOffset": 5788,
+                        "endColumn": 105,
+                        "endOffset": 5889
                     }
                 }
             },
@@ -939,132 +665,90 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 5713,
-                    "endColumn": 64,
-                    "endOffset": 5773
+                    "startOffset": 5504,
+                    "endColumn": 150,
+                    "endOffset": 5650
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 103,
-                        "startColumn": 4,
-                        "startOffset": 7514,
-                        "endColumn": 64,
-                        "endOffset": 7574
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 5778,
-                    "endColumn": 39,
-                    "endOffset": 5813
+                    "startOffset": 5655,
+                    "endColumn": 55,
+                    "endOffset": 5706
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 153,
-                        "startColumn": 4,
-                        "startOffset": 11293,
-                        "endColumn": 39,
-                        "endOffset": 11328
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 5818,
-                    "endColumn": 104,
-                    "endOffset": 5918
+                    "startOffset": 5711,
+                    "endColumn": 307,
+                    "endOffset": 6014
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 236,
-                        "startColumn": 4,
-                        "startOffset": 18442,
-                        "endColumn": 104,
-                        "endOffset": 18542
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 5923,
-                    "endColumn": 73,
-                    "endOffset": 5992
+                    "startOffset": 6019,
+                    "endColumn": 64,
+                    "endOffset": 6079
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 69,
-                        "startColumn": 4,
-                        "startOffset": 4915,
-                        "endColumn": 73,
-                        "endOffset": 4984
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 5997,
-                    "endColumn": 100,
-                    "endOffset": 6093
+                    "startOffset": 6084,
+                    "endColumn": 39,
+                    "endOffset": 6119
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 76,
-                        "startColumn": 4,
-                        "startOffset": 5477,
-                        "endColumn": 100,
-                        "endOffset": 5573
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 6098,
-                    "endColumn": 88,
-                    "endOffset": 6182
+                    "startOffset": 6124,
+                    "endColumn": 104,
+                    "endOffset": 6224
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 77,
-                        "startColumn": 4,
-                        "startOffset": 5578,
-                        "endColumn": 88,
-                        "endOffset": 5662
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 6187,
-                    "endColumn": 87,
-                    "endOffset": 6270
+                    "startOffset": 6229,
+                    "endColumn": 99,
+                    "endOffset": 6324
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 120,
+                        "startLine": 76,
                         "startColumn": 4,
-                        "startOffset": 8596,
-                        "endColumn": 87,
-                        "endOffset": 8679
+                        "startOffset": 5482,
+                        "endColumn": 99,
+                        "endOffset": 5577
                     }
                 }
             },
@@ -1072,20 +756,30 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 6275,
-                    "endLine": 62,
-                    "endColumn": 47,
-                    "endOffset": 6458
+                    "startOffset": 6329,
+                    "endColumn": 73,
+                    "endOffset": 6398
+                },
+                "from": {
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 6403,
+                    "endColumn": 94,
+                    "endOffset": 6493
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 121,
+                        "startLine": 77,
                         "startColumn": 4,
-                        "startOffset": 8684,
-                        "endLine": 122,
-                        "endColumn": 47,
-                        "endOffset": 8867
+                        "startOffset": 5582,
+                        "endColumn": 94,
+                        "endOffset": 5672
                     }
                 }
             },
@@ -1093,193 +787,117 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6463,
-                    "endColumn": 140,
-                    "endOffset": 6599
+                    "startOffset": 6498,
+                    "endColumn": 87,
+                    "endOffset": 6581
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 189,
-                        "startColumn": 4,
-                        "startOffset": 13839,
-                        "endColumn": 140,
-                        "endOffset": 13975
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6604,
-                    "endColumn": 219,
-                    "endOffset": 6819
+                    "startOffset": 6586,
+                    "endLine": 65,
+                    "endColumn": 47,
+                    "endOffset": 6769
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 196,
-                        "startColumn": 4,
-                        "startOffset": 14451,
-                        "endColumn": 219,
-                        "endOffset": 14666
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 65,
-                    "startColumn": 4,
-                    "startOffset": 6824,
-                    "endColumn": 225,
-                    "endOffset": 7045
-                },
-                "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 202,
-                        "startColumn": 4,
-                        "startOffset": 15083,
-                        "endColumn": 225,
-                        "endOffset": 15304
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 7050,
-                    "endLine": 67,
-                    "endColumn": 104,
-                    "endOffset": 7271
+                    "startOffset": 6774,
+                    "endColumn": 140,
+                    "endOffset": 6910
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 187,
-                        "startColumn": 4,
-                        "startOffset": 13613,
-                        "endLine": 188,
-                        "endColumn": 104,
-                        "endOffset": 13834
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 6915,
+                    "endColumn": 219,
+                    "endOffset": 7130
+                },
+                "from": {
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 7276,
-                    "endLine": 69,
-                    "endColumn": 103,
-                    "endOffset": 7495
+                    "startOffset": 7135,
+                    "endColumn": 225,
+                    "endOffset": 7356
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 192,
-                        "startColumn": 4,
-                        "startOffset": 14108,
-                        "endLine": 193,
-                        "endColumn": 103,
-                        "endOffset": 14327
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 70,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 7500,
-                    "endColumn": 69,
-                    "endOffset": 7565
+                    "startOffset": 7361,
+                    "endLine": 70,
+                    "endColumn": 104,
+                    "endOffset": 7582
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 101,
-                        "startColumn": 4,
-                        "startOffset": 7384,
-                        "endColumn": 69,
-                        "endOffset": 7449
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 7570,
-                    "endColumn": 87,
-                    "endOffset": 7653
+                    "startOffset": 7587,
+                    "endLine": 72,
+                    "endColumn": 103,
+                    "endOffset": 7806
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 65,
-                        "startColumn": 4,
-                        "startOffset": 4594,
-                        "endColumn": 87,
-                        "endOffset": 4677
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 72,
-                    "startColumn": 4,
-                    "startOffset": 7658,
-                    "endColumn": 80,
-                    "endOffset": 7734
-                },
-                "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 64,
-                        "startColumn": 4,
-                        "startOffset": 4513,
-                        "endColumn": 80,
-                        "endOffset": 4589
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 7739,
-                    "endColumn": 113,
-                    "endOffset": 7848
+                    "startOffset": 7811,
+                    "endColumn": 69,
+                    "endOffset": 7876
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 227,
-                        "startColumn": 4,
-                        "startOffset": 17663,
-                        "endColumn": 113,
-                        "endOffset": 17772
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 7853,
-                    "endColumn": 45,
-                    "endOffset": 7894
+                    "startOffset": 7881,
+                    "endColumn": 86,
+                    "endOffset": 7963
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 154,
+                        "startLine": 65,
                         "startColumn": 4,
-                        "startOffset": 11333,
-                        "endColumn": 45,
-                        "endOffset": 11374
+                        "startOffset": 4595,
+                        "endColumn": 86,
+                        "endOffset": 4677
                     }
                 }
             },
@@ -1287,360 +905,234 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 7899,
-                    "endColumn": 50,
-                    "endOffset": 7945
+                    "startOffset": 7968,
+                    "endColumn": 80,
+                    "endOffset": 8044
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 156,
-                        "startColumn": 4,
-                        "startOffset": 11442,
-                        "endColumn": 50,
-                        "endOffset": 11488
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 7950,
-                    "endColumn": 62,
-                    "endOffset": 8008
+                    "startOffset": 8049,
+                    "endColumn": 113,
+                    "endOffset": 8158
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 155,
-                        "startColumn": 4,
-                        "startOffset": 11379,
-                        "endColumn": 62,
-                        "endOffset": 11437
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 8013,
-                    "endColumn": 83,
-                    "endOffset": 8092
+                    "startOffset": 8163,
+                    "endColumn": 45,
+                    "endOffset": 8204
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 68,
-                        "startColumn": 4,
-                        "startOffset": 4831,
-                        "endColumn": 83,
-                        "endOffset": 4910
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 8097,
-                    "endColumn": 58,
-                    "endOffset": 8151
+                    "startOffset": 8209,
+                    "endColumn": 50,
+                    "endOffset": 8255
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 2748,
-                        "endColumn": 58,
-                        "endOffset": 2802
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 8156,
-                    "endColumn": 56,
-                    "endOffset": 8208
+                    "startOffset": 8260,
+                    "endColumn": 62,
+                    "endOffset": 8318
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 3015,
-                        "endColumn": 56,
-                        "endOffset": 3067
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 8213,
-                    "endColumn": 86,
-                    "endOffset": 8295
+                    "startOffset": 8323,
+                    "endColumn": 83,
+                    "endOffset": 8402
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 3125,
-                        "endColumn": 86,
-                        "endOffset": 3207
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 8300,
-                    "endColumn": 52,
-                    "endOffset": 8348
+                    "startOffset": 8407,
+                    "endColumn": 58,
+                    "endOffset": 8461
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 43,
-                        "startColumn": 4,
-                        "startOffset": 3072,
-                        "endColumn": 52,
-                        "endOffset": 3120
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 8353,
-                    "endColumn": 69,
-                    "endOffset": 8418
+                    "startOffset": 8466,
+                    "endColumn": 56,
+                    "endOffset": 8518
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 2678,
-                        "endColumn": 69,
-                        "endOffset": 2743
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 8423,
-                    "endColumn": 52,
-                    "endOffset": 8471
+                    "startOffset": 8523,
+                    "endColumn": 86,
+                    "endOffset": 8605
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 157,
-                        "startColumn": 4,
-                        "startOffset": 11493,
-                        "endColumn": 52,
-                        "endOffset": 11541
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 8476,
-                    "endColumn": 206,
-                    "endOffset": 8678
+                    "startOffset": 8610,
+                    "endColumn": 52,
+                    "endOffset": 8658
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 211,
-                        "startColumn": 4,
-                        "startOffset": 16382,
-                        "endColumn": 206,
-                        "endOffset": 16584
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 8683,
-                    "endColumn": 75,
-                    "endOffset": 8754
+                    "startOffset": 8663,
+                    "endColumn": 69,
+                    "endOffset": 8728
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 97,
-                        "startColumn": 4,
-                        "startOffset": 7090,
-                        "endColumn": 75,
-                        "endOffset": 7161
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 8759,
-                    "endColumn": 37,
-                    "endOffset": 8792
+                    "startOffset": 8733,
+                    "endColumn": 52,
+                    "endOffset": 8781
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 158,
-                        "startColumn": 4,
-                        "startOffset": 11546,
-                        "endColumn": 37,
-                        "endOffset": 11579
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 8797,
-                    "endColumn": 43,
-                    "endOffset": 8836
+                    "startOffset": 8786,
+                    "endColumn": 206,
+                    "endOffset": 8988
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 159,
-                        "startColumn": 4,
-                        "startOffset": 11584,
-                        "endColumn": 43,
-                        "endOffset": 11623
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 8841,
-                    "endColumn": 41,
-                    "endOffset": 8878
+                    "startOffset": 8993,
+                    "endColumn": 75,
+                    "endOffset": 9064
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 160,
-                        "startColumn": 4,
-                        "startOffset": 11628,
-                        "endColumn": 41,
-                        "endOffset": 11665
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 8883,
-                    "endColumn": 50,
-                    "endOffset": 8929
+                    "startOffset": 9069,
+                    "endColumn": 37,
+                    "endOffset": 9102
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 98,
-                        "startColumn": 4,
-                        "startOffset": 7166,
-                        "endColumn": 50,
-                        "endOffset": 7212
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 8934,
-                    "endColumn": 107,
-                    "endOffset": 9037
+                    "startOffset": 9107,
+                    "endColumn": 43,
+                    "endOffset": 9146
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 58,
-                        "startColumn": 4,
-                        "startOffset": 3940,
-                        "endColumn": 107,
-                        "endOffset": 4043
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 9042,
-                    "endColumn": 111,
-                    "endOffset": 9149
+                    "startOffset": 9151,
+                    "endColumn": 41,
+                    "endOffset": 9188
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 57,
-                        "startColumn": 4,
-                        "startOffset": 3828,
-                        "endColumn": 111,
-                        "endOffset": 3935
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 9154,
-                    "endColumn": 72,
-                    "endOffset": 9222
+                    "startOffset": 9193,
+                    "endColumn": 50,
+                    "endOffset": 9239
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 59,
-                        "startColumn": 4,
-                        "startOffset": 4048,
-                        "endColumn": 72,
-                        "endOffset": 4116
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 9227,
-                    "endColumn": 73,
-                    "endOffset": 9296
+                    "startOffset": 9244,
+                    "endColumn": 106,
+                    "endOffset": 9346
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 96,
+                        "startLine": 58,
                         "startColumn": 4,
-                        "startOffset": 7016,
-                        "endColumn": 73,
-                        "endOffset": 7085
+                        "startOffset": 3938,
+                        "endColumn": 106,
+                        "endOffset": 4040
                     }
                 }
             },
@@ -1648,18 +1140,18 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 9301,
-                    "endColumn": 88,
-                    "endOffset": 9385
+                    "startOffset": 9351,
+                    "endColumn": 110,
+                    "endOffset": 9457
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 54,
+                        "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 3534,
-                        "endColumn": 88,
-                        "endOffset": 3618
+                        "startOffset": 3827,
+                        "endColumn": 110,
+                        "endOffset": 3933
                     }
                 }
             },
@@ -1667,18 +1159,18 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 9390,
-                    "endColumn": 87,
-                    "endOffset": 9473
+                    "startOffset": 9462,
+                    "endColumn": 78,
+                    "endOffset": 9536
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 115,
+                        "startLine": 59,
                         "startColumn": 4,
-                        "startOffset": 8054,
-                        "endColumn": 87,
-                        "endOffset": 8137
+                        "startOffset": 4045,
+                        "endColumn": 78,
+                        "endOffset": 4119
                     }
                 }
             },
@@ -1686,189 +1178,126 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 9478,
-                    "endColumn": 148,
-                    "endOffset": 9622
+                    "startOffset": 9541,
+                    "endColumn": 73,
+                    "endOffset": 9610
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 116,
-                        "startColumn": 4,
-                        "startOffset": 8142,
-                        "endColumn": 148,
-                        "endOffset": 8286
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 9627,
-                    "endColumn": 49,
-                    "endOffset": 9672
+                    "startOffset": 9615,
+                    "endColumn": 88,
+                    "endOffset": 9699
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 161,
-                        "startColumn": 4,
-                        "startOffset": 11670,
-                        "endColumn": 49,
-                        "endOffset": 11715
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 9677,
-                    "endColumn": 39,
-                    "endOffset": 9712
+                    "startOffset": 9704,
+                    "endColumn": 87,
+                    "endOffset": 9787
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 162,
-                        "startColumn": 4,
-                        "startOffset": 11720,
-                        "endColumn": 39,
-                        "endOffset": 11755
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 9717,
-                    "endColumn": 47,
-                    "endOffset": 9760
+                    "startOffset": 9792,
+                    "endColumn": 148,
+                    "endOffset": 9936
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 53,
-                        "startColumn": 4,
-                        "startOffset": 3486,
-                        "endColumn": 47,
-                        "endOffset": 3529
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 9765,
-                    "endColumn": 78,
-                    "endOffset": 9839
+                    "startOffset": 9941,
+                    "endColumn": 49,
+                    "endOffset": 9986
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 123,
-                        "startColumn": 4,
-                        "startOffset": 8872,
-                        "endColumn": 78,
-                        "endOffset": 8946
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 9844,
-                    "endColumn": 143,
-                    "endOffset": 9983
+                    "startOffset": 9991,
+                    "endColumn": 39,
+                    "endOffset": 10026
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 124,
-                        "startColumn": 4,
-                        "startOffset": 8951,
-                        "endColumn": 143,
-                        "endOffset": 9090
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 9988,
-                    "endColumn": 101,
-                    "endOffset": 10085
+                    "startOffset": 10031,
+                    "endColumn": 47,
+                    "endOffset": 10074
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 61,
-                        "startColumn": 4,
-                        "startOffset": 4216,
-                        "endColumn": 101,
-                        "endOffset": 4313
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 10090,
-                    "endColumn": 94,
-                    "endOffset": 10180
+                    "startOffset": 10079,
+                    "endColumn": 78,
+                    "endOffset": 10153
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 60,
-                        "startColumn": 4,
-                        "startOffset": 4121,
-                        "endColumn": 94,
-                        "endOffset": 4211
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 10185,
-                    "endColumn": 59,
-                    "endOffset": 10240
+                    "startOffset": 10158,
+                    "endColumn": 143,
+                    "endOffset": 10297
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 102,
-                        "startColumn": 4,
-                        "startOffset": 7454,
-                        "endColumn": 59,
-                        "endOffset": 7509
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 10245,
-                    "endColumn": 77,
-                    "endOffset": 10318
+                    "startOffset": 10302,
+                    "endColumn": 100,
+                    "endOffset": 10398
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 67,
+                        "startLine": 61,
                         "startColumn": 4,
-                        "startOffset": 4753,
-                        "endColumn": 77,
-                        "endOffset": 4826
+                        "startOffset": 4219,
+                        "endColumn": 100,
+                        "endOffset": 4315
                     }
                 }
             },
@@ -1876,56 +1305,42 @@
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 10323,
-                    "endColumn": 70,
-                    "endOffset": 10389
+                    "startOffset": 10403,
+                    "endColumn": 94,
+                    "endOffset": 10493
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 66,
-                        "startColumn": 4,
-                        "startOffset": 4682,
-                        "endColumn": 70,
-                        "endOffset": 4748
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 10394,
-                    "endColumn": 85,
-                    "endOffset": 10475
+                    "startOffset": 10498,
+                    "endColumn": 59,
+                    "endOffset": 10553
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 125,
-                        "startColumn": 4,
-                        "startOffset": 9095,
-                        "endColumn": 85,
-                        "endOffset": 9176
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 10480,
-                    "endColumn": 146,
-                    "endOffset": 10622
+                    "startOffset": 10558,
+                    "endColumn": 76,
+                    "endOffset": 10630
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 126,
+                        "startLine": 67,
                         "startColumn": 4,
-                        "startOffset": 9181,
-                        "endColumn": 146,
-                        "endOffset": 9323
+                        "startOffset": 4753,
+                        "endColumn": 76,
+                        "endOffset": 4825
                     }
                 }
             },
@@ -1933,49 +1348,70 @@
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 10627,
-                    "endColumn": 77,
-                    "endOffset": 10700
+                    "startOffset": 10635,
+                    "endColumn": 70,
+                    "endOffset": 10701
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 117,
-                        "startColumn": 4,
-                        "startOffset": 8291,
-                        "endColumn": 77,
-                        "endOffset": 8364
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 10705,
-                    "endLine": 111,
-                    "endColumn": 99,
-                    "endOffset": 10927
+                    "startOffset": 10706,
+                    "endColumn": 85,
+                    "endOffset": 10787
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 118,
-                        "startColumn": 4,
-                        "startOffset": 8369,
-                        "endLine": 119,
-                        "endColumn": 99,
-                        "endOffset": 8591
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 10792,
+                    "endColumn": 146,
+                    "endOffset": 10934
+                },
+                "from": {
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 10932,
-                    "endColumn": 105,
-                    "endOffset": 11033
+                    "startOffset": 10939,
+                    "endColumn": 77,
+                    "endOffset": 11012
+                },
+                "from": {
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 11017,
+                    "endLine": 114,
+                    "endColumn": 99,
+                    "endOffset": 11239
+                },
+                "from": {
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 11244,
+                    "endColumn": 104,
+                    "endOffset": 11344
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
@@ -1983,65 +1419,8 @@
                         "startLine": 56,
                         "startColumn": 4,
                         "startOffset": 3722,
-                        "endColumn": 105,
-                        "endOffset": 3823
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 113,
-                    "startColumn": 4,
-                    "startOffset": 11038,
-                    "endColumn": 98,
-                    "endOffset": 11132
-                },
-                "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 55,
-                        "startColumn": 4,
-                        "startOffset": 3623,
-                        "endColumn": 98,
-                        "endOffset": 3717
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 114,
-                    "startColumn": 4,
-                    "startOffset": 11137,
-                    "endColumn": 103,
-                    "endOffset": 11236
-                },
-                "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 130,
-                        "startColumn": 4,
-                        "startOffset": 9614,
-                        "endColumn": 103,
-                        "endOffset": 9713
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 115,
-                    "startColumn": 4,
-                    "startOffset": 11241,
-                    "endColumn": 133,
-                    "endOffset": 11370
-                },
-                "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 131,
-                        "startColumn": 4,
-                        "startOffset": 9718,
-                        "endColumn": 133,
-                        "endOffset": 9847
+                        "endColumn": 104,
+                        "endOffset": 3822
                     }
                 }
             },
@@ -2049,115 +1428,79 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 11375,
-                    "endColumn": 91,
-                    "endOffset": 11462
+                    "startOffset": 11349,
+                    "endColumn": 98,
+                    "endOffset": 11443
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 127,
-                        "startColumn": 4,
-                        "startOffset": 9328,
-                        "endColumn": 91,
-                        "endOffset": 9415
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 11467,
-                    "endLine": 118,
-                    "endColumn": 67,
-                    "endOffset": 11656
+                    "startOffset": 11448,
+                    "endColumn": 103,
+                    "endOffset": 11547
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 128,
-                        "startColumn": 4,
-                        "startOffset": 9420,
-                        "endLine": 129,
-                        "endColumn": 67,
-                        "endOffset": 9609
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 11552,
+                    "endColumn": 133,
+                    "endOffset": 11681
+                },
+                "from": {
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 11661,
-                    "endColumn": 100,
-                    "endOffset": 11757
+                    "startOffset": 11686,
+                    "endColumn": 91,
+                    "endOffset": 11773
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 4412,
-                        "endColumn": 100,
-                        "endOffset": 4508
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 11762,
-                    "endColumn": 93,
-                    "endOffset": 11851
+                    "startOffset": 11778,
+                    "endLine": 121,
+                    "endColumn": 67,
+                    "endOffset": 11967
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 62,
-                        "startColumn": 4,
-                        "startOffset": 4318,
-                        "endColumn": 93,
-                        "endOffset": 4407
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 121,
-                    "startColumn": 4,
-                    "startOffset": 11856,
-                    "endColumn": 53,
-                    "endOffset": 11905
-                },
-                "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 163,
-                        "startColumn": 4,
-                        "startOffset": 11760,
-                        "endColumn": 53,
-                        "endOffset": 11809
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 11910,
-                    "endColumn": 64,
-                    "endOffset": 11970
+                    "startOffset": 11972,
+                    "endColumn": 99,
+                    "endOffset": 12067
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 164,
+                        "startLine": 63,
                         "startColumn": 4,
-                        "startOffset": 11814,
-                        "endColumn": 64,
-                        "endOffset": 11874
+                        "startOffset": 4414,
+                        "endColumn": 99,
+                        "endOffset": 4509
                     }
                 }
             },
@@ -2165,246 +1508,162 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 11975,
-                    "endColumn": 60,
-                    "endOffset": 12031
+                    "startOffset": 12072,
+                    "endColumn": 93,
+                    "endOffset": 12161
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 165,
-                        "startColumn": 4,
-                        "startOffset": 11879,
-                        "endColumn": 60,
-                        "endOffset": 11935
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 12036,
-                    "endColumn": 45,
-                    "endOffset": 12077
+                    "startOffset": 12166,
+                    "endColumn": 53,
+                    "endOffset": 12215
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 166,
-                        "startColumn": 4,
-                        "startOffset": 11940,
-                        "endColumn": 45,
-                        "endOffset": 11981
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 12082,
-                    "endColumn": 43,
-                    "endOffset": 12121
+                    "startOffset": 12220,
+                    "endColumn": 64,
+                    "endOffset": 12280
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 167,
-                        "startColumn": 4,
-                        "startOffset": 11986,
-                        "endColumn": 43,
-                        "endOffset": 12025
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 12126,
-                    "endColumn": 56,
-                    "endOffset": 12178
+                    "startOffset": 12285,
+                    "endColumn": 60,
+                    "endOffset": 12341
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 168,
-                        "startColumn": 4,
-                        "startOffset": 12030,
-                        "endColumn": 56,
-                        "endOffset": 12082
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 12183,
-                    "endColumn": 46,
-                    "endOffset": 12225
+                    "startOffset": 12346,
+                    "endColumn": 45,
+                    "endOffset": 12387
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 169,
-                        "startColumn": 4,
-                        "startOffset": 12087,
-                        "endColumn": 46,
-                        "endOffset": 12129
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 12230,
+                    "startOffset": 12392,
                     "endColumn": 43,
-                    "endOffset": 12269
+                    "endOffset": 12431
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 170,
-                        "startColumn": 4,
-                        "startOffset": 12134,
-                        "endColumn": 43,
-                        "endOffset": 12173
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 12274,
-                    "endColumn": 33,
-                    "endOffset": 12303
+                    "startOffset": 12436,
+                    "endColumn": 56,
+                    "endOffset": 12488
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 41,
-                        "startColumn": 4,
-                        "startOffset": 2973,
-                        "endColumn": 41,
-                        "endOffset": 3010
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 12308,
-                    "endColumn": 40,
-                    "endOffset": 12344
+                    "startOffset": 12493,
+                    "endColumn": 46,
+                    "endOffset": 12535
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 106,
-                        "startColumn": 4,
-                        "startOffset": 7689,
-                        "endColumn": 40,
-                        "endOffset": 7725
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 12349,
-                    "endColumn": 70,
-                    "endOffset": 12415
+                    "startOffset": 12540,
+                    "endColumn": 43,
+                    "endOffset": 12579
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 72,
-                        "startColumn": 4,
-                        "startOffset": 5133,
-                        "endColumn": 70,
-                        "endOffset": 5199
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 12420,
-                    "endColumn": 96,
-                    "endOffset": 12512
+                    "startOffset": 12584,
+                    "endColumn": 33,
+                    "endOffset": 12613
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 82,
-                        "startColumn": 4,
-                        "startOffset": 6063,
-                        "endColumn": 96,
-                        "endOffset": 6155
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 12517,
-                    "endColumn": 84,
-                    "endOffset": 12597
+                    "startOffset": 12618,
+                    "endColumn": 40,
+                    "endOffset": 12654
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 83,
-                        "startColumn": 4,
-                        "startOffset": 6160,
-                        "endColumn": 84,
-                        "endOffset": 6240
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 12602,
-                    "endColumn": 69,
-                    "endOffset": 12667
+                    "startOffset": 12659,
+                    "endColumn": 70,
+                    "endOffset": 12725
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 71,
-                        "startColumn": 4,
-                        "startOffset": 5063,
-                        "endColumn": 69,
-                        "endOffset": 5128
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 12672,
-                    "endColumn": 98,
-                    "endOffset": 12766
+                    "startOffset": 12730,
+                    "endColumn": 95,
+                    "endOffset": 12821
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 80,
+                        "startLine": 82,
                         "startColumn": 4,
-                        "startOffset": 5877,
-                        "endColumn": 98,
-                        "endOffset": 5971
+                        "startOffset": 6085,
+                        "endColumn": 95,
+                        "endOffset": 6176
                     }
                 }
             },
@@ -2412,18 +1671,18 @@
                 "to": {
                     "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 12771,
-                    "endColumn": 86,
-                    "endOffset": 12853
+                    "startOffset": 12826,
+                    "endColumn": 90,
+                    "endOffset": 12912
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 81,
+                        "startLine": 83,
                         "startColumn": 4,
-                        "startOffset": 5976,
-                        "endColumn": 86,
-                        "endOffset": 6058
+                        "startOffset": 6181,
+                        "endColumn": 90,
+                        "endOffset": 6267
                     }
                 }
             },
@@ -2431,37 +1690,30 @@
                 "to": {
                     "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 12858,
-                    "endColumn": 73,
-                    "endOffset": 12927
+                    "startOffset": 12917,
+                    "endColumn": 69,
+                    "endOffset": 12982
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 70,
-                        "startColumn": 4,
-                        "startOffset": 4989,
-                        "endColumn": 73,
-                        "endOffset": 5058
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 12932,
-                    "endColumn": 110,
-                    "endOffset": 13038
+                    "startOffset": 12987,
+                    "endColumn": 97,
+                    "endOffset": 13080
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 78,
+                        "startLine": 80,
                         "startColumn": 4,
-                        "startOffset": 5667,
-                        "endColumn": 110,
-                        "endOffset": 5773
+                        "startOffset": 5894,
+                        "endColumn": 97,
+                        "endOffset": 5987
                     }
                 }
             },
@@ -2469,18 +1721,18 @@
                 "to": {
                     "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 13043,
-                    "endColumn": 98,
-                    "endOffset": 13137
+                    "startOffset": 13085,
+                    "endColumn": 92,
+                    "endOffset": 13173
                 },
                 "from": {
                     "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
                     "position": {
-                        "startLine": 79,
+                        "startLine": 81,
                         "startColumn": 4,
-                        "startOffset": 5778,
-                        "endColumn": 98,
-                        "endOffset": 5872
+                        "startOffset": 5992,
+                        "endColumn": 92,
+                        "endOffset": 6080
                     }
                 }
             },
@@ -2488,1526 +1740,958 @@
                 "to": {
                     "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 13142,
+                    "startOffset": 13178,
                     "endColumn": 58,
-                    "endOffset": 13196
+                    "endOffset": 13232
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 114,
-                        "startColumn": 4,
-                        "startOffset": 7995,
-                        "endColumn": 58,
-                        "endOffset": 8049
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 13201,
+                    "startOffset": 13237,
                     "endColumn": 71,
-                    "endOffset": 13268
+                    "endOffset": 13304
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 182,
-                        "startColumn": 4,
-                        "startOffset": 13137,
-                        "endColumn": 71,
-                        "endOffset": 13204
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 13273,
+                    "startOffset": 13309,
                     "endColumn": 58,
-                    "endOffset": 13327
+                    "endOffset": 13363
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 901,
-                        "endColumn": 58,
-                        "endOffset": 955
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 13332,
+                    "startOffset": 13368,
                     "endColumn": 80,
-                    "endOffset": 13408
+                    "endOffset": 13444
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 231,
-                        "startColumn": 4,
-                        "startOffset": 18134,
-                        "endColumn": 80,
-                        "endOffset": 18210
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 13413,
+                    "startOffset": 13449,
                     "endColumn": 99,
-                    "endOffset": 13508
+                    "endOffset": 13544
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 233,
-                        "startColumn": 4,
-                        "startOffset": 18298,
-                        "endColumn": 99,
-                        "endOffset": 18393
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 13513,
+                    "startOffset": 13549,
                     "endColumn": 81,
-                    "endOffset": 13590
+                    "endOffset": 13626
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1024,
-                        "endColumn": 81,
-                        "endOffset": 1101
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 13595,
+                    "startOffset": 13631,
                     "endColumn": 80,
-                    "endOffset": 13671
+                    "endOffset": 13707
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 87,
-                        "endColumn": 80,
-                        "endOffset": 163
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 13676,
+                    "startOffset": 13712,
                     "endColumn": 82,
-                    "endOffset": 13754
+                    "endOffset": 13790
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 232,
-                        "startColumn": 4,
-                        "startOffset": 18215,
-                        "endColumn": 82,
-                        "endOffset": 18293
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 13759,
+                    "startOffset": 13795,
                     "endColumn": 78,
-                    "endOffset": 13833
+                    "endOffset": 13869
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1244,
-                        "endColumn": 78,
-                        "endOffset": 1318
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 13838,
+                    "startOffset": 13874,
                     "endColumn": 91,
-                    "endOffset": 13925
+                    "endOffset": 13961
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 312,
-                        "endColumn": 91,
-                        "endOffset": 399
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 13930,
+                    "startOffset": 13966,
                     "endColumn": 95,
-                    "endOffset": 14021
+                    "endOffset": 14057
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1323,
-                        "endColumn": 95,
-                        "endOffset": 1414
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 14026,
+                    "startOffset": 14062,
                     "endColumn": 71,
-                    "endOffset": 14093
+                    "endOffset": 14129
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 197,
-                        "startColumn": 4,
-                        "startOffset": 14671,
-                        "endColumn": 71,
-                        "endOffset": 14738
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 14098,
+                    "startOffset": 14134,
                     "endColumn": 74,
-                    "endOffset": 14168
+                    "endOffset": 14204
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 1523,
-                        "endColumn": 74,
-                        "endOffset": 1593
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 14173,
+                    "startOffset": 14209,
                     "endColumn": 96,
-                    "endOffset": 14265
+                    "endOffset": 14301
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 804,
-                        "endColumn": 96,
-                        "endOffset": 896
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 14270,
+                    "startOffset": 14306,
                     "endColumn": 98,
-                    "endOffset": 14364
+                    "endOffset": 14400
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 217,
-                        "startColumn": 4,
-                        "startOffset": 16874,
-                        "endColumn": 98,
-                        "endOffset": 16968
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 14369,
+                    "startOffset": 14405,
                     "endColumn": 76,
-                    "endOffset": 14441
+                    "endOffset": 14477
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 727,
-                        "endColumn": 76,
-                        "endOffset": 799
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 14446,
+                    "startOffset": 14482,
                     "endColumn": 61,
-                    "endOffset": 14503
+                    "endOffset": 14539
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 588,
-                        "endColumn": 61,
-                        "endOffset": 645
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 14508,
+                    "startOffset": 14544,
                     "endColumn": 76,
-                    "endOffset": 14580
+                    "endOffset": 14616
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 650,
-                        "endColumn": 76,
-                        "endOffset": 722
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 14585,
+                    "startOffset": 14621,
                     "endColumn": 63,
-                    "endOffset": 14644
+                    "endOffset": 14680
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 960,
-                        "endColumn": 63,
-                        "endOffset": 1019
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 14649,
+                    "startOffset": 14685,
                     "endColumn": 88,
-                    "endOffset": 14733
+                    "endOffset": 14769
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 1682,
-                        "endColumn": 88,
-                        "endOffset": 1766
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 14738,
+                    "startOffset": 14774,
                     "endColumn": 94,
-                    "endOffset": 14828
+                    "endOffset": 14864
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 404,
-                        "endColumn": 94,
-                        "endOffset": 494
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 14833,
+                    "startOffset": 14869,
                     "endColumn": 77,
-                    "endOffset": 14906
+                    "endOffset": 14942
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 168,
-                        "endColumn": 77,
-                        "endOffset": 241
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 14911,
+                    "startOffset": 14947,
                     "endColumn": 88,
-                    "endOffset": 14995
+                    "endOffset": 15031
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 499,
-                        "endColumn": 88,
-                        "endOffset": 583
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 15000,
+                    "startOffset": 15036,
                     "endColumn": 103,
-                    "endOffset": 15099
+                    "endOffset": 15135
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1419,
-                        "endColumn": 103,
-                        "endOffset": 1518
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 15104,
+                    "startOffset": 15140,
                     "endColumn": 65,
-                    "endOffset": 15165
+                    "endOffset": 15201
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 246,
-                        "endColumn": 65,
-                        "endOffset": 307
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 15170,
+                    "startOffset": 15206,
                     "endColumn": 83,
-                    "endOffset": 15249
+                    "endOffset": 15285
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 1598,
-                        "endColumn": 83,
-                        "endOffset": 1677
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 15254,
+                    "startOffset": 15290,
                     "endColumn": 103,
-                    "endOffset": 15353
+                    "endOffset": 15389
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 2021,
-                        "endColumn": 103,
-                        "endOffset": 2120
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 15358,
+                    "startOffset": 15394,
                     "endColumn": 99,
-                    "endOffset": 15453
+                    "endOffset": 15489
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 220,
-                        "startColumn": 4,
-                        "startOffset": 17028,
-                        "endColumn": 99,
-                        "endOffset": 17123
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 15458,
+                    "startOffset": 15494,
                     "endColumn": 79,
-                    "endOffset": 15533
+                    "endOffset": 15569
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1106,
-                        "endColumn": 79,
-                        "endOffset": 1181
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 15538,
+                    "startOffset": 15574,
                     "endColumn": 100,
-                    "endOffset": 15634
+                    "endOffset": 15670
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 1920,
-                        "endColumn": 100,
-                        "endOffset": 2016
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 15639,
+                    "startOffset": 15675,
                     "endColumn": 119,
-                    "endOffset": 15754
+                    "endOffset": 15790
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 2413,
-                        "endColumn": 119,
-                        "endOffset": 2528
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 15759,
+                    "startOffset": 15795,
                     "endColumn": 67,
-                    "endOffset": 15822
+                    "endOffset": 15858
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 1852,
-                        "endColumn": 67,
-                        "endOffset": 1915
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 15827,
+                    "startOffset": 15863,
                     "endColumn": 75,
-                    "endOffset": 15898
+                    "endOffset": 15934
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 2337,
-                        "endColumn": 75,
-                        "endOffset": 2408
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 15903,
+                    "startOffset": 15939,
                     "endColumn": 107,
-                    "endOffset": 16006
+                    "endOffset": 16042
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 2229,
-                        "endColumn": 107,
-                        "endOffset": 2332
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 16011,
+                    "startOffset": 16047,
                     "endColumn": 80,
-                    "endOffset": 16087
+                    "endOffset": 16123
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 1771,
-                        "endColumn": 80,
-                        "endOffset": 1847
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 16092,
+                    "startOffset": 16128,
                     "endColumn": 103,
-                    "endOffset": 16191
+                    "endOffset": 16227
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 2125,
-                        "endColumn": 103,
-                        "endOffset": 2224
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 16196,
+                    "startOffset": 16232,
                     "endColumn": 49,
-                    "endOffset": 16241
+                    "endOffset": 16277
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 191,
-                        "startColumn": 4,
-                        "startOffset": 14058,
-                        "endColumn": 49,
-                        "endOffset": 14103
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 16246,
+                    "startOffset": 16282,
                     "endColumn": 57,
-                    "endOffset": 16299
+                    "endOffset": 16335
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 195,
-                        "startColumn": 4,
-                        "startOffset": 14393,
-                        "endColumn": 57,
-                        "endOffset": 14446
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 16304,
+                    "startOffset": 16340,
                     "endColumn": 60,
-                    "endOffset": 16360
+                    "endOffset": 16396
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 194,
-                        "startColumn": 4,
-                        "startOffset": 14332,
-                        "endColumn": 60,
-                        "endOffset": 14388
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 16365,
+                    "startOffset": 16401,
                     "endColumn": 67,
-                    "endOffset": 16428
+                    "endOffset": 16464
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 216,
-                        "startColumn": 4,
-                        "startOffset": 16806,
-                        "endColumn": 67,
-                        "endOffset": 16869
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 16433,
+                    "startOffset": 16469,
                     "endColumn": 78,
-                    "endOffset": 16507
+                    "endOffset": 16543
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 139,
-                        "startColumn": 4,
-                        "startOffset": 10384,
-                        "endColumn": 78,
-                        "endOffset": 10458
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 16512,
+                    "startOffset": 16548,
                     "endColumn": 77,
-                    "endOffset": 16585
+                    "endOffset": 16621
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 190,
-                        "startColumn": 4,
-                        "startOffset": 13980,
-                        "endColumn": 77,
-                        "endOffset": 14053
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 16590,
+                    "startOffset": 16626,
                     "endColumn": 69,
-                    "endOffset": 16655
+                    "endOffset": 16691
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 138,
-                        "startColumn": 4,
-                        "startOffset": 10314,
-                        "endColumn": 69,
-                        "endOffset": 10379
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 16660,
+                    "startOffset": 16696,
                     "endColumn": 57,
-                    "endOffset": 16713
+                    "endOffset": 16749
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1186,
-                        "endColumn": 57,
-                        "endOffset": 1239
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 16718,
+                    "startOffset": 16754,
                     "endColumn": 90,
-                    "endOffset": 16804
+                    "endOffset": 16840
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 215,
-                        "startColumn": 4,
-                        "startOffset": 16715,
-                        "endColumn": 90,
-                        "endOffset": 16801
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 16809,
+                    "startOffset": 16845,
                     "endColumn": 84,
-                    "endOffset": 16889
+                    "endOffset": 16925
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 214,
-                        "startColumn": 4,
-                        "startOffset": 16630,
-                        "endColumn": 84,
-                        "endOffset": 16710
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 16894,
+                    "startOffset": 16930,
                     "endColumn": 92,
-                    "endOffset": 16982
+                    "endOffset": 17018
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 221,
-                        "startColumn": 4,
-                        "startOffset": 17128,
-                        "endColumn": 92,
-                        "endOffset": 17216
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 16987,
+                    "startOffset": 17023,
                     "endColumn": 100,
-                    "endOffset": 17083
+                    "endOffset": 17119
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 222,
-                        "startColumn": 4,
-                        "startOffset": 17221,
-                        "endColumn": 100,
-                        "endOffset": 17317
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 17088,
+                    "startOffset": 17124,
                     "endColumn": 67,
-                    "endOffset": 17151
+                    "endOffset": 17187
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 200,
-                        "startColumn": 4,
-                        "startOffset": 14801,
-                        "endColumn": 67,
-                        "endOffset": 14864
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 17156,
+                    "startOffset": 17192,
                     "endColumn": 85,
-                    "endOffset": 17237
+                    "endOffset": 17273
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 205,
-                        "startColumn": 4,
-                        "startOffset": 15366,
-                        "endColumn": 85,
-                        "endOffset": 15447
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 17242,
+                    "startOffset": 17278,
                     "endColumn": 93,
-                    "endOffset": 17331
+                    "endOffset": 17367
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 178,
-                        "startColumn": 4,
-                        "startOffset": 12773,
-                        "endColumn": 93,
-                        "endOffset": 12862
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 17336,
+                    "startOffset": 17372,
                     "endColumn": 89,
-                    "endOffset": 17421
+                    "endOffset": 17457
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 174,
-                        "startColumn": 4,
-                        "startOffset": 12284,
-                        "endColumn": 89,
-                        "endOffset": 12369
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 17426,
+                    "startOffset": 17462,
                     "endColumn": 85,
-                    "endOffset": 17507
+                    "endOffset": 17543
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 136,
-                        "startColumn": 4,
-                        "startOffset": 10147,
-                        "endColumn": 85,
-                        "endOffset": 10228
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 17512,
+                    "startOffset": 17548,
                     "endColumn": 104,
-                    "endOffset": 17612
+                    "endOffset": 17648
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 40,
-                        "startColumn": 4,
-                        "startOffset": 2868,
-                        "endColumn": 104,
-                        "endOffset": 2968
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 17617,
+                    "startOffset": 17653,
                     "endColumn": 56,
-                    "endOffset": 17669
+                    "endOffset": 17705
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 105,
-                        "startColumn": 4,
-                        "startOffset": 7632,
-                        "endColumn": 56,
-                        "endOffset": 7684
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 17674,
+                    "startOffset": 17710,
                     "endColumn": 47,
-                    "endOffset": 17717
+                    "endOffset": 17753
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml",
-                    "position": {
-                        "startLine": 171,
-                        "startColumn": 4,
-                        "startOffset": 12178,
-                        "endColumn": 47,
-                        "endOffset": 12221
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 17722,
+                    "startOffset": 17758,
                     "endLine": 200,
                     "endColumn": 12,
-                    "endOffset": 17953
+                    "endOffset": 17989
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 661,
-                        "endLine": 27,
-                        "endColumn": 12,
-                        "endOffset": 896
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 17958,
+                    "startOffset": 17994,
                     "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 18316
+                    "endOffset": 18352
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 254,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 620
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 18321,
+                    "startOffset": 18357,
                     "endLine": 215,
                     "endColumn": 12,
-                    "endOffset": 18472
+                    "endOffset": 18508
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 138,
-                        "startColumn": 4,
-                        "startOffset": 4946,
-                        "endLine": 140,
-                        "endColumn": 12,
-                        "endOffset": 5099
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 18477,
+                    "startOffset": 18513,
                     "endLine": 219,
                     "endColumn": 12,
-                    "endOffset": 18624
+                    "endOffset": 18660
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 68,
-                        "startColumn": 4,
-                        "startOffset": 2314,
-                        "endLine": 71,
-                        "endColumn": 12,
-                        "endOffset": 2464
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 220,
                     "startColumn": 4,
-                    "startOffset": 18629,
+                    "startOffset": 18665,
                     "endLine": 223,
                     "endColumn": 12,
-                    "endOffset": 18804
+                    "endOffset": 18840
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 2128,
-                        "endLine": 66,
-                        "endColumn": 12,
-                        "endOffset": 2306
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 18809,
+                    "startOffset": 18845,
                     "endLine": 226,
                     "endColumn": 12,
-                    "endOffset": 18946
+                    "endOffset": 18982
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 59,
-                        "startColumn": 4,
-                        "startOffset": 1981,
-                        "endLine": 61,
-                        "endColumn": 12,
-                        "endOffset": 2120
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 18951,
+                    "startOffset": 18987,
                     "endLine": 230,
                     "endColumn": 12,
-                    "endOffset": 19105
+                    "endOffset": 19141
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 2814,
-                        "endLine": 84,
-                        "endColumn": 12,
-                        "endOffset": 2971
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 19110,
+                    "startOffset": 19146,
                     "endLine": 235,
                     "endColumn": 12,
-                    "endOffset": 19340
+                    "endOffset": 19376
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 98,
-                        "startColumn": 4,
-                        "startOffset": 3438,
-                        "endLine": 102,
-                        "endColumn": 12,
-                        "endOffset": 3672
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 236,
                     "startColumn": 4,
-                    "startOffset": 19345,
+                    "startOffset": 19381,
                     "endLine": 242,
                     "endColumn": 12,
-                    "endOffset": 19680
+                    "endOffset": 19716
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 86,
-                        "startColumn": 4,
-                        "startOffset": 2979,
-                        "endLine": 92,
-                        "endColumn": 12,
-                        "endOffset": 3320
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 243,
                     "startColumn": 4,
-                    "startOffset": 19685,
+                    "startOffset": 19721,
                     "endLine": 249,
                     "endColumn": 12,
-                    "endOffset": 20020
+                    "endOffset": 20056
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 104,
-                        "startColumn": 4,
-                        "startOffset": 3680,
-                        "endLine": 110,
-                        "endColumn": 12,
-                        "endOffset": 4021
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 250,
                     "startColumn": 4,
-                    "startOffset": 20025,
+                    "startOffset": 20061,
                     "endLine": 252,
                     "endColumn": 12,
-                    "endOffset": 20125
+                    "endOffset": 20161
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 94,
-                        "startColumn": 4,
-                        "startOffset": 3328,
-                        "endLine": 96,
-                        "endColumn": 12,
-                        "endOffset": 3430
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 253,
                     "startColumn": 4,
-                    "startOffset": 20130,
+                    "startOffset": 20166,
                     "endLine": 255,
                     "endColumn": 12,
-                    "endOffset": 20230
+                    "endOffset": 20266
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 112,
-                        "startColumn": 4,
-                        "startOffset": 4029,
-                        "endLine": 114,
-                        "endColumn": 12,
-                        "endOffset": 4131
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 256,
                     "startColumn": 4,
-                    "startOffset": 20235,
+                    "startOffset": 20271,
                     "endLine": 262,
                     "endColumn": 12,
-                    "endOffset": 20563
+                    "endOffset": 20599
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 73,
-                        "startColumn": 4,
-                        "startOffset": 2472,
-                        "endLine": 79,
-                        "endColumn": 12,
-                        "endOffset": 2806
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 263,
                     "startColumn": 4,
-                    "startOffset": 20568,
+                    "startOffset": 20604,
                     "endLine": 266,
                     "endColumn": 12,
-                    "endOffset": 20735
+                    "endOffset": 20771
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 116,
-                        "startColumn": 4,
-                        "startOffset": 4139,
-                        "endLine": 119,
-                        "endColumn": 12,
-                        "endOffset": 4309
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 20740,
+                    "startOffset": 20776,
                     "endLine": 270,
                     "endColumn": 12,
-                    "endOffset": 20909
+                    "endOffset": 20945
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 121,
-                        "startColumn": 4,
-                        "startOffset": 4317,
-                        "endLine": 124,
-                        "endColumn": 12,
-                        "endOffset": 4489
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 271,
                     "startColumn": 4,
-                    "startOffset": 20914,
+                    "startOffset": 20950,
                     "endLine": 275,
                     "endColumn": 12,
-                    "endOffset": 21104
+                    "endOffset": 21140
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 904,
-                        "endLine": 33,
-                        "endColumn": 12,
-                        "endOffset": 1098
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 21109,
+                    "startOffset": 21145,
                     "endLine": 280,
                     "endColumn": 12,
-                    "endOffset": 21300
+                    "endOffset": 21336
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 1106,
-                        "endLine": 39,
-                        "endColumn": 12,
-                        "endOffset": 1301
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 281,
                     "startColumn": 4,
-                    "startOffset": 21305,
+                    "startOffset": 21341,
                     "endLine": 284,
                     "endColumn": 12,
-                    "endOffset": 21451
+                    "endOffset": 21487
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 133,
-                        "startColumn": 4,
-                        "startOffset": 4789,
-                        "endLine": 136,
-                        "endColumn": 12,
-                        "endOffset": 4938
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 21456,
+                    "startOffset": 21492,
                     "endLine": 290,
                     "endColumn": 12,
-                    "endOffset": 21730
+                    "endOffset": 21766
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 41,
-                        "startColumn": 4,
-                        "startOffset": 1309,
-                        "endLine": 46,
-                        "endColumn": 12,
-                        "endOffset": 1588
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 291,
                     "startColumn": 4,
-                    "startOffset": 21735,
+                    "startOffset": 21771,
                     "endLine": 296,
                     "endColumn": 12,
-                    "endOffset": 22010
+                    "endOffset": 22046
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 1596,
-                        "endLine": 53,
-                        "endColumn": 12,
-                        "endOffset": 1876
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 297,
                     "startColumn": 4,
-                    "startOffset": 22015,
+                    "startOffset": 22051,
                     "endLine": 302,
                     "endColumn": 12,
-                    "endOffset": 22294
+                    "endOffset": 22330
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 126,
-                        "startColumn": 4,
-                        "startOffset": 4497,
-                        "endLine": 131,
-                        "endColumn": 12,
-                        "endOffset": 4781
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 303,
                     "startColumn": 4,
-                    "startOffset": 22299,
+                    "startOffset": 22335,
                     "endLine": 305,
                     "endColumn": 12,
-                    "endOffset": 22386
+                    "endOffset": 22422
                 },
                 "from": {
-                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml",
-                    "position": {
-                        "startLine": 55,
-                        "startColumn": 4,
-                        "startOffset": 1884,
-                        "endLine": 57,
-                        "endColumn": 12,
-                        "endOffset": 1973
-                    }
+                    "file": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/values/styles.xml"
                 }
             }
         ]

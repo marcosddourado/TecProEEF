@@ -1,38 +1,26 @@
-# ChooseIndicative.java
+# MainActivity.java
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;package package com.mdsgpp.eef.views
 
-## class ChooseIndicative
-
-#### Private members:
-
-| Type     | Variable                     | Description                     |
-|----------|------------------------------|---------------------------------|
-| `String` | indicative | Contains the indicative of a state that the user wants to see |
-| `String` | tittle | Contains the name of the indicative that the user wants to see |
-
+## class MainActivity
 
 #### Protected members:
 
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:------------:|:---------:|:----------:|
 | void | onCreate | `Bundle` savedInstanceState | Initializes the current activity |
-|`boolean` | onCreateOptionsMenu | `Menu` menu | Initialize the contents of the Activity's standard options menu |
-|`boolean` | onOptionsItemSelected | `MenuItem` item | It is called whenever an item in your options menu is selected |
 
 
 #### Public members:
 
 | Return Type | Method Name | Arguments | Description |
 |:-----------:|:------------:|:---------:|:----------:|
-| abstract void | openAboutScreen | -- | Opens a screen with the information about that Activity |
-|`void` | onRadioButtonClicked | `View` view | Gets the information that the user wants to see depending on the radio button that the user selected|
-|`void` | setValues | `String` indicative, `String` tittle | Sets the tittle and the indicative that the users wants to see, then they can be gotten in a Activity |
-|` abstract void` | clickButtonNext | `View` view | Sets the action of the next button |
-|`String` | getIndicative | -- | Returns the name of the indicative |
-|`void` | setIndicative | -- | Sets the name of the indicative |
-|`String` | getTittle | -- | Returns the tittle |
-|`void` | setTittle | `String` tittle | Sets the tittle |
+|`boolean` | onCreateOptionsMenu | `Menu` menu | Initialize the contents of the Activity's standard options menu |
+|`boolean` | onOptionsItemSelected | `MenuItem` item | It is called whenever an item in your options menu is selected |
+|`void` | loadAboutScreen | -- | It is called whenever an item in your options menu is selected |
+|`void` | clickButtonGeneralComparations | `View` view | Sets the action of the general comparation's button |
+|`void` | clickButtonGeneralConsult | -- | Sets the action of the general consult's button |
+|`void` | clickButtonFeed | -- | Sets the action of the feed's button |
 
 #### Local Variables per Function:
 
@@ -62,17 +50,35 @@
 | `String` | indicative | contains the name of the indicative that will be shown on the screen|
 | `String` | tittle | contains the name of the tittle that will be shown on the screen|
 
-|          | clickButtonNext |                                                   |
+|          |          onCreateOptionsMenu  |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `Menu` | menu | Object that represents the menu on the current screen that is open on the app |
+
+|          | onOptionsItemSelected |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `MenuItem` | item | Contains attributes of the item that was clicked on the menu |
+
+|          | loadAboutScreen |                                                   |
+|:--------:|:-----------------------------:|:-------------------------------------------------:|
+|   Type   |            Variable           |                    Description                    |
+| `Intent` | intent | Sets the action to go from a Activity to another |
+
+|          | clickButtonGeneralComparations |                                                   |
 |:--------:|:-----------------------------:|:-------------------------------------------------:|
 |   Type   |            Variable           |                    Description                    |
 | `View` | view | Contains attributes that can manipulates the current view on the current screen |
+| `Intent` | intent | Sets the action to go from a Activity to another |
 
-|          | setIndicative |                                                   |
+|          | clickButtonGeneralConsult |                                                   |
 |:--------:|:-----------------------------:|:-------------------------------------------------:|
 |   Type   |            Variable           |                    Description                    |
-| `String` | indicative | contains the name of the indicative that will be shown on the screen|
+| `View` | view | Contains attributes that can manipulates the current view on the current screen |
+| `Intent` | intent | Sets the action to go from a Activity to another |
 
-|          | setTittle |                                                   |
+|          | clickButtonFeed |                                                   |
 |:--------:|:-----------------------------:|:-------------------------------------------------:|
 |   Type   |            Variable           |                    Description                    |
-| `String` | tittle | contains the name of the tittle that will be shown on the screen|
+| `View` | view | Contains attributes that can manipulates the current view on the current screen |
+| `Intent` | intent | Sets the action to go from a Activity to another |

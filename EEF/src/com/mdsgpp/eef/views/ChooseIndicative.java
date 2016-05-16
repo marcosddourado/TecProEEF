@@ -32,7 +32,7 @@ public abstract class ChooseIndicative extends Activity {
 		
 		switch (item.getItemId()) {
 		case R.id.about:
-			openAboutScreen();
+			loadAboutScreen();
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -44,7 +44,7 @@ public abstract class ChooseIndicative extends Activity {
     	return true;
 	}
 	
-	public abstract void openAboutScreen();
+	public abstract void loadAboutScreen();
 	
 	public void onRadioButtonClicked(View view) {
 
@@ -142,8 +142,8 @@ public abstract class ChooseIndicative extends Activity {
 		}
 	}
 
-	public void setValues(String indivative, String tittle) {
-		setIndicative(indivative);
+	public void setValues(String indicative, String tittle) {
+		setIndicative(indicative);
 		setTittle(tittle);
 	}
 

@@ -41,6 +41,7 @@ public class ScreenFeed extends Activity implements DataReceiver {
 		switch (item.getItemId()) {
 		case R.id.about:
 			openAboutScreen();
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 			break;
 		case android.R.id.home:
 	        NavUtils.navigateUpFromSameTask(this);
@@ -72,7 +73,11 @@ public class ScreenFeed extends Activity implements DataReceiver {
 		});
 	}
 	
+<<<<<<< HEAD
+	public void loadAboutScreen()
+=======
 	public void openAboutScreen()
+>>>>>>> 1d79114fdc0bff4e5ff2f85fef159ab0fdac2ee0
 	{
 		Intent intent = new Intent(this, ScreenFeedAbout.class);
 		startActivity(intent);
