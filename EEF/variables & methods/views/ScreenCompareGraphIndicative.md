@@ -54,3 +54,20 @@
 | RadioButton | rbCensusHighSchool| Radio button selector |
 | RadioButton | rbCensusEJAElementary| Radio button selector |
 | RadioButton | rbCensusEJAHighSchool| Radio button selector |
+
+#### Protected Members
+
+| Return Type | Method Name |   Arguments   |   Description     |
+|-------------|-------------|---------------|-------------------|
+|   `void`    | onCreate | `Bundle` savedInstance | Handles view creation specific tasks |
+
+#### Public members
+
+| Return Type | Method Name | Arguments | Description |
+|:-----------:|:-----------:|:---------:|:-----------:|
+|  `void`  |  setVisibility   | `RadioButton` radioButton, `boolean` visibility | changes visibility of a radio button. |
+|  `void`  |  hideRadioButtons   |  | Hides all radio buttons. |
+| `void` | getInformation | | Retrieves an information hashmap to populate fields. |
+| `void` | initializeRadioButtons |  | Initializes all radio buttons. |
+| `void` | clickButtonNext | `View` view | Starts a new activity. |
+| `void` | openAboutScreen |  | Opens the `about` section. |
