@@ -26,6 +26,8 @@
 |`void` | insertAcronymName |`String` name, `String` acronym | Sends state acronym and name through indicative's hashmap |
 |`void` | readIndicatives | `BufferedReader` br | Reads the available information |
 
+#### Local variables per Function
+
 |  | Constructor |  |
 |:-----------:|:------------:|:---------:|
 | **Type** | **Variable** | **Description**|
