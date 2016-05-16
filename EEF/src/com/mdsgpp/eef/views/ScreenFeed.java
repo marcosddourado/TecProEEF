@@ -72,8 +72,7 @@ public class ScreenFeed extends Activity implements DataReceiver {
 		});
 	}
 	
-	public void loadAboutScreen()
-	{
+	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenFeedAbout.class);
 		startActivity(intent);
 	}	

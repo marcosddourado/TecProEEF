@@ -28,8 +28,13 @@ public class PersistenceFeed {
 	}
 	
 	public void writeFeedFile(Feed feed) throws IOException {
+
+		//Rewrites a data file.
+
 		FileOutputStream fileout = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
 		ObjectOutputStream out = new ObjectOutputStream(fileout);
+
+		assert(out != null) : "Output cannot be null!";
 
 		out.writeObject(feed);
 		out.close();
@@ -37,14 +42,22 @@ public class PersistenceFeed {
 
 	public Feed readFeedFile() throws IOException, ClassNotFoundException {
 
+		//Reads JSON data file and returns a serialized version of the data.
+
 		Feed feed;
 
 
 		FileInputStream filein = context.openFileInput(FILENAME);
+
+		assert(filein != null) : "Fle handler cannot be null!";
 		ObjectInputStream in = new ObjectInputStream(filein);
+
+		assert(in != null) : "Object handler cannot be null!";
 
 		feed = (Feed) in.readObject();
 		in.close();
+
+		assert (feed != null) : "Feed instance cannot be null!";
 
 		return feed;
 	}

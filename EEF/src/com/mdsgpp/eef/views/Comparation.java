@@ -15,13 +15,13 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import com.mdsgpp.eef.R;
 
 public abstract class Comparation extends Activity{
-	private Spinner statesSpinner01 = null;
-	private Spinner statesSpinner = null;
-	private ArrayAdapter<String> statesAdapter01 = null ;
-	private ArrayAdapter<String> statesAdapter02 = null;
-	private ArrayList<String> states01 = null;
-	private ArrayList<String> states02 = null;
-	private ArrayList<String> allStates = null;
+	private Spinner statesSpinner01;
+	private Spinner statesSpinner;
+	private ArrayAdapter<String> statesAdapter01;
+	private ArrayAdapter<String> statesAdapter02;
+	private ArrayList<String> states01;
+	private ArrayList<String> states02;
+	private ArrayList<String> allStates;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +55,8 @@ public abstract class Comparation extends Activity{
 					@Override
 					public void onItemSelected(AdapterView<?> adapter,
 							View view, int position, long id) {
-                        refreshValuesSpinnerWithoutTheStateOnTheFirstSpinner(statesSpinner01
-                                .getSelectedItem().toString());
+						refreshValuesSpinner02(statesSpinner01
+								.getSelectedItem().toString());
 					}
 
 					@Override
@@ -70,8 +70,7 @@ public abstract class Comparation extends Activity{
 			@Override
 			public void onItemSelected(AdapterView<?> adapter, View view,
 					int position, long id) {
-				refreshValuesSpinnerWithoutTheStateOnTheSecondSpinner(statesSpinner
-						.getSelectedItem()
+				refreshValuesSpinner01(statesSpinner.getSelectedItem()
 						.toString());
 			}
 
@@ -135,7 +134,7 @@ public abstract class Comparation extends Activity{
 		return states;
 	}
 
-	private void refreshValuesSpinnerWithoutTheStateOnTheSecondSpinner(String name) {
+	private void refreshValuesSpinner01(String name) {
 		String selectedState = statesSpinner01.getSelectedItem().toString();
 		states01 = fillStates(states01);
 		states01.remove(name);
@@ -143,7 +142,7 @@ public abstract class Comparation extends Activity{
 		statesSpinner01.setSelection(states01.indexOf(selectedState));
 	}
 
-	private void refreshValuesSpinnerWithoutTheStateOnTheFirstSpinner(String name) {
+	private void refreshValuesSpinner02(String name) {
 		String selectedState = statesSpinner.getSelectedItem().toString();
 		states02 = fillStates(states02);
 		states02.remove(name);

@@ -25,3 +25,40 @@
 |`void` | eraseData | -- | Erases all parsed data |
 |`void` | insertAcronymName |`String` name, `String` acronym | Sends state acronym and name through indicative's hashmap |
 |`void` | readIndicatives | `BufferedReader` br | Reads the available information |
+
+#### Local variables per Function
+
+|  | Constructor |  |
+|:-----------:|:------------:|:---------:|
+| **Type** | **Variable** | **Description**|
+| Context | context | The current context for the application. |
+
+|  | getState |  |
+|:-----------:|:------------:|:---------:|
+| **Type** | **Variable** | **Description**|
+| String | name | The state name. |
+| String | acronym | The state's acronym. |
+| AssetManager | am | An application assets handler. Used to get info about the state. |
+| InputStream | is | A generic object input stream. |
+| BufferedReader | br | An object used to read a data stream. |
+
+|  | eraseInformations |  |
+|:-----------:|:------------:|:---------:|
+| **Type** | **Variable** | **Description**|
+|  | Method has no local variables |  |
+
+|  | eraseData |  |
+|:-----------:|:------------:|:---------:|
+| **Type** | **Variable** | **Description**|
+|  | Method has no local variables |  |
+
+|  | insertAcronymName |  |
+|:-----------:|:------------:|:---------:|
+| **Type** | **Variable** | **Description**|
+| ArrayList<String[]> | container | Dictionary input value |
+| String[] | nameAndAcronym | Dictionary input key |
+
+|  | readIndicatives |  |
+|:-----------:|:------------:|:---------:|
+| **Type** | **Variable** | **Description**|
+| String | line | Read file's current line |

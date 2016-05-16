@@ -126,10 +126,8 @@ public class GraphScreen extends Activity {
         String estado1IndicativoString = stateInformations1.get(indicativo);
         String estado2IndicativoString = stateInformations2.get(indicativo);
 
-
-        estado1IndicativoString = estado1IndicativoString.replaceAll("[^\\d,]", "");/*como os dados viram como estão escritos na tela
-                                                                                       aqui nós pegamos somente os não digitos (numeros)
-																					   que estão na String*/
+        // getting only the numbers on the string
+        estado1IndicativoString = estado1IndicativoString.replaceAll("[^\\d,]", "");
         estado2IndicativoString = estado2IndicativoString.replaceAll("[^\\d,]", "");
 
         estado1IndicativoString = estado1IndicativoString.replaceAll(",", ".");

@@ -7,7 +7,7 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ScreenComparaison extends Comparation {
+public class ScreenComparation extends Comparation {
 	@Override
 	public void clickButtonStatesComparation(View view) {
 		Intent intent = new Intent(this, ScreenConsultedIndicative.class);
@@ -29,7 +29,7 @@ public class ScreenComparaison extends Comparation {
     public boolean onOptionsItemSelected(MenuItem item) {
     	
 		switch (item.getItemId()) {
-		case R.id.about:
+		case R.id.sobre:
 			loadAboutScreen();
 			break;
 		case android.R.id.home:
@@ -41,10 +41,14 @@ public class ScreenComparaison extends Comparation {
 		
     	return true;
     }
-
+    
     public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenOverComparison.class);
     	startActivity(intent);
     }
-
+	
+	public void clickButtonAboutComparationcao(View view) {
+    	Intent intent = new Intent(this, ScreenOverComparison.class);
+    	startActivity(intent);
+    }
 }

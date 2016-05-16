@@ -1,6 +1,6 @@
 package com.mdsgpp.eef.model;
 
-//grade grade for schhols per stateGrade/year
+//grade grade for schhols per state/year
 public class Grade {
 		private double elementaryGrade;
 		private double highSchoolGrade;

@@ -103,7 +103,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.visao.GraphScreen"
+            android:name="com.mdsgpp.eef.visao.TelaGrafico"
             android:icon="@drawable/home"
             android:label="@string/title_activity_tela_grafico"
             android:parentActivityName="com.mdsgpp.eef.MainActivity"
@@ -152,7 +152,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.visao.QueryPerInficativeScreen"
+            android:name="com.mdsgpp.eef.visao.TelaConsultaPorIndicativo"
             android:icon="@drawable/home"
             android:label="@string/title_activity_tela_consulta_por_indicativo"
             android:parentActivityName="com.mdsgpp.eef.MainActivity"
@@ -236,7 +236,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.visao.ChooseIndicativeWithCompareGraphAboutScreen"
+            android:name="com.mdsgpp.eef.visao.TelaSobreEscolheIndicativoGraficoComparacao"
             android:icon="@drawable/home"
             android:label="@string/title_activity_tela_sobre_escolhe_indicativo_grafico_comparacao"
             android:parentActivityName="com.mdsgpp.eef.MainActivity"

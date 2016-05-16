@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:drawableTop="@drawable/icone_listar"
-            android:onClick="clickButtonGeneralConsult" />
+            android:onClick="clickButtonGeneralConsultation" />
 
         <Button
             android:id="@+id/buttonComparacao"
