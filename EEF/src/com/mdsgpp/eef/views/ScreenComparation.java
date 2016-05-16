@@ -47,7 +47,7 @@ public class ScreenComparation extends Comparation {
     	startActivity(intent);
     }
 	
-	public void clickButtonAboutComparationcao(View view) {
+	public void clickButtonAboutComparation(View view) {
     	Intent intent = new Intent(this, TelaSobreComparacao.class);
     	startActivity(intent);
     }
