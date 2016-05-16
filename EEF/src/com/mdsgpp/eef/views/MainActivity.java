@@ -61,8 +61,4 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     }
 
-    public void clickButtonConsultatByIndicative(View view){
-    	Intent intent = new Intent(this, QueryPerIndicativeScreen.class);
-    	startActivity(intent);
-    }
 }
