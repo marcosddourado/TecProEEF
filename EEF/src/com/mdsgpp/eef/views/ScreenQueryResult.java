@@ -153,7 +153,7 @@ public class ScreenQueryResult extends Activity {
 	}
 	
 	public void loadAboutScreen() {
-		Intent intent = new Intent(this, ScreenOverStateComparison.class);
+		Intent intent = new Intent(this, ScreenAboutStateComparison.class);
     	startActivity(intent);
 		
 	}

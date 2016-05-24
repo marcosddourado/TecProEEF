@@ -1,17 +1,16 @@
 package com.mdsgpp.eef.views;
 
 import com.mdsgpp.eef.R;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class ScreenOverIndicativeHistory extends Activity {
+public class ScreenAboutIndicativeChoiceComparisonGraphic extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre_historico_de_indicativo);
+		setContentView(R.layout.activity_tela_sobre_escolhe_indicativo_grafico_comparacao);
 	}
 
 	@Override

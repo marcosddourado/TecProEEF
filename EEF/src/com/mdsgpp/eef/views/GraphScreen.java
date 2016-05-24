@@ -14,7 +14,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.NavUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -63,7 +62,7 @@ public class GraphScreen extends Activity {
     }
 
     public void loadAboutScreen() {
-        Intent intent = new Intent(this, ScreenOverGraphic.class);
+        Intent intent = new Intent(this, ScreenAboutGraphic.class);
         startActivity(intent);
     }
 

@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
     }
     
     public void loadAboutScreen() {
-    	Intent intent = new Intent(this, ScreenOver.class);
+    	Intent intent = new Intent(this, ScreenAbout.class);
     	startActivity(intent);
     }
 

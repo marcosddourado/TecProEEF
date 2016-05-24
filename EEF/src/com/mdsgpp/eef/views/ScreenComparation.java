@@ -43,12 +43,12 @@ public class ScreenComparation extends Comparation {
     }
     
     public void loadAboutScreen() {
-    	Intent intent = new Intent(this, ScreenOverComparison.class);
+    	Intent intent = new Intent(this, ScreenAboutComparison.class);
     	startActivity(intent);
     }
 	
 	public void clickButtonAboutComparationcao(View view) {
-    	Intent intent = new Intent(this, ScreenOverComparison.class);
+    	Intent intent = new Intent(this, ScreenAboutComparison.class);
     	startActivity(intent);
     }
 }

@@ -87,7 +87,7 @@ public class ScreenState extends Activity {
 	    }
 	    
 	    public void loadAboutScreen() {
-	    	Intent intent = new Intent(this, ScreenOverState.class);
+	    	Intent intent = new Intent(this, ScreenAboutState.class);
 	    	startActivity(intent);
 	    }
 	

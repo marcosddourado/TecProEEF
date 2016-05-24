@@ -52,7 +52,7 @@ public class ScreenQueryResultPerIndicative extends Activity {
 	}
 	
 	public void loadAboutScreen() {
-		Intent intent = new Intent(this, ScreenOverQueryResult.class);
+		Intent intent = new Intent(this, ScreenAboutQueryResult.class);
     	startActivity(intent);
 	}
 	

@@ -89,7 +89,7 @@ public class ScreenLineGraph extends Activity {
 	}
 	
 	public void loadAboutScreen() {
-		Intent intent = new Intent(this, ScreenOverGraphic.class);
+		Intent intent = new Intent(this, ScreenAboutGraphic.class);
     	startActivity(intent);
 	}
 	

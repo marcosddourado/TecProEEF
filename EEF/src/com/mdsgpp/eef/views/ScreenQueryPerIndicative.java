@@ -19,7 +19,7 @@ public class ScreenQueryPerIndicative extends ChooseIndicative {
 	}
 
 	public void loadAboutScreen() {
-		Intent intent = new Intent(this, ScreenOverIndicatives.class);
+		Intent intent = new Intent(this, ScreenAboutIndicatives.class);
 		startActivity(intent);
 	}
 	

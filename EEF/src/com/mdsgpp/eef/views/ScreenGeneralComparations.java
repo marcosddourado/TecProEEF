@@ -43,7 +43,7 @@ public class ScreenGeneralComparations extends Activity {
     }
     
     public void loadAboutScreen() {
-    	Intent intent = new Intent(this, ScreenOverGeneralComparisons.class);
+    	Intent intent = new Intent(this, ScreenAboutGeneralComparisons.class);
     	startActivity(intent);
     }
 	

@@ -72,7 +72,7 @@ public class ScreenStateHistory extends Activity {
 	}
 	
 	public void loadAboutScreen() {
-		Intent intent = new Intent(this, ScreenOverIndicativeHistory.class);
+		Intent intent = new Intent(this, ScreenAboutIndicativeHistory.class);
     	startActivity(intent);	
 	}
 	

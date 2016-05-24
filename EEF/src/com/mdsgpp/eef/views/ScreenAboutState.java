@@ -8,12 +8,12 @@ import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ScreenOverQuery extends Activity {
+public class ScreenAboutState extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre_consulta);
+		setContentView(R.layout.activity_tela_sobre_estado);
 	}
 
 	@Override

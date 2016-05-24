@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class ScreenOverGraphic extends Activity {
+public class ScreenAboutStateComparison extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tela_sobre_grafico);
+		setContentView(R.layout.activity_sobre_tela_comparacao_de_estados);
 	}
 
 	@Override

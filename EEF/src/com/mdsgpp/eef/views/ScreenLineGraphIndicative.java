@@ -68,7 +68,7 @@ public class ScreenLineGraphIndicative extends Activity{
 	}
 	
 	public void loadAboutScreen() {
-		Intent intent = new Intent(this, ScreenOverIndicativeChoiceComparisonGraphic.class);
+		Intent intent = new Intent(this, ScreenAboutIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
 	}	
 
