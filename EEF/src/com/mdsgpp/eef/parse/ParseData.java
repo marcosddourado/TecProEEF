@@ -49,25 +49,25 @@ public class ParseData {
 		InputStream is = am.open(this.states[position][1] + this.extension);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
-		assert (br != null) : "uffer cannot reference NULL";
+		assert (br != null) : "buffer cannot reference NULL";
 
 		name = br.readLine();
 		name = this.states[position][0];
 		acronym = br.readLine();
-		
+
 		eraseInformations();
 		eraseData();
-		
+
 		insertAcronymName(name, acronym);
 		readIndicatives(br);
-		
+
 		return informations;
 	}
 
 	public void eraseInformations() {
 		this.informations.clear();
 	}
-	
+
 	public void eraseData() {
 		this.data = new ArrayList<String[]>();
 	}
@@ -85,7 +85,7 @@ public class ParseData {
 
 		this.informations.put("nome_e_sigla", container);
 	}
-	
+
 	// Method responsble for reading available data.
 	public void readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
@@ -94,9 +94,9 @@ public class ParseData {
 		line = br.readLine();
 		indicatorName = br.readLine();
 		line = br.readLine();
-		
+
 		while (line != null) {
-			
+
 			if (line.isEmpty()) {
 				aux++;
 			} else {
@@ -109,7 +109,7 @@ public class ParseData {
 				indicatorName = br.readLine();
 				eraseData();
 			}
-			
+
 			line = br.readLine();
 		}
 
