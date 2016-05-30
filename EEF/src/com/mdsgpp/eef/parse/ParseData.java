@@ -15,11 +15,11 @@ public class ParseData {
 	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
 	private ArrayList<String[]> data;
 	private Context context;
-	private String extension = ".txt";
+	private final String extension = ".txt";
 	private String indicatorName;
-	private int lines = 2;
+	private final int lines = 2;
 
-	String states[][] = { { "Acre", "Acre" }, { "Alagoas", "Alagoas" },
+	private final String states[][] = { { "Acre", "Acre" }, { "Alagoas", "Alagoas" },
 			{ "Amape", "Amapa" }, { "Amazonas", "Amazonas" },
 			{ "Bahia", "Bahia" }, { "Ceare", "Ceara" },
 			{ "Distrito Federal", "Distrito Federal" },
@@ -38,6 +38,7 @@ public class ParseData {
 			{ "Tocantins", "Tocantins" } };
 
 	public ParseData(Context context) {
+		assert(context != null) : "null context passed on constructor";
 		this.context = context;
 		this.informations = new HashMap<String, ArrayList<String[]>>();
 	}
