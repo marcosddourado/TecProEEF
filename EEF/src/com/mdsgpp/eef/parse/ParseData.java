@@ -19,23 +19,11 @@ public class ParseData {
 	private String indicatorName;
 	private final int lines = 2;
 
-	private final String states[][] = { { "Acre", "Acre" }, { "Alagoas", "Alagoas" },
-			{ "Amape", "Amapa" }, { "Amazonas", "Amazonas" },
-			{ "Bahia", "Bahia" }, { "Ceare", "Ceara" },
-			{ "Distrito Federal", "Distrito Federal" },
-			{ "Esperito Santo", "Espirito Santo" }, { "Goies", "Goias" },
-			{ "Maranheo", "Maranhao" }, { "Mato Grosso", "Mato Grosso" },
-			{ "Mato Grosso do Sul", "Mato Grosso do Sul" },
-			{ "Minas Gerais", "Minas Gerais" }, { "Pare", "Para" },
-			{ "Paraeba", "Paraiba" }, { "Parane", "Parana" },
-			{ "Pernambuco", "Pernambuco" }, { "Piaue", "Piaui" },
-			{ "Rio de Janeiro", "Rio de Janeiro" },
-			{ "Rio Grande do Norte", "Rio Grande do Norte" },
-			{ "Rio Grande do Sul", "Rio Grande do Sul" },
-			{ "Rondenia", "Rondonia" }, { "Roraima", "Roraima" },
-			{ "Santa Catarina", "Santa Catarina" },
-			{ "Seo Paulo", "Sao Paulo" }, { "Sergipe", "Sergipe" },
-			{ "Tocantins", "Tocantins" } };
+	private final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
+			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
+			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
+			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
+			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
 
 	public ParseData(Context context) {
 		assert(context != null) : "null context passed on constructor";
@@ -47,13 +35,13 @@ public class ParseData {
 		String name, acronym;
 
 		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(this.states[position][1] + this.extension);
+		InputStream is = am.open(this.states[position] + this.extension);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
 		assert (br != null) : "buffer cannot reference NULL";
 
 		name = br.readLine();
-		name = this.states[position][0];
+		name = this.states[position];
 		acronym = br.readLine();
 
 		eraseInformations();
