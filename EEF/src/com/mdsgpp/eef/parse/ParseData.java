@@ -15,9 +15,13 @@ public class ParseData {
 	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
 	private ArrayList<String[]> data;
 	private Context context;
-	private final String extension = ".txt";
 	private String indicatorName;
-	private final int lines = 2;
+
+	private final String EXTENSION = ".txt";
+	private final int LINES = 2;
+	private final int PAIR = 2;
+	private final int NAME_POSITION = 0;
+	private final int ACRONYM_POSITION = 1;
 
 	private final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
 			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
@@ -32,15 +36,15 @@ public class ParseData {
 	}
 
 	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
+		assert(position >=0) : "position must be positive. position was" + position;
 		String name, acronym;
 
 		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(this.states[position] + this.extension);
+		InputStream is = am.open(this.states[position] + this.EXTENSION);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
 		assert (br != null) : "buffer cannot reference NULL";
 
-		name = br.readLine();
 		name = this.states[position];
 		acronym = br.readLine();
 
@@ -64,13 +68,13 @@ public class ParseData {
 	// Method responsible for sending state name and acronym through indicatives hashmap.
 	public void insertAcronymName(String name, String acronym) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
-		String nameAndAcronym[] = new String[2];
-		nameAndAcronym[0] = name;
-		nameAndAcronym[1] = acronym;
+		String nameAndAcronym[] = new String[PAIR];
+		nameAndAcronym[NAME_POSITION] = name;
+		nameAndAcronym[ACRONYM_POSITION] = acronym;
 
 		container.add(nameAndAcronym);
 
-		assert (container != null): "Dictionary inout cannot be of NULL value!";
+		assert (container != null): "Dictionary input cannot be of NULL value!";
 
 		this.informations.put("nome_e_sigla", container);
 	}
@@ -92,7 +96,7 @@ public class ParseData {
 				data.add(line.split(": "));
 			}
 
-			if (aux == lines) {
+			if (aux == LINES) {
 				aux = 0;
 				this.informations.put(indicatorName, data);
 				indicatorName = br.readLine();
