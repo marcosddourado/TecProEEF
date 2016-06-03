@@ -12,9 +12,9 @@ import com.mdsgpp.eef.model.State;
 public class StateConroller {
 
     private static StateConroller instance;
-    private Context context;
-    private HashMap<String, String> stateInformations;
-    private HashMap<String, ArrayList<String[]>> parseInformations;
+    private Context context = null;
+    private HashMap<String, String> stateInformations = null;
+    private HashMap<String, ArrayList<String[]>> parseInformations = null;
     private DecimalFormat dfValue = new DecimalFormat("#,##0.00");
     private DecimalFormat dfPopulation = new DecimalFormat("#,###");
     private DecimalFormat dfPercentage = new DecimalFormat("#.##");

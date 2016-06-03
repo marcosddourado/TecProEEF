@@ -10,8 +10,8 @@ import com.mdsgpp.eef.parse.ParseData;
 
 public class ParseController {
 
-	private static ParseController instance;
-	ParseData parser;
+	private static ParseController instance = null;
+	ParseData parser = null;
 
 	public ParseController(Context context) {
 		parser = new ParseData(context);
