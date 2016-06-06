@@ -15,29 +15,18 @@ public class ParseData {
 	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
 	private ArrayList<String[]> data;
 	private Context context;
-	private String extension = ".txt";
+	private final String extension = ".txt";
 	private String indicatorName;
-	private int lines = 2;
+	private final int lines = 2;
 
-	String states[][] = { { "Acre", "Acre" }, { "Alagoas", "Alagoas" },
-			{ "Amape", "Amapa" }, { "Amazonas", "Amazonas" },
-			{ "Bahia", "Bahia" }, { "Ceare", "Ceara" },
-			{ "Distrito Federal", "Distrito Federal" },
-			{ "Esperito Santo", "Espirito Santo" }, { "Goies", "Goias" },
-			{ "Maranheo", "Maranhao" }, { "Mato Grosso", "Mato Grosso" },
-			{ "Mato Grosso do Sul", "Mato Grosso do Sul" },
-			{ "Minas Gerais", "Minas Gerais" }, { "Pare", "Para" },
-			{ "Paraeba", "Paraiba" }, { "Parane", "Parana" },
-			{ "Pernambuco", "Pernambuco" }, { "Piaue", "Piaui" },
-			{ "Rio de Janeiro", "Rio de Janeiro" },
-			{ "Rio Grande do Norte", "Rio Grande do Norte" },
-			{ "Rio Grande do Sul", "Rio Grande do Sul" },
-			{ "Rondenia", "Rondonia" }, { "Roraima", "Roraima" },
-			{ "Santa Catarina", "Santa Catarina" },
-			{ "Seo Paulo", "Sao Paulo" }, { "Sergipe", "Sergipe" },
-			{ "Tocantins", "Tocantins" } };
+	private final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
+			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
+			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
+			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
+			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
 
 	public ParseData(Context context) {
+		assert(context != null) : "null context passed on constructor";
 		this.context = context;
 		this.informations = new HashMap<String, ArrayList<String[]>>();
 	}
@@ -46,28 +35,28 @@ public class ParseData {
 		String name, acronym;
 
 		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(this.states[position][1] + this.extension);
+		InputStream is = am.open(this.states[position] + this.extension);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
-		assert (br != null) : "uffer cannot reference NULL";
+		assert (br != null) : "buffer cannot reference NULL";
 
 		name = br.readLine();
-		name = this.states[position][0];
+		name = this.states[position];
 		acronym = br.readLine();
-		
+
 		eraseInformations();
 		eraseData();
-		
+
 		insertAcronymName(name, acronym);
 		readIndicatives(br);
-		
+
 		return informations;
 	}
 
 	public void eraseInformations() {
 		this.informations.clear();
 	}
-	
+
 	public void eraseData() {
 		this.data = new ArrayList<String[]>();
 	}
@@ -85,7 +74,7 @@ public class ParseData {
 
 		this.informations.put("nome_e_sigla", container);
 	}
-	
+
 	// Method responsble for reading available data.
 	public void readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
@@ -94,9 +83,9 @@ public class ParseData {
 		line = br.readLine();
 		indicatorName = br.readLine();
 		line = br.readLine();
-		
+
 		while (line != null) {
-			
+
 			if (line.isEmpty()) {
 				aux++;
 			} else {
@@ -109,7 +98,7 @@ public class ParseData {
 				indicatorName = br.readLine();
 				eraseData();
 			}
-			
+
 			line = br.readLine();
 		}
 

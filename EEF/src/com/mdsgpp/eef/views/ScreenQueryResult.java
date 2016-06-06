@@ -65,7 +65,7 @@ public class ScreenQueryResult extends Activity {
 	private TextView textViewAbandonRate1;
 	private TextView textViewAbandonRateElementary1;
 	private TextView textViewAbandonRateHighSchool1;
-	
+
 	private TextView textViewInitials2;
 	private TextView textViewPopulationValue2;
 	private TextView textViewPibParticipation2;
@@ -98,7 +98,7 @@ public class ScreenQueryResult extends Activity {
 	private TextView textViewUtilizationRateHighSchool2;
 	private TextView textViewAbandonRateElementary2;
 	private TextView textViewAbandonRateHighSchool2;
-	
+
 	private boolean bCensus;
 	private boolean bClassStudents;
 	private boolean bClassTime;
@@ -113,15 +113,15 @@ public class ScreenQueryResult extends Activity {
 	private boolean bDiffusionProjects;
 	private boolean bInitiation;
 	private boolean bYoungProjects;
-	
+
 	private ImageView imageViewFlag01;
 	private ImageView imageViewFlag02;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_screen_compare_states);
-		
+
 		initializeTextViews();
 		captureInformation();
 		hideTextFields();
@@ -132,12 +132,12 @@ public class ScreenQueryResult extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
-		
+
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		
+
 		switch (item.getItemId()) {
 		case R.id.about:
 			loadAboutScreen();
@@ -148,28 +148,28 @@ public class ScreenQueryResult extends Activity {
 		default:
 			break;
 		}
-		
+
     	return true;
 	}
-	
+
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutStateComparison.class);
     	startActivity(intent);
-		
+
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	private void captureInformation() {
-		
+
 		// Captura o intent que abriu a activity
 		Intent intent = getIntent();
 		// Captura o valor transferido atraves da intent
-		
+
 		int position1 = intent.getIntExtra("INDEX_CHOOSED_STATE1",5);
 		int position2 = intent.getIntExtra("INDEX_CHOOSED_STATE2",0);
-		
+
 		captureFlags(position1, position2);
-		
+
 		bIdeb = intent.getBooleanExtra("CB_IDEB", false);
 		bPib = intent.getBooleanExtra("CB_PIB", false);
 		bPopulation = intent.getBooleanExtra("CB_POPULACAO", false);
@@ -316,7 +316,7 @@ public class ScreenQueryResult extends Activity {
 		textViewUtilizationRateHighSchool1 = (TextView) findViewById(R.id.textView_approval_rate_high_school1);
 		textViewAbandonRateElementary1 = (TextView) findViewById(R.id.textView_dropout_rate_elementary1);
 		textViewAbandonRateHighSchool1 = (TextView) findViewById(R.id.textView_dropout_rate_high_school1);
-	
+
 		textViewInitials2 = (TextView) findViewById(R.id.textView_sigla2);
 		textViewPopulationValue2 = (TextView) findViewById(R.id.textView_populacao_valor2);
 		textViewPibParticipation2 = (TextView) findViewById(R.id.textView_participacao_pib_valor2);
@@ -333,7 +333,7 @@ public class ScreenQueryResult extends Activity {
 		textViewYoungResearchersValue2 = (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor2);
 		textViewInitiationProjectCount2 = (TextView) findViewById(R.id.textView_projetos_iniciacao_quantidade2);
 		textViewInitiationProjectValue2 = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor2);
-		
+
 		textViewInitialSeriesCensus2 = (TextView) findViewById(R.id.textView_initial_census_elementary2);
 		textViewElementaryCensus2 = (TextView) findViewById(R.id.textView_final_census_elementary2);
 		textViewHighSchoolCensus2 = (TextView) findViewById(R.id.textView_census_high_school2);
@@ -350,17 +350,17 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateElementary2 = (TextView) findViewById(R.id.textView_dropout_rate_elementary2);
 		textViewAbandonRateHighSchool2 = (TextView) findViewById(R.id.textView_dropout_rate_high_school2);
 	}
-	
+
 	public void setVisibility(TextView textView, boolean visibility) {
 		int valorVisibilidade = (visibility) ? View.VISIBLE : View.GONE;
 		textView.setVisibility(valorVisibilidade);
 	}
-	
+
 	public void hideTextFields() {
 		setVisibility(textViewPopulation1, bPopulation);
 		setVisibility(textViewPopulationValue1, bPopulation);
 		setVisibility(textViewPopulationValue2, bPopulation);
-		
+
 		setVisibility(textViewIdeb1, bIdeb);
 		setVisibility(textViewElementaryIdeb1, bIdeb);
 		setVisibility(textViewHighSchoolIdeb1, bIdeb);
@@ -372,13 +372,13 @@ public class ScreenQueryResult extends Activity {
 		setVisibility(textViewPibStateParticipation1, bPib);
 		setVisibility(textViewPibParticipation1, bPib);
 		setVisibility(textViewPibParticipation2, bPib);
-		
+
 		setVisibility(textViewFirstProjectsProgram1, bFirstProjects);
 		setVisibility(textViewFirstProjectsCount1, bFirstProjects);
 		setVisibility(textViewFirstProjectsValue1, bFirstProjects);
 		setVisibility(textViewFirstProjectsCount2, bFirstProjects);
 		setVisibility(textViewFirstProjectsValue2, bFirstProjects);
-		
+
 		setVisibility(textViewResearchProjects1, bCnpqProjects);
 		setVisibility(textViewResearchCount1, bCnpqProjects);
 		setVisibility(textViewResearchValue1, bCnpqProjects);
@@ -402,7 +402,7 @@ public class ScreenQueryResult extends Activity {
 		setVisibility(textViewValorScienceTechnologyProjects1, bDiffusionProjects);
 		setVisibility(textViewScienceTechnologyProjectCount2, bDiffusionProjects);
 		setVisibility(textViewValorScienceTechnologyProjects2, bDiffusionProjects);
-		
+
 		setVisibility(textViewCensus1, bCensus);
 		setVisibility(textViewElementaryEjaCensus1, bCensus);
 		setVisibility(textViewHighSchoolEjaCensus1, bCensus);
@@ -414,45 +414,45 @@ public class ScreenQueryResult extends Activity {
 		setVisibility(textViewElementaryCensus2, bCensus);
 		setVisibility(textViewInitialSeriesCensus2, bCensus);
 		setVisibility(textViewHighSchoolCensus2, bCensus);
-		
+
 		setVisibility(textViewStudentsPerClass1, bClassStudents);
 		setVisibility(textViewStudentsPerClassElementary1, bClassStudents);
 		setVisibility(textViewStudentsPerClassHighSchool1, bClassStudents);
 		setVisibility(textViewStudentsPerClassElementary2, bClassStudents);
 		setVisibility(textViewStudentsPerClassHighSchool2, bClassStudents);
-		
+
 		setVisibility(textViewAverageClassTime1, bClassTime);
 		setVisibility(textViewClassTimeElementary1, bClassTime);
 		setVisibility(textViewClassTimeHighSchool1, bClassTime);
 		setVisibility(textViewClassTimeElementary2, bClassTime);
 		setVisibility(textViewClassTimeHighSchool2, bClassTime);
-		
+
 		setVisibility(textViewDistortionRate1, bDistortionRate);
 		setVisibility(textViewDistortionRateElementary1, bDistortionRate);
 		setVisibility(textViewDistortionRateHighSchool1, bDistortionRate);
 		setVisibility(textViewDistortionRateElementary2, bDistortionRate);
 		setVisibility(textViewDistortionRateHighSchool2, bDistortionRate);
-		
+
 		setVisibility(textViewAbandonRate1, bAbandonRate);
 		setVisibility(textViewAbandonRateElementary1, bAbandonRate);
 		setVisibility(textViewAbandonRateHighSchool1, bAbandonRate);
 		setVisibility(textViewAbandonRateElementary2, bAbandonRate);
 		setVisibility(textViewAbandonRateHighSchool2, bAbandonRate);
-		
+
 		setVisibility(textViewUtilizationRate1, bApproval);
 		setVisibility(textViewUtilizationRateElementary1, bApproval);
 		setVisibility(textViewUtilizationRateHighSchool1, bApproval);
 		setVisibility(textViewUtilizationRateElementary2, bApproval);
 		setVisibility(textViewUtilizationRateHighSchool2, bApproval);
-		
+
 		try {
 			setVisibility(textViewInitiationProjects2, bInitiation);
 		} catch(NullPointerException npe) {
 			Log.e("layout portrait não possui estes id's",npe.toString());
 		}
-						
+
 	}
-	
+
 	public void generateGraphicButtonTouch(View view) {
 		Intent intent = new Intent(this, ScreenCompareGraphIndicative.class);
 		Intent intent1 = getIntent();
@@ -474,31 +474,30 @@ public class ScreenQueryResult extends Activity {
 		intent.putExtra("CB_HORAS_AULA", bClassTime);
 		intent.putExtra("CB_TAXA_ABANDONO", bAbandonRate);
 		intent.putExtra("CB_TAXA_DISTORCAO", bDistortionRate);
-		
+
 		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
 		intent.putExtra("INDEX_CHOOSED_STATE2", position2);
 
 		startActivity(intent);
 	}
-	
+
 	public void captureFlags(int statePosition1, int statePosition2){
 		String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
 				"matogrosso", "matogrossodosul", "minasgerais", "para", "paraiba",
 				"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
 				"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
-				"sergipe", "tocantins"};	
-		
+				"sergipe", "tocantins"};
+
 		imageViewFlag01 = (ImageView) findViewById(R.id.imageView_flags1);
 		int idFlag01 = getResources().getIdentifier(flags[statePosition1], "drawable", getPackageName());
 		imageViewFlag01.setImageResource(idFlag01);
-	
+
 		imageViewFlag02 = (ImageView) findViewById(R.id.imageView_flags2);
 		int idFlag02 = getResources().getIdentifier(flags[statePosition2], "drawable", getPackageName());
 		imageViewFlag02.setImageResource(idFlag02);
-	
-		
-		
+
+
+
 	}
 }
-

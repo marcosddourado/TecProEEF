@@ -23,11 +23,11 @@ public class ScreenComparation extends Comparation {
 		intent.putExtra("INDEX_CHOOSED_STATE2", position2);
 
 		startActivity(intent);
-		
+
 	}
-	
+
     public boolean onOptionsItemSelected(MenuItem item) {
-    	
+
 		switch (item.getItemId()) {
 		case R.id.about:
 			loadAboutScreen();
@@ -38,15 +38,15 @@ public class ScreenComparation extends Comparation {
 		default:
 			break;
 		}
-		
+
     	return true;
     }
-    
+
     public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenAboutComparison.class);
     	startActivity(intent);
     }
-	
+
 	public void clickButtonAboutComparationcao(View view) {
     	Intent intent = new Intent(this, ScreenAboutComparison.class);
     	startActivity(intent);
