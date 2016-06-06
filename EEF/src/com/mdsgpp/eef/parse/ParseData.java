@@ -37,6 +37,7 @@ public class ParseData {
 
 	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
 		assert(position >=0) : "position must be positive. position was" + position;
+
 		String name, acronym;
 
 		AssetManager am = this.context.getAssets();
@@ -46,7 +47,8 @@ public class ParseData {
 		assert (br != null) : "buffer cannot reference NULL";
 
 		name = this.states[position];
-		acronym = br.readLine();
+//		br.readLine(); //skip the first asset line, so the next read line will be the acronym
+		acronym = br.readLine();																																																																																																																																																																																																																																																																																														
 
 		eraseInformations();
 		eraseData();
