@@ -2,18 +2,40 @@
 <items version="2" >
 
     <item
-        jar="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/libs/uiautomator.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="6578a8a081343276754d02d8a3b3a67ba5f89f5f">
-        <dex dex="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/pre-dexed/debug/uiautomator_7c29eacf6d7caafaf56a454aacec0add5bc3cdc6.jar" />
+        is-multidex="true"
+        jar="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="21.1.2"
+        sha1="4a6be13368bb64c5a0b0460632d228a1a915f58f">
+        <dex dex="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_270aed11d904fa18455d012aeffdf45f5c090f93/classes.dex" />
     </item>
     <item
-        jar="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/libs/android-support-v4.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="4a6be13368bb64c5a0b0460632d228a1a915f58f">
-        <dex dex="/Users/marcosdourado/AndroidStudioProjects/educacaoemfoco/EEF/build/intermediates/pre-dexed/debug/android-support-v4_c5242d28bc9d6f2a038b4cd0e6ef2e635f854144.jar" />
+        is-multidex="true"
+        jar="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="21.1.2"
+        sha1="a09af3b20b04670b7dced17564fb341b49a1c24b">
+        <dex dex="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f75b36b8ac398441b6e989d666cb21b34af0c38e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/libs/uiautomator.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="21.1.2"
+        sha1="6578a8a081343276754d02d8a3b3a67ba5f89f5f">
+        <dex dex="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/transforms/dex/debug/folders/1000/2/uiautomator_86b9f0eef38b8c657554e772d43c7f9847886807/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="21.1.2"
+        sha1="65e04c41fa12ed5005bc195803f2f9d9d207f951">
+        <dex dex="/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a16d629474949e80fa9fdc3ddcaa39bfb81c88b4/classes.dex" />
     </item>
 
 </items>
