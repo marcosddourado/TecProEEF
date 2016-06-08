@@ -22,6 +22,7 @@ public class ParseData {
 	private final int PAIR = 2;
 	private final int NAME_POSITION = 0;
 	private final int ACRONYM_POSITION = 1;
+	private final int STATES_MAX_INDEX = 26; // index counting starts with 0, so the maximum index for the 27 states is 26
 
 	private final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
 			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
@@ -36,8 +37,8 @@ public class ParseData {
 	}
 
 	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
-		assert(position >=0) : "position must be positive. position was" + position;
-
+		assert(position >= 0) : "position must be positive. position was" + position;
+		assert(position <= STATES_MAX_INDEX) : "position can't be greater than 26. position was" + position;
 		String name, acronym;
 
 		AssetManager am = this.context.getAssets();
@@ -46,8 +47,7 @@ public class ParseData {
 
 		assert (br != null) : "buffer cannot reference NULL";
 
-		name = this.states[position];
-//		br.readLine(); //skip the first asset line, so the next read line will be the acronym
+		name = br.readLine();
 		acronym = br.readLine();																																																																																																																																																																																																																																																																																														
 
 		eraseInformations();
@@ -82,7 +82,7 @@ public class ParseData {
 	}
 
 	// Method responsble for reading available data.
-	public void readIndicatives(BufferedReader br) throws IOException {
+	public void  readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
 		String line;
 
