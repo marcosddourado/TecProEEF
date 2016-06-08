@@ -30,12 +30,12 @@ public class PersistenceFeedTest {
     PersistenceFeed testObject = new PersistenceFeed(mock_context);
 
     @Test
-    public void valid_instance_returned() {
+    public void return_valid_instance() {
         assertThat(testObject.getInstance(mock_context), is(notNullValue()));
     }
 
     @Test
-    public void write_object_correctly() {
+    public void write_and_read_object_correctly() {
         try {
             testObject.writeFeedFile(mock_feed);
         } catch (IOException e) {
@@ -56,7 +56,7 @@ public class PersistenceFeedTest {
     }
 
     @Test (expected = NullPointerException.class)
-    public void trigger_IOException() {
+    public void trigger_NullPointerException() {
         try {
             testObject.writeFeedFile(null);
         } catch (IOException e) {
