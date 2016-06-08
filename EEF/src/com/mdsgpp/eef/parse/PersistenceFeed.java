@@ -29,10 +29,10 @@ public class PersistenceFeed {
 		return instance;
 	}
 	//Rewrites a data file.
-	public void writeFeedFile(Feed feed) throws IOException {
+	public void writeFeedFile(Feed feed) throws IOException, NullPointerException {
 		assert(context != null) : "null context";
-		FileOutputStream fileout = this.context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
-		ObjectOutputStream out = new ObjectOutputStream(fileout);
+		FileOutputStream fileOut = this.context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
+		ObjectOutputStream out = new ObjectOutputStream(fileOut);
 
 		assert(out != null) : "Output cannot be null!";
 
@@ -40,25 +40,15 @@ public class PersistenceFeed {
 		out.close();
 	}
 
+	//Reads JSON data file and returns a serialized version of the data.
 	public Feed readFeedFile() throws IOException, ClassNotFoundException {
-
-		//Reads JSON data file and returns a serialized version of the data.
-
 		Feed feed;
-
-
-		FileInputStream filein = context.openFileInput(FILENAME);
-
-		assert(filein != null) : "Fle handler cannot be null!";
-		ObjectInputStream in = new ObjectInputStream(filein);
-
-		assert(in != null) : "Object handler cannot be null!";
+		FileInputStream fileIn = this.context.openFileInput(FILENAME);
+		ObjectInputStream in = new ObjectInputStream(fileIn);
 
 		feed = (Feed) in.readObject();
 		in.close();
-
-		assert (feed != null) : "Feed instance cannot be null!";
-
+		
 		return feed;
 	}
 
