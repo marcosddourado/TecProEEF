@@ -18,16 +18,16 @@ import android.widget.Toast;
 
 public class FeedController extends AsyncTask<String, Void, Feed> {
 
-	private Context context;
+	private Context context = null;
 	private boolean updated = false;
-	private DataReceiver dataReceiver;
-	private ProgressDialog progressBar;
+	private DataReceiver dataReceiver = null;
+	private ProgressDialog progressBar = null;
 
 	public FeedController(Context context, DataReceiver dataReceiver) {
 		this.dataReceiver = dataReceiver;
 		this.context = context;
 	}
-	
+
 	@Override
 	protected void onPreExecute() {
 		progressBar = new ProgressDialog(context, R.style.CustomProgressBar);
@@ -39,7 +39,6 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 	}
 
 	protected Feed doInBackground(String... urls) {
-
 		Feed feed = null;
 
 		try {
@@ -50,9 +49,6 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 
 			PersistenceFeed.getInstance(this.context).writeFeedFile(feed);
 			this.updated = true;
-
-			return feed;
-
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -68,18 +64,16 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 		}
 
 		return feed;
-
 	}
 
-	// After the execution of the task
 	protected void onPostExecute(Feed feed) {
-		
+
 		if (progressBar != null) {
 			progressBar.dismiss();
 		}
-		
+
 		if (!this.updated) {
-			Toast.makeText(this.context, "Neo foi possivel atualizar as noticias! :(",
+			Toast.makeText(this.context, "Não foi possivel atualizar as noticias! :(",
 					Toast.LENGTH_LONG).show();
 		}
 

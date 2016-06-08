@@ -5,14 +5,14 @@ import com.mdsgpp.eef.model.News;
 
 public class FeedParseController {
 
-	private Feed feed;
-	private News item;
-	private static FeedParseController instance;
-	
+	private Feed feed = null;
+	private News item = null;
+	private static FeedParseController instance = null;
+
 	public FeedParseController() {
 		this.feed = new Feed();
 	}
-	
+
 	public static FeedParseController getInstance() {
 		if (instance == null) {
 			instance = new FeedParseController();
@@ -23,21 +23,21 @@ public class FeedParseController {
 	public Feed getFeed() {
 		return this.feed;
 	}
-	
+
 	public void createNewFeed() {
 		this.feed.reset();
 	}
-	
+
 	public void createNewFeedItem() {
 		this.item = new News(this.feed);
 	}
-	
+
 	public void addItem() {
 		this.feed.addFeedItem(this.item);
 	}
-	
+
 	public News getItem() {
 		return this.item;
 	}
-	
+
 }
