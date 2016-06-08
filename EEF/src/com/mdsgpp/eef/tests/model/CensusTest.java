@@ -1,4 +1,4 @@
-package com.mdsgpp.eef.tests;
+package com.mdsgpp.eef.tests.model;
 
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
