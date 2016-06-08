@@ -54,4 +54,13 @@ public class PersistenceFeedTest {
         }
         assertThat(alter_mock_feed.getFeedItens(), equalTo(mock_feed.getFeedItens()));
     }
+
+    @Test (expected = NullPointerException.class)
+    public void trigger_IOException() {
+        try {
+            testObject.writeFeedFile(null);
+        } catch (IOException e) {
+            /*do nothing*/
+        }
+    }
 }
