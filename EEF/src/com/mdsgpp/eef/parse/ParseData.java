@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import com.mdsgpp.eef.model.State;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -23,12 +24,6 @@ public class ParseData {
 	private final int ACRONYM_POSITION = 1;
 	private final int STATES_MAX_INDEX = 26; // index counting starts with 0, so the maximum index for the 27 states is 26
 
-	private final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
-			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
-			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
-			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
-			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
-
 	public ParseData(Context context) {
 		assert(context != null) : "null context passed on constructor";
 		this.context = context;
@@ -41,7 +36,7 @@ public class ParseData {
 		HashMap<String, ArrayList<String[]>> state_data = new HashMap<String, ArrayList<String[]>>();
 
 		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(this.states[position] + this.EXTENSION);
+		InputStream is = am.open(State.states[position] + this.EXTENSION);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
 		assert (br != null) : "buffer cannot reference NULL";
