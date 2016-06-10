@@ -8,6 +8,8 @@ import static org.hamcrest.CoreMatchers.*;
 import org.mockito.Mock;
 import com.mdsgpp.eef.model.Census;
 
+import java.util.Random;
+
 import dalvik.annotation.TestTargetClass;
 
 
@@ -16,18 +18,29 @@ import dalvik.annotation.TestTargetClass;
  */
 public class CensusTest {
 
+    private Census census;
+    Random random = new Random();
+
     @Before
     public void setup() {
+        double initialElementaryYears = this.random.nextDouble() * 10;
+        double finalElementaryYears = this.random.nextDouble() * 10;
+        double highSchool = this.random.nextDouble() * 10;
+        double elementaryEJA = this.random.nextDouble() * 10;
+        double highSchoolEJA = this.random.nextDouble() * 10;
+
+        this.census = new Census(initialElementaryYears, finalElementaryYears, highSchool,
+                elementaryEJA, highSchoolEJA);
     }
 
     @Test
     public void construct_with_parameters() {
 
-        double initialElementaryYears = 3.5;
-        double finalElementaryYears = 4.5;
-        double highSchool = 8.6;
-        double elementaryEJA = 2.9;
-        double highSchoolEJA = 10.0;
+        double initialElementaryYears = this.random.nextDouble() * 10;
+        double finalElementaryYears = this.random.nextDouble() * 10;
+        double highSchool = this.random.nextDouble() * 10;
+        double elementaryEJA = this.random.nextDouble() * 10;
+        double highSchoolEJA = this.random.nextDouble() * 10;
 
         Census census = new Census(initialElementaryYears, finalElementaryYears, highSchool,
                 elementaryEJA, highSchoolEJA);
@@ -50,6 +63,16 @@ public class CensusTest {
         assertThat(census.getHighSchoolEJA(), is(0.0));
     }
 
+    @Test
+    public void set_final_elementary_years_test() {
 
+        double finalElementaryYears = census.getFinalElementaryYears();
+        assertThat(finalElementaryYears, is(census.getFinalElementaryYears()));
+
+        finalElementaryYears = this.random.nextDouble() * 10;
+        census.setFinalElementaryYears(finalElementaryYears);
+
+        assertThat(finalElementaryYears, is(census.getFinalElementaryYears()));
+    }
         
 }
