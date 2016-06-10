@@ -10,6 +10,11 @@ public class Feed implements Serializable {
 
 	private ArrayList<News> feedItems;
 
+	/**
+	 * Initializes the feed object. Also initializes feedItems property.
+	 *
+	 * @return New feed object with feed data properties set.
+	 */
 	public Feed() {
 		feedItems = new ArrayList<News>();
 	}
@@ -18,9 +23,15 @@ public class Feed implements Serializable {
 		return feedItems;
 	}
 
-	public News getFeedItem(int position) {
+	/**
+	 * Returns item from feedItems array.
+	 *
+	 * @param  position The index from which the value will be gotten.
+	 * @return 			Item from feedItems array at the given index.
+	 */
+	public News getFeedItem(final int position) {
 		assert (position >= 0) : "position < 0. position was " + position;
-		assert (feedItems.get(position) != null) : "null News object";
+		assert (position < feedItems.size()) : "invalid position in array. position was " + position;
 		return feedItems.get(position);
 	}
 
@@ -29,6 +40,11 @@ public class Feed implements Serializable {
 		this.feedItems = feedItems;
 	}
 
+	/**
+	 * Appends a new item to the feedItems array.
+	 *
+	 * @param  newFeedItem The item to be added.
+	 */
 	public void addFeedItem(News newFeedItem) {
 		assert (newFeedItem != null) : "null newFeedItem";
 		this.feedItems.add(newFeedItem);
@@ -38,6 +54,9 @@ public class Feed implements Serializable {
 		return feedItems.size();
 	}
 
+	/**
+	 * Removes all objects from the feedItems array.
+	 */
 	public void reset() {
 		this.feedItems.clear();
 	}
