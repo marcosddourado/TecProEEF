@@ -12,8 +12,24 @@ public class Census {
 	private final int acceptableYear = 1900;
 
 	public Census() {
+
+		this.initialElementaryYears = 0;
+		this.finalElementaryYears = 0;
+		this.highSchool = 0;
+		this.elementaryEJA = 0;
+		this.highSchoolEJA = 0;
 	}
 
+	/**
+	 * Initializes the census object, setting properties according to the parameters.
+	 *
+	 * @param  initialElementaryYears Initial elementary years census data
+	 * @param  finalElementaryYears   Final elementary years census data
+	 * @param  highSchool 			  High school census data
+	 * @param  elementaryEJA 		  Elementary EJA years census data
+	 * @param  highSchoolEJA 		  High school EJA census data
+	 * @return						  New census object with census data properties set.
+	 */
 	public Census(double initialElementaryYears, double finalElementaryYears,
 			     double highSchool, double elementaryEJA, double highSchoolEJA){
 			 
@@ -78,7 +94,8 @@ public class Census {
 	}
 
 	public void setCensusYear(int censusYear) {
-		assert (censusYear >= acceptableYear): "censusYear non-acceptable. censusYear was = " + censusYear;
+		assert(censusYear >= acceptableYear):
+				"censusYear non-acceptable. censusYear was = " + censusYear;
 		this.censusYear = censusYear;
 	}
 

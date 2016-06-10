@@ -4,41 +4,42 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Feed implements Serializable {
+
 	// Default serial id
 	private static final long serialVersionUID = 1L;
 
-	private ArrayList<News> feedItens;
+	private ArrayList<News> feedItems;
 
 	public Feed() {
-		feedItens = new ArrayList<News>();
+		feedItems = new ArrayList<News>();
 	}
 
-	public ArrayList<News> getFeedItens() {
-		return feedItens;
+	public ArrayList<News> getFeedItems() {
+		return feedItems;
 	}
 
 	public News getFeedItem(int position) {
 		assert (position >= 0) : "position < 0. position was " + position;
-		assert (feedItens.get(position) != null) : "null News object";
-		return feedItens.get(position);
+		assert (feedItems.get(position) != null) : "null News object";
+		return feedItems.get(position);
 	}
 
-	public void setFeedItens(ArrayList<News> feedItens) {
-		assert(feedItens != null) : "null feedItens";
-		this.feedItens = feedItens;
+	public void setFeedItems(ArrayList<News> feedItems) {
+		assert(feedItems != null) : "null feedItems";
+		this.feedItems = feedItems;
 	}
 
 	public void addFeedItem(News newFeedItem) {
 		assert (newFeedItem != null) : "null newFeedItem";
-		this.feedItens.add(newFeedItem);
+		this.feedItems.add(newFeedItem);
 	}
 
-	public int getFeedItensSize() {
-		return feedItens.size();
+	public int getFeedItemsSize() {
+		return feedItems.size();
 	}
 
 	public void reset() {
-		this.feedItens.clear();
+		this.feedItems.clear();
 	}
 
 }

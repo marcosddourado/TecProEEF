@@ -52,7 +52,7 @@ public class PersistenceFeedTest {
         } catch (NullPointerException e) {
             /*do nothing*/
         }
-        assertThat(alter_mock_feed.getFeedItens(), equalTo(mock_feed.getFeedItens()));
+        assertThat(alter_mock_feed.getFeedItems(), equalTo(mock_feed.getFeedItems()));
     }
 
     @Test (expected = NullPointerException.class)
