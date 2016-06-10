@@ -41,6 +41,11 @@ public class Feed implements Serializable {
 		this.feedItems = feedItems;
 	}
 
+	/**
+	 * Appends a new item to the feedItems array.
+	 *
+	 * @param  newFeedItem The item to be added.
+	 */
 	public void addFeedItem(News newFeedItem) {
 		assert (newFeedItem != null) : "null newFeedItem";
 		this.feedItems.add(newFeedItem);
@@ -50,6 +55,9 @@ public class Feed implements Serializable {
 		return feedItems.size();
 	}
 
+	/**
+	 * Removes all objects from the feedItems array.
+	 */
 	public void reset() {
 		this.feedItems.clear();
 	}
