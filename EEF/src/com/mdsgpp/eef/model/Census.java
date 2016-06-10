@@ -78,7 +78,8 @@ public class Census {
 	}
 
 	public void setCensusYear(int censusYear) {
-		assert (censusYear >= acceptableYear): "censusYear non-acceptable. censusYear was = " + censusYear;
+		assert(censusYear >= acceptableYear):
+				"censusYear non-acceptable. censusYear was = " + censusYear;
 		this.censusYear = censusYear;
 	}
 
