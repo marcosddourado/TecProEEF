@@ -20,6 +20,16 @@ public class Census {
 		this.highSchoolEJA = 0;
 	}
 
+	/**
+	 * Initializes the census object, setting properties according to the parameters.
+	 *
+	 * @param  initialElementaryYears Initial elementary years census data
+	 * @param  finalElementaryYears   Final elementary years census data
+	 * @param  highSchool 			  High school census data
+	 * @param  elementaryEJA 		  Elementary EJA years census data
+	 * @param  highSchoolEJA 		  High school EJA census data
+	 * @return						  New census object with census data properties set.
+	 */
 	public Census(double initialElementaryYears, double finalElementaryYears,
 			     double highSchool, double elementaryEJA, double highSchoolEJA){
 			 
