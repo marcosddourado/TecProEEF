@@ -1,11 +1,14 @@
 package com.mdsgpp.eef.tests.model;
 
+import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.*;
 import org.mockito.Mock;
 import com.mdsgpp.eef.model.Census;
+
+import dalvik.annotation.TestTargetClass;
 
 
 /**
@@ -34,7 +37,17 @@ public class CensusTest {
         assertThat(census.getHighSchool(), is(highSchool));
         assertThat(census.getElementaryEJA(), is(elementaryEJA));
         assertThat(census.getHighSchoolEJA(), is(highSchoolEJA));
+    }
 
+    @Test
+    public void construct() {
+        Census census = new Census();
+
+        assertThat(census.getInitialElementaryYears(), is(0.0));
+        assertThat(census.getFinalElementaryYears(), is(0.0));
+        assertThat(census.getHighSchool(), is(0.0));
+        assertThat(census.getElementaryEJA(), is(0.0));
+        assertThat(census.getHighSchoolEJA(), is(0.0));
     }
 
 

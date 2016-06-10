@@ -12,6 +12,12 @@ public class Census {
 	private final int acceptableYear = 1900;
 
 	public Census() {
+
+		this.initialElementaryYears = 0;
+		this.finalElementaryYears = 0;
+		this.highSchool = 0;
+		this.elementaryEJA = 0;
+		this.highSchoolEJA = 0;
 	}
 
 	public Census(double initialElementaryYears, double finalElementaryYears,
