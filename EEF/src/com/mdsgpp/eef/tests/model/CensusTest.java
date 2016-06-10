@@ -9,9 +9,7 @@ import org.mockito.Mock;
 import com.mdsgpp.eef.model.Census;
 
 import java.util.Random;
-
 import dalvik.annotation.TestTargetClass;
-
 
 /**
  * Created by andreanmasiro on 06/06/16.
