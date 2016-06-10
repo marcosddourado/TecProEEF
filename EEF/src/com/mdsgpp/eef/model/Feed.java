@@ -26,13 +26,12 @@ public class Feed implements Serializable {
 	/**
 	 * Returns item from feedItems array.
 	 *
-	 * @param  position The position from the array from which the value will be gotten.
-	 * @return Item from feedItems array in position.
+	 * @param  position The index from which the value will be gotten.
+	 * @return 			Item from feedItems array at the given index.
 	 */
-	public News getFeedItem(int position) {
+	public News getFeedItem(final int position) {
 		assert (position >= 0) : "position < 0. position was " + position;
-		assert (feedItems.get(position) != null) : "null News object";
-		assert (position < feedItems.size()) : "invalid position in array";
+		assert (position < feedItems.size()) : "invalid position in array. position was " + position;
 		return feedItems.get(position);
 	}
 
