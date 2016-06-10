@@ -13,11 +13,10 @@ import android.content.res.AssetManager;
 
 public class ParseData {
 
-	private ArrayList<String[]> data;
 	private Context context;
-	private String indicatorName;
 
 	private final String EXTENSION = ".txt";
+	private final String FIRST_INDICATIVE = "censo_anos_finais";
 	private final int LINES = 2;
 	private final int PAIR = 2;
 	private final int NAME_POSITION = 0;
@@ -29,14 +28,14 @@ public class ParseData {
 		this.context = context;
 	}
 
-	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
-		assert(position >= 0) : "position must be positive. position was" + position;
-		assert(position <= STATES_MAX_INDEX) : "position can't be greater than 26. position was" + position;
+	public HashMap<String, ArrayList<String[]>> getState(int state_position) throws IOException {
+		assert(state_position >= 0) : "position must be positive. position was" + state_position;
+		assert(state_position <= STATES_MAX_INDEX) : "position can't be greater than 26. position was" + state_position;
 
 		HashMap<String, ArrayList<String[]>> state_data = new HashMap<String, ArrayList<String[]>>();
 
-		insertAcronymName(name, acronym, state_data);
-		readIndicatives(br, state_data);
+		insertAcronymName(state_position, state_data);
+		readIndicatives(state_position, state_data);
 
 		return state_data;
 	}
@@ -44,9 +43,9 @@ public class ParseData {
 	public BufferedReader readState(int state_position) throws IOException {
 		AssetManager am = this.context.getAssets();
 		InputStream is = am.open(State.states[state_position] + this.EXTENSION);
-		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+		BufferedReader state_stream = new BufferedReader(new InputStreamReader(is));
 
-		return br;
+		return state_stream;
 	}
 
 	// Method responsible for sending state name and acronym through indicatives hashmap.
@@ -55,10 +54,10 @@ public class ParseData {
 		ArrayList<String[]> container = new ArrayList<String[]>();
 		String name, acronym;
 
-		BufferedReader br = readState(state_position);
+		BufferedReader state_stream = readState(state_position);
 
-		name = br.readLine();
-		acronym = br.readLine();
+		name = state_stream.readLine();
+		acronym = state_stream.readLine();
 
 		nameAndAcronym[NAME_POSITION] = name;
 		nameAndAcronym[ACRONYM_POSITION] = acronym;
@@ -67,38 +66,30 @@ public class ParseData {
 		state_data.put("nome_e_sigla", container);
 	}
 
-	public void eraseData() {
-		this.data = new ArrayList<String[]>();
-	}
-
 	// Method responsble for reading available data.
-	public void  readIndicatives(BufferedReader br, HashMap<String, ArrayList<String[]>> state_data) throws IOException {
+	public void  readIndicatives(int state_position, HashMap<String,
+		ArrayList<String[]>> state_data) throws IOException {
 		int aux = 0;
 		String line;
+		String indicatorName;
+		ArrayList<String[]> data = new ArrayList<String[]>();
 
-		line = br.readLine();
-		indicatorName = br.readLine();
-		line = br.readLine();
+		BufferedReader state_stream = readState(state_position);
 
-		while (line != null) {
 
-			if (line.isEmpty()) {
-				aux++;
-			} else {
-				data.add(line.split(": "));
-			}
-
-			if (aux == LINES) {
-				aux = 0;
+		state_stream.readLine();
+		state_stream.readLine(); //this will skip name and acronym on file
+		do {
+			line = state_stream.readLine();
+			if (!line.isEmpty()) {
+				indicatorName = state_stream.readLine();
+				do {
+					data.add(line.split(": "));
+				} while(!line.isEmpty());
 				state_data.put(indicatorName, data);
-				indicatorName = br.readLine();
-				eraseData();
 			}
-
-			line = br.readLine();
-		}
-
-		br.close();
+		} while (line != null);
+		state_stream.close();
 	}
 
 }
