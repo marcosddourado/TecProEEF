@@ -15,7 +15,7 @@ import com.mdsgpp.eef.model.State;
 public class ParseData {
 
 	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
-	private ArrayList<String[]> data;
+	;
 	private Context context;
 	private String indicatorName;
 
@@ -44,20 +44,14 @@ public class ParseData {
 		name = State.states[state_position];
 		acronym = State.acronyms[state_position];
 
-		eraseData();
-
 		insertAcronymName(name, acronym, state_data);
 		readIndicatives(state_position, state_data);
 
-		return informations;
+		return state_data;
 	}
 
 	public void eraseInformations() {
 		this.informations.clear();
-	}
-
-	public void eraseData() {
-		this.data = new ArrayList<String[]>();
 	}
 
 	// Method responsible for sending state name and acronym through indicatives hashmap.
@@ -79,6 +73,7 @@ public class ParseData {
 		int aux = 0;
 		String line;
 		String indicatorName;
+		ArrayList<String[]> data = new ArrayList<String[]>();
 
 		AssetManager am = this.context.getAssets();
 		InputStream is = am.open(State.states[state_position] + this.EXTENSION);
@@ -91,7 +86,6 @@ public class ParseData {
 		line = br.readLine();
 
 		while (line != null) {
-
 			if (line.isEmpty()) {
 				aux++;
 			} else {
@@ -102,7 +96,6 @@ public class ParseData {
 				aux = 0;
 				state_data.put(indicatorName, data);
 				indicatorName = br.readLine();
-				eraseData();
 			}
 
 			line = br.readLine();
