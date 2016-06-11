@@ -45,7 +45,7 @@ public class ParseData {
 		return state_data;
 	}
 
-	// Method responsible for sending state name and acronym through indicatives hashmap.
+	// Insert name and acronym into state_data
 	public void insertAcronymName(String name, String acronym, HashMap<String, ArrayList<String[]>> state_data) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
 		String nameAndAcronym[] = new String[PAIR];
@@ -59,7 +59,7 @@ public class ParseData {
 		state_data.put("nome_e_sigla", container);
 	}
 
-	// Method responsble for reading available data.
+	// Insert indicatives read from assets into state_data
 	public void  readIndicatives(int state_position, HashMap<String, ArrayList<String[]>> state_data) throws IOException {
 		int aux = 0;
 		String line;
