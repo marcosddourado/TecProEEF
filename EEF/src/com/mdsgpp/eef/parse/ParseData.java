@@ -25,6 +25,7 @@ public class ParseData {
 	private final int NAME_POSITION = 0;
 	private final int ACRONYM_POSITION = 1;
 	private final int STATES_MAX_INDEX = 26; // index counting starts with 0, so the maximum index for the 27 states is 26
+	private final int EMPTY_LINES = 4;
 
 
 	public ParseData(Context context) {
@@ -33,25 +34,20 @@ public class ParseData {
 		this.informations = new HashMap<String, ArrayList<String[]>>();
 	}
 
-	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
-		assert(position >= 0) : "position must be positive. position was" + position;
-		assert(position <= STATES_MAX_INDEX) : "position can't be greater than 26. position was" + position;
+	public HashMap<String, ArrayList<String[]>> getState(int state_position) throws IOException {
+		assert(state_position >= 0) : "position must be positive. position was" + state_position;
+		assert(state_position <= STATES_MAX_INDEX) : "position can't be greater than 26. position was" + state_position;
+
 		String name, acronym;
+		HashMap<String, ArrayList<String[]>> state_data = new HashMap<String, ArrayList<String[]>>();
 
-		AssetManager am = this.context.getAssets();
-		InputStream is = am.open(State.states[position] + this.EXTENSION);
-		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+		name = State.states[state_position];
+		acronym = State.acronyms[state_position];
 
-		assert (br != null) : "buffer cannot reference NULL";
-
-		name = State.states[position];
-		acronym = State.acronyms[position];
-
-		eraseInformations();
 		eraseData();
 
-		insertAcronymName(name, acronym);
-		readIndicatives(br);
+		insertAcronymName(name, acronym, state_data);
+		readIndicatives(state_position, state_data);
 
 		return informations;
 	}
@@ -65,7 +61,7 @@ public class ParseData {
 	}
 
 	// Method responsible for sending state name and acronym through indicatives hashmap.
-	public void insertAcronymName(String name, String acronym) {
+	public void insertAcronymName(String name, String acronym, HashMap<String, ArrayList<String[]>> state_data) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
 		String nameAndAcronym[] = new String[PAIR];
 		nameAndAcronym[NAME_POSITION] = name;
@@ -75,16 +71,20 @@ public class ParseData {
 
 		assert (container != null): "Dictionary input cannot be of NULL value!";
 
-		this.informations.put("nome_e_sigla", container);
+		state_data.put("nome_e_sigla", container);
 	}
 
 	// Method responsble for reading available data.
-	public void  readIndicatives(BufferedReader br) throws IOException {
+	public void  readIndicatives(int state_position, HashMap<String, ArrayList<String[]>> state_data) throws IOException {
 		int aux = 0;
 		String line;
 		String indicatorName;
 
-		for (int i = 0; i < 4; i++) {
+		AssetManager am = this.context.getAssets();
+		InputStream is = am.open(State.states[state_position] + this.EXTENSION);
+		BufferedReader br = new BufferedReader(new InputStreamReader(is));
+
+		for (int i = 0; i < EMPTY_LINES; i++) {
 			br.readLine();
 		}
 		indicatorName = br.readLine();
@@ -100,7 +100,7 @@ public class ParseData {
 
 			if (aux == LINES) {
 				aux = 0;
-				this.informations.put(indicatorName, data);
+				state_data.put(indicatorName, data);
 				indicatorName = br.readLine();
 				eraseData();
 			}
