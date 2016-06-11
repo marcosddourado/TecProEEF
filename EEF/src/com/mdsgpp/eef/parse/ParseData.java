@@ -13,11 +13,7 @@ import android.content.res.AssetManager;
 import com.mdsgpp.eef.model.State;
 
 public class ParseData {
-
-	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
-	;
 	private Context context;
-	private String indicatorName;
 
 	private final String EXTENSION = ".txt";
 	private final int LINES = 2;
@@ -31,7 +27,6 @@ public class ParseData {
 	public ParseData(Context context) {
 		assert(context != null) : "null context passed on constructor";
 		this.context = context;
-		this.informations = new HashMap<String, ArrayList<String[]>>();
 	}
 
 	public HashMap<String, ArrayList<String[]>> getState(int state_position) throws IOException {
@@ -48,10 +43,6 @@ public class ParseData {
 		readIndicatives(state_position, state_data);
 
 		return state_data;
-	}
-
-	public void eraseInformations() {
-		this.informations.clear();
 	}
 
 	// Method responsible for sending state name and acronym through indicatives hashmap.
