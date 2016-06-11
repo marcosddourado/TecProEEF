@@ -44,8 +44,8 @@ public class ParseData {
 
 		assert (br != null) : "buffer cannot reference NULL";
 
-		name = br.readLine();
-		acronym = br.readLine();
+		name = State.states[position];
+		acronym = State.acronyms[position];
 
 		eraseInformations();
 		eraseData();
@@ -82,8 +82,11 @@ public class ParseData {
 	public void  readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
 		String line;
+		String indicatorName;
 
-		line = br.readLine();
+		for (int i = 0; i < 4; i++) {
+			br.readLine();
+		}
 		indicatorName = br.readLine();
 		line = br.readLine();
 
