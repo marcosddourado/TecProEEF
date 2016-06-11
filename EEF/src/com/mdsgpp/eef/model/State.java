@@ -28,6 +28,9 @@ public class State {
 			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
 			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
 			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
+	public static final String acronyms[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
+			"MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR",
+			"SC", "SP", "SE", "TO"};
 
 	public State(){
 	}
