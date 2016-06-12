@@ -5,13 +5,11 @@ import android.content.Context;
 import com.mdsgpp.eef.model.State;
 import com.mdsgpp.eef.parse.ParseData;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -69,11 +67,26 @@ public class ParseDataTest {
         }
     }
 
+    @Test
+    public void insertAcronymName_with_valid_parameters() {
+        ParseData testObject = new ParseData(mock_context);
+        String testName = "test_name";
+        String testAcronym = "test_acronym";
+        String testKey = "nome_e_sigla";
+        HashMap<String, ArrayList<String[]>> testMap = new HashMap<String, ArrayList<String[]>>();
+        final int NAME_POSITION = 0;
+        final int ACRONYM_POSITION = 1;
 
-//    @Test
-//    public void readIndicatives_parse_correctly() {
-//
-//    }
+        testObject.insertAcronymName(testName, testAcronym, testMap);
+        ArrayList<String[]> testResult = testMap.get(testKey);
+
+        String resultName = testResult.get(0)[NAME_POSITION];
+        assertThat(resultName, equalTo(testName));
+
+        String resultAcronym = testResult.get(0)[ACRONYM_POSITION];
+        assertThat(resultAcronym, equalTo(testAcronym));
+    }
+
 
 
 }
