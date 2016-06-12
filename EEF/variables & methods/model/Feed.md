@@ -9,18 +9,18 @@
 | Type                |     Variable     | Description|
 |---------------------|:----------------:|------------|
 | `static final long` | serialVersionUID |            |
-| `ArrayList<News>`   | feedItens        |`feedItens` will store all News  assigned to it's object|
+| `ArrayList<News>`   | feedItems        |`feedItems` will store all News  assigned to it's object|
 
 #### Public members:
 | Return Type |    Method Name   |       Arguments       |                     Description                    |
 |:-----------:|:----------------:|:---------------------:|:--------------------------------------------------:|
-|      --     |       Feed       |           --          |         Constructor. Initializes feedItens         |
-| `ArrayList` |   getFeedItens   |           --          |                 Retrieve feedItens                 |
-|    `News`   |    getFeedItem   |     `int` position    | Retrieve the item held by feedItens in  'position' |
-|    `void`   |   setFeedItens   | `ArrayList` feedItens |  Set class member feedItens as argument feedItens  |
-|    `void`   |    addFeedItem   |   `News` newFeedItem  |            Add newFeedItem to feedItens            |
-|    `int`    | getFeedItensSize |           --          |           Retrieve the size of feedItens           |
-|    `void`   |       reset      |           --          |          Clear all itens held by feedItens         |
+|      --     |       Feed       |           --          |         Constructor. Initializes feedItems         |
+| `ArrayList` |   getFeedItems   |           --          |                 Retrieve feedItems                 |
+|    `News`   |    getFeedItem   |     `int` position    | Retrieve the item held by feedItems in  'position' |
+|    `void`   |   setFeedItems   | `ArrayList` feedItems |  Set class member feedItems as argument feedItems  |
+|    `void`   |    addFeedItem   |   `News` newFeedItem  |            Add newFeedItem to feedItems            |
+|    `int`    | getFeedItemsSize |           --          |           Retrieve the size of feedItems           |
+|    `void`   |       reset      |           --          |          Clear all Items held by feedItems         |
 
 #### Local Variables per Function:
 
@@ -28,12 +28,12 @@
 |       | Constructor |                                                                                 |
 |:-----:|:-----------:|:-------------------------------------------------------------------------------:|
 |  Type |   Variable  |                                   Description                                   |
-| `int` |  `position` | `position`determines the position of a specific News item stored on `feedItens` |
+| `int` |  `position` | `position`determines the position of a specific News item stored on `feedItems` |
 
-|             | setFeedItens |                                                          |
+|             | setFeedItems |                                                          |
 |:-----------:|:------------:|:--------------------------------------------------------:|
 |     Type    |   Variable   |                        Description                       |
-| `ArrayList` |  `feedItens` | Provides a value to be set on private member `feedItens` |
+| `ArrayList` |  `feedItems` | Provides a value to be set on private member `feedItems` |
 
 |        |  addFeedItem  |                                                           |
 |:------:|:-------------:|:---------------------------------------------------------:|

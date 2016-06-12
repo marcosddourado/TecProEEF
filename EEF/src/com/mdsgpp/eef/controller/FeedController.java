@@ -41,6 +41,8 @@ public class FeedController extends AsyncTask<String, Void, Feed> {
 	protected Feed doInBackground(String... urls) {
 		Feed feed = null;
 
+		assert (urls != null) : "null urls";
+
 		try {
 			URL url = new URL(urls[0]);
 			ParserFeed handler = new ParserFeed();

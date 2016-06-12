@@ -32,12 +32,12 @@ public class FeedAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
-		return feed.getFeedItensSize();
+		return feed.getFeedItemsSize();
 	}
 
 	@Override
 	public Object getItem(int position) {
-		return feed.getFeedItens().get(position);
+		return feed.getFeedItems().get(position);
 	}
 
 	@Override

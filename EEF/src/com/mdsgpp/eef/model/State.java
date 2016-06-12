@@ -23,6 +23,15 @@ public class State {
 	private Grade educationalAchievementRate[] = {};
 	private Grade schoolDropoutRate[] = {};
 
+	public static final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
+			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
+			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
+			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
+			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
+	public static final String acronyms[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
+			"MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR",
+			"SC", "SP", "SE", "TO"};
+
 	public State(){
 	}
 
