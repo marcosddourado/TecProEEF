@@ -48,4 +48,19 @@ public class GradeTest {
         assertThat(grade.getHighSchoolGrade(), is(highSchoolGrade));
 
     }
+
+    @Test
+    public void testAcceptableYear() {
+
+        double elementaryGrade = this.random.nextDouble() * 10;
+        double highSchoolGrade = this.random.nextDouble() * 10;
+
+        Grade grade = new Grade(elementaryGrade, highSchoolGrade);
+
+        grade.setGradeYear(1880);
+
+        assertThat(grade.getElementaryGrade(), is(elementaryGrade));
+        assertThat(grade.getHighSchoolGrade(), is(highSchoolGrade));
+        assertThat(grade.getGradeYear(), is(0));
+    }
 }
