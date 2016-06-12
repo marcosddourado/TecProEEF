@@ -15,9 +15,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import dalvik.annotation.TestTargetClass;
 
-/**
- * Created by andreanmasiro on 09/06/16.
- */
 public class FeedTest {
 
     @Mock
