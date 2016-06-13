@@ -21,9 +21,9 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	private State state = null;
 	private ArrayList<Float> historico = new ArrayList<Float>();
 
-	private String titulo = "";
-	private String indicativo = "";
-	private int positionHistorico = 0;
+	private String tittle = "";
+	private String indicative = "";
+	private int historicPosition = 0;
 	private Intent receivedIntent = null;
 	
 	@Override
@@ -32,12 +32,12 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 		setContentView(R.layout.activity_choose_indicative_graph);
 		
 		receivedIntent = getIntent();
-		positionHistorico = receivedIntent.getIntExtra("ESTADO", 0);
+		historicPosition = receivedIntent.getIntExtra("ESTADO", 0);
 
-		state = capturaInformacoesEstado();
+		state = getStateInfo();
 
-		titulo = "Populaeeo";
-		indicativo = "populacao";
+		tittle = "Populacao";
+		indicative = "populacao";
 		historico.clear();
 		historico.add((float) state.getStatePopulation());
 	}
@@ -92,213 +92,213 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 		
 		switch (view.getId()) {
 		case R.id.radio_apoio_cnpq_investment:
-            titulo = "Projetos de Pesquisa Apoio CNPq (R$)";
-            indicativo = "cnpq";
+            tittle = "Projetos de Pesquisa Apoio CNPq (R$)";
+            indicative = "cnpq";
 
             setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_apoio_cnpq_amount:
-			titulo = "Projetos de Pesquisa Apoio CNPq (Qtd.)";
-			indicativo = "cnpq";
+			tittle = "Projetos de Pesquisa Apoio CNPq (Qtd.)";
+			indicative = "cnpq";
 
             setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_technological_diffusion_investment:
-			titulo = "Projeto de Difuseo Tecnolegica (R$)";
-			indicativo = "projetos_ciencia_tecnologia";
+			tittle = "Projeto de Difuseo Tecnolegica (R$)";
+			indicative = "projetos_ciencia_tecnologia";
 			historico.clear();
 
             setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_technological_diffusion_amount:
-			titulo = "Projeto de Difuseo Tecnolegica (Qtd.)";
-			indicativo = "projetos_ciencia_tecnologia";
+			tittle = "Projeto de Difuseo Tecnolegica (Qtd.)";
+			indicative = "projetos_ciencia_tecnologia";
 
             setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_ideb_elementary_finals:
-			titulo = "IDEB do Ensino Fundamental (Series Finais)";
-			indicativo = "ideb";
+			tittle = "IDEB do Ensino Fundamental (Series Finais)";
+			indicative = "ideb";
 			historico.clear();
 			for (int i = 0; i < state.getIdebs().length; i++)
 				historico.add((float) state.getIdebs()[i].getElementary());
 			break;
 			
 		case R.id.radio_ideb_elementary_inicials:
-			titulo = "IDEB do Ensino Fundamental (Series Iniciais)";
-			indicativo = "ideb";
+			tittle = "IDEB do Ensino Fundamental (Series Iniciais)";
+			indicative = "ideb";
 
             setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_ideb_high_school:
-			titulo = "IDEB do Ensino Medio";
-			indicativo = "ideb";
+			tittle = "IDEB do Ensino Medio";
+			indicative = "ideb";
 
             setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_jovens_pesquisadores_investment:
-			titulo = "Jovens pesquisadores (R$)";
-			indicativo = "jovens_pesquisadores";
+			tittle = "Jovens pesquisadores (R$)";
+			indicative = "jovens_pesquisadores";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_jovens_pesquisadores_amount:
-			titulo = "Jovens pesquisadores (Qtd.)";
-			indicativo = "jovens_pesquisadores";
+			tittle = "Jovens pesquisadores (Qtd.)";
+			indicative = "jovens_pesquisadores";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_pib:
-			titulo = "Participaeeo Estadual no PIB (%)";
-			indicativo = "percentual_participacao_pib";
+			tittle = "Participaeeo Estadual no PIB (%)";
+			indicative = "percentual_participacao_pib";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_population:
-			titulo = "Populaeeo";
-			indicativo = "populacao";
+			tittle = "Populaeeo";
+			indicative = "populacao";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_primeiros_projetos_investment:
-			titulo = "Programa Primeiros Projetos (R$)";
-			indicativo = "primeiros_projetos";
+			tittle = "Programa Primeiros Projetos (R$)";
+			indicative = "primeiros_projetos";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_primeiros_projetos_amount:
-			titulo = "Programa Primeiros Projetos (Qtd.)";
-			indicativo = "primeiros_projetos";
+			tittle = "Programa Primeiros Projetos (Qtd.)";
+			indicative = "primeiros_projetos";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_inct_projects_investment:
-			titulo = "Projetos INCT (R$)";
-			indicativo = "projetos_inct";
+			tittle = "Projetos INCT (R$)";
+			indicative = "projetos_inct";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_inct_projects_amount:
-			titulo = "Projetos INCT (Qtd.)";
-			indicativo = "projetos_inct";
+			tittle = "Projetos INCT (Qtd.)";
+			indicative = "projetos_inct";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_students_per_class_elementary:
-			titulo = "Media de Alunos por Turma do Ensino Fundamental (Qtd.)";
-			indicativo = "alunos_por_turma_ensino_medio";
+			tittle = "Media de Alunos por Turma do Ensino Fundamental (Qtd.)";
+			indicative = "alunos_por_turma_ensino_medio";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_students_per_class_high_school:
-			titulo = "Media de Alunos por Turma do Ensino Medio (Qtd.)";
-			indicativo = "alunos_por_turma_ensino_medio";
+			tittle = "Media de Alunos por Turma do Ensino Medio (Qtd.)";
+			indicative = "alunos_por_turma_ensino_medio";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_class_hours_elementary:
-			titulo = "Media de horas aula dierias do Ensino Fundamental";
-			indicativo = "horas_aula_ensino_medio";
+			tittle = "Media de horas aula dierias do Ensino Fundamental";
+			indicative = "horas_aula_ensino_medio";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_class_hours_high_school:
-			titulo = "Media de horas aula dierias do Ensino Medio";
-			indicativo = "horas_aula_ensino_medio";
+			tittle = "Media de horas aula dierias do Ensino Medio";
+			indicative = "horas_aula_ensino_medio";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_distortion_rate_elementary:
-			titulo = "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)";
-			indicativo = "taxa_distorcao";
+			tittle = "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)";
+			indicative = "taxa_distorcao";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_distortion_rate_high_school:
-			titulo = "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)";
-			indicativo = "taxa_distorcao";
+			tittle = "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)";
+			indicative = "taxa_distorcao";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_approval_rate_elementary:
-			titulo = "Taxa de Aproveitamento do Ensino Fundamental (%)";
-			indicativo = "taxa_aprovacao";
+			tittle = "Taxa de Aproveitamento do Ensino Fundamental (%)";
+			indicative = "taxa_aprovacao";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_approval_rate_high_school:
-			titulo = "Taxa de Aproveitamento do Ensino Medio (%)";
-			indicativo = "taxa_aprovacao";
+			tittle = "Taxa de Aproveitamento do Ensino Medio (%)";
+			indicative = "taxa_aprovacao";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_dropout_rate_elementary:
-			titulo = "Taxa de Abandono do Ensino Fundamental (%)";
-			indicativo = "taxa_abandono";
+			tittle = "Taxa de Abandono do Ensino Fundamental (%)";
+			indicative = "taxa_abandono";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_dropout_rate_high_school:
-			titulo = "Taxa de Abandono do Ensino Medio (%)";
-			indicativo = "taxa_abandono";
+			tittle = "Taxa de Abandono do Ensino Medio (%)";
+			indicative = "taxa_abandono";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_initial_census_elementary:
-			titulo = "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
-			indicativo = "censo";
+			tittle = "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
+			indicative = "censo";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_final_census_elementary:
-			titulo = "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
-			indicativo = "censo";
+			tittle = "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
+			indicative = "censo";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_census_high_school:
-			titulo = "Censo Escolar do Ensino Medio (Matriculados)";
-			indicativo = "censo";
+			tittle = "Censo Escolar do Ensino Medio (Matriculados)";
+			indicative = "censo";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_census_eja_elementary:
-			titulo = "Censo Escolar do EJA - Fundamental (Matriculados)";
-			indicativo = "censo";
+			tittle = "Censo Escolar do EJA - Fundamental (Matriculados)";
+			indicative = "censo";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_census_eja_high_school:
-			titulo = "Censo Escolar do EJA - Medio (Matriculados)";
-			indicativo = "censo";
+			tittle = "Censo Escolar do EJA - Medio (Matriculados)";
+			indicative = "censo";
 
             setGraphInformations(max, tamanho);
 			break;
@@ -307,18 +307,18 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	}
 
 
-	private State capturaInformacoesEstado() {
-		State estado1 = null;
+	private State getStateInfo() {
+		State tempState = null;
 		
-		int position = positionHistorico;
+		int position = historicPosition;
 		
 		try {
-			estado1 = (State) StateConroller.getInstance(this).grabState(position);
+			tempState = (State) StateConroller.getInstance(this).grabState(position);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-		return estado1;
+		return tempState;
 	}
 
 
@@ -330,9 +330,9 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 			temp.add(historico.get(i)+"");
 		
 		intent.putStringArrayListExtra("HISTORICO", temp);
-		intent.putExtra("TITULO", titulo);
-		intent.putExtra("POSICAO_ESTADO", positionHistorico);
-		intent.putExtra("INDICATIVO_GRAFICO", indicativo);
+		intent.putExtra("TITULO", tittle);
+		intent.putExtra("POSICAO_ESTADO", historicPosition);
+		intent.putExtra("INDICATIVO_GRAFICO", indicative);
 		startActivity(intent);
 	}
 		
