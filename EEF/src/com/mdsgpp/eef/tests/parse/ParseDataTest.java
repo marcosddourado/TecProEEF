@@ -5,12 +5,9 @@ import android.content.Context;
 import com.mdsgpp.eef.model.State;
 import com.mdsgpp.eef.parse.ParseData;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.internal.matchers.Null;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,44 +23,69 @@ public class ParseDataTest {
 
     @Mock
     HashMap<String, ArrayList<String[]>> info;
-
     @Mock
     Context mock_context = Mockito.mock(Context.class);
-
     @Mock
     State mock_state = Mockito.mock(State.class);
 
-    @Before
-    public void setup() {
-        MockitoAnnotations.initMocks(this);
-    }
-
     @Test
     public void constructor_construct_with_valid_parameter() {
-        this.test_object = new ParseData(mock_context);
+        ParseData construct_object = new ParseData(this.mock_context);
 
-        assertThat(test_object, is(notNullValue()));
+        assertThat(construct_object, is(notNullValue()));
     }
 
     @Test (expected = AssertionError.class)
-    public void construct_does_not_construct_with_invalid_parameter() {
-        ParseData test_object = new ParseData(null);
+    public void constructor_does_not_construct_with_invalid_parameter() {
+        ParseData construct_object = new ParseData(null);
     }
+
 
     @Test
     public void getState_return_non_null_data_with_valid_parameters() {
-//        int random_valid_state_position = rand.nextInt(State.states.length - 1);
+        ParseData testObject = new ParseData(mock_context);
+        int random_valid_state_position = this.rand.nextInt(State.states.length - 1);
+        HashMap<String, ArrayList<String[]>> testMap = new HashMap<String, ArrayList<String[]>>();
         try {
-            assertThat(test_object.getState(0), is(notNullValue()));
+            testMap = testObject.getState(random_valid_state_position);
         } catch (IOException e) {
-            System.out.println("test failed");
+        } catch (NullPointerException e) {
+        }
+        assertThat(testMap, is(notNullValue()));
+    }
+
+    @Test (expected = AssertionError.class)
+    public void getState_must_have_valid_parameters() {
+        ParseData testObject = new ParseData(mock_context);
+        HashMap<String, ArrayList<String[]>> testMap = new HashMap<String, ArrayList<String[]>>();
+        final int INVALID_POSITION = 27;
+        try {
+            testMap = testObject.getState(INVALID_POSITION);
+        } catch (IOException e) {
+        } catch (NullPointerException e) {
         }
     }
 
 //    @Test
-//    public void readIndicatives_parse_correctly() {
+//    public void insertAcronymName_with_valid_parameters() {
+//        ParseData testObject = new ParseData(mock_context);
+//        String testName = "test_name";
+//        String testAcronym = "test_acronym";
+//        String testKey = "nome_e_sigla";
+//        HashMap<String, ArrayList<String[]>> testMap = new HashMap<String, ArrayList<String[]>>();
+//        final int NAME_POSITION = 0;
+//        final int ACRONYM_POSITION = 1;
 //
+//        testObject.insertAcronymName(testName, testAcronym, testMap);
+//        ArrayList<String[]> testResult = testMap.get(testKey);
+//
+//        String resultName = testResult.get(0)[NAME_POSITION];
+//        assertThat(resultName, equalTo(testName));
+//
+//        String resultAcronym = testResult.get(0)[ACRONYM_POSITION];
+//        assertThat(resultAcronym, equalTo(testAcronym));
 //    }
+
 
 
 }

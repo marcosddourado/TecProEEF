@@ -64,7 +64,7 @@ public class ParseData {
 		this.data = new ArrayList<String[]>();
 	}
 
-	// Method responsible for sending state name and acronym through indicatives hashmap.
+	// Insert Acronym and Name into the final hashmap containing parsed data
 	public void insertAcronymName(String name, String acronym) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
 		String nameAndAcronym[] = new String[PAIR];
@@ -78,7 +78,7 @@ public class ParseData {
 		this.informations.put("nome_e_sigla", container);
 	}
 
-	// Method responsble for reading available data.
+	// Insert indicatives data into the final hashmap containing parsed data
 	public void  readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
 		String line;
@@ -88,23 +88,19 @@ public class ParseData {
 		line = br.readLine();
 
 		while (line != null) {
-
 			if (line.isEmpty()) {
 				aux++;
 			} else {
 				data.add(line.split(": "));
 			}
-
 			if (aux == LINES) {
 				aux = 0;
 				this.informations.put(indicatorName, data);
 				indicatorName = br.readLine();
 				eraseData();
 			}
-
 			line = br.readLine();
 		}
-
 		br.close();
 	}
 
