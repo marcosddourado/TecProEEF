@@ -21,6 +21,7 @@ public class PersistenceFeed {
 		this.context = context;
 	}
 
+	//Returns an initialized instance of PErsistenceFeed
 	public static PersistenceFeed getInstance(Context context) {
 		if (instance == null) {
 			assert(context != null) : "null context";
@@ -28,10 +29,10 @@ public class PersistenceFeed {
 		} else {/*do nothing*/}
 		return instance;
 	}
-	//Rewrites a data file.
+	//Rewrites a feed.txt
 	public void writeFeedFile(Feed feed) throws IOException, NullPointerException {
 		assert(context != null) : "null context";
-		FileOutputStream fileOut = this.context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
+		FileOutputStream fileOut = this.context.openFileOutput(this.FILENAME, Context.MODE_PRIVATE);
 		ObjectOutputStream out = new ObjectOutputStream(fileOut);
 
 		assert(out != null) : "Output cannot be null!";
@@ -40,7 +41,7 @@ public class PersistenceFeed {
 		out.close();
 	}
 
-	//Reads JSON data file and returns a serialized version of the data.
+	//Reads JSON data file and returns a serialized object of the data.
 	public Feed readFeedFile() throws IOException, ClassNotFoundException {
 		Feed feed;
 		FileInputStream fileIn = this.context.openFileInput(FILENAME);

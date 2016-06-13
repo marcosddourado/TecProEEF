@@ -67,8 +67,6 @@ public class ParserFeed extends DefaultHandler {
 			}
 		});
 
-		// When the 'description' element (inside 'item') is closed, we can get
-		// the text
 		itemDescription.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
@@ -76,8 +74,6 @@ public class ParserFeed extends DefaultHandler {
 			}
 		});
 
-		// When the 'category' element (inside 'item') is closed, we can get the
-		// text
 		itemCategory.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
@@ -85,8 +81,6 @@ public class ParserFeed extends DefaultHandler {
 			}
 		});
 
-		// When the 'pubDate' element (inside 'item') is closed, we can get the
-		// text
 		itemPubDate.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
@@ -94,8 +88,6 @@ public class ParserFeed extends DefaultHandler {
 			}
 		});
 
-		// When the 'link' element (inside 'item') is closed, we can get the
-		// text
 		itemLink.setEndTextElementListener(new EndTextElementListener() {
 			@Override
 			public void end(String body) {
