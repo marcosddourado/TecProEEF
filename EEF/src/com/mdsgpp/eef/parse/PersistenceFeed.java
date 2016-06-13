@@ -52,5 +52,4 @@ public class PersistenceFeed {
 		
 		return feed;
 	}
-
 }
