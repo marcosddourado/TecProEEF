@@ -20,8 +20,6 @@ import android.widget.Toast;
 
 public class ScreenGraph extends Activity {
 
-	private int state1;
-	private int state2;
 	private String title;
 	private String indicative;
 	private TextView graphTitle;
@@ -47,16 +45,15 @@ public class ScreenGraph extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.about:
-			loadAboutScreen();
-			break;
-		case android.R.id.home:
-	        NavUtils.navigateUpFromSameTask(this);
-	        break;
-		default:
-			break;
-		}
-		
+			case R.id.about:
+				loadAboutScreen();
+				break;
+			case android.R.id.home:
+				NavUtils.navigateUpFromSameTask(this);
+				break;
+			default:
+				break;
+			}
     	return true;
 	}
 	
@@ -69,13 +66,13 @@ public class ScreenGraph extends Activity {
 	private void catchInformation() {
 		initializeTextFields();
 		
-		// Captura o intent que abriu a activity
+		// Get the caller intent
 		Intent intent = getIntent();
-		// Captura o valor transferido através da intent
-		state1 = intent.getIntExtra("INDEX_CHOOSED_STATE1", 0);
-		state2 = intent.getIntExtra("INDEX_CHOOSED_STATE2", 0);
-		title = intent.getStringExtra("TITULO");
-		indicative = intent.getStringExtra("INDICATIVO");
+		// Get the value passed through intent
+		int state1 = intent.getIntExtra("INDEX_CHOOSED_STATE1", 0);
+		int state2 = intent.getIntExtra("INDEX_CHOOSED_STATE2", 0);
+		this.title = intent.getStringExtra("TITULO");
+		this.indicative = intent.getStringExtra("INDICATIVO");
 
 		HashMap<String, String> stateInformations1 = new HashMap<String, String>();
 		HashMap<String, String> stateInformations2 = new HashMap<String, String>();
@@ -91,7 +88,7 @@ public class ScreenGraph extends Activity {
 			
 		} catch (IOException e) {
 			Toast.makeText(getApplicationContext(), "Houve um erro no acesso es informaeees.", Toast.LENGTH_SHORT).show();
-			Log.i("IOException - TelaComparaEstados",e.toString());
+			Log.i("IOException",e.toString());
 		}
 	}
 	
@@ -101,18 +98,18 @@ public class ScreenGraph extends Activity {
         Bar state1Bar = new Bar();
         state1Bar.setColor(Color.parseColor("#4682B4"));
         state1Bar.setName(stateInformations1.get("nome"));
-		state1Bar.setValue(indicativeValueState1);
+		state1Bar.setValue(this.indicativeValueState1);
         
         Bar state2Bar = new Bar();
         state2Bar.setColor(Color.parseColor("#191970"));
         state2Bar.setName(stateInformations2.get("nome"));
-        state2Bar.setValue(indicativeValueState2);
+        state2Bar.setValue(this.indicativeValueState2);
 
 		ArrayList<Bar> bars = new ArrayList<Bar>();
         bars.add(state1Bar);
         bars.add(state2Bar);
 
-        graphTitle.setText(title);
+        this.graphTitle.setText(this.title);
         
         BarGraph graph = (BarGraph)findViewById(R.id.graph);
         
@@ -125,10 +122,10 @@ public class ScreenGraph extends Activity {
 		String state1Indicative = stateInformations1.get(indicative);
 		String state2Indicative = stateInformations2.get(indicative);
 	
-				
-		state1Indicative = state1Indicative.replaceAll("[^\\d,]", "");/*como os dados viram como estão escritos na tela
-																					   aqui nós pegamos somente os não digitos (numeros)
-																					   que estão na String*/
+		/*como os dados virao como estão escritos na tela
+		* aqui nós pegamos somente os não digitos (numeros)
+	   	*que estão na String*/
+		state1Indicative = state1Indicative.replaceAll("[^\\d,]", "");
 		state2Indicative = state2Indicative.replaceAll("[^\\d,]", "");
 		
 		state1Indicative = state1Indicative.replaceAll(",", ".");
