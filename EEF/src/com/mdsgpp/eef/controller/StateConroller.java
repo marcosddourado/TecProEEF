@@ -35,12 +35,19 @@ public class StateConroller {
     }
 
     public State grabState(int position) throws IOException {
+        final int AMOUNT_OF_STATES = 26;
+
+        assert (position >= 0) : "negative position is not valid - StateConroller";
+        assert (position <= AMOUNT_OF_STATES) : "this position does not correspond to a State - " +
+                "StateConroller";
+
         parseInformations = ParseController.getInstance(context).getInformations(
                 position);
 
         String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
         State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
 
+        assert (state != null) : "null state on grabState() - StateConroller";
         writeStateWithAllTheInformations(state);
 
         return state;
@@ -54,8 +61,10 @@ public class StateConroller {
         String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
         State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
 
+        assert (state != null) : "null state on readState() - StateConroller";
         writeState(state);
 
+        assert (this.stateInformations != null) : "null stateInformations on readState() - StateConroller";
         return this.stateInformations;
 
     }
@@ -68,14 +77,16 @@ public class StateConroller {
         String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
         State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
 
+        assert (state != null) : "null state on readCompleteState() - StateConroller";
         writeStateWithAllTheInformations(state);
 
+        assert (this.stateInformations != null) : "null stateInformations on readCompleteState() - StateConroller";
         return this.stateInformations;
-
     }
 
     private void writeState(State state) {
 
+        assert (state != null) : "null state on writeState() - StateConroller";
         FillNameAbbreviationAndPopulation(state);
 
         this.stateInformations
@@ -262,6 +273,7 @@ public class StateConroller {
     private void writeStateWithAllTheInformations(State state) {
         String temp = "";
 
+        assert (state != null) : "null state on writeStateWithAllTheInformations() - StateConroller";
         FillNameAbbreviationAndPopulation(state);
 
         for (int i = 0, ano = 1995; i < state.getPercentageCollaborationWithPIB().length; i++, ano++)
@@ -272,7 +284,7 @@ public class StateConroller {
         this.stateInformations.put("percentual_participacao_pib", temp);
         temp = "";
 
-        for (int i = 0, ano = 2003; i < state.getScienceAndThecnologyProjects().length-1; i++, ano++) {
+        for (int i = 0, ano = 2003; i < state.getScienceAndThecnologyProjects().length - 1; i++, ano++) {
             temp += ano
                     + ": "
                     + "Quantidade: "
@@ -306,7 +318,7 @@ public class StateConroller {
         this.stateInformations.put("ideb", temp);
         temp = "";
 
-        for (int i = 0, ano = 2007; i < state.getPrimeirosProjetos().length-1; i++, ano++) {
+        for (int i = 0, ano = 2007; i < state.getPrimeirosProjetos().length - 1; i++, ano++) {
             temp += ano
                     + ": "
                     + "Quantidade: "
@@ -321,7 +333,7 @@ public class StateConroller {
         this.stateInformations.put("primeiros_projetos", temp);
         temp = "";
 
-        for (int i = 0, ano = 2001; i < state.getApoioCnpqProject().length-1; i++, ano++) {
+        for (int i = 0, ano = 2001; i < state.getApoioCnpqProject().length - 1; i++, ano++) {
             temp += ano
                     + ": "
                     + "Quantidade: "
@@ -335,7 +347,7 @@ public class StateConroller {
         this.stateInformations.put("cnpq", temp);
         temp = "";
 
-        for (int i = 0, ano = 2005; i < state.getJovensPesquisadoresProject().length-1; i++, ano++) {
+        for (int i = 0, ano = 2005; i < state.getJovensPesquisadoresProject().length - 1; i++, ano++) {
             temp += ano
                     + ": "
                     + "Quantidade: "
@@ -349,7 +361,7 @@ public class StateConroller {
         this.stateInformations.put("jovens_pesquisadores", temp);
         temp = "";
 
-        for (int i = 0, ano = 2008; i < state.getProjectsInct().length-1; i++, ano++) {
+        for (int i = 0, ano = 2008; i < state.getProjectsInct().length - 1; i++, ano++) {
             temp += ano + ": " + "Quantidade: "
                     + state.getProjectsInct()[i].getProjectQuantity()
                     + " projetos\n" + "\t\t  " + "Valor investido: R$ "
