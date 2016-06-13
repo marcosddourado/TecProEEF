@@ -14,7 +14,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.mdsgpp.eef.R;
 
-public abstract class Comparation extends Activity{
+public abstract class Comparison extends Activity{
 	private Spinner statesSpinner01;
 	private Spinner statesSpinner;
 	private ArrayAdapter<String> statesAdapter01;
@@ -50,36 +50,32 @@ public abstract class Comparation extends Activity{
 		allStates = new ArrayList<String>();
 
 		statesSpinner01 = (Spinner) findViewById(R.id.spinner1);
-		statesSpinner01
-				.setOnItemSelectedListener(new OnItemSelectedListener() {
+		setStatesOnSpinner(statesSpinner01, R.id.spinner1);
+
+		statesSpinner = (Spinner) findViewById(R.id.spinner2);
+		setStatesOnSpinner(statesSpinner, R.id.spinner2);
+	}
+
+	private void setStatesOnSpinner(Spinner spinner, final int spinnerId) {
+		final Spinner finalSpinner = spinner;
+		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
 					@Override
 					public void onItemSelected(AdapterView<?> adapter,
-							View view, int position, long id) {
-						refreshValuesSpinner02(statesSpinner01
-								.getSelectedItem().toString());
+											   View view, int position, long id) {
+						if(spinnerId == R.id.spinner1) {
+							refreshValuesSpinner02(finalSpinner
+									.getSelectedItem().toString());
+						} else {
+							refreshValuesSpinner01(finalSpinner.getSelectedItem()
+									.toString());
+						}
 					}
 
 					@Override
 					public void onNothingSelected(AdapterView<?> arg0) {
-						// nada a fazer
+						// nothing to do
 					}
 				});
-
-		statesSpinner = (Spinner) findViewById(R.id.spinner2);
-		statesSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> adapter, View view,
-					int position, long id) {
-				refreshValuesSpinner01(statesSpinner.getSelectedItem()
-						.toString());
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> arg0) {
-				// nada a fazer
-			}
-		});
-
 	}
 
 	private void setAdapterSpinner01() {

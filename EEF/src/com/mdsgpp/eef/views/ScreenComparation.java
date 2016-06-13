@@ -7,7 +7,7 @@ import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.view.View;
 
-public class ScreenComparation extends Comparation {
+public class ScreenComparation extends Comparison {
 	@Override
 	public void clickButtonStatesComparation(View view) {
 		Intent intent = new Intent(this, ScreenConsultedIndicative.class);
