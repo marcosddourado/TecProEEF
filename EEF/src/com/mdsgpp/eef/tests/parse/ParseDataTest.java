@@ -22,7 +22,6 @@ import static org.hamcrest.CoreMatchers.*;
 
 public class ParseDataTest {
     private ParseData test_object;
-
     private Random rand = new Random();
 
     @Mock

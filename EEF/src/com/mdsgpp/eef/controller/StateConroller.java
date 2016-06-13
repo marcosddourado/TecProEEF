@@ -35,6 +35,12 @@ public class StateConroller {
     }
 
     public State grabState(int position) throws IOException {
+        final int AMOUNT_OF_STATES = 26;
+
+        assert (position >= 0) : "negative position is not valid - StateConroller";
+        assert (position <= AMOUNT_OF_STATES) : "this position does not correspond to a State - " +
+                "StateConroller";
+
         parseInformations = ParseController.getInstance(context).getInformations(
                 position);
 
