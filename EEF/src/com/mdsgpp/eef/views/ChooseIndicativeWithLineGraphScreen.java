@@ -69,21 +69,32 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
-	}	
+	}
+
+	private void setGraphInformations(int max, int tamanho) {
+        this.historico.clear();
+        tamanho = this.state.getApoioCnpqProject().length;
+
+        if(tamanho == 1) {
+            max = tamanho;
+        } else {
+            max = tamanho - 1;
+        }
+
+        for (int i = 0; i < max; i++) {
+            this.historico.add((float) this.state.getApoioCnpqProject()[i].getProjectValue());
+        }
+	}
 
 	public void onRadioButtonClicked(View view) {
-
-		int max, tamanho;
+		int max = 0;
+		int tamanho = 0;
 		
 		switch (view.getId()) {
 		case R.id.radio_apoio_cnpq_investment:
-			titulo = "Projetos de Pesquisa Apoio CNPq (R$)";
-			indicativo = "cnpq";
-			historico.clear();
-			tamanho = state.getApoioCnpqProject().length;
-			max = tamanho == 1 ? tamanho : (tamanho - 1); 
-			for (int i = 0; i < max; i++)
-				historico.add((float) state.getApoioCnpqProject()[i].getProjectValue());
+            titulo = "Projetos de Pesquisa Apoio CNPq (R$)";
+            indicativo = "cnpq";
+            setGraphInformations(max, tamanho);
 			break;
 			
 		case R.id.radio_apoio_cnpq_amount:
