@@ -14,154 +14,141 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.mdsgpp.eef.R;
 
-public abstract class Comparison extends Activity{
-	private Spinner statesSpinner01;
-	private Spinner statesSpinner;
-	private ArrayAdapter<String> statesAdapter01;
-	private ArrayAdapter<String> statesAdapter02;
-	private ArrayList<String> states01;
-	private ArrayList<String> states02;
-	private ArrayList<String> allStates;
+public abstract class Comparison extends Activity {
+    private Spinner statesSpinner01 = null;
+    private Spinner statesSpinner02 = null;
+    private ArrayAdapter<String> statesAdapter01 = null;
+    private ArrayAdapter<String> statesAdapter02 = null;
+    private ArrayList<String> states01 = new ArrayList<String>();
+    private ArrayList<String> states02 = new ArrayList<String>();
+    private ArrayList<String> allStates = new ArrayList<String>();
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_comparation);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_comparation);
 
-		inicializeSpinners();
-		states01 = fillStates(states01);
-		states02 =fillStates(states02);
-		allStates = fillStates(allStates);
+        inicializeSpinners();
 
-		setAdapterSpinner01();
-		setAdapterSpinner02();
-	}
+        states01 = fillStates(states01);
+        states02 = fillStates(states02);
+        allStates = fillStates(allStates);
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_screens, menu);
-		return true;
-	}
+        statesAdapter01 = setAdapterSpinner(statesAdapter01, statesSpinner01, states01);
+        statesAdapter02 = setAdapterSpinner(statesAdapter02, statesSpinner02, states02);
+    }
 
-	private void inicializeSpinners() {
-		states01 = new ArrayList<String>();
-		states02 = new ArrayList<String>();
-		allStates = new ArrayList<String>();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_screens, menu);
+        return true;
+    }
 
-		statesSpinner01 = (Spinner) findViewById(R.id.spinner1);
-		setStatesOnSpinner(statesSpinner01, R.id.spinner1);
+    private void inicializeSpinners() {
+        statesSpinner01 = (Spinner) findViewById(R.id.spinner1);
+        setStatesOnSpinner(statesSpinner01, R.id.spinner1);
 
-		statesSpinner = (Spinner) findViewById(R.id.spinner2);
-		setStatesOnSpinner(statesSpinner, R.id.spinner2);
-	}
+        statesSpinner02 = (Spinner) findViewById(R.id.spinner2);
+        setStatesOnSpinner(statesSpinner02, R.id.spinner2);
+    }
 
-	private void setStatesOnSpinner(Spinner spinner, final int spinnerId) {
-		final Spinner finalSpinner = spinner;
-		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-					@Override
-					public void onItemSelected(AdapterView<?> adapter,
-											   View view, int position, long id) {
-						if(spinnerId == R.id.spinner1) {
-							refreshValuesSpinner02(finalSpinner
-									.getSelectedItem().toString());
-						} else {
-							refreshValuesSpinner01(finalSpinner.getSelectedItem()
-									.toString());
-						}
-					}
+    private void setStatesOnSpinner(Spinner spinner, final int spinnerId) {
+        final Spinner finalSpinner = spinner;
+        spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapter,
+                                       View view, int position, long id) {
+                String stateBeingShowOnTheSpinner = finalSpinner.getSelectedItem().toString();
 
-					@Override
-					public void onNothingSelected(AdapterView<?> arg0) {
-						// nothing to do
-					}
-				});
-	}
+                if (spinnerId == R.id.spinner1) {
+                    refreshValuesSpinner(stateBeingShowOnTheSpinner, statesSpinner02, states02,
+                            statesAdapter02);
+                } else {
+                    refreshValuesSpinner(stateBeingShowOnTheSpinner, statesSpinner01, states01,
+                            statesAdapter01);
+                }
+            }
 
-	private void setAdapterSpinner01() {
-		statesAdapter01 = new ArrayAdapter<String>(this,
-				R.layout.spinner_item, states01);
-		statesAdapter01
-				.setDropDownViewResource(android.R.layout.simple_list_item_1);
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // nothing to do
+            }
+        });
+    }
 
-		statesSpinner01.setAdapter(statesAdapter01);
-	}
 
-	private void setAdapterSpinner02() {
-		statesAdapter02 = new ArrayAdapter<String>(this,
-				R.layout.spinner_item, states02);
-		statesAdapter02.setDropDownViewResource(android.R.layout.simple_list_item_1);
+    private void refreshValuesSpinner(String stateName, Spinner statesSpinner, ArrayList<String>
+            states, ArrayAdapter<String> statesAdapter) {
+        String selectedState = statesSpinner.getSelectedItem().toString();
+        states = fillStates(states);
+        states.remove(stateName);
+        statesAdapter.notifyDataSetChanged();
+        statesSpinner.setSelection(states.indexOf(selectedState));
+    }
 
-		// Define o adapter para os spinners
-		statesSpinner.setAdapter(statesAdapter02);
-	}
+    private ArrayAdapter<String> setAdapterSpinner(ArrayAdapter<String> statesAdapter, Spinner statesSpinner,
+                                   ArrayList<String> states) {
+        statesAdapter = new ArrayAdapter<String>(this,
+                R.layout.spinner_item, states);
+        statesAdapter
+                .setDropDownViewResource(android.R.layout.simple_list_item_1);
 
-	private ArrayList<String> fillStates(ArrayList<String> states) {
-		states.clear();
+        statesSpinner.setAdapter(statesAdapter);
 
-		states.add("Acre");
-		states.add("Alagoas");
-		states.add("Amape");
-		states.add("Amazonas");
-		states.add("Bahia");
-		states.add("Ceara");
-		states.add("Distrito Federal");
-		states.add("Espirito Santo");
-		states.add("Goias");
-		states.add("Maranhao");
-		states.add("Mato Grosso");
-		states.add("Mato Grosso do Sul");
-		states.add("Minas Gerais");
-		states.add("Pare");
-		states.add("Paraiba");
-		states.add("Parane");
-		states.add("Pernambuco");
-		states.add("Piaui");
-		states.add("Rio de Janeiro");
-		states.add("Rio Grande do Norte");
-		states.add("Rio Grande do Sul");
-		states.add("Rondonia");
-		states.add("Roraima");
-		states.add("Santa Catarina");
-		states.add("Sao Paulo");
-		states.add("Sergipe");
-		states.add("Tocantins");
-		
-		return states;
-	}
+        return  statesAdapter;
+    }
 
-	private void refreshValuesSpinner01(String name) {
-		String selectedState = statesSpinner01.getSelectedItem().toString();
-		states01 = fillStates(states01);
-		states01.remove(name);
-		statesAdapter01.notifyDataSetChanged();
-		statesSpinner01.setSelection(states01.indexOf(selectedState));
-	}
+    private ArrayList<String> fillStates(ArrayList<String> states) {
+        states.clear();
 
-	private void refreshValuesSpinner02(String name) {
-		String selectedState = statesSpinner.getSelectedItem().toString();
-		states02 = fillStates(states02);
-		states02.remove(name);
-		statesAdapter02.notifyDataSetChanged();
-		statesSpinner.setSelection(states02.indexOf(selectedState));
-	}
+        states.add("Acre");
+        states.add("Alagoas");
+        states.add("Amape");
+        states.add("Amazonas");
+        states.add("Bahia");
+        states.add("Ceara");
+        states.add("Distrito Federal");
+        states.add("Espirito Santo");
+        states.add("Goias");
+        states.add("Maranhao");
+        states.add("Mato Grosso");
+        states.add("Mato Grosso do Sul");
+        states.add("Minas Gerais");
+        states.add("Pare");
+        states.add("Paraiba");
+        states.add("Parane");
+        states.add("Pernambuco");
+        states.add("Piaui");
+        states.add("Rio de Janeiro");
+        states.add("Rio Grande do Norte");
+        states.add("Rio Grande do Sul");
+        states.add("Rondonia");
+        states.add("Roraima");
+        states.add("Santa Catarina");
+        states.add("Sao Paulo");
+        states.add("Sergipe");
+        states.add("Tocantins");
 
-	public abstract void clickButtonStatesComparation(View view);
-	
-	public void clickButtonAboutComparation(View view) {
-		Intent intent = new Intent(this, ScreenAboutQuery.class);
-		startActivity(intent);
-	}	
-	
-	public Spinner getStatesSpinner01() {
-		return statesSpinner01;
-	}
+        return states;
+    }
 
-	public Spinner getStatesSpinner() {
-		return statesSpinner;
-	}
+    public abstract void clickButtonStatesComparation(View view);
 
-	public ArrayList<String> getAllStates() {
-		return allStates;
-	}
+    public void clickButtonAboutComparation(View view) {
+        Intent intent = new Intent(this, ScreenAboutQuery.class);
+        startActivity(intent);
+    }
+
+    public Spinner getStatesSpinner01() {
+        return statesSpinner01;
+    }
+
+    public Spinner getStatesSpinner02() {
+        return statesSpinner02;
+    }
+
+    public ArrayList<String> getAllStates() {
+        return allStates;
+    }
 }

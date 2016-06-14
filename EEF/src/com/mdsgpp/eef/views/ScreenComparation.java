@@ -12,11 +12,11 @@ public class ScreenComparation extends Comparison {
 	public void clickButtonStatesComparation(View view) {
 		Intent intent = new Intent(this, ScreenConsultedIndicative.class);
 		getStatesSpinner01().getSelectedItem().toString();
-		getStatesSpinner().getSelectedItem().toString();
+		getStatesSpinner02().getSelectedItem().toString();
 
 		int position1 = getAllStates().indexOf(getStatesSpinner01().getSelectedItem()
 				.toString());
-		int position2 = getAllStates().indexOf(getStatesSpinner().getSelectedItem()
+		int position2 = getAllStates().indexOf(getStatesSpinner02().getSelectedItem()
 				.toString());
 
 		intent.putExtra("INDEX_CHOOSED_STATE1", position1);
