@@ -15,6 +15,12 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import com.mdsgpp.eef.R;
 
 public abstract class Comparison extends Activity {
+
+    /*
+    * All the attributes that contain '01' reference to the first spinner
+    * on the view. The ones that '02' reference to the second spinner
+    * */
+
     private Spinner statesSpinner01 = null;
     private Spinner statesSpinner02 = null;
     private ArrayAdapter<String> statesAdapter01 = null;
