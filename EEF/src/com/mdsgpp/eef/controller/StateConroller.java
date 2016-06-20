@@ -36,6 +36,10 @@ public class StateConroller {
 
     public State grabState(int position) throws IOException {
         final int AMOUNT_OF_STATES = 26;
+        final int NAME_ACRONYM_POSITION = 0;
+        final int NAME_POSITION = 0;
+        final int ACRONYM_POSITION = 1;
+
 
         assert (position >= 0) : "negative position is not valid - StateConroller";
         assert (position <= AMOUNT_OF_STATES) : "this position does not correspond to a State - " +
@@ -44,8 +48,8 @@ public class StateConroller {
         parseInformations = ParseController.getInstance(context).getInformations(
                 position);
 
-        String nomeSigla[] = parseInformations.get("nome_e_sigla").get(0);
-        State state = new State(nomeSigla[0], nomeSigla[1], parseInformations);
+        String nameAcronym[] = parseInformations.get("nome_e_sigla").get(NAME_ACRONYM_POSITION);
+        State state = new State(nameAcronym[NAME_POSITION], nameAcronym[ACRONYM_POSITION], parseInformations);
 
         assert (state != null) : "null state on grabState() - StateConroller";
         writeStateWithAllTheInformations(state);

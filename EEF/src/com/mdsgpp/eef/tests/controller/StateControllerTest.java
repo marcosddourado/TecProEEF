@@ -13,6 +13,8 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.CoreMatchers.*;
 
 import java.io.IOException;
 
@@ -42,4 +44,27 @@ public class StateControllerTest {
 
         System.out.println(state.getStateName());
     }
+
+    @Test (expected = AssertionError.class)
+    public void testInvalidPositionGrabState() {
+        StateConroller testObject = new StateConroller(mock_context);
+        final int invalidPosition = -1;
+        try {
+            mock_state = testObject.grabState(invalidPosition);
+        } catch (IOException e) {
+            //do nothing
+        }
+    }
+
+    @Test (expected = AssertionError.class)
+    public void testOutOfLimitPoisitionGrabState() {
+        StateConroller testObject = new StateConroller(mock_context);
+        final int invalidPosition = -1;
+        try {
+            mock_state = testObject.grabState(invalidPosition);
+        } catch (IOException e) {
+            //do nothing
+        }
+    }
+
 }
