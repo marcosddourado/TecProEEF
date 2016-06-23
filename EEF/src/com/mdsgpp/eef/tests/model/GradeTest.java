@@ -55,8 +55,6 @@ public class GradeTest {
     public void testAcceptableYear() {
 
         grade.setGradeYear(1800);
-
-        final int gradeYear = grade.getGradeYear();
     }
 
     @Test

@@ -30,7 +30,7 @@ public class Ideb {
 	 * @param  initialGrades The initialGrades property to be set.
 	 * @return New ideb object with elementary, highSchool and initialGrades set.
 	 */
-	public Ideb(double elementary, double highSchool, double initialGrades){
+	public Ideb(double elementary, double highSchool, double initialGrades) {
 		assert (initialGrades >= 0) : "initialGrades < 0. initialGrades was " + initialGrades;
 		this.elementary = elementary;
 		this.highSchool = highSchool;
