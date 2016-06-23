@@ -12,6 +12,12 @@ public class News implements Serializable {
 	private String newsDate;
 	private Feed newsFeed;
 
+	/**
+	 * Initializes the news object. Also initializes newsFeed property.
+	 *
+	 * @param  newsFeed newsFeed property.
+	 * @return New news object with newsFeed property set.
+	 */
 	public News(Feed newsFeed) {
 		assert (newsFeed != null) : "null newsFeed";
 		this.newsFeed = newsFeed;
