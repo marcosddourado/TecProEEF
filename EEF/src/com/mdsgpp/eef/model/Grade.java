@@ -1,56 +1,70 @@
 package com.mdsgpp.eef.model;
 
-//grade grade for schhols per state/year
 public class Grade {
-		private double elementaryGrade;
-		private double highSchoolGrade;
-		private int gradeYear;
-		private State state;
-		private final int acceptableYear = 1900;
 
-		public Grade() {
-		}
+	private double elementaryGrade;
+	private double highSchoolGrade;
+	private int gradeYear;
+	private State state;
+	private final int acceptableYear = 1900;
 
-		public Grade(double elementaryGrade, double highSchoolGrade){
-			assert (elementaryGrade >= 0) : "elementaryGrade < 0. elementaryGrade was " + elementaryGrade;
-			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
-			this.elementaryGrade = elementaryGrade;
-			this.highSchoolGrade = highSchoolGrade;
-		}
+	/**
+	 * Initializes the grade object. Also initializes all properties with default value.
+	 *
+	 * @return New grade object with grade data default properties set.
+	 */
+	public Grade() {
+		this.elementaryGrade = 0;
+		this.highSchoolGrade = 0;
+		this.gradeYear = this.acceptableYear;
+		this.state = null;
+	}
 
-		public double getElementaryGrade() {
-			return elementaryGrade;
-		}
+	/**
+	 * Initializes the grade object with elementary and high school grade parameters.
+	 *
+	 * @return New grade object with elementaryGrade and highSchoolGrade set.
+	 */
+	public Grade(double elementaryGrade, double highSchoolGrade){
+		assert (elementaryGrade >= 0) : "elementaryGrade < 0. elementaryGrade was " + elementaryGrade;
+		assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
+		this.elementaryGrade = elementaryGrade;
+		this.highSchoolGrade = highSchoolGrade;
+	}
 
-		public void setElementaryGrade(double elementaryGrade) {
-			assert (elementaryGrade >= 0) : "elementaryGrade < 0 . elementaryGrade was " + elementaryGrade;
-			this.elementaryGrade = elementaryGrade;
-		}
+	public double getElementaryGrade() {
+		return elementaryGrade;
+	}
 
-		public double getHighSchoolGrade() {
-			return highSchoolGrade;
-		}
+	public void setElementaryGrade(double elementaryGrade) {
+		assert (elementaryGrade >= 0) : "elementaryGrade < 0 . elementaryGrade was " + elementaryGrade;
+		this.elementaryGrade = elementaryGrade;
+	}
 
-		public void setHighSchoolGrade(double highSchoolGrade) {
-			assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
-			this.highSchoolGrade = highSchoolGrade;
-		}
+	public double getHighSchoolGrade() {
+		return highSchoolGrade;
+	}
 
-		public State getState() {
-			return state;
-		}
+	public void setHighSchoolGrade(double highSchoolGrade) {
+		assert (highSchoolGrade >= 0) : "highSchoolGrade < 0 . elementaryGrade was " + highSchoolGrade;
+		this.highSchoolGrade = highSchoolGrade;
+	}
 
-		public void setState(State state) {
-			assert (state != null) : "null state ";
-			this.state = state;
-		}
+	public State getState() {
+		return state;
+	}
 
-		public int getGradeYear() {
-			return gradeYear;
-		}
+	public void setState(State state) {
+		assert (state != null) : "null state ";
+		this.state = state;
+	}
 
-		public void setGradeYear(int gradeYear) {
-			assert(gradeYear >= acceptableYear) : "gradeYear non-acceptable . gradeYear was = " + gradeYear;
-			this.gradeYear = gradeYear;
-		}
+	public int getGradeYear() {
+		return gradeYear;
+	}
+
+	public void setGradeYear(int gradeYear) {
+		assert(gradeYear >= acceptableYear) : "gradeYear non-acceptable . gradeYear was = " + gradeYear;
+		this.gradeYear = gradeYear;
+	}
 }
