@@ -16,7 +16,7 @@ public class Grade {
 	public Grade() {
 		this.elementaryGrade = 0;
 		this.highSchoolGrade = 0;
-		this.gradeYear = this.acceptableYear;
+		this.gradeYear = 0;
 		this.state = null;
 	}
 

@@ -49,18 +49,24 @@ public class GradeTest {
 
     }
 
-    @Test
+    @Test (expected = AssertionError.class)
     public void testAcceptableYear() {
 
+        Grade grade = new Grade();
+
+        grade.setGradeYear(1800);
+
+        final int gradeYear = grade.getGradeYear();
+    }
+
+    @Test
+    public void testGrades() {
         double elementaryGrade = this.random.nextDouble() * 10;
         double highSchoolGrade = this.random.nextDouble() * 10;
 
         Grade grade = new Grade(elementaryGrade, highSchoolGrade);
 
-        grade.setGradeYear(1880);
-
         assertThat(grade.getElementaryGrade(), is(elementaryGrade));
         assertThat(grade.getHighSchoolGrade(), is(highSchoolGrade));
-        assertThat(grade.getGradeYear(), is(0));
     }
 }
