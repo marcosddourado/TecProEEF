@@ -20,7 +20,13 @@ public class News implements Serializable {
 	 */
 	public News(Feed newsFeed) {
 		assert (newsFeed != null) : "null newsFeed";
-		this.newsFeed = newsFeed;
+		this.newsFeed 		 = newsFeed;
+		this.newsTitle 	 	 = null;
+		this.newsCategory 	 = null;
+		this.newsDescription = null;
+		this.newsLink		 = null;
+		this.newsDate		 = null;
+
 	}
 
 	public String getNewsTitle() {
