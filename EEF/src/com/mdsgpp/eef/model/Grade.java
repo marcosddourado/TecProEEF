@@ -11,7 +11,7 @@ public class Grade {
 	/**
 	 * Initializes the grade object. Also initializes all properties with default value.
 	 *
-	 * @return New grade object with grade data default properties set.
+	 * @return New grade object with default property values.
 	 */
 	public Grade() {
 		this.elementaryGrade = 0;
@@ -23,6 +23,8 @@ public class Grade {
 	/**
 	 * Initializes the grade object with elementary and high school grade parameters.
 	 *
+	 * @param  elementaryGrade The elementaryGrade property to be set.
+	 * @param  highSchoolGrade The highSchoolGrade property to be set.
 	 * @return New grade object with elementaryGrade and highSchoolGrade set.
 	 */
 	public Grade(double elementaryGrade, double highSchoolGrade){

@@ -9,9 +9,27 @@ public class Ideb {
 	private int idebYear;
 	private final int acceptableYear = 1900;
 
+	/**
+	 * Initializes the ideb object. Also initializes all properties with default value.
+	 *
+	 * @return New ideb object with default property values.
+	 */
 	public Ideb() {
+		this.elementary    = 0;
+		this.highSchool    = 0;
+		this.initialGrades = 0;
+		this.idebYear 	   = 0;
+		this.idebState 	   = null;
 	}
 
+	/**
+	 * Initializes the ideb object with elementary, high school and initial grades parameters.
+	 *
+	 * @param  elementary The elementaryGrade property to be set.
+	 * @param  highSchool The highSchoolGrade property to be set.
+	 * @param  initialGrades The initialGrades property to be set.
+	 * @return New ideb object with elementary, highSchool and initialGrades set.
+	 */
 	public Ideb(double elementary, double highSchool, double initialGrades){
 		assert (initialGrades >= 0) : "initialGrades < 0. initialGrades was " + initialGrades;
 		this.elementary = elementary;
