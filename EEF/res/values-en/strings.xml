@@ -116,31 +116,31 @@
     <string name="participacao_percentual_PIB">PIB State Contribution: </string>
     <string name="participacao_percentual_PIB_conteudo"> Rate about each state contribution in national PIB</string>
     <string name="projetos_difusao">Technological Diffusion Projects:</string>
-    <string name="projetos_difusao_conteudo">  Número de projetos de difusão e popularização de ciência e tecnologia apoiados.
-    		Inclui apoio a diversos projetos de difusão e popularização da ciência e tecnologia;</string>
-    <string name="ideb"> IDEB - Indice de Desenvolvimento da Educação Básica: </string>
-    <string name="ideb_conteudo"> O IDEB é um indicador criado pelo governo federal para medir a qualidade do ensino nas escolas públicas.
-    		A escala de notas vai de 0 a 10.</string>
-    <string name="primeiros_projetos"> Programa Primeiros Projetos:  </string>
-    <string name="primeiros_projetos_conteudo"> Programa de apoio à infraestrutura de ciência e técnologia para jovens pesquisadores. </string>
-    <string name="projetos_apoio_cnpq"> Projetos de pesquisa e apoio CNPq:  </string>
-    <string name="projetos_apoio_cnpq_conteudo"> Número de projetos contratados pelos Principais Programas de Apoio à Pesquisa do CNPq.  </string>
-    <string name="projetos_jovens_pesquisadores"> Projetos Jovens Pesquisadores:  </string>
-    <string name="projetos_jovens_pesquisadores_conteudo"> Número de projetos contratados pelo Programa Jovens Pesquisadores.
-    		A UF considerada é a UF da instituição de destino.  </string>
-    <string name="projetos_inct"> Projetos Instituto Nacional de Ciência e Tecnologia - INCT: </string>
-    <string name="projetos_inct_conteudo"> Número de projetos contratados dos Institutos Nacionais de Ciência e Tecnologia. </string>
+    <string name="projetos_difusao_conteudo">  Number of diffusion and popularization of science and technology projects.
+    		Includes support to several diffusion and popularization of science and technology projects;</string>
+    <string name="ideb"> IDEB - Basic Education Development Index: </string>
+    <string name="ideb_conteudo"> The IDEB is an index created by the federal government to measure the quality of education in public schools.
+    		The grades go from 0 to 10.</string>
+    <string name="primeiros_projetos"> Primeiros Projetos Program:  </string>
+    <string name="primeiros_projetos_conteudo"> Program that supports the young researchers' science and technology infrastructure. </string>
+    <string name="projetos_apoio_cnpq"> CNPq Research and Support Programs:  </string>
+    <string name="projetos_apoio_cnpq_conteudo"> Number of projects hired by CNPq's main research support programs.  </string>
+    <string name="projetos_jovens_pesquisadores"> Young Researchers Program:  </string>
+    <string name="projetos_jovens_pesquisadores_conteudo"> Number of projects hired by Young Researchers Program.
+    		The referred state is where the educational institution is localized.  </string>
+    <string name="projetos_inct"> National Science and Technology Institute Projects - INCT: </string>
+    <string name="projetos_inct_conteudo"> Number of projects hired by INCT. </string>
     <string name="botao_sobre">About</string>
     <string name="botao_sobre_descricao">Through this screen, it is possible to choose one of the indicatives below and, from the selection, visualize the indicative for al states</string>
 
     <!-- Strings da tela consulta por indicativo -->
-    <string name="titulo_escolhe_estado_por_indicativo">Escolha o indicativo</string>
+    <string name="titulo_escolhe_estado_por_indicativo">Choose the indicative</string>
     <string name="bt_verifica_estados_por_indicativo">Verify states</string>
-    <string name="title_consultar_estados">Consultar Estados</string>
-    <string name="title_consultar_estado1">Escolha o primeiro estado.</string>
+    <string name="title_consultar_estados">Consult states</string>
+    <string name="title_consultar_estado1">Choose the first state.</string>
 
     <!-- Strings da tela sobre escolha indigativo -->
-    <string name="botao_sobre_escolha_indicativo">Through this screen, it is possible to choose one or more indicatives and after the button go is pressed, the user will be redirected to the two chosen states indicatives comparison screen. In this screen, the user can also check or uncheck all the indicatives.</string>
+    <string name="botao_sobre_escolha_indicativo">Using this screen, it is possible to choose one or more indicatives and after the button go is pressed, the user will be redirected to the two chosen states indicatives comparison screen. In this screen, the user can also check or uncheck all the indicatives.</string>
 
     <!-- Strings da tela resultado da consulta por indicativo -->
     <string name="acre">Acre</string>
@@ -172,15 +172,15 @@
     <string name="tocantins">Tocantins</string>
 
     <!-- Strings da tela sobre resultado da consulta -->
-    <string name="title_sobre_resultado_da_consulta">Sobre Resultado da Consulta</string>
+    <string name="title_sobre_resultado_da_consulta">About consultation result</string>
     <string name="conteudo_sobre_resultado_da_consulta">This screen allows the user to visualize the selected indicative for each one of the brazilian states. The presented results are referring to the last available year. TThe years are available for consultation in the option "History" in the states consultation screen.</string>
 
     <!-- Strings da tela sobre historico de indicativo -->
-    <string name="title_sobre_historico_de_indicativo">Sobre Histórico de Indicativo</string>
+    <string name="title_sobre_historico_de_indicativo">About indicative history</string>
     <string name="conteudo_sobre_historico_de_indicativo">The user visualizes the history of each indicative of the state that was chosen. It is also possible to generate a graphic from the indicative using the button generate graphic.</string>
 
     <!-- Strings da tela sobre feed -->
-    <string name="tela_sobre_feed">Fonte de Informações do EEF</string>
+    <string name="tela_sobre_feed">EEF Source of Information</string>
     <string name="descricao_sobre_feed">As notícias informadas pelo aplicativo Educação em Foco são originárias do site:\n
 			* http://noticias.gov.br/noticias/rss?id=AFSZW.\n
 			Entretanto, as notícias retiradas são apenas relacionadas a educação brasileira.\n
