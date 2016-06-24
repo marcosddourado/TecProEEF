@@ -6,22 +6,22 @@ import java.util.HashMap;
 
 public class State {
 
-	private String stateName = "";
-	private String stateAbbreviation = "";
-	private double percentageCollaborationWithPIB[] = {};
-	private int statePopulation = 0;
-	private Census census[] = {};
-	private Ideb idebs[] = {};
-	private Grade studentGradesPerClass[] = {};
-	private Grade gradeClassHours[] = {};
-	private Project scienceAndThecnologyProjects[] = {};
-	private Project primeirosProjetos[] = {};
-	private Project inctProject[] = {};
-	private Project apoioCnpqProject[] = {};
-	private Project jovensPesquisadoresProject[] = {};
-	private Grade ageGradeDistortionRate[] = {};
-	private Grade educationalAchievementRate[] = {};
-	private Grade schoolDropoutRate[] = {};
+	private String stateName;
+	private String stateAbbreviation;
+	private double percentageCollaborationWithPIB[];
+	private int statePopulation;
+	private Census census[];
+	private Ideb idebs[];
+	private Grade studentGradesPerClass[];
+	private Grade gradeClassHours[];
+	private Project scienceAndThecnologyProjects[];
+	private Project primeirosProjetos[];
+	private Project inctProject[];
+	private Project apoioCnpqProject[];
+	private Project jovensPesquisadoresProject[];
+	private Grade ageGradeDistortionRate[];
+	private Grade educationalAchievementRate[];
+	private Grade schoolDropoutRate[];
 
 	public static final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
 			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
@@ -33,6 +33,22 @@ public class State {
 			"SC", "SP", "SE", "TO"};
 
 	public State(){
+		this.stateName 				        = null;
+		this.stateAbbreviation 			    = null;
+		this.percentageCollaborationWithPIB = null;
+		this.statePopulation 			    = 0;
+		this.census						    = null;
+		this.idebs						    = null;
+		this.studentGradesPerClass 		    = null;
+		this.gradeClassHours 			    = null;
+		this.scienceAndThecnologyProjects   = null;
+		this.primeirosProjetos 			    = null;
+		this.inctProject 				    = null;
+		this.apoioCnpqProject 		        = null;
+		this.jovensPesquisadoresProject     = null;
+		this.ageGradeDistortionRate 	    = null;
+		this.educationalAchievementRate     = null;
+		this.schoolDropoutRate 			    = null;
 	}
 
 	public State(String stateName, String stateAbbreviation, HashMap<String, ArrayList<String[]>> information){

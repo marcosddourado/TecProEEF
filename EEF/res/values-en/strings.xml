@@ -122,9 +122,9 @@
     <string name="ideb_conteudo"> The IDEB is an index created by the federal government to measure the quality of education in public schools.
     		The grades go from 0 to 10.</string>
     <string name="primeiros_projetos"> Primeiros Projetos Program:  </string>
-    <string name="primeiros_projetos_conteudo"> Program that supports the young researchers' science and technology infrastructure. </string>
+    <string name="primeiros_projetos_conteudo"> Program that supports the young researchers\' science and technology infrastructure. </string>
     <string name="projetos_apoio_cnpq"> CNPq Research and Support Programs:  </string>
-    <string name="projetos_apoio_cnpq_conteudo"> Number of projects hired by CNPq's main research support programs.  </string>
+    <string name="projetos_apoio_cnpq_conteudo"> Number of projects hired by CNPq\'s main research support programs.  </string>
     <string name="projetos_jovens_pesquisadores"> Young Researchers Program:  </string>
     <string name="projetos_jovens_pesquisadores_conteudo"> Number of projects hired by Young Researchers Program.
     		The referred state is where the educational institution is localized.  </string>
@@ -227,13 +227,13 @@
     <string name="lista_estado_conteudo">The user chooses the state to consult its data.</string>
 
     <!-- Strings da tela sobre Lista Estado -->
-    <string name="estado_conteudo">The selected state's indicative data are presented, with the option to check the history. The presented results are related to the last year available. The years are available for consulting at "History" option, at the state consultation screen.</string>
+    <string name="estado_conteudo">The selected state\'s indicative data are presented, with the option to check the history. The presented results are related to the last year available. The years are available for consulting at "History" option, at the state consultation screen.</string>
     <string name="title_activity_sobre_comparacao_estados">MainActivity</string>
     <string name="title_activity_tela_comparacao_de_estados">MainActivity</string>
     <string name="title_activity_sobre_historico_de_indicativo">AboutIndicativeHistory</string>
 
     <!-- Strings da tela sobre Grafico -->
-    <string name="grafico_conteudo">Presents the graphic with the selected indicative's data.</string>
+    <string name="grafico_conteudo">Presents the graphic with the selected indicative\'s data.</string>
 
     <!-- Strings da tela sobre EscolheIndicativoGraficoComparacao -->
     <string name="escolhe_indicativo_grafico_comparacao_conteudo">The user chooses an indicative to generate the graphic with its data.</string>
