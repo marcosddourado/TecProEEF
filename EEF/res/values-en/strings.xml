@@ -45,49 +45,49 @@
     <string name="menu_botao_consulta_por_indicativo">Query per indicative</string>
 
     <!-- Strings da tela indicativos consultados -->
-    <string name="botao_tela_indicativos">Ir</string>
+    <string name="botao_tela_indicativos">Go</string>
 
     <!-- Strings da tela indicativos consultados -->
-    <string name="botao_indicativos">Gerar gráfico</string>
+    <string name="botao_indicativos">Generate graphic</string>
 
     <!-- Strings da Escolhe Indicativo Grafico -->
     <string name="populacao">População</string>
-    <string name="participacao_PIB_percentual">Participação Estadual no PIB (%)</string>
-    <string name="projetos_difusao_tecnologica_qtd">Projeto de Difusão Tecnológica (Qtd.)</string>
-    <string name="projetos_difusao_tecnologica_investmento">Projeto de Difusão Tecnológica (R$)</string>
-    <string name="participacao_IDEB_elementary_iniciais">IDEB do Ensino Fundamental (Séries Iniciais)</string>
-    <string name="participacao_IDEB_elementary_finais">IDEB do Ensino Fundamental (Séries Finais)</string>
-    <string name="participacao_IDEB_high_school">IDEB do Ensino Médio</string>
-    <string name="programa_primeiros_projetos_qtd">Programa Primeiros Projetos (Qtd.)</string>
-    <string name="programa_primeiros_projetos_investmento">Programa Primeiros Projetos (R$)</string>
-    <string name="projetos_pesquisa_CNPq_qtd">Projetos de Pesquisa Apoio CNPq (Qtd.)</string>
-    <string name="projetos_pesquisa_CNPq_investmento">Projetos de Pesquisa Apoio CNPq (R$)</string>
-    <string name="jovens_pesquisadores_qtd">Jovens pesquisadores (Qtd.)</string>
-    <string name="jovens_pesquisadores_investmento">Jovens pesquisadores (R$)</string>
-    <string name="projeto_iniciacao_qtd">Projetos INCT (Qtd.)</string>
-    <string name="projeto_iniciacao_investmento">Projetos INCT (R$)</string>
-    <string name="media_alunos_por_turma">Média de Alunos por Turma (Qtd.)</string>
-    <string name="horas_aula_ensino">Média de horas aula diárias</string>
-    <string name="distortion_rate">Taxa de Distorção de Idade (%)</string>
-    <string name="taxa_aprovacao">Taxa de Aproveitamento (%)</string>
-    <string name="taxa_abandono">Taxa de Abandono Escolar (%)</string>
-    <string name="censo">Censo Escolar (matriculados)</string>
-    <string name="alunos_por_turma_elementary">Média de Alunos por Turma do Ensino Fundamental(Qtd.)</string>
-    <string name="alunos_por_turma_high_school">Média de Alunos por Turma do Ensino Médio(Qtd.)</string>
-    <string name="horas_aula_elementary">Média de horas aula diárias do Ensino Fundamental</string>
-    <string name="horas_aula_high_school">Média de horas aula diárias do Ensino Médio</string>
-    <string name="distortion_rate_elementary">Taxa de Distorção Idade/Série do Ensino Fundamental (%)</string>
-    <string name="distortion_rate_high_school">Taxa de Distorção Idade/Série do Ensino Médio (%)</string>
-    <string name="taxa_aprovacao_elementary">Taxa de Aprovação do Ensino Fundamental (%)</string>
-    <string name="taxa_aprovacao_high_school">Taxa de Aprovação do Ensino Médio (%)</string>
-    <string name="taxa_abandono_elementary">Taxa de Abandono do Ensino Fundamental (%)</string>
-    <string name="taxa_abandono_high_school">Taxa de Abandono do Ensino Médio (%)</string>
-    <string name="censo_anos_iniciais_elementary">Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)</string>
-    <string name="censo_anos_finais_elementary">Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)</string>
-    <string name="censo_ensino_high_school">Censo Escolar do Ensino Médio (Matriculados)</string>
-    <string name="censo_eja_high_school">Censo Escolar do EJA - Fundamental (Matriculados)</string>
-    <string name="censo_eja_elementary">Censo Escolar do EJA - Médio (Matriculados)</string>
-    <string name="bt_grafico">Gráfico</string>
+    <string name="participacao_PIB_percentual">Stadual PIB participation (%)</string>
+    <string name="projetos_difusao_tecnologica_qtd">Technological Difusion Project (Qty.)</string>
+    <string name="projetos_difusao_tecnologica_investmento">Technological Difusion Project (R$)</string>
+    <string name="participacao_IDEB_elementary_iniciais">Elementary School IDEB (Initial Series)</string>
+    <string name="participacao_IDEB_elementary_finais">Elementary School IDEB (Final Series)</string>
+    <string name="participacao_IDEB_high_school">High School IDEB</string>
+    <string name="programa_primeiros_projetos_qtd">Primeiros Projetos Program (Qty.)</string>
+    <string name="programa_primeiros_projetos_investmento">Primeiros Projetos Program (R$)</string>
+    <string name="projetos_pesquisa_CNPq_qtd">CNPq Reseach Support Projects (Qty.)</string>
+    <string name="projetos_pesquisa_CNPq_investmento">CNPq Reseach Support Projects (R$)</string>
+    <string name="jovens_pesquisadores_qtd">Young Researchers (Qty.)</string>
+    <string name="jovens_pesquisadores_investmento">Young Researchers (R$)</string>
+    <string name="projeto_iniciacao_qtd">INCT Projects (Qty.)</string>
+    <string name="projeto_iniciacao_investmento">INCT Projects (R$)</string>
+    <string name="media_alunos_por_turma">Student per Class Average (Qty.)</string>
+    <string name="horas_aula_ensino">Daily Class Hours Average</string>
+    <string name="distortion_rate">Age Distortion Rate (%)</string>
+    <string name="taxa_aprovacao">Utilization Rate (%)</string>
+    <string name="taxa_abandono">School Dropout Rate (%)</string>
+    <string name="censo">Scholar Census (enrolled)</string>
+    <string name="alunos_por_turma_elementary">Elementary School Students per Class Average (Qty.)</string>
+    <string name="alunos_por_turma_high_school">High School Students per Class Average (Qty.)</string>
+    <string name="horas_aula_elementary">Elementary School Daily Class Hours Average </string>
+    <string name="horas_aula_high_school">High School Daily Class Hours Average </string>
+    <string name="distortion_rate_elementary">Elementary School Age/Grade Distortion Rate (%)</string>
+    <string name="distortion_rate_high_school">High School Age/Grade Distortion Rate (%)</string>
+    <string name="taxa_aprovacao_elementary">Elementary School Approval Rate(%)</string>
+    <string name="taxa_aprovacao_high_school">High School Approval Rate (%)</string>
+    <string name="taxa_abandono_elementary">Elementary School Dropout Rate (%)</string>
+    <string name="taxa_abandono_high_school">High School Dropout Rate (%)</string>
+    <string name="censo_anos_iniciais_elementary">Initial Elementary School Years Census (Enrolled)</string>
+    <string name="censo_anos_finais_elementary">Final Elementary School Years Census (Enrolled)</string>
+    <string name="censo_ensino_high_school">High School Census (Enrolled)</string>
+    <string name="censo_eja_high_school">Elementary EJA School Census (Enrolled)</string>
+    <string name="censo_eja_elementary">High EJA School Census (Enrolled)</string>
+    <string name="bt_grafico">Graphic</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
     <string name="bt_historico">Historico</string>
