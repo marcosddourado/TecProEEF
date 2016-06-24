@@ -23,15 +23,20 @@ public class State {
 	private Grade educationalAchievementRate[];
 	private Grade schoolDropoutRate[];
 
-	public static final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
-			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
-			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
-			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
-			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
-	public static final String stateAbbreviations[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
-			"MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR",
-			"SC", "SP", "SE", "TO"};
+	public static final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia",
+			"Ceara", "Distrito Federal", "Espirito Santo", "Goias", "Maranhao",
+			"Mato Grosso do Sul", "Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana",
+			"Pernambuco", "Piaui", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul",
+			"Rondonia", "Roraima", "Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
+	public static final String stateAbbreviations[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF",
+			"ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS",
+			"RO", "RR", "SC", "SP", "SE", "TO" };
 
+	/**
+	 * Initializes the state object with default values.
+	 *
+	 * @return  New state object with default values.
+	 */
 	public State(){
 		this.stateName 				        = null;
 		this.stateAbbreviation 			    = null;
@@ -51,9 +56,15 @@ public class State {
 		this.schoolDropoutRate 			    = null;
 	}
 
+	/**
+	 * Initializes the state object with stateName and stateAbbreviation set,
+	 * and with information parameter to fill object data.
+	 *
+	 * @return  New state object with default values.
+	 */
 	public State(String stateName, String stateAbbreviation, HashMap<String, ArrayList<String[]>> information){
 		assert (stateName != null) : "null stateName";
-		assert (stateName != "" || stateName != " ") : "empty stateName";
+		assert (!stateName.isEmpty()) : "empty stateName";
 		assert (information != null) : "null information";
 
 		this.stateName = stateName;
@@ -64,10 +75,11 @@ public class State {
 
 	public Census[] getCensus() {
 		if(this.census != null) {
-			return this.census;
+			// Do nothing
 		} else {
-			return emptyCensus();
+			this.census = emptyCensus();
 		}
+		return this.census;
 	}
 
 	public void setCensus(HashMap<String, ArrayList<String[]>> information) {
@@ -77,7 +89,6 @@ public class State {
 		ArrayList<String[]> highSchoolData;
 		ArrayList<String[]> ejaHighSchoolData;
 		ArrayList<String[]> ejaElementaryData;
-		Census census[] = null;
 
 		elementaryFinalData = information.get("censo_anos_finais");
 		elementaryInitialData = information.get("censo_anos_iniciais");
@@ -92,8 +103,8 @@ public class State {
 		assert (ejaElementaryData != null) : "null ejaElementaryData";
 
 
-		census = new Census[highSchoolData.size()];
-		for (int i=0; i<census.length; i++) {
+		Census census[] = new Census[highSchoolData.size()];
+		for (int i = 0; i < census.length; i++) {
 			census[i] = new Census();
 			census[i].setCensusState(this);
 			census[i].setCensusYear(Integer.parseInt(highSchoolData.get(i)[0]));
@@ -427,16 +438,16 @@ public class State {
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		String[] gradeClassHoursIndicatives = { "horas_aula_ensino_elementary", "horas_aula_ensino_high_school" };
-		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school" };
-		String[] scienceAndThecnologyProjectsIndicatives = { "numero_projetos", "valor_investido" };
-		String[] primeirosProjetosIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
-		String[] apoioCnpqProjectIndicatives = { "projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq" };
-		String[] jovensPesquisadoresProjectIndicatives = { "jovens_pesquisadores", "valores_jovens_pesquisadores" };
-		String[] inctProjectsIndicatives = { "projetos_inct", "valores_projetos_inct" };
-		String[] ageGradeDistortionRate = { "distortion_rate_elementary", "distortion_rate_ensino_high_school" };
-		String[] educationalAchievementRate = { "taxa_aprovacao_elementary", "taxa_aprovacao_high_school" };
-		String[] schoolDropoutRate = { "taxa_abandono_elementary", "taxa_abandono_high_school" };
+		String[] gradeClassHoursIndicatives = {"horas_aula_ensino_elementary", "horas_aula_ensino_high_school"};
+		String[] studentGradesPerClassIndicatives = {"alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school"};
+		String[] scienceAndThecnologyProjectsIndicatives = {"numero_projetos", "valor_investido"};
+		String[] primeirosProjetosIndicatives = {"programa_primeiros_projetos", "valores_programa_primeiros_projetos"};
+		String[] apoioCnpqProjectIndicatives = {"projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq"};
+		String[] jovensPesquisadoresProjectIndicatives = {"jovens_pesquisadores", "valores_jovens_pesquisadores"};
+		String[] inctProjectsIndicatives = {"projetos_inct", "valores_projetos_inct"};
+		String[] ageGradeDistortionRate = {"distortion_rate_elementary", "distortion_rate_ensino_high_school"};
+		String[] educationalAchievementRate = {"taxa_aprovacao_elementary", "taxa_aprovacao_high_school"};
+		String[] schoolDropoutRate = {"taxa_abandono_elementary", "taxa_abandono_high_school"};
 
 		assert (gradeClassHoursIndicatives != null) : "null gradeClassHoursIndicatives";
 		assert (studentGradesPerClassIndicatives != null) : "null studentGradesPerClassIndicatives";
@@ -470,14 +481,14 @@ public class State {
 	}
 
 	public Grade[] emptyGrade() {
-		Grade emptyGrade[] = { new Grade(0,0) };
+		Grade emptyGrade[] = {new Grade(0,0)};
 		emptyGrade[0].setGradeYear(0);
 
 		return emptyGrade;
 	}
 
 	public Project[] emptyProject() {
-		Project empty[] = { new Project() };
+		Project empty[] = {new Project()};
 		empty[0].setProjectQuantity(0);
 		empty[0].setProjectValue(0);
 		empty[0].setProjectYear(0);
@@ -486,7 +497,7 @@ public class State {
 	}
 
 	public Census[] emptyCensus() {
-		Census empty[] = {new Census(0.0, 0.0, 0.0, 0.0, 0.0) };
+		Census empty[] = {new Census(0.0, 0.0, 0.0, 0.0, 0.0)};
 		return empty;
 	}
 
