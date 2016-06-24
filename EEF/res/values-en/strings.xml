@@ -10,7 +10,7 @@
     <string name="title_activity_tela_resultado_consulta">States comparison</string>
     <string name="title_activity_tela_feed">News</string>
     <string name="title_activity_tela_feed_sobre">About the news</string>
-    <string name="title_activity_tela_estado">States indicatives</string>
+    <string name="title_activity_tela_estado">State indicatives</string>
     <string name="title_activity_tela_escolhe_indicativo_grafico">Choose a indicative</string>
     <string name="title_activity_grafico">Graph</string>
     <string name="title_activity_tela_grafico">Graph</string>
@@ -51,8 +51,8 @@
     <string name="botao_indicativos">Generate graphic</string>
 
     <!-- Strings da Escolhe Indicativo Grafico -->
-    <string name="populacao">População</string>
-    <string name="participacao_PIB_percentual">Stadual PIB participation (%)</string>
+    <string name="populacao">Population</string>
+    <string name="participacao_PIB_percentual">State PIB participation (%)</string>
     <string name="projetos_difusao_tecnologica_qtd">Technological Difusion Project (Qty.)</string>
     <string name="projetos_difusao_tecnologica_investmento">Technological Difusion Project (R$)</string>
     <string name="participacao_IDEB_elementary_iniciais">Elementary School IDEB (Initial Series)</string>
@@ -90,32 +90,32 @@
     <string name="bt_grafico">Graphic</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
-    <string name="bt_historico">Historico</string>
-    <string name="bt_estados">Estados</string>
+    <string name="bt_historico">History</string>
+    <string name="bt_estados">States</string>
 
     <!-- Strings da tela estado -->
-    <string name="participacao_PIB">Participacao Estadual no PIB</string>
-    <string name="numero_projetos">Projetos de Difusão Tecnológica</string>
+    <string name="participacao_PIB">PIB State Contribution</string>
+    <string name="numero_projetos">Technological Diffusion Projects</string>
     <string name="participacao_IDEB">IDEB</string>
-    <string name="Programa_primeiros_projetos">Programa Primeiros Projetos</string>
-    <string name="Projetos_pesquisa_CNPq">Projetos de Pesquisa Apoio CNPq</string>
-    <string name="jovens_pesquisadores">Jovens pesquisadores</string>
-    <string name="projeto_iniciacao">Projetos INCT</string>
-    <string name="estados_opcao">Escolha dois estados: </string>
-    <string name="compara_estados">Comparar</string>
+    <string name="Programa_primeiros_projetos">Primeiros Projetos Program</string>
+    <string name="Projetos_pesquisa_CNPq">CNPq Reseach Support Projects</string>
+    <string name="jovens_pesquisadores">Young Researchers</string>
+    <string name="projeto_iniciacao">INCT Projects</string>
+    <string name="estados_opcao">Choose two states: </string>
+    <string name="compara_estados">Compare</string>
     <string name="titulo_menu">Educação em Foco</string>
     <string name="string_x"> x </string>
-    <string name="botao_historico_estado"> Historico </string>
+    <string name="botao_historico_estado">History</string>
 
     <!-- Strings da tela consultas gerais -->
-    <string name="botao_historico"> Histórico</string>
-    <string name="botao_estado"> Estado</string>
+    <string name="botao_historico">History</string>
+    <string name="botao_estado">State</string>
 
     <!-- Strings da tela sobre os indicativos -->
-    <string name="tela_sobre">Dados usados no EEF</string>
-    <string name="participacao_percentual_PIB"> Participação Estadual no PIB: </string>
-    <string name="participacao_percentual_PIB_conteudo"> Porcentagem referente a participação de cada estado na soma total do PIB nacional </string>
-    <string name="projetos_difusao">Projetos de Difusão Tecnologica:</string>
+    <string name="tela_sobre">Data used in EEF</string>
+    <string name="participacao_percentual_PIB">PIB State Contribution: </string>
+    <string name="participacao_percentual_PIB_conteudo"> Rate about each state contribution in national PIB</string>
+    <string name="projetos_difusao">Technological Diffusion Projects:</string>
     <string name="projetos_difusao_conteudo">  Número de projetos de difusão e popularização de ciência e tecnologia apoiados.
     		Inclui apoio a diversos projetos de difusão e popularização da ciência e tecnologia;</string>
     <string name="ideb"> IDEB - Indice de Desenvolvimento da Educação Básica: </string>
@@ -130,17 +130,17 @@
     		A UF considerada é a UF da instituição de destino.  </string>
     <string name="projetos_inct"> Projetos Instituto Nacional de Ciência e Tecnologia - INCT: </string>
     <string name="projetos_inct_conteudo"> Número de projetos contratados dos Institutos Nacionais de Ciência e Tecnologia. </string>
-    <string name="botao_sobre">Sobre</string>
-    <string name="botao_sobre_descricao">	Através dessa tela é possivel ao usuário escolher um dos indicativos abaixo e a partir da seleção visualizar o indicativo para todos os estados</string>
+    <string name="botao_sobre">About</string>
+    <string name="botao_sobre_descricao">Through this screen, it is possible to choose one of the indicatives below and, from the selection, visualize the indicative for al states</string>
 
     <!-- Strings da tela consulta por indicativo -->
     <string name="titulo_escolhe_estado_por_indicativo">Escolha o indicativo</string>
-    <string name="bt_verifica_estados_por_indicativo">Verificar estados</string>
+    <string name="bt_verifica_estados_por_indicativo">Verify states</string>
     <string name="title_consultar_estados">Consultar Estados</string>
     <string name="title_consultar_estado1">Escolha o primeiro estado.</string>
 
     <!-- Strings da tela sobre escolha indigativo -->
-    <string name="botao_sobre_escolha_indicativo">Através dessa tela é possível selecionar um ou mais indicativos e após ele selecionar o botão avançar ,será redirecionado a tela de comparação do indicativo(s) escolhido entre os dois estados.Também nessa tela o usuário tem a opção de marcar todos os indicativos ou desmarcar todos os indicativos</string>
+    <string name="botao_sobre_escolha_indicativo">Through this screen, it is possible to choose one or more indicatives and after the button go is pressed, the user will be redirected to the two chosen states indicatives comparison screen. In this screen, the user can also check or uncheck all the indicatives.</string>
 
     <!-- Strings da tela resultado da consulta por indicativo -->
     <string name="acre">Acre</string>
@@ -173,11 +173,11 @@
 
     <!-- Strings da tela sobre resultado da consulta -->
     <string name="title_sobre_resultado_da_consulta">Sobre Resultado da Consulta</string>
-    <string name="conteudo_sobre_resultado_da_consulta">Está tela permite o usuário vizualizar o indicativo que ele selecionou, para cada um dos estados brasileiros. Os resultados apresentados são referentes ao último ano disponível. Os anos são disponíbilizados para consulta na opção "Histórico" na tela de consulta de estados.</string>
+    <string name="conteudo_sobre_resultado_da_consulta">This screen allows the user to visualize the selected indicative for each one of the brazilian states. The presented results are referring to the last available year. TThe years are available for consultation in the option "History" in the states consultation screen.</string>
 
     <!-- Strings da tela sobre historico de indicativo -->
     <string name="title_sobre_historico_de_indicativo">Sobre Histórico de Indicativo</string>
-    <string name="conteudo_sobre_historico_de_indicativo">O usuário visualiza o histórico de cada indicativo do estado que foi selecionado.Também é possível gerar um gráfico do indicativo através do botão gerar gráfico.</string>
+    <string name="conteudo_sobre_historico_de_indicativo">The user visualizes the history of each indicative of the state that was chosen. It is also possible to generate a graphic from the indicative using the button generate graphic.</string>
 
     <!-- Strings da tela sobre feed -->
     <string name="tela_sobre_feed">Fonte de Informações do EEF</string>
@@ -199,16 +199,16 @@
 
     <!-- Strings da tela sobre Comparação de Estados -->
     <string name="title_sobre_comparacao">Sobre Comparação</string>
-    <string name="conteudo_sobre_comparacao">Será apresentado 2 combo box com as unidades federativas brasileiras, para que o usuário escolha dois estados diferentes para realizar a comparação dos mesmos.</string>
+    <string name="conteudo_sobre_comparacao">It will be presented two combo boxes with the brazilian states, for the user to choose two different states to compare.</string>
     <string name="informacao_botao_sobre_consulta">Após a seleção dos 2 estados desejados,esta opção encaminha o usuário para uma tela onde devem ser definido(s) qual(s) indicativo(s) deseja visualizar na comparação.</string>
 
     <!-- Strings da tela sobre Comparação de Estado -->
     <string name="title_sobre_comparacao_estado">Sobre Comparação de Estados</string>
-    <string name="conteudo_sobre_comparacao_estado">Está tela permite o usuário visualizar as comparações dos indicativos selecionados, dos dois estados escolhido, e clicando no botão de gerar grafico a tela é redirecionada para a tela escolha um indicativo. Os resultados apresentados são referentes ao último ano disponível. Os anos são disponíbilizados para consulta na opção "Histórico" na tela de consulta de estados.</string>
+    <string name="conteudo_sobre_comparacao_estado">This screen allows the user to visualize the comparisons of the selected indicatives or the two selected states. Once the user taps the generate graphic button, he is redirected to the choose indicative screen. The results shown are referent to the last available year. The years are available for consultation in the option "History" in the states consultation screen.</string>
 
     <!-- Strings da tela sobre Educação em Foco -->
-    <string name="consultar_estados_conteudo">Selecionando a opção de consultar estados você será redirecionado para uma tela onde irá aparecer a lista de todos os estados, para que você possa consultar os dados do mesmo.</string>
-    <string name="comparar_estados_conteudo">Selecionando a opção de comparar os estados você será redirecionado para uma tela onde você  poderá selecionar se deseja comparar por estado ou por indicativo.</string>
+    <string name="consultar_estados_conteudo">As you choose to consult the states, you will be redirected to a screen where it will appear the list of all states, so you can consult their data.</string>
+    <string name="comparar_estados_conteudo">As you choose to compare all states, you will be redirected to a screen where you can select if you want to compare by state or by indicative.</string>
     <string name="noticias_sobre_conteudo">Selecionando a opção de notícias você será redirecionado para uma tela onde você  poderá visualizar as últimas notícias publicadas no site noticias.gov.br</string>
 
     <!-- Strings da tela Comparação -->
@@ -221,8 +221,7 @@
     <string name="title_activity_tela_sobre_comparacoes_gerais">TelaSobreComparacoesGerais</string>
     <string name="title_sobre_comparacacoes_gerais_estados">Comparação por estado: </string>
     <string name="title_sobre_comparacacoes_gerais_indicativos">Comparação por indicativo: </string>
-    <string name="comparacoes_gerais_conteudo_estados">O usuário escolherá dois estados para comparar os indicativos dos mesmos.</string>
-    <string name="comparacoes_gerais_conteudo_indicativos">O usuário escolherá os indicativos que deseja comparar em relação a todos os estados.</string>
+    <string name="comparacoes_gerais_conteudo_estados">The user will choose two states to compare their indicatives.</string>
 
     <!-- Strings da tela sobre Lista Estado -->
     <string name="lista_estado_conteudo">O usuário escolhe o estado afim de consultar os dados do mesmo.</string>
@@ -238,5 +237,6 @@
 
     <!-- Strings da tela sobre EscolheIndicativoGraficoComparacao -->
     <string name="escolhe_indicativo_grafico_comparacao_conteudo">O usuário escolhe um indicativo para gerar o gráfico com os dados do mesmo.</string>
+    <string name="comparacoes_gerais_conteudo_indicativos">The user will choose the indicatives he wants to compare about all the states.</string>
 
 </resources>
