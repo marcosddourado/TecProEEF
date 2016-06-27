@@ -124,17 +124,11 @@ public class State {
 
 	public void setCensus(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
-		ArrayList<String[]> elementaryFinalData;
-		ArrayList<String[]> elementaryInitialData;
-		ArrayList<String[]> highSchoolData;
-		ArrayList<String[]> ejaHighSchoolData;
-		ArrayList<String[]> ejaElementaryData;
-
-		elementaryFinalData = information.get(finalYearsCensusKey);
-		elementaryInitialData = information.get(initialYearsCensusKey);
-		highSchoolData = information.get(highSchoolCensusKey);
-		ejaHighSchoolData = information.get(highSchoolEJACensusKey);
-		ejaElementaryData = information.get(elementaryEJACensusKey);
+		ArrayList<String[]> elementaryFinalData = information.get(finalYearsCensusKey);
+		ArrayList<String[]> elementaryInitialData = information.get(initialYearsCensusKey);
+		ArrayList<String[]> highSchoolData = information.get(highSchoolCensusKey);
+		ArrayList<String[]> ejaHighSchoolData = information.get(highSchoolEJACensusKey);
+		ArrayList<String[]> ejaElementaryData = information.get(elementaryEJACensusKey);
 
 		assert (elementaryFinalData != null) : "null elementaryFinalData";
 		assert (elementaryInitialData != null) : "null elementaryInitialData";
@@ -148,11 +142,24 @@ public class State {
 			census[i] = new Census();
 			census[i].setCensusState(this);
 			census[i].setCensusYear(Integer.parseInt(highSchoolData.get(i)[0]));
-			census[i].setFinalElementaryYears(Double.parseDouble(elementaryFinalData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setInitialElementaryYears(Double.parseDouble(elementaryInitialData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setHighSchoolEJA(Double.parseDouble(ejaHighSchoolData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setElementaryEJA(Double.parseDouble(ejaElementaryData.get(i)[1].replaceAll("\\.", "")));
+
+			String initialElementaryYears = elementaryInitialData.get(i)[1];
+			String finalElementaryYears = elementaryFinalData.get(i)[1];
+			String highSchool = highSchoolData.get(i)[1];
+			String highSchoolEja = ejaHighSchoolData.get(i)[1];
+			String elementaryEja = ejaHighSchoolData.get(i)[1];
+
+			initialElementaryYears.replaceAll("\\.", "");
+			finalElementaryYears.replaceAll("\\.", "");
+			highSchool.replaceAll("\\.", "");
+			highSchoolEja.replaceAll("\\.", "");
+			elementaryEja.replaceAll("\\.", "");
+
+			census[i].setInitialElementaryYears(Double.parseDouble(initialElementaryYears));
+			census[i].setFinalElementaryYears(Double.parseDouble(finalElementaryYears));
+			census[i].setHighSchool(Double.parseDouble(highSchool));
+			census[i].setHighSchoolEJA(Double.parseDouble(highSchoolEja));
+			census[i].setElementaryEJA(Double.parseDouble(elementaryEja));
 		}
 
 		this.census = census;
