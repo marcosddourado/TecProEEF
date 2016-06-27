@@ -43,6 +43,28 @@ public class State {
 	public static final String initialSeriesKey = "series_iniciais";
 	public static final String highSchoolKey = "ensino_high_school";
 
+	public static final String elementaryClassHours = "horas_aula_ensino_elementary";
+	public static final String highSchoolClassHours = "horas_aula_ensino_high_school";
+	public static final String elementaryStudentsPerClass = "alunos_por_turma_ensino_elementary";
+	public static final String highSchoolStudentsPerClass = "alunos_por_turma_ensino_high_school";
+	public static final String numberOfProjects = "numero_projetos";
+	public static final String valueInvested = "valor_investido";
+	public static final String primeirosProjetosProgram = "programa_primeiros_projetos";
+	public static final String primeirosProjetosProgramValues = "valores_programa_primeiros_projetos";
+	public static final String cnpqResearchSupportProgram = "projetos_apoio_pesquisa_cnpq";
+	public static final String cnpqResearchSupportProgramValues = "valores_projetos_apoio_pesquisa_cnpq";
+	public static final String youngResearchersProgram = "jovens_pesquisadores";
+	public static final String youngResearchersProgramValues = "valores_jovens_pesquisadores";
+	public static final String inctProjects = "projetos_inct";
+	public static final String inctProjectsValues = "valores_projetos_inct";
+	public static final String elementaryDistortionRate = "distortion_rate_elementary";
+	public static final String highSchoolDistortionRate = "distortion_rate_ensino_high_school";
+	public static final String elementaryApprovalRate = "taxa_aprovacao_elementary";
+	public static final String highSchoolApprovalRate = "taxa_aprovacao_high_school";
+	public static final String elementaryDropoutRate = "taxa_abandono_elementary";
+	public static final String highSchoolDropoutRate = "taxa_abandono_high_school";
+
+
 	/**
 	 * Initializes the state object with default values.
 	 *
@@ -456,28 +478,16 @@ public class State {
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		String[] gradeClassHoursIndicatives = {"horas_aula_ensino_elementary", "horas_aula_ensino_high_school"};
-		String[] studentGradesPerClassIndicatives = {"alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school"};
-		String[] scienceAndThecnologyProjectsIndicatives = {"numero_projetos", "valor_investido"};
-		String[] primeirosProjetosIndicatives = {"programa_primeiros_projetos", "valores_programa_primeiros_projetos"};
-		String[] apoioCnpqProjectIndicatives = {"projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq"};
-		String[] jovensPesquisadoresProjectIndicatives = {"jovens_pesquisadores", "valores_jovens_pesquisadores"};
-		String[] inctProjectsIndicatives = {"projetos_inct", "valores_projetos_inct"};
-		String[] ageGradeDistortionRate = {"distortion_rate_elementary", "distortion_rate_ensino_high_school"};
-		String[] educationalAchievementRate = {"taxa_aprovacao_elementary", "taxa_aprovacao_high_school"};
-		String[] schoolDropoutRate = {"taxa_abandono_elementary", "taxa_abandono_high_school"};
-
-		assert (gradeClassHoursIndicatives != null) : "null gradeClassHoursIndicatives";
-		assert (studentGradesPerClassIndicatives != null) : "null studentGradesPerClassIndicatives";
-		assert (scienceAndThecnologyProjectsIndicatives != null) : "null scienceAndThecnologyProjectsIndicatives";
-		assert (primeirosProjetosIndicatives != null) : "null primeirosProjetosIndicatives";
-		assert (apoioCnpqProjectIndicatives != null) : "null apoioCnpqProjectIndicatives";
-		assert (jovensPesquisadoresProjectIndicatives != null) : "null jovensPesquisadoresProjectIndicatives";
-		assert (inctProjectsIndicatives != null) : "null inctProjectsIndicatives";
-		assert (ageGradeDistortionRate != null) : "null ageGradeDistortionRate";
-		assert (educationalAchievementRate != null) : "null educationalAchievementRate";
-		assert (schoolDropoutRate != null) : "null schoolDropoutRate";
-
+		String[] gradeClassHoursIndicatives = {elementaryClassHours, highSchoolClassHours};
+		String[] studentGradesPerClassIndicatives = {elementaryStudentsPerClass, highSchoolStudentsPerClass};
+		String[] scienceAndThecnologyProjectsIndicatives = {numberOfProjects, valueInvested};
+		String[] primeirosProjetosIndicatives = {primeirosProjetosProgram, primeirosProjetosProgramValues};
+		String[] apoioCnpqProjectIndicatives = {cnpqResearchSupportProgram, cnpqResearchSupportProgramValues};
+		String[] jovensPesquisadoresProjectIndicatives = {youngResearchersProgram, youngResearchersProgramValues};
+		String[] inctProjectsIndicatives = {inctProjects, inctProjectsValues};
+		String[] ageGradeDistortionRate = {elementaryDistortionRate, highSchoolDistortionRate};
+		String[] educationalAchievementRate = {elementaryApprovalRate, highSchoolApprovalRate};
+		String[] schoolDropoutRate = {elementaryDropoutRate, highSchoolDropoutRate};
 
 		this.setStatePopulation(information);
 		this.setCensus(information);
