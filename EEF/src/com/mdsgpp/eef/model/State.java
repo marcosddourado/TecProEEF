@@ -49,22 +49,29 @@ public class State {
 	 * @return  New state object with default values.
 	 */
 	public State(){
-		this.stateName 				        = null;
-		this.stateAbbreviation 			    = null;
-		this.percentageCollaborationWithPIB = null;
+		String emptyString			= "";
+		double emptyDoubleArray[] 	= {};
+		Census emptyCensusArray[] 	= {};
+		Ideb emptyIdebArray[] 		= {};
+		Grade emptyGradeArray[] 	= {};
+		Project emptyProjectArray[] = {};
+
+		this.stateName 				        = emptyString;
+		this.stateAbbreviation 			    = emptyString;
+		this.percentageCollaborationWithPIB = emptyDoubleArray;
 		this.statePopulation 			    = 0;
-		this.census						    = null;
-		this.idebs						    = null;
-		this.studentGradesPerClass 		    = null;
-		this.gradeClassHours 			    = null;
-		this.scienceAndThecnologyProjects   = null;
-		this.primeirosProjetos 			    = null;
-		this.inctProject 				    = null;
-		this.apoioCnpqProject 		        = null;
-		this.jovensPesquisadoresProject     = null;
-		this.ageGradeDistortionRate 	    = null;
-		this.educationalAchievementRate     = null;
-		this.schoolDropoutRate 			    = null;
+		this.census						    = emptyCensusArray;
+		this.idebs						    = emptyIdebArray;
+		this.studentGradesPerClass 		    = emptyGradeArray;
+		this.gradeClassHours 			    = emptyGradeArray;
+		this.scienceAndThecnologyProjects   = emptyProjectArray;
+		this.primeirosProjetos 			    = emptyProjectArray;
+		this.inctProject 				    = emptyProjectArray;
+		this.apoioCnpqProject 		        = emptyProjectArray;
+		this.jovensPesquisadoresProject     = emptyProjectArray;
+		this.ageGradeDistortionRate 	    = emptyGradeArray;
+		this.educationalAchievementRate     = emptyGradeArray;
+		this.schoolDropoutRate 			    = emptyGradeArray;
 	}
 
 	/**
