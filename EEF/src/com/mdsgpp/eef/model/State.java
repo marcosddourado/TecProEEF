@@ -32,6 +32,17 @@ public class State {
 			"ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS",
 			"RO", "RR", "SC", "SP", "SE", "TO" };
 
+	public static final String finalYearsCensusKey = "censo_anos_finais";
+	public static final String initialYearsCensusKey = "censo_anos_iniciais";
+	public static final String highSchoolCensusKey = "censo_ensino_high_school";
+	public static final String highSchoolEJACensusKey = "censo_eja_high_school";
+	public static final String elementaryEJACensusKey = "censo_eja_elementary";
+	public static final String pibStateContributionKey = "participacao_estadual_pib";
+	public static final String populationKey = "populacao";
+	public static final String fifthToEigthKey = "5a_8a";
+	public static final String initialSeriesKey = "series_iniciais";
+	public static final String highSchoolKey = "ensino_high_school";
+
 	/**
 	 * Initializes the state object with default values.
 	 *
@@ -90,11 +101,11 @@ public class State {
 		ArrayList<String[]> ejaHighSchoolData;
 		ArrayList<String[]> ejaElementaryData;
 
-		elementaryFinalData = information.get("censo_anos_finais");
-		elementaryInitialData = information.get("censo_anos_iniciais");
-		highSchoolData = information.get("censo_ensino_high_school");
-		ejaHighSchoolData = information.get("censo_eja_high_school");
-		ejaElementaryData = information.get("censo_eja_elementary");
+		elementaryFinalData = information.get(finalYearsCensusKey);
+		elementaryInitialData = information.get(initialYearsCensusKey);
+		highSchoolData = information.get(highSchoolCensusKey);
+		ejaHighSchoolData = information.get(highSchoolEJACensusKey);
+		ejaElementaryData = information.get(elementaryEJACensusKey);
 
 		assert (elementaryFinalData != null) : "null elementaryFinalData";
 		assert (elementaryInitialData != null) : "null elementaryInitialData";
@@ -130,7 +141,7 @@ public class State {
 		assert (information != null) : "null information";
 
 		double percentageCollaborationWithPIB[];
-		ArrayList<String[]> data = information.get("participacao_estadual_pib");
+		ArrayList<String[]> data = information.get(pibStateContributionKey);
 
 		assert (data != null) : "null data";
 
@@ -149,7 +160,7 @@ public class State {
 	public void setStatePopulation(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		ArrayList<String[]> data = information.get("populacao");
+		ArrayList<String[]> data = information.get(populationKey);
 
 		assert (data != null) : "null data";
 
@@ -174,9 +185,9 @@ public class State {
 		ArrayList<String[]> highSchoolData;
 		Ideb ideb[] = null;
 
-		elementaryFinalData = information.get("5a_8a");
-		elementaryInitialData = information.get("series_iniciais");
-		highSchoolData = information.get("ensino_high_school");
+		elementaryFinalData = information.get(fifthToEigthKey);
+		elementaryInitialData = information.get(initialSeriesKey);
+		highSchoolData = information.get(highSchoolKey);
 
 		assert (elementaryFinalData != null) : "null elementaryFinalData";
 		assert (elementaryInitialData != null) : "null elementaryInitialData";
