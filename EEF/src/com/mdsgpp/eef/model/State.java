@@ -64,6 +64,8 @@ public class State {
 	public static final String elementaryDropoutRate = "taxa_abandono_elementary";
 	public static final String highSchoolDropoutRate = "taxa_abandono_high_school";
 
+	public static final String unnamed = "Unnamed";
+	public static final String noAbbreviation = "No abbreviation"
 
 	/**
 	 * Initializes the state object with default values.
@@ -206,11 +208,11 @@ public class State {
 
 	public Ideb[] getIdebs() {
 		if (this.idebs != null) {
-			return this.idebs;
-
+			//Do nothing
 		} else {
-			return emptyIdeb();
+			this.idebs = emptyIdeb();
 		}
+		return this.idebs;
 	}
 
 	public void setIdebs(HashMap<String, ArrayList<String[]>> information) {
@@ -230,10 +232,10 @@ public class State {
 		assert (highSchoolData != null) : "null highSchoolData";
 
 		ideb = new Ideb[highSchoolData.size()];
-		for (int i=0; i<ideb.length; i++) {
+		for (int i = 0; i < ideb.length; i++) {
 			ideb[i] = new Ideb();
 			ideb[i].setState(this);
-			if(i<ideb.length-1) {
+			if(i < ideb.length - 1) {
 				ideb[i].setIdebYear(Integer.parseInt(highSchoolData.get(i)[0]));
 			} else {
 				//do nothing
@@ -253,7 +255,6 @@ public class State {
 
 		ArrayList<String[]> elementarydata;
 		ArrayList<String[]> highSchoolData;
-		Grade readGrade[] = null;
 
 		elementarydata = information.get(namesOfIndicative[0]);
 		highSchoolData = information.get(namesOfIndicative[1]);
@@ -261,7 +262,8 @@ public class State {
 		assert (elementarydata != null) : "null elementarydata";
 		assert (highSchoolData != null) : "null highSchoolData";
 
-		readGrade = new Grade[highSchoolData.size()];
+		Grade readGrade[] = new Grade[highSchoolData.size()];
+
 		for (int i=0; i<readGrade.length; i++) {
 			readGrade[i] = new Grade();
 			readGrade[i].setState(this);
@@ -275,10 +277,11 @@ public class State {
 
 	public Grade[] getStudentGradesPerClass() {
 		if (this.studentGradesPerClass != null) {
-			return this.studentGradesPerClass;
+			//Do nothing
 		} else {
-			return emptyGrade();
+			this.studentGradesPerClass = emptyGrade();
 		}
+		return this.studentGradesPerClass;
 	}
 
 	public void setStudentGradesPerClass(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -290,11 +293,11 @@ public class State {
 
 	public Grade[] getGradeClassHours() {
 		if (this.gradeClassHours != null) {
-			return this.gradeClassHours;
+			//Do nothing
 		} else {
-			return emptyGrade();
+			this.gradeClassHours = emptyGrade();
 		}
-
+		return this.gradeClassHours;
 	}
 
 	public void setGradeClassHours(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -306,11 +309,11 @@ public class State {
 
 	public Grade[] getAgeGradeDistortionRate() {
 		if (this.ageGradeDistortionRate != null) {
-			return this.ageGradeDistortionRate;
+			//Do nothing
 		} else {
-			return emptyGrade();
+			this.ageGradeDistortionRate = emptyGrade();
 		}
-
+		return this.ageGradeDistortionRate;
 	}
 
 	public void setAgeGradeDistortionRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -324,7 +327,7 @@ public class State {
 		if (this.stateName != null) {
 			return this.stateName;
 		} else {
-			return "Sem nome";
+			return unnamed;
 		}
 
 	}
@@ -337,7 +340,7 @@ public class State {
 		if (this.stateAbbreviation != null) {
 			return this.stateAbbreviation;
 		} else {
-			return "Sem sigla";
+			return noAbbreviation;
 		}
 	}
 
