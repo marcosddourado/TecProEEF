@@ -272,7 +272,7 @@ public class ScreenQueryResult extends Activity {
 	private void initializeTextViews() {
 
 		textViewInitials1 = (TextView) findViewById(R.id.textView_sigla1);
-		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_populacao1);
+		textViewPopulation1 = (TextView) findViewById(R.id.textView_populacao1);
 		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_populacao_valor1);
 		textViewPibStateParticipation1 = (TextView) findViewById(R.id.textView_participacao_estadual_pib1);
 		textViewPibParticipation1 = (TextView) findViewById(R.id.textView_participacao_pib_valor1);
@@ -448,7 +448,7 @@ public class ScreenQueryResult extends Activity {
 		try {
 			setVisibility(textViewInitiationProjects2, bInitiation);
 		} catch(NullPointerException npe) {
-			Log.e("layout portrait não possui estes id's",npe.toString());
+			Log.e("layout portrait não possui estes ids",npe.toString());
 		}
 
 	}
