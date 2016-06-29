@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/participacao_PIB" />
+                android:text="@string/pib_participation" />
 
             <RadioButton
                 android:id="@+id/radio_technological_diffusion_amount"
@@ -113,7 +113,7 @@
                 android:text="@string/search_projects_cnpq_investment" />
 
             <RadioButton
-                android:id="@+id/radio_jovens_pesquisadores_amount"
+                android:id="@+id/radio_teen_searchers_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -121,7 +121,7 @@
                 android:text="@string/teen_searchers_amount" />
 
             <RadioButton
-                android:id="@+id/radio_jovens_pesquisadores_investment"
+                android:id="@+id/radio_teen_searchers_investment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

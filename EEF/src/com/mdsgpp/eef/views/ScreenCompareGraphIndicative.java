@@ -72,8 +72,8 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		rbDiffusionProjectsValues = (RadioButton) findViewById(R.id.radio_technological_diffusion_investment);
 		rbInitiationProjectsQuantity = (RadioButton) findViewById(R.id.radio_inct_projects_amount);
 		rbInitiationProjectsValues = (RadioButton) findViewById(R.id.radio_inct_projects_investment);
-		rbJovensProjectQuantity = (RadioButton) findViewById(R.id.radio_jovens_pesquisadores_amount);
-		rbJovensProjectValues = (RadioButton) findViewById(R.id.radio_jovens_pesquisadores_investment);
+		rbJovensProjectQuantity = (RadioButton) findViewById(R.id.radio_teen_searchers_amount);
+		rbJovensProjectValues = (RadioButton) findViewById(R.id.radio_teen_searchers_investment);
 		rbStudentsClassElementary = (RadioButton) findViewById(R.id.radio_students_per_class_elementary);
 		rbStudentsClassHighSchool = (RadioButton) findViewById(R.id.radio_students_per_class_high_school);
 		rbHoursClassElementary = (RadioButton) findViewById(R.id.radio_class_hours_elementary);

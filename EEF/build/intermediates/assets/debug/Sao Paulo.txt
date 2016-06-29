@@ -52,7 +52,7 @@ population
 2009: 41384039
 
 
-numero_projetos
+project_numbers
 2003: 1
 2004: 7
 2005: 8
@@ -125,7 +125,7 @@ daily_class_hours_average_high_school
 2010: 4,8
 
 
-jovens_pesquisadores
+teen_searchers
 2005: 4
 2006: 1
 2007: 28
@@ -156,7 +156,7 @@ projetos_inct
 Total: 93
 
 
-valores_jovens_pesquisadores
+valores_teen_searchers
 2005: 651,400000000373
 2006: 150
 2007: 1382,21000000089

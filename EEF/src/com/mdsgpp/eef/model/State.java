@@ -413,10 +413,10 @@ public class State {
 
 		String[] gradeClassHoursIndicatives = { "daily_class_hours_average_elementary", "daily_class_hours_average_high_school" };
 		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school" };
-		String[] scienceAndThecnologyProjectsIndicatives = { "numero_projetos", "valor_investido" };
-		String[] primeirosProjetosIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
+		String[] scienceAndThecnologyProjectsIndicatives = { "project_numbers", "valor_investido" };
+		String[] primeirosProjetosIndicatives = { "first_program_projects", "valores_first_program_projects" };
 		String[] apoioCnpqProjectIndicatives = { "projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq" };
-		String[] jovensPesquisadoresProjectIndicatives = { "jovens_pesquisadores", "valores_jovens_pesquisadores" };
+		String[] jovensPesquisadoresProjectIndicatives = { "teen_searchers", "valores_teen_searchers" };
 		String[] inctProjectsIndicatives = { "projetos_inct", "valores_projetos_inct" };
 		String[] ageGradeDistortionRate = { "distortion_rate_elementary", "distortion_rate_ensino_high_school" };
 		String[] educationalAchievementRate = { "utilization_rate_elementary", "utilization_rate_high_school" };
