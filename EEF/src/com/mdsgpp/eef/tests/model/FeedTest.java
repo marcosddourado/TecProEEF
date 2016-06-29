@@ -13,7 +13,6 @@ import com.mdsgpp.eef.model.News;
 
 import java.util.ArrayList;
 import java.util.Random;
-import dalvik.annotation.TestTargetClass;
 
 public class FeedTest {
 
