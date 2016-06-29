@@ -89,8 +89,8 @@
     <string name="graph_button">Graphic</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
-    <string name="bt_historico">History</string>
-    <string name="bt_estados">States</string>
+    <string name="button_history">History</string>
+    <string name="button_state">States</string>
 
     <!-- Strings da tela estado -->
     <string name="participacao_PIB">PIB State Contribution</string>

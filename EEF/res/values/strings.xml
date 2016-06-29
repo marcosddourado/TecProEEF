@@ -90,8 +90,8 @@
     <string name="graph_button">Gráfico</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
-    <string name="bt_historico">Historico</string>
-    <string name="bt_estados">Estados</string>
+    <string name="button_history">Historico</string>
+    <string name="button_state">Estados</string>
 
     <!-- Strings da tela estado -->
     <string name="participacao_PIB">Participacao Estadual no PIB</string>

@@ -43,7 +43,7 @@
             android:text="@string/empty_string" />
 
         <Button
-            android:id="@+id/bt_historico_estado"
+            android:id="@+id/button_history_estado"
             style="@style/botaoMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
