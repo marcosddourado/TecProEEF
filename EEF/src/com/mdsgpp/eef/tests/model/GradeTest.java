@@ -1,4 +1,4 @@
-package com.mdsgpp.eef.tests.unit.model;
+package com.mdsgpp.eef.tests.model;
 
 import com.mdsgpp.eef.model.Grade;
 

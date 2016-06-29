@@ -1,4 +1,4 @@
-package com.mdsgpp.eef.tests.unit.controller;
+package com.mdsgpp.eef.tests.controller;
 
 import android.content.Context;
 
