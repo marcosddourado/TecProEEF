@@ -13,8 +13,8 @@ import android.content.Context;
 public class PersistenceFeed {
 
 	private static final String FILENAME = "feed.txt";
-	private static PersistenceFeed instance;
-	private Context context;
+	private static PersistenceFeed instance = null;
+	private Context context = null;
 	
 	public PersistenceFeed(Context context) {
 		assert(context != null) : "null context";
