@@ -1,15 +1,13 @@
-package com.mdsgpp.eef.tests.model;
+package com.mdsgpp.eef.tests.unit.model;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.*;
-import org.mockito.Mock;
+
 import com.mdsgpp.eef.model.Census;
 
 import java.util.Random;
-import dalvik.annotation.TestTargetClass;
 
 public class CensusTest {
 

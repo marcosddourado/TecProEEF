@@ -1,11 +1,10 @@
-package com.mdsgpp.eef.tests.parse;
+package com.mdsgpp.eef.tests.unit.parse;
 
 
 
 import android.content.Context;
 
 import com.mdsgpp.eef.model.Feed;
-import com.mdsgpp.eef.model.News;
 import com.mdsgpp.eef.parse.PersistenceFeed;
 
 import org.junit.Test;

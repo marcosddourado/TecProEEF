@@ -1,12 +1,9 @@
-package com.mdsgpp.eef.tests.controller;
+package com.mdsgpp.eef.tests.unit.controller;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.mdsgpp.eef.controller.StateConroller;
-import com.mdsgpp.eef.model.Feed;
 import com.mdsgpp.eef.model.State;
-import com.mdsgpp.eef.parse.ParseData;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +11,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.CoreMatchers.*;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.mdsgpp.eef.tests.parse;
+package com.mdsgpp.eef.tests.unit.parse;
 
 import android.content.Context;
 
