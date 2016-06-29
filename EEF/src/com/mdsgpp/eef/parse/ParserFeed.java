@@ -19,6 +19,11 @@ import android.util.Xml;
 
 public class ParserFeed extends DefaultHandler {
 
+	/**
+	 * Parse all Feed data from stream 'is' and return it instantiated as a Feed object
+	 * @param is
+	 * @return
+     */
 	public Feed parse(InputStream is) {
 
 		// Declaration of each element tag that we want to treat
