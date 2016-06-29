@@ -39,21 +39,21 @@
         <activity
             android:name="com.mdsgpp.eef.views.ScreenStateList"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_lista_estado"
+            android:label="@string/title_activity_screen_state_list"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.mdsgpp.eef.views.ScreenComparation"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_comparacao"
+            android:label="@string/title_activity_screen_comparison"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOver"
+            android:name="com.mdsgpp.eef.views.ScreenAbout"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre"
+            android:label="@string/title_activity_screen_about"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
@@ -113,23 +113,23 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverIndicatives"
+            android:name="com.mdsgpp.eef.views.ScreenAboutIndicatives"
             android:icon="@drawable/home"
             android:label="@string/title_activity_sobre_indicativos"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverQuery"
+            android:name="com.mdsgpp.eef.views.ScreenAboutQuery"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_consulta"
+            android:label="@string/title_activity_screen_about_consulta"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverComparison"
+            android:name="com.mdsgpp.eef.views.ScreenAboutComparison"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_comparacao"
+            android:label="@string/title_activity_screen_about_comparacao"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
@@ -162,65 +162,65 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverGeneralComparisons"
+            android:name="com.mdsgpp.eef.views.ScreenAboutGeneralComparisons"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_comparacoes_gerais"
+            android:label="@string/title_activity_screen_about_comparacoes_gerais"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverStateList"
+            android:name="com.mdsgpp.eef.views.ScreenAboutStateList"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_lista_estado"
+            android:label="@string/title_activity_screen_about_lista_estado"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverState"
+            android:name="com.mdsgpp.eef.views.ScreenAboutState"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_estado"
+            android:label="@string/title_activity_screen_about_estado"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverStateComparison"
+            android:name="com.mdsgpp.eef.views.ScreenAboutStateComparison"
             android:icon="@drawable/home"
             android:label="@string/title_activity_sobre_comparacao_estados"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverIndicativeChoice"
+            android:name="com.mdsgpp.eef.views.ScreenAboutIndicativeChoice"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_escolha_indicativo"
+            android:label="@string/title_activity_screen_about_escolha_indicativo"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverQueryResult"
+            android:name="com.mdsgpp.eef.views.ScreenAboutQueryResult"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_resultado_da_consulta"
+            android:label="@string/title_activity_screen_about_resultado_da_consulta"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverIndicativeHistory"
+            android:name="com.mdsgpp.eef.views.ScreenAboutIndicativeHistory"
             android:icon="@drawable/home"
             android:label="@string/title_activity_sobre_historico_de_indicativo"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverGraphic"
+            android:name="com.mdsgpp.eef.views.ScreenAboutGraphic"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_grafico"
+            android:label="@string/title_activity_screen_about_grafico"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdsgpp.eef.views.ScreenOverIndicativeChoiceComparisonGraphic"
+            android:name="com.mdsgpp.eef.views.ScreenAboutIndicativeChoiceComparisonGraphic"
             android:icon="@drawable/home"
-            android:label="@string/title_activity_tela_sobre_escolhe_indicativo_grafico_comparacao"
+            android:label="@string/title_activity_screen_about_escolhe_indicativo_grafico_comparacao"
             android:parentActivityName="views.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
