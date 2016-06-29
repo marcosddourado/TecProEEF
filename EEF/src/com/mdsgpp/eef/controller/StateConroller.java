@@ -191,13 +191,13 @@ public class StateConroller {
                         .getStudentGradesPerClass().length - 1]
                         .getHighSchoolGrade()));
         this.stateInformations.put(
-                "horas_aula_ensino_elementary",
+                "daily_class_hours_average_elementary",
                 "Quantidade media de horas de aula(Fundamental): "
                         + dfValue.format(state.getGradeClassHours()[state
                         .getGradeClassHours().length - 1]
                         .getElementaryGrade()));
         this.stateInformations.put(
-                "horas_aula_ensino_high_school",
+                "daily_class_hours_average_high_school",
                 "Quantidade media de horas de aula (Medio): "
                         + dfValue.format(state.getGradeClassHours()[state
                         .getGradeClassHours().length - 1]
@@ -217,58 +217,58 @@ public class StateConroller {
                         .getAgeGradeDistortionRate().length - 1]
                         .getHighSchoolGrade()));
         this.stateInformations
-                .put("taxa_aprovacao_elementary",
+                .put("utilization_rate_elementary",
                         "Taxa de Aprovaeeo (Fundamental): "
                                 + dfPercentage.format(state
                                 .getEducationalAchievementRate()[state
                                 .getEducationalAchievementRate().length - 1]
                                 .getElementaryGrade()));
         this.stateInformations
-                .put("taxa_aprovacao_high_school",
+                .put("utilization_rate_high_school",
                         "Taxa de Aprovaeeo (Medio): "
                                 + dfPercentage.format(state
                                 .getEducationalAchievementRate()[state
                                 .getEducationalAchievementRate().length - 1]
                                 .getHighSchoolGrade()));
         this.stateInformations
-                .put("taxa_abandono_elementary",
+                .put("dropout_rate_elementary",
                         "Taxa de Abandono (Fundamental): "
                                 + dfPercentage.format(state
                                 .getSchoolDropoutRate()[state
                                 .getSchoolDropoutRate().length - 1]
                                 .getElementaryGrade()));
         this.stateInformations
-                .put("taxa_abandono_high_school",
+                .put("dropout_rate_high_school",
                         "Taxa de Abandono (Medio): "
                                 + dfPercentage.format(state
                                 .getSchoolDropoutRate()[state
                                 .getSchoolDropoutRate().length - 1]
                                 .getHighSchoolGrade()));
         this.stateInformations.put(
-                "censo_anos_iniciais_elementary",
-                "Censo Anos Iniciais (Fundamental): "
+                "census_initial_years_elemetary",
+                "census Anos Iniciais (Fundamental): "
                         + dfPercentage.format(state.getCensus()[state
                         .getCensus().length - 1]
                         .getInitialElementaryYears()));
         this.stateInformations.put(
-                "censo_anos_finais_elementary",
-                "Censo Anos Finais (Fundamental): "
+                "census_final_years_elemetary",
+                "census Anos Finais (Fundamental): "
                         + dfPercentage.format(state.getCensus()[state
                         .getCensus().length - 1]
                         .getInitialElementaryYears()));
         this.stateInformations.put(
-                "censo_ensino_high_school",
-                "Censo Ensino Medio: "
+                "census_high_school",
+                "census Ensino Medio: "
                         + dfPercentage.format(state.getCensus()[state
                         .getCensus().length - 1].getHighSchool()));
         this.stateInformations.put(
-                "censo_eja_elementary",
-                "Censo EJA (Fundamental): "
+                "census_eja_elementary",
+                "census EJA (Fundamental): "
                         + dfPercentage.format(state.getCensus()[state
                         .getCensus().length - 1].getElementaryEJA()));
         this.stateInformations.put(
-                "censo_eja_high_school",
-                "Censo EJA (Medio): "
+                "census_high_school_eja",
+                "census EJA (Medio): "
                         + dfPercentage.format(state.getCensus()[state
                         .getCensus().length - 1].getHighSchoolEJA()));
 
@@ -403,7 +403,7 @@ public class StateConroller {
                     .getGradeClassHours().length - 1].getHighSchoolGrade())
                     + "\n\n";
         }
-        this.stateInformations.put("horas_aula_ensino_high_school", temp);
+        this.stateInformations.put("daily_class_hours_average_high_school", temp);
         temp = "";
 
         for (int i = 0, ano = 2006; i < state.getAgeGradeDistortionRate().length; i++, ano++) {
@@ -434,7 +434,7 @@ public class StateConroller {
                     + dfPercentage.format(state.getEducationalAchievementRate()[i]
                     .getHighSchoolGrade()) + "\n\n";
         }
-        this.stateInformations.put("taxa_aprovacao", temp);
+        this.stateInformations.put("utilization_rate", temp);
         temp = "";
 
         for (int i = 0, ano = 2007; i < state.getSchoolDropoutRate().length; ano++, i++) {
@@ -449,37 +449,37 @@ public class StateConroller {
                     + dfPercentage.format(state.getSchoolDropoutRate()[i]
                     .getHighSchoolGrade()) + "\n\n";
         }
-        this.stateInformations.put("taxa_abandono", temp);
+        this.stateInformations.put("dropout_rate", temp);
         temp = "";
 
         for (int i = 0, ano = 2010; i < state.getCensus().length; ano++, i++) {
             temp += ano
                     + ": "
-                    + "Censo Anos Iniciais (Fundamental): "
+                    + "census Anos Iniciais (Fundamental): "
                     + dfPercentage.format(state.getCensus()[i]
                     .getInitialElementaryYears())
                     + "\n"
                     + "\t\t  "
-                    + "Censo Anos Finais (Fundamental): "
+                    + "census Anos Finais (Fundamental): "
                     + dfPercentage.format(state.getCensus()[i]
                     .getInitialElementaryYears())
                     + "\n"
                     + "\t\t  "
-                    + "Censo Ensino Medio: "
+                    + "census Ensino Medio: "
                     + dfPercentage.format(state.getCensus()[i]
                     .getHighSchool())
                     + "\n"
                     + "\t\t  "
-                    + "Censo EJA (Fundamental): "
+                    + "census EJA (Fundamental): "
                     + dfPercentage.format(state.getCensus()[i]
                     .getElementaryEJA())
                     + "\n"
                     + "\t\t  "
-                    + "Censo EJA (Medio): "
+                    + "census EJA (Medio): "
                     + dfPercentage.format(state.getCensus()[state
                     .getCensus().length - 1].getHighSchoolEJA()) + "\n\n";
         }
-        this.stateInformations.put("censo", temp);
+        this.stateInformations.put("census", temp);
 
     }
 
@@ -489,7 +489,7 @@ public class StateConroller {
         this.stateInformations.put("sigla", state.getStateAbbreviation());
         this.stateInformations.put("nome", state.getStateName());
         ;
-        this.stateInformations.put("populacao",
+        this.stateInformations.put("population",
                 dfPopulation.format(state.getStatePopulation()) + " habitantes");
     }
 

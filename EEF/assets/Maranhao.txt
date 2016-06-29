@@ -1,31 +1,31 @@
 Maranheo
 MA
 
-censo_anos_finais
+census_anos_finais
 2010: 527.789
 2011: 517.456
 2012: 505.845
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 710.036
 2011: 657.853
 2012: 612.347
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 161.132
 2011: 154.343
 2012: 140.954
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 24.849
 2011: 25.076
 2012: 24.904
 
 
-censo_ensino_high_school
+census_high_school
 2010: 290.035
 2011: 281.130
 2012: 277.453
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 1,29999999999927
 
 
-populacao
+population
 2009: 6367138
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,2
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,3
 
 
@@ -189,28 +189,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 6158,47999999981
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 6,2
 2008: 5,7
 2009: 4,4
 2010: 4,1
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 17,5
 2008: 16,2
 2009: 13,8
 2010: 14,7
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 82,6
 2008: 83,1
 2009: 85,6
 2010: 86,7
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 75
 2008: 76,3
 2009: 78,5

@@ -43,17 +43,17 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 
 		bIdeb = intentRecebida.getBooleanExtra("CB_IDEB", false);
 		bPib = intentRecebida.getBooleanExtra("CB_PIB", false);
-		bPopulation = intentRecebida.getBooleanExtra("CB_POPULACAO", false);
+		bPopulation = intentRecebida.getBooleanExtra("CB_population", false);
 		bPrimeirosProjetos = intentRecebida.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
 		bCnpqProjects = intentRecebida.getBooleanExtra("CB_PROJETOS_CNPQ", false);
 		bDiffusionProjects = intentRecebida.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
 		bInitiationProjects = intentRecebida.getBooleanExtra("CB_PROJETOS_INICIACAO", false);
 		bJovensProject = intentRecebida.getBooleanExtra("CB_PROJETOS_JOVENS", false);
-		bCensus = intentRecebida.getBooleanExtra("CB_CENSO", false);
+		bCensus = intentRecebida.getBooleanExtra("CB_census", false);
 		bStudentsClass = intentRecebida.getBooleanExtra("CB_ALUNOS_TURMA", false);
 		bHoursClass = intentRecebida.getBooleanExtra("CB_HORAS_AULA", false);
 		bDistortionRate = intentRecebida.getBooleanExtra("CB_TAXA_DISTORCAO", false);
-		bDropoutRate = intentRecebida.getBooleanExtra("CB_TAXA_ABANDONO", false);
+		bDropoutRate = intentRecebida.getBooleanExtra("CB_dropout_rate", false);
 		bApproval = intentRecebida.getBooleanExtra("CB_APROVACAO", false);
 		
 	}
@@ -88,7 +88,7 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		rbCensusFinallYearsElementary = (RadioButton) findViewById(R.id.radio_final_census_elementary);
 		rbCensusHighSchool = (RadioButton) findViewById(R.id.radio_census_high_school);
 		rbCensusEJAElementary = (RadioButton) findViewById(R.id.radio_census_eja_elementary);
-		rbCensusEJAHighSchool = (RadioButton) findViewById(R.id.radio_census_eja_high_school);
+		rbCensusEJAHighSchool = (RadioButton) findViewById(R.id.radio_census_high_school_eja);
 		
 	}
 	

@@ -1,31 +1,31 @@
 Rio de Janeiro
 RJ
 
-censo_anos_finais
+census_anos_finais
 2010: 780.879
 2011: 708.349
 2012: 667.315
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 819.508
 2011: 739.555
 2012: 703.087
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 202.357
 2011: 164.772
 2012: 138.998
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 93.479
 2011: 73.323
 2012: 57.434
 
 
-censo_ensino_high_school
+census_high_school
 2010: 484.429
 2011: 446.899
 2012: 425.608
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 11,3000000000029
 
 
-populacao
+population
 2009: 16010429
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5,9
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,7
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 5,4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 26547,1499999985
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 3,6
 2008: 3,4
 2009: 3,1
 2010: 2,6
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 14
 2008: 14,8
 2009: 13,8
 2010: 12,8
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 83,3
 2008: 82,7
 2009: 80,9
 2010: 82,4
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 67,3
 2008: 65,8
 2009: 66,6

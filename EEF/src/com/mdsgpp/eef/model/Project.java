@@ -7,7 +7,16 @@ public class Project {
 	private int projectYear;
 	private final int accetableYear = 1900;
 
+	/**
+	 * Initializes the project object with default values.
+	 *
+	 * @return  New project object with default values.
+	 */
 	public Project() {
+		this.projectQuantity = 0;
+		this.projectValue 	 = 0;
+		this.projectState 	 = null;
+		this.projectYear 	 = 0;
 	}
 
 	public int getProjectQuantity() {

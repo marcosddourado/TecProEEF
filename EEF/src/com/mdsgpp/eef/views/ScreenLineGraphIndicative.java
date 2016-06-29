@@ -36,9 +36,9 @@ public class ScreenLineGraphIndicative extends Activity{
 		state = catchStateInformation();
 		Log.i("positionIndicativeGraph", historyPosition+"");
 		
-		// Populacao comeea selecionada
+		// population comeea selecionada
 		title = "Populaeeo";
-		indicative = "populacao";
+		indicative = "population";
 		history.clear();
 		history.add((float) state.getStatePopulation());
 	}
@@ -176,7 +176,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_population:
 			title = "Populaeeo";
-			indicative = "populacao";
+			indicative = "population";
 			history.clear();
 			history.add((float) state.getStatePopulation());
 			Log.i("size hsitorico", ""+history.size());
@@ -245,7 +245,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_class_hours_elementary:
 			title = "Media de horas aula dierias do Ensino Fundamental";
-			indicative = "horas_aula_ensino_high_school";
+			indicative = "daily_class_hours_average_high_school";
 			history.clear();
 			for (int i = 0; i < state.getGradeClassHours().length; i++)
 				history.add((float) state.getGradeClassHours()[i]
@@ -254,7 +254,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_class_hours_high_school:
 			title = "Media de horas aula dierias do Ensino Medio";
-			indicative = "horas_aula_ensino_high_school";
+			indicative = "daily_class_hours_average_high_school";
 			history.clear();
 			for (int i = 0; i < state.getGradeClassHours().length; i++)
 				history.add((float) state.getGradeClassHours()[i]
@@ -281,7 +281,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_approval_rate_elementary:
 			title = "Taxa de Aproveitamento do Ensino Fundamental (%)";
-			indicative = "taxa_aprovacao";
+			indicative = "utilization_rate";
 			history.clear();
 			for (int i = 0; i < state.getEducationalAchievementRate().length; i++)
 				history.add((float) state.getEducationalAchievementRate()[i]
@@ -290,7 +290,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_approval_rate_high_school:
 			title = "Taxa de Aproveitamento do Ensino Medio (%)";
-			indicative = "taxa_aprovacao";
+			indicative = "utilization_rate";
 			history.clear();
 			for (int i = 0; i < state.getEducationalAchievementRate().length; i++)
 				history.add((float) state.getEducationalAchievementRate()[i]
@@ -299,7 +299,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_dropout_rate_elementary:
 			title = "Taxa de Abandono do Ensino Fundamental (%)";
-			indicative = "taxa_abandono";
+			indicative = "dropout_rate";
 			history.clear();
 			for (int i = 0; i < state.getSchoolDropoutRate().length; i++)
 				history.add((float) state.getSchoolDropoutRate()[i]
@@ -308,7 +308,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_dropout_rate_high_school:
 			title = "Taxa de Abandono do Ensino Medio (%)";
-			indicative = "taxa_abandono";
+			indicative = "dropout_rate";
 			history.clear();
 			for (int i = 0; i < state.getSchoolDropoutRate().length; i++)
 				history.add((float) state.getSchoolDropoutRate()[i]
@@ -316,8 +316,8 @@ public class ScreenLineGraphIndicative extends Activity{
 			break;
 
 		case R.id.radio_initial_census_elementary:
-			title = "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
-			indicative = "censo";
+			title = "census Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
+			indicative = "census";
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history.add((float) state.getCensus()[i]
@@ -325,8 +325,8 @@ public class ScreenLineGraphIndicative extends Activity{
 			break;
 
 		case R.id.radio_final_census_elementary:
-			title = "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
-			indicative = "censo";
+			title = "census Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
+			indicative = "census";
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history.add((float) state.getCensus()[i]
@@ -334,25 +334,25 @@ public class ScreenLineGraphIndicative extends Activity{
 			break;
 
 		case R.id.radio_census_high_school:
-			title = "Censo Escolar do Ensino Medio (Matriculados)";
-			indicative = "censo";
+			title = "census Escolar do Ensino Medio (Matriculados)";
+			indicative = "census";
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history.add((float) state.getCensus()[i].getHighSchool());
 			break;
 
 		case R.id.radio_census_eja_elementary:
-			title = "Censo Escolar do EJA - Fundamental (Matriculados)";
-			indicative = "censo";
+			title = "census Escolar do EJA - Fundamental (Matriculados)";
+			indicative = "census";
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history
 						.add((float) state.getCensus()[i].getElementaryEJA());
 			break;
 
-		case R.id.radio_census_eja_high_school:
-			title = "Censo Escolar do EJA - Medio (Matriculados)";
-			indicative = "censo";
+		case R.id.radio_census_high_school_eja:
+			title = "census Escolar do EJA - Medio (Matriculados)";
+			indicative = "census";
 			history.clear();
 			for (int i = 0; i < state.getCensus().length; i++)
 				history.add((float) state.getCensus()[i].getHighSchoolEJA());

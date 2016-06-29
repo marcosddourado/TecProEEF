@@ -14,7 +14,7 @@
             style="@style/tituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_activity_tela_sobre_escolhe_indicativo_grafico_comparacao"
+            android:text="@string/title_activity_screen_about_choose_indicative_graph_comparison"
             android:textAppearance="?android:attr/textAppearanceLarge" />
     
     <TextView

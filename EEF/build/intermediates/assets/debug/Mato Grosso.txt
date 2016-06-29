@@ -1,31 +1,31 @@
 Mato Grosso
 MT
 
-censo_anos_finais
+census_anos_finais
 2010: 199.887
 2011: 186.367
 2012: 181.008
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 224.750
 2011: 211.747
 2012: 201.910
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 62.110
 2011: 62.289
 2012: 54.819
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 36.617
 2011: 40.287
 2012: 40.876
 
 
-censo_ensino_high_school
+census_high_school
 2010: 129.590
 2011: 135.826
 2012: 141.935
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 1,70000000000073
 
 
-populacao
+population
 2009: 3001692
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5,8
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,1
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,2
 
 
@@ -189,28 +189,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 7186,36999999778
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 5
 2008: 4,5
 2009: 2,8
 2010: 1,2
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 17,9
 2008: 19,4
 2009: 15,8
 2010: 11,2
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 87,1
 2008: 88,3
 2009: 92,3
 2010: 94,8
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 73,3
 2008: 71,2
 2009: 72,6

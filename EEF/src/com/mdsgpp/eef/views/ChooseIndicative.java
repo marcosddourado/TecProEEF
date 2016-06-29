@@ -11,8 +11,8 @@ import android.view.View;
 
 public abstract class ChooseIndicative extends Activity {
 	
-	private String indicative = "populacao";
-	private String tittle = "Populacao";
+	private String indicative = "population";
+	private String tittle = "population";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +80,7 @@ public abstract class ChooseIndicative extends Activity {
 			setValues("percentual_participacao_pib", "Participaeeo Estadual no PIB (%)");
 			break;
 		case R.id.radio_population:
-			setValues("populacao", "Populaeeo");
+			setValues("population", "Populaeeo");
 			break;
 		case R.id.radio_primeiros_projetos_investment:
 			setValues("valor_primeiros_projetos", "Programa Primeiros Projetos (R$)");
@@ -101,10 +101,10 @@ public abstract class ChooseIndicative extends Activity {
 			setValues("alunos_por_turma_ensino_high_school", "Media de Alunos por Turma do Ensino Medio (Qtd.)");
 			break;
 		case R.id.radio_class_hours_elementary:
-			setValues("horas_aula_ensino_elementary", "Media de horas aula dierias do Ensino Fundamental");
+			setValues("daily_class_hours_average_elementary", "Media de horas aula dierias do Ensino Fundamental");
 			break;
 		case R.id.radio_class_hours_high_school:
-			setValues("horas_aula_ensino_high_school", "Media de horas aula dierias do Ensino Medio");
+			setValues("daily_class_hours_average_high_school", "Media de horas aula dierias do Ensino Medio");
 			break;
 		case R.id.radio_distortion_rate_elementary:
 			setValues("distortion_rate_elementary", "Taxa de Distoreeo Idade/Serie do Ensino Fundamental (%)");
@@ -113,31 +113,31 @@ public abstract class ChooseIndicative extends Activity {
 			setValues("distortion_rate_high_school", "Taxa de Distoreeo Idade/Serie do Ensino Medio (%)");
 			break;
 		case R.id.radio_approval_rate_elementary:
-			setValues("taxa_aprovacao_elementary", "Taxa de Aproveitamento do Ensino Fundamental (%)");
+			setValues("utilization_rate_elementary", "Taxa de Aproveitamento do Ensino Fundamental (%)");
 			break;
 		case R.id.radio_approval_rate_high_school:
-			setValues("taxa_aprovacao_high_school", "Taxa de Aproveitamento do Ensino Medio (%)");
+			setValues("utilization_rate_high_school", "Taxa de Aproveitamento do Ensino Medio (%)");
 			break;
 		case R.id.radio_dropout_rate_elementary:
-			setValues("taxa_abandono_elementary", "Taxa de Abandono do Ensino Fundamental (%)");
+			setValues("dropout_rate_elementary", "Taxa de Abandono do Ensino Fundamental (%)");
 			break;
 		case R.id.radio_dropout_rate_high_school:
-			setValues("taxa_abandono_high_school", "Taxa de Abandono do Ensino Medio (%)");
+			setValues("dropout_rate_high_school", "Taxa de Abandono do Ensino Medio (%)");
 			break;
 		case R.id.radio_initial_census_elementary:
-			setValues("censo_anos_iniciais_elementary", "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)");
+			setValues("census_initial_years_elemetary", "census Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)");
 			break;
 		case R.id.radio_final_census_elementary:
-			setValues("censo_anos_finais_elementary", "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)");
+			setValues("census_final_years_elemetary", "census Escolar dos Anos Finais do Ensino Fundamental (Matriculados)");
 			break;
 		case R.id.radio_census_high_school:
-			setValues("censo_ensino_high_school", "Censo Escolar do Ensino Medio (Matriculados)");
+			setValues("census_high_school", "census Escolar do Ensino Medio (Matriculados)");
 			break;
 		case R.id.radio_census_eja_elementary:
-			setValues("censo_eja_elementary", "Censo Escolar do EJA - Fundamental (Matriculados)");
+			setValues("census_eja_elementary", "census Escolar do EJA - Fundamental (Matriculados)");
 			break;
-		case R.id.radio_census_eja_high_school:
-			setValues("censo_eja_high_school", "Censo Escolar do EJA - Medio (Matriculados)");
+		case R.id.radio_census_high_school_eja:
+			setValues("census_high_school_eja", "census Escolar do EJA - Medio (Matriculados)");
 			break;
 		}
 	}

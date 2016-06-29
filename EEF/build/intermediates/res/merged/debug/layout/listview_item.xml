@@ -8,7 +8,7 @@
 		android:layout_alignParentLeft="true"
   		android:layout_width="50dp" 
    		android:layout_marginLeft="5dp"
-		android:contentDescription="@string/string_vazia"/>
+		android:contentDescription="@string/empty_string"/>
   
     <TextView android:id="@+id/textview_states_abbreviations"
         android:layout_width="wrap_content"

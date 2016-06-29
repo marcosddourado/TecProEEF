@@ -11,6 +11,11 @@ public class Census {
 	private State censusState;
 	private final int acceptableYear = 1900;
 
+	/**
+	 * Initializes the census object with default values.
+	 *
+	 * @return  New census object with default values.
+	 */
 	public Census() {
 
 		this.initialElementaryYears = 0;

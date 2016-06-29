@@ -36,8 +36,8 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 		state = getStateInfo();
 
-		tittle = "Populacao";
-		indicative = "populacao";
+		tittle = "population";
+		indicative = "population";
 		historico.clear();
 		historico.add((float) state.getStatePopulation());
 	}
@@ -165,7 +165,7 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 		case R.id.radio_population:
 			tittle = "Populaeeo";
-			indicative = "populacao";
+			indicative = "population";
 
             setGraphInformations(max, tamanho);
 			break;
@@ -214,14 +214,14 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 		case R.id.radio_class_hours_elementary:
 			tittle = "Media de horas aula dierias do Ensino Fundamental";
-			indicative = "horas_aula_ensino_medio";
+			indicative = "daily_class_hours_average_medio";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_class_hours_high_school:
 			tittle = "Media de horas aula dierias do Ensino Medio";
-			indicative = "horas_aula_ensino_medio";
+			indicative = "daily_class_hours_average_medio";
 
             setGraphInformations(max, tamanho);
 			break;
@@ -242,63 +242,63 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 		case R.id.radio_approval_rate_elementary:
 			tittle = "Taxa de Aproveitamento do Ensino Fundamental (%)";
-			indicative = "taxa_aprovacao";
+			indicative = "utilization_rate";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_approval_rate_high_school:
 			tittle = "Taxa de Aproveitamento do Ensino Medio (%)";
-			indicative = "taxa_aprovacao";
+			indicative = "utilization_rate";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_dropout_rate_elementary:
 			tittle = "Taxa de Abandono do Ensino Fundamental (%)";
-			indicative = "taxa_abandono";
+			indicative = "dropout_rate";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_dropout_rate_high_school:
 			tittle = "Taxa de Abandono do Ensino Medio (%)";
-			indicative = "taxa_abandono";
+			indicative = "dropout_rate";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_initial_census_elementary:
-			tittle = "Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
-			indicative = "censo";
+			tittle = "census Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)";
+			indicative = "census";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_final_census_elementary:
-			tittle = "Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
-			indicative = "censo";
+			tittle = "census Escolar dos Anos Finais do Ensino Fundamental (Matriculados)";
+			indicative = "census";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_census_high_school:
-			tittle = "Censo Escolar do Ensino Medio (Matriculados)";
-			indicative = "censo";
+			tittle = "census Escolar do Ensino Medio (Matriculados)";
+			indicative = "census";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_census_eja_elementary:
-			tittle = "Censo Escolar do EJA - Fundamental (Matriculados)";
-			indicative = "censo";
+			tittle = "census Escolar do EJA - Fundamental (Matriculados)";
+			indicative = "census";
 
             setGraphInformations(max, tamanho);
 			break;
 
-		case R.id.radio_census_eja_high_school:
-			tittle = "Censo Escolar do EJA - Medio (Matriculados)";
-			indicative = "censo";
+		case R.id.radio_census_high_school_eja:
+			tittle = "census Escolar do EJA - Medio (Matriculados)";
+			indicative = "census";
 
             setGraphInformations(max, tamanho);
 			break;

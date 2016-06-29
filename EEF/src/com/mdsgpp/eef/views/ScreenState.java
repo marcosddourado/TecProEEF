@@ -42,7 +42,7 @@ public class ScreenState extends Activity {
 	private TextView textViewCensusFinalsElementary;
 	private TextView textViewCensusHighSchool;
 	private TextView textViewCensusEjaElementary;
-	private TextView textViewCensoEjaHighSchool;
+	private TextView textViewcensusEjaHighSchool;
 	private TextView textViewAverageStudentsPerClassElementary;
 	private TextView textViewAverageStudentsPerClassHighSchool;
 	private TextView textViewAverageHoursClassElementary;
@@ -113,7 +113,7 @@ public class ScreenState extends Activity {
 		
 		textViewAbbrev = (TextView) findViewById(R.id.textView_sigla);
 		textViewName = (TextView) findViewById(R.id.textView_nome_estado);
-		textViewPopulation = (TextView) findViewById(R.id.textView_populacao_valor);
+		textViewPopulation = (TextView) findViewById(R.id.textView_population_valor);
 		textViewPibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
 		textViewScienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
 		textViewScienceTechnologyProjectsValue = (TextView) findViewById(R.id.textView_valor_investido_projetos);
@@ -133,11 +133,11 @@ public class ScreenState extends Activity {
 		textViewCensusFinalsElementary = (TextView) findViewById(R.id.textView_final_census_elementary);
 		textViewCensusHighSchool = (TextView) findViewById(R.id.textView_census_high_school);
 		textViewCensusEjaElementary = (TextView) findViewById(R.id.textView_census_elementary_eja);
-		textViewCensoEjaHighSchool = (TextView) findViewById(R.id.textView_census_high_school_eja);
-		textViewAverageStudentsPerClassElementary = (TextView) findViewById(R.id.textView_media_alunos_por_turma_elementary);
-		textViewAverageStudentsPerClassHighSchool = (TextView) findViewById(R.id.textView_media_alunos_por_turma_high_school);
-		textViewAverageHoursClassElementary = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
-		textViewAverageHoursClassHighSchool = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
+		textViewcensusEjaHighSchool = (TextView) findViewById(R.id.textView_census_high_school_eja);
+		textViewAverageStudentsPerClassElementary = (TextView) findViewById(R.id.textView_students_average_per_class_elementary);
+		textViewAverageStudentsPerClassHighSchool = (TextView) findViewById(R.id.textView_students_average_per_class_high_school);
+		textViewAverageHoursClassElementary = (TextView) findViewById(R.id.textView_daily_class_hours_average_elementary);
+		textViewAverageHoursClassHighSchool = (TextView) findViewById(R.id.textView_daily_class_hours_average_high_school);
 		textViewDistortionRateGradeElementary = (TextView) findViewById(R.id.textView_distortion_rate_elementary);
 		textViewDistortionRateGradeHighSchool = (TextView) findViewById(R.id.textView_distortion_rate_high_school);
 		textViewAchievementRateElementary = (TextView) findViewById(R.id.textView_approval_rate_elementary);
@@ -149,7 +149,7 @@ public class ScreenState extends Activity {
 	private void fillTextFields(HashMap<String, String> information) {
 		textViewAbbrev.setText(information.get("sigla"));
 		textViewName.setText(information.get("nome"));
-		textViewPopulation.setText(information.get("populacao"));
+		textViewPopulation.setText(information.get("population"));
 		textViewPibParticipation.setText(information.get("percentual_participacao_pib"));
 		textViewScienceTechnologyProjectsQuantity.setText(information.get("projetos_ciencia_tecnologia"));
 		textViewScienceTechnologyProjectsValue.setText(information.get("valor_ciencia_tecnologia"));
@@ -165,21 +165,21 @@ public class ScreenState extends Activity {
 		textViewInitiationProjectsQuantity.setText(information.get("quantidade_projetos_inct"));
 		textViewInitiationProjectsValue.setText(information.get("valor_projetos_inct"));
 		
-		textViewCensusInitialsElementary.setText(information.get("censo_anos_iniciais_elementary"));
-		textViewCensusFinalsElementary.setText(information.get("censo_anos_finais_elementary"));
-		textViewCensusHighSchool.setText(information.get("censo_ensino_high_school"));
-		textViewCensusEjaElementary.setText(information.get("censo_eja_elementary"));
-		textViewCensoEjaHighSchool.setText(information.get("censo_eja_high_school"));
+		textViewCensusInitialsElementary.setText(information.get("census_initial_years_elemetary"));
+		textViewCensusFinalsElementary.setText(information.get("census_final_years_elemetary"));
+		textViewCensusHighSchool.setText(information.get("census_high_school"));
+		textViewCensusEjaElementary.setText(information.get("census_eja_elementary"));
+		textViewcensusEjaHighSchool.setText(information.get("census_high_school_eja"));
 		textViewAverageStudentsPerClassElementary.setText(information.get("alunos_por_turma_ensino_elementary"));
 		textViewAverageStudentsPerClassHighSchool.setText(information.get("alunos_por_turma_ensino_high_school"));
-		textViewAverageHoursClassElementary.setText(information.get("horas_aula_ensino_elementary"));
-		textViewAverageHoursClassHighSchool.setText(information.get("horas_aula_ensino_high_school"));
+		textViewAverageHoursClassElementary.setText(information.get("daily_class_hours_average_elementary"));
+		textViewAverageHoursClassHighSchool.setText(information.get("daily_class_hours_average_high_school"));
 		textViewDistortionRateGradeElementary.setText(information.get("distortion_rate_elementary"));
 		textViewDistortionRateGradeHighSchool.setText(information.get("distortion_rate_high_school"));
-		textViewAchievementRateElementary.setText(information.get("taxa_aprovacao_elementary"));
-		textViewAchievementRateHighSchool.setText(information.get("taxa_aprovacao_high_school"));
-		textViewDropoutRateElementary.setText(information.get("taxa_aprovacao_elementary"));
-		textViewDropoutRateHighSchool.setText(information.get("taxa_aprovacao_high_school"));
+		textViewAchievementRateElementary.setText(information.get("utilization_rate_elementary"));
+		textViewAchievementRateHighSchool.setText(information.get("utilization_rate_high_school"));
+		textViewDropoutRateElementary.setText(information.get("utilization_rate_elementary"));
+		textViewDropoutRateHighSchool.setText(information.get("utilization_rate_high_school"));
 		
 	}
 	

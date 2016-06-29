@@ -6,6 +6,6 @@
         android:icon="@drawable/sobre"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:title="@string/string_vazia"/>
+        android:title="@string/empty_string"/>
 
 </menu>

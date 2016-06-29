@@ -1,31 +1,31 @@
 Ceare
 CE
 
-censo_anos_finais
+census_anos_finais
 2010: 533.274
 2011: 488.637
 2012: 443.285
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 606.356
 2011: 542.857
 2012: 491.496
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 120.712
 2011: 115.492
 2012: 116.808
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 12.470
 2011: 13.922
 2012: 14.714
 
 
-censo_ensino_high_school
+census_high_school
 2010: 338.183
 2011: 332.955
 2012: 318.978
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 2
 
 
-populacao
+population
 2009: 8547809
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,3
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,1
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 11835,3599999975
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 4,8
 2008: 4,3
 2009: 3,5
 2010: 2,9
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 14,7
 2008: 13,8
 2009: 13
 2010: 10,6
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 83,8
 2008: 84,5
 2009: 87
 2010: 88,4
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 76,7
 2008: 78,5
 2009: 79,9
