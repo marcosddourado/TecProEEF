@@ -2,35 +2,34 @@
 <resources>
 
     <!-- Title: Activities -->
-    <string name="title_activity_tela_comparacao">States comparison</string>
-    <string name="title_activity_tela_lista_estado">States list</string>
-    <string name="title_activity_tela_sobre">About EEF</string>
-    <string name="title_activity_tela_consulta_indicativo">Indicatives query</string>
-    <string name="title_activity_tela_indicativos_consultados">Choose indicatives</string>
-    <string name="title_activity_tela_resultado_consulta">States comparison</string>
-    <string name="title_activity_tela_feed">News</string>
-    <string name="title_activity_tela_feed_sobre">About the news</string>
-    <string name="title_activity_tela_estado">State indicatives</string>
-    <string name="title_activity_tela_escolhe_indicativo_grafico">Choose a indicative</string>
-    <string name="title_activity_grafico">Graph</string>
-    <string name="title_activity_tela_grafico">Graph</string>
-    <string name="title_activity_sobre_indicativos">About the indicatives</string>
-    <string name="title_activity_tela_sobre_consulta">About the query</string>
-    <string name="title_noticias_sobre">News</string>
-    <string name="title_activity_tela_comparacoes_gerais">Comparisons</string>
-    <string name="title_activity_tela_consulta_por_indicativo">Query per indicative</string>
-    <string name="title_activity_tela_resultado_consulta_por_indicativo">Query result</string>
-    <string name="title_activity_tela_consultas_gerais">Queries</string>
-    <string name="title_activity_tela_sobre_comparacao">About the comparison</string>
-    <string name="title_activity_tela_historico_estado">Indicatives history</string>
-    <string name="title_activity_tela_sobre_lista_estado">States list</string>
-    <string name="title_activity_tela_sobre_estado">State</string>
-    <string name="title_activity_tela_sobre_escolha_indicativo">About indicative choice</string>
-    <string name="title_activity_tela_sobre_comparacao_de_estados">About state comparison</string>
-    <string name="title_activity_tela_sobre_resultado_da_consulta">About query result</string>
-    <string name="title_activity_tela_sobre_historico_de_indicativo">About indicative history</string>
-    <string name="title_activity_tela_sobre_grafico">About graph</string>
-    <string name="title_activity_tela_sobre_escolhe_indicativo_grafico_comparacao">About indicative choice</string>
+    <string name="title_activity_screen_comparison">States comparison</string>
+    <string name="title_activity_screen_state_list">States list</string>
+    <string name="title_activity_screen_about">About EEF</string>
+    <string name="title_activity_screen_query_per_indicative">Query per indicative</string>
+    <string name="title_activity_screen_consulted_idicatives">Choose indicatives</string>
+    <string name="title_activity_screen_query_result">States comparison</string>
+    <string name="title_activity_screen_feed">News</string>
+    <string name="title_activity_screen_feed_about">About the news</string>
+    <string name="title_activity_screen_state">State indicatives</string>
+    <string name="title_activity_screen_choose_indicative_with_line_graph">Choose a indicative</string>
+    <string name="title_activity_graph">Graph</string>
+    <string name="title_activity_screen_graph">Graph</string>
+    <string name="title_activity_about_indicatives">About the indicatives</string>
+    <string name="title_activity_screen_about_query">About the query</string>
+    <string name="title_news_about">News</string>
+    <string name="title_activity_screen_general_comparisons">Comparisons</string>
+    <string name="title_activity_screen_query_result_per_indicative">Query result</string>
+    <string name="title_activity_screen_general_queries">Queries</string>
+    <string name="title_activity_screen_about_comparison">About the comparison</string>
+    <string name="title_activity_screen_state_history">Indicatives history</string>
+    <string name="title_activity_screen_about_state_list">States list</string>
+    <string name="title_activity_screen_about_state">State</string>
+    <string name="title_activity_screen_about_choose_indicative">About indicative choice</string>
+    <string name="title_activity_screen_about_comparison_of_states">About state comparison</string>
+    <string name="title_activity_screen_about_query_result">About query result</string>
+    <string name="title_activity_screen_about_indicative_history">About indicative history</string>
+    <string name="title_activity_screen_about_graph">About graph</string>
+    <string name="title_activity_screen_about_choose_indicative_graph_comparison">About indicative choice</string>
 
     <!-- Strings da tela inicial -->
     <string name="app_name">Educação em Foco</string>
@@ -218,7 +217,7 @@
     <string name="title_activity_tela_escolhe_tipo_de_consulta">TelaEscolheTipoDeConsulta</string>
 
     <!-- Strings da tela sobre Comparações Gerais -->
-    <string name="title_activity_tela_sobre_comparacoes_gerais">TelaSobreComparacoesGerais</string>
+    <string name="title_activity_screen_about_comparacoes_gerais">TelaSobreComparacoesGerais</string>
     <string name="title_sobre_comparacacoes_gerais_estados">Comparação por estado: </string>
     <string name="title_sobre_comparacacoes_gerais_indicativos">Comparação por indicativo: </string>
     <string name="comparacoes_gerais_conteudo_estados">The user will choose two states to compare their indicatives.</string>
@@ -229,7 +228,7 @@
     <!-- Strings da tela sobre Lista Estado -->
     <string name="estado_conteudo">É apresentado os dados dos indicativos do estado selecionado, com a opção de verificar o histórico. Os resultados apresentados são referentes ao último ano disponível. Os anos são disponíbilizados para consulta na opção "Histórico" na tela de consulta de estados.</string>
     <string name="title_activity_sobre_comparacao_estados">MainActivity</string>
-    <string name="title_activity_tela_comparacao_de_estados">MainActivity</string>
+    <string name="title_activity_screen_comparison_de_estados">MainActivity</string>
     <string name="title_activity_sobre_historico_de_indicativo">SobreHistoricoDeIndicativo</string>
 
     <!-- Strings da tela sobre Grafico -->
