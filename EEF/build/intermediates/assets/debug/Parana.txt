@@ -1,31 +1,31 @@
 Parane
 PR
 
-censo_anos_finais
+census_anos_finais
 2010: 258
 2011: 682.500
 2012: 616.347
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 368
 2011: 617.489
 2012: 606.812
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 60
 2011: 79.823
 2012: 83.489
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 0
 2011: 58.469
 2012: 58.944
 
 
-censo_ensino_high_school
+census_high_school
 2010: 142
 2011: 408.792
 2012: 403.918
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 5,90000000000146
 
 
-populacao
+population
 2009: 10686247
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 7,4
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,3
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 6132,9299999997
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 2
 2008: 2,4
 2009: 2,1
 2010: 2
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 9
 2008: 10,3
 2009: 8,3
 2010: 6,7
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 87,7
 2008: 87,7
 2009: 89,1
 2010: 88,8
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 79,7
 2008: 78,2
 2009: 80,6

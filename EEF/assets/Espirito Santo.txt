@@ -1,31 +1,31 @@
 Esperito Santo
 ES
 
-censo_anos_finais
+census_anos_finais
 2010: 207.278
 2011: 201.364
 2012: 198.478
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 246.709
 2011: 238.426
 2012: 232.589
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 37.286
 2011: 37.075
 2012: 38.240
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 23.557
 2011: 22.278
 2012: 23.348
 
 
-censo_ensino_high_school
+census_high_school
 2010: 108.912
 2011: 111.210
 2012: 111.753
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5,2
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,7
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 5
 
 
@@ -189,28 +189,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 9130,17999999755
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 3,5
 2008: 3
 2009: 2,5
 2010: 1,8
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 12,5
 2008: 11,5
 2009: 10,7
 2010: 7
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 85,1
 2008: 85,1
 2009: 85,7
 2010: 87,9
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 77,2
 2008: 77,6
 2009: 74,8

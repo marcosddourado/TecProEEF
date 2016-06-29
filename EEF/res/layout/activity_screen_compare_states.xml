@@ -390,16 +390,16 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_media_alunos_por_turma1"
+            android:id="@+id/textView_students_average_per_class1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/media_alunos_por_turma"
+            android:text="@string/students_average_per_class"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView_media_alunos_por_turma_elementary1"
+            android:id="@+id/textView_students_average_per_class_elementary1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -407,7 +407,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_media_alunos_por_turma_elementary2"
+            android:id="@+id/textView_students_average_per_class_elementary2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -415,7 +415,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_media_alunos_por_turma_high_school1"
+            android:id="@+id/textView_students_average_per_class_high_school1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -423,7 +423,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_media_alunos_por_turma_high_school2"
+            android:id="@+id/textView_students_average_per_class_high_school2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -431,16 +431,16 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_horas_aula_ensino1"
+            android:id="@+id/textView_daily_class_hours_average1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/horas_aula_ensino"
+            android:text="@string/daily_class_hours_average"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView_horas_aula_ensino_elementary1"
+            android:id="@+id/textView_daily_class_hours_average_elementary1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -448,7 +448,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_horas_aula_ensino_elementary2"
+            android:id="@+id/textView_daily_class_hours_average_elementary2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -456,7 +456,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_horas_aula_ensino_high_school1"
+            android:id="@+id/textView_daily_class_hours_average_high_school1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -464,7 +464,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_horas_aula_ensino_high_school2"
+            android:id="@+id/textView_daily_class_hours_average_high_school2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -513,12 +513,12 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_taxa_aprovacao1"
+            android:id="@+id/textView_utilization_rate1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/taxa_aprovacao"
+            android:text="@string/utilization_rate"
             android:textSize="20sp" />
 
         <TextView
@@ -554,12 +554,12 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_taxa_abandono1"
+            android:id="@+id/textView_dropout_rate1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/taxa_abandono"
+            android:text="@string/dropout_rate"
             android:textSize="20sp" />
 
         <TextView
@@ -595,12 +595,12 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_censo1"
+            android:id="@+id/textView_census1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/censo"
+            android:text="@string/census"
             android:textSize="20sp" />
 
         <TextView

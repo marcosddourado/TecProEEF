@@ -1,31 +1,31 @@
 Seo Paulo
 SP
 
-censo_anos_finais
+census_anos_finais
 2010: 2.396.209
 2011: 2.362.496
 2012: 2.291.349
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 2.358.849
 2011: 2.241.584
 2012: 2.150.142
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 251.552
 2011: 218.406
 2012: 194.563
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 237.080
 2011: 204.039
 2012: 185.845
 
 
-censo_ensino_high_school
+census_high_school
 2010: 1.577.814
 2011: 1.600.820
 2012: 1.589.174
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 6,4
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 5,1
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,8
 
 
@@ -187,28 +187,28 @@ valores_projetos_inct
 Total: 61025,1700000018
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 0,9
 2008: 0,8
 2009: 0,8
 2010: 0,8
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 5,2
 2008: 4,3
 2009: 3,9
 2010: 4,5
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 92,6
 2008: 93,4
 2009: 93,9
 2010: 94,3
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 79,8
 2008: 82
 2009: 81,7

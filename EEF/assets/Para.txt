@@ -1,31 +1,31 @@
 Pare
 PA
 
-censo_anos_finais
+census_anos_finais
 2010: 539.535
 2011: 527.984
 2012: 525.582
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 881.247
 2011: 829.537
 2012: 780.342
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 210.327
 2011: 196.764
 2012: 191.679
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 46.570
 2011: 46.524
 2012: 48.883
 
 
-censo_ensino_high_school
+census_high_school
 2010: 324.432
 2011: 316.368
 2012: 316.843
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,2
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,2
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,2
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 4711,0700000003
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 9,2
 2008: 8,6
 2009: 7,2
 2010: 6,1
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 20
 2008: 22
 2009: 20,7
 2010: 19,2
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 72,1
 2008: 74
 2009: 78
 2010: 81,8
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 63,3
 2008: 68,2
 2009: 68,1

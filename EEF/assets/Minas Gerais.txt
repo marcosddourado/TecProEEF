@@ -1,31 +1,31 @@
 Minas Gerais
 MG
 
-censo_anos_finais
+census_anos_finais
 2010: 1.201.997
 2011: 1.157.959
 2012: 1.137.932
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 1.340.090
 2011: 1.223.676
 2012: 1.119.573
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 153.324
 2011: 141.033
 2012: 135.284
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 105.852
 2011: 113.075
 2012: 99.200
 
 
-censo_ensino_high_school
+census_high_school
 2010: 730.388
 2011: 754.055
 2012: 739.966
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5,7
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,4
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 7213,08999999799
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 3,3
 2008: 2,9
 2009: 2,4
 2010: 2
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 12
 2008: 11
 2009: 9,3
 2010: 8,8
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 85,8
 2008: 86,4
 2009: 88
 2010: 89,6
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 75,6
 2008: 76,9
 2009: 78,4

@@ -1,31 +1,31 @@
 Amazonas
 AM
 
-censo_anos_finais
+census_anos_finais
 2010: 259.817
 2011: 261.647
 2012: 273.848
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 391.946
 2011: 372.036
 2012: 359.614
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 62.593
 2011: 62.885
 2012: 66.859
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 14.507
 2011: 16.114
 2012: 16.663
 
 
-censo_ensino_high_school
+census_high_school
 2010: 142.576
 2011: 147.964
 2012: 160.716
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,2
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,2
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,2
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 4961,63999999873
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 9
 2008: 8,8
 2009: 7,7
 2010: 6,6
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 11,2
 2008: 14,1
 2009: 13,4
 2010: 10,2
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 76,6
 2008: 77,4
 2009: 78,5
 2010: 81,2
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 77,9
 2008: 74,6
 2009: 77,4

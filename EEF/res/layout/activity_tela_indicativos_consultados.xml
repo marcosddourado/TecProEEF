@@ -95,25 +95,25 @@
             android:text="@string/participacao_percentual_PIB" />
 
         <CheckBox
-            android:id="@+id/checkBox_censo"
+            android:id="@+id/checkBox_census"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/censo" />
+            android:text="@string/census" />
 
         <CheckBox
             android:id="@+id/checkBox_horas_aula"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/horas_aula_ensino" />
+            android:text="@string/daily_class_hours_average" />
 
         <CheckBox
             android:id="@+id/checkBox_quantidade_aluno"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/media_alunos_por_turma" />
+            android:text="@string/students_average_per_class" />
 
         <CheckBox
             android:id="@+id/checkBox_distortion_rate"
@@ -123,18 +123,18 @@
             android:text="@string/distortion_rate" />
 
         <CheckBox
-            android:id="@+id/checkBox_taxa_abandono"
+            android:id="@+id/checkBox_dropout_rate"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/taxa_abandono" />
+            android:text="@string/dropout_rate" />
 
         <CheckBox
-            android:id="@+id/checkBox_taxa_aprovacao"
+            android:id="@+id/checkBox_utilization_rate"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/taxa_aprovacao" />
+            android:text="@string/utilization_rate" />
 
         <LinearLayout
             android:layout_width="match_parent"

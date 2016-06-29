@@ -49,11 +49,11 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 		projectDiffusionView = receivedIntent.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
 		initiationProjectsView = receivedIntent.getBooleanExtra("CB_PROJETOS_INICIACAO", false);
 		jovensProjectsView = receivedIntent.getBooleanExtra("CB_PROJETOS_JOVENS", false);
-		censusView = receivedIntent.getBooleanExtra("CB_CENSO", false);
+		censusView = receivedIntent.getBooleanExtra("CB_census", false);
 		studentsClassView = receivedIntent.getBooleanExtra("CB_ALUNOS_TURMA", false);
 		hoursPerClassView = receivedIntent.getBooleanExtra("CB_HORAS_AULA", false);
 		distortionRateView = receivedIntent.getBooleanExtra("CB_TAXA_DISTORCAO", false);
-		schoolDropoutRateView = receivedIntent.getBooleanExtra("CB_TAXA_ABANDONO", false);
+		schoolDropoutRateView = receivedIntent.getBooleanExtra("CB_dropout_rate", false);
 		approvalView = receivedIntent.getBooleanExtra("CB_APROVACAO", false);
 		
 	}
@@ -88,7 +88,7 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 		rbFinalYearsElementaryCensus = (RadioButton) findViewById(R.id.radio_initial_census_elementary);
 		rbHighSchoolCensus = (RadioButton) findViewById(R.id.radio_census_high_school);
 		rbEJAFElementaryCensus = (RadioButton) findViewById(R.id.radio_census_eja_elementary);
-		rbEJAMHighSchoolCensus = (RadioButton) findViewById(R.id.radio_census_eja_high_school);
+		rbEJAMHighSchoolCensus = (RadioButton) findViewById(R.id.radio_census_high_school_eja);
 		
 	}
 	

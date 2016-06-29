@@ -1,31 +1,31 @@
 Goies
 GO
 
-censo_anos_finais
+census_anos_finais
 2010: 349.011
 2011: 332.590
 2012: 313.359
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 370.308
 2011: 361.608
 2012: 353.774
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 44.102
 2011: 37.138
 2012: 32.732
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 33.371
 2011: 28.982
 2012: 25.005
 
 
-censo_ensino_high_school
+census_high_school
 2010: 226.255
 2011: 219.906
 2012: 214.730
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 6,1
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,5
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,6
 
 
@@ -189,28 +189,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 14105,3600000006
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 5,6
 2008: 5
 2009: 4,1
 2010: 3,8
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 15,9
 2008: 15,1
 2009: 12
 2010: 11,7
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 85,9
 2008: 86
 2009: 86,8
 2010: 87,5
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 73,6
 2008: 73,5
 2009: 74,7

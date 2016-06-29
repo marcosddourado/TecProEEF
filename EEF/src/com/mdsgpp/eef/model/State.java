@@ -63,11 +63,11 @@ public class State {
 		ArrayList<String[]> ejaElementaryData;
 		Census census[] = null;
 
-		elementaryFinalData = information.get("censo_anos_finais");
-		elementaryInitialData = information.get("censo_anos_iniciais");
-		highSchoolData = information.get("censo_ensino_high_school");
-		ejaHighSchoolData = information.get("censo_eja_high_school");
-		ejaElementaryData = information.get("censo_eja_elementary");
+		elementaryFinalData = information.get("census_anos_finais");
+		elementaryInitialData = information.get("census_anos_iniciais");
+		highSchoolData = information.get("census_high_school");
+		ejaHighSchoolData = information.get("census_high_school_eja");
+		ejaElementaryData = information.get("census_eja_elementary");
 
 		assert (elementaryFinalData != null) : "null elementaryFinalData";
 		assert (elementaryInitialData != null) : "null elementaryInitialData";
@@ -411,7 +411,7 @@ public class State {
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		String[] gradeClassHoursIndicatives = { "horas_aula_ensino_elementary", "horas_aula_ensino_high_school" };
+		String[] gradeClassHoursIndicatives = { "daily_class_hours_average_elementary", "daily_class_hours_average_high_school" };
 		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school" };
 		String[] scienceAndThecnologyProjectsIndicatives = { "numero_projetos", "valor_investido" };
 		String[] primeirosProjetosIndicatives = { "programa_primeiros_projetos", "valores_programa_primeiros_projetos" };
@@ -419,8 +419,8 @@ public class State {
 		String[] jovensPesquisadoresProjectIndicatives = { "jovens_pesquisadores", "valores_jovens_pesquisadores" };
 		String[] inctProjectsIndicatives = { "projetos_inct", "valores_projetos_inct" };
 		String[] ageGradeDistortionRate = { "distortion_rate_elementary", "distortion_rate_ensino_high_school" };
-		String[] educationalAchievementRate = { "taxa_aprovacao_elementary", "taxa_aprovacao_high_school" };
-		String[] schoolDropoutRate = { "taxa_abandono_elementary", "taxa_abandono_high_school" };
+		String[] educationalAchievementRate = { "utilization_rate_elementary", "utilization_rate_high_school" };
+		String[] schoolDropoutRate = { "dropout_rate_elementary", "dropout_rate_high_school" };
 
 		assert (gradeClassHoursIndicatives != null) : "null gradeClassHoursIndicatives";
 		assert (studentGradesPerClassIndicatives != null) : "null studentGradesPerClassIndicatives";
