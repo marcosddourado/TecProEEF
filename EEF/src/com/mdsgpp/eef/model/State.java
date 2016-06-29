@@ -122,7 +122,7 @@ public class State {
 	public void setStatePopulation(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		ArrayList<String[]> data = information.get("populacao");
+		ArrayList<String[]> data = information.get("population");
 
 		assert (data != null) : "null data";
 

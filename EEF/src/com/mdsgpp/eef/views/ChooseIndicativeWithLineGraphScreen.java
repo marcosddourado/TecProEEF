@@ -36,8 +36,8 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 		state = getStateInfo();
 
-		tittle = "Populacao";
-		indicative = "populacao";
+		tittle = "population";
+		indicative = "population";
 		historico.clear();
 		historico.add((float) state.getStatePopulation());
 	}
@@ -165,7 +165,7 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 		case R.id.radio_population:
 			tittle = "Populaeeo";
-			indicative = "populacao";
+			indicative = "population";
 
             setGraphInformations(max, tamanho);
 			break;

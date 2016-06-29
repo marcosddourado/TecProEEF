@@ -81,11 +81,11 @@
             android:text="@string/numero_projetos" />
 
         <CheckBox
-            android:id="@+id/checkBox_populacao"
+            android:id="@+id/checkBox_population"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/populacao" />
+            android:text="@string/population" />
 
         <CheckBox
             android:id="@+id/checkBox_participacao_pib"

@@ -99,7 +99,7 @@ public class ScreenStateHistory extends Activity {
 		
 		abbreviation = (TextView) findViewById(R.id.textView_sigla);
 		name = (TextView) findViewById(R.id.textView_nome_estado);
-		population = (TextView) findViewById(R.id.textView_populacao_valor);
+		population = (TextView) findViewById(R.id.textView_population_valor);
 		pibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
 		scienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
 		idebs = (TextView) findViewById(R.id.textView_idebs);
@@ -120,7 +120,7 @@ public class ScreenStateHistory extends Activity {
 	private void filltextFields(HashMap<String, String> informacoes) {
 		abbreviation.setText(informacoes.get("sigla"));
 		name.setText(informacoes.get("nome"));
-		population.setText(informacoes.get("populacao"));
+		population.setText(informacoes.get("population"));
 		pibParticipation.setText(informacoes.get("percentual_participacao_pib"));
 		scienceTechnologyProjectsQuantity.setText(informacoes.get("projetos_ciencia_tecnologia"));
 		idebs.setText(informacoes.get("ideb"));
@@ -164,7 +164,7 @@ public class ScreenStateHistory extends Activity {
     	
 		intent.putExtra("CB_IDEB", true);
 		intent.putExtra("CB_PIB", true);
-		intent.putExtra("CB_POPULACAO", true);
+		intent.putExtra("CB_population", true);
 		intent.putExtra("CB_PRIMEIROS_PROJETOS", true);
 		intent.putExtra("CB_PROJETOS_CNPQ", true);
 		intent.putExtra("CB_PROJETOS_DIFUSAO", true);

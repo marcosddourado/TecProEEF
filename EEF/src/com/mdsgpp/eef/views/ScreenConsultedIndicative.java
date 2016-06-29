@@ -90,7 +90,7 @@ public class ScreenConsultedIndicative extends Activity {
 	private void initializeCheckBox() {
 		cbIdeb = (CheckBox) findViewById(R.id.checkBox_ideb);
 		cbPib = (CheckBox) findViewById(R.id.checkBox_participacao_pib);
-		cbPopulation = (CheckBox) findViewById(R.id.checkBox_populacao);
+		cbPopulation = (CheckBox) findViewById(R.id.checkBox_population);
 		cbFirstProjects = (CheckBox) findViewById(R.id.checkBox_primeiros_projeto);
 		cbProjectsCnpq = (CheckBox) findViewById(R.id.checkBox_projetos_cnpq);
 		cbProjectsDiffusion = (CheckBox) findViewById(R.id.checkBox_projetos_difusao);

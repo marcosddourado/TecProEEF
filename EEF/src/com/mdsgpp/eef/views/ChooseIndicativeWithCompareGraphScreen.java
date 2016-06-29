@@ -43,7 +43,7 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 
 		idebView = receivedIntent.getBooleanExtra("CB_IDEB", false);
 		pibView = receivedIntent.getBooleanExtra("CB_PIB", false);
-		populationView = receivedIntent.getBooleanExtra("CB_POPULACAO", false);
+		populationView = receivedIntent.getBooleanExtra("CB_population", false);
 		firstProjectsView = receivedIntent.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
 		cnpqProjectsView = receivedIntent.getBooleanExtra("CB_PROJETOS_CNPQ", false);
 		projectDiffusionView = receivedIntent.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);

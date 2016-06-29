@@ -12,12 +12,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/estado.png"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/compara.png",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/compara.png"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/tocantins.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/tocantins.gif"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/compara.png",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/compara.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
@@ -28,12 +28,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/background.jpg"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/amapa.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/amapa.gif"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/pernambuco.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/pernambuco.gif"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/amapa.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/amapa.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/matogrossodosul.gif",
@@ -64,12 +64,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/historico.png"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/indicativos.png",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/indicativos.png"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/matogrosso.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/matogrosso.gif"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/indicativos.png",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/indicativos.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/espiritosanto.gif",
@@ -104,12 +104,16 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/paraiba.gif"
     },
     {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/riograndedonorte.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/riograndedonorte.gif"
+    },
+    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/botao_grafico.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/botao_grafico.png"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/riograndedonorte.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/riograndedonorte.gif"
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/minasgerais.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/minasgerais.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/icone_noticias.png",
@@ -118,10 +122,6 @@
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/sobre.png",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/sobre.png"
-    },
-    {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/minasgerais.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-hdpi/minasgerais.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-hdpi-v4/home1.png",

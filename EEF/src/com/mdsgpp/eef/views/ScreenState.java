@@ -113,7 +113,7 @@ public class ScreenState extends Activity {
 		
 		textViewAbbrev = (TextView) findViewById(R.id.textView_sigla);
 		textViewName = (TextView) findViewById(R.id.textView_nome_estado);
-		textViewPopulation = (TextView) findViewById(R.id.textView_populacao_valor);
+		textViewPopulation = (TextView) findViewById(R.id.textView_population_valor);
 		textViewPibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
 		textViewScienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
 		textViewScienceTechnologyProjectsValue = (TextView) findViewById(R.id.textView_valor_investido_projetos);
@@ -149,7 +149,7 @@ public class ScreenState extends Activity {
 	private void fillTextFields(HashMap<String, String> information) {
 		textViewAbbrev.setText(information.get("sigla"));
 		textViewName.setText(information.get("nome"));
-		textViewPopulation.setText(information.get("populacao"));
+		textViewPopulation.setText(information.get("population"));
 		textViewPibParticipation.setText(information.get("percentual_participacao_pib"));
 		textViewScienceTechnologyProjectsQuantity.setText(information.get("projetos_ciencia_tecnologia"));
 		textViewScienceTechnologyProjectsValue.setText(information.get("valor_ciencia_tecnologia"));

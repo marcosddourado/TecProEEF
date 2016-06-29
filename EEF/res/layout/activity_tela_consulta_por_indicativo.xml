@@ -30,7 +30,7 @@
                 android:layout_marginTop="15dp"
                 android:checked="true"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/populacao" />
+                android:text="@string/population" />
 
             <RadioButton
                 android:id="@+id/radio_pib"

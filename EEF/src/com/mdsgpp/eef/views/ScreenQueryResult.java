@@ -172,7 +172,7 @@ public class ScreenQueryResult extends Activity {
 
 		bIdeb = intent.getBooleanExtra("CB_IDEB", false);
 		bPib = intent.getBooleanExtra("CB_PIB", false);
-		bPopulation = intent.getBooleanExtra("CB_POPULACAO", false);
+		bPopulation = intent.getBooleanExtra("CB_population", false);
 		bFirstProjects = intent.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
 		bCnpqProjects = intent.getBooleanExtra("CB_PROJETOS_CNPQ", false);
 		bDiffusionProjects = intent.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
@@ -204,7 +204,7 @@ public class ScreenQueryResult extends Activity {
 							   HashMap<String, String> informations2) {
 
 		textViewInitials1.setText(informations1.get("sigla"));
-		textViewPopulationValue1.setText(informations1.get("populacao"));
+		textViewPopulationValue1.setText(informations1.get("population"));
 		textViewPibParticipation1.setText(informations1.get("percentual_participacao_pib"));
 		textViewScienceTechnologyProjectCount1.setText(informations1.get("projetos_ciencia_tecnologia"));
 		textViewValorScienceTechnologyProjects1.setText(informations1.get("valor_ciencia_tecnologia"));
@@ -236,7 +236,7 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateHighSchool1.setText(informations1.get("taxa_aprovacao_high_school"));
 
 		textViewInitials2.setText(informations2.get("sigla"));
-		textViewPopulationValue2.setText(informations2.get("populacao"));
+		textViewPopulationValue2.setText(informations2.get("population"));
 		textViewPibParticipation2.setText(informations2.get("percentual_participacao_pib"));
 		textViewScienceTechnologyProjectCount2.setText(informations2.get("projetos_ciencia_tecnologia").split(":")[1]);
 		textViewValorScienceTechnologyProjects2.setText(informations2.get("valor_ciencia_tecnologia").split(":")[1]);
@@ -272,8 +272,8 @@ public class ScreenQueryResult extends Activity {
 	private void initializeTextViews() {
 
 		textViewInitials1 = (TextView) findViewById(R.id.textView_sigla1);
-		textViewPopulation1 = (TextView) findViewById(R.id.textView_populacao1);
-		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_populacao_valor1);
+		textViewPopulation1 = (TextView) findViewById(R.id.textView_population1);
+		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_population_valor1);
 		textViewPibStateParticipation1 = (TextView) findViewById(R.id.textView_participacao_estadual_pib1);
 		textViewPibParticipation1 = (TextView) findViewById(R.id.textView_participacao_pib_valor1);
 		textViewProjectNumber1 =  (TextView) findViewById(R.id.textView_numero_projetos1);
@@ -318,7 +318,7 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateHighSchool1 = (TextView) findViewById(R.id.textView_dropout_rate_high_school1);
 
 		textViewInitials2 = (TextView) findViewById(R.id.textView_sigla2);
-		textViewPopulationValue2 = (TextView) findViewById(R.id.textView_populacao_valor2);
+		textViewPopulationValue2 = (TextView) findViewById(R.id.textView_population_valor2);
 		textViewPibParticipation2 = (TextView) findViewById(R.id.textView_participacao_pib_valor2);
 		textViewScienceTechnologyProjectCount2 = (TextView) findViewById(R.id.textView_numero_projetos_quantidade2);
 		textViewValorScienceTechnologyProjects2 = (TextView) findViewById(R.id.textView_valor_investido_projetos2);
@@ -462,7 +462,7 @@ public class ScreenQueryResult extends Activity {
 
 		intent.putExtra("CB_IDEB", bIdeb);
 		intent.putExtra("CB_PIB", bPib);
-		intent.putExtra("CB_POPULACAO", bPopulation);
+		intent.putExtra("CB_population", bPopulation);
 		intent.putExtra("CB_PRIMEIROS_PROJETOS", bFirstProjects);
 		intent.putExtra("CB_PROJETOS_CNPQ", bCnpqProjects);
 		intent.putExtra("CB_PROJETOS_DIFUSAO", bDiffusionProjects);

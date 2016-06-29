@@ -36,9 +36,9 @@ public class ScreenLineGraphIndicative extends Activity{
 		state = catchStateInformation();
 		Log.i("positionIndicativeGraph", historyPosition+"");
 		
-		// Populacao comeea selecionada
+		// population comeea selecionada
 		title = "Populaeeo";
-		indicative = "populacao";
+		indicative = "population";
 		history.clear();
 		history.add((float) state.getStatePopulation());
 	}
@@ -176,7 +176,7 @@ public class ScreenLineGraphIndicative extends Activity{
 
 		case R.id.radio_population:
 			title = "Populaeeo";
-			indicative = "populacao";
+			indicative = "population";
 			history.clear();
 			history.add((float) state.getStatePopulation());
 			Log.i("size hsitorico", ""+history.size());

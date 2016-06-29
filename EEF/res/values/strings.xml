@@ -35,23 +35,23 @@
     <!-- Strings da tela inicial -->
     <string name="app_name">Educação em Foco</string>
     <string name="action_settings">Settings</string>
-    <string name="menu_botao_lista_estados">Lista de Estados</string>
-    <string name="menu_botao_comparacao">Comparar</string>
-    <string name="botao_gera_grafico">Gerar grafico</string>
-    <string name="titulo_escolhe_indicativo_grafico">Escolha o indicativo para gerar o gráfico:</string>
-    <string name="string_vazia"></string>
-    <string name="menu_botao_consulta">Consulta</string>
-    <string name="menu_botao_feed">Notícias</string>
-    <string name="menu_botao_consulta_por_indicativo">Consulta por indicativo</string>
+    <string name="menu_button_states_list">Lista de Estados</string>
+    <string name="menu_button_comparison">Comparar</string>
+    <string name="button_generate_graph">Gerar grafico</string>
+    <string name="tittle_choose_graph_indicative">Escolha o indicativo para gerar o gráfico:</string>
+    <string name="empty_string"></string>
+    <string name="menu_button_query">Consulta</string>
+    <string name="menu_button_feed">Notícias</string>
+    <string name="menu_button_query_per_indicative">Consulta por indicativo</string>
 
     <!-- Strings da tela indicativos consultados -->
-    <string name="botao_tela_indicativos">Ir</string>
+    <string name="button_screen_indicatives">Ir</string>
 
     <!-- Strings da tela indicativos consultados -->
-    <string name="botao_indicativos">Gerar gráfico</string>
+    <string name="button_indicatives">Gerar gráfico</string>
 
     <!-- Strings da Escolhe Indicativo Grafico -->
-    <string name="populacao">População</string>
+    <string name="population">População</string>
     <string name="participacao_PIB_percentual">Participação Estadual no PIB (%)</string>
     <string name="projetos_difusao_tecnologica_qtd">Projeto de Difusão Tecnológica (Qtd.)</string>
     <string name="projetos_difusao_tecnologica_investmento">Projeto de Difusão Tecnológica (R$)</string>

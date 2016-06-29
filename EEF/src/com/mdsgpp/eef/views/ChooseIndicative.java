@@ -11,8 +11,8 @@ import android.view.View;
 
 public abstract class ChooseIndicative extends Activity {
 	
-	private String indicative = "populacao";
-	private String tittle = "Populacao";
+	private String indicative = "population";
+	private String tittle = "population";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +80,7 @@ public abstract class ChooseIndicative extends Activity {
 			setValues("percentual_participacao_pib", "Participaeeo Estadual no PIB (%)");
 			break;
 		case R.id.radio_population:
-			setValues("populacao", "Populaeeo");
+			setValues("population", "Populaeeo");
 			break;
 		case R.id.radio_primeiros_projetos_investment:
 			setValues("valor_primeiros_projetos", "Programa Primeiros Projetos (R$)");

@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/titulo_escolhe_indicativo_grafico" />
+            android:text="@string/tittle_choose_graph_indicative" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:layout_marginTop="15dp"
                 android:checked="true"
                 android:onClick="onRadioButtonClicked"
-                android:text="@string/populacao" />
+                android:text="@string/population" />
 
             <RadioButton
                 android:id="@+id/radio_pib"

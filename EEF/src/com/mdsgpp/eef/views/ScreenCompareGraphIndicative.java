@@ -43,7 +43,7 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 
 		bIdeb = intentRecebida.getBooleanExtra("CB_IDEB", false);
 		bPib = intentRecebida.getBooleanExtra("CB_PIB", false);
-		bPopulation = intentRecebida.getBooleanExtra("CB_POPULACAO", false);
+		bPopulation = intentRecebida.getBooleanExtra("CB_population", false);
 		bPrimeirosProjetos = intentRecebida.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
 		bCnpqProjects = intentRecebida.getBooleanExtra("CB_PROJETOS_CNPQ", false);
 		bDiffusionProjects = intentRecebida.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
