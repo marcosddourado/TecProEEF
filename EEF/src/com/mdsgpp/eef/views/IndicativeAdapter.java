@@ -51,6 +51,8 @@ public class IndicativeAdapter extends BaseAdapter{
 
 	@Override
 	public HashMap<String, String> getItem(int position) {
+
+		//Returns a specific item as a hashmap of data.
 		HashMap<String, String> state = null;
 		try {
 			state = StateConroller.getInstance(context).readState(position);
@@ -62,12 +64,15 @@ public class IndicativeAdapter extends BaseAdapter{
 
 	@Override
 	public long getItemId(int position) {
+		//Item id is always equal to its position.
 		return position;
 	}
 
 	
 	@Override
 	public View getView(int position, View view, ViewGroup viewGroup) {
+
+		//initializes the view and sets the base values for it.
 		if(view == null) {
 			view = this.inflater.inflate(R.layout.listview_indicatives_item, null);
 			holder = new ViewHolder();
@@ -79,7 +84,8 @@ public class IndicativeAdapter extends BaseAdapter{
 		} else {
 			holder = (ViewHolder) view.getTag();
 		}
-		
+
+		//Sets the holder's info on the view.
 		if(position == 0){//Titulo
 			holder.tvName.setText(tittle);
 			holder.tvName.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -90,7 +96,9 @@ public class IndicativeAdapter extends BaseAdapter{
 			holder.tvName.setText(state.get("nome"));
 			holder.tvIndicativeValue.setText( getValue(state.get(choosedIndicative)) );
 			holder.tvIndicativeValue.setVisibility(View.VISIBLE);
-			
+
+
+			//Sets the corresponding flag to the item.
 			int idFlag = context.getResources().getIdentifier(bandeiras[position-1], "drawable", context.getPackageName());
 			holder.tvFlags.setImageResource(idFlag);
 		}
@@ -100,6 +108,8 @@ public class IndicativeAdapter extends BaseAdapter{
 	}
 	
 	private String getValue(String linha) {
+
+		//Returns only usable part of info string.
 		if (linha.contains(":")) {
 			String partes[] = linha.split(": ");
 			return partes[1];
