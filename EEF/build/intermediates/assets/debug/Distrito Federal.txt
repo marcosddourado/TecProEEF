@@ -1,31 +1,31 @@
 Distrito Federal
 DF
 
-censo_anos_finais
+census_anos_finais
 2010: 135.384
 2011: 133.604
 2012: 131.899
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 165.407
 2011: 159.233
 2012: 153.027
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 26.357
 2011: 27.753
 2012: 26.599
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 23.291
 2011: 23.325
 2012: 22.383
 
 
-censo_ensino_high_school
+census_high_school
 2010: 78.490
 2011: 79.000
 2012: 79.675
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 3,90000000000146
 
 
-populacao
+population
 2009: 2606885
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,9
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 5
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 8597,61999999732
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 1,8
 2008: 1,9
 2009: 1,6
 2010: 1,2
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 8
 2008: 5
 2009: 7,3
 2010: 6,6
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 83,8
 2008: 89,2
 2009: 88,7
 2010: 88,7
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 71,1
 2008: 82
 2009: 76,6

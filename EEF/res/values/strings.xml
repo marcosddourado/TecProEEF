@@ -2,92 +2,92 @@
 <resources>
 
     <!-- Title: Activities -->
-    <string name="title_activity_tela_comparacao">Comparação de Estados</string>
-    <string name="title_activity_tela_lista_estado">Lista de estados</string>
-    <string name="title_activity_tela_sobre">Sobre o EEF</string>
-    <string name="title_activity_tela_consulta_indicativo">Consulta de Indicativos</string>
-    <string name="title_activity_tela_indicativos_consultados">Escolha os indicativos</string>
-    <string name="title_activity_tela_resultado_consulta">Comparação de Estados</string>
-    <string name="title_activity_tela_feed">Notícias</string>
-    <string name="title_activity_tela_feed_sobre">Sobre as Notícias</string>
-    <string name="title_activity_tela_estado">Indicativos do Estado</string>
-    <string name="title_activity_tela_escolhe_indicativo_grafico">Escolha um Indicativo</string>
-    <string name="title_activity_grafico">Gráfico</string>
-    <string name="title_activity_tela_grafico">Gráfico</string>
-    <string name="title_activity_sobre_indicativos">Sobre os Indicativos</string>
-    <string name="title_activity_tela_sobre_consulta">Sobre a Consulta</string>
-    <string name="title_noticias_sobre">Notícias</string>
-    <string name="title_activity_tela_comparacoes_gerais">Comparacões</string>
+    <string name="title_activity_screen_comparison">Comparação de Estados</string>
+    <string name="title_activity_screen_state_list">Lista de estados</string>
+    <string name="title_activity_screen_about">Sobre o EEF</string>
+    <string name="title_activity_screen_query_per_indicative">Consulta de Indicativos</string>
+    <string name="title_activity_screen_consulted_idicatives">Escolha os indicativos</string>
+    <string name="title_activity_screen_query_result">Comparação de Estados</string>
+    <string name="title_activity_screen_feed">Notícias</string>
+    <string name="title_activity_screen_feed_about">Sobre as Notícias</string>
+    <string name="title_activity_screen_state">Indicativos do Estado</string>
+    <string name="title_activity_screen_choose_indicative_with_line_graph">Escolha um Indicativo</string>
+    <string name="title_activity_graph">Gráfico</string>
+    <string name="title_activity_screen_graph">Gráfico</string>
+    <string name="title_activity_about_indicatives">Sobre os Indicativos</string>
+    <string name="title_activity_screen_about_query">Sobre a Consulta</string>
+    <string name="title_news_about">Notícias</string>
+    <string name="title_activity_screen_general_comparisons">Comparacões</string>
     <string name="title_activity_tela_consulta_por_indicativo">Consulta por Indicativo</string>
-    <string name="title_activity_tela_resultado_consulta_por_indicativo">Resultado da Consulta</string>
-    <string name="title_activity_tela_consultas_gerais">Consultas</string>
-    <string name="title_activity_tela_sobre_comparacao">Sobre a Comparação</string>
-    <string name="title_activity_tela_historico_estado">Histórico de Indicativo</string>
-    <string name="title_activity_tela_sobre_lista_estado">Lista Estados</string>
-    <string name="title_activity_tela_sobre_estado">Estado</string>
-    <string name="title_activity_tela_sobre_escolha_indicativo">Sobre Escolha de Indicativo</string>
-    <string name="title_activity_tela_sobre_comparacao_de_estados">Sobre Comparação de Estados</string>
-    <string name="title_activity_tela_sobre_resultado_da_consulta">Sobre Resultado da Consulta</string>
-    <string name="title_activity_tela_sobre_historico_de_indicativo">Sobre Histórico de Indicativo</string>
-    <string name="title_activity_tela_sobre_grafico">Sobre Gráfico</string>
-    <string name="title_activity_tela_sobre_escolhe_indicativo_grafico_comparacao">Sobre Escolha um Indicativo</string>
+    <string name="title_activity_screen_query_result_per_indicative">Resultado da Consulta</string>
+    <string name="title_activity_screen_general_queries">Consultas</string>
+    <string name="title_activity_screen_about_comparison">Sobre a Comparação</string>
+    <string name="title_activity_screen_state_history">Histórico de Indicativo</string>
+    <string name="title_activity_screen_about_state_list">Lista Estados</string>
+    <string name="title_activity_screen_about_state">Estado</string>
+    <string name="title_activity_screen_about_choose_indicative">Sobre Escolha de Indicativo</string>
+    <string name="title_activity_screen_about_comparison_of_states">Sobre Comparação de Estados</string>
+    <string name="title_activity_screen_about_query_result">Sobre Resultado da Consulta</string>
+    <string name="title_activity_screen_about_indicative_history">Sobre Histórico de Indicativo</string>
+    <string name="title_activity_screen_about_graph">Sobre Gráfico</string>
+    <string name="title_activity_screen_about_choose_indicative_graph_comparison">Sobre Escolha um Indicativo</string>
 
     <!-- Strings da tela inicial -->
     <string name="app_name">Educação em Foco</string>
     <string name="action_settings">Settings</string>
-    <string name="menu_botao_lista_estados">Lista de Estados</string>
-    <string name="menu_botao_comparacao">Comparar</string>
-    <string name="botao_gera_grafico">Gerar grafico</string>
-    <string name="titulo_escolhe_indicativo_grafico">Escolha o indicativo para gerar o gráfico:</string>
-    <string name="string_vazia"></string>
-    <string name="menu_botao_consulta">Consulta</string>
-    <string name="menu_botao_feed">Notícias</string>
-    <string name="menu_botao_consulta_por_indicativo">Consulta por indicativo</string>
+    <string name="menu_button_states_list">Lista de Estados</string>
+    <string name="menu_button_comparison">Comparar</string>
+    <string name="button_generate_graph">Gerar grafico</string>
+    <string name="tittle_choose_graph_indicative">Escolha o indicativo para gerar o gráfico:</string>
+    <string name="empty_string"></string>
+    <string name="menu_button_query">Consulta</string>
+    <string name="menu_button_feed">Notícias</string>
+    <string name="menu_button_query_per_indicative">Consulta por indicativo</string>
 
     <!-- Strings da tela indicativos consultados -->
-    <string name="botao_tela_indicativos">Ir</string>
+    <string name="button_screen_indicatives">Ir</string>
 
     <!-- Strings da tela indicativos consultados -->
-    <string name="botao_indicativos">Gerar gráfico</string>
+    <string name="button_indicatives">Gerar gráfico</string>
 
     <!-- Strings da Escolhe Indicativo Grafico -->
-    <string name="populacao">População</string>
-    <string name="participacao_PIB_percentual">Participação Estadual no PIB (%)</string>
-    <string name="projetos_difusao_tecnologica_qtd">Projeto de Difusão Tecnológica (Qtd.)</string>
-    <string name="projetos_difusao_tecnologica_investmento">Projeto de Difusão Tecnológica (R$)</string>
-    <string name="participacao_IDEB_elementary_iniciais">IDEB do Ensino Fundamental (Séries Iniciais)</string>
-    <string name="participacao_IDEB_elementary_finais">IDEB do Ensino Fundamental (Séries Finais)</string>
-    <string name="participacao_IDEB_high_school">IDEB do Ensino Médio</string>
-    <string name="programa_primeiros_projetos_qtd">Programa Primeiros Projetos (Qtd.)</string>
-    <string name="programa_primeiros_projetos_investmento">Programa Primeiros Projetos (R$)</string>
-    <string name="projetos_pesquisa_CNPq_qtd">Projetos de Pesquisa Apoio CNPq (Qtd.)</string>
-    <string name="projetos_pesquisa_CNPq_investmento">Projetos de Pesquisa Apoio CNPq (R$)</string>
-    <string name="jovens_pesquisadores_qtd">Jovens pesquisadores (Qtd.)</string>
-    <string name="jovens_pesquisadores_investmento">Jovens pesquisadores (R$)</string>
-    <string name="projeto_iniciacao_qtd">Projetos INCT (Qtd.)</string>
-    <string name="projeto_iniciacao_investmento">Projetos INCT (R$)</string>
-    <string name="media_alunos_por_turma">Média de Alunos por Turma (Qtd.)</string>
-    <string name="horas_aula_ensino">Média de horas aula diárias</string>
+    <string name="population">População</string>
+    <string name="state_pib_participation">Participação Estadual no PIB (%)</string>
+    <string name="technological_difusion_project_amount">Projeto de Difusão Tecnológica (Qtd.)</string>
+    <string name="technological_difusion_project_investment">Projeto de Difusão Tecnológica (R$)</string>
+    <string name="elementary_school_ideb_initial_years">IDEB do Ensino Fundamental (Séries Iniciais)</string>
+    <string name="elementary_school_ideb_final_years">IDEB do Ensino Fundamental (Séries Finais)</string>
+    <string name="high_school_ideb">IDEB do Ensino Médio</string>
+    <string name="primeiros_projetos_program_amount">Programa Primeiros Projetos (Qtd.)</string>
+    <string name="primeiros_projetos_program_investment">Programa Primeiros Projetos (R$)</string>
+    <string name="search_projects_cnpq_amount">Projetos de Pesquisa Apoio CNPq (Qtd.)</string>
+    <string name="search_projects_cnpq_investment">Projetos de Pesquisa Apoio CNPq (R$)</string>
+    <string name="teen_searchers_amount">Jovens pesquisadores (Qtd.)</string>
+    <string name="teen_searchers_investment">Jovens pesquisadores (R$)</string>
+    <string name="initiation_projects_amount">Projetos INCT (Qtd.)</string>
+    <string name="initiation_projects_investment">Projetos INCT (R$)</string>
+    <string name="students_average_per_class">Média de Alunos por Turma (Qtd.)</string>
+    <string name="daily_class_hours_average">Média de horas aula diárias</string>
     <string name="distortion_rate">Taxa de Distorção de Idade (%)</string>
-    <string name="taxa_aprovacao">Taxa de Aproveitamento (%)</string>
-    <string name="taxa_abandono">Taxa de Abandono Escolar (%)</string>
-    <string name="censo">Censo Escolar (matriculados)</string>
-    <string name="alunos_por_turma_elementary">Média de Alunos por Turma do Ensino Fundamental(Qtd.)</string>
-    <string name="alunos_por_turma_high_school">Média de Alunos por Turma do Ensino Médio(Qtd.)</string>
-    <string name="horas_aula_elementary">Média de horas aula diárias do Ensino Fundamental</string>
-    <string name="horas_aula_high_school">Média de horas aula diárias do Ensino Médio</string>
+    <string name="utilization_rate">Taxa de Aproveitamento (%)</string>
+    <string name="dropout_rate">Taxa de Abandono Escolar (%)</string>
+    <string name="census">census Escolar (matriculados)</string>
+    <string name="elementary_school_students_per_class_average">Média de Alunos por Turma do Ensino Fundamental(Qtd.)</string>
+    <string name="high_school_students_per_class_average">Média de Alunos por Turma do Ensino Médio(Qtd.)</string>
+    <string name="class_hours_elementary">Média de horas aula diárias do Ensino Fundamental</string>
+    <string name="class_hours_high_school">Média de horas aula diárias do Ensino Médio</string>
     <string name="distortion_rate_elementary">Taxa de Distorção Idade/Série do Ensino Fundamental (%)</string>
     <string name="distortion_rate_high_school">Taxa de Distorção Idade/Série do Ensino Médio (%)</string>
-    <string name="taxa_aprovacao_elementary">Taxa de Aprovação do Ensino Fundamental (%)</string>
-    <string name="taxa_aprovacao_high_school">Taxa de Aprovação do Ensino Médio (%)</string>
-    <string name="taxa_abandono_elementary">Taxa de Abandono do Ensino Fundamental (%)</string>
-    <string name="taxa_abandono_high_school">Taxa de Abandono do Ensino Médio (%)</string>
-    <string name="censo_anos_iniciais_elementary">Censo Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)</string>
-    <string name="censo_anos_finais_elementary">Censo Escolar dos Anos Finais do Ensino Fundamental (Matriculados)</string>
-    <string name="censo_ensino_high_school">Censo Escolar do Ensino Médio (Matriculados)</string>
-    <string name="censo_eja_high_school">Censo Escolar do EJA - Fundamental (Matriculados)</string>
-    <string name="censo_eja_elementary">Censo Escolar do EJA - Médio (Matriculados)</string>
-    <string name="bt_grafico">Gráfico</string>
+    <string name="utilization_rate_elementary">Taxa de Aprovação do Ensino Fundamental (%)</string>
+    <string name="utilization_rate_high_school">Taxa de Aprovação do Ensino Médio (%)</string>
+    <string name="dropout_rate_elementary">Taxa de Abandono do Ensino Fundamental (%)</string>
+    <string name="dropout_rate_high_school">Taxa de Abandono do Ensino Médio (%)</string>
+    <string name="census_initial_years_elemetary">census Escolar dos Anos Iniciais do Ensino Fundamental (Matriculados)</string>
+    <string name="census_final_years_elemetary">census Escolar dos Anos Finais do Ensino Fundamental (Matriculados)</string>
+    <string name="census_high_school">census Escolar do Ensino Médio (Matriculados)</string>
+    <string name="census_high_school_eja">census Escolar do EJA - Fundamental (Matriculados)</string>
+    <string name="census_eja_elementary">census Escolar do EJA - Médio (Matriculados)</string>
+    <string name="graph_button">Gráfico</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
     <string name="bt_historico">Historico</string>
@@ -218,7 +218,7 @@
     <string name="title_activity_tela_escolhe_tipo_de_consulta">TelaEscolheTipoDeConsulta</string>
 
     <!-- Strings da tela sobre Comparações Gerais -->
-    <string name="title_activity_tela_sobre_comparacoes_gerais">TelaSobreComparacoesGerais</string>
+    <string name="title_activity_screen_about_comparacoes_gerais">TelaSobreComparacoesGerais</string>
     <string name="title_sobre_comparacacoes_gerais_estados">Comparação por estado: </string>
     <string name="title_sobre_comparacacoes_gerais_indicativos">Comparação por indicativo: </string>
     <string name="comparacoes_gerais_conteudo_estados">O usuário escolherá dois estados para comparar os indicativos dos mesmos.</string>
@@ -230,7 +230,7 @@
     <!-- Strings da tela sobre Lista Estado -->
     <string name="estado_conteudo">É apresentado os dados dos indicativos do estado selecionado, com a opção de verificar o histórico. Os resultados apresentados são referentes ao último ano disponível. Os anos são disponíbilizados para consulta na opção "Histórico" na tela de consulta de estados.</string>
     <string name="title_activity_sobre_comparacao_estados">MainActivity</string>
-    <string name="title_activity_tela_comparacao_de_estados">MainActivity</string>
+    <string name="title_activity_screen_comparison_de_estados">MainActivity</string>
     <string name="title_activity_sobre_historico_de_indicativo">SobreHistoricoDeIndicativo</string>
 
     <!-- Strings da tela sobre Grafico -->

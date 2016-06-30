@@ -99,7 +99,7 @@ public class ScreenStateHistory extends Activity {
 		
 		abbreviation = (TextView) findViewById(R.id.textView_sigla);
 		name = (TextView) findViewById(R.id.textView_nome_estado);
-		population = (TextView) findViewById(R.id.textView_populacao_valor);
+		population = (TextView) findViewById(R.id.textView_population_valor);
 		pibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
 		scienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
 		idebs = (TextView) findViewById(R.id.textView_idebs);
@@ -109,9 +109,9 @@ public class ScreenStateHistory extends Activity {
 		initiationProjectsValue = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
 		censusValue = (TextView) findViewById(R.id.textView_census_high_school_valor);
-		averageStudentsClassValue = (TextView) findViewById(R.id.textView_media_alunos_por_turma_valor);
-		averageHoursClassElementary = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary);
-		averageHoursClassHIghSchool = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school);
+		averageStudentsClassValue = (TextView) findViewById(R.id.textView_students_average_per_class_valor);
+		averageHoursClassElementary = (TextView) findViewById(R.id.textView_daily_class_hours_average_elementary);
+		averageHoursClassHIghSchool = (TextView) findViewById(R.id.textView_daily_class_hours_average_high_school);
 		distortionRateAgeGradeValue = (TextView) findViewById(R.id.textView_distortion_rate_valor);
 		achievementRateValue = (TextView) findViewById(R.id.textView_approval_rate_valor);
 		dropoutRateValue = (TextView) findViewById(R.id.textView_dropout_rate_valor);
@@ -120,7 +120,7 @@ public class ScreenStateHistory extends Activity {
 	private void filltextFields(HashMap<String, String> informacoes) {
 		abbreviation.setText(informacoes.get("sigla"));
 		name.setText(informacoes.get("nome"));
-		population.setText(informacoes.get("populacao"));
+		population.setText(informacoes.get("population"));
 		pibParticipation.setText(informacoes.get("percentual_participacao_pib"));
 		scienceTechnologyProjectsQuantity.setText(informacoes.get("projetos_ciencia_tecnologia"));
 		idebs.setText(informacoes.get("ideb"));
@@ -130,12 +130,12 @@ public class ScreenStateHistory extends Activity {
 		initiationProjectsValue.setText(informacoes.get("projetos_inct"));
 		
 		averageStudentsClassValue.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
-		censusValue.setText(informacoes.get("censo"));
-		averageHoursClassElementary.setText(informacoes.get("horas_aula_ensino_elementary"));
-		averageHoursClassHIghSchool.setText(informacoes.get("horas_aula_ensino_high_school"));
+		censusValue.setText(informacoes.get("census"));
+		averageHoursClassElementary.setText(informacoes.get("daily_class_hours_average_elementary"));
+		averageHoursClassHIghSchool.setText(informacoes.get("daily_class_hours_average_high_school"));
 		distortionRateAgeGradeValue.setText(informacoes.get("distortion_rate"));
-		achievementRateValue.setText(informacoes.get("taxa_aprovacao"));
-		dropoutRateValue.setText(informacoes.get("taxa_abandono"));
+		achievementRateValue.setText(informacoes.get("utilization_rate"));
+		dropoutRateValue.setText(informacoes.get("dropout_rate"));
 		
 	}
 	
@@ -164,7 +164,7 @@ public class ScreenStateHistory extends Activity {
     	
 		intent.putExtra("CB_IDEB", true);
 		intent.putExtra("CB_PIB", true);
-		intent.putExtra("CB_POPULACAO", true);
+		intent.putExtra("CB_population", true);
 		intent.putExtra("CB_PRIMEIROS_PROJETOS", true);
 		intent.putExtra("CB_PROJETOS_CNPQ", true);
 		intent.putExtra("CB_PROJETOS_DIFUSAO", true);
@@ -172,9 +172,9 @@ public class ScreenStateHistory extends Activity {
 		intent.putExtra("CB_PROJETOS_JOVENS", true);
 		intent.putExtra("CB_ALUNOS_TURMA", true);
 		intent.putExtra("CB_APROVACAO",true);
-		intent.putExtra("CB_CENSO", true);
+		intent.putExtra("CB_census", true);
 		intent.putExtra("CB_HORAS_AULA", true);
-		intent.putExtra("CB_TAXA_ABANDONO", true);
+		intent.putExtra("CB_dropout_rate", true);
 		intent.putExtra("CB_TAXA_DISTORCAO", true);
 		
 		startActivity(intent);

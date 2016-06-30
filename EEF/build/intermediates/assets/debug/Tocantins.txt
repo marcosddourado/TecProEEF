@@ -1,31 +1,31 @@
 Tocantins
 TO
 
-censo_anos_finais
+census_anos_finais
 2010: 104.995
 2011: 105.056
 2012: 93.522
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 112.484
 2011: 112.024
 2012: 102.649
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 11.374
 2011: 11.040
 2012: 10.833
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 10.512
 2011: 7.270
 2012: 10.760
 
 
-censo_ensino_high_school
+census_high_school
 2010: 58.972
 2011: 63.229
 2012: 61.118
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 0,400000000000091
 
 
-populacao
+population
 2009: 1292051
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5,3
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,5
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,5
 
 
@@ -173,28 +173,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 3058,65000000082
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 2,7
 2008: 2,5
 2009: 2,1
 2010: 1,9
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 11,7
 2008: 11,3
 2009: 8,7
 2010: 8
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 87,9
 2008: 87,8
 2009: 89,1
 2010: 88,9
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 80,1
 2008: 80,2
 2009: 81,2

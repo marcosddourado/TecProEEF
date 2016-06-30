@@ -1,31 +1,31 @@
 Paraeba
 PB
 
-censo_anos_finais
+census_anos_finais
 2010: 245.344
 2011: 232.628
 2012: 213.426
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 295.846
 2011: 276.798
 2012: 251.672
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 99.061
 2011: 101.193
 2012: 103.486
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 31.964
 2011: 31.537
 2012: 28.882
 
 
-censo_ensino_high_school
+census_high_school
 2010: 122.726
 2011: 117.328
 2012: 105.036
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 0,800000000000182
 
 
-populacao
+population
 2009: 3769977
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 5,2
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,3
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 1757,33000000007
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 11,5
 2008: 10,3
 2009: 8,7
 2010: 7,8
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 18,9
 2008: 18,8
 2009: 17,8
 2010: 17,4
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 72,9
 2008: 74,5
 2009: 76,6
 2010: 78,1
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 72,8
 2008: 72,3
 2009: 74,1

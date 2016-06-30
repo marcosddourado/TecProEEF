@@ -1,31 +1,31 @@
 Santa Catarina
 SC
 
-censo_anos_finais
+census_anos_finais
 2010: 397.122
 2011: 334.953
 2012: 332.193
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 351.234
 2011: 393.048
 2012: 371.251
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 36.571
 2011: 34.218
 2012: 18.936
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 40.970
 2011: 34.486
 2012: 9.470
 
 
-censo_ensino_high_school
+census_high_school
 2010: 207.064
 2011: 208.301
 2012: 201.697
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 4,09999999999854
 
 
-populacao
+population
 2009: 6118743
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 7,6
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,1
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 4044,28000000119
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 0,8
 2008: 0,8
 2009: 0,8
 2010: 0,8
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 7,1
 2008: 7,3
 2009: 6,8
 2010: 7,1
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 90,3
 2008: 90,8
 2009: 91,1
 2010: 93,1
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 83,8
 2008: 83,8
 2009: 83,7

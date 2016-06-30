@@ -172,17 +172,17 @@ public class ScreenQueryResult extends Activity {
 
 		bIdeb = intent.getBooleanExtra("CB_IDEB", false);
 		bPib = intent.getBooleanExtra("CB_PIB", false);
-		bPopulation = intent.getBooleanExtra("CB_POPULACAO", false);
+		bPopulation = intent.getBooleanExtra("CB_population", false);
 		bFirstProjects = intent.getBooleanExtra("CB_PRIMEIROS_PROJETOS", false);
 		bCnpqProjects = intent.getBooleanExtra("CB_PROJETOS_CNPQ", false);
 		bDiffusionProjects = intent.getBooleanExtra("CB_PROJETOS_DIFUSAO", false);
 		bInitiation = intent.getBooleanExtra("CB_PROJETOS_INICIACAO", false);
 		bYoungProjects = intent.getBooleanExtra("CB_PROJETOS_JOVENS", false);
-		bCensus = intent.getBooleanExtra("CB_CENSO", false);
+		bCensus = intent.getBooleanExtra("CB_census", false);
 		bClassStudents = intent.getBooleanExtra("CB_ALUNOS_TURMA", false);
 		bClassTime = intent.getBooleanExtra("CB_HORAS_AULA", false);
 		bDistortionRate = intent.getBooleanExtra("CB_TAXA_DISTORCAO", false);
-		bAbandonRate = intent.getBooleanExtra("CB_TAXA_ABANDONO", false);
+		bAbandonRate = intent.getBooleanExtra("CB_dropout_rate", false);
 		bApproval = intent.getBooleanExtra("CB_APROVACAO", false);
 
 		HashMap<String, String> stateInformations1 = new HashMap<String, String>();
@@ -204,7 +204,7 @@ public class ScreenQueryResult extends Activity {
 							   HashMap<String, String> informations2) {
 
 		textViewInitials1.setText(informations1.get("sigla"));
-		textViewPopulationValue1.setText(informations1.get("populacao"));
+		textViewPopulationValue1.setText(informations1.get("population"));
 		textViewPibParticipation1.setText(informations1.get("percentual_participacao_pib"));
 		textViewScienceTechnologyProjectCount1.setText(informations1.get("projetos_ciencia_tecnologia"));
 		textViewValorScienceTechnologyProjects1.setText(informations1.get("valor_ciencia_tecnologia"));
@@ -219,24 +219,24 @@ public class ScreenQueryResult extends Activity {
 		textViewYoungResearchersValue1.setText(informations1.get("valor_projetos_jovens_pesquisadores"));
 		textViewInitiationProjectCount1.setText(informations1.get("quantidade_projetos_inct"));
 		textViewInitiationProjectValue1.setText(informations1.get("valor_projetos_inct"));
-		textViewInitialSeriesCensus1.setText(informations1.get("censo_anos_iniciais_elementary"));
-		textViewElementaryCensus1.setText(informations1.get("censo_anos_finais_elementary"));
-		textViewHighSchoolCensus1.setText(informations1.get("censo_ensino_high_school"));
-		textViewElementaryEjaCensus1.setText(informations1.get("censo_eja_elementary"));
-		textViewHighSchoolEjaCensus1.setText(informations1.get("censo_eja_high_school"));
+		textViewInitialSeriesCensus1.setText(informations1.get("census_initial_years_elemetary"));
+		textViewElementaryCensus1.setText(informations1.get("census_final_years_elemetary"));
+		textViewHighSchoolCensus1.setText(informations1.get("census_high_school"));
+		textViewElementaryEjaCensus1.setText(informations1.get("census_eja_elementary"));
+		textViewHighSchoolEjaCensus1.setText(informations1.get("census_high_school_eja"));
 		textViewStudentsPerClassElementary1.setText(informations1.get("alunos_por_turma_ensino_elementary"));
 		textViewStudentsPerClassHighSchool1.setText(informations1.get("alunos_por_turma_ensino_high_school"));
-		textViewClassTimeElementary1.setText(informations1.get("horas_aula_ensino_elementary"));
-		textViewClassTimeHighSchool1.setText(informations1.get("horas_aula_ensino_high_school"));
+		textViewClassTimeElementary1.setText(informations1.get("daily_class_hours_average_elementary"));
+		textViewClassTimeHighSchool1.setText(informations1.get("daily_class_hours_average_high_school"));
 		textViewDistortionRateElementary1.setText(informations1.get("distortion_rate_elementary"));
 		textViewDistortionRateHighSchool1.setText(informations1.get("distortion_rate_high_school"));
-		textViewUtilizationRateElementary1.setText(informations1.get("taxa_aprovacao_elementary"));
-		textViewUtilizationRateHighSchool1.setText(informations1.get("taxa_aprovacao_high_school"));
-		textViewAbandonRateElementary1.setText(informations1.get("taxa_aprovacao_elementary"));
-		textViewAbandonRateHighSchool1.setText(informations1.get("taxa_aprovacao_high_school"));
+		textViewUtilizationRateElementary1.setText(informations1.get("utilization_rate_elementary"));
+		textViewUtilizationRateHighSchool1.setText(informations1.get("utilization_rate_high_school"));
+		textViewAbandonRateElementary1.setText(informations1.get("utilization_rate_elementary"));
+		textViewAbandonRateHighSchool1.setText(informations1.get("utilization_rate_high_school"));
 
 		textViewInitials2.setText(informations2.get("sigla"));
-		textViewPopulationValue2.setText(informations2.get("populacao"));
+		textViewPopulationValue2.setText(informations2.get("population"));
 		textViewPibParticipation2.setText(informations2.get("percentual_participacao_pib"));
 		textViewScienceTechnologyProjectCount2.setText(informations2.get("projetos_ciencia_tecnologia").split(":")[1]);
 		textViewValorScienceTechnologyProjects2.setText(informations2.get("valor_ciencia_tecnologia").split(":")[1]);
@@ -251,29 +251,29 @@ public class ScreenQueryResult extends Activity {
 		textViewYoungResearchersValue2.setText(informations2.get("valor_projetos_jovens_pesquisadores").split(":")[1]);
 		textViewInitiationProjectCount2.setText(informations2.get("quantidade_projetos_inct").split(":")[1]);
 		textViewInitiationProjectValue2.setText(informations2.get("valor_projetos_inct").split(":")[1]);
-		textViewInitialSeriesCensus2.setText(informations2.get("censo_anos_iniciais_elementary").split(":")[1]);
-		textViewElementaryCensus2.setText(informations2.get("censo_anos_finais_elementary").split(":")[1]);
-		textViewHighSchoolCensus2.setText(informations2.get("censo_ensino_high_school").split(":")[1]);
-		textViewElementaryEjaCensus2.setText(informations2.get("censo_eja_elementary").split(":")[1]);
-		textViewHighSchoolEjaCensus2.setText(informations2.get("censo_eja_high_school").split(":")[1]);
+		textViewInitialSeriesCensus2.setText(informations2.get("census_initial_years_elemetary").split(":")[1]);
+		textViewElementaryCensus2.setText(informations2.get("census_final_years_elemetary").split(":")[1]);
+		textViewHighSchoolCensus2.setText(informations2.get("census_high_school").split(":")[1]);
+		textViewElementaryEjaCensus2.setText(informations2.get("census_eja_elementary").split(":")[1]);
+		textViewHighSchoolEjaCensus2.setText(informations2.get("census_high_school_eja").split(":")[1]);
 		textViewStudentsPerClassElementary2.setText(informations2.get("alunos_por_turma_ensino_elementary").split(":")[1]);
 		textViewStudentsPerClassHighSchool2.setText(informations2.get("alunos_por_turma_ensino_high_school").split(":")[1]);
-		textViewClassTimeElementary2.setText(informations2.get("horas_aula_ensino_elementary").split(":")[1]);
-		textViewClassTimeHighSchool2.setText(informations2.get("horas_aula_ensino_high_school").split(":")[1]);
+		textViewClassTimeElementary2.setText(informations2.get("daily_class_hours_average_elementary").split(":")[1]);
+		textViewClassTimeHighSchool2.setText(informations2.get("daily_class_hours_average_high_school").split(":")[1]);
 		textViewDistortionRateElementary2.setText(informations2.get("distortion_rate_elementary").split(":")[1]);
 		textViewDistortionRateHighSchool2.setText(informations2.get("distortion_rate_high_school").split(":")[1]);
-		textViewUtilizationRateElementary2.setText(informations2.get("taxa_aprovacao_elementary").split(":")[1]);
-		textViewUtilizationRateHighSchool2.setText(informations2.get("taxa_aprovacao_high_school").split(":")[1]);
-		textViewAbandonRateElementary2.setText(informations2.get("taxa_aprovacao_elementary").split(":")[1]);
-		textViewAbandonRateHighSchool2.setText(informations2.get("taxa_aprovacao_high_school").split(":")[1]);
+		textViewUtilizationRateElementary2.setText(informations2.get("utilization_rate_elementary").split(":")[1]);
+		textViewUtilizationRateHighSchool2.setText(informations2.get("utilization_rate_high_school").split(":")[1]);
+		textViewAbandonRateElementary2.setText(informations2.get("utilization_rate_elementary").split(":")[1]);
+		textViewAbandonRateHighSchool2.setText(informations2.get("utilization_rate_high_school").split(":")[1]);
 
 	}
 
 	private void initializeTextViews() {
 
 		textViewInitials1 = (TextView) findViewById(R.id.textView_sigla1);
-		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_populacao1);
-		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_populacao_valor1);
+		textViewPopulation1 = (TextView) findViewById(R.id.textView_population1);
+		textViewPopulationValue1 = (TextView) findViewById(R.id.textView_population_valor1);
 		textViewPibStateParticipation1 = (TextView) findViewById(R.id.textView_participacao_estadual_pib1);
 		textViewPibParticipation1 = (TextView) findViewById(R.id.textView_participacao_pib_valor1);
 		textViewProjectNumber1 =  (TextView) findViewById(R.id.textView_numero_projetos1);
@@ -295,21 +295,21 @@ public class ScreenQueryResult extends Activity {
 		textViewInitiationProjects1 = (TextView) findViewById(R.id.textView_projetos_iniciacao1);
 		textViewInitiationProjectCount1 = (TextView) findViewById(R.id.textView_projetos_iniciacao_quantidade1);
 		textViewInitiationProjectValue1 = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor1);
-		textViewAbandonRate1 = (TextView) findViewById(R.id.textView_taxa_abandono1);
-		textViewUtilizationRate1 = (TextView) findViewById(R.id.textView_taxa_aprovacao1);
-		textViewCensus1 = (TextView) findViewById(R.id.textView_censo1);
-		textViewStudentsPerClass1 = (TextView) findViewById(R.id.textView_media_alunos_por_turma1);
-		textViewAverageClassTime1 = (TextView) findViewById(R.id.textView_horas_aula_ensino1);
+		textViewAbandonRate1 = (TextView) findViewById(R.id.textView_dropout_rate1);
+		textViewUtilizationRate1 = (TextView) findViewById(R.id.textView_utilization_rate1);
+		textViewCensus1 = (TextView) findViewById(R.id.textView_census1);
+		textViewStudentsPerClass1 = (TextView) findViewById(R.id.textView_students_average_per_class1);
+		textViewAverageClassTime1 = (TextView) findViewById(R.id.textView_daily_class_hours_average1);
 		textViewDistortionRate1 = (TextView) findViewById(R.id.textView_distortion_rate1);
 		textViewInitialSeriesCensus1 = (TextView) findViewById(R.id.textView_initial_census_elementary1);
 		textViewElementaryCensus1 = (TextView) findViewById(R.id.textView_final_census_elementary1);
 		textViewHighSchoolCensus1 = (TextView) findViewById(R.id.textView_census_high_school1);
 		textViewElementaryEjaCensus1 = (TextView) findViewById(R.id.textView_census_elementary_eja1);
 		textViewHighSchoolEjaCensus1 = (TextView) findViewById(R.id.textView_census_high_school_eja1);
-		textViewStudentsPerClassElementary1 = (TextView) findViewById(R.id.textView_media_alunos_por_turma_elementary1);
-		textViewStudentsPerClassHighSchool1 = (TextView) findViewById(R.id.textView_media_alunos_por_turma_high_school1);
-		textViewClassTimeElementary1 = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary1);
-		textViewClassTimeHighSchool1 = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school1);
+		textViewStudentsPerClassElementary1 = (TextView) findViewById(R.id.textView_students_average_per_class_elementary1);
+		textViewStudentsPerClassHighSchool1 = (TextView) findViewById(R.id.textView_students_average_per_class_high_school1);
+		textViewClassTimeElementary1 = (TextView) findViewById(R.id.textView_daily_class_hours_average_elementary1);
+		textViewClassTimeHighSchool1 = (TextView) findViewById(R.id.textView_daily_class_hours_average_high_school1);
 		textViewDistortionRateElementary1 = (TextView) findViewById(R.id.textView_distortion_rate_elementary1);
 		textViewDistortionRateHighSchool1 = (TextView) findViewById(R.id.textView_distortion_rate_high_school1);
 		textViewUtilizationRateElementary1 = (TextView) findViewById(R.id.textView_approval_rate_elementary1);
@@ -318,7 +318,7 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateHighSchool1 = (TextView) findViewById(R.id.textView_dropout_rate_high_school1);
 
 		textViewInitials2 = (TextView) findViewById(R.id.textView_sigla2);
-		textViewPopulationValue2 = (TextView) findViewById(R.id.textView_populacao_valor2);
+		textViewPopulationValue2 = (TextView) findViewById(R.id.textView_population_valor2);
 		textViewPibParticipation2 = (TextView) findViewById(R.id.textView_participacao_pib_valor2);
 		textViewScienceTechnologyProjectCount2 = (TextView) findViewById(R.id.textView_numero_projetos_quantidade2);
 		textViewValorScienceTechnologyProjects2 = (TextView) findViewById(R.id.textView_valor_investido_projetos2);
@@ -339,10 +339,10 @@ public class ScreenQueryResult extends Activity {
 		textViewHighSchoolCensus2 = (TextView) findViewById(R.id.textView_census_high_school2);
 		textViewElementaryEjaCensus2 = (TextView) findViewById(R.id.textView_census_elementary_eja2);
 		textViewHighSchoolEjaCensus2 = (TextView) findViewById(R.id.textView_census_high_school_eja2);
-		textViewStudentsPerClassElementary2 = (TextView) findViewById(R.id.textView_media_alunos_por_turma_elementary2);
-		textViewStudentsPerClassHighSchool2 = (TextView) findViewById(R.id.textView_media_alunos_por_turma_high_school2);
-		textViewClassTimeElementary2 = (TextView) findViewById(R.id.textView_horas_aula_ensino_elementary2);
-		textViewClassTimeHighSchool2 = (TextView) findViewById(R.id.textView_horas_aula_ensino_high_school2);
+		textViewStudentsPerClassElementary2 = (TextView) findViewById(R.id.textView_students_average_per_class_elementary2);
+		textViewStudentsPerClassHighSchool2 = (TextView) findViewById(R.id.textView_students_average_per_class_high_school2);
+		textViewClassTimeElementary2 = (TextView) findViewById(R.id.textView_daily_class_hours_average_elementary2);
+		textViewClassTimeHighSchool2 = (TextView) findViewById(R.id.textView_daily_class_hours_average_high_school2);
 		textViewDistortionRateElementary2 = (TextView) findViewById(R.id.textView_distortion_rate_elementary2);
 		textViewDistortionRateHighSchool2 = (TextView) findViewById(R.id.textView_distortion_rate_high_school2);
 		textViewUtilizationRateElementary2 = (TextView) findViewById(R.id.textView_approval_rate_elementary2);
@@ -448,7 +448,7 @@ public class ScreenQueryResult extends Activity {
 		try {
 			setVisibility(textViewInitiationProjects2, bInitiation);
 		} catch(NullPointerException npe) {
-			Log.e("layout portrait não possui estes id's",npe.toString());
+			Log.e("layout portrait não possui estes ids",npe.toString());
 		}
 
 	}
@@ -462,7 +462,7 @@ public class ScreenQueryResult extends Activity {
 
 		intent.putExtra("CB_IDEB", bIdeb);
 		intent.putExtra("CB_PIB", bPib);
-		intent.putExtra("CB_POPULACAO", bPopulation);
+		intent.putExtra("CB_population", bPopulation);
 		intent.putExtra("CB_PRIMEIROS_PROJETOS", bFirstProjects);
 		intent.putExtra("CB_PROJETOS_CNPQ", bCnpqProjects);
 		intent.putExtra("CB_PROJETOS_DIFUSAO", bDiffusionProjects);
@@ -470,9 +470,9 @@ public class ScreenQueryResult extends Activity {
 		intent.putExtra("CB_PROJETOS_JOVENS", bYoungProjects);
 		intent.putExtra("CB_ALUNOS_TURMA", bClassStudents);
 		intent.putExtra("CB_APROVACAO", bApproval);
-		intent.putExtra("CB_CENSO", bCensus);
+		intent.putExtra("CB_census", bCensus);
 		intent.putExtra("CB_HORAS_AULA", bClassTime);
-		intent.putExtra("CB_TAXA_ABANDONO", bAbandonRate);
+		intent.putExtra("CB_dropout_rate", bAbandonRate);
 		intent.putExtra("CB_TAXA_DISTORCAO", bDistortionRate);
 
 		intent.putExtra("INDEX_CHOOSED_STATE1", position1);

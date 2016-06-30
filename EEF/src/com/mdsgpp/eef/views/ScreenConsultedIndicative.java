@@ -90,18 +90,18 @@ public class ScreenConsultedIndicative extends Activity {
 	private void initializeCheckBox() {
 		cbIdeb = (CheckBox) findViewById(R.id.checkBox_ideb);
 		cbPib = (CheckBox) findViewById(R.id.checkBox_participacao_pib);
-		cbPopulation = (CheckBox) findViewById(R.id.checkBox_populacao);
+		cbPopulation = (CheckBox) findViewById(R.id.checkBox_population);
 		cbFirstProjects = (CheckBox) findViewById(R.id.checkBox_primeiros_projeto);
 		cbProjectsCnpq = (CheckBox) findViewById(R.id.checkBox_projetos_cnpq);
 		cbProjectsDiffusion = (CheckBox) findViewById(R.id.checkBox_projetos_difusao);
 		cbProjectsInitiation = (CheckBox) findViewById(R.id.checkBox_projetos_iniciacao);
 		cbProjectsYoung = (CheckBox) findViewById(R.id.checkBox_projetos_jovens);
-		cbCensus = (CheckBox) findViewById(R.id.checkBox_censo);
+		cbCensus = (CheckBox) findViewById(R.id.checkBox_census);
 		cbClassStudents = (CheckBox) findViewById(R.id.checkBox_quantidade_aluno);
 		cbClassTime = (CheckBox) findViewById(R.id.checkBox_horas_aula);
 		cbDistortionRate = (CheckBox) findViewById(R.id.checkBox_distortion_rate);
-		cbAbandonRate = (CheckBox) findViewById(R.id.checkBox_taxa_abandono);
-		cbApproval = (CheckBox) findViewById(R.id.checkBox_taxa_aprovacao);
+		cbAbandonRate = (CheckBox) findViewById(R.id.checkBox_dropout_rate);
+		cbApproval = (CheckBox) findViewById(R.id.checkBox_utilization_rate);
 	}
 
 	private void captureValues() {

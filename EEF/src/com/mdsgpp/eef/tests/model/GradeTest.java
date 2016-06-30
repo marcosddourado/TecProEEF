@@ -1,8 +1,8 @@
 package com.mdsgpp.eef.tests.model;
 
 import com.mdsgpp.eef.model.Grade;
-import com.mdsgpp.eef.model.State;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Random;
@@ -18,17 +18,23 @@ public class GradeTest {
 
     private Grade grade;
     Random random = new Random();
+    private double elementaryGrade;
+    private double highSchoolGrade;
 
+
+    @Before
     public void setUp() {
-        double elementaryGrade = this.random.nextDouble() * 10 ;
-        double highSchoolGrade = this.random.nextDouble() * 10;
-        int gradeYear = this.random.nextInt() * 10;
+
+        this.elementaryGrade = this.random.nextDouble() * 10;
+        this.highSchoolGrade = this.random.nextDouble() * 10;
+
+        this.grade = new Grade(elementaryGrade, highSchoolGrade);
     }
 
     @Test
     public void testConstruction() {
 
-        Grade grade = new Grade();
+        this.grade = new Grade();
 
         assertThat(grade.getElementaryGrade(), is(0.0));
         assertThat(grade.getGradeYear(), is(0));
@@ -39,28 +45,27 @@ public class GradeTest {
     @Test
     public void testConstructionWithParameters() {
 
-        double elementaryGrade = this.random.nextDouble() * 10;
-        double highSchoolGrade = this.random.nextDouble() * 10;
-
-        Grade grade = new Grade(elementaryGrade, highSchoolGrade);
-
         assertThat(grade.getElementaryGrade(), is(elementaryGrade));
         assertThat(grade.getHighSchoolGrade(), is(highSchoolGrade));
 
     }
 
-    @Test
+    @Test (expected = AssertionError.class)
     public void testAcceptableYear() {
 
-        double elementaryGrade = this.random.nextDouble() * 10;
-        double highSchoolGrade = this.random.nextDouble() * 10;
+        grade.setGradeYear(1800);
+    }
 
-        Grade grade = new Grade(elementaryGrade, highSchoolGrade);
+    @Test
+    public void testSetGrades() {
 
-        grade.setGradeYear(1880);
+        elementaryGrade = this.random.nextDouble() * 10;
+        highSchoolGrade = this.random.nextDouble() * 10;
+
+        grade.setElementaryGrade(elementaryGrade);
+        grade.setHighSchoolGrade(highSchoolGrade);
 
         assertThat(grade.getElementaryGrade(), is(elementaryGrade));
         assertThat(grade.getHighSchoolGrade(), is(highSchoolGrade));
-        assertThat(grade.getGradeYear(), is(0));
     }
 }

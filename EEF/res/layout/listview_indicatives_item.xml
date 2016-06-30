@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="20dp"
-        android:contentDescription="@string/string_vazia" />
+        android:contentDescription="@string/empty_string" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,31 +1,31 @@
 Acre
 AC
 
-censo_anos_finais
+census_anos_finais
 2010: 59.465
 2011: 59.258
 2012: 53.112
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 90.458
 2011: 86.217
 2012: 77.172
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 16.027
 2011: 16.521
 2012: 19.883
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 6.711
 2011: 6.161
 2012: 6.945
 
 
-censo_ensino_high_school
+census_high_school
 2010: 33.975
 2011: 34.181
 2012: 34.131
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 0,200000000000045
 
 
-populacao
+population
 2009: 691132
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,4
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,2
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,2
 
 
@@ -189,28 +189,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 1905,13000000053
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 6,3
 2008: 5,5
 2009: 4,7
 2010: 4,3
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 14,9
 2008: 14,3
 2009: 12,8
 2010: 12,5
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 81,7
 2008: 83,4
 2009: 86,1
 2010: 87
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 75,9
 2008: 77,8
 2009: 79,2

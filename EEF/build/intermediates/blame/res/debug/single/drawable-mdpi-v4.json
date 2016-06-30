@@ -20,12 +20,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/background_sombra.xml"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/saopaulo.gif",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/saopaulo.gif"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/acre.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/acre.gif"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/saopaulo.gif",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/saopaulo.gif"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/distritofederal.gif",
@@ -96,12 +96,12 @@
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/riograndedosul.gif"
     },
     {
-        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/avancar.png",
-        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/avancar.png"
-    },
-    {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/para.gif",
         "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/para.gif"
+    },
+    {
+        "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/avancar.png",
+        "source": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/res/drawable-mdpi/avancar.png"
     },
     {
         "merged": "/Users/marcosdourado/AndroidStudioProjects/TecProEEF/EEF/build/intermediates/res/merged/debug/drawable-mdpi-v4/matogrosso.gif",

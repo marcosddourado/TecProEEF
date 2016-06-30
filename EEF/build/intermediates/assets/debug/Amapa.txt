@@ -1,31 +1,31 @@
 Amape
 AP
 
-censo_anos_finais
+census_anos_finais
 2010: 52.832
 2011: 53.585
 2012: 50.539
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 71.426
 2011: 68.478
 2012: 61.852
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 16.290
 2011: 16.803
 2012: 15.940
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 5.701
 2011: 6.735
 2012: 6.592
 
 
-censo_ensino_high_school
+census_high_school
 2010: 34.516
 2011: 34.259
 2012: 34.919
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 0,200000000000045
 
 
-populacao
+population
 2009: 626609
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,3
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,3
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,6
 
 
@@ -169,28 +169,28 @@ valores_projetos_apoio_pesquisa_cnpq
 Total: 1099,82000000036
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 4,7
 2008: 4
 2009: 3,4
 2010: 3,1
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 19,6
 2008: 18,4
 2009: 17,5
 2010: 15,3
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 80,9
 2008: 82,2
 2009: 83,4
 2010: 86,1
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 70
 2008: 69,5
 2009: 70,6

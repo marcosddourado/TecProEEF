@@ -1,31 +1,31 @@
 Pernambuco
 PE
 
-censo_anos_finais
+census_anos_finais
 2010: 565.106
 2011: 539.393
 2012: 504.805
 
 
-censo_anos_iniciais
+census_anos_iniciais
 2010: 612.314
 2011: 561.445
 2012: 532.129
 
 
-censo_eja_elementary
+census_eja_elementary
 2010: 213.903
 2011: 190.901
 2012: 179.388
 
 
-censo_eja_high_school
+census_high_school_eja
 2010: 25.619
 2011: 36.234
 2012: 44.526
 
 
-censo_ensino_high_school
+census_high_school
 2010: 347.431
 2011: 285.817
 2012: 251.934
@@ -48,7 +48,7 @@ participacao_estadual_pib
 2008: 2,29999999999927
 
 
-populacao
+population
 2009: 8810256
 
 
@@ -117,11 +117,11 @@ horas_aula_educacao_infantil
 2010: 4,6
 
 
-horas_aula_ensino_elementary
+daily_class_hours_average_elementary
 2010: 4,3
 
 
-horas_aula_ensino_high_school
+daily_class_hours_average_high_school
 2010: 4,4
 
 
@@ -203,28 +203,28 @@ valores_projetos_inct
 Total: 16656,549999997
 
 
-taxa_abandono_elementary
+dropout_rate_elementary
 2007: 10,4
 2008: 8,4
 2009: 6,2
 2010: 4,8
 
 
-taxa_abandono_high_school
+dropout_rate_high_school
 2007: 22
 2008: 18
 2009: 14
 2010: 11,1
 
 
-taxa_aprovacao_elementary
+utilization_rate_elementary
 2007: 73,5
 2008: 76,4
 2009: 80,5
 2010: 83,5
 
 
-taxa_aprovacao_high_school
+utilization_rate_high_school
 2007: 70,1
 2008: 73,1
 2009: 77

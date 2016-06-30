@@ -14,10 +14,10 @@ import com.mdsgpp.eef.model.State;
 
 public class ParseData {
 
-	private HashMap<String, ArrayList<String[]>> informations; // Container for every educational indicative available for the state.
-	private ArrayList<String[]> data;
-	private Context context;
-	private String indicatorName;
+	private HashMap<String, ArrayList<String[]>> informations = null; // Container for every educational indicative available for the state.
+	private ArrayList<String[]> data = null;
+	private Context context = null;
+	private String indicatorName = null;
 
 	private final String EXTENSION = ".txt";
 	private final int LINES = 2;
@@ -27,22 +27,32 @@ public class ParseData {
 	private final int STATES_MAX_INDEX = 26; // index counting starts with 0, so the maximum index for the 27 states is 26
 
 
+	/**
+	 * Class's constructor. It also initialize this.context with context and this.informations with default value
+	 * @param context
+     */
 	public ParseData(Context context) {
 		assert(context != null) : "null context passed on constructor";
 		this.context = context;
 		this.informations = new HashMap<String, ArrayList<String[]>>();
 	}
 
+	/**
+	 * Return all informations about state matching with 'position' read from assets
+	 * @param position
+	 * @return informations
+	 * @throws IOException
+     */
 	public HashMap<String, ArrayList<String[]>> getState(int position) throws IOException {
 		assert(position >= 0) : "position must be positive. position was" + position;
 		assert(position <= STATES_MAX_INDEX) : "position can't be greater than 26. position was" + position;
+
 		String name, acronym;
 
+		//Opening asset equivalent to 'position'
 		AssetManager am = this.context.getAssets();
 		InputStream is = am.open(State.states[position] + this.EXTENSION);
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
-
-		assert (br != null) : "buffer cannot reference NULL";
 
 		name = br.readLine();
 		acronym = br.readLine();
@@ -64,7 +74,11 @@ public class ParseData {
 		this.data = new ArrayList<String[]>();
 	}
 
-	// Insert Acronym and Name into the final hashmap containing parsed data
+    /**
+	 * Insert 'name' and 'acronym' into 'informations'
+	 * @param name
+	 * @param acronym
+     */
 	public void insertAcronymName(String name, String acronym) {
 		ArrayList<String[]> container = new ArrayList<String[]>();
 		String nameAndAcronym[] = new String[PAIR];
@@ -78,7 +92,11 @@ public class ParseData {
 		this.informations.put("nome_e_sigla", container);
 	}
 
-	// Insert indicatives data into the final hashmap containing parsed data
+	/**
+	 * Inser all read indicatives into 'informations'
+	 * @param br
+	 * @throws IOException
+     */
 	public void  readIndicatives(BufferedReader br) throws IOException {
 		int aux = 0;
 		String line;
