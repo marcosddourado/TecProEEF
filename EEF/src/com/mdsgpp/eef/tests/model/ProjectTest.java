@@ -37,32 +37,46 @@ public class ProjectTest {
         assertThat(project.getProjectYear(), is(0));
     }
 
-    @Test
-    public void testSetProjectProperties() {
-
+    @Test (expected = AssertionError.class)
+    public void testSetProjectQuantity() {
         int quantity = random.nextInt(1000);
-        State state = new State();
-        double value = random.nextDouble() * 100;
-        int year = 1900 + random.nextInt(116);
 
         project.setProjectQuantity(quantity);
-        project.setState(state);
-        project.setProjectValue(value);
-        project.setProjectYear(year);
-
         assertThat(project.getProjectQuantity(), is(quantity));
-        assertThat(project.getProjectState(), is(state));
-        assertThat(project.getProjectValue(), is(value));
-        assertThat(project.getProjectYear(), is(year));
 
+        quantity = -20;
+        project.setProjectQuantity(quantity);
     }
 
     @Test (expected = AssertionError.class)
-    public void testSetInvalidProjectProperties() {
+    public void testSetState() {
+        State state = new State();
 
-        project.setProjectQuantity(-20);
+        project.setState(state);
+        assertThat(project.getProjectState(), is(state));
+
         project.setState(null);
-        project.setProjectValue(-10.0);
-        project.setProjectYear(1700);
+    }
+
+    @Test (expected = AssertionError.class)
+    public void testSetProjectValue() {
+        double value = random.nextDouble() * 100;
+
+        project.setProjectValue(value);
+        assertThat(project.getProjectValue(), is(value));
+
+        value = -10.0;
+        project.setProjectValue(value);
+    }
+
+    @Test (expected = AssertionError.class)
+    public void testSetProjectYear() {
+        int year = 1900 + random.nextInt(116);
+
+        project.setProjectYear(year);
+        assertThat(project.getProjectYear(), is(year));
+
+        year = 1700;
+        project.setProjectYear(year);
     }
 }
