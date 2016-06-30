@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Educação em Foco</string>
+    <string name="Programa_primeiros_projetos">Programma Primeiros Projetos</string>
+    <string name="Projetos_pesquisa_CNPq">Progetti di Ricerca Supporto CNPq</string>
+    <string name="acre">Acre</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="alagoas">Alagoas</string>
+    <string name="amapa">Amapa</string>
+    <string name="amazonas">Amazonas</string>
+    <string name="bahia">Bahia</string>
+    <string name="botao_estado">Stato</string>
+    <string name="botao_historico">Storia</string>
+    <string name="botao_historico_estado">Storia</string>
+    <string name="botao_sobre">Su</string>
+    <string name="botao_sobre_descricao">Attraverso questa schermata è possibile all\'utente di
+        scegliere una delle seguenti indicativi e dalla selezione visualizzare il codice per tutti
+        gli stati
+    </string>
+    <string name="botao_sobre_escolha_indicativo">Tramite questa schermata è possibile selezionare
+        uno o più indicativi e, dopo aver selezionato il pulsante in avanti, lo schermo indicativa
+        confronto sarà reindirizzato (s) a scelta tra i due estados.Também questa schermata
+        l\'utente ha la possibilità di marcare tutti indicativo o chiaro tutto indicativa
+    </string>
+</resources>
