@@ -43,25 +43,44 @@ public class NewsTest {
     }
 
     @Test
-    public void testSetNewsProperties() {
+    public void testSetNewsDate() {
 
-        String title = "Title";
-        String category = "Category";
-        String description = "Description";
-        String link = "Link";
         String date = "Date";
 
-        news.setNewsTitle(title);
-        news.setNewsCategory(category);
-        news.setNewsDescription(description);
-        news.setNewsLink(link);
         news.setNewsDate(date);
-
-        assertThat(news.getNewsTitle(), is(title));
-        assertThat(news.getNewsCategory(), is(category));
-        assertThat(news.getNewsDescription(), is(description));
-        assertThat(news.getNewsLink(), is(link));
         assertThat(news.getNewsDate(), is(date));
+    }
+
+    @Test
+    public void testSetNewsTitle() {
+        String title = "Title";
+
+        news.setNewsTitle(title);
+        assertThat(news.getNewsTitle(), is(title));
+    }
+
+    @Test
+    public void testSetNewsCategory() {
+        String category = "Category";
+
+        news.setNewsCategory(category);
+        assertThat(news.getNewsCategory(), is(category));
+    }
+
+    @Test
+    public void testSetNewsDescription() {
+        String description = "Description";
+
+        news.setNewsDescription(description);
+        assertThat(news.getNewsDescription(), is(description));
+    }
+
+    @Test
+    public void testSetNewsLink() {
+        String link = "Link";
+
+        news.setNewsLink(link);
+        assertThat(news.getNewsLink(), is(link));
     }
 
     @Test (expected = AssertionError.class)
