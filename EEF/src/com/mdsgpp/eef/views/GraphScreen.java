@@ -47,6 +47,7 @@ public class GraphScreen extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        //Loads a different screen according to user input.
         switch (item.getItemId()) {
             case R.id.about:
                 loadAboutScreen();
@@ -62,13 +63,14 @@ public class GraphScreen extends Activity {
     }
 
     public void loadAboutScreen() {
+        //Loads info screen with description.
         Intent intent = new Intent(this, ScreenAboutGraphic.class);
         startActivity(intent);
     }
 
     @SuppressWarnings({"unchecked"})
     private void catchInformation() {
-        inicializaCamposTexto();
+        initializeTextFields();
 
         // Captura o intent que abriu a activity
         Intent intent = getIntent();
@@ -81,13 +83,14 @@ public class GraphScreen extends Activity {
         HashMap<String, String> stateInformations1 = new HashMap<String, String>();
         HashMap<String, String> stateInformations2 = new HashMap<String, String>();
 
+        //Generates a graphic based on the information received.
         try {
             stateInformations1 = (HashMap<String, String>) StateConroller
                     .getInstance(this).readState(estado1).clone();
             stateInformations2 = (HashMap<String, String>) StateConroller
                     .getInstance(this).readState(estado2).clone();
 
-            converteDados(stateInformations1, stateInformations2);
+            convertData(stateInformations1, stateInformations2);
             criaGrafico(stateInformations1, stateInformations2);
 
         } catch (IOException e) {
@@ -97,6 +100,8 @@ public class GraphScreen extends Activity {
 
     private void criaGrafico(HashMap<String, String> stateInformations1,
                              HashMap<String, String> stateInformations2) {
+
+        //Creates two action bars, each responsible for one indicative value.
 
         Bar estado1Barra = new Bar();
         estado1Barra.setColor(Color.parseColor("#4682B4"));
@@ -119,8 +124,8 @@ public class GraphScreen extends Activity {
         grafico.setBars(barras);
     }
 
-    private void converteDados(HashMap<String, String> stateInformations1,
-                               HashMap<String, String> stateInformations2) {
+    private void convertData(HashMap<String, String> stateInformations1,
+                             HashMap<String, String> stateInformations2) {
 
         String estado1IndicativoString = stateInformations1.get(indicativo);
         String estado2IndicativoString = stateInformations2.get(indicativo);
@@ -136,7 +141,7 @@ public class GraphScreen extends Activity {
         valorIndicativoEstado2 = Float.parseFloat(estado2IndicativoString);
     }
 
-    private void inicializaCamposTexto() {
+    private void initializeTextFields() {
         tituloGrafico = (TextView) findViewById(R.id.text_view_titulo_grafico);
     }
 }
