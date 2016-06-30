@@ -22,4 +22,62 @@
         confronto sarà reindirizzato (s) a scelta tra i due estados.Também questa schermata
         l\'utente ha la possibilità di marcare tutti indicativo o chiaro tutto indicativa
     </string>
+    <string name="bt_estados">Stati</string>
+    <string name="bt_historico">Storia</string>
+    <string name="bt_verifica_estados_por_indicativo">Controlare stati</string>
+    <string name="button_generate_graph">Generare grafo</string>
+    <string name="button_indicatives">Generare grafico</string>
+    <string name="button_screen_indicatives">Andare</string>
+    <string name="ceara">Ceará</string>
+    <string name="census">Censimento della scuola</string>
+    <string name="census_eja_elementary">Censimento delle EJA liceo (Iscritto)</string>
+    <string name="census_final_years_elemetary">Censimento delle anni finale della instruzione di
+        base
+    </string>
+    <string name="census_high_school">Censimento delle liceo</string>
+    <string name="census_high_school_eja">Censimento delle EJA di scuola elementare (Iscritto)</string>
+    <string name="census_initial_years_elemetary">Censimento delle primi anni de scuola elementare
+        (Iscritto)
+    </string>
+    <string name="class_hours_elementary">Ore medie di classe al giorno della scuola elementare</string>
+    <string name="class_hours_high_school">Ore medie di classe al giorno delle liceo</string>
+    <string name="compara_estados">Confrontare</string>
+    <string name="comparacoes_gerais_conteudo_estados">L\'utente sceglie due stati per confrontare
+        immediatamente la indicativa.
+    </string>
+    <string name="comparacoes_gerais_conteudo_indicativos">L\'utente sceglie il bersaglio che si
+        desidera confrontare in relazione a tutti gli stati.
+    </string>
+    <string name="df">Distrito Federal</string>
+    <string name="goias">Goias</string>
+    <string name="maranhao">Maranhao</string>
+    <string name="matoGrosso">Mato Grosso</string>
+    <string name="matoGrossoDoSul">Mato Grosso do Sul</string>
+    <string name="menu_button_comparison">Confrontare</string>
+    <string name="menu_button_feed">Notizie</string>
+    <string name="menu_button_query">Consultazione</string>
+    <string name="menu_button_query_per_indicative">Consultazione per il indicativo</string>
+    <string name="minasGerais">Minas Gerais</string>
+    <string name="para">Para</string>
+    <string name="paraiba">Paraiba</string>
+    <string name="parana">Parana</string>
+    <string name="participacao_IDEB">IDEB</string>
+    <string name="pernambuco">Pernambuco</string>
+    <string name="piaui">Piaui</string>
+    <string name="population">Populazione</string>
+    <string name="rioDeJaneiro">Rio de Janeiro</string>
+    <string name="rioGrandeDoNorte">Rio Grande do Norte</string>
+    <string name="rioGrandeDoSul">Rio Grande do Sul</string>
+    <string name="rondonia">Rondonia</string>
+    <string name="roraima">Roraima</string>
+    <string name="santaCatarina">Santa Catarina</string>
+    <string name="saoPaulo">Sao Paulo</string>
+    <string name="sergipe">Sergipe</string>
+    <string name="string_x">x</string>
+    <string name="title_activity_graph">Grafico</string>
+    <string name="title_activity_screen_about_state">Stato</string>
+    <string name="title_activity_screen_about_state_list">Enlistazione di Stati</string>
+    <string name="title_activity_screen_comparison_de_estados">MainActivity</string>
+    <string name="title_ast_adicional">*</string>
+    <string name="tocantins">Tocantins</string>
 </resources>
