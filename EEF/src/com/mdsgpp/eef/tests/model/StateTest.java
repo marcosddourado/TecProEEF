@@ -2,8 +2,10 @@ package com.mdsgpp.eef.tests.model;
 
 import com.mdsgpp.eef.model.State;
 
+import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -14,9 +16,13 @@ import static org.hamcrest.CoreMatchers.*;
  */
 public class StateTest {
 
-    /**
-     *
-     */
+    static State state;
+
+    @Before
+    public void setup() {
+        state = new State();
+    }
+
     @Test
     public void construct_with_valid_params() {
         State test_state = new State();
@@ -37,6 +43,16 @@ public class StateTest {
         assertThat(test_state.getAgeGradeDistortionRate().length, is(0));
         assertThat(test_state.getEducationalAchievementRate().length, is(0));
         assertThat(test_state.getSchoolDropoutRate().length, is(0));
+    }
+
+    @Test
+    public void getCensus_returnNonNullCensus() {
+        assertThat(state.getCensus(), is(notNullValue()));
+    }
+
+    @Test
+    public void getPercentageCollaborationWithPIB_returnNonNullCensus() {
+        assertThat(state.getPercentageCollaborationWithPIB(), is(notNullValue()));
     }
 
 }
