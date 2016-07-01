@@ -1,15 +1,13 @@
 package com.mdsgpp.eef.tests.model;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.*;
-import org.mockito.Mock;
+
 import com.mdsgpp.eef.model.Census;
 
 import java.util.Random;
-import dalvik.annotation.TestTargetClass;
 
 public class CensusTest {
 
@@ -58,16 +56,19 @@ public class CensusTest {
         assertThat(census.getHighSchoolEJA(), is(0.0));
     }
 
-    @Test
-    public void set_final_elementary_years_test() {
+    @Test (expected = AssertionError.class)
+    public void testSetFinalElementaryYears() {
 
-        double finalElementaryYears = census.getFinalElementaryYears();
-        assertThat(finalElementaryYears, is(census.getFinalElementaryYears()));
-
-        finalElementaryYears = this.random.nextDouble() * 10;
+        // Valid value
+        double finalElementaryYears = this.random.nextDouble() * 10;
         census.setFinalElementaryYears(finalElementaryYears);
 
         assertThat(finalElementaryYears, is(census.getFinalElementaryYears()));
+
+        // Invalid value (assert)
+        finalElementaryYears = -2;
+        census.setFinalElementaryYears(finalElementaryYears);
+
     }
         
 }

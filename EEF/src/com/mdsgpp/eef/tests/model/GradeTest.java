@@ -1,7 +1,6 @@
 package com.mdsgpp.eef.tests.model;
 
 import com.mdsgpp.eef.model.Grade;
-import com.mdsgpp.eef.model.State;
 
 import org.junit.Before;
 import org.junit.Test;

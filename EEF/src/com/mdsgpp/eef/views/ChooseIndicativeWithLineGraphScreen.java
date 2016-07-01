@@ -51,7 +51,8 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		
+
+		//Loads a different screen according to user input.
 		switch (item.getItemId()) {
 		case R.id.about:
 			loadAboutScreen();
@@ -72,7 +73,9 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	}
 
 	private void setGraphInformations(int max, int tamanho) {
-        this.historico.clear();
+
+		//Sets up graph information, then adds items to history.
+		this.historico.clear();
         tamanho = this.state.getApoioCnpqProject().length;
 
         if(tamanho == 1) {
@@ -89,7 +92,9 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	public void onRadioButtonClicked(View view) {
 		int max = 0;
 		int tamanho = 0;
-		
+
+
+		//Sets parameters for graph generation.
 		switch (view.getId()) {
 		case R.id.radio_apoio_cnpq_investment:
             tittle = "Projetos de Pesquisa Apoio CNPq (R$)";
@@ -309,7 +314,8 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 	private State getStateInfo() {
 		State tempState = null;
-		
+
+		//Retrieves the information on current State
 		int position = historicPosition;
 		
 		try {
@@ -323,6 +329,8 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 
 
 	public void clickButtonNext(View view) {
+
+		//Loads Graph Line screen with retrieved info from the user.
 		Intent intent = new Intent(this, ScreenLineGraph.class);
 		ArrayList<String> temp = new ArrayList<String>();
 		

@@ -6,38 +6,107 @@ import java.util.HashMap;
 
 public class State {
 
-	private String stateName = "";
-	private String stateAbbreviation = "";
-	private double percentageCollaborationWithPIB[] = {};
-	private int statePopulation = 0;
-	private Census census[] = {};
-	private Ideb idebs[] = {};
-	private Grade studentGradesPerClass[] = {};
-	private Grade gradeClassHours[] = {};
-	private Project scienceAndThecnologyProjects[] = {};
-	private Project primeirosProjetos[] = {};
-	private Project inctProject[] = {};
-	private Project apoioCnpqProject[] = {};
-	private Project jovensPesquisadoresProject[] = {};
-	private Grade ageGradeDistortionRate[] = {};
-	private Grade educationalAchievementRate[] = {};
-	private Grade schoolDropoutRate[] = {};
+	private String stateName;
+	private String stateAbbreviation;
+	private double percentageCollaborationWithPIB[];
+	private int statePopulation;
+	private Census census[];
+	private Ideb idebs[];
+	private Grade studentGradesPerClass[];
+	private Grade gradeClassHours[];
+	private Project scienceAndThecnologyProjects[];
+	private Project primeirosProjetos[];
+	private Project inctProject[];
+	private Project apoioCnpqProject[];
+	private Project jovensPesquisadoresProject[];
+	private Grade ageGradeDistortionRate[];
+	private Grade educationalAchievementRate[];
+	private Grade schoolDropoutRate[];
 
-	public static final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
-			"Distrito Federal", "Espirito Santo", "Goias", "Maranhao", "Mato Grosso do Sul",
-			"Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana", "Pernambuco", "Piaui",
-			"Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
-			"Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
-	public static final String stateAbbreviations[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
-			"MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR",
-			"SC", "SP", "SE", "TO"};
+	public static final String states[] = { "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia",
+			"Ceara", "Distrito Federal", "Espirito Santo", "Goias", "Maranhao",
+			"Mato Grosso do Sul", "Mato Grosso", "Minas Gerais", "Para", "Paraiba", "Parana",
+			"Pernambuco", "Piaui", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul",
+			"Rondonia", "Roraima", "Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins" };
+	public static final String stateAbbreviations[] = {"AC", "AL", "AP", "AM", "BA", "CE", "DF",
+			"ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS",
+			"RO", "RR", "SC", "SP", "SE", "TO" };
 
+	public static final String finalYearsCensusKey = "census_anos_finais";
+	public static final String initialYearsCensusKey = "census_anos_iniciais";
+	public static final String highSchoolCensusKey = "census_high_school";
+	public static final String highSchoolEJACensusKey = "census_high_school_eja";
+	public static final String elementaryEJACensusKey = "census_eja_elementary";
+	public static final String pibStateContributionKey = "participacao_estadual_pib";
+	public static final String populationKey = "population";
+	public static final String fifthToEigthKey = "5a_8a";
+	public static final String initialSeriesKey = "series_iniciais";
+	public static final String highSchoolKey = "ensino_high_school";
+
+	public static final String elementaryClassHours = "daily_class_hours_average_elementary";
+	public static final String highSchoolClassHours = "daily_class_hours_average_high_school";
+	public static final String elementaryStudentsPerClass = "alunos_por_turma_ensino_elementary";
+	public static final String highSchoolStudentsPerClass = "alunos_por_turma_ensino_high_school";
+	public static final String numberOfProjects = "numero_projetos";
+	public static final String valueInvested = "valor_investido";
+	public static final String primeirosProjetosProgram = "programa_primeiros_projetos";
+	public static final String primeirosProjetosProgramValues = "valores_programa_primeiros_projetos";
+	public static final String cnpqResearchSupportProgram = "projetos_apoio_pesquisa_cnpq";
+	public static final String cnpqResearchSupportProgramValues = "valores_projetos_apoio_pesquisa_cnpq";
+	public static final String youngResearchersProgram = "jovens_pesquisadores";
+	public static final String youngResearchersProgramValues = "valores_jovens_pesquisadores";
+	public static final String inctProjects = "projetos_inct";
+	public static final String inctProjectsValues = "valores_projetos_inct";
+	public static final String elementaryDistortionRate = "distortion_rate_elementary";
+	public static final String highSchoolDistortionRate = "distortion_rate_ensino_high_school";
+	public static final String elementaryApprovalRate = "utilization_rate_elementary";
+	public static final String highSchoolApprovalRate = "utilization_rate_high_school";
+	public static final String elementaryDropoutRate = "dropout_rate_elementary";
+	public static final String highSchoolDropoutRate = "dropout_rate_high_school";
+
+	public static final String unnamed = "Unnamed";
+	public static final String noAbbreviation = "No abbreviation";
+
+	/**
+	 * Initializes the state object with default values.
+	 *
+	 * @return  New state object with default values.
+	 */
 	public State(){
+		String emptyString			= "";
+		double emptyDoubleArray[] 	= {};
+		Census emptyCensusArray[] 	= {};
+		Ideb emptyIdebArray[] 		= {};
+		Grade emptyGradeArray[] 	= {};
+		Project emptyProjectArray[] = {};
+
+		this.stateName 				        = emptyString;
+		this.stateAbbreviation 			    = emptyString;
+		this.percentageCollaborationWithPIB = emptyDoubleArray;
+		this.statePopulation 			    = 0;
+		this.census						    = emptyCensusArray;
+		this.idebs						    = emptyIdebArray;
+		this.studentGradesPerClass 		    = emptyGradeArray;
+		this.gradeClassHours 			    = emptyGradeArray;
+		this.scienceAndThecnologyProjects   = emptyProjectArray;
+		this.primeirosProjetos 			    = emptyProjectArray;
+		this.inctProject 				    = emptyProjectArray;
+		this.apoioCnpqProject 		        = emptyProjectArray;
+		this.jovensPesquisadoresProject     = emptyProjectArray;
+		this.ageGradeDistortionRate 	    = emptyGradeArray;
+		this.educationalAchievementRate     = emptyGradeArray;
+		this.schoolDropoutRate 			    = emptyGradeArray;
 	}
 
+	/**
+	 * Initializes the state object with stateName and stateAbbreviation set,
+	 * and with information parameter to fill object data.
+	 *
+	 * @return  New state object with default values.
+	 */
 	public State(String stateName, String stateAbbreviation, HashMap<String, ArrayList<String[]>> information){
 		assert (stateName != null) : "null stateName";
-		assert (stateName != "" || stateName != " ") : "empty stateName";
+		assert (!stateName.isEmpty()) : "empty stateName";
 		assert (information != null) : "null information";
 
 		this.stateName = stateName;
@@ -48,26 +117,21 @@ public class State {
 
 	public Census[] getCensus() {
 		if(this.census != null) {
-			return this.census;
+			// Do nothing
 		} else {
-			return emptyCensus();
+			this.census = emptyCensus();
 		}
+		return this.census;
 	}
 
 	public void setCensus(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
-		ArrayList<String[]> elementaryFinalData;
-		ArrayList<String[]> elementaryInitialData;
-		ArrayList<String[]> highSchoolData;
-		ArrayList<String[]> ejaHighSchoolData;
-		ArrayList<String[]> ejaElementaryData;
-		Census census[] = null;
 
-		elementaryFinalData = information.get("census_anos_finais");
-		elementaryInitialData = information.get("census_anos_iniciais");
-		highSchoolData = information.get("census_high_school");
-		ejaHighSchoolData = information.get("census_high_school_eja");
-		ejaElementaryData = information.get("census_eja_elementary");
+		ArrayList<String[]> elementaryFinalData = information.get(finalYearsCensusKey);
+		ArrayList<String[]> elementaryInitialData = information.get(initialYearsCensusKey);
+		ArrayList<String[]> highSchoolData = information.get(highSchoolCensusKey);
+		ArrayList<String[]> ejaHighSchoolData = information.get(highSchoolEJACensusKey);
+		ArrayList<String[]> ejaElementaryData = information.get(elementaryEJACensusKey);
 
 		assert (elementaryFinalData != null) : "null elementaryFinalData";
 		assert (elementaryInitialData != null) : "null elementaryInitialData";
@@ -75,17 +139,29 @@ public class State {
 		assert (ejaHighSchoolData != null) : "null ejaHighSchoolData";
 		assert (ejaElementaryData != null) : "null ejaElementaryData";
 
-
-		census = new Census[highSchoolData.size()];
-		for (int i=0; i<census.length; i++) {
+		Census census[] = new Census[highSchoolData.size()];
+		for (int i = 0; i < census.length; i++) {
 			census[i] = new Census();
 			census[i].setCensusState(this);
 			census[i].setCensusYear(Integer.parseInt(highSchoolData.get(i)[0]));
-			census[i].setFinalElementaryYears(Double.parseDouble(elementaryFinalData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setHighSchool(Double.parseDouble(highSchoolData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setInitialElementaryYears(Double.parseDouble(elementaryInitialData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setHighSchoolEJA(Double.parseDouble(ejaHighSchoolData.get(i)[1].replaceAll("\\.", "")));
-			census[i].setElementaryEJA(Double.parseDouble(ejaElementaryData.get(i)[1].replaceAll("\\.", "")));
+
+			String initialElementaryYears = elementaryInitialData.get(i)[1];
+			String finalElementaryYears = elementaryFinalData.get(i)[1];
+			String highSchool = highSchoolData.get(i)[1];
+			String highSchoolEja = ejaHighSchoolData.get(i)[1];
+			String elementaryEja = ejaHighSchoolData.get(i)[1];
+
+			initialElementaryYears.replaceAll("\\.", "");
+			finalElementaryYears.replaceAll("\\.", "");
+			highSchool.replaceAll("\\.", "");
+			highSchoolEja.replaceAll("\\.", "");
+			elementaryEja.replaceAll("\\.", "");
+
+			census[i].setInitialElementaryYears(Double.parseDouble(initialElementaryYears));
+			census[i].setFinalElementaryYears(Double.parseDouble(finalElementaryYears));
+			census[i].setHighSchool(Double.parseDouble(highSchool));
+			census[i].setHighSchoolEJA(Double.parseDouble(highSchoolEja));
+			census[i].setElementaryEJA(Double.parseDouble(elementaryEja));
 		}
 
 		this.census = census;
@@ -103,7 +179,7 @@ public class State {
 		assert (information != null) : "null information";
 
 		double percentageCollaborationWithPIB[];
-		ArrayList<String[]> data = information.get("participacao_estadual_pib");
+		ArrayList<String[]> data = information.get(pibStateContributionKey);
 
 		assert (data != null) : "null data";
 
@@ -122,8 +198,7 @@ public class State {
 	public void setStatePopulation(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		ArrayList<String[]> data = information.get("population");
-
+		ArrayList<String[]> data = information.get(populationKey);
 		assert (data != null) : "null data";
 
 		this.statePopulation = Integer.parseInt(data.get(0)[1].replaceAll(",", "."));
@@ -132,11 +207,11 @@ public class State {
 
 	public Ideb[] getIdebs() {
 		if (this.idebs != null) {
-			return this.idebs;
-
+			//Do nothing
 		} else {
-			return emptyIdeb();
+			this.idebs = emptyIdeb();
 		}
+		return this.idebs;
 	}
 
 	public void setIdebs(HashMap<String, ArrayList<String[]>> information) {
@@ -147,19 +222,19 @@ public class State {
 		ArrayList<String[]> highSchoolData;
 		Ideb ideb[] = null;
 
-		elementaryFinalData = information.get("5a_8a");
-		elementaryInitialData = information.get("series_iniciais");
-		highSchoolData = information.get("ensino_high_school");
+		elementaryFinalData = information.get(fifthToEigthKey);
+		elementaryInitialData = information.get(initialSeriesKey);
+		highSchoolData = information.get(highSchoolKey);
 
 		assert (elementaryFinalData != null) : "null elementaryFinalData";
 		assert (elementaryInitialData != null) : "null elementaryInitialData";
 		assert (highSchoolData != null) : "null highSchoolData";
 
 		ideb = new Ideb[highSchoolData.size()];
-		for (int i=0; i<ideb.length; i++) {
+		for (int i = 0; i < ideb.length; i++) {
 			ideb[i] = new Ideb();
 			ideb[i].setState(this);
-			if(i<ideb.length-1) {
+			if(i < ideb.length - 1) {
 				ideb[i].setIdebYear(Integer.parseInt(highSchoolData.get(i)[0]));
 			} else {
 				//do nothing
@@ -179,7 +254,6 @@ public class State {
 
 		ArrayList<String[]> elementarydata;
 		ArrayList<String[]> highSchoolData;
-		Grade readGrade[] = null;
 
 		elementarydata = information.get(namesOfIndicative[0]);
 		highSchoolData = information.get(namesOfIndicative[1]);
@@ -187,7 +261,8 @@ public class State {
 		assert (elementarydata != null) : "null elementarydata";
 		assert (highSchoolData != null) : "null highSchoolData";
 
-		readGrade = new Grade[highSchoolData.size()];
+		Grade readGrade[] = new Grade[highSchoolData.size()];
+
 		for (int i=0; i<readGrade.length; i++) {
 			readGrade[i] = new Grade();
 			readGrade[i].setState(this);
@@ -201,10 +276,11 @@ public class State {
 
 	public Grade[] getStudentGradesPerClass() {
 		if (this.studentGradesPerClass != null) {
-			return this.studentGradesPerClass;
+			//Do nothing
 		} else {
-			return emptyGrade();
+			this.studentGradesPerClass = emptyGrade();
 		}
+		return this.studentGradesPerClass;
 	}
 
 	public void setStudentGradesPerClass(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -216,11 +292,11 @@ public class State {
 
 	public Grade[] getGradeClassHours() {
 		if (this.gradeClassHours != null) {
-			return this.gradeClassHours;
+			//Do nothing
 		} else {
-			return emptyGrade();
+			this.gradeClassHours = emptyGrade();
 		}
-
+		return this.gradeClassHours;
 	}
 
 	public void setGradeClassHours(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -232,11 +308,11 @@ public class State {
 
 	public Grade[] getAgeGradeDistortionRate() {
 		if (this.ageGradeDistortionRate != null) {
-			return this.ageGradeDistortionRate;
+			//Do nothing
 		} else {
-			return emptyGrade();
+			this.ageGradeDistortionRate = emptyGrade();
 		}
-
+		return this.ageGradeDistortionRate;
 	}
 
 	public void setAgeGradeDistortionRate(HashMap<String, ArrayList<String[]>> information, String[] namesOfIndicative) {
@@ -250,7 +326,7 @@ public class State {
 		if (this.stateName != null) {
 			return this.stateName;
 		} else {
-			return "Sem nome";
+			return unnamed;
 		}
 
 	}
@@ -263,7 +339,7 @@ public class State {
 		if (this.stateAbbreviation != null) {
 			return this.stateAbbreviation;
 		} else {
-			return "Sem sigla";
+			return noAbbreviation;
 		}
 	}
 
@@ -411,16 +487,16 @@ public class State {
 	public void fillData(HashMap<String, ArrayList<String[]>> information) {
 		assert (information != null) : "null information";
 
-		String[] gradeClassHoursIndicatives = { "daily_class_hours_average_elementary", "daily_class_hours_average_high_school" };
-		String[] studentGradesPerClassIndicatives = { "alunos_por_turma_ensino_elementary", "alunos_por_turma_ensino_high_school" };
-		String[] scienceAndThecnologyProjectsIndicatives = { "project_numbers", "valor_investido" };
-		String[] primeirosProjetosIndicatives = { "first_program_projects", "valores_first_program_projects" };
-		String[] apoioCnpqProjectIndicatives = { "projetos_apoio_pesquisa_cnpq", "valores_projetos_apoio_pesquisa_cnpq" };
-		String[] jovensPesquisadoresProjectIndicatives = { "teen_searchers", "valores_teen_searchers" };
-		String[] inctProjectsIndicatives = { "projetos_inct", "valores_projetos_inct" };
-		String[] ageGradeDistortionRate = { "distortion_rate_elementary", "distortion_rate_ensino_high_school" };
-		String[] educationalAchievementRate = { "utilization_rate_elementary", "utilization_rate_high_school" };
-		String[] schoolDropoutRate = { "dropout_rate_elementary", "dropout_rate_high_school" };
+		String[] gradeClassHoursIndicatives = {elementaryClassHours, highSchoolClassHours};
+		String[] studentGradesPerClassIndicatives = {elementaryStudentsPerClass, highSchoolStudentsPerClass};
+		String[] scienceAndThecnologyProjectsIndicatives = {numberOfProjects, valueInvested};
+		String[] primeirosProjetosIndicatives = {primeirosProjetosProgram, primeirosProjetosProgramValues};
+		String[] apoioCnpqProjectIndicatives = {cnpqResearchSupportProgram, cnpqResearchSupportProgramValues};
+		String[] jovensPesquisadoresProjectIndicatives = {youngResearchersProgram, youngResearchersProgramValues};
+		String[] inctProjectsIndicatives = {inctProjects, inctProjectsValues};
+		String[] ageGradeDistortionRate = {elementaryDistortionRate, highSchoolDistortionRate};
+		String[] educationalAchievementRate = {elementaryApprovalRate, highSchoolApprovalRate};
+		String[] schoolDropoutRate = {elementaryDropoutRate, highSchoolDropoutRate};
 
 		assert (gradeClassHoursIndicatives != null) : "null gradeClassHoursIndicatives";
 		assert (studentGradesPerClassIndicatives != null) : "null studentGradesPerClassIndicatives";
@@ -432,7 +508,6 @@ public class State {
 		assert (ageGradeDistortionRate != null) : "null ageGradeDistortionRate";
 		assert (educationalAchievementRate != null) : "null educationalAchievementRate";
 		assert (schoolDropoutRate != null) : "null schoolDropoutRate";
-
 
 		this.setStatePopulation(information);
 		this.setCensus(information);
@@ -454,14 +529,14 @@ public class State {
 	}
 
 	public Grade[] emptyGrade() {
-		Grade emptyGrade[] = { new Grade(0,0) };
+		Grade emptyGrade[] = {new Grade(0,0)};
 		emptyGrade[0].setGradeYear(0);
 
 		return emptyGrade;
 	}
 
 	public Project[] emptyProject() {
-		Project empty[] = { new Project() };
+		Project empty[] = {new Project()};
 		empty[0].setProjectQuantity(0);
 		empty[0].setProjectValue(0);
 		empty[0].setProjectYear(0);
@@ -470,7 +545,7 @@ public class State {
 	}
 
 	public Census[] emptyCensus() {
-		Census empty[] = {new Census(0.0, 0.0, 0.0, 0.0, 0.0) };
+		Census empty[] = {new Census(0.0, 0.0, 0.0, 0.0, 0.0)};
 		return empty;
 	}
 

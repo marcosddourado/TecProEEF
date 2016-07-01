@@ -1,6 +1,5 @@
 package com.mdsgpp.eef.tests.model;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
