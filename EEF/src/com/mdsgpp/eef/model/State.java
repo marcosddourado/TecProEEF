@@ -529,17 +529,20 @@ public class State {
 	}
 
 	public Grade[] emptyGrade() {
+		final int acceptableYear = 1900;
 		Grade emptyGrade[] = {new Grade(0,0)};
-		emptyGrade[0].setGradeYear(0);
+		emptyGrade[0].setGradeYear(acceptableYear);
 
 		return emptyGrade;
 	}
 
 	public Project[] emptyProject() {
+		final int accetableYear = 1900;
+
 		Project empty[] = {new Project()};
 		empty[0].setProjectQuantity(0);
 		empty[0].setProjectValue(0);
-		empty[0].setProjectYear(0);
+		empty[0].setProjectYear(accetableYear);
 
 		return empty;
 	}
