@@ -38,7 +38,7 @@
     <string name="menu_button_comparison">Compare</string>
     <string name="button_generate_graph">Generate graph</string>
     <string name="tittle_choose_graph_indicative">Choose the indicative to generate the graph</string>
-    <string name="empty_string"></string>
+    <string name="empty_string">""</string>
     <string name="menu_button_query">Query</string>
     <string name="menu_button_feed">News</string>
     <string name="menu_button_query_per_indicative">Query per indicative</string>
@@ -237,5 +237,6 @@
     <!-- Strings da tela sobre EscolheIndicativoGraficoComparacao -->
     <string name="escolhe_indicativo_grafico_comparacao_conteudo">The user chooses an indicative to generate the graphic with its data.</string>
     <string name="comparacoes_gerais_conteudo_indicativos">The user will choose the indicatives he wants to compare about all the states.</string>
+    <string name="title_activity_tela_consulta_por_indicativo">Consult by Indicative</string>
 
 </resources>
