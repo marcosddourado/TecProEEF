@@ -117,6 +117,10 @@ public class ScreenQueryResult extends Activity {
 	private ImageView imageViewFlag01;
 	private ImageView imageViewFlag02;
 
+	/**
+	 * Default onCreate. Also sets components.
+	 * @param savedInstanceState current app state.
+     */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -127,6 +131,11 @@ public class ScreenQueryResult extends Activity {
 		hideTextFields();
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -135,6 +144,11 @@ public class ScreenQueryResult extends Activity {
 
 	}
 
+	/**
+	 * Default item clicked behavior. Navigates up or loads about screen.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -152,12 +166,18 @@ public class ScreenQueryResult extends Activity {
     	return true;
 	}
 
+	/**
+	 * Loads the about screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutStateComparison.class);
     	startActivity(intent);
 
 	}
 
+	/**
+	 * Retrieves info from previous screen and sets fiels accordingly.
+	 */
 	@SuppressWarnings("unchecked")
 	private void captureInformation() {
 
@@ -200,6 +220,11 @@ public class ScreenQueryResult extends Activity {
 		}
 	}
 
+	/**
+	 * Fills text views with Indicative hashmaps
+	 * @param informations1 States info.
+	 * @param informations2 Indicatives info.
+     */
 	private void fiilTextViews(HashMap<String, String> informations1,
 							   HashMap<String, String> informations2) {
 
@@ -269,6 +294,9 @@ public class ScreenQueryResult extends Activity {
 
 	}
 
+	/**
+	 * Fills text views with view references.
+	 */
 	private void initializeTextViews() {
 
 		textViewInitials1 = (TextView) findViewById(R.id.textView_sigla1);
@@ -351,11 +379,19 @@ public class ScreenQueryResult extends Activity {
 		textViewAbandonRateHighSchool2 = (TextView) findViewById(R.id.textView_dropout_rate_high_school2);
 	}
 
+	/**
+	 * Sets visibility for a given textView
+	 * @param textView Wildcard textview
+	 * @param visibility Visibility value.
+     */
 	public void setVisibility(TextView textView, boolean visibility) {
 		int valorVisibilidade = (visibility) ? View.VISIBLE : View.GONE;
 		textView.setVisibility(valorVisibilidade);
 	}
 
+	/**
+	 * Hides all text fields.
+	 */
 	public void hideTextFields() {
 		setVisibility(textViewPopulation1, bPopulation);
 		setVisibility(textViewPopulationValue1, bPopulation);
@@ -453,6 +489,11 @@ public class ScreenQueryResult extends Activity {
 
 	}
 
+	/**
+	 * Generates a graph based on all the informations chosen by the user and sends the user to the
+	 * Comparation screen.
+	 * @param view
+     */
 	public void generateGraphicButtonTouch(View view) {
 		Intent intent = new Intent(this, ScreenCompareGraphIndicative.class);
 		Intent intent1 = getIntent();
@@ -481,6 +522,11 @@ public class ScreenQueryResult extends Activity {
 		startActivity(intent);
 	}
 
+	/**
+	 * Gets state flags.
+	 * @param statePosition1 First state position.
+	 * @param statePosition2 Second state position.
+     */
 	public void captureFlags(int statePosition1, int statePosition2){
 		String flags[] = {"acre", "alagoas", "amapa", "amazonas", "bahia",
 				"ceara", "distritofederal", "espiritosanto", "goias", "maranhao",
