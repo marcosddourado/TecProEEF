@@ -222,7 +222,6 @@
     <string name="title_sobre_comparacacoes_gerais_estados">Comparação por estado: </string>
     <string name="title_sobre_comparacacoes_gerais_indicativos">Comparação por indicativo: </string>
     <string name="comparacoes_gerais_conteudo_estados">O usuário escolherá dois estados para comparar os indicativos dos mesmos.</string>
-    <string name="comparacoes_gerais_conteudo_indicativos">O usuário escolherá os indicativos que deseja comparar em relação a todos os estados.</string>
 
     <!-- Strings da tela sobre Lista Estado -->
     <string name="lista_estado_conteudo">O usuário escolhe o estado afim de consultar os dados do mesmo.</string>
@@ -238,5 +237,8 @@
 
     <!-- Strings da tela sobre EscolheIndicativoGraficoComparacao -->
     <string name="escolhe_indicativo_grafico_comparacao_conteudo">O usuário escolhe um indicativo para gerar o gráfico com os dados do mesmo.</string>
+    <string name="comparacoes_gerais_conteudo_indicativos">O usuário escolherá os indicativos que
+        deseja comparar em relação a todos os estados.
+    </string>
 
 </resources>
