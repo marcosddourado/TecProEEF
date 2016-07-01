@@ -24,30 +24,52 @@ public class FeedAdapter extends BaseAdapter {
 		TextView tvCategory;
 		TextView tvDescription;
 	}
-	
+
+	/**
+	 * Constructs the adapter with params
+	 * @param context The application context
+	 * @param feed The current data feed.
+     */
 	public FeedAdapter(Context context, Feed feed) {
 		this.mInflater = LayoutInflater.from(context);
 		this.feed = feed;
 	}
 
+	/**
+	 * @return Returns the number of items on the feed.
+     */
 	@Override
 	public int getCount() {
-		//Returns the number of items on the feed.
 		return feed.getFeedItemsSize();
 	}
 
+	/**
+	 *
+	 * @param position Position of the item to be retrieved
+	 * @return Returns a specific item on a feed.
+     */
 	@Override
 	public Object getItem(int position) {
-		//Returns a specific item on a feed.
 		return feed.getFeedItems().get(position);
 	}
 
+	/**
+	 * Item id is always set to zero.
+	 * @param position The item position.
+	 * @return Zero.
+     */
 	@Override
 	public long getItemId(int position) {
-		//Item id is always set to zero.
 		return 0;
 	}
 
+	/**
+	 * Returns the holder view.
+	 * @param position The item position
+	 * @param convertView Wildcard view object.
+	 * @param parent SuperView group.
+     * @return The holder view.
+     */
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		if (convertView == null) {

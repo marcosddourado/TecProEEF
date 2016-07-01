@@ -20,13 +20,22 @@ public abstract class ChooseIndicative extends Activity {
 		setContentView(R.layout.activity_choose_indicative_graph);
 	}
 
+	/**
+	 *
+	 * @param menu The menu to be inflated.
+	 * @return Should inflate menu.
+     */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
-	
+
+	/**
+	 *
+	 * @param item The selected item.
+	 * @return Should perform action.
+     */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
@@ -43,11 +52,19 @@ public abstract class ChooseIndicative extends Activity {
 		
     	return true;
 	}
-	
+
+	/**
+	 * Loads the "About" screen.
+	 */
 	public abstract void loadAboutScreen();
-	
+
+	/**
+	 * Loads values for selected modals
+	 * @param view The current view
+     */
 	public void onRadioButtonClicked(View view) {
 
+		//Loads values for selected modals.
 		switch (view.getId()) {
 		case R.id.radio_apoio_cnpq_investment:
 			setValues("valor_projetos_cnpq", "Projetos de Pesquisa Apoio CNPq (R$)");
@@ -142,12 +159,20 @@ public abstract class ChooseIndicative extends Activity {
 		}
 	}
 
+	/**
+	 * Gets a string reference and retrieves the referred value.
+	 *
+	 * @param indivative The reference to an indicative
+	 * @param tittle The menu title
+     */
 	public void setValues(String indivative, String tittle) {
 		setIndicative(indivative);
 		setTittle(tittle);
 	}
 
 	public abstract void clickButtonNext(View view);
+
+	//Class getters and setters
 
 	public String getIndicative() {
 		return indicative;

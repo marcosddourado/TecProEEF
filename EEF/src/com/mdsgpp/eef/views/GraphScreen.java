@@ -29,6 +29,10 @@ public class GraphScreen extends Activity {
     private float valorIndicativoEstado1;
     private float valorIndicativoEstado2;
 
+    /**
+     * Sets the content view for the activity.
+     * @param savedInstanceState The current application state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,11 @@ public class GraphScreen extends Activity {
         catchInformation();
     }
 
+    /**
+     * Inflates the menu
+     * @param menu Menu reference.
+     * @return Should inflate boolean value.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -44,6 +53,11 @@ public class GraphScreen extends Activity {
         return true;
     }
 
+    /**
+     * Loads different views based on user input.
+     * @param item Menu item reference - Item pressed.
+     * @return Should navigate boolean value.
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -62,12 +76,18 @@ public class GraphScreen extends Activity {
         return true;
     }
 
+    /**
+     * Loads the about screen.
+     */
     public void loadAboutScreen() {
         //Loads info screen with description.
         Intent intent = new Intent(this, ScreenAboutGraphic.class);
         startActivity(intent);
     }
 
+    /**
+     * Generates a graph based on user previous inputs.
+     */
     @SuppressWarnings({"unchecked"})
     private void catchInformation() {
         initializeTextFields();
@@ -98,6 +118,11 @@ public class GraphScreen extends Activity {
         }
     }
 
+    /**
+     * Generates a comparison graph between two State objects.
+     * @param stateInformations1 A hashmap containing the first state's info.
+     * @param stateInformations2 A hashmap containing the second state's info.
+     */
     private void criaGrafico(HashMap<String, String> stateInformations1,
                              HashMap<String, String> stateInformations2) {
 
@@ -124,6 +149,11 @@ public class GraphScreen extends Activity {
         grafico.setBars(barras);
     }
 
+    /**
+     * Converts hashmap data from a state into application-wise data.
+     * @param stateInformations1 First state info.
+     * @param stateInformations2 Second state info.
+     */
     private void convertData(HashMap<String, String> stateInformations1,
                              HashMap<String, String> stateInformations2) {
 

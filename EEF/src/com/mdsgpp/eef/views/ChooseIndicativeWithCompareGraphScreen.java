@@ -34,7 +34,10 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 		catchInformation();
 		hideRadioButtons();
 	}
-	
+
+	/**
+	 * Retrieves information from the last screen.
+	 */
 	public void catchInformation() {
 		Intent receivedIntent = getIntent();
 		
@@ -57,7 +60,10 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 		approvalView = receivedIntent.getBooleanExtra("CB_APROVACAO", false);
 		
 	}
-	
+
+	/**
+	 * Initializes all radio buttons.
+	 */
 	public void InitializeRadioButtons() {
 		rbInitialIdebView = (RadioButton) findViewById(R.id.radio_ideb_elementary_inicials);
 		rbFinalIdebView = (RadioButton) findViewById(R.id.radio_ideb_elementary_finals);
@@ -91,12 +97,20 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 		rbEJAMHighSchoolCensus = (RadioButton) findViewById(R.id.radio_census_high_school_eja);
 		
 	}
-	
+
+	/**
+	 * Sets visbility parameter for a given radio button.
+	 * @param radioButton The radio button reference.
+	 * @param visibility True for visible, false for not visible.
+     */
 	public void setVisibility(RadioButton radioButton, boolean visibility) {
 		int visibilityValue = (visibility) ? View.VISIBLE : View.GONE;
 		radioButton.setVisibility(visibilityValue);
 	}
-	
+
+	/**
+	 * Sets visibility parameter to false on all radio buttons.
+	 */
 	public void hideRadioButtons() {
 		setVisibility(rbInitialIdebView, idebView);
 		setVisibility(rbFinalIdebView, idebView);
@@ -129,7 +143,11 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 		setVisibility(rbEJAFElementaryCensus, censusView);
 		setVisibility(rbEJAMHighSchoolCensus, censusView);
 	}
-	
+
+	/**
+	 * Sends chosen indicatives and states to comparison view.
+	 * @param view The view to be loaded.
+     */
 	public void clickButtonNext(View view) {
 		Intent intent = new Intent(this, GraphScreen.class);
 
@@ -140,7 +158,10 @@ public class ChooseIndicativeWithCompareGraphScreen extends ChooseIndicative {
 
 		startActivity(intent);		
 	}
-    
+
+    /**
+	 * Loads the "About" screen.
+	 */
     public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenAboutIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
