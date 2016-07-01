@@ -2,6 +2,7 @@ package com.mdsgpp.eef.tests.model;
 
 import com.mdsgpp.eef.model.Census;
 import com.mdsgpp.eef.model.Ideb;
+import com.mdsgpp.eef.model.Project;
 import com.mdsgpp.eef.model.State;
 
 import org.junit.Before;
@@ -90,6 +91,39 @@ public class StateTest {
         double highSchoolEJAState = emptyCensusState[UNIC_POSITION].getHighSchoolEJA();
 
         assertThat(highSchoolEJATest, is(highSchoolEJAState));
+    }
+
+    @Test
+    public void testEmptyProject() {
+        final int UNIC_POSITION = 0;
+        final int accetableYear = 1900;
+
+        Project emptyProjectTest[] = {new Project()};
+        emptyProjectTest[UNIC_POSITION].setProjectQuantity(0);
+        emptyProjectTest[UNIC_POSITION].setProjectValue(0);
+        emptyProjectTest[UNIC_POSITION].setProjectYear(accetableYear);
+
+        Project emptyProjectState[] = state.emptyProject();
+
+        //Testing the values for all the Project's attributes
+
+        //Testing the values for the project's quantity attribute
+        double quantityTest = emptyProjectTest[UNIC_POSITION].getProjectQuantity();
+        double quantityState = emptyProjectState[UNIC_POSITION].getProjectQuantity();
+
+        assertThat(quantityTest, is(quantityState));
+
+        //Testing the values for the project's value attribute
+        double valueTest = emptyProjectTest[UNIC_POSITION].getProjectValue();
+        double valueState = emptyProjectState[UNIC_POSITION].getProjectValue();
+
+        assertThat(valueTest, is(valueState));
+
+        //Testing the values for the project's year attribute
+        double yearTest = emptyProjectTest[UNIC_POSITION].getProjectYear();
+        double yearState = emptyProjectState[UNIC_POSITION].getProjectYear();
+
+        assertThat(yearTest, is(yearState));
     }
 
 }

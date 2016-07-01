@@ -536,10 +536,12 @@ public class State {
 	}
 
 	public Project[] emptyProject() {
+		final int accetableYear = 1900;
+
 		Project empty[] = {new Project()};
 		empty[0].setProjectQuantity(0);
 		empty[0].setProjectValue(0);
-		empty[0].setProjectYear(0);
+		empty[0].setProjectYear(accetableYear);
 
 		return empty;
 	}
