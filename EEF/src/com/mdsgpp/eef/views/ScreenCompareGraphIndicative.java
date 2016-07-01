@@ -25,6 +25,10 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 			rbApprovalRateElementary, rbApprovalRateHighSchool, rbDropoutRateElementary, rbDropoutRateHighSchool,
 			rbCensusInitialYearsElementary, rbCensusFinallYearsElementary, rbCensusHighSchool, rbCensusEJAElementary, rbCensusEJAHighSchool;
 
+	/**
+	 * Sets content view and initializes components.
+	 * @param savedInstanceState current app state.
+     */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,7 +38,10 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		getInformation();
 		hideRadioButtons();
 	}
-	
+
+	/**
+	 * Retrieves information from previous screen.
+	 */
 	public void getInformation() {
 		Intent intentRecebida = getIntent();
 		
@@ -57,7 +64,10 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		bApproval = intentRecebida.getBooleanExtra("CB_APROVACAO", false);
 		
 	}
-	
+
+	/**
+	 * Initializes all radio buttons
+	 */
 	public void initializeRadioButtons() {
 		rbIdebIniciais = (RadioButton) findViewById(R.id.radio_ideb_elementary_inicials);
 		rbIdebFinals = (RadioButton) findViewById(R.id.radio_ideb_elementary_finals);
@@ -91,12 +101,20 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		rbCensusEJAHighSchool = (RadioButton) findViewById(R.id.radio_census_high_school_eja);
 		
 	}
-	
+
+	/**
+	 * Sets visibility param for a given radio button to true or false.
+	 * @param radioButton Radio button reference.
+	 * @param visibility Visible boolean value.
+     */
 	public void setVisibility(RadioButton radioButton, boolean visibility) {
 		int visibilityValue = (visibility) ? View.VISIBLE : View.GONE;
 		radioButton.setVisibility(visibilityValue);
 	}
-	
+
+	/**
+	 * Sets visibility of all radio buttons to false.
+	 */
 	public void hideRadioButtons() {
 		setVisibility(rbIdebIniciais, bIdeb);
 		setVisibility(rbIdebFinals, bIdeb);
@@ -129,7 +147,11 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 		setVisibility(rbCensusEJAElementary, bCensus);
 		setVisibility(rbCensusEJAHighSchool, bCensus);
 	}
-	
+
+	/**
+	 * Leads the user to comparison screen.
+	 * @param view Wildcard view reference.
+     */
 	public void clickButtonNext(View view) {
 		Intent intent = new Intent(this, ScreenGraph.class);
 		
@@ -140,7 +162,10 @@ public class ScreenCompareGraphIndicative extends ChooseIndicative {
 
 		startActivity(intent);		
 	}
-    
+
+    /**
+	 * Loads the about screen.
+	 */
     public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenAboutIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
