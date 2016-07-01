@@ -1,5 +1,6 @@
 package com.mdsgpp.eef.tests.model;
 
+import com.mdsgpp.eef.model.Ideb;
 import com.mdsgpp.eef.model.State;
 
 import org.junit.Before;
@@ -27,6 +28,14 @@ public class StateTest {
         double empty[] = {0};
 
         assertThat(state.emptyDouble(), is(empty));
+    }
+
+    @Test
+    public void testEmptyIdeb(){
+        Ideb empty[] = {new Ideb(0.0, 0.0, 0.0)};
+
+        assertThat(state.emptyIdeb(), is(empty));
+
     }
 
 }
