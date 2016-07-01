@@ -1,29 +1,95 @@
 package com.mdsgpp.eef.tests.model;
 
+import com.mdsgpp.eef.model.Census;
+import com.mdsgpp.eef.model.Ideb;
 import com.mdsgpp.eef.model.State;
 
+import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Random;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.CoreMatchers.*;
 
-/**
- * Created by miknery on 30/06/16.
- */
 public class StateTest {
+    private State state;
+    Random random = new Random();
+
+    @Before
+    public void setup() {
+        this.state = new State();
+    }
 
     @Test
-    public void construct_with_valid_params() {
-        HashMap<String, ArrayList<String[]>> test_map = new HashMap<String, ArrayList<String[]>>();
-        String test_name = "test_name";
-        String test_abbreviation = "TA";
+    public void testEmptyDouble() {
+        double empty[] = {0};
 
-        State test_state = new State(test_name, test_abbreviation, test_map);
+        assertThat(state.emptyDouble(), is(empty));
+    }
 
-        assertThat(test_name, is(test_state.getStateName()));
-        assertThat(test_abbreviation, is(test_state.getStateAbbreviation()));
+    @Test
+    public void testEmptyIdeb() {
+        final int UNIC_POSITION = 0;
+        Ideb emptyIdebTest[] = {new Ideb(0.0, 0.0, 0.0)};
+        Ideb stateIdebTest[] = state.emptyIdeb();
+
+        //Testing the values for all the Ideb's attributes
+
+        //Testing elementary values
+        double elementaryTest = emptyIdebTest[UNIC_POSITION].getElementary();
+        double elementaryState = stateIdebTest[UNIC_POSITION].getElementary();
+
+        assertThat(elementaryTest, is(elementaryState));
+
+        //Testing high school values
+        double highSchoolTest = emptyIdebTest[UNIC_POSITION].getHighSchool();
+        double highSchoolState = stateIdebTest[UNIC_POSITION].getHighSchool();
+
+        assertThat(highSchoolTest, is(highSchoolState));
+
+        //Testing high school values
+        double initialGradesTest = emptyIdebTest[UNIC_POSITION].getInitialGrades();
+        double initialGradesState = stateIdebTest[UNIC_POSITION].getInitialGrades();
+
+        assertThat(initialGradesTest, is(initialGradesState));
+
+    }
+
+    @Test
+    public void testEmptyCensus() {
+        final int UNIC_POSITION = 0;
+        Census emptyCensusTest[] = {new Census(0.0, 0.0, 0.0, 0.0, 0.0)};
+        Census emptyCensusState[] = state.emptyCensus();
+
+        //Testing the values for all the Census's attributes
+
+        //Testing the values for the initial elementary years
+        double initialElementaryYearsTest = emptyCensusTest[UNIC_POSITION].getInitialElementaryYears();
+        double initialElementaryYearsState = emptyCensusState[UNIC_POSITION].getInitialElementaryYears();
+
+        assertThat(initialElementaryYearsTest, is(initialElementaryYearsState));
+
+        //Testing the values for the final elementary years
+        double finalElementaryYearsTest = emptyCensusTest[UNIC_POSITION].getFinalElementaryYears();
+        double finalElementaryYearsState = emptyCensusState[UNIC_POSITION].getFinalElementaryYears();
+
+        assertThat(finalElementaryYearsTest, is(finalElementaryYearsState));
+
+        //Testing the values for high school
+        double highSchoolTest = emptyCensusTest[UNIC_POSITION].getHighSchool();
+        double highSchoolState = emptyCensusState[UNIC_POSITION].getHighSchool();
+
+        assertThat(highSchoolTest, is(highSchoolState));
+
+        //Testing the values for EJA's high school
+        double highSchoolEJATest = emptyCensusTest[UNIC_POSITION].getHighSchoolEJA();
+        double highSchoolEJAState = emptyCensusState[UNIC_POSITION].getHighSchoolEJA();
+
+        assertThat(highSchoolEJATest, is(highSchoolEJAState));
     }
 
 }
