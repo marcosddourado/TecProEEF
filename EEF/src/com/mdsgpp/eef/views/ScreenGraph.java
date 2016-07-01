@@ -25,7 +25,11 @@ public class ScreenGraph extends Activity {
 	private TextView graphTitle;
 	private float indicativeValueState1;
 	private float indicativeValueState2;
-	
+
+	/**
+	 * Sets the content view, then gets current feed info.
+	 * @param savedInstanceState Current app state.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,13 +38,23 @@ public class ScreenGraph extends Activity {
 		catchInformation();
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
-	
+
+	/**
+	 * Default item clicked behavior. Navigates up or loads about screen.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
@@ -56,12 +70,19 @@ public class ScreenGraph extends Activity {
 			}
     	return true;
 	}
-	
+
+	/**
+	 * Loads about screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutGraphic.class);
     	startActivity(intent);
 	}
-	
+
+	/**
+	 * Retrieves information from a feed and the current hashMaps, sets the view data with it, then
+	 * Sets the new application intent.
+	 */
 	@SuppressWarnings({"unchecked"})
 	private void catchInformation() {
 		initializeTextFields();
@@ -91,7 +112,13 @@ public class ScreenGraph extends Activity {
 			Log.i("IOException",e.toString());
 		}
 	}
-	
+
+
+	/**
+	 * Generates a graph based on the data Hashmaps from two states of the user's selection.
+	 * @param stateInformations1 Hashmap for first state.
+	 * @param stateInformations2 Hashmap for comparison state.
+     */
 	private void makeGraph(HashMap<String, String> stateInformations1,
 						   HashMap<String, String> stateInformations2) {
 		
@@ -116,6 +143,11 @@ public class ScreenGraph extends Activity {
         graph.setBars(bars);
 	}
 
+	/**
+	 * Converts unparsed info from the two states' hashmaps.
+	 * @param stateInformations1 First state hashmap.
+	 * @param stateInformations2 Second state hashmap.
+     */
 	private void dataConversion(HashMap<String, String> stateInformations1,
 								HashMap<String, String> stateInformations2) {
 		
