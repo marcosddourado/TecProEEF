@@ -29,6 +29,10 @@ public class GraphScreen extends Activity {
     private float valorIndicativoEstado1;
     private float valorIndicativoEstado2;
 
+    /**
+     * Sets the content view for the activity.
+     * @param savedInstanceState The current application state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,11 @@ public class GraphScreen extends Activity {
         catchInformation();
     }
 
+    /**
+     * Inflates the menu
+     * @param menu Menu reference.
+     * @return Should inflate boolean value.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
