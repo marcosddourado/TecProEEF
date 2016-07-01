@@ -24,7 +24,11 @@ public class ScreenLineGraphIndicative extends Activity{
 	private String title, indicative;
 	private int historyPosition;
 	private Intent receivedIntent;
-	
+
+	/**
+	 * Initializes params with default values and retrieves information.
+	 * @param savedInstanceState
+     */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,13 +47,23 @@ public class ScreenLineGraphIndicative extends Activity{
 		history.add((float) state.getStatePopulation());
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
-	
+
+	/**
+	 * Default item clicked behavior. Navigates up or loads about screen.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
@@ -66,12 +80,19 @@ public class ScreenLineGraphIndicative extends Activity{
 		
     	return true;
 	}
-	
+
+	/**
+	 * Loads the about screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
-	}	
+	}
 
+	/**
+	 * Gets the clicked radio button, then sets a history update according to the clicked one.
+	 * @param view Wildcard view reference.
+     */
 	public void onRadioButtonClicked(View view) {
 
 		int max, size;
@@ -362,6 +383,10 @@ public class ScreenLineGraphIndicative extends Activity{
 	}
 
 
+	/**
+	 * Retrieves info about a state based on the history.
+	 * @return State object
+     */
 	private State catchStateInformation() {
 		State state = null;
 		
@@ -377,6 +402,10 @@ public class ScreenLineGraphIndicative extends Activity{
 	}
 
 
+	/**
+	 * Loads line graph screen based on user input and state selection.
+	 * @param view Wildcard view object.
+     */
 	public void clickButtonNext(View view) {
 		Intent intent = new Intent(this, ScreenLineGraph.class);
 		ArrayList<String> temp = new ArrayList<String>();
