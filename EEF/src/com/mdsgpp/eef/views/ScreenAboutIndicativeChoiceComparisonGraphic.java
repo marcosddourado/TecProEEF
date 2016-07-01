@@ -17,6 +17,11 @@ public class ScreenAboutIndicativeChoiceComparisonGraphic extends Activity {
 		setContentView(R.layout.activity_tela_sobre_escolhe_indicativo_grafico_comparacao);
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

@@ -26,6 +26,11 @@ public class ScreenComparation extends Comparison {
 
 	}
 
+	/**
+	 * Default item clicked behavior. Navigates up or loads about screen.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
     public boolean onOptionsItemSelected(MenuItem item) {
 
 		switch (item.getItemId()) {
@@ -42,11 +47,18 @@ public class ScreenComparation extends Comparison {
     	return true;
     }
 
+	/**
+	 * Loads the about screen.
+	 */
     public void loadAboutScreen() {
     	Intent intent = new Intent(this, ScreenAboutComparison.class);
     	startActivity(intent);
     }
 
+	/**
+	 * Starts comparison screen.
+	 * @param view Wildcard view reference.
+     */
 	public void clickButtonAboutComparationcao(View view) {
     	Intent intent = new Intent(this, ScreenAboutComparison.class);
     	startActivity(intent);
