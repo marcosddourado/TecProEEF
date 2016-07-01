@@ -94,7 +94,7 @@ public class StateConroller {
         FillNameAbbreviationAndPopulation(state);
 
         this.stateInformations
-                .put("percentual_participacao_pib",
+                .put("percentual_pib_participation",
                         dfPercentage.format(state
                                 .getPercentageCollaborationWithPIB()[state
                                 .getPercentageCollaborationWithPIB().length - 1])
@@ -153,13 +153,13 @@ public class StateConroller {
                         .getApoioCnpqProject().length - 1].getProjectValue())
                         + " (em mil)");
         this.stateInformations.put(
-                "quantidade_projeto_jovens_pesquisadores",
+                "quantidade_projeto_teen_searchers",
                 "Quantidade: "
                         + state.getJovensPesquisadoresProject()[state
                         .getJovensPesquisadoresProject().length - 1]
                         .getProjectQuantity() + " projetos");
         this.stateInformations
-                .put("valor_projetos_jovens_pesquisadores",
+                .put("valor_projetos_teen_searchers",
                         "Valor investido: R$ "
                                 + dfValue.format(state
                                 .getJovensPesquisadoresProject()[state
@@ -285,7 +285,7 @@ public class StateConroller {
                     + ": "
                     + dfPercentage.format(state
                     .getPercentageCollaborationWithPIB()[i]) + "%\n";
-        this.stateInformations.put("percentual_participacao_pib", temp);
+        this.stateInformations.put("percentual_pib_participation", temp);
         temp = "";
 
         for (int i = 0, ano = 2003; i < state.getScienceAndThecnologyProjects().length - 1; i++, ano++) {
@@ -362,7 +362,7 @@ public class StateConroller {
                     + dfValue.format(state.getJovensPesquisadoresProject()[i]
                     .getProjectValue()) + " (em mil)\n\n";
         }
-        this.stateInformations.put("jovens_pesquisadores", temp);
+        this.stateInformations.put("teen_searchers", temp);
         temp = "";
 
         for (int i = 0, ano = 2008; i < state.getProjectsInct().length - 1; i++, ano++) {

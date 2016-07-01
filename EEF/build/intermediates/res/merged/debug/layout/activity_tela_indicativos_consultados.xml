@@ -43,42 +43,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="@string/participacao_IDEB" />
+            android:text="@string/ideb_participation" />
 
         <CheckBox
             android:id="@+id/checkBox_primeiros_projeto"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Programa_primeiros_projetos" />
+            android:text="@string/first_program_projects" />
 
         <CheckBox
             android:id="@+id/checkBox_projetos_cnpq"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Projetos_pesquisa_CNPq" />
+            android:text="@string/cnpq_search_projects" />
 
         <CheckBox
             android:id="@+id/checkBox_projetos_jovens"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/jovens_pesquisadores" />
+            android:text="@string/teen_searchers" />
 
         <CheckBox
             android:id="@+id/checkBox_projetos_iniciacao"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/projeto_iniciacao" />
+            android:text="@string/initiation_projects" />
 
         <CheckBox
             android:id="@+id/checkBox_projetos_difusao"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/numero_projetos" />
+            android:text="@string/project_numbers" />
 
         <CheckBox
             android:id="@+id/checkBox_population"
@@ -88,7 +88,7 @@
             android:text="@string/population" />
 
         <CheckBox
-            android:id="@+id/checkBox_participacao_pib"
+            android:id="@+id/checkBox_pib_participation"
             style="@style/subTituloSobre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

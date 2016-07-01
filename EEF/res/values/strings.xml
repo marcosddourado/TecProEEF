@@ -90,22 +90,22 @@
     <string name="graph_button">Gráfico</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
-    <string name="bt_historico">Historico</string>
-    <string name="bt_estados">Estados</string>
+    <string name="button_history">Historico</string>
+    <string name="button_state">Estados</string>
 
     <!-- Strings da tela estado -->
-    <string name="participacao_PIB">Participacao Estadual no PIB</string>
-    <string name="numero_projetos">Projetos de Difusão Tecnológica</string>
-    <string name="participacao_IDEB">IDEB</string>
-    <string name="Programa_primeiros_projetos">Programa Primeiros Projetos</string>
-    <string name="Projetos_pesquisa_CNPq">Projetos de Pesquisa Apoio CNPq</string>
-    <string name="jovens_pesquisadores">Jovens pesquisadores</string>
-    <string name="projeto_iniciacao">Projetos INCT</string>
-    <string name="estados_opcao">Escolha dois estados: </string>
-    <string name="compara_estados">Comparar</string>
-    <string name="titulo_menu">Educação em Foco</string>
+    <string name="pib_participation">Participacao Estadual no PIB</string>
+    <string name="project_numbers">Projetos de Difusão Tecnológica</string>
+    <string name="ideb_participation">IDEB</string>
+    <string name="first_program_projects">Programa Primeiros Projetos</string>
+    <string name="cnpq_search_projects">Projetos de Pesquisa Apoio CNPq</string>
+    <string name="teen_searchers">Jovens pesquisadores</string>
+    <string name="initiation_projects">Projetos INCT</string>
+    <string name="states_option">Escolha dois estados: </string>
+    <string name="compare_states">Comparar</string>
+    <string name="tittle_menu">Educação em Foco</string>
     <string name="string_x"> x </string>
-    <string name="botao_historico_estado"> Historico </string>
+    <string name="button_state_history"> Historico </string>
 
     <!-- Strings da tela consultas gerais -->
     <string name="botao_historico"> Histórico</string>
@@ -125,8 +125,8 @@
     <string name="primeiros_projetos_conteudo"> Programa de apoio à infraestrutura de ciência e técnologia para jovens pesquisadores. </string>
     <string name="projetos_apoio_cnpq"> Projetos de pesquisa e apoio CNPq:  </string>
     <string name="projetos_apoio_cnpq_conteudo"> Número de projetos contratados pelos Principais Programas de Apoio à Pesquisa do CNPq.  </string>
-    <string name="projetos_jovens_pesquisadores"> Projetos Jovens Pesquisadores:  </string>
-    <string name="projetos_jovens_pesquisadores_conteudo"> Número de projetos contratados pelo Programa Jovens Pesquisadores.
+    <string name="projetos_teen_searchers"> Projetos Jovens Pesquisadores:  </string>
+    <string name="projetos_teen_searchers_conteudo"> Número de projetos contratados pelo Programa Jovens Pesquisadores.
     		A UF considerada é a UF da instituição de destino.  </string>
     <string name="projetos_inct"> Projetos Instituto Nacional de Ciência e Tecnologia - INCT: </string>
     <string name="projetos_inct_conteudo"> Número de projetos contratados dos Institutos Nacionais de Ciência e Tecnologia. </string>

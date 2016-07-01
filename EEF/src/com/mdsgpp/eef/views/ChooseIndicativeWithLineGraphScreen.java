@@ -147,23 +147,23 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
             setGraphInformations(max, tamanho);
 			break;
 			
-		case R.id.radio_jovens_pesquisadores_investment:
+		case R.id.radio_teen_searchers_investment:
 			tittle = "Jovens pesquisadores (R$)";
-			indicative = "jovens_pesquisadores";
+			indicative = "teen_searchers";
 
             setGraphInformations(max, tamanho);
 			break;
 
-		case R.id.radio_jovens_pesquisadores_amount:
+		case R.id.radio_teen_searchers_amount:
 			tittle = "Jovens pesquisadores (Qtd.)";
-			indicative = "jovens_pesquisadores";
+			indicative = "teen_searchers";
 
             setGraphInformations(max, tamanho);
 			break;
 
 		case R.id.radio_pib:
 			tittle = "Participaeeo Estadual no PIB (%)";
-			indicative = "percentual_participacao_pib";
+			indicative = "percentual_pib_participation";
 
             setGraphInformations(max, tamanho);
 			break;

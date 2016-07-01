@@ -52,7 +52,7 @@ population
 2009: 8547809
 
 
-numero_projetos
+project_numbers
 2003: 2
 2004: 1
 2005: 2
@@ -125,7 +125,7 @@ daily_class_hours_average_high_school
 2010: 4,4
 
 
-jovens_pesquisadores
+teen_searchers
 2005: 1
 2006: 0
 2007: 3
@@ -135,7 +135,7 @@ jovens_pesquisadores
 Total: 54
 
 
-programa_primeiros_projetos
+first_program_projects
 2007: 3
 2008: 0
 2009: 1
@@ -164,7 +164,7 @@ projetos_inct
 Total: 10
 
 
-valores_jovens_pesquisadores
+valores_teen_searchers
 2005: 187,469999999972
 2006: 0
 2007: 206,310000000056
@@ -174,7 +174,7 @@ valores_jovens_pesquisadores
 Total: 2391,03999999887
 
 
-valores_programa_primeiros_projetos
+valores_first_program_projects
 2007: 862,400000000373
 2008: 0
 2009: 910

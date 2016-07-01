@@ -100,12 +100,12 @@ public class ScreenStateHistory extends Activity {
 		abbreviation = (TextView) findViewById(R.id.textView_sigla);
 		name = (TextView) findViewById(R.id.textView_nome_estado);
 		population = (TextView) findViewById(R.id.textView_population_valor);
-		pibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
-		scienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
+		pibParticipation = (TextView) findViewById(R.id.textView_pib_participation_valor);
+		scienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_project_numbers_quantidade);
 		idebs = (TextView) findViewById(R.id.textView_idebs);
 		primeirosProjetos = (TextView) findViewById(R.id.textView_primeiros_projetos);
 		researchValues = (TextView) findViewById(R.id.textView_valores_projeto_pesquisa);
-		jovensPesquisadoresValue = (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
+		jovensPesquisadoresValue = (TextView) findViewById(R.id.textView_teen_searchers_valor);
 		initiationProjectsValue = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
 		censusValue = (TextView) findViewById(R.id.textView_census_high_school_valor);
@@ -121,12 +121,12 @@ public class ScreenStateHistory extends Activity {
 		abbreviation.setText(informacoes.get("sigla"));
 		name.setText(informacoes.get("nome"));
 		population.setText(informacoes.get("population"));
-		pibParticipation.setText(informacoes.get("percentual_participacao_pib"));
+		pibParticipation.setText(informacoes.get("percentual_pib_participation"));
 		scienceTechnologyProjectsQuantity.setText(informacoes.get("projetos_ciencia_tecnologia"));
 		idebs.setText(informacoes.get("ideb"));
 		primeirosProjetos.setText(informacoes.get("primeiros_projetos"));
 		researchValues.setText(informacoes.get("cnpq"));
-		jovensPesquisadoresValue.setText(informacoes.get("jovens_pesquisadores"));
+		jovensPesquisadoresValue.setText(informacoes.get("teen_searchers"));
 		initiationProjectsValue.setText(informacoes.get("projetos_inct"));
 		
 		averageStudentsClassValue.setText(informacoes.get("alunos_por_turma_ensino_high_school"));
