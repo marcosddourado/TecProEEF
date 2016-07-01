@@ -32,19 +32,19 @@ public class State {
 			"ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS",
 			"RO", "RR", "SC", "SP", "SE", "TO" };
 
-	public static final String finalYearsCensusKey = "censo_anos_finais";
-	public static final String initialYearsCensusKey = "censo_anos_iniciais";
-	public static final String highSchoolCensusKey = "censo_ensino_high_school";
-	public static final String highSchoolEJACensusKey = "censo_eja_high_school";
-	public static final String elementaryEJACensusKey = "censo_eja_elementary";
+	public static final String finalYearsCensusKey = "census_anos_finais";
+	public static final String initialYearsCensusKey = "census_anos_iniciais";
+	public static final String highSchoolCensusKey = "census_high_school";
+	public static final String highSchoolEJACensusKey = "census_high_school_eja";
+	public static final String elementaryEJACensusKey = "census_eja_elementary";
 	public static final String pibStateContributionKey = "participacao_estadual_pib";
-	public static final String populationKey = "populacao";
+	public static final String populationKey = "population";
 	public static final String fifthToEigthKey = "5a_8a";
 	public static final String initialSeriesKey = "series_iniciais";
 	public static final String highSchoolKey = "ensino_high_school";
 
-	public static final String elementaryClassHours = "horas_aula_ensino_elementary";
-	public static final String highSchoolClassHours = "horas_aula_ensino_high_school";
+	public static final String elementaryClassHours = "daily_class_hours_average_elementary";
+	public static final String highSchoolClassHours = "daily_class_hours_average_high_school";
 	public static final String elementaryStudentsPerClass = "alunos_por_turma_ensino_elementary";
 	public static final String highSchoolStudentsPerClass = "alunos_por_turma_ensino_high_school";
 	public static final String numberOfProjects = "numero_projetos";
@@ -59,10 +59,10 @@ public class State {
 	public static final String inctProjectsValues = "valores_projetos_inct";
 	public static final String elementaryDistortionRate = "distortion_rate_elementary";
 	public static final String highSchoolDistortionRate = "distortion_rate_ensino_high_school";
-	public static final String elementaryApprovalRate = "taxa_aprovacao_elementary";
-	public static final String highSchoolApprovalRate = "taxa_aprovacao_high_school";
-	public static final String elementaryDropoutRate = "taxa_abandono_elementary";
-	public static final String highSchoolDropoutRate = "taxa_abandono_high_school";
+	public static final String elementaryApprovalRate = "utilization_rate_elementary";
+	public static final String highSchoolApprovalRate = "utilization_rate_high_school";
+	public static final String elementaryDropoutRate = "dropout_rate_elementary";
+	public static final String highSchoolDropoutRate = "dropout_rate_high_school";
 
 	public static final String unnamed = "Unnamed";
 	public static final String noAbbreviation = "No abbreviation";
@@ -139,7 +139,6 @@ public class State {
 		assert (ejaHighSchoolData != null) : "null ejaHighSchoolData";
 		assert (ejaElementaryData != null) : "null ejaElementaryData";
 
-
 		Census census[] = new Census[highSchoolData.size()];
 		for (int i = 0; i < census.length; i++) {
 			census[i] = new Census();
@@ -200,7 +199,6 @@ public class State {
 		assert (information != null) : "null information";
 
 		ArrayList<String[]> data = information.get(populationKey);
-
 		assert (data != null) : "null data";
 
 		this.statePopulation = Integer.parseInt(data.get(0)[1].replaceAll(",", "."));
