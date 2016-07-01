@@ -46,6 +46,10 @@ public class ScreenConsultedIndicative extends Activity {
 	int position01;
 	int position02;
 
+	/**
+	 * Sets content view and initializes view components. Also sets default item positions.
+	 * @param savedInstanceState Current app state.
+     */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,6 +62,11 @@ public class ScreenConsultedIndicative extends Activity {
 		position02 = intentAuxiliar.getIntExtra("INDEX_CHOOSED_STATE2", 0);
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -65,6 +74,11 @@ public class ScreenConsultedIndicative extends Activity {
 		return true;
 	}
 
+	/**
+	 * Default item clicked behavior. Navigates up or loads about screen.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -82,11 +96,17 @@ public class ScreenConsultedIndicative extends Activity {
 		return true;
 	}
 
+	/**
+	 * Loads about screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutIndicativeChoice.class);
 		startActivity(intent);
 	}
 
+	/**
+	 * Initializes checkbox items with indicatives.
+	 */
 	private void initializeCheckBox() {
 		cbIdeb = (CheckBox) findViewById(R.id.checkBox_ideb);
 		cbPib = (CheckBox) findViewById(R.id.checkBox_pib_participation);
@@ -104,6 +124,9 @@ public class ScreenConsultedIndicative extends Activity {
 		cbApproval = (CheckBox) findViewById(R.id.checkBox_utilization_rate);
 	}
 
+	/**
+	 * Gets checkboxes current state.
+	 */
 	private void captureValues() {
 		bIdeb = cbIdeb.isChecked();
 		bPib = cbPib.isChecked();
@@ -121,6 +144,10 @@ public class ScreenConsultedIndicative extends Activity {
 		bApproval = cbApproval.isChecked();
 	}
 
+	/**
+	 * Listens to checkbox state changes.
+	 * @param opcaoEscolhida Modal value for checking or unchecking option.
+     */
 	public void checkBoxValueChanged(boolean opcaoEscolhida) {
 		cbIdeb.setChecked(opcaoEscolhida);
 		cbPib.setChecked(opcaoEscolhida);
@@ -138,14 +165,26 @@ public class ScreenConsultedIndicative extends Activity {
 		cbApproval.setChecked(opcaoEscolhida);
 	}
 
+	/**
+	 * Checks all checkboxes
+	 * @param view wildcard view reference.
+     */
 	public void onRadioButtonMarcarTodosClicked(View view) {
 		checkBoxValueChanged(true);
 	}
 
+	/**
+	 * Unchecks all checkboxes
+	 * @param view Wildcard view reference.
+     */
 	public void onRadioButtonDesmarcarTodosClicked(View view) {
 		checkBoxValueChanged(false);
 	}
 
+	/**
+	 * Loads comparison screen with all indicative values.
+	 * @param view Wildcard view reference.
+     */
 	public void allIndicativesButtonTouch(View view) {
 		captureValues();
 
