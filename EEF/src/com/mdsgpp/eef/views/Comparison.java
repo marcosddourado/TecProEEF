@@ -29,6 +29,11 @@ public abstract class Comparison extends Activity {
     private ArrayList<String> states02 = new ArrayList<String>();
     private ArrayList<String> allStates = new ArrayList<String>();
 
+    /**
+     * Sets a default behavior for when a new instance of the class is created. Here, we initialize
+     * the view components and adapters.
+     * @param savedInstanceState The application state at time of creation.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +49,11 @@ public abstract class Comparison extends Activity {
         statesAdapter02 = setAdapterSpinner(statesAdapter02, statesSpinner02, states02);
     }
 
+    /**
+     * Inflates a menu.
+     * @param menu The menu reference
+     * @return Should inflate menu boolean value. true for yes.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -51,6 +61,9 @@ public abstract class Comparison extends Activity {
         return true;
     }
 
+    /**
+     * Sets default values for the view's Spinners.
+     */
     private void inicializeSpinners() {
         statesSpinner01 = (Spinner) findViewById(R.id.spinner1);
         setStatesOnSpinner(statesSpinner01, R.id.spinner1);
@@ -59,6 +72,11 @@ public abstract class Comparison extends Activity {
         setStatesOnSpinner(statesSpinner02, R.id.spinner2);
     }
 
+    /**
+     * Sets state informations on a given spinner
+     * @param spinner The spinner reference.
+     * @param spinnerId The given spinner ID.
+     */
     private void setStatesOnSpinner(Spinner spinner, final int spinnerId) {
         final Spinner finalSpinner = spinner;
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -84,6 +102,13 @@ public abstract class Comparison extends Activity {
     }
 
 
+    /**
+     * Refreshes the spinner's values.
+     * @param stateName The name of the state.
+     * @param statesSpinner The spinner reference.
+     * @param states An array of the states to be refreshed.
+     * @param statesAdapter The adapters to be refreshed.
+     */
     private void refreshValuesSpinner(String stateName, Spinner statesSpinner, ArrayList<String>
             states, ArrayAdapter<String> statesAdapter) {
         String selectedState = statesSpinner.getSelectedItem().toString();
@@ -93,6 +118,13 @@ public abstract class Comparison extends Activity {
         statesSpinner.setSelection(states.indexOf(selectedState));
     }
 
+    /**
+     * Sets the adapter values for a given state
+     * @param statesAdapter The adapter array.
+     * @param statesSpinner The spinner container.
+     * @param states The states to be added.
+     * @return An arraylist of adapters to be used by the view.
+     */
     private ArrayAdapter<String> setAdapterSpinner(ArrayAdapter<String> statesAdapter, Spinner statesSpinner,
                                    ArrayList<String> states) {
         statesAdapter = new ArrayAdapter<String>(this,
@@ -105,6 +137,11 @@ public abstract class Comparison extends Activity {
         return  statesAdapter;
     }
 
+    /**
+     * Adds all state names to an array for later use.
+     * @param states The state names.
+     * @return Returns an arraylist containing all state names.
+     */
     private ArrayList<String> fillStates(ArrayList<String> states) {
         states.clear();
 
@@ -141,10 +178,16 @@ public abstract class Comparison extends Activity {
 
     public abstract void clickButtonStatesComparation(View view);
 
+    /**
+     * Loads the about section.
+     * @param view
+     */
     public void clickButtonAboutComparation(View view) {
         Intent intent = new Intent(this, ScreenAboutQuery.class);
         startActivity(intent);
     }
+
+    //Class getters
 
     public Spinner getStatesSpinner01() {
         return statesSpinner01;
