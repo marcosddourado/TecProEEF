@@ -27,7 +27,11 @@ public class ScreenLineGraph extends Activity {
 	private ArrayList<String> temp;
 	private HashMap<String, String> information;
 	private String title, indicative;
-	
+
+	/**
+	 * Sets the content view, then plots a graph and initializes components after retrieving info.
+	 * @param savedInstanceState Current app state.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -39,14 +43,24 @@ public class ScreenLineGraph extends Activity {
 			
 		plotGraph();
 	}
-	
+
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_screens, menu);
 		return true;
 	}
-	
+
+	/**
+	 * Default item clicked behavior. Navigates up or loads about screen.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
@@ -63,7 +77,11 @@ public class ScreenLineGraph extends Activity {
 		
     	return true;
 	}
-	
+
+	/**
+	 * Retrieves information from a feed and the current hashMaps, sets the view data with it, then
+	 * Sets the new application intent.
+	 */
 	private void catchInformation() {
 		int position;
 		Intent intent;
@@ -87,25 +105,36 @@ public class ScreenLineGraph extends Activity {
 			e.printStackTrace();
 		}	
 	}
-	
+
+	/**
+	 * Loads the about screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutGraphic.class);
     	startActivity(intent);
 	}
-	
 
+	/**
+	 * Sets the component text fields with retrieved view values.
+	 */
 	private void initializeTextFields() {
 		graphTitle = (TextView) findViewById(R.id.text_view_titulo_grafico_historico);
 		history = (TextView) findViewById(R.id.text_view_grafico_historico);
 	}
-	
+
+	/**
+	 * Sets the component text fields with retrieved feed values.
+	 */
 	private void fillTextFields() {
 		graphTitle.setText(title);
 		Log.i("teste_indicativo", indicative);
 		Log.i("teste_indicativo", ""+ information.containsKey(indicative));
 		history.setText(information.get(indicative));
 	}
-	
+
+	/**
+	 * Plots a graph as a line with length and color, using feed retrieved values.
+	 */
 	private void plotGraph() {
 		Line curve = new Line();
 		
@@ -126,6 +155,11 @@ public class ScreenLineGraph extends Activity {
 		li.setLineToFill(0);
 	}
 
+	/**
+	 * Gets max line curve point for graph.
+	 * @param maximo Maximum point.
+	 * @return Point position on graph.
+     */
 	private float evaluateMaxHistoryValue(float maximo) {
 		for(int i = 0; i< historyList.size(); i++){
 			if(historyList.get(i) >= maximo)
