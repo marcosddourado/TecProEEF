@@ -66,12 +66,20 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 		
     	return true;
 	}
-	
+
+	/**
+	 * Loads the "About" screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutIndicativeChoiceComparisonGraphic.class);
     	startActivity(intent);
 	}
 
+	/**
+	 * Sets graph size values according to user selection.
+	 * @param max Graph maximum size.
+	 * @param tamanho Graph current size.
+     */
 	private void setGraphInformations(int max, int tamanho) {
 
 		//Sets up graph information, then adds items to history.
@@ -89,6 +97,11 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
         }
 	}
 
+	/**
+	 * Sets default behavior for when a radio button is clicked. In this case, reset graph size and
+	 * reset graph info according to indicative.
+	 * @param view The radio button generic reference.
+     */
 	public void onRadioButtonClicked(View view) {
 		int max = 0;
 		int tamanho = 0;
@@ -312,6 +325,10 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	}
 
 
+	/**
+	 * Grabs an instance of State type.
+	 * @return State object.
+     */
 	private State getStateInfo() {
 		State tempState = null;
 
@@ -328,6 +345,10 @@ public class ChooseIndicativeWithLineGraphScreen extends Activity{
 	}
 
 
+	/**
+	 * Loads the next sequential view.
+	 * @param view The view to be loaded.
+     */
 	public void clickButtonNext(View view) {
 
 		//Loads Graph Line screen with retrieved info from the user.
