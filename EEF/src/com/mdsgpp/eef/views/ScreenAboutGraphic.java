@@ -8,6 +8,10 @@ import android.view.Menu;
 
 public class ScreenAboutGraphic extends Activity {
 
+	/**
+	 * Sets the content view
+	 * @param savedInstanceState Current app state.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
