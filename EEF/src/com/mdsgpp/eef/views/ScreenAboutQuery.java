@@ -10,6 +10,10 @@ import android.view.MenuItem;
 
 public class ScreenAboutQuery extends Activity {
 
+	/**
+	 * Sets the content view
+	 * @param savedInstanceState Current app state.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

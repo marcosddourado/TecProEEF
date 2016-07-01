@@ -10,19 +10,33 @@ import android.view.MenuItem;
 
 public class ScreenAboutGeneralComparisons extends Activity {
 
+	/**
+	 * Sets the content view
+	 * @param savedInstanceState Current app state.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_sobre_comparacoes_gerais);
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_telas_sem_sobre, menu);
 		return true;
 	}
-	
+
+	/**
+	 * Default item clicked behavior. Navigates Up.
+	 * @param item Clicked item.
+	 * @return Should navigate.
+	 */
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		

@@ -30,25 +30,44 @@ public class IndicativeAdapter extends BaseAdapter{
 			"parana", "pernambuco", "piaui", "riodejaneiro", "riograndedonorte",
 			"riograndedosul", "rondonia", "roraima", "santacatarina", "saopaulo",
 			"sergipe", "tocantins"};
-	
+
+	/**
+	 * Declares a utility class inside the base adapter.
+	 * Used for value holding purposes.
+	 */
 	static class ViewHolder{
 		private TextView tvName;
 		private TextView tvIndicativeValue;
 		private ImageView tvFlags;
 	}
-	
+
+	/**
+	 * Constructs the adapter with params
+	 * @param tittle Adapter title.
+	 * @param choosedIndicative The chosen comparison indicative.
+	 * @param context The current application context.
+     */
 	public IndicativeAdapter(String tittle, String choosedIndicative, Context context){
 		this.choosedIndicative = choosedIndicative;
 		this.tittle = tittle;
 		this.context = context;
 		this.inflater = LayoutInflater.from(context);
 	}
-	
+
+	/**
+	 *
+	 * @return The entries count.
+     */
 	@Override
 	public int getCount() {
 		return 28;
 	}
 
+	/**
+	 * Retrieves an item as a data dictionary/hashMap
+	 * @param position The item position.
+	 * @return A Hashmap of data.
+     */
 	@Override
 	public HashMap<String, String> getItem(int position) {
 
@@ -62,13 +81,25 @@ public class IndicativeAdapter extends BaseAdapter{
 		return state;
 	}
 
+	/**
+	 * Gets a item's id.
+	 * @param position Item position.
+	 * @return Integer containing the ID.
+     */
 	@Override
 	public long getItemId(int position) {
 		//Item id is always equal to its position.
 		return position;
 	}
 
-	
+
+	/**
+	 * Gets the holder view for the adapter.
+	 * @param position The adapter's position.
+	 * @param view Wildcard view reference.
+	 * @param viewGroup The current view group.
+     * @return The holder view for the adapter.
+     */
 	@Override
 	public View getView(int position, View view, ViewGroup viewGroup) {
 
@@ -106,7 +137,12 @@ public class IndicativeAdapter extends BaseAdapter{
 		
 		return view;
 	}
-	
+
+	/**
+	 * Splits line information on ":" and retrieves only usable part.
+	 * @param linha Given string.
+	 * @return The new string.
+     */
 	private String getValue(String linha) {
 
 		//Returns only usable part of info string.

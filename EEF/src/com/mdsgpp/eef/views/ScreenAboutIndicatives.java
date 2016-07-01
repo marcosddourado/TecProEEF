@@ -9,7 +9,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class ScreenAboutIndicatives extends Activity{
-	
+
+	/**
+	 * Sets the content view
+	 * @param savedInstanceState Current app state.
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
