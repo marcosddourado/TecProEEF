@@ -115,10 +115,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/participacao_PIB" />
+            android:text="@string/pib_participation" />
 
         <TextView
-            android:id="@+id/textView_participacao_pib_valor1"
+            android:id="@+id/textView_pib_participation_valor1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_participacao_pib_valor2"
+            android:id="@+id/textView_pib_participation_valor2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -134,15 +134,15 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_numero_projetos1"
+            android:id="@+id/textView_project_numbers1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/numero_projetos" />
+            android:text="@string/project_numbers" />
 
         <TextView
-            android:id="@+id/textView_numero_projetos_quantidade1"
+            android:id="@+id/textView_project_numbers_quantidade1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_numero_projetos_quantidade2"
+            android:id="@+id/textView_project_numbers_quantidade2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/participacao_IDEB" />
+            android:text="@string/ideb_participation" />
 
         <TextView
             android:id="@+id/textView_ideb_elementary1"
@@ -230,12 +230,12 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_programa_primeiros_projetos1"
+            android:id="@+id/textView_first_program_projects1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/Programa_primeiros_projetos" />
+            android:text="@string/first_program_projects" />
 
         <TextView
             android:id="@+id/textView_primeiros_projetos_quantidade1"
@@ -254,7 +254,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_programa_primeiros_projetos_valor1"
+            android:id="@+id/textView_first_program_projects_valor1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -262,7 +262,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_programa_primeiros_projetos_valor2"
+            android:id="@+id/textView_first_program_projects_valor2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -275,7 +275,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/Projetos_pesquisa_CNPq" />
+            android:text="@string/cnpq_search_projects" />
 
         <TextView
             android:id="@+id/textView_projetos_pesquisa_quantidade1"
@@ -310,15 +310,15 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_jovens_pesquisadores1"
+            android:id="@+id/textView_teen_searchers1"
             style="@style/comparacao_subTitulo_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/jovens_pesquisadores" />
+            android:text="@string/teen_searchers" />
 
         <TextView
-            android:id="@+id/textView_jovens_pesquisadores_quantidade1"
+            android:id="@+id/textView_teen_searchers_quantidade1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -326,7 +326,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_jovens_pesquisadores_quantidade2"
+            android:id="@+id/textView_teen_searchers_quantidade2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -334,7 +334,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_jovens_pesquisadores_valor1"
+            android:id="@+id/textView_teen_searchers_valor1"
             style="@style/comparacao_valor_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -342,7 +342,7 @@
             android:text="@string/empty_string" />
 
         <TextView
-            android:id="@+id/textView_jovens_pesquisadores_valor2"
+            android:id="@+id/textView_teen_searchers_valor2"
             style="@style/comparacao_valor_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -355,7 +355,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/projeto_iniciacao" />
+            android:text="@string/initiation_projects" />
 
         <TextView
             android:id="@+id/textView_projetos_iniciacao_quantidade1"

@@ -498,6 +498,17 @@ public class State {
 		String[] educationalAchievementRate = {elementaryApprovalRate, highSchoolApprovalRate};
 		String[] schoolDropoutRate = {elementaryDropoutRate, highSchoolDropoutRate};
 
+		assert (gradeClassHoursIndicatives != null) : "null gradeClassHoursIndicatives";
+		assert (studentGradesPerClassIndicatives != null) : "null studentGradesPerClassIndicatives";
+		assert (scienceAndThecnologyProjectsIndicatives != null) : "null scienceAndThecnologyProjectsIndicatives";
+		assert (primeirosProjetosIndicatives != null) : "null primeirosProjetosIndicatives";
+		assert (apoioCnpqProjectIndicatives != null) : "null apoioCnpqProjectIndicatives";
+		assert (jovensPesquisadoresProjectIndicatives != null) : "null jovensPesquisadoresProjectIndicatives";
+		assert (inctProjectsIndicatives != null) : "null inctProjectsIndicatives";
+		assert (ageGradeDistortionRate != null) : "null ageGradeDistortionRate";
+		assert (educationalAchievementRate != null) : "null educationalAchievementRate";
+		assert (schoolDropoutRate != null) : "null schoolDropoutRate";
+
 		this.setStatePopulation(information);
 		this.setCensus(information);
 		this.setIdebs(information);

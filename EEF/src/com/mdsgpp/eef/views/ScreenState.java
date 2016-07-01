@@ -114,18 +114,18 @@ public class ScreenState extends Activity {
 		textViewAbbrev = (TextView) findViewById(R.id.textView_sigla);
 		textViewName = (TextView) findViewById(R.id.textView_nome_estado);
 		textViewPopulation = (TextView) findViewById(R.id.textView_population_valor);
-		textViewPibParticipation = (TextView) findViewById(R.id.textView_participacao_pib_valor);
-		textViewScienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_numero_projetos_quantidade);
+		textViewPibParticipation = (TextView) findViewById(R.id.textView_pib_participation_valor);
+		textViewScienceTechnologyProjectsQuantity = (TextView) findViewById(R.id.textView_project_numbers_quantidade);
 		textViewScienceTechnologyProjectsValue = (TextView) findViewById(R.id.textView_valor_investido_projetos);
 		textViewIdebElementary = (TextView) findViewById(R.id.textView_ideb_elementary);
 		textViewIdebHighSchool = (TextView) findViewById(R.id.textView_ideb_ensinomedio);
 		textViewIdebInitials = (TextView) findViewById(R.id.textView_ideb_iniciais);
 		textViewPrimeirosProjetosQuantity = (TextView) findViewById(R.id.textView_primeiros_projetos_quantidade);
-		textViewPrimeirosProjetosValue = (TextView) findViewById(R.id.textView_programa_primeiros_projetos_valor);
+		textViewPrimeirosProjetosValue = (TextView) findViewById(R.id.textView_first_program_projects_valor);
 		textViewResearchQuantity = (TextView) findViewById(R.id.textView_projetos_pesquisa_quantidade);
 		textViewResearchValues = (TextView) findViewById(R.id.textView_valores_projeto_pesquisa);
-		textViewJovensPesquisadoresQuantity = (TextView) findViewById(R.id.textView_jovens_pesquisadores_quantidade);
-		textViewJovensPesquisadoresValue = (TextView) findViewById(R.id.textView_jovens_pesquisadores_valor);
+		textViewJovensPesquisadoresQuantity = (TextView) findViewById(R.id.textView_teen_searchers_quantidade);
+		textViewJovensPesquisadoresValue = (TextView) findViewById(R.id.textView_teen_searchers_valor);
 		textViewInitiationProjectsQuantity = (TextView) findViewById(R.id.textView_projetos_iniciacao_quantidade);
 		textViewInitiationProjectsValue = (TextView) findViewById(R.id.textView_projetos_iniciacao_valor);
 		
@@ -150,7 +150,7 @@ public class ScreenState extends Activity {
 		textViewAbbrev.setText(information.get("sigla"));
 		textViewName.setText(information.get("nome"));
 		textViewPopulation.setText(information.get("population"));
-		textViewPibParticipation.setText(information.get("percentual_participacao_pib"));
+		textViewPibParticipation.setText(information.get("percentual_pib_participation"));
 		textViewScienceTechnologyProjectsQuantity.setText(information.get("projetos_ciencia_tecnologia"));
 		textViewScienceTechnologyProjectsValue.setText(information.get("valor_ciencia_tecnologia"));
 		textViewIdebElementary.setText(information.get("ideb_elementary_final"));
@@ -160,8 +160,8 @@ public class ScreenState extends Activity {
 		textViewPrimeirosProjetosValue.setText(information.get("valor_primeiros_projetos"));
 	    textViewResearchQuantity.setText(information.get("quantidade_projeto_cnpq"));
 		textViewResearchValues.setText(information.get("valor_projetos_cnpq"));
-		textViewJovensPesquisadoresQuantity.setText(information.get("quantidade_projeto_jovens_pesquisadores"));
-		textViewJovensPesquisadoresValue.setText(information.get("valor_projetos_jovens_pesquisadores"));
+		textViewJovensPesquisadoresQuantity.setText(information.get("quantidade_projeto_teen_searchers"));
+		textViewJovensPesquisadoresValue.setText(information.get("valor_projetos_teen_searchers"));
 		textViewInitiationProjectsQuantity.setText(information.get("quantidade_projetos_inct"));
 		textViewInitiationProjectsValue.setText(information.get("valor_projetos_inct"));
 		

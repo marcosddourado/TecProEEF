@@ -42,7 +42,7 @@
             style="@style/subTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/projetos_jovens_pesquisadores" />
+            android:text="@string/projetos_teen_searchers" />
 
         <TextView
             android:id="@+id/projetosJovensPesquisadoresConteudo"
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="@string/projetos_jovens_pesquisadores_conteudo" />
+            android:text="@string/projetos_teen_searchers_conteudo" />
 
         <TextView
             android:id="@+id/participacaoPercentualPIBTitle"

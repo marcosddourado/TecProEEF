@@ -89,22 +89,22 @@
     <string name="graph_button">Graphic</string>
 
     <!-- Strings da tela escolhe tipo de consulta -->
-    <string name="bt_historico">History</string>
-    <string name="bt_estados">States</string>
+    <string name="button_history">History</string>
+    <string name="button_state">States</string>
 
     <!-- Strings da tela estado -->
-    <string name="participacao_PIB">PIB State Contribution</string>
-    <string name="numero_projetos">Technological Diffusion Projects</string>
-    <string name="participacao_IDEB">IDEB</string>
-    <string name="Programa_primeiros_projetos">Primeiros Projetos Program</string>
-    <string name="Projetos_pesquisa_CNPq">CNPq Reseach Support Projects</string>
-    <string name="jovens_pesquisadores">Young Researchers</string>
-    <string name="projeto_iniciacao">INCT Projects</string>
-    <string name="estados_opcao">Choose two states: </string>
-    <string name="compara_estados">Compare</string>
-    <string name="titulo_menu">Educação em Foco</string>
+    <string name="pib_participation">PIB State Contribution</string>
+    <string name="project_numbers">Technological Diffusion Projects</string>
+    <string name="ideb_participation">IDEB</string>
+    <string name="first_program_projects">Primeiros Projetos Program</string>
+    <string name="cnpq_search_projects">CNPq Reseach Support Projects</string>
+    <string name="teen_searchers">Young Researchers</string>
+    <string name="initiation_projects">INCT Projects</string>
+    <string name="states_option">Choose two states: </string>
+    <string name="compare_states">Compare</string>
+    <string name="tittle_menu">Educação em Foco</string>
     <string name="string_x"> x </string>
-    <string name="botao_historico_estado">History</string>
+    <string name="button_state_history">History</string>
 
     <!-- Strings da tela consultas gerais -->
     <string name="botao_historico">History</string>

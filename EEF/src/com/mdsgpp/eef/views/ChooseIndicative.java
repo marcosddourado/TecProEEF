@@ -70,14 +70,14 @@ public abstract class ChooseIndicative extends Activity {
 		case R.id.radio_ideb_high_school:
 			setValues("ideb_ensino_high_school", "IDEB do Ensino Medio");
 			break;
-		case R.id.radio_jovens_pesquisadores_investment:
-			setValues("valor_projetos_jovens_pesquisadores", "Jovens pesquisadores (R$)");
+		case R.id.radio_teen_searchers_investment:
+			setValues("valor_projetos_teen_searchers", "Jovens pesquisadores (R$)");
 			break;
-		case R.id.radio_jovens_pesquisadores_amount:
-			setValues("quantidade_projeto_jovens_pesquisadores", "Jovens pesquisadores (Qtd.)");
+		case R.id.radio_teen_searchers_amount:
+			setValues("quantidade_projeto_teen_searchers", "Jovens pesquisadores (Qtd.)");
 			break;
 		case R.id.radio_pib:
-			setValues("percentual_participacao_pib", "Participaeeo Estadual no PIB (%)");
+			setValues("percentual_pib_participation", "Participaeeo Estadual no PIB (%)");
 			break;
 		case R.id.radio_population:
 			setValues("population", "Populaeeo");
