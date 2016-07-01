@@ -529,8 +529,9 @@ public class State {
 	}
 
 	public Grade[] emptyGrade() {
+		final int acceptableYear = 1900;
 		Grade emptyGrade[] = {new Grade(0,0)};
-		emptyGrade[0].setGradeYear(0);
+		emptyGrade[0].setGradeYear(acceptableYear);
 
 		return emptyGrade;
 	}
