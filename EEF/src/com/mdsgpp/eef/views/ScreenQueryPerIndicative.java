@@ -8,7 +8,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class ScreenQueryPerIndicative extends ChooseIndicative {
-	
+
+	/**
+	 * Sets content view and initializes component text field.
+	 * @param savedInstanceState
+     */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -18,11 +22,18 @@ public class ScreenQueryPerIndicative extends ChooseIndicative {
 		txtViewTitle.setText("Escolha um indicativo para gerar a lista: ");
 	}
 
+	/**
+	 * Loads the about screen.
+	 */
 	public void loadAboutScreen() {
 		Intent intent = new Intent(this, ScreenAboutIndicatives.class);
 		startActivity(intent);
 	}
-	
+
+	/**
+	 * Loads the query result screen.
+	 * @param view Wildcard view reference.
+     */
 	public void clickButtonNext(View view) {
 		Intent intent = new Intent(this, ScreenQueryResultPerIndicative.class);
 
