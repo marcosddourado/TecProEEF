@@ -18,6 +18,11 @@ public class ScreenAboutIndicativeHistory extends Activity {
 		setContentView(R.layout.activity_tela_sobre_historico_de_indicativo);
 	}
 
+	/**
+	 * Inflates a menu
+	 * @param menu Menu reference.
+	 * @return Should inflate menu.
+	 */
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
